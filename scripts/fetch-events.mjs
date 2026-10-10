@@ -13,6 +13,12 @@ const HORIZON = now + 90 * DAY
 
 // Words that signal an event is made for small children or families (Estonian, Russian, English).
 const KID_WORDS = /(\blastele\b|\blaste(hommik|tuba|etendus|kontsert|kino|pidu|teater|ring)|\bbeebi|väikelap|\bmudila|\bpõnni|\bkogupere|\bperepäev|\bperehommik|\bnukulavastus|\bnukuteater|\bmuinasjut|\bmänguhommik|\bmängutuba|\bmeisterdamistuba lastele|\bдля детей|\bдетск|\bмалыш|\bсемейн|\bkids?\b|\bchildren|\bfamily (day|show|concert|event)|\bbab(y|ies)\b|\btoddler|\bsensory play)/i
+// In a description only unambiguous phrases count ("baby" alone matched a bar's "our baby venue").
+const STRONG_DESC = /(\blastele\b|väikelastele|väikelaste|\bbeebidele|\bkoguperele|\bkogupere|\bmudilastele|for (babies|toddlers|kids|children|families)|для детей|для малышей)/i
+// Ticket shops, gift cards and season passes are not events.
+const NOT_EVENT = /(\bticket\b|\bpilet(id)?\b|kinkekaart|gift ?card|season pass|hooajapilet|abonement)/i
+const isKidEvent = (title, desc = '') =>
+  (KID_WORDS.test(title) || STRONG_DESC.test(desc.slice(0, 400))) && !BLOCK_WORDS.test(`${title} ${desc.slice(0, 400)}`) && !NOT_EVENT.test(title)
 const BLOCK_WORDS = /(webinar|вебинар|online|kinkekaart|gift ?card|18\+|stand-?up|kabaree|õhtusöök|konverents|conference|koolitus|training|breathwork|human design|lasteaedades töötamise|infoõhtu|infotund|vahetusõpila|koolikontsert|algklass|noortegrupp|dog show|koerte|lapsepõlve)/i
 const ET_MONTHS = { jaanuar: 1, veebruar: 2, märts: 3, aprill: 4, mai: 5, juuni: 6, juuli: 7, august: 8, september: 9, oktoober: 10, november: 11, detsember: 12 }
 const NEAR_TALLINN = /(tallinn|harju|keila|saue|maardu|viimsi|rae|saku|kiili|harku|jõelähtme|kohila|tabasalu|laagri|peetri)/i
@@ -50,8 +56,7 @@ async function fienta() {
     .filter((e) => e.is_public !== false && e.event_status === 'scheduled' && e.attendance_mode !== 'online')
     .filter((e) => NEAR_TALLINN.test(e.address ?? ''))
     .filter((e) => {
-      const text = `${e.title} ${stripHtml(e.description).slice(0, 400)}`
-      return KID_WORDS.test(text) && !BLOCK_WORDS.test(text)
+      return isKidEvent(e.title, stripHtml(e.description))
     })
     .map((e) => ({
       id: `fienta-${e.id}`,
@@ -63,7 +68,7 @@ async function fienta() {
       address: e.address || null,
       url: e.url,
       source: 'Fienta',
-      price: e.price_from_string ? `from ${e.price_from_string}` : null,
+      price: e.price_from_string ? e.price_from_string.replace(/^from\s+/i, 'From ') : null,
       free: /^0(\.0+)? /.test(e.price_from_string ?? '') ? true : null,
       image: e.image_small_url || null,
       summary: clip(stripHtml(e.description)),
@@ -105,7 +110,7 @@ async function piletilevi() {
         _text: `${rawTitle} ${link} ${desc}`,
       }
     })
-    .filter((e) => e && (KID_WORDS.test(e._text) || /\/lastele\//.test(e.url)) && !BLOCK_WORDS.test(e._text))
+    .filter((e) => e && (isKidEvent(e.title, e.summary ?? '') || /\/lastele\//.test(e.url)) && !BLOCK_WORDS.test(e._text))
     .map(({ _text, ...e }) => e)
 }
 
@@ -143,7 +148,7 @@ async function libraries() {
       }
     }
     if (!start) continue
-    if (!KID_WORDS.test(`${title} ${body}`) || BLOCK_WORDS.test(title)) continue
+    if (!isKidEvent(title, body)) continue
     out.push({
       id: `library-${it.id}`,
       title,
@@ -234,6 +239,11 @@ Object.keys(sources).forEach((name, i) => {
 // collected on earlier days until they have passed.
 const ids = new Set(all.map((e) => e.id))
 all.push(...previous.events.filter((e) => !ids.has(e.id) && e.source !== 'Facebook'))
+// Re-check everything (including carried-over events) against the current rules,
+// and tidy prices saved by older versions.
+all = all
+  .filter((e) => e.source === 'Facebook' || isKidEvent(e.title, e.description ?? e.summary ?? ''))
+  .map((e) => ({ ...e, price: e.price ? e.price.replace(/^from\s+from\s+/i, 'From ') : e.price }))
 
 if (!anyOk) {
   console.warn('All sources failed; keeping previous events.json')

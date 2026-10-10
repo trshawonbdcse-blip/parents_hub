@@ -367,3 +367,15 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .pre-line { white-space: pre-line; }
 .detail-gallery figcaption { color: rgb(255 255 255 / 85%); }
 .row.static { cursor: default; }
+.badge-brand { background: var(--brand-soft); color: var(--brand); }
+.event-meta { flex-wrap: wrap; }
+.chip-line { display: flex; gap: 6px; flex-wrap: wrap; }
+.event-title { font-size: 1.45rem; line-height: 1.25; }
+.keypoints { display: flex; flex-direction: column; gap: 14px; padding: 16px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--line); }
+.keypoints > div { display: flex; gap: 12px; align-items: flex-start; }
+.keypoints svg { flex: 0 0 auto; color: var(--brand); margin-top: 2px; }
+.keypoints span { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.keypoints strong { font-weight: 600; overflow-wrap: anywhere; }
+.keypoints small { font-size: 0.8rem; color: var(--muted); }
+.link-button { align-self: flex-start; background: none; border: none; padding: 8px 0 0; color: var(--brand); font-weight: 600; }
+.more-text { margin-top: 8px; }

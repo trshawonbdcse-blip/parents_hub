@@ -1,7 +1,7 @@
 import { CalendarX, ChevronRight, MapPin } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { events as allEvents, eventsUpdatedAt } from '../lib/events'
+import { cleanPrice, eventAudience, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
 
 type Range = 'week' | 'month' | 'all'
@@ -75,8 +75,9 @@ export function Events() {
                       </small>
                     )}
                     <span className="event-meta">
-                      {e.free ? <span className="badge badge-free">Free</span> : e.price && <span className="badge">{e.price}</span>}
-                      <span className="source">{e.source}</span>
+                      {eventKind(e) && <span className="badge badge-brand">{eventKind(e)}</span>}
+                      {eventAudience(e) && <span className="badge">{eventAudience(e)}</span>}
+                      {e.free ? <span className="badge badge-free">Free</span> : e.price && <span className="badge">{cleanPrice(e.price)}</span>}
                     </span>
                   </span>
                   <ChevronRight size={18} className="muted" />
