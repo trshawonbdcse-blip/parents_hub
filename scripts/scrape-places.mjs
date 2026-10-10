@@ -88,27 +88,39 @@ async function scrapeSite(place) {
   return out
 }
 
+const STOP = new Set(['tallinn', 'tallinna', 'park', 'parks', 'pargi', 'centre', 'center', 'keskus', 'museum', 'muuseum', 'library', 'raamatukogu', 'playground', 'beach', 'estonian', 'eesti', 'room', 'baby', 'toddler', 'with', 'from', 'the', 'and', 'kids', 'children', 'family', 'mall', 'city'])
+const words = (s) => (s ?? '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').split(/[^a-z0-9]+/).filter((w) => w.length >= 3 && !STOP.has(w))
+
+// Photos must name the place in their title: nearby-only matches showed trains and streets.
 async function commonsPhotos(place) {
-  const url =
-    'https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&generator=geosearch' +
-    `&ggscoord=${place.lat}|${place.lng}&ggsradius=${place.setting === 'outdoor' ? 400 : 150}&ggslimit=20&ggsnamespace=6` +
-    '&prop=imageinfo&iiprop=url|extmetadata|mime|size&iiurlwidth=900'
-  try {
-    const j = await (await fetch(url, { headers: UA, signal: AbortSignal.timeout(20000) })).json()
-    return Object.values(j.query?.pages ?? {})
-      .map((p) => ({ title: p.title, info: p.imageinfo?.[0] }))
-      .filter(({ title, info }) => info && info.mime === 'image/jpeg' && info.width >= 800 && !/(map|kaart|logo|plan|scheme|diagram|coat of arms)/i.test(title))
-      .slice(0, 6)
-      .map(({ title, info }) => ({
-        src: info.thumburl,
-        page: info.descriptionurl,
-        title: title.replace(/^File:/, '').replace(/\.jpe?g$/i, ''),
-        author: (info.extmetadata?.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim().slice(0, 80) || null,
-        license: info.extmetadata?.LicenseShortName?.value ?? null,
-      }))
-  } catch {
-    return []
+  const nameWords = new Set([...words(place.name), ...words(place.nameLocal)])
+  if (!nameWords.size) return []
+  const api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&origin=*&prop=imageinfo&iiprop=url|extmetadata|mime|size&iiurlwidth=900'
+  const queries = [
+    `${api}&generator=geosearch&ggscoord=${place.lat}|${place.lng}&ggsradius=${place.setting === 'outdoor' ? 800 : 300}&ggslimit=50&ggsnamespace=6`,
+    `${api}&generator=search&gsrnamespace=6&gsrlimit=20&gsrsearch=${encodeURIComponent(`${place.nameLocal ?? place.name} Tallinn filetype:bitmap`)}`,
+  ]
+  const seen = new Map()
+  for (const q of queries) {
+    try {
+      const j = await (await fetch(q, { headers: UA, signal: AbortSignal.timeout(20000) })).json()
+      for (const p of Object.values(j.query?.pages ?? {})) if (!seen.has(p.title)) seen.set(p.title, p)
+    } catch {
+      // Try the other query.
+    }
   }
+  return [...seen.values()]
+    .map((p) => ({ title: p.title, info: p.imageinfo?.[0] }))
+    .filter(({ title, info }) => info && info.mime === 'image/jpeg' && info.width >= 800 && !/(map|kaart|logo|plan|scheme|diagram|coat of arms)/i.test(title))
+    .filter(({ title }) => words(title).filter((w) => nameWords.has(w)).length >= Math.min(nameWords.size, 1))
+    .slice(0, 6)
+    .map(({ title, info }) => ({
+      src: info.thumburl.replace(/\?.*$/, ''),
+      page: info.descriptionurl,
+      title: title.replace(/^File:/, '').replace(/\.jpe?g$/i, ''),
+      author: (info.extmetadata?.Artist?.value ?? '').replace(/<[^>]+>/g, '').trim().slice(0, 80) || null,
+      license: info.extmetadata?.LicenseShortName?.value ?? null,
+    }))
 }
 
 const results = []
