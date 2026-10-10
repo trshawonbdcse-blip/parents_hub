@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 research/
 scrape-output/
+scripts/photos/dl/
+scripts/photos/strips/
+scripts/photos/sheets/

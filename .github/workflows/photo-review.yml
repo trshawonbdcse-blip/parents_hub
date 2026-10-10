@@ -1,0 +1,27 @@
+name: Photo review sheets (manual)
+
+# Builds contact sheets of candidate photos so a person can pick good ones.
+# Results go to the photo-review branch; nothing here changes the live site.
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  sheets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
+      - run: scripts/photos/contact-sheets.sh
+      - name: Push sheets to photo-review branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B photo-review
+          git add -f scripts/photos/sheets
+          git commit -m "Photo review sheets $(date -u +%F)"
+          git push -f origin photo-review
