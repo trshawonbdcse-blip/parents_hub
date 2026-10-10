@@ -2,7 +2,11 @@ name: Photo review sheets (manual)
 
 # Builds contact sheets of candidate photos so a person can pick good ones.
 # Results go to the photo-review branch; nothing here changes the live site.
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/photos/candidates.json', 'scripts/photos/contact-sheets.sh']
 
 permissions:
   contents: write

@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Downloads candidate photos and builds numbered contact sheets for manual review.
+# Runs automatically when the candidate list changes on main.
 # Each row is one place; thumbnails are labelled #0, #1, … in candidates.json order.
 set -u
 cd "$(dirname "$0")"
