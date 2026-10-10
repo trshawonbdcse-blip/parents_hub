@@ -227,6 +227,11 @@ Object.keys(sources).forEach((name, i) => {
   }
 })
 
+// Piletilevi's RSS and the library API only show the newest listings, so keep events
+// collected on earlier days until they have passed.
+const ids = new Set(all.map((e) => e.id))
+all.push(...previous.events.filter((e) => !ids.has(e.id) && e.source !== 'Facebook'))
+
 if (!anyOk) {
   console.warn('All sources failed; keeping previous events.json')
   process.exit(0)
