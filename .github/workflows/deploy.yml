@@ -28,6 +28,13 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      # Restore the event list from the previous run, so sources that only show their newest
+      # listings (and temporary source failures) don't make events disappear.
+      - uses: actions/cache@v4
+        with:
+          path: src/data/events.json
+          key: events-${{ github.run_id }}
+          restore-keys: events-
       - name: Collect kids' events
         run: node scripts/fetch-events.mjs
       - run: npm run build
