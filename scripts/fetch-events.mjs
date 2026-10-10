@@ -11,8 +11,10 @@ const DAY = 864e5
 const now = Date.now()
 const HORIZON = now + 90 * DAY
 
-const KID_WORDS = /\b(laste|lapse|lapsed|lastele|lastehommik|lastetuba|lasteetendus|beebi|mudila|põnni|ponni|perepäev|perele|pere|väikelaps|väikestele|nukuteater|muinasjut|детск|дет(и|ей)|малыш|семейн|kids?|child(ren)?|family|baby|babies|toddler)/i
-const BLOCK_WORDS = /(webinar|вебинар|online|kinkekaart|gift ?card|18\+|stand-?up|kabaree|õhtusöök|pidu|party night|konverents|conference|koolitus|training)/i
+// Words that signal an event is made for small children or families (Estonian, Russian, English).
+const KID_WORDS = /(\blastele\b|\blaste(hommik|tuba|etendus|kontsert|kino|pidu|teater|ring)|\bbeebi|väikelap|\bmudila|\bpõnni|\bkogupere|\bperepäev|\bperehommik|\bnukulavastus|\bnukuteater|\bmuinasjut|\bmänguhommik|\bmängutuba|\bmeisterdamistuba lastele|\bдля детей|\bдетск|\bмалыш|\bсемейн|\bkids?\b|\bchildren|\bfamily (day|show|concert|event)|\bbab(y|ies)\b|\btoddler|\bsensory play)/i
+const BLOCK_WORDS = /(webinar|вебинар|online|kinkekaart|gift ?card|18\+|stand-?up|kabaree|õhtusöök|konverents|conference|koolitus|training|breathwork|human design|lasteaedades töötamise|infoõhtu|infotund|vahetusõpila|koolikontsert|algklass|noortegrupp|dog show|koerte|lapsepõlve)/i
+const ET_MONTHS = { jaanuar: 1, veebruar: 2, märts: 3, aprill: 4, mai: 5, juuni: 6, juuli: 7, august: 8, september: 9, oktoober: 10, november: 11, detsember: 12 }
 const NEAR_TALLINN = /(tallinn|harju|keila|saue|maardu|viimsi|rae|saku|kiili|harku|jõelähtme|kohila|tabasalu|laagri|peetri)/i
 
 const get = async (url) => {
@@ -46,10 +48,10 @@ async function fienta() {
   const j = await (await get('https://fienta.com/api/v1/public/events?country=EE')).json()
   return (j.events ?? [])
     .filter((e) => e.is_public !== false && e.event_status === 'scheduled' && e.attendance_mode !== 'online')
-    .filter((e) => NEAR_TALLINN.test(`${e.address} ${e.venue}`))
+    .filter((e) => NEAR_TALLINN.test(e.address ?? ''))
     .filter((e) => {
-      const text = `${e.title} ${stripHtml(e.description).slice(0, 600)}`
-      return ((e.categories ?? []).includes('family') || KID_WORDS.test(text)) && !BLOCK_WORDS.test(e.title)
+      const text = `${e.title} ${stripHtml(e.description).slice(0, 400)}`
+      return KID_WORDS.test(text) && !BLOCK_WORDS.test(text)
     })
     .map((e) => ({
       id: `fienta-${e.id}`,
@@ -101,7 +103,7 @@ async function piletilevi() {
         _text: `${rawTitle} ${link} ${desc}`,
       }
     })
-    .filter((e) => e && (KID_WORDS.test(e._text) || /\/lastele\//.test(e.url)) && !BLOCK_WORDS.test(e.title))
+    .filter((e) => e && (KID_WORDS.test(e._text) || /\/lastele\//.test(e.url)) && !BLOCK_WORDS.test(e._text))
     .map(({ _text, ...e }) => e)
 }
 
@@ -124,11 +126,22 @@ async function libraries() {
       const t = (time?.match(/(\d{1,2})[:.](\d{2})/) ?? [null, '00', '00']).slice(1).map((x) => x.padStart(2, '0'))
       start = tallinnIso(`${d.slice(0, 10)} ${t[0]}:${t[1]}:00`)
     } else {
-      const m = `${title} ${body}`.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})(?:[^\d]{1,12}(\d{1,2})[.:](\d{2}))?/)
-      if (m) start = tallinnIso(`${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')} ${(m[4] ?? '00').padStart(2, '0')}:${m[5] ?? '00'}:00`)
+      const text = `${title} ${body} ${stripHtml(it.yoast_head_json?.description ?? '')}`
+      const numeric = text.match(/(\d{1,2})\.(\d{1,2})\.(\d{4})(?:[^\d]{1,12}(\d{1,2})[.:](\d{2}))?/)
+      const worded = text.toLowerCase().match(/(\d{1,2})\.\s*(jaanuar|veebruar|märts|aprill|mai|juuni|juuli|august|september|oktoob|novemb|detsemb)\w*(?:[^\d]{1,12}kell\s*(\d{1,2})(?:[.:](\d{2}))?)?/)
+      if (numeric) {
+        start = tallinnIso(`${numeric[3]}-${numeric[2].padStart(2, '0')}-${numeric[1].padStart(2, '0')} ${(numeric[4] ?? '00').padStart(2, '0')}:${numeric[5] ?? '00'}:00`)
+      } else if (worded) {
+        const month = Object.entries(ET_MONTHS).find(([k]) => k.startsWith(worded[2]))[1]
+        // No year in the text: use the next occurrence of that date.
+        const published = new Date(it.date ?? now)
+        let year = published.getFullYear()
+        if (new Date(year, month - 1, +worded[1]) < new Date(published.getTime() - 7 * DAY)) year++
+        start = tallinnIso(`${year}-${String(month).padStart(2, '0')}-${worded[1].padStart(2, '0')} ${(worded[3] ?? '00').padStart(2, '0')}:${worded[4] ?? '00'}:00`)
+      }
     }
     if (!start) continue
-    if (!KID_WORDS.test(`${title} ${body}`)) continue
+    if (!KID_WORDS.test(`${title} ${body}`) || BLOCK_WORDS.test(title)) continue
     out.push({
       id: `library-${it.id}`,
       title,
@@ -149,7 +162,6 @@ async function libraries() {
 }
 
 // --- Facebook: only public events whose links are listed in facebook-events.txt ---------
-const ET_MONTHS = { jaanuar: 1, veebruar: 2, märts: 3, aprill: 4, mai: 5, juuni: 6, juuli: 7, august: 8, september: 9, oktoober: 10, november: 11, detsember: 12 }
 const EN_MONTHS = { january: 1, february: 2, march: 3, april: 4, may: 5, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 }
 async function facebook() {
   if (!fs.existsSync(FB_LIST)) return []
@@ -227,7 +239,7 @@ all = all
     return end >= now - DAY && new Date(e.start).getTime() <= HORIZON
   })
   .filter((e) => {
-    const key = `${e.title.toLowerCase()}|${e.start.slice(0, 10)}`
+    const key = e.title.toLowerCase().replace(/\s*\(\d{1,2}\.\d{1,2}\)\s*$/, '')
     if (seen.has(key)) return false
     seen.add(key)
     return true
