@@ -20,12 +20,12 @@ jobs:
         with:
           node-version: 22
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick
-      - run: scripts/photos/contact-sheets.sh
+      - run: scripts/photos/contact-sheets.sh || true
       - name: Push sheets to photo-review branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B photo-review
           git add -f scripts/photos/sheets
-          git commit -m "Photo review sheets $(date -u +%F)"
+          git commit --allow-empty -m "Photo review sheets $(date -u +%F)"
           git push -f origin photo-review

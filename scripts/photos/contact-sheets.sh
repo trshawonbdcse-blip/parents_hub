@@ -5,6 +5,8 @@
 set -u
 cd "$(dirname "$0")"
 mkdir -p dl sheets strips
+# Keep a log next to the sheets so failures can be read from the branch.
+exec > >(tee sheets/log.txt) 2>&1
 node -e '
 const c=require("./candidates.json");
 for (const [id, list] of Object.entries(c)) list.forEach((p,i)=>console.log(`${id}\t${i}\t${p.src}`))
