@@ -358,3 +358,12 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 }
 .nav-item { flex: 1; max-width: 140px; height: var(--nav-h); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--muted); font-size: 0.7rem; font-weight: 600; }
 .nav-item.active { color: var(--brand); }
+
+/* Event page */
+.event-fallback { flex-direction: column; gap: 2px; background: linear-gradient(135deg, var(--brand-soft), var(--accent-soft)); color: var(--brand); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.event-fallback-day { font-size: 4rem; line-height: 1; font-weight: 800; }
+.event-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.event-actions .button { flex: 1; }
+.pre-line { white-space: pre-line; }
+.detail-gallery figcaption { color: rgb(255 255 255 / 85%); }
+.row.static { cursor: default; }

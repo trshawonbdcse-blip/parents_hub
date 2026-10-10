@@ -1,9 +1,8 @@
-import { CalendarX, ExternalLink, MapPin } from 'lucide-react'
+import { CalendarX, ChevronRight, MapPin } from 'lucide-react'
 import { useState } from 'react'
-import rawEvents from '../data/events.json'
+import { Link } from 'react-router-dom'
+import { events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
-
-const data = rawEvents as { updatedAt: string | null; events: KidEvent[] }
 
 type Range = 'week' | 'month' | 'all'
 
@@ -23,7 +22,7 @@ function dayLabel(key: string) {
 function upcoming(range: Range, now = new Date()) {
   const limit = range === 'week' ? 7 : range === 'month' ? 31 : 3650
   const until = now.getTime() + limit * 864e5
-  return data.events
+  return allEvents
     .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now.getTime() && new Date(e.start).getTime() <= until)
     .sort((a, b) => a.start.localeCompare(b.start))
 }
@@ -43,7 +42,7 @@ export function Events() {
       <h1 className="page-title">Events</h1>
       <p className="muted small">
         Kids' and family events, collected every morning
-        {data.updatedAt ? ` · updated ${new Date(data.updatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : ''}
+        {eventsUpdatedAt ? ` · updated ${new Date(eventsUpdatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : ''}
       </p>
 
       <div className="segmented wide">
@@ -66,7 +65,7 @@ export function Events() {
           <ul className="list-card">
             {list.map((e) => (
               <li key={e.id}>
-                <a className="event-row" href={e.url} target="_blank" rel="noreferrer">
+                <Link className="event-row" to={`/event/${encodeURIComponent(e.id)}`}>
                   <span className="event-time">{e.allDay ? 'All day' : timeFmt.format(new Date(e.start))}</span>
                   <span className="row-text">
                     <strong>{e.title}</strong>
@@ -80,8 +79,8 @@ export function Events() {
                       <span className="source">{e.source}</span>
                     </span>
                   </span>
-                  <ExternalLink size={16} className="muted" />
-                </a>
+                  <ChevronRight size={18} className="muted" />
+                </Link>
               </li>
             ))}
           </ul>
@@ -95,7 +94,7 @@ export function Events() {
         </div>
       )}
 
-      <p className="footnote">Facebook events can’t be collected automatically. Always check the event page before going.</p>
+      <p className="footnote">Events are collected automatically every morning. Confirm details with the organiser before you go.</p>
     </div>
   )
 }

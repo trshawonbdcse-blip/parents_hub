@@ -123,7 +123,7 @@ export function Today() {
           <ul className="list-card">
             {upcoming.map((e) => (
               <li key={e.id}>
-                <a href={e.url} target="_blank" rel="noreferrer" className="row">
+                <Link to={`/event/${encodeURIComponent(e.id)}`} className="row">
                   <span className="date-badge">
                     <small>{weekdayFmt.format(new Date(e.start))}</small>
                     <strong>{dayNumFmt.format(new Date(e.start))}</strong>
@@ -133,7 +133,7 @@ export function Today() {
                     <small>{e.venue ?? e.source}</small>
                   </span>
                   <ChevronRight size={18} className="muted" />
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

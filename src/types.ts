@@ -119,4 +119,6 @@ export interface KidEvent {
   free: boolean | null
   image: string | null
   summary: string | null
+  // Longer text shown on the in-app event page.
+  description?: string | null
 }

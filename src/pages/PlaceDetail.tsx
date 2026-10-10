@@ -9,7 +9,7 @@ import {
   ChevronRight,
   Clock,
   Coffee,
-  Globe,
+  Share2,
   Heart,
   HelpCircle,
   Lightbulb,
@@ -90,6 +90,15 @@ export function PlaceDetail() {
   const childEst = estimatedChildText(place, months)
   const parking = parkingSummary(place)
 
+  const share = async () => {
+    try {
+      if (navigator.share) await navigator.share({ title: place.name, text: `${place.name} — ${place.address}`, url: location.href })
+      else await navigator.clipboard.writeText(`${place.name} — ${location.href}`)
+    } catch {
+      // User cancelled the share sheet.
+    }
+  }
+
   const logVisit = () => {
     const visit: Visit = {
       id: crypto.randomUUID?.() ?? String(Date.now()),
@@ -113,11 +122,7 @@ export function PlaceDetail() {
             {photos.map((ph) => (
               <figure key={ph.src}>
                 <PlaceImage photo={ph} category={place.category} />
-                <figcaption>
-                  <a href={ph.page} target="_blank" rel="noreferrer">
-                    Photo: {ph.credit}
-                  </a>
-                </figcaption>
+                <figcaption>Photo: {ph.credit}</figcaption>
               </figure>
             ))}
           </div>
@@ -160,7 +165,7 @@ export function PlaceDetail() {
               {(adult === null && adultEst) || (child === null && childEst)
                 ? '≈ is a typical price for similar places in Tallinn, not this place’s official price. '
                 : 'Price not published. '}
-              {place.phone ? <a href={telHref(place.phone)}>Call to confirm</a> : <a href={place.website} target="_blank" rel="noreferrer">Check website</a>}
+              {place.phone ? <a href={telHref(place.phone)}>Call to confirm</a> : 'Confirm at the entrance.'}
             </p>
           )}
         </section>
@@ -221,16 +226,6 @@ export function PlaceDetail() {
                 </a>
               </li>
             )}
-            <li>
-              <a className="row" href={place.website} target="_blank" rel="noreferrer">
-                <Globe size={18} className="row-icon" />
-                <span className="row-text">
-                  <strong>{new URL(place.website).host.replace(/^www\./, '')}</strong>
-                  <small>Website</small>
-                </span>
-                <ChevronRight size={18} className="muted" />
-              </a>
-            </li>
             <li>
               <a className="row" href={directions} target="_blank" rel="noreferrer">
                 <MapPin size={18} className="row-icon" />
@@ -369,11 +364,10 @@ export function PlaceDetail() {
 
         <footer className="verify">
           {place.lastVerified ? `Information checked ${place.lastVerified}. ` : 'Information not yet verified. '}
-          Prices and hours can change, so check the{' '}
+          Prices and hours can change{place.phone ? ', so call ahead if you are unsure' : ''}. Official site:{' '}
           <a href={place.website} target="_blank" rel="noreferrer">
-            official website
-          </a>{' '}
-          before you go.
+            {new URL(place.website).host.replace(/^www\./, '')}
+          </a>
           {place.sources && place.sources.length > 0 && (
             <details>
               <summary>Sources</summary>
@@ -400,9 +394,9 @@ export function PlaceDetail() {
             <Phone size={18} /> Call
           </a>
         ) : (
-          <a className="button secondary" href={place.website} target="_blank" rel="noreferrer">
-            <Globe size={18} /> Website
-          </a>
+          <button className="button secondary" onClick={share}>
+            <Share2 size={18} /> Share
+          </button>
         )}
         <a className="button primary" href={directions} target="_blank" rel="noreferrer">
           <Navigation size={18} /> Directions

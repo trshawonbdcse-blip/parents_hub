@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
+import { EventDetail } from './pages/EventDetail'
 import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
 import { Family } from './pages/Family'
@@ -8,10 +9,10 @@ import { PlaceDetail } from './pages/PlaceDetail'
 import { Saved } from './pages/Saved'
 import { Today } from './pages/Today'
 
-// Place pages have their own bottom action bar, so the tab bar is hidden there.
+// Place and event pages have their own bottom action bar, so the tab bar is hidden there.
 function Nav() {
   const { pathname } = useLocation()
-  return pathname.startsWith('/place/') ? null : <BottomNav />
+  return pathname.startsWith('/place/') || pathname.startsWith('/event/') ? null : <BottomNav />
 }
 
 function ScrollToTop() {
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/explore" element={<Explore />} />
           <Route path="/place/:id" element={<PlaceDetail />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/event/:id" element={<EventDetail />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/me" element={<Family />} />
           <Route path="*" element={<Today />} />

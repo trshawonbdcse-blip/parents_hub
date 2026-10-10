@@ -67,6 +67,7 @@ async function fienta() {
       free: /^0(\.0+)? /.test(e.price_from_string ?? '') ? true : null,
       image: e.image_small_url || null,
       summary: clip(stripHtml(e.description)),
+      description: clip(stripHtml(e.description), 1500),
     }))
     // Skip season tickets, gift cards and other long-running listings.
     .filter((e) => !e.end || new Date(e.end) - new Date(e.start) <= 14 * DAY)
@@ -100,6 +101,7 @@ async function piletilevi() {
         free: null,
         image: null,
         summary: clip(desc),
+        description: clip(desc, 1500),
         _text: `${rawTitle} ${link} ${desc}`,
       }
     })
@@ -156,6 +158,7 @@ async function libraries() {
       free: true,
       image: null,
       summary: clip(body),
+      description: clip(body, 1500),
     })
   }
   return out
