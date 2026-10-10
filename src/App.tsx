@@ -9,7 +9,11 @@ import { Today } from './pages/Today'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
-  useEffect(() => window.scrollTo(0, 0), [pathname])
+  // Block body on purpose: some browser extensions make scrollTo return a value,
+  // which React would then try to call as the effect's cleanup.
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
   return null
 }
 
