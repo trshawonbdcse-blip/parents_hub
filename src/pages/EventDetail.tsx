@@ -13,11 +13,13 @@ import {
   icsFor,
   TZ,
 } from '../lib/events'
+import { useT } from '../lib/i18n'
 
-const dateFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
-const timeFmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ })
 
 export function EventDetail() {
+  const { t, locale } = useT()
+  const dateFmt = new Intl.DateTimeFormat(locale, { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
+  const timeFmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const { id = '' } = useParams()
   const navigate = useNavigate()
   const event = eventById(decodeURIComponent(id))
@@ -29,9 +31,9 @@ export function EventDetail() {
       <div className="page">
         <div className="empty">
           <CalendarX size={32} />
-          <p>This event is no longer listed.</p>
+          <p>{t('This event is no longer listed.')}</p>
           <Link to="/events" className="button primary">
-            See upcoming events
+            {t('See upcoming events')}
           </Link>
         </div>
       </div>
@@ -47,11 +49,11 @@ export function EventDetail() {
   const audience = eventAudience(event)
   const duration = eventDuration(event)
   const language = eventLanguage(event)
-  const price = event.free ? 'Free' : (cleanPrice(event.price) ?? 'Price not listed')
+  const price = event.free ? t('Free') : (cleanPrice(event.price) ?? t('Price not listed'))
   const summary = eventSummaryLine(event)
   const fullText = event.description ?? event.summary
   const time = event.allDay
-    ? 'Time not published'
+    ? t('Time not published')
     : `${timeFmt.format(start)}${event.end && new Date(event.end).toDateString() === start.toDateString() ? ` – ${timeFmt.format(new Date(event.end))}` : ''}`
 
   const addToCalendar = () => {
@@ -81,14 +83,14 @@ export function EventDetail() {
           <img className="img-cover" src={event.image} alt="" referrerPolicy="no-referrer" onError={() => setImgFailed(true)} />
         ) : (
           <div className="img-fallback event-fallback">
-            <span className="event-fallback-day">{start.toLocaleDateString('en-GB', { day: 'numeric', timeZone: TZ })}</span>
-            <span>{start.toLocaleDateString('en-GB', { month: 'long', timeZone: TZ })}</span>
+            <span className="event-fallback-day">{start.toLocaleDateString(locale, { day: 'numeric', timeZone: TZ })}</span>
+            <span>{start.toLocaleDateString(locale, { month: 'long', timeZone: TZ })}</span>
           </div>
         )}
-        <button className="float-button left" onClick={() => (history.length > 1 ? navigate(-1) : navigate('/events'))} aria-label="Back">
+        <button className="float-button left" onClick={() => (history.length > 1 ? navigate(-1) : navigate('/events'))} aria-label={t('Back')}>
           <ArrowLeft size={20} />
         </button>
-        <button className="float-button right" onClick={share} aria-label="Share">
+        <button className="float-button right" onClick={share} aria-label={t('Share')}>
           <Share2 size={20} />
         </button>
       </div>
@@ -98,10 +100,10 @@ export function EventDetail() {
           <div className="chip-line">
             {kind && <span className="badge badge-brand">{kind}</span>}
             {audience && <span className="badge">{audience}</span>}
-            {event.free && <span className="badge badge-free">Free</span>}
+            {event.free && <span className="badge badge-free">{t('Free')}</span>}
           </div>
           <h1 className="event-title">{event.title}</h1>
-          {past && <span className="status bad">This event has ended</span>}
+          {past && <span className="status bad">{t('This event has ended')}</span>}
         </header>
 
         <section className="keypoints">
@@ -125,7 +127,7 @@ export function EventDetail() {
             <Tag size={18} />
             <span>
               <strong>{price}</strong>
-              {!event.free && !event.price && <small>Ask the organiser</small>}
+              {!event.free && !event.price && <small>{t('Ask the organiser')}</small>}
             </span>
           </div>
           {audience && (
@@ -133,7 +135,7 @@ export function EventDetail() {
               <Baby size={18} />
               <span>
                 <strong>{audience}</strong>
-                <small>Who it’s for</small>
+                <small>{t('Who it’s for')}</small>
               </span>
             </div>
           )}
@@ -142,7 +144,7 @@ export function EventDetail() {
               <Timer size={18} />
               <span>
                 <strong>{duration}</strong>
-                <small>Duration</small>
+                <small>{t('Duration')}</small>
               </span>
             </div>
           )}
@@ -150,7 +152,7 @@ export function EventDetail() {
             <Languages size={18} />
             <span>
               <strong>{language}</strong>
-              <small>Language of the event</small>
+              <small>{t('Language of the event')}</small>
             </span>
           </div>
         </section>
@@ -158,14 +160,14 @@ export function EventDetail() {
         {summary && (
           <section className="block">
             <h2 className="with-icon">
-              <Sparkles size={18} /> In short
+              <Sparkles size={18} /> {t('In short')}
             </h2>
             <p className="lead">{summary}</p>
             {fullText && fullText.length > summary.length + 20 && (
               <>
                 {expanded && <p className="small muted pre-line more-text">{fullText}</p>}
                 <button className="link-button" onClick={() => setExpanded(!expanded)}>
-                  {expanded ? 'Show less' : 'Read the full description'}
+                  {expanded ? t('Show less') : t('Read the full description')}
                 </button>
               </>
             )}
@@ -174,25 +176,25 @@ export function EventDetail() {
 
         <div className="event-actions">
           <button className="button secondary" onClick={addToCalendar}>
-            <CalendarPlus size={18} /> Add to calendar
+            <CalendarPlus size={18} /> {t('Add to calendar')}
           </button>
           {hasTickets && !past && (
             <a className="button secondary" href={event.url} target="_blank" rel="noreferrer">
-              <Ticket size={18} /> Tickets
+              <Ticket size={18} /> {t('Tickets')}
             </a>
           )}
         </div>
 
-        <footer className="verify">From {event.source}, collected automatically. Confirm with the organiser before you go.</footer>
+        <footer className="verify">{t('From {source}, collected automatically. Confirm with the organiser before you go.', { source: event.source })}</footer>
       </div>
 
       <div className="action-bar">
         <button className="button secondary" onClick={share}>
-          <Share2 size={18} /> Share
+          <Share2 size={18} /> {t('Share')}
         </button>
         {directions && (
           <a className="button primary" href={directions} target="_blank" rel="noreferrer">
-            <Navigation size={18} /> Directions
+            <Navigation size={18} /> {t('Directions')}
           </a>
         )}
       </div>

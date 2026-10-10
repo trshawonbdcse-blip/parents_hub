@@ -4,6 +4,7 @@ import rawEventSources from '../data/event-sources.json'
 import rawParkingRules from '../data/parking-rules.json'
 import type { Category, EventSource, MoneyTip, Place } from '../types'
 import type { Weather } from './weather'
+import { translate as tr } from './i18n'
 
 export const places = rawPlaces as Place[]
 export const moneyTips = rawTips as MoneyTip[]
@@ -28,6 +29,8 @@ export const CATEGORY_LABEL: Record<Category, { label: string; emoji: string }> 
   'winter-fun': { label: 'Winter fun', emoji: '🛷' },
 }
 
+export const categoryLabel = (c: Category) => tr(CATEGORY_LABEL[c].label)
+
 export function ageInMonths(birthDate: string | null, today = new Date()): number | null {
   if (!birthDate) return null
   const b = new Date(birthDate)
@@ -38,10 +41,10 @@ export function ageInMonths(birthDate: string | null, today = new Date()): numbe
 }
 
 export function formatAge(months: number): string {
-  if (months < 24) return `${months} months`
+  if (months < 24) return tr('{n} months', { n: months })
   const y = Math.floor(months / 12)
   const m = months % 12
-  return m ? `${y} y ${m} m` : `${y} years`
+  return m ? tr('{y} y {m} m', { y, m }) : tr('{y} years', { y })
 }
 
 export const fitsAge = (p: Place, months: number | null) =>
@@ -54,12 +57,12 @@ export const hasFreeParking = (p: Place) =>
 
 export function parkingLabel(p: Place): string | null {
   const info = p.parkingInfo
-  if (!info || info.available === null) return p.facilities.parking ? 'Parking' : null
-  if (!info.available) return 'No parking'
-  if (info.cost === 'free') return 'Free parking'
-  if (info.cost === 'mixed') return 'Free/paid parking'
-  if (info.cost === 'paid') return info.pargiSupported ? 'Paid · Pargi ✓' : 'Paid parking'
-  return 'Parking'
+  if (!info || info.available === null) return p.facilities.parking ? tr('Parking') : null
+  if (!info.available) return tr('No parking')
+  if (info.cost === 'free') return tr('Free parking')
+  if (info.cost === 'mixed') return tr('Free/paid parking')
+  if (info.cost === 'paid') return info.pargiSupported ? tr('Paid · Pargi ✓') : tr('Paid parking')
+  return tr('Parking')
 }
 
 export const isSummer = (d = new Date()) => d.getMonth() >= 4 && d.getMonth() <= 8
@@ -137,29 +140,28 @@ const euroText = (n: number) => `€${Number.isInteger(n) ? n : n.toFixed(2)}`
 
 // What one adult pays, as plain text for the price boxes.
 export function adultPriceText(p: Place): string | null {
-  if (p.price.free || p.price.adult === 0) return 'Free'
+  if (p.price.free || p.price.adult === 0) return tr('Free')
   return p.price.adult !== null ? euroText(p.price.adult) : null
 }
 
 // What this family's child pays, taking the free-under-age rule into account.
 export function childPriceText(p: Place, months: number | null): string | null {
   const { price } = p
-  if (price.free || price.child === 0) return 'Free'
-  if (price.childFreeUnderMonths !== null && months !== null && months < price.childFreeUnderMonths) return 'Free'
+  if (price.free || price.child === 0) return tr('Free')
+  if (price.childFreeUnderMonths !== null && months !== null && months < price.childFreeUnderMonths) return tr('Free')
   if (price.child !== null) return euroText(price.child)
-  if (price.childFreeUnderMonths !== null && months === null) return `Free under ${formatAge(price.childFreeUnderMonths)}`
+  if (price.childFreeUnderMonths !== null && months === null) return tr('Free under {age}', { age: formatAge(price.childFreeUnderMonths) })
   return null
 }
 
 // One-line price for cards: what an adult and this family's child pay, with
 // typical prices (marked ≈) filling any gaps.
 export function priceSummary(place: Place, months: number | null) {
-  if (place.price.free) return 'Free entry'
+  if (place.price.free) return tr('Free entry')
   const adult = adultPriceText(place) ?? estimatedAdultText(place)
   const child = childPriceText(place, months) ?? estimatedChildText(place, months)
-  if (!adult && !child) return 'Price on request'
-  const fmtPart = (t: string | null) => (t === null ? '?' : t === 'Usually free' ? 'usually free' : t.replace('Free', 'free'))
-  return `Adult ${fmtPart(adult)} · Child ${fmtPart(child)}`
+  if (!adult && !child) return tr('Price on request')
+  return tr('Adult {a} · Child {c}', { a: adult ?? '?', c: child ?? '?' })
 }
 
 // --- Estimated prices --------------------------------------------------------
@@ -202,7 +204,7 @@ const categoryPrices = (() => {
   return out
 })()
 
-const estimateText = (n: number | null) => (n === null ? null : n === 0 ? 'Usually free' : `≈ ${euroText(n)}`)
+const estimateText = (n: number | null) => (n === null ? null : n === 0 ? tr('Usually free') : `≈ ${euroText(n)}`)
 
 export function estimatedAdultText(p: Place): string | null {
   if (adultPriceText(p) !== null) return null

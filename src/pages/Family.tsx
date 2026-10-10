@@ -2,24 +2,38 @@ import { Car, PiggyBank, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { formatAge, moneyTips, parkingRules } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { LANGS, setLang, useT } from '../lib/i18n'
+import { localizedTips } from '../lib/tipsText'
 import type { MoneyTip } from '../types'
 
 export function Family() {
+  const { t, lang } = useT()
   const { name, setName, birthDate, setBirthDate, napStart, setNapStart, months } = useChild()
 
   return (
     <div className="page">
-      <h1 className="page-title">Family</h1>
+      <h1 className="page-title">{t('Family')}</h1>
 
       <section className="block">
-        <h2>Your child</h2>
+        <h2>{t('Language')}</h2>
+        <div className="segmented wide">
+          {LANGS.map((l) => (
+            <button key={l.code} className={lang === l.code ? 'on' : ''} onClick={() => setLang(l.code)}>
+              {l.label}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="block">
+        <h2>{t('Your child')}</h2>
         <div className="list-card form">
           <label className="field-row">
-            <span>Name</span>
-            <input type="text" value={name} placeholder="Optional" onChange={(e) => setName(e.target.value)} />
+            <span>{t('Name')}</span>
+            <input type="text" value={name} placeholder={t('Optional')} onChange={(e) => setName(e.target.value)} />
           </label>
           <label className="field-row">
-            <span>Birthday</span>
+            <span>{t('Birthday')}</span>
             <input
               type="date"
               value={birthDate ?? ''}
@@ -28,29 +42,29 @@ export function Family() {
             />
           </label>
           <label className="field-row">
-            <span>Nap time</span>
+            <span>{t('Nap time')}</span>
             <input type="time" value={napStart} onChange={(e) => setNapStart(e.target.value)} />
           </label>
         </div>
         <p className="small muted">
-          {months !== null ? `${name || 'Your child'} is ${formatAge(months)} old. ` : ''}Saved only on this phone.
+          {months !== null ? t('{name} is {age} old.', { name: name || t('Your child'), age: formatAge(months) }) + ' ' : ''}{t('Saved only on this phone.')}
         </p>
       </section>
 
       <section className="block">
-        <h2>Install the app</h2>
+        <h2>{t('Install the app')}</h2>
         <div className="list-card padded">
           <p className="with-icon">
-            <Smartphone size={18} /> <strong>iPhone:</strong> Safari → Share → Add to Home Screen
+            <Smartphone size={18} /> <strong>iPhone:</strong> {t('Safari → Share → Add to Home Screen')}
           </p>
           <p className="with-icon">
-            <Smartphone size={18} /> <strong>Android:</strong> Chrome → ⋮ → Install app
+            <Smartphone size={18} /> <strong>Android:</strong> {t('Chrome → ⋮ → Install app')}
           </p>
         </div>
       </section>
 
-      <Accordion title="Money-saving tips" icon={<PiggyBank size={18} />} tips={moneyTips} />
-      <Accordion title="Parking in Tallinn" icon={<Car size={18} />} tips={parkingRules} />
+      <Accordion title={t('Money-saving tips')} icon={<PiggyBank size={18} />} tips={localizedTips('money', moneyTips)} />
+      <Accordion title={t('Parking in Tallinn')} icon={<Car size={18} />} tips={localizedTips('parking', parkingRules)} />
 
       <p className="footnote">Parents Hub · Tallinn</p>
     </div>

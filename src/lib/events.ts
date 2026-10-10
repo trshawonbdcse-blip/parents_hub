@@ -1,5 +1,6 @@
 import rawEvents from '../data/events.json'
 import type { KidEvent } from '../types'
+import { translate as tr } from './i18n'
 
 const data = rawEvents as { updatedAt: string | null; events: KidEvent[] }
 
@@ -57,38 +58,39 @@ const KINDS: [RegExp, string][] = [
 
 export function eventKind(e: KidEvent): string | null {
   const text = `${e.title} ${e.summary ?? ''}`
-  return KINDS.find(([re]) => re.test(text))?.[1] ?? null
+  const kind = KINDS.find(([re]) => re.test(text))?.[1]
+  return kind ? tr(kind) : null
 }
 
 export function eventAudience(e: KidEvent): string | null {
   const text = `${e.title} ${e.description ?? e.summary ?? ''}`.slice(0, 600)
   const monthsToYears = text.match(/(\d{1,2})\s*(kuud?|months?)\s*(kuni|to|[-–])\s*(\d{1,2})\s*(a\b|aasta|years?)/i)
-  if (monthsToYears) return `${monthsToYears[1]} months – ${monthsToYears[4]} years`
+  if (monthsToYears) return tr('{m} months – {y} years', { m: monthsToYears[1], y: monthsToYears[4] })
   const range = text.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s*(a\b|aastat|years?|yrs?|г\.?|лет)/i)
-  if (range) return `Ages ${range[1]}–${range[2]}`
+  if (range) return tr('Ages {a}–{b}', { a: range[1], b: range[2] })
   const months = text.match(/(\d{1,2})\s*(kuud?|kuused|months?)\b/i)
-  if (months) return `From ${months[1]} months`
+  if (months) return tr('From {n} months', { n: months[1] })
   const plus = text.match(/(?:^|\s)(\d{1,2})\+/)
-  if (plus) return `Ages ${plus[1]}+`
-  if (/beebi|baby|babies|малыш/i.test(text)) return 'Babies & toddlers'
-  if (/väikelap|toddler|mudila|põnni/i.test(text)) return 'Toddlers'
-  if (/kogupere|family|perele|семейн/i.test(text)) return 'Whole family'
-  if (/lastele|laste|kids|children|детск|для детей/i.test(text)) return 'Children'
+  if (plus) return tr('Ages {a}+', { a: plus[1] })
+  if (/beebi|baby|babies|малыш/i.test(text)) return tr('Babies & toddlers')
+  if (/väikelap|toddler|mudila|põnni/i.test(text)) return tr('Toddlers')
+  if (/kogupere|family|perele|семейн/i.test(text)) return tr('Whole family')
+  if (/lastele|laste|kids|children|детск|для детей/i.test(text)) return tr('Children')
   return null
 }
 
 export function eventLanguage(e: KidEvent): string {
   const text = `${e.title} ${e.summary ?? ''}`
-  if (/[а-яё]/i.test(text)) return 'Russian'
-  if (/[õäöü]|\b(ja|ning|lastele|kell|toimub)\b/i.test(text)) return 'Estonian'
-  return 'English'
+  if (/[а-яё]/i.test(text)) return tr('Russian')
+  if (/[õäöü]|\b(ja|ning|lastele|kell|toimub)\b/i.test(text)) return tr('Estonian')
+  return tr('English')
 }
 
 export function eventDuration(e: KidEvent): string | null {
   if (!e.end || e.allDay) return null
   const mins = Math.round((new Date(e.end).getTime() - new Date(e.start).getTime()) / 60000)
   if (mins <= 0 || mins > 12 * 60) return null
-  return mins < 60 ? `${mins} min` : `${Math.round((mins / 60) * 10) / 10} h`
+  return mins < 60 ? tr('{n} min', { n: mins }) : tr('{n} h', { n: Math.round((mins / 60) * 10) / 10 })
 }
 
 // First sentence (or ~160 characters) as a one-line summary.

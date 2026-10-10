@@ -1,9 +1,10 @@
 import { Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { CATEGORY_LABEL, priceSummary } from '../lib/places'
+import { categoryLabel, priceSummary } from '../lib/places'
 import { KEYS, useIdList } from '../lib/storage'
 import type { Place } from '../types'
 import { PlaceImage } from './ui'
+import { useT } from '../lib/i18n'
 
 interface Props {
   place: Place
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) {
+  const { t } = useT()
   const favorites = useIdList(KEYS.favorites)
   const fav = favorites.has(place.id)
 
@@ -22,11 +24,11 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
       <Link to={`/place/${place.id}`} className="place-card-link">
         <div className="place-card-media">
           <PlaceImage photo={place.photos?.[0]} category={place.category} />
-          {place.price.free && <span className="badge badge-free">Free</span>}
+          {place.price.free && <span className="badge badge-free">{t('Free')}</span>}
         </div>
         <div className="place-card-body">
           <p className="overline">
-            {CATEGORY_LABEL[place.category].label} · {place.area}
+            {categoryLabel(place.category)} · {place.area}
             {distance != null && ` · ${distance.toFixed(1)} km`}
           </p>
           <h3>{place.name}</h3>
@@ -36,7 +38,7 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
       <button
         className={`fav ${fav ? 'on' : ''}`}
         onClick={() => favorites.toggle(place.id)}
-        aria-label={fav ? 'Remove from saved' : 'Save'}
+        aria-label={fav ? t('Remove from saved') : t('Save')}
         aria-pressed={fav}
       >
         <Heart size={18} fill={fav ? 'currentColor' : 'none'} />

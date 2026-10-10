@@ -1,5 +1,6 @@
 import { CalendarDays, Compass, Heart, Home, User } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
+import { useT } from '../lib/i18n'
 
 const items = [
   { to: '/', label: 'Today', Icon: Home, end: true },
@@ -10,12 +11,13 @@ const items = [
 ]
 
 export function BottomNav() {
+  const { t } = useT()
   return (
     <nav className="bottom-nav" aria-label="Main">
       {items.map(({ to, label, Icon, end }) => (
         <NavLink key={to} to={to} end={end} className="nav-item">
           <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
-          <span>{label}</span>
+          <span>{t(label)}</span>
         </NavLink>
       ))}
     </nav>

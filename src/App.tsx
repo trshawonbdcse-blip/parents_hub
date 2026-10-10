@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
+import { useT } from './lib/i18n'
 import { EventDetail } from './pages/EventDetail'
 import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
@@ -27,6 +28,8 @@ function ScrollToTop() {
 
 // HashRouter keeps the app working on any static host (e.g. GitHub Pages) without server rewrites.
 export default function App() {
+  // Subscribing here re-renders the whole app when the language changes.
+  useT()
   return (
     <HashRouter>
       <ScrollToTop />

@@ -7,19 +7,19 @@ import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather } from '../lib/weather'
 import type { KidEvent, Visit } from '../types'
+import { translate as tr, useT } from '../lib/i18n'
 
 const NO_VISITS: Visit[] = []
 const events = (rawEvents as { events: KidEvent[] }).events
-const weekdayFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'short', timeZone: 'Europe/Tallinn' })
-const dayNumFmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', timeZone: 'Europe/Tallinn' })
 
 function greeting(hour: number) {
-  if (hour < 12) return 'Good morning'
-  if (hour < 18) return 'Good afternoon'
-  return 'Good evening'
+  if (hour < 12) return tr('Good morning')
+  if (hour < 18) return tr('Good afternoon')
+  return tr('Good evening')
 }
 
 export function Today() {
+  const { t, locale } = useT()
   const { months, name } = useChild()
   const { weather, error } = useWeather()
   const favorites = useIdList(KEYS.favorites)
@@ -39,12 +39,12 @@ export function Today() {
     <div className="page">
       <header className="hero-header">
         <p className="muted">{greeting(new Date().getHours())}</p>
-        <h1>What shall we do today{name ? ` with ${name}` : ''}?</h1>
+        <h1>{name ? t('What shall we do today with {name}?', { name }) : t('What shall we do today?')}</h1>
         {months !== null ? (
-          <span className="chip-static">Ideas for {formatAge(months)}</span>
+          <span className="chip-static">{t('Ideas for {age}', { age: formatAge(months) })}</span>
         ) : (
           <Link to="/me" className="inline-cta">
-            Add your child's age for better ideas <ChevronRight size={16} />
+            {t("Add your child's age for better ideas")} <ChevronRight size={16} />
           </Link>
         )}
       </header>
@@ -57,30 +57,33 @@ export function Today() {
           {weather ? (
             <>
               <strong>
-                {weather.temperature}° · {weather.label}
+                {weather.temperature}° · {t(weather.label)}
               </strong>
               <span className="weather-sub">
-                Feels like {weather.feelsLike}° · wind {weather.windSpeed} km/h · updated{' '}
-                {weather.updatedAt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}
+                {t('Feels like {f}° · wind {w} km/h · updated {time}', {
+                  f: weather.feelsLike,
+                  w: weather.windSpeed,
+                  time: weather.updatedAt.toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit' }),
+                })}
               </span>
-              <span>{weather.advice}</span>
+              <span>{t(weather.advice)}</span>
               {weather.rainFrom && (
                 <span className="with-icon weather-sub">
-                  <Umbrella size={14} /> Rain likely from {weather.rainFrom}
+                  <Umbrella size={14} /> {t('Rain likely from {time}', { time: weather.rainFrom })}
                 </span>
               )}
             </>
           ) : (
-            <span>{error ? 'Weather unavailable right now' : 'Checking the weather…'}</span>
+            <span>{error ? t('Weather unavailable right now') : t('Checking the weather…')}</span>
           )}
         </div>
       </section>
 
       <section>
         <div className="section-head">
-          <h2>Today's ideas</h2>
+          <h2>{t('Today\'s ideas')}</h2>
           <Link to="/explore" className="link-more">
-            See all <ChevronRight size={16} />
+            {t('See all')} <ChevronRight size={16} />
           </Link>
         </div>
         <div className="carousel">
@@ -91,23 +94,23 @@ export function Today() {
       </section>
 
       <section>
-        <h2>Browse</h2>
+        <h2>{t('Browse')}</h2>
         <div className="quick-grid">
           <Link to="/explore?free=1" className="quick">
             <Wallet size={22} />
-            <span>Free</span>
+            <span>{t('Free')}</span>
           </Link>
           <Link to="/explore?setting=indoor" className="quick">
             <HomeIcon size={22} />
-            <span>Indoor</span>
+            <span>{t('Indoor')}</span>
           </Link>
           <Link to="/explore?setting=outdoor" className="quick">
             <Trees size={22} />
-            <span>Outdoor</span>
+            <span>{t('Outdoor')}</span>
           </Link>
           <Link to="/explore?sort=near" className="quick">
             <MapPin size={22} />
-            <span>Near me</span>
+            <span>{t('Near me')}</span>
           </Link>
         </div>
       </section>
@@ -115,9 +118,9 @@ export function Today() {
       {upcoming.length > 0 && (
         <section>
           <div className="section-head">
-            <h2>Coming up</h2>
+            <h2>{t('Coming up')}</h2>
             <Link to="/events" className="link-more">
-              All events <ChevronRight size={16} />
+              {t('All events')} <ChevronRight size={16} />
             </Link>
           </div>
           <ul className="list-card">
@@ -125,8 +128,8 @@ export function Today() {
               <li key={e.id}>
                 <Link to={`/event/${encodeURIComponent(e.id)}`} className="row">
                   <span className="date-badge">
-                    <small>{weekdayFmt.format(new Date(e.start))}</small>
-                    <strong>{dayNumFmt.format(new Date(e.start))}</strong>
+                    <small>{new Date(e.start).toLocaleDateString(locale, { weekday: 'short', timeZone: 'Europe/Tallinn' })}</small>
+                    <strong>{new Date(e.start).toLocaleDateString(locale, { day: 'numeric', timeZone: 'Europe/Tallinn' })}</strong>
                   </span>
                   <span className="row-text">
                     <strong>{e.title}</strong>
@@ -144,7 +147,7 @@ export function Today() {
         <section className="tip-card">
           <PiggyBank size={22} />
           <div>
-            <p className="overline">Money tip</p>
+            <p className="overline">{t('Money tip')}</p>
             <strong>{tip.title}</strong>
             <p className="small">{tip.detail}</p>
           </div>
@@ -152,7 +155,7 @@ export function Today() {
       )}
 
       <p className="footnote">
-        <Sparkles size={14} /> Picks change daily and follow the weather.
+        <Sparkles size={14} /> {t('Picks change daily and follow the weather.')}
       </p>
     </div>
   )

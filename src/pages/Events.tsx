@@ -3,20 +3,19 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { cleanPrice, eventAudience, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
+import { localeOf, translate as tr, useT } from '../lib/i18n'
 
 type Range = 'week' | 'month' | 'all'
 
 const TZ = 'Europe/Tallinn'
 const dayKey = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: TZ })
-const dayLabelFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
-const timeFmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: TZ })
 
 function dayLabel(key: string) {
   const today = dayKey(new Date())
   const tomorrow = dayKey(new Date(Date.now() + 864e5))
-  if (key === today) return 'Today'
-  if (key === tomorrow) return 'Tomorrow'
-  return dayLabelFmt.format(new Date(`${key}T12:00:00`))
+  if (key === today) return tr('Today')
+  if (key === tomorrow) return tr('Tomorrow')
+  return new Date(`${key}T12:00:00`).toLocaleDateString(localeOf(), { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
 }
 
 function upcoming(range: Range, now = new Date()) {
@@ -28,6 +27,8 @@ function upcoming(range: Range, now = new Date()) {
 }
 
 export function Events() {
+  const { t, locale } = useT()
+  const timeOf = (iso: string) => new Date(iso).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const [range, setRange] = useState<Range>('month')
   const events = upcoming(range)
   const groups = new Map<string, KidEvent[]>()
@@ -39,10 +40,10 @@ export function Events() {
 
   return (
     <div className="page">
-      <h1 className="page-title">Events</h1>
+      <h1 className="page-title">{t('Events')}</h1>
       <p className="muted small">
-        Kids' and family events, collected every morning
-        {eventsUpdatedAt ? ` · updated ${new Date(eventsUpdatedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : ''}
+        {t("Kids' and family events, collected every morning")}
+        {eventsUpdatedAt ? ` · ${t('updated {date}', { date: new Date(eventsUpdatedAt).toLocaleDateString(locale, { day: 'numeric', month: 'short' }) })}` : ''}
       </p>
 
       <div className="segmented wide">
@@ -54,7 +55,7 @@ export function Events() {
           ] as const
         ).map(([key, label]) => (
           <button key={key} className={range === key ? 'on' : ''} onClick={() => setRange(key)}>
-            {label}
+            {t(label)}
           </button>
         ))}
       </div>
@@ -66,7 +67,7 @@ export function Events() {
             {list.map((e) => (
               <li key={e.id}>
                 <Link className="event-row" to={`/event/${encodeURIComponent(e.id)}`}>
-                  <span className="event-time">{e.allDay ? 'All day' : timeFmt.format(new Date(e.start))}</span>
+                  <span className="event-time">{e.allDay ? t('All day') : timeOf(e.start)}</span>
                   <span className="row-text">
                     <strong>{e.title}</strong>
                     {e.venue && (
@@ -91,11 +92,11 @@ export function Events() {
       {!events.length && (
         <div className="empty">
           <CalendarX size={32} />
-          <p>No events found for this period yet.</p>
+          <p>{t('No events found for this period yet.')}</p>
         </div>
       )}
 
-      <p className="footnote">Events are collected automatically every morning. Confirm details with the organiser before you go.</p>
+      <p className="footnote">{t('Events are collected automatically every morning. Confirm details with the organiser before you go.')}</p>
     </div>
   )
 }

@@ -7,14 +7,16 @@ import { placeById } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Place, Visit } from '../types'
+import { useT } from '../lib/i18n'
 
 const NO_VISITS: Visit[] = []
 type Tab = 'favorites' | 'wishlist' | 'moments'
 
 const resolve = (ids: string[]) => ids.map(placeById).filter((p): p is Place => Boolean(p))
-const dateFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: 'numeric', month: 'long' })
 
 export function Saved() {
+  const { t, locale } = useT()
+  const dateFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' })
   const [tab, setTab] = useState<Tab>('favorites')
   const { months } = useChild()
   const favorites = useIdList(KEYS.favorites)
@@ -28,7 +30,7 @@ export function Saved() {
 
   return (
     <div className="page">
-      <h1 className="page-title">Saved</h1>
+      <h1 className="page-title">{t('Saved')}</h1>
 
       <div className="segmented wide" role="tablist">
         {(
@@ -39,7 +41,7 @@ export function Saved() {
           ] as const
         ).map(([key, label, n]) => (
           <button key={key} role="tab" aria-selected={tab === key} className={tab === key ? 'on' : ''} onClick={() => setTab(key)}>
-            {label} <span className="count">{n}</span>
+            {t(label)} <span className="count">{n}</span>
           </button>
         ))}
       </div>
@@ -54,9 +56,9 @@ export function Saved() {
           {list.length === 0 && (
             <div className="empty">
               {tab === 'favorites' ? <Heart size={32} /> : <Bookmark size={32} />}
-              <p>{tab === 'favorites' ? 'Tap the heart on any place to keep it here.' : 'Tap the bookmark on a place you want to try.'}</p>
+              <p>{tab === 'favorites' ? t('Tap the heart on any place to keep it here.') : t('Tap the bookmark on a place you want to try.')}</p>
               <Link to="/explore" className="button primary">
-                Explore places
+                {t('Explore places')}
               </Link>
             </div>
           )}
@@ -68,11 +70,11 @@ export function Saved() {
           <section className="stats">
             <div>
               <strong>{monthVisits.length}</strong>
-              <span>outings this month</span>
+              <span>{t('outings this month')}</span>
             </div>
             <div>
               <strong>{monthPlaces.size}</strong>
-              <span>different places</span>
+              <span>{t('different places')}</span>
             </div>
           </section>
           <ul className="moments">
@@ -85,13 +87,13 @@ export function Saved() {
                   </Link>
                   <div className="moment-text">
                     <small>{dateFmt.format(new Date(v.date))}</small>
-                    <strong>{p?.name ?? 'Unknown place'}</strong>
+                    <strong>{p?.name ?? t('Unknown place')}</strong>
                     {v.note && <p>“{v.note}”</p>}
                   </div>
                   <button
                     className="icon-button plain"
-                    aria-label="Delete moment"
-                    onClick={() => confirm('Delete this moment?') && setVisits(visits.filter((x) => x.id !== v.id))}
+                    aria-label={t('Delete moment')}
+                    onClick={() => confirm(t('Delete this moment?')) && setVisits(visits.filter((x) => x.id !== v.id))}
                   >
                     <Trash2 size={18} />
                   </button>
@@ -102,7 +104,7 @@ export function Saved() {
           {visits.length === 0 && (
             <div className="empty">
               <Sparkles size={32} />
-              <p>After an outing, open the place and tap “We went today” to remember it here.</p>
+              <p>{t('After an outing, open the place and tap “We went today” to remember it here.')}</p>
             </div>
           )}
         </>

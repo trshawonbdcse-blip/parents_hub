@@ -26,10 +26,12 @@ import {
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, CATEGORY_LABEL, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, placeById } from '../lib/places'
+import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, placeById } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
+import { translate as tr, useT } from '../lib/i18n'
+import { placeText } from '../lib/placeText'
 
 const NO_VISITS: Visit[] = []
 
@@ -42,20 +44,21 @@ const FACILITIES: { key: keyof Facilities; label: string; Icon: LucideIcon }[] =
   { key: 'parking', label: 'Parking', Icon: Car },
 ]
 
-const euro = (n: number | null) => (n === null ? '—' : n === 0 ? 'Free' : `€${Number.isInteger(n) ? n : n.toFixed(2)}`)
+const euro = (n: number | null) => (n === null ? '—' : n === 0 ? tr('Free') : `€${Number.isInteger(n) ? n : n.toFixed(2)}`)
 const telHref = (phone: string) => `tel:${phone.replace(/[^\d+]/g, '')}`
 
 function parkingSummary(p: Place): { title: string; tone: 'good' | 'neutral' | 'bad' } | null {
   const info = p.parkingInfo
   if (!info || info.available === null) return null
-  if (!info.available) return { title: 'No parking on site', tone: 'bad' }
-  if (info.cost === 'free') return { title: 'Free parking', tone: 'good' }
-  if (info.cost === 'mixed') return { title: 'Free and paid parking', tone: 'good' }
-  if (info.cost === 'paid') return { title: 'Paid parking', tone: 'neutral' }
-  return { title: 'Parking available', tone: 'neutral' }
+  if (!info.available) return { title: tr('No parking on site'), tone: 'bad' }
+  if (info.cost === 'free') return { title: tr('Free parking'), tone: 'good' }
+  if (info.cost === 'mixed') return { title: tr('Free and paid parking'), tone: 'good' }
+  if (info.cost === 'paid') return { title: tr('Paid parking'), tone: 'neutral' }
+  return { title: tr('Parking available'), tone: 'neutral' }
 }
 
 export function PlaceDetail() {
+  const { t } = useT()
   const { id = '' } = useParams()
   const navigate = useNavigate()
   const place = placeById(id)
@@ -71,19 +74,20 @@ export function PlaceDetail() {
   if (!place) {
     return (
       <div className="page">
-        <p>Place not found.</p>
-        <Link to="/explore">Back to Explore</Link>
+        <p>{t('Place not found.')}</p>
+        <Link to="/explore">{t('Back to Explore')}</Link>
       </div>
     )
   }
 
+  const text = placeText(place)
   const photos = place.photos ?? []
   const fav = favorites.has(place.id)
   const myVisits = visits.filter((v) => v.placeId === place.id)
   const directions = `https://www.google.com/maps/dir/?api=1&destination=${place.lat},${place.lng}&travelmode=transit`
   const ageText =
-    place.ageMinMonths === 0 && place.ageMaxMonths >= 144 ? 'All ages' : `${formatAge(place.ageMinMonths)}–${formatAge(place.ageMaxMonths)}`
-  const duration = place.durationMinutes >= 60 ? `${Math.round((place.durationMinutes / 60) * 10) / 10} h` : `${place.durationMinutes} min`
+    place.ageMinMonths === 0 && place.ageMaxMonths >= 144 ? tr('All ages') : `${formatAge(place.ageMinMonths)}–${formatAge(place.ageMaxMonths)}`
+  const duration = place.durationMinutes >= 60 ? t('{n} h', { n: Math.round((place.durationMinutes / 60) * 10) / 10 }) : t('{n} min', { n: place.durationMinutes })
   const adult = adultPriceText(place)
   const child = childPriceText(place, months)
   const adultEst = estimatedAdultText(place)
@@ -122,17 +126,17 @@ export function PlaceDetail() {
             {photos.map((ph) => (
               <figure key={ph.src}>
                 <PlaceImage photo={ph} category={place.category} />
-                <figcaption>Photo: {ph.credit}</figcaption>
+                <figcaption>{t('Photo: {credit}', { credit: ph.credit })}</figcaption>
               </figure>
             ))}
           </div>
         ) : (
           <PlaceImage category={place.category} className="detail-fallback" />
         )}
-        <button className="float-button left" onClick={() => (history.length > 1 ? navigate(-1) : navigate('/explore'))} aria-label="Back">
+        <button className="float-button left" onClick={() => (history.length > 1 ? navigate(-1) : navigate('/explore'))} aria-label={t('Back')}>
           <ArrowLeft size={20} />
         </button>
-        <button className={`float-button right ${fav ? 'on' : ''}`} onClick={() => favorites.toggle(place.id)} aria-label={fav ? 'Remove from saved' : 'Save'}>
+        <button className={`float-button right ${fav ? 'on' : ''}`} onClick={() => favorites.toggle(place.id)} aria-label={fav ? t('Remove from saved') : t('Save')}>
           <Heart size={20} fill={fav ? 'currentColor' : 'none'} />
         </button>
         {photos.length > 1 && (
@@ -145,7 +149,7 @@ export function PlaceDetail() {
       <div className="detail-body">
         <header className="detail-header">
           <p className="overline">
-            {CATEGORY_LABEL[place.category].label} · {place.area}
+            {categoryLabel(place.category)} · {place.area}
           </p>
           <h1>{place.name}</h1>
           {place.nameLocal && place.nameLocal !== place.name && <p className="muted">{place.nameLocal}</p>}
@@ -153,19 +157,19 @@ export function PlaceDetail() {
 
         <section className="price-panel">
           <div>
-            <span>Adult</span>
+            <span>{t('Adult')}</span>
             <strong className={adult === null && adultEst ? 'estimate' : ''}>{adult ?? adultEst ?? '—'}</strong>
           </div>
           <div>
-            <span>Child{months !== null ? ` · ${formatAge(months)}` : ''}</span>
+            <span>{t('Child')}{months !== null ? ` · ${formatAge(months)}` : ''}</span>
             <strong className={child === null && childEst ? 'estimate' : ''}>{child ?? childEst ?? '—'}</strong>
           </div>
           {(adult === null || child === null) && (
             <p className="price-warning">
               {(adult === null && adultEst) || (child === null && childEst)
-                ? '≈ is a typical price for similar places in Tallinn, not this place’s official price. '
-                : 'Price not published. '}
-              {place.phone ? <a href={telHref(place.phone)}>Call to confirm</a> : 'Confirm at the entrance.'}
+                ? t('≈ is a typical price for similar places in Tallinn, not this place’s official price.') + ' '
+                : t('Price not published.') + ' '}
+              {place.phone ? <a href={telHref(place.phone)}>{t('Call to confirm')}</a> : t('Confirm at the entrance.')}
             </p>
           )}
         </section>
@@ -174,33 +178,33 @@ export function PlaceDetail() {
           <div>
             <Baby size={18} />
             <span>{ageText}</span>
-            {months !== null && !fitsAge(place, months) && <small className="warn">Not ideal for your child</small>}
+            {months !== null && !fitsAge(place, months) && <small className="warn">{t('Not ideal for your child')}</small>}
           </div>
           <div>
             <Timer size={18} />
-            <span>About {duration}</span>
+            <span>{t('About {d}', { d: duration })}</span>
           </div>
           <div>
             <MapPin size={18} />
-            <span>{place.setting === 'indoor' ? 'Indoor' : place.setting === 'outdoor' ? 'Outdoor' : 'Indoor & outdoor'}</span>
+            <span>{t(place.setting === 'indoor' ? 'Indoor' : place.setting === 'outdoor' ? 'Outdoor' : 'Indoor & outdoor')}</span>
           </div>
           <div>
             <Car size={18} />
-            <span>{parking?.title ?? 'Parking unknown'}</span>
+            <span>{parking?.title ?? t('Parking unknown')}</span>
           </div>
         </div>
 
-        <p className="lead">{place.description}</p>
+        <p className="lead">{text.description}</p>
 
-        {place.tips && (
+        {text.tips && (
           <aside className="callout">
             <Lightbulb size={18} />
-            <p>{place.tips}</p>
+            <p>{text.tips}</p>
           </aside>
         )}
 
         <section className="block">
-          <h2>Contact & location</h2>
+          <h2>{t('Contact & location')}</h2>
           <ul className="list-card">
             {place.phone && (
               <li>
@@ -208,7 +212,7 @@ export function PlaceDetail() {
                   <Phone size={18} className="row-icon" />
                   <span className="row-text">
                     <strong>{place.phone}</strong>
-                    <small>Call</small>
+                    <small>{t('Call')}</small>
                   </span>
                   <ChevronRight size={18} className="muted" />
                 </a>
@@ -220,7 +224,7 @@ export function PlaceDetail() {
                   <Mail size={18} className="row-icon" />
                   <span className="row-text">
                     <strong>{place.email}</strong>
-                    <small>Email</small>
+                    <small>{t('Email')}</small>
                   </span>
                   <ChevronRight size={18} className="muted" />
                 </a>
@@ -231,7 +235,7 @@ export function PlaceDetail() {
                 <MapPin size={18} className="row-icon" />
                 <span className="row-text">
                   <strong>{place.address}</strong>
-                  <small>{place.transport ? place.transport : 'Open in maps'}</small>
+                  <small>{place.transport ? place.transport : t('Open in maps')}</small>
                 </span>
                 <ChevronRight size={18} className="muted" />
               </a>
@@ -239,8 +243,8 @@ export function PlaceDetail() {
             <li className="row static">
               <Clock size={18} className="row-icon" />
               <span className="row-text">
-                <strong>Opening hours</strong>
-                <small>{place.hours}</small>
+                <strong>{t('Opening hours')}</strong>
+                <small>{text.hours}</small>
               </span>
             </li>
           </ul>
@@ -248,38 +252,38 @@ export function PlaceDetail() {
 
         {!place.price.free && (place.price.family !== null || place.price.note || place.price.childFreeUnderMonths !== null) && (
           <section className="block">
-            <h2>All prices</h2>
+            <h2>{t('All prices')}</h2>
             <dl className="kv">
               <div>
-                <dt>Adult</dt>
+                <dt>{t('Adult')}</dt>
                 <dd>{euro(place.price.adult)}</dd>
               </div>
               <div>
-                <dt>Child</dt>
+                <dt>{t('Child')}</dt>
                 <dd>{euro(place.price.child)}</dd>
               </div>
               {place.price.family !== null && (
                 <div>
-                  <dt>Family ticket</dt>
+                  <dt>{t('Family ticket')}</dt>
                   <dd>{euro(place.price.family)}</dd>
                 </div>
               )}
               {place.price.childFreeUnderMonths !== null && (
                 <div>
-                  <dt>Free for children under</dt>
+                  <dt>{t('Free for children under')}</dt>
                   <dd>{formatAge(place.price.childFreeUnderMonths)}</dd>
                 </div>
               )}
             </dl>
-            {place.price.note && <p className="small muted">{place.price.note}</p>}
+            {text.priceNote && <p className="small muted">{text.priceNote}</p>}
           </section>
         )}
 
-        {place.discounts.length > 0 && (
+        {text.discounts.length > 0 && (
           <section className="block">
-            <h2>Discounts & free days</h2>
+            <h2>{t('Discounts & free days')}</h2>
             <ul className="bullets">
-              {place.discounts.map((d) => (
+              {text.discounts.map((d) => (
                 <li key={d}>
                   <Tag size={16} /> {d}
                 </li>
@@ -289,7 +293,7 @@ export function PlaceDetail() {
         )}
 
         <section className="block">
-          <h2>For parents</h2>
+          <h2>{t('For parents')}</h2>
           <ul className="amenities">
             {FACILITIES.map(({ key, label, Icon }) => {
               const v = place.facilities[key]
@@ -297,7 +301,7 @@ export function PlaceDetail() {
               return (
                 <li key={key} className={v === true ? 'yes' : v === false ? 'no' : 'unknown'}>
                   <Icon size={18} />
-                  <span>{label}</span>
+                  <span>{t(label)}</span>
                   <StateIcon size={16} className="state" aria-label={v === true ? 'Yes' : v === false ? 'No' : 'Unknown'} />
                 </li>
               )
@@ -307,28 +311,28 @@ export function PlaceDetail() {
 
         {parking && (
           <section className="block">
-            <h2>Parking</h2>
+            <h2>{t('Parking')}</h2>
             <div className="list-card padded">
               <span className={`status ${parking.tone}`}>{parking.title}</span>
-              {place.parkingInfo?.operator && <p className="small">Operator: {place.parkingInfo.operator}</p>}
-              {place.parkingInfo?.zone && <p className="small">City zone: {place.parkingInfo.zone}</p>}
+              {place.parkingInfo?.operator && <p className="small">{t('Operator: {op}', { op: place.parkingInfo.operator })}</p>}
+              {place.parkingInfo?.zone && <p className="small">{t('City zone: {zone}', { zone: place.parkingInfo.zone })}</p>}
               {place.parkingInfo?.available && place.parkingInfo.cost !== 'free' && (
                 <p className="small">
                   {place.parkingInfo.pargiSupported === true
-                    ? '✓ You can pay with Pargi.ee'
+                    ? t('✓ You can pay with Pargi.ee')
                     : place.parkingInfo.pargiSupported === false
-                      ? 'Pargi.ee not supported — use the operator’s app or machine'
-                      : 'Pargi.ee support unknown'}
+                      ? t('Pargi.ee not supported — use the operator’s app or machine')
+                      : t('Pargi.ee support unknown')}
                 </p>
               )}
-              {place.parkingInfo?.note && <p className="small muted">{place.parkingInfo.note}</p>}
+              {text.parkingNote && <p className="small muted">{text.parkingNote}</p>}
             </div>
           </section>
         )}
 
         {place.transport && (
           <section className="block">
-            <h2>Public transport</h2>
+            <h2>{t('Public transport')}</h2>
             <p className="with-icon">
               <Bus size={18} /> {place.transport}
             </p>
@@ -336,20 +340,20 @@ export function PlaceDetail() {
         )}
 
         <section className="block">
-          <h2>Your notes</h2>
+          <h2>{t('Your notes')}</h2>
           <textarea
             rows={3}
-            placeholder="e.g. Go before 11 — it gets busy after."
+            placeholder={t('e.g. Go before 11 — it gets busy after.')}
             value={notes[place.id] ?? ''}
             onChange={(e) => setNote(place.id, e.target.value)}
           />
           <div className="visit-row">
-            <input type="text" placeholder="A moment to remember (optional)" value={visitNote} onChange={(e) => setVisitNote(e.target.value)} />
+            <input type="text" placeholder={t('A moment to remember (optional)')} value={visitNote} onChange={(e) => setVisitNote(e.target.value)} />
             <button className="button secondary" onClick={logVisit}>
-              We went today
+              {t('We went today')}
             </button>
           </div>
-          {logged && <p className="small ok">Saved to your moments</p>}
+          {logged && <p className="small ok">{t('Saved to your moments')}</p>}
           {myVisits.length > 0 && (
             <ul className="bullets small">
               {myVisits.map((v) => (
@@ -363,14 +367,14 @@ export function PlaceDetail() {
         </section>
 
         <footer className="verify">
-          {place.lastVerified ? `Information checked ${place.lastVerified}. ` : 'Information not yet verified. '}
-          Prices and hours can change{place.phone ? ', so call ahead if you are unsure' : ''}. Official site:{' '}
+          {place.lastVerified ? t('Information checked {date}.', { date: place.lastVerified }) + ' ' : t('Information not yet verified.') + ' '}
+          {t(place.phone ? 'Prices and hours can change, so call ahead if you are unsure.' : 'Prices and hours can change.')} {t('Official site:')}{' '}
           <a href={place.website} target="_blank" rel="noreferrer">
             {new URL(place.website).host.replace(/^www\./, '')}
           </a>
           {place.sources && place.sources.length > 0 && (
             <details>
-              <summary>Sources</summary>
+              <summary>{t('Sources')}</summary>
               <ul>
                 {place.sources.map((u) => (
                   <li key={u}>
@@ -386,20 +390,20 @@ export function PlaceDetail() {
       </div>
 
       <div className="action-bar">
-        <button className={`button icon-only ${wishlist.has(place.id) ? 'on' : ''}`} onClick={() => wishlist.toggle(place.id)} aria-label="Want to go">
+        <button className={`button icon-only ${wishlist.has(place.id) ? 'on' : ''}`} onClick={() => wishlist.toggle(place.id)} aria-label={t('Want to go')}>
           <Bookmark size={20} fill={wishlist.has(place.id) ? 'currentColor' : 'none'} />
         </button>
         {place.phone ? (
           <a className="button secondary" href={telHref(place.phone)}>
-            <Phone size={18} /> Call
+            <Phone size={18} /> {t('Call')}
           </a>
         ) : (
           <button className="button secondary" onClick={share}>
-            <Share2 size={18} /> Share
+            <Share2 size={18} /> {t('Share')}
           </button>
         )}
         <a className="button primary" href={directions} target="_blank" rel="noreferrer">
-          <Navigation size={18} /> Directions
+          <Navigation size={18} /> {t('Directions')}
         </a>
       </div>
     </div>
