@@ -107,7 +107,8 @@ export function todaysPicks(opts: {
 }): Place[] {
   const today = new Date()
   const day = today.toISOString().slice(0, 10)
-  const indoorOnly = opts.weather ? !opts.weather.goodForOutdoor : !isSummer(today)
+  const mode = opts.weather?.mode ?? (isSummer(today) ? 'outdoor' : 'indoor')
+  const indoorOnly = mode === 'indoor'
 
   return places
     .filter((p) => fitsAge(p, opts.months) && fitsSeason(p, today))
@@ -117,7 +118,9 @@ export function todaysPicks(opts: {
       if (opts.favorites.has(p.id)) score += 0.4
       if (opts.visitedRecently.has(p.id)) score -= 0.6
       if (p.price.free) score += 0.2
-      if (!indoorOnly && p.setting !== 'indoor') score += 0.3
+      if (mode === 'outdoor' && p.setting !== 'indoor') score += 0.3
+      // Chilly but dry: mostly indoor ideas, with the odd short outdoor one.
+      if (mode === 'mixed' && p.setting !== 'outdoor') score += 0.3
       return { p, score }
     })
     .sort((a, b) => b.score - a.score)
@@ -147,13 +150,67 @@ export function childPriceText(p: Place, months: number | null): string | null {
   return null
 }
 
-// One-line price for cards: both what an adult and this family's child pay.
+// One-line price for cards: what an adult and this family's child pay, with
+// typical prices (marked ≈) filling any gaps.
 export function priceSummary(place: Place, months: number | null) {
   if (place.price.free) return 'Free entry'
-  const adult = adultPriceText(place)
-  const child = childPriceText(place, months)
+  const adult = adultPriceText(place) ?? estimatedAdultText(place)
+  const child = childPriceText(place, months) ?? estimatedChildText(place, months)
   if (!adult && !child) return 'Price on request'
-  if (!adult) return `Child ${child!.toLowerCase()} · adult price on request`
-  if (!child) return `Adult ${adult} · child price on request`
-  return `Adult ${adult} · Child ${child.toLowerCase()}`
+  const fmtPart = (t: string | null) => (t === null ? '?' : t === 'Usually free' ? 'usually free' : t.replace('Free', 'free'))
+  return `Adult ${fmtPart(adult)} · Child ${fmtPart(child)}`
+}
+
+// --- Estimated prices --------------------------------------------------------
+// When a place doesn't publish a price, show what similar places in Tallinn
+// usually charge so families can still plan. Always labelled as an estimate.
+const median = (xs: number[]) => {
+  if (!xs.length) return null
+  const s = [...xs].sort((a, b) => a - b)
+  const m = Math.floor(s.length / 2)
+  return s.length % 2 ? s[m] : Math.round(((s[m - 1] + s[m]) / 2) * 2) / 2
+}
+
+// Typical Tallinn prices used when we have fewer than two real prices for a category.
+// 0 means "usually free" (e.g. a parent joining a baby class, toddlers at museums).
+const TYPICAL: Partial<Record<Category, { adult: number; child: number }>> = {
+  'indoor-play': { adult: 2, child: 10 },
+  museum: { adult: 12, child: 0 },
+  'zoo-farm': { adult: 12, child: 6 },
+  class: { adult: 0, child: 18 },
+  swimming: { adult: 20, child: 7 },
+  theatre: { adult: 13, child: 13 },
+  park: { adult: 8, child: 4 },
+  'winter-fun': { adult: 7, child: 5 },
+  library: { adult: 0, child: 0 },
+  cafe: { adult: 0, child: 0 },
+  mall: { adult: 0, child: 0 },
+}
+
+const categoryPrices = (() => {
+  const out = new Map<Category, { adult: number | null; child: number | null }>()
+  for (const cat of Object.keys(CATEGORY_LABEL) as Category[]) {
+    const paid = places.filter((p) => p.category === cat && !p.price.free)
+    const adults = paid.map((p) => p.price.adult).filter((n): n is number => n !== null && n > 0)
+    const children = paid.map((p) => p.price.child).filter((n): n is number => n !== null && n > 0)
+    out.set(cat, {
+      adult: adults.length >= 2 ? median(adults) : (TYPICAL[cat]?.adult ?? null),
+      child: children.length >= 2 ? median(children) : (TYPICAL[cat]?.child ?? null),
+    })
+  }
+  return out
+})()
+
+const estimateText = (n: number | null) => (n === null ? null : n === 0 ? 'Usually free' : `≈ ${euroText(n)}`)
+
+export function estimatedAdultText(p: Place): string | null {
+  if (adultPriceText(p) !== null) return null
+  return estimateText(categoryPrices.get(p.category)?.adult ?? null)
+}
+
+export function estimatedChildText(p: Place, months: number | null): string | null {
+  if (childPriceText(p, months) !== null) return null
+  // Museums in Tallinn are generally free for pre-school children.
+  if (p.category === 'museum' && months !== null && months >= 84) return estimateText(6)
+  return estimateText(categoryPrices.get(p.category)?.child ?? null)
 }

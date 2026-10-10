@@ -183,9 +183,13 @@ section > h2, .block > h2 { margin-bottom: 12px; }
 .weather-card { display: flex; align-items: center; gap: 14px; padding: 16px; border-radius: var(--r-md); }
 .weather-card.indoor { background: #e8eef7; color: #22406b; }
 .weather-card.outdoor { background: #fff3d9; color: #6b4a0f; }
+.weather-card.mixed { background: #eef0f2; color: #374151; }
+.weather-card { align-items: flex-start; }
+.weather-sub { font-size: 0.8rem; opacity: 0.8; }
 @media (prefers-color-scheme: dark) {
   .weather-card.indoor { background: #1b2433; color: #b8cdf0; }
   .weather-card.outdoor { background: #2e2717; color: #f2d7a0; }
+  .weather-card.mixed { background: #222a2f; color: #cfd8dc; }
 }
 .weather-icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: rgb(255 255 255 / 55%); }
 .weather-text { display: flex; flex-direction: column; gap: 2px; font-size: 0.9rem; }
@@ -265,6 +269,7 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .price-panel > div + div { border-left: 1px solid var(--line); }
 .price-panel span { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
 .price-panel strong { font-size: 1.5rem; font-weight: 800; }
+.price-panel strong.estimate { color: var(--ink-2); font-weight: 700; }
 .price-warning { grid-column: 1 / -1; padding: 10px 16px; border-top: 1px solid var(--line); background: var(--warn-soft); color: var(--warn); font-size: 0.85rem; border-radius: 0 0 var(--r-md) var(--r-md); }
 .price-warning a { color: inherit; font-weight: 700; text-decoration: underline; }
 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }

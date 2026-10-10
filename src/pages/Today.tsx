@@ -1,4 +1,4 @@
-import { ChevronRight, CloudRain, Home as HomeIcon, MapPin, PiggyBank, Sparkles, Sun, Trees, Wallet } from 'lucide-react'
+import { ChevronRight, CloudRain, CloudSun, Home as HomeIcon, MapPin, PiggyBank, Sparkles, Sun, Trees, Umbrella, Wallet } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import rawEvents from '../data/events.json'
 import { PlaceCard } from '../components/PlaceCard'
@@ -28,7 +28,7 @@ export function Today() {
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
   const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 6 })
-  const indoorDay = weather ? !weather.goodForOutdoor : !isSummer()
+  const mode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
   const tip = moneyTips.length ? moneyTips[new Date().getDate() % moneyTips.length] : null
   const now = Date.now()
   const upcoming = events
@@ -49,15 +49,26 @@ export function Today() {
         )}
       </header>
 
-      <section className={`weather-card ${indoorDay ? 'indoor' : 'outdoor'}`}>
-        <div className="weather-icon">{indoorDay ? <CloudRain size={28} /> : <Sun size={28} />}</div>
+      <section className={`weather-card ${mode}`}>
+        <div className="weather-icon">
+          {mode === 'indoor' ? <CloudRain size={28} /> : mode === 'mixed' ? <CloudSun size={28} /> : <Sun size={28} />}
+        </div>
         <div className="weather-text">
           {weather ? (
             <>
               <strong>
                 {weather.temperature}° · {weather.label}
               </strong>
-              <span>{indoorDay ? 'A good day for indoor play' : 'Nice weather for being outside'}</span>
+              <span className="weather-sub">
+                Feels like {weather.feelsLike}° · wind {weather.windSpeed} km/h · updated{' '}
+                {weather.updatedAt.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' })}
+              </span>
+              <span>{weather.advice}</span>
+              {weather.rainFrom && (
+                <span className="with-icon weather-sub">
+                  <Umbrella size={14} /> Rain likely from {weather.rainFrom}
+                </span>
+              )}
             </>
           ) : (
             <span>{error ? 'Weather unavailable right now' : 'Checking the weather…'}</span>

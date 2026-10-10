@@ -26,7 +26,7 @@ import {
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, CATEGORY_LABEL, childPriceText, fitsAge, formatAge, placeById } from '../lib/places'
+import { adultPriceText, CATEGORY_LABEL, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, placeById } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
@@ -86,6 +86,8 @@ export function PlaceDetail() {
   const duration = place.durationMinutes >= 60 ? `${Math.round((place.durationMinutes / 60) * 10) / 10} h` : `${place.durationMinutes} min`
   const adult = adultPriceText(place)
   const child = childPriceText(place, months)
+  const adultEst = estimatedAdultText(place)
+  const childEst = estimatedChildText(place, months)
   const parking = parkingSummary(place)
 
   const logVisit = () => {
@@ -147,16 +149,18 @@ export function PlaceDetail() {
         <section className="price-panel">
           <div>
             <span>Adult</span>
-            <strong>{adult ?? '—'}</strong>
+            <strong className={adult === null && adultEst ? 'estimate' : ''}>{adult ?? adultEst ?? '—'}</strong>
           </div>
           <div>
             <span>Child{months !== null ? ` · ${formatAge(months)}` : ''}</span>
-            <strong>{child ?? '—'}</strong>
+            <strong className={child === null && childEst ? 'estimate' : ''}>{child ?? childEst ?? '—'}</strong>
           </div>
           {(adult === null || child === null) && (
             <p className="price-warning">
-              Price not confirmed.{' '}
-              {place.phone ? <a href={telHref(place.phone)}>Call to check</a> : <a href={place.website} target="_blank" rel="noreferrer">Check website</a>}
+              {(adult === null && adultEst) || (child === null && childEst)
+                ? '≈ is a typical price for similar places in Tallinn, not this place’s official price. '
+                : 'Price not published. '}
+              {place.phone ? <a href={telHref(place.phone)}>Call to confirm</a> : <a href={place.website} target="_blank" rel="noreferrer">Check website</a>}
             </p>
           )}
         </section>
