@@ -1,6 +1,8 @@
+import { Bookmark, Heart, Sparkles, Trash2 } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PlaceCard } from '../components/PlaceCard'
+import { PlaceImage } from '../components/ui'
 import { placeById } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
@@ -10,6 +12,7 @@ const NO_VISITS: Visit[] = []
 type Tab = 'favorites' | 'wishlist' | 'moments'
 
 const resolve = (ids: string[]) => ids.map(placeById).filter((p): p is Place => Boolean(p))
+const dateFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'short', day: 'numeric', month: 'long' })
 
 export function Saved() {
   const [tab, setTab] = useState<Tab>('favorites')
@@ -21,67 +24,86 @@ export function Saved() {
   const thisMonth = new Date().toISOString().slice(0, 7)
   const monthVisits = visits.filter((v) => v.date.startsWith(thisMonth))
   const monthPlaces = new Set(monthVisits.map((v) => v.placeId))
+  const list = tab === 'favorites' ? favorites.ids : wishlist.ids
 
   return (
     <div className="page">
-      <header className="page-header">
-        <h1>Saved</h1>
-      </header>
+      <h1 className="page-title">Saved</h1>
 
-      <div className="tabs" role="tablist">
+      <div className="segmented wide" role="tablist">
         {(
           [
-            ['favorites', `♥ Favorites (${favorites.ids.length})`],
-            ['wishlist', `Want to go (${wishlist.ids.length})`],
-            ['moments', `Moments (${visits.length})`],
+            ['favorites', 'Favourites', favorites.ids.length],
+            ['wishlist', 'Want to go', wishlist.ids.length],
+            ['moments', 'Moments', visits.length],
           ] as const
-        ).map(([key, label]) => (
+        ).map(([key, label, n]) => (
           <button key={key} role="tab" aria-selected={tab === key} className={tab === key ? 'on' : ''} onClick={() => setTab(key)}>
-            {label}
+            {label} <span className="count">{n}</span>
           </button>
         ))}
       </div>
 
       {tab !== 'moments' && (
-        <div className="stack">
-          {resolve(tab === 'favorites' ? favorites.ids : wishlist.ids).map((p) => (
-            <PlaceCard key={p.id} place={p} months={months} />
-          ))}
-          {(tab === 'favorites' ? favorites.ids : wishlist.ids).length === 0 && (
-            <p className="muted">
-              Nothing here yet. <Link to="/explore">Explore places</Link> and tap ♡ or “Want to go”.
-            </p>
+        <>
+          <div className="card-grid">
+            {resolve(list).map((p) => (
+              <PlaceCard key={p.id} place={p} months={months} />
+            ))}
+          </div>
+          {list.length === 0 && (
+            <div className="empty">
+              {tab === 'favorites' ? <Heart size={32} /> : <Bookmark size={32} />}
+              <p>{tab === 'favorites' ? 'Tap the heart on any place to keep it here.' : 'Tap the bookmark on a place you want to try.'}</p>
+              <Link to="/explore" className="button primary">
+                Explore places
+              </Link>
+            </div>
           )}
-        </div>
+        </>
       )}
 
       {tab === 'moments' && (
         <>
-          <section className="card summary">
-            <p className="eyebrow">This month</p>
-            <strong className="big">{monthVisits.length}</strong> outings ·{' '}
-            <strong className="big">{monthPlaces.size}</strong> places
+          <section className="stats">
+            <div>
+              <strong>{monthVisits.length}</strong>
+              <span>outings this month</span>
+            </div>
+            <div>
+              <strong>{monthPlaces.size}</strong>
+              <span>different places</span>
+            </div>
           </section>
-          <ul className="timeline">
+          <ul className="moments">
             {visits.map((v) => {
               const p = placeById(v.placeId)
               return (
                 <li key={v.id}>
-                  <span className="small muted">{v.date}</span>
-                  <Link to={`/place/${v.placeId}`}>{p?.name ?? 'Unknown place'}</Link>
-                  {v.note && <p className="small">“{v.note}”</p>}
+                  <Link to={`/place/${v.placeId}`} className="moment-media">
+                    {p && <PlaceImage photo={p.photos?.[0]} category={p.category} />}
+                  </Link>
+                  <div className="moment-text">
+                    <small>{dateFmt.format(new Date(v.date))}</small>
+                    <strong>{p?.name ?? 'Unknown place'}</strong>
+                    {v.note && <p>“{v.note}”</p>}
+                  </div>
                   <button
-                    className="link-btn small"
+                    className="icon-button plain"
+                    aria-label="Delete moment"
                     onClick={() => confirm('Delete this moment?') && setVisits(visits.filter((x) => x.id !== v.id))}
                   >
-                    Delete
+                    <Trash2 size={18} />
                   </button>
                 </li>
               )
             })}
           </ul>
           {visits.length === 0 && (
-            <p className="muted">After an outing, open the place and tap “Save today's visit” to remember it here.</p>
+            <div className="empty">
+              <Sparkles size={32} />
+              <p>After an outing, open the place and tap “We went today” to remember it here.</p>
+            </div>
           )}
         </>
       )}

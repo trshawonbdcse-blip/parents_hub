@@ -8,6 +8,12 @@ import { PlaceDetail } from './pages/PlaceDetail'
 import { Saved } from './pages/Saved'
 import { Today } from './pages/Today'
 
+// Place pages have their own bottom action bar, so the tab bar is hidden there.
+function Nav() {
+  const { pathname } = useLocation()
+  return pathname.startsWith('/place/') ? null : <BottomNav />
+}
+
 function ScrollToTop() {
   const { pathname } = useLocation()
   // Block body on purpose: some browser extensions make scrollTo return a value,
@@ -34,7 +40,7 @@ export default function App() {
           <Route path="*" element={<Today />} />
         </Routes>
       </main>
-      <BottomNav />
+      <Nav />
     </HashRouter>
   )
 }

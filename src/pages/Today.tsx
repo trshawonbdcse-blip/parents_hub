@@ -1,12 +1,17 @@
+import { ChevronRight, CloudRain, Home as HomeIcon, MapPin, PiggyBank, Sparkles, Sun, Trees, Wallet } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import rawEvents from '../data/events.json'
 import { PlaceCard } from '../components/PlaceCard'
 import { formatAge, isSummer, moneyTips, todaysPicks } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather } from '../lib/weather'
-import type { Visit } from '../types'
+import type { KidEvent, Visit } from '../types'
 
 const NO_VISITS: Visit[] = []
+const events = (rawEvents as { events: KidEvent[] }).events
+const weekdayFmt = new Intl.DateTimeFormat('en-GB', { weekday: 'short', timeZone: 'Europe/Tallinn' })
+const dayNumFmt = new Intl.DateTimeFormat('en-GB', { day: 'numeric', timeZone: 'Europe/Tallinn' })
 
 function greeting(hour: number) {
   if (hour < 12) return 'Good morning'
@@ -22,95 +27,122 @@ export function Today() {
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
-  const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids) })
+  const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 6 })
   const indoorDay = weather ? !weather.goodForOutdoor : !isSummer()
   const tip = moneyTips.length ? moneyTips[new Date().getDate() % moneyTips.length] : null
+  const now = Date.now()
+  const upcoming = events
+    .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now)
+    .slice(0, 3)
 
   return (
     <div className="page">
-      <header className="page-header">
-        <p className="muted">{greeting(new Date().getHours())} 👋</p>
-        <h1>
-          What shall we do today{name ? ` with ${name}` : ''}?
-        </h1>
+      <header className="hero-header">
+        <p className="muted">{greeting(new Date().getHours())}</p>
+        <h1>What shall we do today{name ? ` with ${name}` : ''}?</h1>
         {months !== null ? (
-          <p className="muted small">Showing places for {formatAge(months)} old</p>
+          <span className="chip-static">Ideas for {formatAge(months)}</span>
         ) : (
-          <Link to="/me" className="banner">
-            👶 Add your child's birthday to get age-matched ideas →
+          <Link to="/me" className="inline-cta">
+            Add your child's age for better ideas <ChevronRight size={16} />
           </Link>
         )}
       </header>
 
-      <section className="card weather">
-        {weather ? (
-          <>
-            <span className="weather-emoji" aria-hidden="true">
-              {weather.emoji}
-            </span>
-            <div>
+      <section className={`weather-card ${indoorDay ? 'indoor' : 'outdoor'}`}>
+        <div className="weather-icon">{indoorDay ? <CloudRain size={28} /> : <Sun size={28} />}</div>
+        <div className="weather-text">
+          {weather ? (
+            <>
               <strong>
-                {weather.temperature}°C · {weather.label}
+                {weather.temperature}° · {weather.label}
               </strong>
-              <p className="small muted">
-                Tallinn now · wind {weather.windSpeed} km/h
-              </p>
-              <p className="small">
-                {indoorDay ? '🏠 Better an indoor day today.' : '🌤️ Nice enough to be outside!'}
-              </p>
-            </div>
-          </>
-        ) : (
-          <p className="muted small">{error ? 'Weather unavailable right now.' : 'Checking the weather…'}</p>
-        )}
+              <span>{indoorDay ? 'A good day for indoor play' : 'Nice weather for being outside'}</span>
+            </>
+          ) : (
+            <span>{error ? 'Weather unavailable right now' : 'Checking the weather…'}</span>
+          )}
+        </div>
       </section>
 
       <section>
         <div className="section-head">
           <h2>Today's ideas</h2>
-          <Link to="/explore" className="small">
-            See all
+          <Link to="/explore" className="link-more">
+            See all <ChevronRight size={16} />
           </Link>
         </div>
-        {picks.length ? (
-          <div className="stack">
-            {picks.map((p) => (
-              <PlaceCard key={p.id} place={p} months={months} />
-            ))}
-          </div>
-        ) : (
-          <p className="muted">No matching places yet.</p>
-        )}
+        <div className="carousel">
+          {picks.map((p) => (
+            <PlaceCard key={p.id} place={p} months={months} variant="narrow" />
+          ))}
+        </div>
       </section>
 
       <section>
-        <h2>Quick find</h2>
+        <h2>Browse</h2>
         <div className="quick-grid">
           <Link to="/explore?free=1" className="quick">
-            🆓<span>Free</span>
+            <Wallet size={22} />
+            <span>Free</span>
           </Link>
           <Link to="/explore?setting=indoor" className="quick">
-            🏠<span>Indoor</span>
-          </Link>
-          <Link to="/explore?sort=near" className="quick">
-            📍<span>Near me</span>
+            <HomeIcon size={22} />
+            <span>Indoor</span>
           </Link>
           <Link to="/explore?setting=outdoor" className="quick">
-            🌳<span>Outdoor</span>
+            <Trees size={22} />
+            <span>Outdoor</span>
+          </Link>
+          <Link to="/explore?sort=near" className="quick">
+            <MapPin size={22} />
+            <span>Near me</span>
           </Link>
         </div>
       </section>
 
-      {tip && (
-        <section className="card tip">
-          <p className="eyebrow">💰 Money tip</p>
-          <strong>{tip.title}</strong>
-          <p className="small">{tip.detail}</p>
-          <a href={tip.source} target="_blank" rel="noreferrer" className="small">
-            Source ↗
-          </a>
+      {upcoming.length > 0 && (
+        <section>
+          <div className="section-head">
+            <h2>Coming up</h2>
+            <Link to="/events" className="link-more">
+              All events <ChevronRight size={16} />
+            </Link>
+          </div>
+          <ul className="list-card">
+            {upcoming.map((e) => (
+              <li key={e.id}>
+                <a href={e.url} target="_blank" rel="noreferrer" className="row">
+                  <span className="date-badge">
+                    <small>{weekdayFmt.format(new Date(e.start))}</small>
+                    <strong>{dayNumFmt.format(new Date(e.start))}</strong>
+                  </span>
+                  <span className="row-text">
+                    <strong>{e.title}</strong>
+                    <small>{e.venue ?? e.source}</small>
+                  </span>
+                  <ChevronRight size={18} className="muted" />
+                </a>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
+
+      {tip && (
+        <section className="tip-card">
+          <PiggyBank size={22} />
+          <div>
+            <p className="overline">Money tip</p>
+            <strong>{tip.title}</strong>
+            <p className="small">{tip.detail}</p>
+          </div>
+        </section>
+      )}
+
+      <p className="footnote">
+        <Sparkles size={14} /> Picks change daily and follow the weather.
+      </p>
     </div>
   )
 }

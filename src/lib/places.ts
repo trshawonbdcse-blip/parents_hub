@@ -146,3 +146,14 @@ export function childPriceText(p: Place, months: number | null): string | null {
   if (price.childFreeUnderMonths !== null && months === null) return `Free under ${formatAge(price.childFreeUnderMonths)}`
   return null
 }
+
+// One-line price for cards: both what an adult and this family's child pay.
+export function priceSummary(place: Place, months: number | null) {
+  if (place.price.free) return 'Free entry'
+  const adult = adultPriceText(place)
+  const child = childPriceText(place, months)
+  if (!adult && !child) return 'Price on request'
+  if (!adult) return `Child ${child!.toLowerCase()} · adult price on request`
+  if (!child) return `Adult ${adult} · child price on request`
+  return `Adult ${adult} · Child ${child.toLowerCase()}`
+}

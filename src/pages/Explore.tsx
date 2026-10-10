@@ -1,6 +1,8 @@
+import { LayoutGrid, Search, SlidersHorizontal, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { PlaceCard } from '../components/PlaceCard'
+import { CATEGORY_ICON } from '../components/ui'
 import { CATEGORY_LABEL, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking, places } from '../lib/places'
 import { useChild } from '../lib/useChild'
 import type { Category } from '../types'
@@ -12,6 +14,7 @@ export function Explore() {
   const { months } = useChild()
   const [coords, setCoords] = useState<Coords | null>(null)
   const [locError, setLocError] = useState<string | null>(null)
+  const [sheetOpen, setSheetOpen] = useState(false)
 
   const q = params.get('q') ?? ''
   const setting = params.get('setting') ?? 'any'
@@ -36,13 +39,14 @@ export function Explore() {
     if (!('geolocation' in navigator)) return
     navigator.geolocation.getCurrentPosition(
       (pos) => setCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-      () => setLocError('Location not available — showing by name.'),
+      () => setLocError('Location not available — sorted by name.'),
       { maximumAge: 300000, timeout: 10000 },
     )
   }, [wantNear, coords])
 
   const areas = useMemo(() => [...new Set(places.map((p) => p.area))].sort(), [])
   const categories = useMemo(() => [...new Set(places.map((p) => p.category))], [])
+  const sheetFilters = [area !== 'any', parking !== 'any', !ageOnly, !seasonOnly].filter(Boolean).length
 
   const results = places
     .filter((p) => {
@@ -63,85 +67,155 @@ export function Explore() {
     .map((p) => ({ p, d: coords ? distanceKm(coords.lat, coords.lng, p.lat, p.lng) : null }))
     .sort((a, b) => (wantNear && a.d !== null && b.d !== null ? a.d - b.d : a.p.name.localeCompare(b.p.name)))
 
+  const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
+
   return (
     <div className="page">
-      <header className="page-header">
-        <h1>Explore</h1>
-        <input
-          type="search"
-          className="search"
-          placeholder="Search places…"
-          value={q}
-          onChange={(e) => update('q', e.target.value || null)}
-        />
-      </header>
-
-      <div className="chips" role="group" aria-label="Filters">
-        {(['any', 'indoor', 'outdoor'] as const).map((s) => (
-          <button
-            key={s}
-            className={`chip ${setting === s ? 'on' : ''}`}
-            onClick={() => update('setting', s === 'any' ? null : s)}
-          >
-            {s === 'any' ? 'All' : s === 'indoor' ? '🏠 Indoor' : '🌤️ Outdoor'}
-          </button>
-        ))}
-        <button className={`chip ${free ? 'on' : ''}`} onClick={() => update('free', free ? null : '1')}>
-          🆓 Free
-        </button>
-        <button className={`chip ${wantNear ? 'on' : ''}`} onClick={() => update('sort', wantNear ? null : 'near')}>
-          📍 Near me
-        </button>
-      </div>
-
-      <div className="filter-row">
-        <select value={category} onChange={(e) => update('cat', e.target.value === 'any' ? null : e.target.value)}>
-          <option value="any">All types</option>
-          {categories.map((c) => (
-            <option key={c} value={c}>
-              {CATEGORY_LABEL[c].emoji} {CATEGORY_LABEL[c].label}
-            </option>
-          ))}
-        </select>
-        <select value={area} onChange={(e) => update('area', e.target.value === 'any' ? null : e.target.value)}>
-          <option value="any">All areas</option>
-          {areas.map((a) => (
-            <option key={a} value={a}>
-              {a}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <select value={parking} onChange={(e) => update('parking', e.target.value === 'any' ? null : e.target.value)}>
-        <option value="any">🅿️ Any parking</option>
-        <option value="yes">🅿️ Has parking</option>
-        <option value="free">🅿️ Free parking</option>
-        <option value="pargi">🅿️ Pay with Pargi.ee</option>
-      </select>
-
-      <div className="toggles small">
-        {months !== null && (
-          <label>
-            <input type="checkbox" checked={ageOnly} onChange={() => update('age', ageOnly ? '0' : null)} /> Right
-            age only
+      <div className="sticky-top">
+        <h1 className="page-title">Explore</h1>
+        <div className="search-row">
+          <label className="search-field">
+            <Search size={18} aria-hidden="true" />
+            <input
+              type="search"
+              placeholder="Search places in Tallinn"
+              value={q}
+              onChange={(e) => update('q', e.target.value || null)}
+            />
           </label>
-        )}
-        <label>
-          <input type="checkbox" checked={seasonOnly} onChange={() => update('season', seasonOnly ? '0' : null)} />{' '}
-          Open this season
-        </label>
+          <button className="icon-button" onClick={() => setSheetOpen(true)} aria-label="More filters">
+            <SlidersHorizontal size={20} />
+            {sheetFilters > 0 && <span className="dot-count">{sheetFilters}</span>}
+          </button>
+        </div>
+
+        <div className="chip-row" role="group" aria-label="Quick filters">
+          <button className={`chip ${free ? 'on' : ''}`} onClick={() => toggle('free', free)}>
+            Free
+          </button>
+          <button className={`chip ${setting === 'indoor' ? 'on' : ''}`} onClick={() => update('setting', setting === 'indoor' ? null : 'indoor')}>
+            Indoor
+          </button>
+          <button className={`chip ${setting === 'outdoor' ? 'on' : ''}`} onClick={() => update('setting', setting === 'outdoor' ? null : 'outdoor')}>
+            Outdoor
+          </button>
+          <button className={`chip ${wantNear ? 'on' : ''}`} onClick={() => update('sort', wantNear ? null : 'near')}>
+            Near me
+          </button>
+          <button className={`chip ${parking === 'free' ? 'on' : ''}`} onClick={() => update('parking', parking === 'free' ? null : 'free')}>
+            Free parking
+          </button>
+        </div>
       </div>
 
-      {(locError || !('geolocation' in navigator)) && wantNear && !coords && <p className="small muted">{locError ?? 'Location not available — showing by name.'}</p>}
-      <p className="small muted">{results.length} places</p>
+      <div className="category-row" role="group" aria-label="Type of place">
+        <button className={`category ${category === 'any' ? 'on' : ''}`} onClick={() => update('cat', null)}>
+          <span className="category-icon">
+            <LayoutGrid size={20} />
+          </span>
+          All
+        </button>
+        {categories.map((c) => {
+          const Icon = CATEGORY_ICON[c]
+          return (
+            <button key={c} className={`category ${category === c ? 'on' : ''}`} onClick={() => update('cat', category === c ? null : c)}>
+              <span className="category-icon">
+                <Icon size={20} />
+              </span>
+              {CATEGORY_LABEL[c].label}
+            </button>
+          )
+        })}
+      </div>
 
-      <div className="stack">
+      <p className="result-count">
+        {results.length} {results.length === 1 ? 'place' : 'places'}
+        {locError && wantNear && !coords ? ` · ${locError}` : ''}
+      </p>
+
+      <div className="card-grid">
         {results.map(({ p, d }) => (
           <PlaceCard key={p.id} place={p} months={months} distance={d} />
         ))}
       </div>
-      {!results.length && <p className="muted">Nothing matches. Try removing a filter.</p>}
+      {!results.length && (
+        <div className="empty">
+          <p>No places match these filters.</p>
+          <button className="button secondary" onClick={() => setParams(new URLSearchParams(), { replace: true })}>
+            Clear all filters
+          </button>
+        </div>
+      )}
+
+      {sheetOpen && (
+        <div className="sheet-backdrop" onClick={() => setSheetOpen(false)}>
+          <div className="sheet" role="dialog" aria-label="Filters" onClick={(e) => e.stopPropagation()}>
+            <div className="sheet-head">
+              <h2>Filters</h2>
+              <button className="icon-button plain" onClick={() => setSheetOpen(false)} aria-label="Close">
+                <X size={20} />
+              </button>
+            </div>
+
+            <div className="field">
+              <span className="field-label">Area</span>
+              <select value={area} onChange={(e) => update('area', e.target.value === 'any' ? null : e.target.value)}>
+                <option value="any">All areas</option>
+                {areas.map((a) => (
+                  <option key={a} value={a}>
+                    {a}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="field">
+              <span className="field-label">Parking</span>
+              <div className="segmented">
+                {(
+                  [
+                    ['any', 'Any'],
+                    ['yes', 'Has parking'],
+                    ['free', 'Free'],
+                    ['pargi', 'Pargi.ee'],
+                  ] as const
+                ).map(([v, label]) => (
+                  <button key={v} className={parking === v ? 'on' : ''} onClick={() => update('parking', v === 'any' ? null : v)}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {months !== null && (
+              <label className="switch-row">
+                <span>Only places for my child's age</span>
+                <input type="checkbox" role="switch" checked={ageOnly} onChange={() => update('age', ageOnly ? '0' : null)} />
+              </label>
+            )}
+            <label className="switch-row">
+              <span>Only places open this season</span>
+              <input type="checkbox" role="switch" checked={seasonOnly} onChange={() => update('season', seasonOnly ? '0' : null)} />
+            </label>
+
+            <div className="sheet-actions">
+              <button
+                className="button secondary"
+                onClick={() => {
+                  const next = new URLSearchParams(params)
+                  ;['area', 'parking', 'age', 'season'].forEach((k) => next.delete(k))
+                  setParams(next, { replace: true })
+                }}
+              >
+                Reset
+              </button>
+              <button className="button primary" onClick={() => setSheetOpen(false)}>
+                Show {results.length} places
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
