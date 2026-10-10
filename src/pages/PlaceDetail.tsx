@@ -16,7 +16,7 @@ const FACILITY_LABELS: { key: keyof Facilities; label: string; icon: string }[] 
   { key: 'parking', label: 'Parking', icon: '🅿️' },
 ]
 
-const euro = (n: number | null) => (n === null ? '—' : `€${Number.isInteger(n) ? n : n.toFixed(2)}`)
+const euro = (n: number | null) => (n === null ? '—' : n === 0 ? 'Free' : `€${Number.isInteger(n) ? n : n.toFixed(2)}`)
 
 export function PlaceDetail() {
   const { id = '' } = useParams()
@@ -222,6 +222,7 @@ export function PlaceDetail() {
 
       <footer className="verify small muted">
         {place.lastVerified ? `Info last checked ${place.lastVerified}. ` : 'Info not yet verified. '}
+        {place.confidence === 'low' && 'Some details may be incomplete. '}
         Prices and hours can change —{' '}
         <a href={place.website} target="_blank" rel="noreferrer">
           check the official website ↗

@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "title": "Tallinn residents ride public transport free",
+    "detail": "People registered as Tallinn residents travel free on city buses, trams and trolleybuses with a personalised card (Ühiskaart) and must validate it each time they board. Visitors and non-residents pay.",
+    "source": "https://www.tallinn.ee/en/mobility/public-transport",
+    "confidence": "high"
+  },
+  {
+    "title": "Under-7s ride free, no document needed",
+    "detail": "Pre-school children (under 7) travel free on Tallinn city public transport, and they don't need a document.",
+    "source": "https://www.tallinn.ee/en/pilet/right-free-travel-and-documents-evidencing-right",
+    "confidence": "high"
+  },
+  {
+    "title": "The adult travelling with a child under 3 rides free too",
+    "detail": "Under Tallinn's free-travel rules, a passenger travelling with a child under 3 rides free, with no document required. This applies whether or not the adult is a resident. No separate rule about prams was found; the free ride depends on the child's age.",
+    "source": "https://www.tallinn.ee/en/pilet/right-free-travel-and-documents-evidencing-right",
+    "confidence": "medium"
+  },
+  {
+    "title": "Free Museum Sunday at Tallinn city museums",
+    "detail": "On the first Sunday of every month, entry is free at Tallinn City Museum branches, including Children's Museum Miiamilla. Every visitor, including babies, needs a free ticket booked in advance, and bookings open about a month ahead. The next dates are 1 November and 6 December 2026.",
+    "source": "https://www.linnamuuseum.ee/en/tallinna-linnamuuseum/museum-sundays/",
+    "confidence": "high"
+  },
+  {
+    "title": "City museums are free for under-6s",
+    "detail": "Tallinn City Museum branches are free for children under 6. Miiamilla is the exception, where only the youngest children are free: under 2 per its ticket page, under 3 per the main museum page.",
+    "source": "https://linnamuuseum.ee/en/tallinna-linnamuuseum/for-visitors/",
+    "confidence": "high"
+  },
+  {
+    "title": "Tallinn Zoo: pre-school children free",
+    "detail": "Pre-school children enter Tallinn Zoo free with the adult who bought the ticket. The family ticket (2 adults + children up to 19) is EUR 28 in winter and EUR 38 in summer, EUR 1 less online.",
+    "source": "https://tallinnzoo.ee/en/buy-e-ticket/ticket-information/",
+    "confidence": "high"
+  },
+  {
+    "title": "Tallinn Zoo Children's Saturdays",
+    "detail": "The zoo has held free entry for everyone up to 19 on the second Saturday of the month from November to early April. The dates on the page are from past seasons, so check before going.",
+    "source": "https://tallinnzoo.ee/en/childrens-saturday-with-free-entry/",
+    "confidence": "medium"
+  },
+  {
+    "title": "Seaplane Harbour free for young children",
+    "detail": "Children up to 8 get into Seaplane Harbour free. The 2026 combined family ticket is EUR 40.",
+    "source": "https://meremuuseum.ee/lennusadam/en/visitor-information/tickets/",
+    "confidence": "high"
+  },
+  {
+    "title": "Open Air Museum free under 8 and combo with Zoo",
+    "detail": "Children up to 8 enter the Estonian Open Air Museum free. A combined family ticket with Tallinn Zoo costs EUR 40 in winter and EUR 55 in summer.",
+    "source": "https://evm.ee/visitors/ticket-information",
+    "confidence": "high"
+  },
+  {
+    "title": "Tallinn Card covers two young children",
+    "detail": "Each adult Tallinn Card lets two children under 7 into the included museums and sights free. It's mainly worth it for visitors; residents already ride transport free.",
+    "source": "https://visittallinn.ee/eng/visitor/tallinn-card/tallinn-card/what-is-tallinn-card",
+    "confidence": "medium"
+  },
+  {
+    "title": "Estonian Family Card (Perekaart) for larger families",
+    "detail": "The Family Card for Estonian families with 3 or more children gives discounts at hundreds of businesses. For example, Tallinn Zoo gives a family-card price and the Botanic Garden lists EUR 9 for Family Card holders.",
+    "source": "https://botaanikaaed.ee/en/tickets/",
+    "confidence": "medium"
+  },
+  {
+    "title": "Free library card for children up to 7",
+    "detail": "Tallinn Central Library's 'Lugejaks sündinud' (Born to Be a Reader) programme gives children up to 7 a free reader's card. The Südalinna and Liivalaia branches have parent-and-baby rooms for feeding and changing.",
+    "source": "https://keskraamatukogu.ee/lasteleht/lugejakssundinud/",
+    "confidence": "high"
+  },
+  {
+    "title": "Family tickets usually cover children up to 19",
+    "detail": "At the Zoo, Miiamilla, the Botanic Garden and the Open Air Museum, one family ticket covers up to 2 adults plus children up to 19. That is usually cheaper than two adult tickets once older siblings come along.",
+    "source": "https://linnamuuseum.ee/en/childrens-museum-miiamilla/visitor-info-mm",
+    "confidence": "high"
+  },
+  {
+    "title": "Free stroller hire and parking at Ülemiste",
+    "detail": "Ülemiste Centre lends single and twin strollers free and gives 5 hours of free parking.",
+    "source": "https://www.ulemiste.ee/en/",
+    "confidence": "medium"
+  },
+  {
+    "title": "Museum Card for frequent museum-goers",
+    "detail": "The Estonian Museum Card is a personal digital pass for unlimited visits to participating museums (for example Kumu). Many museums are free for children under 8 anyway, so usually only the adults need one.",
+    "source": "https://muuseumikaart.ee/en/mis-on-muuseumikaart/",
+    "confidence": "medium"
+  },
+  {
+    "title": "Pre-school children ride Elron trains free",
+    "detail": "Pre-school children travel free on Elron's national trains, which is useful for day trips out of Tallinn.",
+    "source": "https://www.err.ee/1609508404/tallinna-ja-harjumaa-uhise-bussi-ja-rongipiletiga-valitseb-segadus",
+    "confidence": "medium"
+  }
+]

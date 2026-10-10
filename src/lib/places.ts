@@ -51,10 +51,10 @@ export function priceLabel(p: Place, months: number | null): string {
   if (price.free) return 'Free'
   const childFree =
     months !== null && price.childFreeUnderMonths !== null && months < price.childFreeUnderMonths
-  if (price.adult !== null) {
+  if (price.adult !== null && price.adult > 0) {
     return childFree ? `€${fmt(price.adult)} adult · child free` : `from €${fmt(price.adult)}`
   }
-  if (price.child !== null) return childFree ? 'Child free' : `€${fmt(price.child)} child`
+  if (price.child !== null) return childFree || price.child === 0 ? 'Child free' : `€${fmt(price.child)} child`
   return 'Paid · check price'
 }
 
