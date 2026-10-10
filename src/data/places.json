@@ -65,6 +65,16 @@
         "src": "https://tallinnzoo.ee/wp-content/uploads/2024/08/tiiger-Danuta-vihmametsapoolses-aedikus_foto-Inari-Leiman-1024x683.jpg",
         "credit": "tallinnzoo.ee",
         "page": "https://tallinnzoo.ee/en/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Tallinna-loomaaed-deer.jpg/960px-Tallinna-loomaaed-deer.jpg",
+        "credit": "Geonarva · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna-loomaaed-deer.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Tallinna_loomaaed.jpg/960px-Tallinna_loomaaed.jpg",
+        "credit": "Geonarva · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_loomaaed.jpg"
       }
     ]
   },
@@ -187,6 +197,13 @@
     "sources": [
       "https://visitestonia.com/en/lastemuuseum-miiamilla",
       "https://kumu.ekm.ee/en/getting-here/"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Lastemuuseum_Miiamilla.jpg/960px-Lastemuuseum_Miiamilla.jpg",
+        "credit": "Meemareti · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lastemuuseum_Miiamilla.jpg"
+      }
     ]
   },
   {
@@ -248,7 +265,29 @@
       "https://www.campercontact.com/en/estonia/harju-county/tallinn/78959/parking-lennusadam.md"
     ],
     "phone": "+372 641 1408",
-    "email": "info@meremuuseum.ee"
+    "email": "info@meremuuseum.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/EML_Lembit_-_Estonian_Submarine_-_Lennusadam_%2853869688831%29.jpg/960px-EML_Lembit_-_Estonian_Submarine_-_Lennusadam_%2853869688831%29.jpg",
+        "credit": "Tony Webster · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:EML_Lembit_-_Estonian_Submarine_-_Lennusadam_(53869688831).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Viimsi_Bus_528_AGV_Lennusadam_Tallinn_12_July_2013.JPG/960px-Viimsi_Bus_528_AGV_Lennusadam_Tallinn_12_July_2013.JPG",
+        "credit": "Pjotr Mahhonin · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Viimsi_Bus_528_AGV_Lennusadam_Tallinn_12_July_2013.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Crocodilia_taxidermy_Lennusadam.jpg/960px-Crocodilia_taxidermy_Lennusadam.jpg",
+        "credit": "Gert7 · CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Crocodilia_taxidermy_Lennusadam.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/MB_Truck_on_the_Quay_A_in_Lennusadam_Tallinn_2_July_2013.JPG/960px-MB_Truck_on_the_Quay_A_in_Lennusadam_Tallinn_2_July_2013.JPG",
+        "credit": "Pjotr Mahhonin · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:MB_Truck_on_the_Quay_A_in_Lennusadam_Tallinn_2_July_2013.JPG"
+      }
+    ]
   },
   {
     "id": "kumu-art-museum",
@@ -311,6 +350,21 @@
         "src": "https://kumu.ekm.ee/wp-content/uploads/sites/2/2021/08/DJI_0030-scaled3.jpg",
         "credit": "kumu.ekm.ee",
         "page": "https://kumu.ekm.ee/en/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287643108702%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287643108702%29.jpg",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7643108702).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637594938%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637594938%29.jpg",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7637594938).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637588430%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637588430%29.jpg",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7637588430).jpg"
       }
     ]
   },
@@ -369,6 +423,28 @@
       "https://www.kadriorustaadion.ee/?id=1421",
       "https://autlo.com/ee/et/parkimine/Tallinn/P88-Kadrioru-Tennisekeskus",
       "https://mikkelimuuseum.ekm.ee/en/getting-here"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Estonia_-_Tallinn...Kadriorg_Art_Museum_-_panoramio_%281%29.jpg/960px-Estonia_-_Tallinn...Kadriorg_Art_Museum_-_panoramio_%281%29.jpg",
+        "credit": "Arto J · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Estonia_-_Tallinn...Kadriorg_Art_Museum_-_panoramio_(1).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Kadrioru_park_-_panoramio_%282%29.jpg/960px-Kadrioru_park_-_panoramio_%282%29.jpg",
+        "credit": "tonut · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadrioru_park_-_panoramio_(2).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Kadriorg_-_panoramio_-_Aulo_Aasmaa_%281%29.jpg/960px-Kadriorg_-_panoramio_-_Aulo_Aasmaa_%281%29.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadriorg_-_panoramio_-_Aulo_Aasmaa_(1).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kadrioru_park_-_panoramio_%283%29.jpg/960px-Kadrioru_park_-_panoramio_%283%29.jpg",
+        "credit": "tonut · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadrioru_park_-_panoramio_(3).jpg"
+      }
     ]
   },
   {
@@ -423,6 +499,23 @@
     },
     "sources": [
       "https://kumu.ekm.ee/en/getting-here/"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg/960px-The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Kadriorg_pond_-_panoramio_-_Aulo_Aasmaa.jpg/960px-Kadriorg_pond_-_panoramio_-_Aulo_Aasmaa.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadriorg_pond_-_panoramio_-_Aulo_Aasmaa.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Birds_in_the_Kadriorg_Park_-_panoramio.jpg/960px-Birds_in_the_Kadriorg_Park_-_panoramio.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Birds_in_the_Kadriorg_Park_-_panoramio.jpg"
+      }
     ]
   },
   {
@@ -484,9 +577,24 @@
     ],
     "photos": [
       {
-        "src": "https://botaanikaaed.ee/wp-content/uploads/2025/11/pilt-uus.jpg",
-        "credit": "botaanikaaed.ee",
-        "page": "https://botaanikaaed.ee/en/"
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Pirita_j%C3%B5eoru_maastikukaitseala._Tallinna_Botaanikaaed.jpg/960px-Pirita_j%C3%B5eoru_maastikukaitseala._Tallinna_Botaanikaaed.jpg",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pirita_j%C3%B5eoru_maastikukaitseala._Tallinna_Botaanikaaed.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Inside_the_Botanical_garden_%2816808411211%29.jpg/960px-Inside_the_Botanical_garden_%2816808411211%29.jpg",
+        "credit": "Raita Futo from Tokyo, Japan · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Inside_the_Botanical_garden_(16808411211).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/USSR_garden_%2816623355459%29.jpg/960px-USSR_garden_%2816623355459%29.jpg",
+        "credit": "Raita Futo from Tokyo, Japan · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:USSR_garden_(16623355459).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tallinna_botaanikaaed.JPG/960px-Tallinna_botaanikaaed.JPG",
+        "credit": "User:Avjoska · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_botaanikaaed.JPG"
       }
     ]
   },
@@ -549,6 +657,11 @@
         "src": "https://visitestonia.com/images/4019414/Pirita+rand+ja+p%C3%A4ikeseloojang.jpg",
         "credit": "visitestonia.com",
         "page": "https://visitestonia.com/en/pirita-beach"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Pirita_beach_in_Tallinn_%288037191758%29.jpg/960px-Pirita_beach_in_Tallinn_%288037191758%29.jpg",
+        "credit": "Guillaume Speurt from Vilnius, Lithuania · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pirita_beach_in_Tallinn_(8037191758).jpg"
       }
     ]
   },
@@ -604,6 +717,23 @@
     },
     "sources": [
       "https://www.err.ee/1097629/supelrannas-parkimine-on-kohati-kallis-lobu"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Low_tide_sunset_at_Stroomi_beach%2C_Tallinn2.jpg/960px-Low_tide_sunset_at_Stroomi_beach%2C_Tallinn2.jpg",
+        "credit": "Vicky Brock · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Low_tide_sunset_at_Stroomi_beach,_Tallinn2.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Hot_midsummer_evening_Stroomi_Beach_%2851263552907%29.jpg/960px-Hot_midsummer_evening_Stroomi_Beach_%2851263552907%29.jpg",
+        "credit": "Vicky Brock from Tallinn, UK · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Hot_midsummer_evening_Stroomi_Beach_(51263552907).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Low_tide_sunset_at_Stroomi_beach%2C_Tallinn3.jpg/960px-Low_tide_sunset_at_Stroomi_beach%2C_Tallinn3.jpg",
+        "credit": "Vicky Brock · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Low_tide_sunset_at_Stroomi_beach,_Tallinn3.jpg"
+      }
     ]
   },
   {
@@ -662,9 +792,24 @@
     ],
     "photos": [
       {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Snelli_tiik_Toompargis.JPG/960px-Snelli_tiik_Toompargis.JPG",
+        "credit": "Ilme Parik · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Snelli_tiik_Toompargis.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Toompark_ja_Snelli_tiik.JPG/960px-Toompark_ja_Snelli_tiik.JPG",
+        "credit": "Dimuska · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Toompark_ja_Snelli_tiik.JPG"
+      },
+      {
         "src": "https://visitestonia.com/images/727840/tallinna-toompark-005-visit-estonia.png",
         "credit": "visitestonia.com",
         "page": "https://visitestonia.com/en/tallinn-toompark"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg/960px-%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg",
+        "credit": "Maasaak · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg"
       }
     ]
   },
@@ -718,7 +863,29 @@
       "zone": null,
       "note": "No parking information found. The park is in Kristiine, which appears to be outside the municipal paid zones, so nearby street parking is probably free. Unverified."
     },
-    "sources": []
+    "sources": [],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/L%C3%B6wenruh%27_park-purskaevud.JPG/960px-L%C3%B6wenruh%27_park-purskaevud.JPG",
+        "credit": "Ilme Parik · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenruh%27_park-purskaevud.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/L%C3%B6wenruh%27_pargi_suvekohvik.jpg/960px-L%C3%B6wenruh%27_pargi_suvekohvik.jpg",
+        "credit": "Ilme Parik · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenruh%27_pargi_suvekohvik.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/L%C3%B6wenruh%27_park-tiik.jpg/960px-L%C3%B6wenruh%27_park-tiik.jpg",
+        "credit": "Ilme Parik · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenruh%27_park-tiik.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/L%C3%B6wenruh%27_park1.jpg/960px-L%C3%B6wenruh%27_park1.jpg",
+        "credit": "Ilme Parik · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%B6wenruh%27_park1.jpg"
+      }
+    ]
   },
   {
     "id": "kalamaja-cemetery-park",
@@ -773,6 +940,18 @@
     "sources": [
       "https://www.postimees.ee/267870/tallinn-laiendab-tasulise-parkimise-ala",
       "https://www.riigiteataja.ee/akt/408022013090"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Architectural_Detail_-_Kalamaja_District_-_Tallinn_-_Estonia_-_02_%2835206132934%29.jpg/960px-Architectural_Detail_-_Kalamaja_District_-_Tallinn_-_Estonia_-_02_%2835206132934%29.jpg",
+        "credit": "Adam Jones · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Architectural_Detail_-_Kalamaja_District_-_Tallinn_-_Estonia_-_02_(35206132934).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Kalamaja_cemetery_03.jpg/960px-Kalamaja_cemetery_03.jpg",
+        "credit": "Ivo Kruusamägi · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kalamaja_cemetery_03.jpg"
+      }
     ]
   },
   {
@@ -839,6 +1018,21 @@
         "src": "https://evm.ee/photos/suvi_lapsed_large.webp",
         "credit": "evm.ee",
         "page": "https://evm.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644656256%29.jpg/960px-Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644656256%29.jpg",
+        "credit": "dalbera from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_plein_air_(Tallinn)_(7644656256).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644658548%29.jpg/960px-Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644658548%29.jpg",
+        "credit": "dalbera from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_plein_air_(Tallinn)_(7644658548).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Skanzen%2C_Eesti_vaba%C3%B5humuuseum%2C_Tallinn%2C_Estonsko_22.jpg/960px-Skanzen%2C_Eesti_vaba%C3%B5humuuseum%2C_Tallinn%2C_Estonsko_22.jpg",
+        "credit": "Fry72, Karel Frydrýšek · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Skanzen,_Eesti_vaba%C3%B5humuuseum,_Tallinn,_Estonsko_22.jpg"
       }
     ]
   },
@@ -1464,7 +1658,14 @@
     "lastVerified": null,
     "confidence": "low",
     "phone": "+372 5887 7780",
-    "email": "info@trampolino.ee"
+    "email": "info@trampolino.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "seiklusmaa.ee",
+        "page": "https://seiklusmaa.ee/"
+      }
+    ]
   },
   {
     "id": "seiklusmaa-jarve",
@@ -1525,7 +1726,14 @@
     "lastVerified": "2026-10-10",
     "confidence": "high",
     "phone": "+372 550 7792",
-    "email": "jarve@seiklusmaa.ee"
+    "email": "jarve@seiklusmaa.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "seiklusmaa.ee",
+        "page": "https://seiklusmaa.ee/jarve/"
+      }
+    ]
   },
   {
     "id": "meie-mangumaa-haabersti",
@@ -1579,14 +1787,7 @@
       "https://lasnamae.meiemangumaa.ee/et/komplektid-ja-asukoht"
     ],
     "lastVerified": null,
-    "confidence": "medium",
-    "photos": [
-      {
-        "src": "https://www.meiemangumaa.ee/storage/og_image.png",
-        "credit": "meiemangumaa.ee",
-        "page": "https://www.meiemangumaa.ee/"
-      }
-    ]
+    "confidence": "medium"
   },
   {
     "id": "tikitaka-playroom-mustamae",
@@ -1640,14 +1841,7 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 553 0718",
-    "email": "tikitakamangutuba@gmail.com",
-    "photos": [
-      {
-        "src": "https://static.tildacdn.net/tild3062-6564-4637-a662-343739386663/FINAL_VERSION___.jpg",
-        "credit": "tikitakamangutuba.com",
-        "page": "https://tikitakamangutuba.com/"
-      }
-    ]
+    "email": "tikitakamangutuba@gmail.com"
   },
   {
     "id": "miniland-playroom",
@@ -1704,14 +1898,7 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 5350 2579",
-    "email": "info@miniland.ee",
-    "photos": [
-      {
-        "src": "https://miniland.ee/wp-content/uploads/2015/02/m%C3%A4ngutuba_1-300x200.jpg",
-        "credit": "miniland.ee",
-        "page": "https://miniland.ee/"
-      }
-    ]
+    "email": "info@miniland.ee"
   },
   {
     "id": "trampolino-ulemiste",
@@ -1766,7 +1953,14 @@
     "lastVerified": null,
     "confidence": "low",
     "phone": "+372 5379 5555",
-    "email": "info@trampolino.ee"
+    "email": "info@trampolino.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "trampolino.ee",
+        "page": "https://www.trampolino.ee/"
+      }
+    ]
   },
   {
     "id": "playdate-tabasalu",
@@ -1989,14 +2183,7 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 614 0247",
-    "email": "info@jarvekeskus.ee",
-    "photos": [
-      {
-        "src": "https://jarvekeskus.ee/wp-content/uploads/2021/09/cropped-shutterstock_1078244033.jpg",
-        "credit": "jarvekeskus.ee",
-        "page": "https://jarvekeskus.ee/"
-      }
-    ]
+    "email": "info@jarvekeskus.ee"
   },
   {
     "id": "t1-mall-of-tallinn",
@@ -2216,14 +2403,7 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 607 7008",
-    "email": "ulemiste@babyback.ee",
-    "photos": [
-      {
-        "src": "https://cdn.prod.website-files.com/69d290bb8bfb5634c70a90ce/69fe106d88ffe7ca32cc837f_BB-OG-IMAGE.jpg",
-        "credit": "babyback.ee",
-        "page": "https://www.babyback.ee/"
-      }
-    ]
+    "email": "ulemiste@babyback.ee"
   },
   {
     "id": "lore-bistroo-noblessner",
@@ -3320,7 +3500,19 @@
     "lastVerified": null,
     "confidence": "low",
     "phone": "+372 641 1408",
-    "email": "info@meremuuseum.ee"
+    "email": "info@meremuuseum.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Paks_Margareeta_ja_Stoltingi_torn.jpg/960px-Paks_Margareeta_ja_Stoltingi_torn.jpg",
+        "credit": "Ivar Leidus · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Paks_Margareeta_ja_Stoltingi_torn.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/At_Tallinn_2024_240_-_Fat_Margaret.jpg/960px-At_Tallinn_2024_240_-_Fat_Margaret.jpg",
+        "credit": "Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:At_Tallinn_2024_240_-_Fat_Margaret.jpg"
+      }
+    ]
   },
   {
     "id": "maarjamae-history-centre",
@@ -3378,14 +3570,7 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 696 8660",
-    "email": "post@ajaloomuuseum.ee",
-    "photos": [
-      {
-        "src": "https://files.voog.com/0000/0052/1836/photos/pole%20sind%20sada%20aastat%20n%C3%A4inud%20kaabu.png",
-        "credit": "ajaloomuuseum.ee",
-        "page": "https://ajaloomuuseum.ee/"
-      }
-    ]
+    "email": "post@ajaloomuuseum.ee"
   },
   {
     "id": "tallinn-city-life-museum",
@@ -3500,7 +3685,29 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 627 6661",
-    "email": "info@protofactory.ee"
+    "email": "info@protofactory.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Noblessner_proto_invention_factory_tallinn_interior4_monorail_-_2019.jpg/960px-Noblessner_proto_invention_factory_tallinn_interior4_monorail_-_2019.jpg",
+        "credit": "Sinikka Halme · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Noblessner_proto_invention_factory_tallinn_interior4_monorail_-_2019.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg/960px-Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg",
+        "credit": "Sinikka Halme · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Noblessner_proto_invention_factory_tallinn_interior_3_-_2019.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Noblessner_proto_invention_factory_tallinn_interior_5_cafeteria_-_2019.jpg/960px-Noblessner_proto_invention_factory_tallinn_interior_5_cafeteria_-_2019.jpg",
+        "credit": "Sinikka Halme · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Noblessner_proto_invention_factory_tallinn_interior_5_cafeteria_-_2019.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Noblessner_proto_invention_factory_tallinn_interior_6_cafeteria_-_2019.jpg/960px-Noblessner_proto_invention_factory_tallinn_interior_6_cafeteria_-_2019.jpg",
+        "credit": "Sinikka Halme · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Noblessner_proto_invention_factory_tallinn_interior_6_cafeteria_-_2019.jpg"
+      }
+    ]
   },
   {
     "id": "nuku-museum-of-puppetry-arts",
@@ -3561,9 +3768,19 @@
     "email": "kassa@eestinoorsooteater.ee",
     "photos": [
       {
-        "src": "https://www.eestinoorsooteater.ee/wp-content/uploads/2025/10/Teatrimaja_foto-Indrek-Rammus.jpg",
-        "credit": "eestinoorsooteater.ee",
-        "page": "https://www.eestinoorsooteater.ee/en/theatre/visiting-info/"
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Nukuteatrimuuseum_1.jpg/960px-Nukuteatrimuuseum_1.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nukuteatrimuuseum_1.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Nukuteatrimuuseum_4.jpg/960px-Nukuteatrimuuseum_4.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nukuteatrimuuseum_4.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Nukuteatrimuuseum_3.jpg/960px-Nukuteatrimuuseum_3.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nukuteatrimuuseum_3.jpg"
       }
     ]
   },
@@ -3621,7 +3838,19 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 667 9555",
-    "email": "kassa@eestinoorsooteater.ee"
+    "email": "kassa@eestinoorsooteater.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Nukuteatrimuuseum_4.jpg/960px-Nukuteatrimuuseum_4.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nukuteatrimuuseum_4.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Nukuteatrimuuseum_1.jpg/960px-Nukuteatrimuuseum_1.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Nukuteatrimuuseum_1.jpg"
+      }
+    ]
   },
   {
     "id": "estonian-national-opera-concert-for-babies",
@@ -4172,7 +4401,29 @@
       "https://www.visittallinn.ee/eng/visitor/plan/good-to-know/parking"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Rulluisutajad_Pirita_teel.jpg/960px-Rulluisutajad_Pirita_teel.jpg",
+        "credit": "Abrget47j · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rulluisutajad_Pirita_teel.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Pirita_kergliiklustee%2C_HolgerVaga.jpg/960px-Pirita_kergliiklustee%2C_HolgerVaga.jpg",
+        "credit": "Holger Vaga · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pirita_kergliiklustee,_HolgerVaga.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Pirita_promenaad1_2010-08-25.jpg/960px-Pirita_promenaad1_2010-08-25.jpg",
+        "credit": "Flying Saucer · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pirita_promenaad1_2010-08-25.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/EE-TLN-Pirita.JPG/960px-EE-TLN-Pirita.JPG",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-Pirita.JPG"
+      }
+    ]
   },
   {
     "id": "lepistiku-park",
@@ -4331,7 +4582,29 @@
       "https://www.puhkaeestis.ee/en/parditiigi-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Parditiigi_pargi_puskkaev.jpg/960px-Parditiigi_pargi_puskkaev.jpg",
+        "credit": "HartOve · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parditiigi_pargi_puskkaev.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Parditiigi_park.jpg/960px-Parditiigi_park.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Parditiigi_park.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Tallinn_Siili_asum_Parditiigi_park.jpg/960px-Tallinn_Siili_asum_Parditiigi_park.jpg",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Siili_asum_Parditiigi_park.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/1/16/Parditiigi_park%28talinn%29.jpg",
+        "credit": "Samurai · CC BY-SA 2.5",
+        "page": "https://commons.wikimedia.org/wiki/File:Parditiigi_park(talinn).jpg"
+      }
+    ]
   },
   {
     "id": "oismae-pond-park",
@@ -4606,7 +4879,24 @@
       "https://visitharju.ee/en/?p=57168"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Pikakari_rand._01.jpg/960px-Pikakari_rand._01.jpg",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pikakari_rand._01.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Pikakari_rand.JPG/960px-Pikakari_rand.JPG",
+        "credit": "Marite7 · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pikakari_rand.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Pikakari_rand._04.jpg/960px-Pikakari_rand._04.jpg",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pikakari_rand._04.jpg"
+      }
+    ]
   },
   {
     "id": "raagu-park",
@@ -4718,6 +5008,16 @@
         "src": "https://visitestonia.com/images/637071/glehni-park-010-visit-estonia.jpg",
         "credit": "visitestonia.com",
         "page": "https://visitestonia.com/en/glehn-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Glehni_Kalevipoeg_2.jpg/960px-Glehni_Kalevipoeg_2.jpg",
+        "credit": "Epp · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Glehni_Kalevipoeg_2.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Glehni_krokodill_2.jpg/960px-Glehni_krokodill_2.jpg",
+        "credit": "Epp · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Glehni_krokodill_2.jpg"
       }
     ]
   },
@@ -4888,7 +5188,14 @@
       "https://www.visitharju.ee/en/?p=57004"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Kakum%C3%A4e_rand_2021.jpg/960px-Kakum%C3%A4e_rand_2021.jpg",
+        "credit": "Bandaranaice · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kakum%C3%A4e_rand_2021.jpg"
+      }
+    ]
   },
   {
     "id": "harju-street-ice-rink",
@@ -5006,14 +5313,7 @@
       "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season"
     ],
     "lastVerified": null,
-    "confidence": "low",
-    "photos": [
-      {
-        "src": "https://s.err.ee/photo/crop/2020/11/23/844794h5fcdt24.jpg",
-        "credit": "news.err.ee",
-        "page": "https://news.err.ee/1609147213/tallinn-s-outdoor-ice-rinks-to-open-again-for-winter-from-mid-november"
-      }
-    ]
+    "confidence": "low"
   },
   {
     "id": "song-festival-grounds-winter-centre",
@@ -5119,14 +5419,7 @@
       "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities"
     ],
     "lastVerified": null,
-    "confidence": "low",
-    "photos": [
-      {
-        "src": "https://s.inyourpocket.com/img/background/11438-992x300.jpg",
-        "credit": "inyourpocket.com",
-        "page": "https://www.inyourpocket.com/estonia/tallinn/venues/categories/winter-activities"
-      }
-    ]
+    "confidence": "low"
   },
   {
     "id": "nomme-ski-trails",
@@ -5238,6 +5531,21 @@
         "src": "https://s.err.ee/photo/crop/2026/03/13/3254753hbf04t24.jpg",
         "credit": "err.ee",
         "page": "https://www.err.ee/1610076271/tallinna-jouluturu-korraldab-taas-vana-tuttav"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Christmas_Market_in_the_Town_Hall_Square.jpg/960px-Christmas_Market_in_the_Town_Hall_Square.jpg",
+        "credit": "Marit &amp; Toomas Hinnosaar · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Christmas_Market_in_the_Town_Hall_Square.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Tallinn_Jouluturg.jpg/960px-Tallinn_Jouluturg.jpg",
+        "credit": "Tiia Monto · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Jouluturg.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Tallinn_Christmas_market_2014_3.JPG/960px-Tallinn_Christmas_market_2014_3.JPG",
+        "credit": "Ypsilon from Finland · CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Christmas_market_2014_3.JPG"
       }
     ]
   },
@@ -5292,7 +5600,29 @@
       "https://visitestonia.com/en/nature-trail-in-keila-joa-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg/960px-Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Keila-Joa_waterfall_-_panoramio_%282%29.jpg/960px-Keila-Joa_waterfall_-_panoramio_%282%29.jpg",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keila-Joa_waterfall_-_panoramio_(2).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Keila-Joa_bridge_-_panoramio.jpg/960px-Keila-Joa_bridge_-_panoramio.jpg",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keila-Joa_bridge_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Ice_formations_and_icicles_on_limestone_cave_at_Keila-Joa.jpg/960px-Ice_formations_and_icicles_on_limestone_cave_at_Keila-Joa.jpg",
+        "credit": "Wiki Asmah · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Ice_formations_and_icicles_on_limestone_cave_at_Keila-Joa.jpg"
+      }
+    ]
   },
   {
     "id": "jagala-waterfall",
@@ -5345,7 +5675,24 @@
       "https://www.campercontact.com/en/estonia/harju-county/joelahtme-vald/59250/parking-jagala-juga.md"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/J%C3%A4gala_waterfall_-_panoramio.jpg/960px-J%C3%A4gala_waterfall_-_panoramio.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_waterfall_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/J%C3%A4gala_waterfalls_%28downstream%29_-_panoramio.jpg/960px-J%C3%A4gala_waterfalls_%28downstream%29_-_panoramio.jpg",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_waterfalls_(downstream)_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/J%C3%A4gala_juga_%28panoraam%29_22-03-2013.jpg/960px-J%C3%A4gala_juga_%28panoraam%29_22-03-2013.jpg",
+        "credit": "Ivar Leidus · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_juga_(panoraam)_22-03-2013.jpg"
+      }
+    ]
   },
   {
     "id": "viru-bog-boardwalk",
@@ -5398,7 +5745,14 @@
       "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trails-observation-tower-1300-m-from-the-parking/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Lahemaa_%2830246584280%29.jpg/960px-Lahemaa_%2830246584280%29.jpg",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30246584280).jpg"
+      }
+    ]
   },
   {
     "id": "polli-zoo-tuhala",

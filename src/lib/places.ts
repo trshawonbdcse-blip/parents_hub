@@ -118,6 +118,7 @@ export function todaysPicks(opts: {
       if (opts.favorites.has(p.id)) score += 0.4
       if (opts.visitedRecently.has(p.id)) score -= 0.6
       if (p.price.free) score += 0.2
+      if (p.photos?.length) score += 0.25
       if (mode === 'outdoor' && p.setting !== 'indoor') score += 0.3
       // Chilly but dry: mostly indoor ideas, with the odd short outdoor one.
       if (mode === 'mixed' && p.setting !== 'outdoor') score += 0.3

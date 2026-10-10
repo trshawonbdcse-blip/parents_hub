@@ -65,7 +65,12 @@ export function Explore() {
       return true
     })
     .map((p) => ({ p, d: coords ? distanceKm(coords.lat, coords.lng, p.lat, p.lng) : null }))
-    .sort((a, b) => (wantNear && a.d !== null && b.d !== null ? a.d - b.d : a.p.name.localeCompare(b.p.name)))
+    .sort((a, b) => {
+      if (wantNear && a.d !== null && b.d !== null) return a.d - b.d
+      // Places with reviewed photos first, so the list leads with what parents can picture.
+      const photo = Number(Boolean(b.p.photos?.length)) - Number(Boolean(a.p.photos?.length))
+      return photo || a.p.name.localeCompare(b.p.name)
+    })
 
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
 
