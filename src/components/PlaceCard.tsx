@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Place } from '../types'
-import { CATEGORY_LABEL, parkingLabel, priceLabel, settingLabel } from '../lib/places'
+import { adultPriceText, CATEGORY_LABEL, childPriceText, parkingLabel, settingLabel } from '../lib/places'
 import { KEYS, useIdList } from '../lib/storage'
 
 interface Props {
@@ -18,7 +18,17 @@ export function PlaceCard({ place, months, distance }: Props) {
     <article className="card place-card">
       <Link to={`/place/${place.id}`} className="place-card-link">
         <div className={`place-thumb cat-${place.category}`} aria-hidden="true">
-          {cat.emoji}
+          {place.photos?.[0] ? (
+            <img
+              src={place.photos[0].src}
+              alt=""
+              loading="lazy"
+              referrerPolicy="no-referrer"
+              onError={(e) => e.currentTarget.remove()}
+            />
+          ) : (
+            cat.emoji
+          )}
         </div>
         <div className="place-card-body">
           <h3>{place.name}</h3>
@@ -27,7 +37,13 @@ export function PlaceCard({ place, months, distance }: Props) {
             {distance != null && ` · ${distance.toFixed(1)} km`}
           </p>
           <div className="tags">
-            <span className={`tag ${place.price.free ? 'tag-free' : ''}`}>{priceLabel(place, months)}</span>
+            {place.price.free ? (
+              <span className="tag tag-free">Free</span>
+            ) : (
+              <span className="tag" title="Adult · Child">
+                🧑 {adultPriceText(place) ?? '?'} · 👶 {childPriceText(place, months) ?? '?'}
+              </span>
+            )}
             <span className="tag">{settingLabel(place.setting)}</span>
             {parkingLabel(place) && <span className="tag">🅿️ {parkingLabel(place)}</span>}
             {place.facilities.stroller && <span className="tag" title="Stroller friendly">🚼</span>}

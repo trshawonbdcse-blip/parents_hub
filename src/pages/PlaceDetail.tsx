@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
-import { CATEGORY_LABEL, fitsAge, formatAge, placeById, priceLabel, settingLabel } from '../lib/places'
+import { adultPriceText, CATEGORY_LABEL, childPriceText, fitsAge, formatAge, placeById, settingLabel } from '../lib/places'
+import { Gallery } from '../components/Gallery'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Visit } from '../types'
@@ -65,9 +66,14 @@ export function PlaceDetail() {
         ← Back
       </button>
 
-      <div className={`hero cat-${place.category}`} aria-hidden="true">
-        {cat.emoji}
-      </div>
+      <Gallery
+        photos={place.photos ?? []}
+        fallback={
+          <div className={`hero cat-${place.category}`} aria-hidden="true">
+            {cat.emoji}
+          </div>
+        }
+      />
 
       <header>
         <p className="eyebrow">
@@ -90,11 +96,42 @@ export function PlaceDetail() {
         </a>
       </div>
 
-      <section className="card glance">
+      <section className="contact">
+        {place.phone ? (
+          <a className="btn" href={`tel:${place.phone.replace(/[^\d+]/g, '')}`}>
+            📞 {place.phone}
+          </a>
+        ) : (
+          <span className="btn btn-disabled">📞 No phone listed</span>
+        )}
+        {place.email && (
+          <a className="btn" href={`mailto:${place.email}`}>
+            ✉️ Email
+          </a>
+        )}
+        <a className="btn" href={place.website} target="_blank" rel="noreferrer">
+          🌐 Website
+        </a>
+      </section>
+
+      <section className="card prices-both">
         <div>
-          <span className="eyebrow">Price</span>
-          <strong>{priceLabel(place, months)}</strong>
+          <span className="eyebrow">Adult</span>
+          <strong className="big">{adultPriceText(place) ?? '—'}</strong>
         </div>
+        <div>
+          <span className="eyebrow">Child{months !== null ? ` (${formatAge(months)})` : ''}</span>
+          <strong className="big">{childPriceText(place, months) ?? '—'}</strong>
+        </div>
+        {(adultPriceText(place) === null || childPriceText(place, months) === null) && (
+          <p className="small warn full-row">
+            Price not confirmed yet —{' '}
+            {place.phone ? <a href={`tel:${place.phone.replace(/[^\d+]/g, '')}`}>call to check</a> : 'check the website'}.
+          </p>
+        )}
+      </section>
+
+      <section className="card glance">
         <div>
           <span className="eyebrow">Age</span>
           <strong>{ageText}</strong>
@@ -124,7 +161,7 @@ export function PlaceDetail() {
 
       {!place.price.free && (
         <section>
-          <h2>Prices</h2>
+          <h2>All prices</h2>
           <table className="price-table">
             <tbody>
               <tr>

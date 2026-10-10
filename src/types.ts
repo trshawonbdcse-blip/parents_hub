@@ -43,6 +43,13 @@ export interface ParkingInfo {
   note: string | null
 }
 
+export interface Photo {
+  src: string
+  // Where the photo comes from, shown as a credit (e.g. "Official website" or "Jane Doe · CC BY-SA 4.0").
+  credit: string
+  page: string
+}
+
 export interface Place {
   id: string
   name: string
@@ -68,6 +75,9 @@ export interface Place {
   transport: string | null
   language: string | null
   website: string
+  phone?: string | null
+  email?: string | null
+  photos?: Photo[]
   sources?: string[]
   lastVerified: string | null
   confidence: 'high' | 'medium' | 'low'

@@ -128,3 +128,21 @@ export function todaysPicks(opts: {
 export function settingLabel(s: Place['setting']) {
   return s === 'indoor' ? '🏠 Indoor' : s === 'outdoor' ? '🌤️ Outdoor' : '🏠🌤️ In & out'
 }
+
+const euroText = (n: number) => `€${Number.isInteger(n) ? n : n.toFixed(2)}`
+
+// What one adult pays, as plain text for the price boxes.
+export function adultPriceText(p: Place): string | null {
+  if (p.price.free || p.price.adult === 0) return 'Free'
+  return p.price.adult !== null ? euroText(p.price.adult) : null
+}
+
+// What this family's child pays, taking the free-under-age rule into account.
+export function childPriceText(p: Place, months: number | null): string | null {
+  const { price } = p
+  if (price.free || price.child === 0) return 'Free'
+  if (price.childFreeUnderMonths !== null && months !== null && months < price.childFreeUnderMonths) return 'Free'
+  if (price.child !== null) return euroText(price.child)
+  if (price.childFreeUnderMonths !== null && months === null) return `Free under ${formatAge(price.childFreeUnderMonths)}`
+  return null
+}
