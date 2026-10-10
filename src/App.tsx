@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
+import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
 import { Family } from './pages/Family'
 import { PlaceDetail } from './pages/PlaceDetail'
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/" element={<Today />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/place/:id" element={<PlaceDetail />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/me" element={<Family />} />
           <Route path="*" element={<Today />} />

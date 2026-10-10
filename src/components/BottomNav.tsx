@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 const items = [
   { to: '/', label: 'Today', icon: '☀️', end: true },
   { to: '/explore', label: 'Explore', icon: '🔍', end: false },
+  { to: '/events', label: 'Events', icon: '📅', end: false },
   { to: '/saved', label: 'Saved', icon: '♥', end: false },
   { to: '/me', label: 'Family', icon: '👶', end: false },
 ]

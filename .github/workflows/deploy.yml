@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    # Every day at 04:07 UTC (07:07 in Tallinn): refresh kids' events.
+    - cron: '7 4 * * *'
 
 permissions:
   contents: read
@@ -25,6 +28,10 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      - name: Collect kids' events
+        run: node scripts/fetch-events.mjs
+        env:
+          DEBUG_EVENTS: '1'
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

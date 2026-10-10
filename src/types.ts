@@ -94,3 +94,19 @@ export interface EventSource {
   language: string
   free: boolean
 }
+
+export interface KidEvent {
+  id: string
+  title: string
+  start: string
+  end: string | null
+  allDay?: boolean
+  venue: string | null
+  address: string | null
+  url: string
+  source: string
+  price: string | null
+  free: boolean | null
+  image: string | null
+  summary: string | null
+}

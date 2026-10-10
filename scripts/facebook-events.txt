@@ -1,0 +1,3 @@
+# Public Facebook event links, one per line. The daily build reads each event's
+# title, date and place. Lines starting with # are ignored.
+https://www.facebook.com/events/1848363306337186/
