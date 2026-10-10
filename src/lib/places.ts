@@ -69,7 +69,7 @@ export const fitsSeason = (p: Place, d = new Date()) =>
 
 export function priceLabel(p: Place, months: number | null): string {
   const { price } = p
-  if (price.free) return 'Free'
+  if (price.free) return p.category === 'cafe' || p.category === 'mall' ? 'Free entry' : 'Free'
   const childFree =
     months !== null && price.childFreeUnderMonths !== null && months < price.childFreeUnderMonths
   if (price.adult !== null && price.adult > 0) {

@@ -21,6 +21,13 @@ Each place has a `lastVerified` date and a `confidence` level. **Re-check prices
 official website before relying on them.** To add a place, append an object with the same shape
 (see `src/types.ts`).
 
+Parking details (free/paid, operator, city zone, and whether the Pargi.ee app works there) are in
+each place's `parkingInfo`. General parking rules are in `src/data/parking-rules.json`, and places to
+find kids' events are in `src/data/event-sources.json`.
+
+Useful sources for adding more places: kuhuminnalastega.ee, keskraamatukogu.ee (library sessions),
+visittallinn.ee, tallinn.ee, kultuurikava.ee, partyup.ee playroom lists, and perekool.ee.
+
 ## Develop
 
 ```bash
