@@ -12,12 +12,12 @@ const c=require("./candidates.json");
 for (const [id, list] of Object.entries(c)) list.forEach((p,i)=>console.log(`${id}\t${i}\t${p.src}`))
 ' | while IFS=$'\t' read -r id i src; do
   f="dl/${id}__${i}.jpg"
-  code=$(curl -sSL --max-time 25 -A "ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; photo review)" -w '%{http_code}' "$src" -o "$f.raw" 2>/dev/null)
-  if [ "$code" != "200" ]; then echo "skip $id#$i http=$code"; rm -f "$f.raw"; continue; fi
-  if ! convert "$f.raw[0]" -auto-orient -resize '240x160^' -gravity center -extent 240x160 "$f"; then
-    echo "skip $id#$i not an image ($(file -b "$f.raw" | cut -c1-40))"; rm -f "$f"
+  code=$(curl -sSL --max-time 25 -A "ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; photo review)" -w '%{http_code}' "$src" -o "$f.src" 2>/dev/null)
+  if [ "$code" != "200" ]; then echo "skip $id#$i http=$code"; rm -f "$f.src"; continue; fi
+  if ! convert "$f.src[0]" -auto-orient -resize '240x160^' -gravity center -extent 240x160 "$f"; then
+    echo "skip $id#$i not an image ($(file -b "$f.src" | cut -c1-40))"; rm -f "$f"
   fi
-  rm -f "$f.raw"
+  rm -f "$f.src"
 done
 n=0
 for id in $(node -e 'console.log(Object.keys(require("./candidates.json")).join(" "))'); do
@@ -31,6 +31,6 @@ done
 ls dl | wc -l | xargs echo "downloaded:"
 ls strips/*.jpg 2>/dev/null | split -l 4 - group_ || true
 k=0
-for g in group_*; do [ -e "$g" ] || continue convert $(cat "$g") -append -resize '1400x>' -quality 82 "sheets/sheet_$(printf %02d $k).jpg"; k=$((k+1)); done
+for g in group_*; do [ -e "$g" ] || continue; convert $(cat "$g") -append -resize '1400x>' -quality 82 "sheets/sheet_$(printf %02d $k).jpg"; k=$((k+1)); done
 rm -f group_*
 echo "sheets: $k"
