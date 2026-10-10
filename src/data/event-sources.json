@@ -1,1 +1,107 @@
-[]
+[
+  {
+    "name": "Tallinn Central Library events calendar",
+    "url": "https://keskraamatukogu.ee/",
+    "what": "Calendar of all branch events including free põnnihommik toddler mornings, lastehommik and reading sessions.",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Tallinn Central Library children's page (Lasteleht)",
+    "url": "https://keskraamatukogu.ee/lasteleht/osale/ringid-ja-klubid/",
+    "what": "Lists recurring children's clubs and toddler sessions by branch, plus the 'Born a Reader' programme.",
+    "language": "Estonian",
+    "free": true
+  },
+  {
+    "name": "huvi.tallinn.ee",
+    "url": "https://huvi.tallinn.ee/",
+    "what": "City of Tallinn hobby and event database with children's classes and one-off family events, filterable by age.",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Tallinn city events (tallinn.ee)",
+    "url": "https://www.tallinn.ee/en",
+    "what": "City event listings including Old Town Days family programmes and Museum Sundays (free first-Sunday museum entry).",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Visit Tallinn – events",
+    "url": "https://www.visittallinn.ee/eng/visitor/see-do/events",
+    "what": "Official tourism listing of festivals, exhibitions and family attractions in English.",
+    "language": "English, Estonian, others",
+    "free": true
+  },
+  {
+    "name": "Kultuurikava",
+    "url": "https://www.kultuurikava.ee/",
+    "what": "Nationwide culture calendar aggregating concerts, theatre and children's events, filterable by Tallinn.",
+    "language": "Estonian",
+    "free": true
+  },
+  {
+    "name": "Piletilevi – family (kogupere) category",
+    "url": "https://www.piletilevi.ee/en/tickets/kogupere/",
+    "what": "Main ticketing site; family category lists children's theatre, puppet shows and attractions.",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Fienta",
+    "url": "https://fienta.com/",
+    "what": "Ticketing for smaller organisers, incl. the Opera's baby concerts and workshop-style family events.",
+    "language": "Estonian, English",
+    "free": true
+  },
+  {
+    "name": "Piletimaailm",
+    "url": "https://www.piletimaailm.com/",
+    "what": "Ticketing site where baby concerts (e.g. 'Kontsert kõige pisematele', baby ballet) are often sold.",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Estonian National Opera tickets",
+    "url": "https://tickets.opera.ee/",
+    "what": "Official tickets incl. 'Concert for the littlest' (0–3) and family performances.",
+    "language": "Estonian, English, Russian",
+    "free": true
+  },
+  {
+    "name": "Eesti Kontsert (concert.ee)",
+    "url": "https://concert.ee/",
+    "what": "National concert organiser listing family and baby concerts in Estonia Concert Hall and elsewhere.",
+    "language": "Estonian, English",
+    "free": true
+  },
+  {
+    "name": "NUKU / Estonian Youth Theatre playbill",
+    "url": "https://www.eestinoorsooteater.ee/teater/mangukava/",
+    "what": "Playbill for the puppet theatre, tagging shows 'väikelapsele' (for small children) with age ratings.",
+    "language": "Estonian, English",
+    "free": true
+  },
+  {
+    "name": "Apollo Kino – Mum & Baby cinema day",
+    "url": "https://www.apollokino.ee/special/EmmeBeebiMustamae/",
+    "what": "Announces the next baby-friendly cinema mornings and films.",
+    "language": "Estonian",
+    "free": true
+  },
+  {
+    "name": "Kuhu minna lastega",
+    "url": "https://kuhuminnalastega.ee/",
+    "what": "Estonian blog/directory of where to go with kids, incl. cinema, theatre and weekend ideas.",
+    "language": "Estonian",
+    "free": true
+  },
+  {
+    "name": "Perekool forum",
+    "url": "https://foorum.perekool.ee/",
+    "what": "Large Estonian parenting forum where parents discuss baby concerts, classes and venues.",
+    "language": "Estonian",
+    "free": true
+  }
+]

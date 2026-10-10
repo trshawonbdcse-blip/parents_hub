@@ -45,7 +45,19 @@
     "language": "Estonian, English",
     "website": "https://tallinnzoo.ee/en/",
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Tallinn Zoo",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking at the North Entrance (Paldiski mnt 145). The West Entrance car park (Ehitajate tee 150) is paid, using a parking card validated at the ticket office or by a traffic warden. Free for visitors with a disability parking card. Fills up on weekends and holidays, so arrive early."
+    },
+    "sources": [
+      "https://tallinnzoo.ee/en/accessibility/",
+      "https://www.nomadotravel.app/en/attractions/tallinn-zoo"
+    ]
   },
   {
     "id": "tallinn-zoo-childrens-zoo",
@@ -83,13 +95,24 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": true,
-      "parking": null
+      "parking": true
     },
     "transport": "Zoo (Loomaaed) stop, Paldiski mnt",
     "language": null,
     "website": "https://tallinnzoo.ee/en/childrens-zoo/",
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Tallinn Zoo",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Inside Tallinn Zoo, so the zoo's parking applies: free at the North Entrance (Paldiski mnt 145), paid with a validated card at the West Entrance (Ehitajate tee 150)."
+    },
+    "sources": [
+      "https://tallinnzoo.ee/en/accessibility/"
+    ]
   },
   {
     "id": "miiamilla-childrens-museum",
@@ -128,13 +151,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Kadriorg stop (trams 1, 3)",
     "language": "Estonian, English, Russian",
     "website": "https://linnamuuseum.ee/en/childrens-museum-miiamilla/",
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "No parking on L. Koidula street itself. Visit Estonia sends drivers to the car parks by Kumu and Kadriorg Stadium. Kumu says its lots on Valge and Mäekalda streets are free (a few minutes' walk). The Kadriorg Stadium area appears to be in the Kesklinn paid zone."
+    },
+    "sources": [
+      "https://visitestonia.com/en/lastemuuseum-miiamilla",
+      "https://kumu.ekm.ee/en/getting-here/"
+    ]
   },
   {
     "id": "seaplane-harbour",
@@ -175,13 +210,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Lennusadam area, Põhja-Tallinn",
     "language": null,
     "website": "https://meremuuseum.ee/lennusadam/en/",
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Estonian Maritime Museum",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free for museum visitors in the designated lot across Vesilennuki street. You must register the car on the screen near the self-service terminals or at the cloakroom. Other spaces nearby (e.g. right of the building) are paid by app according to third-party reports."
+    },
+    "sources": [
+      "https://meremuuseum.ee/lennusadam/en/accessibility/",
+      "https://www.campercontact.com/en/estonia/harju-county/tallinn/78959/parking-lennusadam.md"
+    ]
   },
   {
     "id": "kumu-art-museum",
@@ -220,13 +267,24 @@
       "feedingRoom": null,
       "cafe": true,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Kadriorg stop (trams 1, 3)",
     "language": "Estonian, English",
     "website": "https://kumu.ekm.ee/en/",
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Kumu",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking next to the museum on Valge street ('Kumu Parking' on Google Maps) and on Mäekalda street. Accessible spaces are on Mäekalda."
+    },
+    "sources": [
+      "https://kumu.ekm.ee/en/getting-here/"
+    ]
   },
   {
     "id": "kadriorg-park",
@@ -263,13 +321,27 @@
       "feedingRoom": null,
       "cafe": true,
       "toilet": true,
-      "parking": null
+      "parking": true
     },
     "transport": "Kadriorg stop (trams 1, 3)",
     "language": null,
     "website": "https://kadriorumuuseum.ekm.ee/en/",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": "Kesklinn (parts, unconfirmed)",
+      "note": "Free: the Kumu lots on Valge and Mäekalda streets at the upper end of the park. Paid: the Kadriorg Stadium area, where the stadium site quotes Kesklinn-zone rates (€0.025/min Mon–Fri 7–19, Sat 8–15, Sun free), and private lots such as Koidula 38 (P88, about €1.20/h). There is also a lot behind the Mikkel Museum on Weizenbergi, fee unknown. Pargi.ee should work in the municipal zone; private lots were not checked."
+    },
+    "sources": [
+      "https://kumu.ekm.ee/en/getting-here/",
+      "https://www.kadriorustaadion.ee/?id=1421",
+      "https://autlo.com/ee/et/parkimine/Tallinn/P88-Kadrioru-Tennisekeskus",
+      "https://mikkelimuuseum.ekm.ee/en/getting-here"
+    ]
   },
   {
     "id": "kadriorg-lastepark-playground",
@@ -306,13 +378,24 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Kadriorg stop (trams 1, 3)",
     "language": null,
     "website": "https://linnamuuseum.ee/en/childrens-museum-miiamilla/",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "No dedicated parking. Use the Kadriorg Park options: the free Kumu lots (Valge/Mäekalda) or paid lots and street parking near Weizenbergi and Koidula. Which zone covers the exact spot was not confirmed."
+    },
+    "sources": [
+      "https://kumu.ekm.ee/en/getting-here/"
+    ]
   },
   {
     "id": "tallinn-botanic-garden",
@@ -358,7 +441,19 @@
     "language": null,
     "website": "https://botaanikaaed.ee/en/",
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "Tallinn Botanic Garden",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Has a large car park at Kloostrimetsa tee 52, next to the Palm House/Winter Garden. No source said whether it is free. It is outside the municipal paid zones, so it is likely free, but that is unverified."
+    },
+    "sources": [
+      "https://www.visitestonia.com/en/tallinn-botanic-garden",
+      "https://humanrights.ee/app/uploads/2017/03/Kuidas-tulla-kohale.pdf"
+    ]
   },
   {
     "id": "pirita-beach",
@@ -395,13 +490,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": true,
-      "parking": null
+      "parking": true
     },
     "transport": "Pirita or Supluse puiestee stops (buses 1A, 8, 34A, 38)",
     "language": null,
     "website": "https://visitestonia.com/en/pirita-beach",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Pirita",
+      "note": "The Pirita municipal zone covers the Merivälja tee 1c and 1e car parks. Paid only 15 May–15 Sep, 10:00–22:00, at €0.01/min (€0.60/h), with the first 15 minutes free. Free the rest of the year, so free on today's date (October). Gets very busy on hot summer days."
+    },
+    "sources": [
+      "https://www.tallinn.ee/en/parking",
+      "https://autlo.com/ee/et/parkimine/Tallinn/Pirita"
+    ]
   },
   {
     "id": "stroomi-beach",
@@ -438,13 +545,24 @@
       "feedingRoom": null,
       "cafe": true,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Pelguranna stop (bus 3, 40) or Supelranna (bus 40)",
     "language": null,
     "website": "https://www.tallinn.ee/eng/Stroomi-Beach-Park",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "ERR reported free parking at Stroomi (and Pikakari) beaches. That source is from around 2020, so confirm before relying on it."
+    },
+    "sources": [
+      "https://www.err.ee/1097629/supelrannas-parkimine-on-kohati-kallis-lobu"
+    ]
   },
   {
     "id": "toompark-snelli-pond",
@@ -481,13 +599,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": "Near Balti jaam / Toompark stops",
     "language": null,
     "website": "https://visitestonia.com/en/toompark",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Südalinn or Kesklinn (border, unconfirmed)",
+      "note": "Street parking only. Toompuiestee and Kaarli pst form part of the Südalinn zone boundary (€0.08/min, 24/7). Nearby streets on the outer side may be Kesklinn (€0.025/min, weekday/Saturday hours). The first 15 minutes are free with a parking clock. Check the exact street on the city's zone map."
+    },
+    "sources": [
+      "https://www.parkimine.ee/en/?p=408",
+      "https://www.tallinn.ee/en/parking"
+    ]
   },
   {
     "id": "lowenruh-park",
@@ -530,7 +660,16 @@
     "language": null,
     "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176796/lowenruh-park",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "No parking information found. The park is in Kristiine, which appears to be outside the municipal paid zones, so nearby street parking is probably free. Unverified."
+    },
+    "sources": []
   },
   {
     "id": "kalamaja-cemetery-park",
@@ -567,13 +706,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": null,
     "website": "https://www.visittallinn.ee/eng",
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Kesklinn (likely)",
+      "note": "Street parking only. The city extended the paid area over most of Kalamaja, and the Kesklinn zone boundary runs along Kopli/Telliskivi streets. Likely Kesklinn rates: €0.025/min Mon–Fri 7–19, Sat 8–15, free on Sundays. The exact boundary near the park is unconfirmed."
+    },
+    "sources": [
+      "https://www.postimees.ee/267870/tallinn-laiendab-tasulise-parkimise-ala",
+      "https://www.riigiteataja.ee/akt/408022013090"
+    ]
   },
   {
     "id": "estonian-open-air-museum",
@@ -619,7 +770,19 @@
     "language": null,
     "website": "https://evm.ee/",
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Estonian Open Air Museum",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking for museum visitors at Vabaõhumuuseumi tee 12."
+    },
+    "sources": [
+      "https://evm.ee/visitors/getting-here",
+      "https://en.wikipedia.org/wiki/Estonian_Open_Air_Museum"
+    ]
   },
   {
     "id": "central-library-sudalinna",
@@ -657,13 +820,24 @@
       "feedingRoom": true,
       "cafe": null,
       "toilet": true,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": "Estonian, Russian, English",
     "website": "https://keskraamatukogu.ee/",
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Südalinn (likely)",
+      "note": "No library car park found. Estonia pst is in the downtown core; the city lists Estonia pst 7 as a Südalinn location. Likely €0.08/min (€4.80/h), paid 24/7, first 15 minutes free with a parking clock."
+    },
+    "sources": [
+      "https://www.tallinn.ee/en/parking"
+    ]
   },
   {
     "id": "kalamaja-library-ponnihommik",
@@ -700,13 +874,25 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": "Estonian",
     "website": "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/",
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Kesklinn (likely)",
+      "note": "Street parking in Kalamaja, which is likely in the Kesklinn zone (€0.025/min Mon–Fri 7–19, Sat 8–15, free on Sundays). Weekday-morning events fall in paid hours. Library address and zone not verified."
+    },
+    "sources": [
+      "https://www.postimees.ee/267870/tallinn-laiendab-tasulise-parkimise-ala",
+      "https://www.tallinn.ee/en/parking"
+    ]
   },
   {
     "id": "estonian-childrens-literature-centre",
@@ -741,13 +927,24 @@
       "feedingRoom": null,
       "cafe": null,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": "Estonian",
     "website": "https://elk.ee/en/",
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "City of Tallinn (EuroPark Estonia)",
+      "pargiSupported": true,
+      "zone": "Vanalinn (likely)",
+      "note": "Pikk 73 is at the north end of the Old Town, so it is likely in the Vanalinn zone: €0.10/min (€6/h), paid 24/7, very few spaces. Cheaper Kesklinn-zone streets are just outside the walls. Unverified."
+    },
+    "sources": [
+      "https://www.tallinn.ee/en/parking"
+    ]
   },
   {
     "id": "mangu-saar-playroom",
@@ -790,7 +987,18 @@
     "language": null,
     "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/181740/mangu-saar-playroom",
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "The Haabersti location is at Päevalille tn 4 (other branches are at Kopli 25 and Osmussaare 8). No parking information found. It is outside the municipal paid zones, so residential street parking is probably free. Unverified."
+    },
+    "sources": [
+      "https://visitestonia.com/en/mangu-saar-playroom"
+    ]
   },
   {
     "id": "super-skypark-t1",
@@ -833,7 +1041,19 @@
     "language": null,
     "website": "https://www.visittallinn.ee/eng/visitor/tallinn-card/tallinn-card/offers/179887",
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "EuroPark (T1 Mall of Tallinn)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "T1 underground car park and garage: first 4 hours free, recorded by number-plate cameras with no clock needed. After that €0.75 per 30 min, €6 per 24h. Pay by EuroPark app, pargi.ee, ParkMan or SMS 1902. The underground garage is open 07:00–23:00. Height limit 2.4 m underground and 2.3 m in the garage."
+    },
+    "sources": [
+      "https://t1tallinn.com/en/oluline-info/parking/",
+      "https://visitestonia.com/en/t1-mall-of-tallinn"
+    ]
   },
   {
     "id": "lohesaba-adventure-city",
@@ -876,7 +1096,18 @@
     "language": null,
     "website": "https://visitestonia.com/en/lohesaba-adventure-city-play-room",
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "The address is Mustamäe tee 50 (Kristiine). No parking information found."
+    },
+    "sources": [
+      "https://visitestonia.com/lv/piedzivojumu-pilsetina-lohesaba"
+    ]
   },
   {
     "id": "kalev-spa-water-park",
@@ -914,13 +1145,24 @@
       "feedingRoom": null,
       "cafe": true,
       "toilet": true,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": null,
     "website": "https://www.kalevspa.ee/en/waterpark/pricelist/",
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "EuroPark / City of Tallinn",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "The lot in front of the water park is in the Old Town (Vanalinn) zone: €0.10/min, pay with pargi.ee or the EuroPark app. 11 EuroPark spots there are free with a pass from the Kalev Spa checkout, displayed in the car. Discounted parking for guests at Väike-Rannavärava 6: €5 for 3 h, added to the water park bill (give your plate number). The source is from March 2023, so confirm before relying on it."
+    },
+    "sources": [
+      "https://kalevspa.ee/en/home/news/uudis/2023/03/23/parking-in-front-of-kalev-spa-water-park/"
+    ]
   },
   {
     "id": "ulemiste-centre",
@@ -964,7 +1206,19 @@
     "language": null,
     "website": "https://www.ulemiste.ee/en/",
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Ülemiste Centre",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "5 hours free in the outdoor lot, garage and underground car park, tracked by plate cameras with no clock needed. After that €1 per started 30 min, €12 per 24h. Start paid time yourself with pargi.ee, SMS or Snabb. The outdoor lot is open 24h; the garage and underground car park 08:00–00:00."
+    },
+    "sources": [
+      "https://www.ulemiste.ee/en/parkimiskord/",
+      "https://www.err.ee/1610065885/tallinna-rocca-al-mare-keskus-piirab-jouliselt-parkimisaega"
+    ]
   },
   {
     "id": "ratsepa-farm-animal-park",
@@ -999,11 +1253,4003 @@
       "feedingRoom": null,
       "cafe": true,
       "toilet": null,
-      "parking": null
+      "parking": true
     },
     "transport": null,
     "language": null,
     "website": "https://visitharju.ee/en/harjumaa/nature-wildlife/zoos-farms/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Rätsepa farm",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "A rural farm in Harju-Risti, about 30 minutes' drive from Tallinn. The listing shows free parking."
+    },
+    "sources": [
+      "https://visitharju.ee/en/?p=605175",
+      "https://baltictrails.eu/en/forest/poi/4676"
+    ]
+  },
+  {
+    "id": "marymaris-rocca-al-mare",
+    "name": "MaryMaris Family Entertainment Centre",
+    "nameLocal": "MaryMaris",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Paldiski mnt 102, 2nd floor, Rocca al Mare Centre, Tallinn",
+    "lat": 59.4256,
+    "lng": 24.6505,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A big new play centre, more than 1,500 m², that opened on the 2nd floor of Rocca al Mare in January 2026. It has ball pits, slides, trampolines and labyrinths, plus a separate toddler zone where under-3s are away from the big kids.",
+    "tips": "One adult per child gets in free, so one parent per toddler pays nothing extra.",
+    "price": {
+      "free": false,
+      "adult": 2,
+      "child": 15,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Full child ticket €15 Mon-Thu, €17 Fri-Sun and public holidays. Under-1s €7. Extra accompanying adult €2; 1 adult per child is free. Taken from an older homepage snapshot, so check current prices."
+    },
+    "discounts": [],
+    "hours": "Daily 10:00-21:00",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Snabb (mall own lot)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 2 h per day free (all sessions added up); then €1 per 30 min, start paid parking in Snabb, Pargi.ee or SMS 1902. 'Convenience parking' bays by the main entrance are paid from the first minute. ERR reports children's play-area visitors can get 3-4 h free by registering with the play area. Zone shown as X9 on one part of the mall page and X122 on another, so check the sign."
+    },
+    "transport": "Rocca al Mare stop (buses incl. 21, 21B, 41, 41B, 42, 43)",
+    "language": null,
+    "website": "https://marymaris.ee/en/",
+    "sources": [
+      "https://www.citycon.com/ee/rocca-al-mare-keskuses-avas-uksed-kogupere-meelelahutuskeskus-marymaris",
+      "https://marymaris.ee/en/",
+      "https://marymaris.ee/en/attractions/",
+      "https://www.roccaalmare.ee/en/store/marymaris-3/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "seiklusmaa-rocca-al-mare",
+    "name": "Seiklusmaa Rocca al Mare",
+    "nameLocal": "Seiklusmaa Rocca al Mare",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Paldiski mnt 102, 2nd floor, Rocca al Mare Centre, Tallinn",
+    "lat": 59.4256,
+    "lng": 24.6505,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A play centre with a two-storey climbing frame, slides, a ball area and a role-play zone. A separate climbing area for toddlers keeps little ones off the big structure.",
+    "tips": "Parents of under-4s have to stay with them; children 4 and over may play on their own.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "The Rocca price page showed the same list as Järve: €8.90 for 30 min, €10 for 1 h, €12 for 2 h, €14.90 day ticket, accompanying adult €2. Not confirmed for this location."
+    },
+    "discounts": [
+      "15% off play time with Perekaart (family card)",
+      "50% off with disability document"
+    ],
+    "hours": "Mon-Sat 10:00-21:00, Sun 10:00-19:00",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Snabb (mall own lot)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 2 h per day free (all sessions added up); then €1 per 30 min, start paid parking in Snabb, Pargi.ee or SMS 1902. 'Convenience parking' bays by the main entrance are paid from the first minute. ERR reports children's play-area visitors can get 3-4 h free by registering with the play area. Zone shown as X9 on one part of the mall page and X122 on another, so check the sign."
+    },
+    "transport": "Rocca al Mare stop",
+    "language": null,
+    "website": "https://seiklusmaa.ee/",
+    "sources": [
+      "https://seiklusmaa.ee/rocca-al-mare/hinnad",
+      "https://seiklusmaa.ee/Toode/disko-sunnipaevatuba-rent/",
+      "https://perekaart.ee/discounts/534"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "seiklusmaa-jarve",
+    "name": "Seiklusmaa Järve",
+    "nameLocal": "Seiklusmaa Järve",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Pärnu mnt 238, 2nd floor, Järve Keskus, Tallinn",
+    "lat": 59.392,
+    "lng": 24.724,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A play centre inside Järve Keskus with monkey bars, a three-lane wave slide, a ball pit, a trampoline and a separate climbing area for toddlers. Good for rainy days, and the mall's 5 free parking hours give you plenty of time.",
+    "tips": "Under-4s need a parent with them the whole time; an accompanying adult ticket is only €2.",
+    "price": {
+      "free": false,
+      "adult": 2,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "€8.90 for 30 min, €10 for 1 h, €12 for 2 h, €14.90 day ticket, 5 day tickets €55, extra time €7/h. Accompanying adult €2."
+    },
+    "discounts": [
+      "15% off with Perekaart",
+      "50% off with disability document",
+      "Group rates from 10 children"
+    ],
+    "hours": "Mon-Sat 10:00-21:00, Sun 10:00-19:00",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Snabb (mall own lot)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 5 h free; after that €0.75 per 30 min via Snabb, Pargi.ee or SMS (zone X23). Underground garage open 08:00-23:00."
+    },
+    "transport": "Järve stop (Pärnu mnt)",
+    "language": null,
+    "website": "https://seiklusmaa.ee/jarve/",
+    "sources": [
+      "https://seiklusmaa.ee/jarve/hinnad/",
+      "https://seiklusmaa.ee/jarve/kontakt/",
+      "https://jarvekeskus.ee/1-juunil-kell-10-00-tahistame-jarve-seiklusmaal-lastekaitsepaeva/",
+      "https://kuhuminnalastega.ee/item/seiklusmaa-jarve/"
+    ],
+    "lastVerified": "2026-10-10",
+    "confidence": "high"
+  },
+  {
+    "id": "meie-mangumaa-haabersti",
+    "name": "Meie Mängumaa Playroom (Haabersti)",
+    "nameLocal": "Meie Mängumaa",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Meistri 22, Tallinn (second room at Osmussaare 8, Lasnamäe)",
+    "lat": 59.43,
+    "lng": 24.645,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A 270 m² party playroom for children aged 1-12 that also holds open 'play days' with day tickets. It's quieter than the mall play centres, which suits toddlers who get overwhelmed easily.",
+    "tips": "Day tickets are sold online only and every person in the room needs one; check the website for this week's play-day dates.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Day ticket bought online for each child and adult; price not confirmed."
+    },
+    "discounts": [],
+    "hours": "Play days vary week to week (e.g. 10:00-21:00); check the website",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.meiemangumaa.ee/",
+    "sources": [
+      "https://haabersti.meiemangumaa.ee/et/mangutuba",
+      "https://haabersti.meiemangumaa.ee/et/paevapilet",
+      "https://lasnamae.meiemangumaa.ee/et/komplektid-ja-asukoht"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "tikitaka-playroom-mustamae",
+    "name": "TikiTaka Playroom",
+    "nameLocal": "TikiTaka mängutuba",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Kadaka tee 42b, 2nd floor (Kadaka Trade Center), Tallinn",
+    "lat": 59.415,
+    "lng": 24.68,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 96,
+    "description": "A small private playroom in Mustamäe, mostly rented for birthday parties. On Wednesdays it opens for free play without booking.",
+    "tips": "Go on a Wednesday between 10:00 and 15:00; take the lift to the 2nd floor and turn left.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Price not confirmed; see the 'TikiTaka hinnad' page."
+    },
+    "discounts": [],
+    "hours": "Open free play Wed 10:00-15:00 (unless booked); parties 10:00-21:00",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Building lot",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking beside the building."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://tikitakamangutuba.com/",
+    "sources": [
+      "https://tikitakamangutuba.com/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "miniland-playroom",
+    "name": "Miniland Playroom",
+    "nameLocal": "Miniland mängutuba",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Pirita",
+    "city": "Tallinn",
+    "address": "Pärnamäe tee 4a (Lilleoru), Tallinn 11914",
+    "lat": 59.47,
+    "lng": 24.865,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 96,
+    "description": "A long-running playroom that welcomes drop-in visits on weekdays as well as birthday parties. Babies under one play free, so it works well for siblings of different ages.",
+    "tips": "Under-3s must have an adult with them; check Facebook for this week's opening hours first.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 6,
+      "childFreeUnderMonths": 12,
+      "family": null,
+      "note": "€6 for 1 h, €8 for 2 h, €9 day ticket for children from age 1 (news page); the English prices page says day tickets 'from €6/hour'."
+    },
+    "discounts": [],
+    "hours": "Weekdays roughly 10/11:00-17:00 (sources differ; see Facebook)",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus 48, IRU stop",
+    "language": null,
+    "website": "https://miniland.ee/",
+    "sources": [
+      "https://miniland.ee/kontakt/?lang=en",
+      "https://miniland.ee/uudised/",
+      "https://miniland.ee/hinnad/?lang=en",
+      "https://kuhuminnalastega.ee/item/mangutuba-miniland/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "trampolino-ulemiste",
+    "name": "Trampolino Trampoline Centre",
+    "nameLocal": "Trampolino batuudikeskus",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Suur-Sõjamäe 4, 2nd floor, Ülemiste Centre, Tallinn",
+    "lat": 59.422,
+    "lng": 24.793,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 180,
+    "description": "A trampoline centre in Ülemiste that mainly caters to children aged 7 and up, but toddlers can come with a parent. It's best for confident 2-year-olds who love bouncing, not for crawlers.",
+    "tips": "Under-7s need a companion aged 16 or older with them.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "One family guide lists €8.50 for children up to 4; not confirmed officially."
+    },
+    "discounts": [],
+    "hours": "Mon-Sat 10:00-21:00, Sun 10:00-19:00",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Mall own lot (Ülemiste)",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Ülemiste centre parking: 5 h free (see existing ulemiste-centre entry)."
+    },
+    "transport": "Ülemiste stops (tram 4, many buses)",
+    "language": null,
+    "website": "https://www.trampolino.ee/",
+    "sources": [
+      "https://www.trampolino.ee/en/contact/",
+      "https://kuhuminnalastega.ee/item/batuudikeskus-trampolino/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "playdate-tabasalu",
+    "name": "PlayDate Play Studio",
+    "nameLocal": "PlayDate mängustuudio",
+    "category": "indoor-play",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Tabasalu",
+    "address": "Kallaste tn 7, A-building 2nd floor (Tabasalu Keskus), Tabasalu, Harku vald",
+    "lat": 59.429,
+    "lng": 24.549,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 72,
+    "description": "A small play studio for children under 6, a short drive west of Tallinn, with regular open play sessions and baby parties. It's calmer and more baby-focused than the big play centres.",
+    "tips": "Register for an 'Avatud mänguaeg' (open play) slot online; there is a lift.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Mon-Sun 9:00-21:00 by booking; open play at set times",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.playdate.ee/",
+    "sources": [
+      "https://www.playdate.ee/",
+      "https://www.visitharku.com/kirjed/playdate-mangustuudio.html",
+      "https://lastegakoos.ee/listing/avatud-manguaeg-playdate-mangustuudios/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "rocca-al-mare-centre",
+    "name": "Rocca al Mare Shopping Centre",
+    "nameLocal": "Rocca al Mare keskus",
+    "category": "mall",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Paldiski mnt 102, Tallinn",
+    "lat": 59.4256,
+    "lng": 24.6505,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "One of Estonia's biggest malls, with more than 170 shops, a large food court and two paid play centres (MaryMaris and Seiklusmaa) on the 2nd floor. On a rainy day you can run errands and let a toddler play in one trip.",
+    "tips": "Since 1 July 2026 only 2 h per day are free, so start paid parking in the app if you combine shopping with a play centre, or ask the play area to register your extra free time.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free entry; play centres are paid."
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Snabb (mall own lot)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 2 h per day free (all sessions added up); then €1 per 30 min, start paid parking in Snabb, Pargi.ee or SMS 1902. 'Convenience parking' bays by the main entrance are paid from the first minute. ERR reports children's play-area visitors can get 3-4 h free by registering with the play area. Zone shown as X9 on one part of the mall page and X122 on another, so check the sign."
+    },
+    "transport": "Rocca al Mare stop",
+    "language": null,
+    "website": "https://www.roccaalmare.ee/en/",
+    "sources": [
+      "https://www.roccaalmare.ee/en/parking/",
+      "https://www.err.ee/1610065885/tallinna-rocca-al-mare-keskus-piirab-jouliselt-parkimisaega",
+      "https://visittallinn.ee/eng/visitor/near-me/175694/rocca-al-mare-shopping-centre"
+    ],
+    "lastVerified": "2026-10-10",
+    "confidence": "medium"
+  },
+  {
+    "id": "kristiine-centre",
+    "name": "Kristiine Centre",
+    "nameLocal": "Kristiine keskus",
+    "category": "mall",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kristiine",
+    "city": "Tallinn",
+    "address": "Endla 45, Tallinn",
+    "lat": 59.427,
+    "lng": 24.724,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A mid-sized mall with children's clothes and toy shops and over a dozen cafés and restaurants, including BabyBack Ribs & BBQ, which has a kids' room. I couldn't confirm a public play area inside the mall.",
+    "tips": "The first 2 h of parking are logged automatically by your number plate, with no disc needed.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "EuroPark",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 2 h free, recorded automatically by number-plate camera. For longer stays register via SMS, the EuroPark app or Pargi.ee, zone EP395: €0.50 per 30 min, €10 per day. Lot open 07:40-23:00."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.kristiinekeskus.ee/",
+    "sources": [
+      "https://www.kristiinekeskus.ee/en/parking",
+      "https://balticguide.ee/en/something-for-everyone/",
+      "https://easyfind.ee/en/lastega-sooma-eestis/"
+    ],
+    "lastVerified": "2026-10-10",
+    "confidence": "medium"
+  },
+  {
+    "id": "jarve-centre",
+    "name": "Järve Centre",
+    "nameLocal": "Järve keskus",
+    "category": "mall",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Pärnu mnt 238, Tallinn",
+    "lat": 59.392,
+    "lng": 24.724,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A south-Tallinn mall that has the Seiklusmaa play centre, with a toddler climbing area, on its 2nd floor. Its 5 free parking hours are among the most generous in the city.",
+    "tips": "Five free hours is enough for a full play session plus lunch and shopping.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free entry; Seiklusmaa is paid."
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Snabb (mall own lot)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 5 h free; after that €0.75 per 30 min via Snabb, Pargi.ee or SMS (zone X23). Underground garage open 08:00-23:00."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://jarvekeskus.ee/",
+    "sources": [
+      "https://jarvekeskus.ee/en/how-to-come/",
+      "https://jarvekeskus.ee/en/opening-hours/",
+      "https://jarvekeskus.ee/en/shops/seiklusmaa/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "t1-mall-of-tallinn",
+    "name": "T1 Mall of Tallinn",
+    "nameLocal": "T1 Mall of Tallinn",
+    "category": "mall",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Peterburi tee 2, Tallinn",
+    "lat": 59.426,
+    "lng": 24.795,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A large mall with a rooftop Ferris wheel, the SkyLab science centre and a kids' play park near the Skywheel. Super Skypark is listed separately.",
+    "tips": "The 4 free parking hours can only be extended for Super Skypark customers.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Mall own lot",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "4 h free in the underground car park and parking garage; underground open 07:00-23:00."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://t1tallinn.com/en/",
+    "sources": [
+      "https://t1tallinn.com/en/parkimine/",
+      "https://visittallinn.ee/eng/visitor/near-me/181126/t1-mall-of-tallinn"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "cafe-boulevard-olumpia",
+    "name": "Café Boulevard",
+    "nameLocal": "Café Boulevard",
+    "category": "cafe",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Liivalaia 33 (Radisson Blu Hotel Olümpia), Tallinn",
+    "lat": 59.429,
+    "lng": 24.756,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 96,
+    "description": "A hotel café in the city centre with its own children's play area: building blocks, soft climbing steps, toys and cartoons. Parents can have a proper coffee while toddlers play close by.",
+    "tips": "The café's own site and Radisson give different weekday closing times, so call if you plan an evening visit.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Play area free for café guests (assumed; not stated)."
+    },
+    "discounts": [],
+    "hours": "Mon-Fri 07:00-19:00, Sat-Sun 08:00-17:00 (café site)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (zone)",
+      "pargiSupported": true,
+      "zone": "Kesklinn",
+      "note": "City-centre street parking; check the zone sign."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.cafeboulevard.ee/en/childrens-play-area/",
+    "sources": [
+      "https://www.cafeboulevard.ee/en/childrens-play-area/",
+      "https://www.radissonhotels.com/en-us/hotels/radisson-blu-tallinn-olumpia/restaurant-bar"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "nop-cafe-kadriorg",
+    "name": "NOP Café & Shop",
+    "nameLocal": "NOP kohvik-pood",
+    "category": "cafe",
+    "setting": "both",
+    "season": "all-year",
+    "area": "Kadriorg",
+    "city": "Tallinn",
+    "address": "Köleri 1, Tallinn 10150",
+    "lat": 59.44,
+    "lng": 24.781,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A cosy café and organic shop in an old wooden house in Kadriorg. In summer the shady back yard has a sandbox for little ones, and it's an easy stop after Kadriorg Park or Miiamilla.",
+    "tips": "Book a table by phone (+372 603 2270) on busy weekends.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Café prices"
+    },
+    "discounts": [],
+    "hours": "Mon-Fri 08:00-21:00, Sat-Sun 09:00-20:00 (seasonal)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (zone)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "Kadriorg street parking; zone and fees not confirmed."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.nop.ee/",
+    "sources": [
+      "https://www.nop.ee/nopist",
+      "https://www.nop.ee/kontakt-ja-asukoht",
+      "https://visittallinn.ee/est/k%C3%BClastaja/s%C3%B6%C3%B6-joo/kuhu-minna/k%C3%B5ik-s%C3%B6%C3%B6gikohad/176571/nop-kohvik-pood"
+    ],
+    "lastVerified": "2026-10-10",
+    "confidence": "high"
+  },
+  {
+    "id": "babyback-kristiine",
+    "name": "BabyBack Ribs & BBQ (Kristiine)",
+    "nameLocal": "BabyBack Ribs & BBQ",
+    "category": "cafe",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kristiine",
+    "city": "Tallinn",
+    "address": "Endla 45, Kristiine Centre, Tallinn (also Nautica, Ahtri 9, and Ülemiste)",
+    "lat": 59.427,
+    "lng": 24.724,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 120,
+    "description": "An American BBQ restaurant chain whose Tallinn branches have children's playrooms, so parents can finish their meal while toddlers play. There's also a kids' menu.",
+    "tips": "Ask for a table near the playroom so you can keep an eye on your toddler.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Restaurant prices"
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "EuroPark",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "First 2 h free, recorded automatically by number-plate camera. For longer stays register via SMS, the EuroPark app or Pargi.ee, zone EP395: €0.50 per 30 min, €10 per day. Lot open 07:40-23:00."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://babyback.ee/",
+    "sources": [
+      "https://babyback.ee/en/laste-galerii/",
+      "https://easyfind.ee/en/lastega-sooma-eestis/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "lore-bistroo-noblessner",
+    "name": "Lore Bistro",
+    "nameLocal": "Lore Bistroo",
+    "category": "cafe",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Noblessner, Tallinn",
+    "lat": 59.452,
+    "lng": 24.733,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 120,
+    "description": "A MICHELIN Guide-recommended bistro in the Noblessner harbour area, with a children's menu, purée for the youngest and a well-stocked toy shelf. It's a grown-up meal that still works with a toddler.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Restaurant prices"
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visitestonia.com/en/best-places-to-eat-with-children-in-estonia",
+    "sources": [
+      "https://visitestonia.com/en/best-places-to-eat-with-children-in-estonia"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "elamus-spa-mustamae",
+    "name": "Mustamäe Elamus Spa",
+    "nameLocal": "Mustamäe Elamus Spa",
+    "category": "swimming",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Akadeemia tee 30, Tallinn",
+    "lat": 59.404,
+    "lng": 24.664,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A large spa and pool complex with a separate toddler pool, a kids' area with slides and a 25 m sports pool. The adults-only Spa21+ is a separate zone. Babies under 2 go free, which makes it one of the best-value water trips with a toddler.",
+    "tips": "Parking is free for spa visitors for 8 hours.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 24,
+      "family": null,
+      "note": "Children 0-1 free; 2-6 about €6.50-6.90 (sources differ); adult ticket €16-34 depending on time."
+    },
+    "discounts": [],
+    "hours": "Daily 10:00-24:00",
+    "durationMinutes": 150,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Own lot",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free for spa visitors for 8 h."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://elamusspa.ee/",
+    "sources": [
+      "https://elamusspa.ee/en/elamus-spa/pricelist/",
+      "https://elamusspa.ee/en/contact/",
+      "https://visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/179930/mustamae-elamus-spa"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "ring-spa-haabersti",
+    "name": "Ring Spa & Saunas",
+    "nameLocal": "Ring Spaa & Saunad",
+    "category": "swimming",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Õismäe tee 130, Tallinn 13513",
+    "lat": 59.412,
+    "lng": 24.642,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A spa and sauna centre in Õismäe with several pools and a separate children's pool. Child tickets are cheap, so it's a relaxed option for parents who also want a sauna.",
+    "tips": "Weekday mornings (11:00-13:00) are cheapest and quietest.",
+    "price": {
+      "free": false,
+      "adult": 19,
+      "child": 6,
+      "childFreeUnderMonths": null,
+      "family": 54,
+      "note": "Adults €19 (Mon-Fri 11-15), €22 (Mon-Thu from 15), €31 (Fri evening and weekends). Children 3-6 €6. Family €54-72. Under-3 price not stated."
+    },
+    "discounts": [
+      "20% off with Perekaart",
+      "Morning deal Mon-Fri 11-13: adult €14"
+    ],
+    "hours": "Check the website",
+    "durationMinutes": 180,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://ringspa.ee/",
+    "sources": [
+      "https://ringspa.ee/en/price-list/",
+      "https://ringspa.ee/en/contacts/",
+      "https://perekaart.ee/discounts/734",
+      "https://visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/tallinn-with-children-water-and-adventure-parks"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "aqua-spa-tallink",
+    "name": "Aqua Spa (Tallink Spa & Conference Hotel)",
+    "nameLocal": "Aqva Spa",
+    "category": "swimming",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Sadama 11a, Tallinn",
+    "lat": 59.443,
+    "lng": 24.762,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "A hotel water centre near the passenger port with a large indoor pool, a 30 cm deep children's pool and an outdoor pool open all year. The paddling pool is a gentle spot for toddlers.",
+    "tips": null,
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "3-hour gift pass €20-54; child price not confirmed."
+    },
+    "discounts": [],
+    "hours": "Mon-Sun 08:00-22:00",
+    "durationMinutes": 180,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visitestonia.com/en/aqua-spa-at-tallink-spa-conference-hotel",
+    "sources": [
+      "https://visitestonia.com/en/aqua-spa-at-tallink-spa-conference-hotel",
+      "https://chilli.ee/en/vaata-kingitust/tallink-aqva-spa-veekeskus"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "ujumekoos-baby-swimming",
+    "name": "Ujume Koos Baby Swimming",
+    "nameLocal": "Ujumekoos beebiujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Õismäe Vaba Aja Keskus (Haabersti), Elamus Spa (Mustamäe), Nõmme ujula",
+    "lat": 59.414,
+    "lng": 24.645,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 48,
+    "description": "A swim school running parent-and-baby swimming groups from 3 months old, with sessions at three Tallinn pools. Toddler groups continue after the first year.",
+    "tips": "Choose the pool closest to home, since classes are weekly.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Weekly classes; see the schedule",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://ujumekoos.ee/beebiujumine/",
+    "sources": [
+      "https://ujumekoos.ee/beebiujumine/",
+      "https://ujumekoos.ee/ujumiskursused-lastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "garantbaby-swimming",
+    "name": "Garantbaby Baby & Toddler Swimming",
+    "nameLocal": "Garantbaby beebiujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Several pools in Tallinn (see website)",
+    "lat": 59.437,
+    "lng": 24.745,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 48,
+    "description": "Swimming classes for babies and children from 3 months to 4 years, split into a 3 months-2 years group and a 2-4 years group across several Tallinn pools.",
+    "tips": null,
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://garantbaby.ee/",
+    "sources": [
+      "https://garantbaby.ee/",
+      "https://garantbaby.ee/babyswim/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "kalev-spa-baby-swimming",
+    "name": "Kalev Spa Baby Swimming",
+    "nameLocal": "Kalev Spa beebide ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Aia 18, Tallinn",
+    "lat": 59.437,
+    "lng": 24.753,
+    "ageMinMonths": 4,
+    "ageMaxMonths": 36,
+    "description": "Guided baby swimming sessions at the Kalev Spa water centre, from 4 months old. Passes make it easy to go weekly.",
+    "tips": null,
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "10-visit pass €115, valid 90 days."
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.kalevspa.ee/veekeskus/beebide-ujutamine/",
+    "sources": [
+      "https://www.kalevspa.ee/veekeskus/beebide-ujutamine/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "lasteklubi-toddler-music",
+    "name": "Väike Päike Lasteklubi Toddler Music Group",
+    "nameLocal": "Muusikaring väikelastele 1-3 a",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Tuukri 11, Tallinn",
+    "lat": 59.443,
+    "lng": 24.77,
+    "ageMinMonths": 10,
+    "ageMaxMonths": 36,
+    "description": "A weekly 30-minute music group for children aged 10 months to 3 years, with a parent present. Toddlers play rhythm instruments and join in songs and games. The same club also runs toddler gymnastics for ages 1-2.",
+    "tips": "You can pay per class (€15) to try it before committing to a month.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 15,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "€42 per month or €15 per class."
+    },
+    "discounts": [],
+    "hours": "Weekly; see schedule",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.lasteklubi.ee/huviring/muusikaring-vaikelastele-1-3-a/",
+    "sources": [
+      "https://www.lasteklubi.ee/huviring/muusikaring-vaikelastele-1-3-a/",
+      "https://www.lasteklubi.ee/huviring/voimlemine-vaikelastele-1-2-a/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "loovuslaps-baby-toddler-group",
+    "name": "Loovuslaps Baby & Toddler Group",
+    "nameLocal": "Loovuslaps",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Tallinn (see website)",
+    "lat": 59.437,
+    "lng": 24.745,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 36,
+    "description": "A group class for children aged 6 months to 3 years with an adult. A 25-30 minute lesson is followed by 15 minutes of free play.",
+    "tips": null,
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.loovuslaps.ee/huviringid-lastele/",
+    "sources": [
+      "https://www.loovuslaps.ee/huviringid-lastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "myfitness-toddler-gym",
+    "name": "MyFitness Toddler Gymnastics & Baby Swimming",
+    "nameLocal": "MyFitness väikelaste võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Various MyFitness clubs in Tallinn",
+    "lat": 59.437,
+    "lng": 24.745,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 24,
+    "description": "A gym chain running parent-and-child classes: toddler gymnastics for newly walking 1-2-year-olds, ending with a circle game, and baby swimming from 3 months. Some clubs, such as Rocca al Mare, also have a kids' playroom while parents train.",
+    "tips": "The MyFitness Rocca al Mare playroom costs non-members €5 per child.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/vaikelaste-voimlemine/",
+    "sources": [
+      "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/vaikelaste-voimlemine/",
+      "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/beebide-ja-vaikelaste-ujumine/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "nomme-library-ponnihommik",
+    "name": "Nõmme Library – toddler morning",
+    "nameLocal": "Nõmme raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Raudtee 68, Tallinn",
+    "lat": 59.3868,
+    "lng": 24.6838,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 36,
+    "description": "Nõmme's branch library runs a monthly põnnihommik (toddler morning) with stories, play and drawing, and one listing pitches it at roughly 1.5–3-year-olds. A calm, small-group first library experience close to Nõmme station.",
+    "tips": "Held on the third Wednesday of the month at 11:00 per library listings; confirm on the events calendar as listings are of mixed dates.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Põnnihommik: 3rd Wednesday of the month 11:00 (unconfirmed for autumn 2026)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://keskraamatukogu.ee/en/library/nomme-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/nomme-library/",
+      "https://keskraamatukogu.ee/events/ponnihommik-57/",
+      "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "tondi-library-ponnihommik",
+    "name": "Tondi Library – Saturday toddler morning",
+    "nameLocal": "Tondi raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kristiine",
+    "city": "Tallinn",
+    "address": "Pärnu mnt 125, Tallinn",
+    "lat": 59.4101,
+    "lng": 24.728,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 60,
+    "description": "Tondi library invites 2–5-year-olds with a parent to a Saturday põnnihommik of picture books, play and crafts. One of the few branches listed as running it every week rather than monthly.",
+    "tips": "Listings say every Saturday at 12:00; phone 674 8647 to confirm.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Põnnihommik: Saturdays 12:00 (per older listings)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://keskraamatukogu.ee/en/library/tondi-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/tondi-library/",
+      "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "manniku-library-ponnihommik",
+    "name": "Männiku Library – toddler morning",
+    "nameLocal": "Männiku raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Pihlaka 12, Tallinn (4th floor of Männi community centre)",
+    "lat": 59.364,
+    "lng": 24.712,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 60,
+    "description": "Männiku's library, upstairs in the Männi community centre, holds a monthly Saturday põnnihommik for 2–5-year-olds with parents. Expect picture books, simple games and a craft.",
+    "tips": "Listings conflict (3rd Saturday 10:00 vs 2nd Saturday 11:00); call 655 9718 before going.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Monthly Saturday põnnihommik (date/time conflicting in sources)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://keskraamatukogu.ee/en/library/manniku-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/manniku-library/",
+      "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "kannukuke-library-ponnihommik",
+    "name": "Kännukuke Library – toddler morning",
+    "nameLocal": "Kännukuke raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "E. Vilde tee 72, Tallinn",
+    "lat": 59.404,
+    "lng": 24.662,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 60,
+    "description": "Kännukuke, Mustamäe's children-oriented branch, welcomes toddlers with a parent to a põnnihommik on the first Saturday of the month. Sessions break over summer and resume in autumn.",
+    "tips": "First Saturday of the month at 12:00 per listing; phone 683 0951 to confirm the autumn restart.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Põnnihommik: 1st Saturday of the month 12:00 (summer break)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://keskraamatukogu.ee/en/library/kannukuke-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/kannukuke-library/",
+      "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "sole-library-ponnihommik",
+    "name": "Sõle Library – toddler morning (Estonian/Russian)",
+    "nameLocal": "Sõle raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Sõle 47b, Tallinn",
+    "lat": 59.437,
+    "lng": 24.702,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 60,
+    "description": "Sõle library in Põhja-Tallinn has run Saturday põnnihommik sessions (11:00–12:00) for pre-schoolers with a parent, in both Estonian and Russian. Useful for Russian-speaking families too.",
+    "tips": "Contact sole@tln.lib.ee / 601 9153 for the current dates.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Occasional Saturday 11:00–12:00 (2023 listing; check calendar)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian, Russian",
+    "website": "https://keskraamatukogu.ee/en/library/sole-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/events/ponnihommik-sole-raamatukogus/",
+      "https://keskraamatukogu.ee/en/library/sole-library/?id=29350"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "pirita-library-ponnihommik",
+    "name": "Pirita Library – toddler morning (Estonian/Russian)",
+    "nameLocal": "Pirita raamatukogu – põnnihommik",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Pirita",
+    "city": "Tallinn",
+    "address": "Metsavahi tee 19, Tallinn",
+    "lat": 59.457,
+    "lng": 24.846,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 48,
+    "description": "Pirita library is listed among branches holding põnnihommik sessions for 2–4-year-olds with a parent, with stories, games and drawing in Estonian and Russian. A small neighbourhood library near Pirita's forest paths.",
+    "tips": "No current schedule found; check the events calendar.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian, Russian",
+    "website": "https://keskraamatukogu.ee/en/library/pirita-library/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/pirita-library/",
+      "https://keskraamatukogu.ee/raamatukogutunnid-veebis/"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "liivalaia-library-baby-room",
+    "name": "Liivalaia Library (foreign languages) – parent & baby room",
+    "nameLocal": "Liivalaia raamatukogu (võõrkeelne kirjandus)",
+    "category": "library",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Liivalaia 40, Tallinn",
+    "lat": 59.429,
+    "lng": 24.757,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 48,
+    "description": "The foreign-language literature library has a dedicated parent-and-baby room (armchair, changing table, sink) and runs a Russian-language põnnihommik for 2–4-year-olds. A good central stop for international families looking for books in other languages.",
+    "tips": "Põnnihommik places are limited and pre-registration is compulsory.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Library sessions are free"
+    },
+    "discounts": [],
+    "hours": "Mon–Fri 10–19, Sat 10–17, Sun closed (per hours page)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": true,
+      "feedingRoom": true,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Russian, English, other foreign languages",
+    "website": "https://keskraamatukogu.ee/en/library/department-of-literature-in-foreign-languages/",
+    "sources": [
+      "https://keskraamatukogu.ee/en/library/department-of-literature-in-foreign-languages/",
+      "https://keskraamatukogu.ee/opetajale/vanema-ja-beebi-tuba/",
+      "https://keskraamatukogu.ee/en/hours-and-locations/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "estonian-museum-of-natural-history",
+    "name": "Estonian Museum of Natural History (Old Town, closing)",
+    "nameLocal": "Eesti Loodusmuuseum",
+    "category": "museum",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Lai 29a, Tallinn",
+    "lat": 59.4392,
+    "lng": 24.7448,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "Stuffed animals, aquariums and nature dioramas that toddlers love pointing at, in a compact Old Town building. The Lai street house closes on 31 October 2026 and the museum reopens in a new Noblessner building in 2027.",
+    "tips": "Last chance until 31 Oct 2026; afterwards re-list at the Noblessner address when it opens.",
+    "price": {
+      "free": false,
+      "adult": 12,
+      "child": null,
+      "childFreeUnderMonths": 96,
+      "family": 24,
+      "note": "Under-8s free; family = up to 2 adults + minor children; pupils/students/pensioners €8"
+    },
+    "discounts": [
+      "Reduced €8 pupils/students/pensioners"
+    ],
+    "hours": "Check the website",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Estonian, English",
+    "website": "https://www.loodusmuuseum.ee/en",
+    "sources": [
+      "https://www.loodusmuuseum.ee/en/visitor-and-ticket-information",
+      "https://kultuur.err.ee/1610008957/loodusmuuseum-tahistab-viimase-vanalinnas-avatud-naitusega-pikka-teekonda-uue-majani",
+      "https://www.loodusmuuseum.ee/et/joulupeod-ja-synnipaevad"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "fat-margaret-maritime-museum",
+    "name": "Fat Margaret – Estonian Maritime Museum",
+    "nameLocal": "Paks Margareeta – Eesti Meremuuseum",
+    "category": "museum",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Pikk 70, Tallinn",
+    "lat": 59.4425,
+    "lng": 24.7505,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "A medieval cannon tower with a medieval cog wreck, ship models and around 50 hands-on and digital stations. Fun for older toddlers who like buttons and boats, but expect towers and stairs.",
+    "tips": "Children 8 and under are free, so one adult ticket plus toddler is cheap; family ticket if two adults.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 96,
+      "family": null,
+      "note": "Under-8s free; third-party guides quote adult €14–16 and family €28–30 (2026) – verify on meremuuseum.ee"
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Estonian, English",
+    "website": "https://meremuuseum.ee/",
+    "sources": [
+      "https://www.estoniadestinations.com/things-to-do/fat-margaret-tower/",
+      "https://medievalbooker.com/destinations/tallinn/fat-margaret-maritime-museum"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "maarjamae-history-centre",
+    "name": "Estonian History Museum – Maarjamäe History Centre",
+    "nameLocal": "Eesti Ajaloomuuseum – Maarjamäe ajalookeskus",
+    "category": "museum",
+    "setting": "both",
+    "season": "all-year",
+    "area": "Pirita",
+    "city": "Tallinn",
+    "address": "Pirita tee 56, Tallinn",
+    "lat": 59.4495,
+    "lng": 24.8036,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "The palace museum has a hands-on children's exhibition ('I want to play!' / Children's Republic) and an outdoor playground shaped like the map of Estonia overlooking Tallinn Bay. Easy to combine with a seaside walk along Pirita tee.",
+    "tips": "The Estonia-shaped playground outside is a good reward after the indoor rooms.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 108,
+      "family": null,
+      "note": "Children up to and including 8 free; third-party sites quote €15 adult / €10 reduced / €30 family – verify"
+    },
+    "discounts": [
+      "Free with Tallinn Card (per reseller)"
+    ],
+    "hours": "Daily 10–18 (per third-party listing; check the website)",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": "Estonian, English, Russian",
+    "website": "https://ajaloomuuseum.ee/",
+    "sources": [
+      "https://ajaloomuuseum.ee/",
+      "https://wegotrip.com/estonian-history-museum-t6847/",
+      "https://www.tripadvisor.com/Attraction_Review-g274958-d290202-Reviews-Maarjamae_Palace_Estonian_History_Museum_Maarjamae_Loss-Tallinn_Harju_County.html"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "tallinn-city-life-museum",
+    "name": "Tallinn City Life Museum",
+    "nameLocal": "Tallinna Linnaelu Muuseum",
+    "category": "museum",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Vene 17, Tallinn",
+    "lat": 59.4378,
+    "lng": 24.7475,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 144,
+    "description": "Tallinn City Museum's Old Town house tells the city's story with historic interiors and objects; better for curious older toddlers than babies. Preschoolers up to 6 enter free and the first Sunday of the month is free for everyone.",
+    "tips": "Free Museum Sunday (1st Sunday) needs advance booking, with a ticket issued for every visitor including children.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 84,
+      "family": 20,
+      "note": "Preschool children up to 6 free; family €20 (2 adults + children under 19)"
+    },
+    "discounts": [
+      "Free first Sunday of the month (book ahead)",
+      "Tallinn Card"
+    ],
+    "hours": "Check the website",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Estonian, English, Russian",
+    "website": "https://linnamuuseum.ee/en/linnamuuseum/visitor-info/",
+    "sources": [
+      "https://linnamuuseum.ee/en/linnamuuseum/visitor-info/",
+      "https://www.linnamuuseum.ee/en/tallinna-linnamuuseum/museum-sundays/",
+      "https://www.tallinn.ee/en/museumsunday"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "proto-invention-factory",
+    "name": "PROTO Invention Factory",
+    "nameLocal": "PROTO avastustehas",
+    "category": "museum",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kalamaja",
+    "city": "Tallinn",
+    "address": "Peetri 12, Noblessner, Tallinn",
+    "lat": 59.451,
+    "lng": 24.733,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 144,
+    "description": "A VR-heavy experience centre about historic inventions; mostly for older kids, but toddlers get a construction area, air cannons and curved mirrors. Under-6s are free, so it works if you are bringing older siblings.",
+    "tips": "Weekday tickets are cheaper than weekends; most VR is not for toddlers.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 72,
+      "family": null,
+      "note": "Free under 6; 2026 guides: adult €16 Tue–Fri / €20 Sat–Sun, child €11, family €35/€40 – verify on prototehas.ee"
+    },
+    "discounts": [
+      "Weekday pricing"
+    ],
+    "hours": "Check the website",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Official site has a location & parking page (prototehas.ee/en/asukoht-ja-parkimine/) – details not retrieved"
+    },
+    "transport": null,
+    "language": "Estonian, English, Russian",
+    "website": "https://www.prototehas.ee/en/",
+    "sources": [
+      "https://www.prototehas.ee/en/tickets/",
+      "https://www.tallinn-trip.com/guides/proto-invention-factory-kids/",
+      "https://www.piletilevi.ee/eng/tickets/kogupere/proto-avastustehas-462486/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "nuku-museum-of-puppetry-arts",
+    "name": "NUKU Museum of Puppetry Arts",
+    "nameLocal": "Nukuteatrimuuseum",
+    "category": "museum",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Lai 1, Tallinn",
+    "lat": 59.437,
+    "lng": 24.743,
+    "ageMinMonths": 24,
+    "ageMaxMonths": 144,
+    "description": "Kids can handle table, rod and hand puppets and marionettes, and short plays or storytimes sometimes run during the day. Under-3s free, but the museum is not stroller-accessible.",
+    "tips": "Leave the stroller near the main entrance; reduced and family tickets only at the box office.",
+    "price": {
+      "free": false,
+      "adult": 10,
+      "child": null,
+      "childFreeUnderMonths": 36,
+      "family": 22,
+      "note": "Family = up to 2 adults + at least 1 child under 16"
+    },
+    "discounts": [
+      "Students, pensioners, pupils",
+      "Free with Tallinn Card (per Visit Tallinn)"
+    ],
+    "hours": "Tue–Sun 10–18 (summer 25.06–31.08 Tue–Sun 11–17)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": false,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Estonian, English",
+    "website": "https://eestinoorsooteater.ee/en/museum/visiting-info",
+    "sources": [
+      "https://eestinoorsooteater.ee/en/museum/visiting-info",
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176984/nuku-museum-of-puppetry-arts"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "nuku-theatre-toddler-shows",
+    "name": "NUKU Theatre (Estonian Youth Theatre) – toddler shows",
+    "nameLocal": "NUKU teater / Eesti Noorsooteater",
+    "category": "theatre",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Lai 1, Tallinn",
+    "lat": 59.437,
+    "lng": 24.743,
+    "ageMinMonths": 10,
+    "ageMaxMonths": 72,
+    "description": "The national puppet/youth theatre stages short (30–45 min) shows for small children in its intimate Oval Hall, e.g. 'Minu jälg' (3+). A baby piece 'Nutude salajutud' for 10 months–2 years ran until March 2026, so watch for new baby productions.",
+    "tips": "Filter the playbill for 'väikelapsele' (for small children); most current titles are 3+.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Per-show pricing on Piletilevi"
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Estonian (mostly non-verbal/visual for small kids)",
+    "website": "https://www.eestinoorsooteater.ee/teater/mangukava/",
+    "sources": [
+      "https://www.eestinoorsooteater.ee/lavastus/nutude-salajutud/",
+      "https://www.eestinoorsooteater.ee/en/sundmus/minu-jalg-8/",
+      "https://www.eestinoorsooteater.ee/teater/mangukava/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "estonian-national-opera-concert-for-babies",
+    "name": "Estonian National Opera – Concert for the Littlest",
+    "nameLocal": "Rahvusooper Estonia – Kontsert kõige pisematele",
+    "category": "theatre",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Estonia pst 4, Tallinn (Estonia restaurant, entry via theatre foyer)",
+    "lat": 59.4339,
+    "lng": 24.7514,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 36,
+    "description": "A ~45-minute classical concert for 0–3-year-olds where babies crawl on a big themed play mat and parents can lie down and listen. Strollers stay in the lobby and there is a café and changing table.",
+    "tips": "Sessions (e.g. 10:00 and 11:30) sell out; check tickets.opera.ee and Fienta for new dates.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Sources conflict: €15 standard / €10 reduced, or €6–10; child under 3 on reduced ticket – verify when booking"
+    },
+    "discounts": [],
+    "hours": "Occasional dates (last seen: 6 Sep 2026, 10:00 & 11:30)",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street parking zone)",
+      "pargiSupported": true,
+      "zone": "Südalinn",
+      "note": "Zone inferred from location, not confirmed on the venue's site; check street signs. Tallinn city zones can be paid via Pargi.ee/mobile parking."
+    },
+    "transport": null,
+    "language": "Music (no language barrier)",
+    "website": "https://tickets.opera.ee/kontsert-k%C3%B5ige-pisematele?idioma=ET",
+    "sources": [
+      "https://tickets.opera.ee/kontsert-k%C3%B5ige-pisematele?idioma=ET",
+      "https://concert.ee/en/festival/concert-for-babies-by-estonian-national-opera/",
+      "https://fienta.com/et/rahvusooper-estonia-kontsert-koige-pisematele-linnud-ja-liblikad"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "apollo-kino-mustamae-baby-cinema",
+    "name": "Apollo Kino Mustamäe – Mum & Baby cinema day",
+    "nameLocal": "Apollo Kino – Emme ja beebi kinopäev",
+    "category": "theatre",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Mustamäe keskus, Tammsaare tee 116, Tallinn",
+    "lat": 59.418,
+    "lng": 24.695,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 18,
+    "description": "Periodic weekday-morning screenings of regular films for parents with babies, with dimmed-but-not-dark lights, quieter sound, stroller parking and a changing table. Best for pre-walkers; busy toddlers may find it hard.",
+    "tips": "Kids under 3 need no ticket and seats are sold with a free seat beside you; no reservations, buy online or at the box office.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "One adult ticket; children under 3 free"
+    },
+    "discounts": [],
+    "hours": "Occasional Tuesday mornings – check the website",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Shopping-centre parking; cost not verified"
+    },
+    "transport": null,
+    "language": "Film-dependent (subtitled)",
+    "website": "https://www.apollokino.ee/special/EmmeBeebiMustamae/",
+    "sources": [
+      "https://www.apollokino.ee/special/EmmeBeebiMustamae/",
+      "https://www.apollokino.ee/special/EmmeBeebiLounakeskus"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "tondiraba-park",
+    "name": "Tondiraba Park",
+    "nameLocal": "Tondiraba park",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Tondiraba tn 13, Tallinn",
+    "lat": 59.4377,
+    "lng": 24.853,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A 29-hectare park with what Visit Tallinn calls the largest sports-field and playground complex in the Baltics, with playgrounds for different ages. Wide paved paths make it easy with a stroller or balance bike.",
+    "tips": "Visitor reviews mention a coffee spot on site; head for the smaller-kid play zones as the big structures suit older children.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "park lot",
+      "pargiSupported": false,
+      "zone": null,
+      "note": "Free parking listed by Visit Harju; unconfirmed by the city."
+    },
+    "transport": "Bus stops Tähesaju tee, Kurina, Linnamäe tee",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/180371/tondiraba-park",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/180371/tondiraba-park",
+      "https://visitestonia.com/en/tondiraba-park",
+      "https://visitharju.ee/en/?p=537034",
+      "https://news.err.ee/1608318134/lasnamae-s-tondiraba-park-to-open-on-sunday"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "pae-park",
+    "name": "Pae Park (Perepark family area)",
+    "nameLocal": "Pae park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Paepargi, Lasnamäe, Tallinn (sources give Paepargi 21 or 37)",
+    "lat": 59.434,
+    "lng": 24.815,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A former limestone quarry turned modern park around a lake with a red suspension bridge; its 'Perepark' (family park) section has many playgrounds and sports courts. Good for a lakeside stroller loop plus playground stop.",
+    "tips": "There is a 1.8 km paved circuit around the park — easy for strollers.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus stops Kumu (~365 m) and Kiive (~425 m)",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177329/pae-park",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177329/pae-park",
+      "https://terviserajad.ee/en/rajad/pae-park-health-trail/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "kogupere-manguvaljak-paasiku",
+    "name": "Paasiku family playground",
+    "nameLocal": "Kogupere mänguväljak",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Paasiku tn 3, Tallinn",
+    "lat": 59.432,
+    "lng": 24.865,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A small neighbourhood family playground in Lasnamäe that is well rated by locals and packed with play equipment and sports facilities. Handy if you live nearby; not a destination in itself.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://intravel.net/tallinn/attractions/kogupere-manguvaljak",
+    "sources": [
+      "https://intravel.net/tallinn/attractions/kogupere-manguvaljak"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "police-park-playground",
+    "name": "Police Park playgrounds",
+    "nameLocal": "Politseiaed",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Politseiaed, between Pronksi, Gonsiori, F. R. Kreutzwaldi and J. Kunderi streets, Tallinn",
+    "lat": 59.4345,
+    "lng": 24.76,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "Central city park next to the Hilton with playgrounds for children of all ages, a fountain, skate park and dog area. A convenient green break when you are in the city centre with a toddler.",
+    "tips": "Toddlers may want to steer clear of the skate park side when it's busy.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street zone)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "Surrounding streets are in a central paid zone (likely Kesklinn) — check street signs. Tallinn has 4 paid street zones (Kesklinn, Südalinn, Vanalinn, Pirita); first 15 min free with parking clock."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176800/police-park",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176800/police-park",
+      "https://visitestonia.com/en/police-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "tammsaare-park-playground",
+    "name": "Tammsaare Park playground",
+    "nameLocal": "Tammsaare pargi mänguväljak",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Tammsaare park, Estonia pst side (between Estonia pst and the pavilion), Tallinn",
+    "lat": 59.4355,
+    "lng": 24.7525,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A city-centre playground on the Estonia Theatre side of Tammsaare Park, planned with musical instruments (bongo drums, xylophone), a slide and trampolines. Easy to combine with errands in the centre.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street zone)",
+      "pargiSupported": true,
+      "zone": null,
+      "note": "City-centre paid zone (likely Südalinn) and nearby malls' paid garages. Tallinn has 4 paid street zones (Kesklinn, Südalinn, Vanalinn, Pirita); first 15 min free with parking clock."
+    },
+    "transport": "Viru / Estonia stops (many tram and bus lines)",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-33283/tammsaare-park",
+    "sources": [
+      "https://www.err.ee/1113382/tallinnas-tammsaare-pargis-algab-manguvaljaku-ehitus",
+      "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-33283/tammsaare-park"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "cruise-terminal-rooftop-promenade",
+    "name": "Cruise Terminal rooftop promenade",
+    "nameLocal": "Kruiisiterminali katusepromenaad",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Old City Harbour, Tallinn Cruise Terminal (northwest pier), Tallinn",
+    "lat": 59.4455,
+    "lng": 24.762,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "An 850 m public promenade across the roof of the cruise terminal with sea views, seating, a children's playground and a small sports area. A breezy, car-free walk with a toddler, linking to the seafront Culture Kilometre.",
+    "tips": "Bikes, scooters and skateboards are not allowed on the promenade; bring a windproof layer.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.ts.ee/en/cruise-terminal/outdoor-areas/",
+    "sources": [
+      "https://www.ts.ee/en/cruise-terminal/outdoor-areas/",
+      "https://visitestonia.com/en/tallinns-old-city-harbour-roof-promenade",
+      "https://visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/5-new-parks-and-promenades-in-the-green-capital"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "reidi-tee-promenade",
+    "name": "Reidi tee seaside promenade",
+    "nameLocal": "Reidi tee",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Reidi tee, from Lootsi/Ahtri junction to the Russalka monument, Tallinn",
+    "lat": 59.444,
+    "lng": 24.78,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A ~2 km seaside walking and cycling route on smooth asphalt with benches and eight playgrounds along the way. Perfect for a stroller walk with regular playground stops.",
+    "tips": "Continue past Russalka onto the Pirita promenade if the little one naps.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177339/pirita-promenade",
+    "sources": [
+      "https://news.err.ee/1008761/gallery-reidi-tee-opens-in-tallinn",
+      "https://visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/5-new-parks-and-promenades-in-the-green-capital",
+      "https://visitestonia.com/en/pirita-promenade-and-reidi-road"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "pirita-promenade",
+    "name": "Pirita Promenade",
+    "nameLocal": "Pirita promenaad",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Pirita",
+    "city": "Tallinn",
+    "address": "Pirita tee, from the Russalka monument to Pirita beach, Tallinn",
+    "lat": 59.455,
+    "lng": 24.815,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A long seaside path (about 4 km from Russalka to the Pirita river mouth) with separate pedestrian and cycling lanes, sea views and several playgrounds and sports fields along the way. Great for long stroller walks.",
+    "tips": "Can be very windy — a stroller rain/wind cover helps.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "mixed",
+      "operator": "Tallinn city (Pirita zone) near the beach end",
+      "pargiSupported": true,
+      "zone": "Pirita",
+      "note": "Pirita zone (car parks at Merivälja tee 1c and 1e) is paid 15 May–15 Sept, 10:00–22:00, €0.01/min; first 15 min free with parking clock."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177339/pirita-promenade",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177339/pirita-promenade",
+      "https://visitestonia.com/en/pirita-promenade",
+      "https://www.visittallinn.ee/eng/visitor/plan/good-to-know/parking"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "lepistiku-park",
+    "name": "Lepistiku Park",
+    "nameLocal": "Lepistiku park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Sõpruse pst 195 area, Mustamäe, Tallinn",
+    "lat": 59.412,
+    "lng": 24.69,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A lit nature-conservation park in the middle of Mustamäe with ponds, a children's playground, sports courts and a pedestrian bridge. A calm, local spot for duck-watching and a playground run.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus stop Lepistiku (~160 m)",
+    "language": null,
+    "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176793/lepistiku-park",
+    "sources": [
+      "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176793/lepistiku-park",
+      "https://intravel.net/tallinn/entertainment/lepistiku-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "manni-park",
+    "name": "Männi Park",
+    "nameLocal": "Männi park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Männi park, Mustamäe, Tallinn",
+    "lat": 59.4085,
+    "lng": 24.68,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "One of Mustamäe's largest pine parks, with a children's playground, a stony picnic area and a bandstand. In winter the city sets up an outdoor ice rink here.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176797/manni-park",
+    "sources": [
+      "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176797/manni-park",
+      "https://visitestonia.com/en/manni-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "parditiigi-park",
+    "name": "Duck Pond Park",
+    "nameLocal": "Parditiigi park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "A. H. Tammsaare tee 68, Tallinn",
+    "lat": 59.418,
+    "lng": 24.711,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A nearly six-hectare park around a pond with resident mallards, a lit fountain, paths, benches and children's playgrounds. Duck-spotting plus a playground makes an easy toddler outing.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visitestonia.com/en/parditiigi-park",
+    "sources": [
+      "https://www.visitestonia.com/en/parditiigi-park",
+      "https://www.puhkaeestis.ee/en/parditiigi-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "oismae-pond-park",
+    "name": "Õismäe Pond Park",
+    "nameLocal": "Õismäe tiigi park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Around Õismäe pond, Väike-Õismäe, Tallinn",
+    "lat": 59.414,
+    "lng": 24.644,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A 9-hectare park ringing the round Õismäe pond, with a family playground, a children's traffic circle, a fitness path and paved loops. A flat, stroller-friendly circuit popular with local families.",
+    "tips": "The children's traffic circle is great for balance bikes and trikes.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.tallinn.ee/Park-area-of-Oismae-Flower-Hill-pond-surroundings",
+    "sources": [
+      "https://www.tallinn.ee/Park-area-of-Oismae-Flower-Hill-pond-surroundings",
+      "https://en.wikipedia.org/wiki/V%C3%A4ike-%C3%95ism%C3%A4e"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "kase-park-kopli",
+    "name": "Kopli Birch Park",
+    "nameLocal": "Kase park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Kopli tn 106 area, Tallinn",
+    "lat": 59.4575,
+    "lng": 24.69,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A protected forest park in Kopli, refurbished in 2021, with winding lit paths, a children's playground, swings, picnic spots and benches. A shady forest walk reachable by tram.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Tram 1 or 2 to Marati",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176791/kopli-birch-park",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176791/kopli-birch-park",
+      "https://visitestonia.com/en/kase-park",
+      "https://www.visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/self-guided-journey-through-kopli",
+      "https://arhitektuuripreemiad.ee/en/object/kopli-birch-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "putukavail-pohja-tallinn",
+    "name": "Putukaväil green corridor (Põhja-Tallinn section)",
+    "nameLocal": "Putukaväil",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Former power-line corridor between Sõle street and Stroomi beach, Tallinn",
+    "lat": 59.448,
+    "lng": 24.708,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A new green corridor (part of Tallinn's 14 km Putukaväil 'Bug Trail') with play and sports areas between Sõle street and Stroomi beach. In 2025 ERR reported that its play equipment and toilets were closed pending a usage permit, so check status before going.",
+    "tips": "Check recent news or the Põhja-Tallinn district before a dedicated trip.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.err.ee/1609774299/pohja-tallinna-putukavailal-osadel-atraktsioonidel-pole-endiselt-kasutusluba",
+    "sources": [
+      "https://www.err.ee/1609774299/pohja-tallinna-putukavailal-osadel-atraktsioonidel-pole-endiselt-kasutusluba",
+      "https://www.err.ee/1609756101/galerii-pohja-tallinna-putukavaila-koiki-atraktsioone-veel-kasutada-ei-saa"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "paljassaare-boardwalk",
+    "name": "Paljassaare nature reserve boardwalk",
+    "nameLocal": "Paljassaare hoiuala laudtee",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Paljassaare peninsula, near Pikakari beach, Tallinn",
+    "lat": 59.472,
+    "lng": 24.69,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A 550 m boardwalk (two sections) through the Paljassaare conservation area, where over 220 bird species have been recorded and Highland cattle graze in summer. Toddlers love spotting the cows and birds.",
+    "tips": "Bus 59 to the Pikakari terminus; paths beyond the boardwalk are unpaved.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus 59 to Pikakari (last stop)",
+    "language": null,
+    "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/179804/paljassaare-special-conservation-area",
+    "sources": [
+      "https://visitestonia.com/en/paljassaare-boardwalks",
+      "https://visitharju.ee/en/?p=499253",
+      "https://gigigriffis.com/hiking-estonia-tallinns-paljassaare-hoiuala/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "pikakari-beach",
+    "name": "Pikakari Beach",
+    "nameLocal": "Pikakari rand",
+    "category": "beach",
+    "setting": "outdoor",
+    "season": "summer",
+    "area": "Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Paljassaare peninsula, Tallinn",
+    "lat": 59.468,
+    "lng": 24.683,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A Blue Flag sandy beach on the Paljassaare peninsula with swings, a children's playground, a boardwalk and outdoor toilets. Note that the water gets deep quickly, so it is better for sand play than paddling.",
+    "tips": "Keep toddlers close at the waterline — the sea deepens fast here.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year; lifeguards Jun–Aug 9:00–20:00",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus 59 to Pikakari",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177338/pikakari-beach",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177338/pikakari-beach",
+      "https://visitharju.ee/en/?p=57168"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "raagu-park",
+    "name": "Räägu Park",
+    "nameLocal": "Räägu park",
+    "category": "playground",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Nõmme tee 52 (corner of Nõmme and Räägu streets), Tallinn",
+    "lat": 59.388,
+    "lng": 24.69,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A one-hectare neighbourhood park with several playgrounds and a basketball court, designed for all ages. A handy local stop in the Nõmme/Mustamäe border area.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/176802/raagu-park",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/176802/raagu-park",
+      "https://tallinn.ee/eng/g15917s80125"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "glehn-park",
+    "name": "Glehn Park",
+    "nameLocal": "Glehni park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Vana-Mustamäe tn 48, Tallinn",
+    "lat": 59.393,
+    "lng": 24.695,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A forested hillside park around Baron von Glehn's 19th-century castle, dotted with unusual sculptures that make a fun 'spot the statue' walk for toddlers. Paths are hilly and partly unpaved.",
+    "tips": "A sturdy all-terrain stroller or carrier works better than a city stroller on the slopes.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7, all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visitestonia.com/glehn-park",
+    "sources": [
+      "https://visitestonia.com/glehn-park",
+      "https://www.nomadotravel.app/en/attractions/glehn-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "paaskula-bog-trail",
+    "name": "Pääsküla Bog nature trail",
+    "nameLocal": "Pääsküla raba õpperada",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Kraavi tn 65, Tallinn",
+    "lat": 59.353,
+    "lng": 24.635,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A real bog inside city limits: a 4 km trail of dirt paths and boardwalks, plus a separate 2 km children's/accessible route that mainly runs on paved paths and is fully passable with a stroller. A 10 m observation tower sits in the Männiku area.",
+    "tips": "Stick to the 2 km children's loop with a stroller; the 280 m floating boardwalk on the long loop isn't stroller-friendly.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/181772/paaskula-bog-nature-trail",
+    "sources": [
+      "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/181772/paaskula-bog-nature-trail",
+      "https://visitharju.ee/en/?p=56622",
+      "https://gigigriffis.com/hiking-estonia-paaskula-bog-study-trail/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "harku-lake-beach",
+    "name": "Harku Lake Beach",
+    "nameLocal": "Harku järve rand",
+    "category": "beach",
+    "setting": "outdoor",
+    "season": "summer",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Paldiski mnt 124a, Tallinn",
+    "lat": 59.42,
+    "lng": 24.62,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "Tallinn's only lakeside beach, with children's playgrounds, changing cabins, a shower and ball-game areas. The lake warms up early, so it's one of the first places to paddle in late spring.",
+    "tips": "Lifeguards only June–August.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open 24/7; lifeguards Jun–Aug",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "beach lot",
+      "pargiSupported": false,
+      "zone": null,
+      "note": "Free parking area near the beach plus bicycle parking."
+    },
+    "transport": "Bus to Väike-Õismäe area",
+    "language": null,
+    "website": "https://www.visitestonia.com/en/harku-lake-and-beach",
+    "sources": [
+      "https://www.visitestonia.com/en/harku-lake-and-beach",
+      "https://visitharju.ee/en/?p=57065",
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/180696"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "kakumae-beach",
+    "name": "Kakumäe Beach",
+    "nameLocal": "Kakumäe rand",
+    "category": "beach",
+    "setting": "outdoor",
+    "season": "summer",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Räime tn 52, Tallinn",
+    "lat": 59.44,
+    "lng": 24.597,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A sandy, usually calm beach with relatively shallow water that the official listings call suitable for families with children. Has playgrounds, ball courts, changing cabins, a shower and an ice-cream stand.",
+    "tips": "Arrive early on hot days; parking is free but unguarded.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year; lifeguards 1 Jun–31 Aug 9:00–20:00",
+    "durationMinutes": 150,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "beach lot",
+      "pargiSupported": false,
+      "zone": null,
+      "note": "Free unguarded car and bicycle parking."
+    },
+    "transport": "Bus 21 to Kakumäe tee, or 21A/21B to Sooranna tee",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177336/kakumae-beach",
+    "sources": [
+      "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-177336/kakumae-beach",
+      "https://www.visitestonia.com/en/kakumae-rand",
+      "https://www.visitharju.ee/en/?p=57004"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "harju-street-ice-rink",
+    "name": "Old Town ice rink (Harju street)",
+    "nameLocal": "Harju tänava uisuplats",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Harju tn, next to St Nicholas' (Niguliste) Church, Tallinn",
+    "lat": 59.436,
+    "lng": 24.743,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "Tallinn's atmospheric open-air rink at the edge of the Old Town, usually open from late November to the end of March. Little ones can toddle on the ice or watch from the side, especially pretty under the evening lights.",
+    "tips": "Under-3s have skated free in past seasons; bring a helmet and waterproof mittens.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": 36,
+      "family": null,
+      "note": "2025/26 city rinks: €6.90–10.90/hour, children/seniors €4.70–8.80; skate rental €5. Under-3 free per 2024 reports."
+    },
+    "discounts": [
+      "Free entry for under-3s (past seasons)",
+      "Seniors free Mon/Wed/Fri 10–17",
+      "Season passes valid at all city rinks"
+    ],
+    "hours": "Seasonal (approx. late Nov–end of March), daily approx. 10:00–22:00; check the website",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Old Town street parking is expensive and paid 24 h; use public transport if you can."
+    },
+    "transport": "Vabaduse väljak stops (many bus lines)",
+    "language": null,
+    "website": "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season",
+    "sources": [
+      "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season",
+      "https://balticguide.ee/en/tallinn-old-town-ice-skating-rink-to-open-on-saturday",
+      "https://visitharju.ee/en/?p=535569"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "manni-park-ice-rink",
+    "name": "Männi Park outdoor ice rink",
+    "nameLocal": "Männi pargi uisuväljak",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Männi park, Mustamäe, Tallinn",
+    "lat": 59.4085,
+    "lng": 24.68,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "One of Tallinn's city-run outdoor rinks, set up in Männi Park and typically opening earlier (late October/November) than the Old Town rink. A less crowded place for a first wobble on skates.",
+    "tips": null,
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "City rinks 2025/26: €6.90–10.90/hour, discounted €4.70–8.80."
+    },
+    "discounts": [],
+    "hours": "Seasonal (approx. Oct/Nov–mid-March); check the website",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://news.err.ee/1609147213/tallinn-s-outdoor-ice-rinks-to-open-again-for-winter-from-mid-november",
+    "sources": [
+      "https://news.err.ee/1609147213/tallinn-s-outdoor-ice-rinks-to-open-again-for-winter-from-mid-november",
+      "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "song-festival-grounds-winter-centre",
+    "name": "Song Festival Grounds sledding & snow tubing",
+    "nameLocal": "Lauluväljaku talvekeskus / kelgunõlv",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Narva mnt 95, Tallinn",
+    "lat": 59.443,
+    "lng": 24.786,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "The long, gentle slope of the Song Festival Grounds is Tallinn's classic sledding hill, with snow-tubing tracks and equipment rental when snow allows. Great for toddler sledging with a parent, though it can get crowded.",
+    "tips": "Go early on snowy weekend mornings and stick to the gentler edges away from fast sledders.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Sledding on the open slope is free; tubing/rental is paid (prices not confirmed)."
+    },
+    "discounts": [],
+    "hours": "Listed 1 Dec–15 Mar, depending on snow",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Lauluväljak tram/bus stop",
+    "language": null,
+    "website": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/180706/tallinn-song-festival-grounds-winter-centre-snowtubing-and-sledding",
+    "sources": [
+      "https://visitestonia.com/en/tallinn-song-festival-grounds-winter-centre-snowtubing-and-sledding",
+      "https://news.err.ee/1609574677/major-snowfall-draws-sledders-to-tallinn-s-song-festival-grounds",
+      "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "nomme-forest-sledding",
+    "name": "Nõmme forest-park sledding slopes",
+    "nameLocal": "Nõmme-Mustamäe kelgumäed",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Park forest between Nõmme and Mustamäe, near Nõmme market, Tallinn",
+    "lat": 59.386,
+    "lng": 24.688,
+    "ageMinMonths": 18,
+    "ageMaxMonths": 144,
+    "description": "The hilly Nõmme-Mustamäe forest park near Nõmme market is a favourite free sledding area. Some slopes are steep and nothing is supervised, so pick a gentle run for toddlers.",
+    "tips": "Bring your own sled; guides warn some Nõmme hills are dangerously steep.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "When there is snow",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": "Bus 36 from Viru to Nõmme",
+    "language": null,
+    "website": "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities",
+    "sources": [
+      "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "nomme-ski-trails",
+    "name": "Nõmme Sports Centre ski trails",
+    "nameLocal": "Nõmme Spordikeskuse suusarajad",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Külmallika tn 15, Tallinn",
+    "lat": 59.379,
+    "lng": 24.665,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "Lit, maintained cross-country trails (1–15 km loops, including an artificial-snow loop) connected by tunnel to the Harku forest trails. Toddlers can ride in a ski pulk/sled while a parent skis, or try their first steps on mini skis.",
+    "tips": "The 5 km loop is reported lit all night; ski rental is available on site (child sizes unconfirmed).",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Trails free to use; rental paid."
+    },
+    "discounts": [],
+    "hours": "Centre Mon–Sat 08:00–22:00, Sun 09:00–22:00; trails depend on snow",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visit2-fe.prod.puhkaeestis.ee/en/nomme-sports-centre",
+    "sources": [
+      "https://visit2-fe.prod.puhkaeestis.ee/en/nomme-sports-centre",
+      "https://terviserajad.ee/en/rajad/nomme-harku-health-trails/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "tallinn-christmas-market",
+    "name": "Tallinn Christmas Market",
+    "nameLocal": "Tallinna jõuluturg",
+    "category": "winter-fun",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Raekoja plats (Town Hall Square), Tallinn",
+    "lat": 59.4372,
+    "lng": 24.7453,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 144,
+    "description": "The festive market on Town Hall Square with a big Christmas tree, stalls and lights. For toddlers the tree, lights and carousel-style atmosphere are the draw; go early in the day to avoid evening crowds.",
+    "tips": "Cobbles are bumpy — a carrier is easier than a stroller.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Seasonal; 2026/27 reported as 20 Nov–6 Jan, daily at least 12:00–20:00",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": false,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": "Tallinn city (street zone)",
+      "pargiSupported": true,
+      "zone": "Vanalinn",
+      "note": "Old Town parking is paid 24 h and limited."
+    },
+    "transport": "Vabaduse väljak / Viru stops",
+    "language": null,
+    "website": "https://www.err.ee/1610076271/tallinna-jouluturu-korraldab-taas-vana-tuttav",
+    "sources": [
+      "https://www.err.ee/1610076271/tallinna-jouluturu-korraldab-taas-vana-tuttav",
+      "https://news.err.ee/1609864482/gallery-tallinn-christmas-market-back-friday-for-another-year-of-cheer"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "keila-joa-park",
+    "name": "Keila-Joa waterfall & park (RMK)",
+    "nameLocal": "RMK Keila-Joa park",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Keila-Joa",
+    "address": "Keila-Joa, Lääne-Harju vald",
+    "lat": 59.395,
+    "lng": 24.302,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A riverside manor park with the Keila waterfall, footbridges and a 2.1 km nature trail, about 30–40 minutes' drive west of Tallinn. Only the first 250 m are stroller/wheelchair accessible, and stairs lead down to the falls.",
+    "tips": "Bring a baby carrier for the stairs down to the waterfall.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Park free; Keila-Joa Castle has separate paid entry."
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": false,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "RMK lot",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "RMK lot for ~20 cars at trail start; fee not stated (RMK sites are typically free)."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://loodusegakoos.ee/where-to-go/recreation-areas/the-surroundings-of-tallinn-recreation-area/rmk-keila-joa-park",
+    "sources": [
+      "https://loodusegakoos.ee/where-to-go/recreation-areas/the-surroundings-of-tallinn-recreation-area/rmk-keila-joa-park",
+      "https://visitestonia.com/en/nature-trail-in-keila-joa-park"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "jagala-waterfall",
+    "name": "Jägala Waterfall",
+    "nameLocal": "Jägala juga",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Jõelähtme",
+    "address": "Jägala-Joa, Jõelähtme vald",
+    "lat": 59.4495,
+    "lng": 25.1795,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "Estonia's widest natural waterfall, about 25 km (≈30 min) east of Tallinn, reached by a short walk from the car park on gravel paths. Toddlers love the roar; in cold winters it freezes into ice curtains.",
+    "tips": "The riverbank is unfenced in places — keep toddlers in hand or carrier near the edge.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": false,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Large car park on site; fee not confirmed; no toilet."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.nomadotravel.app/en/attractions/jagala-waterfall",
+    "sources": [
+      "https://www.nomadotravel.app/en/attractions/jagala-waterfall",
+      "https://www.campercontact.com/en/estonia/harju-county/joelahtme-vald/59250/parking-jagala-juga.md"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "viru-bog-boardwalk",
+    "name": "Viru Bog boardwalk (Lahemaa)",
+    "nameLocal": "Viru raba õpperada",
+    "category": "park",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Kuusalu vald",
+    "address": "Viru raba parking, Lahemaa National Park (off Tallinn–Narva highway)",
+    "lat": 59.465,
+    "lng": 25.631,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "RMK's famous bog boardwalk; the first 1.3 km to the observation tower is built to suit wheelchairs and prams (with a ramp to the tower's first platform). Roughly 45–50 minutes' drive from Tallinn, so it's at the edge of a toddler day trip.",
+    "tips": "After the tower ramp the boardwalk narrows — turn back at the tower with a stroller; very busy on summer weekends.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "RMK lot",
+      "pargiSupported": false,
+      "zone": null,
+      "note": "New RMK parking lot at trail start; gravel access road may be unfinished."
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trail-3-5-km/",
+    "sources": [
+      "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trail-3-5-km/",
+      "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trails-observation-tower-1300-m-from-the-parking/"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "polli-zoo-tuhala",
+    "name": "Polli Farm Zoo (Tuhala)",
+    "nameLocal": "Polli loomaaed",
+    "category": "zoo-farm",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Kose vald",
+    "address": "Polli farm, Kata küla, Kose vald (near Tuhala Witch's Well)",
+    "lat": 59.228,
+    "lng": 25,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A small farm zoo where children can see and pet animals and birds, visit the barn and stables, and ride a pony. Combine it with the nearby Tuhala Witch's Well (Nõiakaev).",
+    "tips": "Bring cabbage, carrots or bird seed to feed the animals; call ahead for hours.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Prices not confirmed."
+    },
+    "discounts": [],
+    "hours": "Check the website",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visitharju.ee/en/?p=601556",
+    "sources": [
+      "https://www.visitharju.ee/en/polli-loomaaed/",
+      "https://visitharju.ee/en/?p=601556"
+    ],
+    "lastVerified": null,
+    "confidence": "low"
+  },
+  {
+    "id": "kallaste-farm-elamustalu",
+    "name": "Kallaste Farm 'Elamustalu' family activity centre",
+    "nameLocal": "Kallaste talu Elamustalu",
+    "category": "zoo-farm",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Near Tallinn",
+    "city": "Lääne-Harju vald",
+    "address": "Padila, Kasepere küla, Lääne-Harju vald",
+    "lat": 59.25,
+    "lng": 24.19,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A tourist farm about 45 minutes southwest of Tallinn with pygmy goats, rabbits, chickens and geese to meet and feed, plus a playground with an old bus to explore and a trampoline. Near Rummu lake.",
+    "tips": "The animal park is by advance booking only.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Prices not confirmed."
+    },
+    "discounts": [],
+    "hours": "Listed daily 10:00–19:00, all year (animal park by booking)",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://visitharju.ee/en/elamustalu-family-activity-center-at-kallaste-farm/",
+    "sources": [
+      "https://visitharju.ee/en/elamustalu-family-activity-center-at-kallaste-farm/",
+      "https://visitestonia.com/en/kallaste-farm-animal-park-1",
+      "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/179683/kallaste-talu-farm-and-holiday-resort"
+    ],
+    "lastVerified": null,
+    "confidence": "medium"
+  },
+  {
+    "id": "laulasmaa-beach",
+    "name": "Laulasmaa beach",
+    "nameLocal": "Laulasmaa rand",
+    "category": "beach",
+    "setting": "outdoor",
+    "season": "summer",
+    "area": "Near Tallinn",
+    "city": "Laulasmaa",
+    "address": "Laulasmaa, Lääne-Harju vald",
+    "lat": 59.383,
+    "lng": 24.228,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 144,
+    "description": "A sandy-bottomed seaside beach backed by pine forest, about 40 km west of Tallinn, and the start of the 7 km Laulasmaa–Lohusalu shore trail. Sand play and pine-forest picnics make an easy summer day out.",
+    "tips": "You can walk just a short stretch of the shore trail and turn back.",
+    "price": {
+      "free": true,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": null
+    },
+    "discounts": [],
+    "hours": "Open all year",
+    "durationMinutes": 150,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": null,
+      "parking": null
+    },
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "transport": null,
+    "language": null,
+    "website": "https://www.visitharju.ee/en/?p=605082",
+    "sources": [
+      "https://www.visitharju.ee/en/?p=605082",
+      "https://guides.travel.sygic.com/production/en/Laulasmaa"
+    ],
     "lastVerified": null,
     "confidence": "low"
   }

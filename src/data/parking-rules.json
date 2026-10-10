@@ -1,1 +1,104 @@
-[]
+[
+  {
+    "title": "Who runs Tallinn's public paid parking (since 2 Sep 2025)",
+    "detail": "Since 2 September 2025 EuroPark Estonia OÜ runs Tallinn's public on-street paid parking. It took over from AS Ühisteenused. The city and EuroPark both said the switch did not change parking rules or prices. Contact: 600 3055, tallinn@europark.ee.",
+    "source": "https://www.tallinn.ee/en/news/europark-provide-tallinns-paid-parking-service",
+    "confidence": "high"
+  },
+  {
+    "title": "Vanalinn (Old Town) zone",
+    "detail": "€0.10 per minute (€6/h). Paid 24/7, all year. Period ticket €300. This is the most expensive zone and has few spaces.",
+    "source": "https://www.tallinn.ee/en/parking",
+    "confidence": "high"
+  },
+  {
+    "title": "Südalinn (Downtown) zone",
+    "detail": "€0.08 per minute (€4.80/h). Paid 24/7. Period ticket €250. Covers the core around Vabaduse väljak, Kaarli pst, Toompuiestee, Tõnismägi, Pärnu mnt, Mere pst and Viru väljak.",
+    "source": "https://www.tallinn.ee/en/parking",
+    "confidence": "high"
+  },
+  {
+    "title": "Kesklinn (City Centre) zone",
+    "detail": "€0.025 per minute (€1.50/h). Paid Mon–Fri 07:00–19:00 and Sat 08:00–15:00. Free on Sundays. Public holidays charge the rate of the weekday they fall on, so a holiday is not automatically free. Period ticket €150. The zone is a ring around Südalinn and Vanalinn. The regulation's boundary names Kalasadama, Põhja pst, Kotzebue, Kopli and Telliskivi streets and the railway, so much of Kalamaja appears to be inside it. Check exact streets on the city's map.",
+    "source": "https://www.tallinn.ee/en/parking",
+    "confidence": "high"
+  },
+  {
+    "title": "Pirita seasonal zone",
+    "detail": "€0.01 per minute (€0.60/h). Paid only 15 May–15 September, 10:00–22:00. Free the rest of the year. The regulation covers the Merivälja tee 1c and 1e car parks at Pirita beach. Autlo lists €7.05 per 24h.",
+    "source": "https://www.tallinn.ee/en/parking",
+    "confidence": "medium"
+  },
+  {
+    "title": "Other zones / resident zones",
+    "detail": "No other public paid price zones were found besides Vanalinn, Südalinn, Kesklinn and Pirita. Resident permit zones (T1–T12) only affect permits, not visitor prices. Outside these zones, municipal street parking is generally free. Many lots in town are private (EuroPark, Citypark, Snabb, etc.) and set their own prices.",
+    "source": "https://www.tallinn.ee/en/services/parking-arrangement",
+    "confidence": "medium"
+  },
+  {
+    "title": "Free first 15 minutes (municipal zones only)",
+    "detail": "In all public zones the first 15 minutes are free if you show the start time on the windscreen with a parking clock or a paper note. With SMS or app payment, add '15' to use the free period. This does NOT apply in private car parks such as EuroPark lots, unless the lot's own terms say otherwise. Autlo says Pirita's free 15 minutes are counted automatically in its app.",
+    "source": "https://www.tallinn.ee/en/paying-parking",
+    "confidence": "high"
+  },
+  {
+    "title": "Parking clock (parkimiskell)",
+    "detail": "Use it to claim the free 15 minutes in Tallinn zones. A paper note with the arrival time also works, and it must be readable through the windscreen. Under traffic sign 577 (time-limited parking) a clock is mandatory; one example (Rakvere) shows a €20 warning fine for not displaying one. Malls with number-plate cameras (T1, Ülemiste, Rocca al Mare) say you do NOT need a clock.",
+    "source": "https://www.tallinn.ee/en/paying-parking",
+    "confidence": "medium"
+  },
+  {
+    "title": "Fines: underpaying into a wrong (cheaper) zone",
+    "detail": "If you paid the lower-zone rate but parked in a higher-rate zone (e.g. paid Kesklinn, parked in Vanalinn), the city charges a reduced penalty of €15 per day. General parking-fine amounts were not confirmed from official sources.",
+    "source": "https://www.tallinn.ee/en/services/parking-arrangement",
+    "confidence": "medium"
+  },
+  {
+    "title": "How to pay: SMS (m-parking)",
+    "detail": "Send '<PLATE> <ZONE>' (e.g. '123ABC KESKLINN') to 1902. Call 1903 to stop. Only works for Telia, Elisa and Tele2 customers, so not for foreign SIMs. Mobile operators charge a per-session fee; an older EuroPark page says €0.32.",
+    "source": "https://www.tallinn.ee/en/paying-parking",
+    "confidence": "high"
+  },
+  {
+    "title": "How to pay: PARGI.EE app (Telia)",
+    "detail": "Official m-parking app run by Telia Eesti. Works for Telia, Elisa and Tele2 customers via the phone bill, and with a Visa or Mastercard bank card for anyone, including foreign visitors. Charges a per-session service fee (~€0.33–0.49 per Pärnu's guide). Some reviews say registering a foreign number can be unreliable.",
+    "source": "https://apps.apple.com/us/app/pargi-ee/id476265924",
+    "confidence": "high"
+  },
+  {
+    "title": "How to pay: other apps and meters",
+    "detail": "The EuroPark app (published by UNIPARK UAB) pays city zones and EuroPark lots; T1 also lists ParkMan. Snabb is used at Ülemiste and is the new operator at Rocca al Mare. Ühisteenused' former app Parkner was the old operator's app, so check whether it still works for city zones. Street meters take coins only (up to €2); the city planned card payment at busy meters. Period tickets are sold through the city's online self-service.",
+    "source": "https://www.visittallinn.ee/eng/visitor/plan/good-to-know/parking",
+    "confidence": "medium"
+  },
+  {
+    "title": "Which operators PARGI.EE supports",
+    "detail": "Supported: Tallinn municipal zones (the city lists PARGI.EE as a payment method), EuroPark lots (EuroPark's own help page lists 'Telia pargi.ee', including some parking garages), and Citypark Eesti, which is listed as a partner on pargi.ee and has been owned by EuroPark Estonia since 2020. Former city operator AS Ühisteenused is also a listed partner. Pargi.ee also handles barrier-gate lots such as Tallink D-terminal, Hobujaama and Lastehaigla. Some mall lots accept it too: T1 (EuroPark) and Ülemiste.",
+    "source": "https://www.pargi.ee/web/guest/partneridtest",
+    "confidence": "medium"
+  },
+  {
+    "title": "Operators PARGI.EE does NOT (apparently) support",
+    "detail": "No evidence was found that PARGI.EE covers Unipark-branded lots (Unipark is Lithuanian; in Estonia it effectively appears as the EuroPark app) or Aimpark (no Estonian Aimpark presence found at all). Snabb-run lots (e.g. Rocca al Mare) use the Snabb app. Ülemiste accepts both pargi.ee and Snabb. Treat this as 'not confirmed', not 'confirmed unsupported'.",
+    "source": "https://www.pargi.ee/web/guest/partneridtest",
+    "confidence": "low"
+  },
+  {
+    "title": "Free parking for families / strollers",
+    "detail": "No family- or stroller-based exemption from Tallinn paid parking was found, and nothing in the city rules mentions one. Free street parking in zones is limited to: the first 15 minutes, two-wheeled motor vehicles, and (since 2025) zero-emission cars registered to Tallinn residents. Malls may mark family spaces near entrances, but no source confirmed a free-family rule. (Exemptions for disability parking cards were not verified in this research.)",
+    "source": "https://www.tallinn.ee/en/parking",
+    "confidence": "medium"
+  },
+  {
+    "title": "Electric cars: free only for Tallinn residents (2025 change)",
+    "detail": "The city restricted free parking in the paid zone to electric cars whose owner or user is registered as living in Tallinn. Legal entities and non-residents no longer get free EV permits. The planned start date was 1 July 2025. Visiting EVs pay.",
+    "source": "https://news.err.ee/1609584208/tallinn-plans-to-roll-back-free-parking-for-electric-vehicles-from-july-2025",
+    "confidence": "medium"
+  },
+  {
+    "title": "Mall parking norms in Tallinn",
+    "detail": "Malls use number-plate cameras with a free period, then charge per started 30 minutes. You start paid parking yourself in an app or by SMS; no parking clock is needed. T1: 4 h free, then €0.75 per 30 min, €6 per 24h (EuroPark/pargi.ee/ParkMan/SMS 1902). Ülemiste: 5 h free, then €1 per 30 min, €12 per 24h (pargi.ee/SMS/Snabb). Rocca al Mare: since 1 July 2026 only 2 h free per day in total, then €1 per 30 min. Premium spaces by the entrance are paid from the first minute. Visitors to the children's indoor playground can register for 3–4 h free. The operator is Snabb, and disability-badge holders now pay. Kristiine also limits parking time.",
+    "source": "https://www.err.ee/1610065885/tallinna-rocca-al-mare-keskus-piirab-jouliselt-parkimisaega",
+    "confidence": "high"
+  }
+]
