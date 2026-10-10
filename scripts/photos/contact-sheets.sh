@@ -10,8 +10,11 @@ const c=require("./candidates.json");
 for (const [id, list] of Object.entries(c)) list.forEach((p,i)=>console.log(`${id}\t${i}\t${p.src}`))
 ' | while IFS=$'\t' read -r id i src; do
   f="dl/${id}__${i}.jpg"
-  curl -sSL --max-time 25 -A "Mozilla/5.0 (compatible; ParentsHubBot/1.0)" "$src" -o "$f.raw" || continue
-  convert "$f.raw[0]" -auto-orient -resize 240x160^ -gravity center -extent 240x160 "$f" 2>/dev/null || rm -f "$f"
+  code=$(curl -sSL --max-time 25 -A "ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; photo review)" -w '%{http_code}' "$src" -o "$f.raw" 2>/dev/null)
+  if [ "$code" != "200" ]; then echo "skip $id#$i http=$code"; rm -f "$f.raw"; continue; fi
+  if ! convert "$f.raw[0]" -auto-orient -resize '240x160^' -gravity center -extent 240x160 "$f"; then
+    echo "skip $id#$i not an image ($(file -b "$f.raw" | cut -c1-40))"; rm -f "$f"
+  fi
   rm -f "$f.raw"
 done
 n=0
@@ -23,8 +26,9 @@ for id in $(node -e 'console.log(Object.keys(require("./candidates.json")).join(
   montage "${args[@]}" -tile 7x1 -geometry 240x160+4+4 -pointsize 18 -background white -title "$id" -pointsize 22 "strips/$(printf %03d $n)_$id.jpg"
   n=$((n+1))
 done
-ls strips/*.jpg | split -l 4 - group_
+ls dl | wc -l | xargs echo "downloaded:"
+ls strips/*.jpg 2>/dev/null | split -l 4 - group_ || true
 k=0
-for g in group_*; do convert $(cat "$g") -append -resize '1400x>' -quality 82 "sheets/sheet_$(printf %02d $k).jpg"; k=$((k+1)); done
+for g in group_*; do [ -e "$g" ] || continue convert $(cat "$g") -append -resize '1400x>' -quality 82 "sheets/sheet_$(printf %02d $k).jpg"; k=$((k+1)); done
 rm -f group_*
 echo "sheets: $k"
