@@ -1,0 +1,26 @@
+name: Scrape place details (manual)
+
+# Visits each place's official website and Wikimedia Commons, then pushes the raw
+# findings to the data-scrape branch for review. Nothing here changes the live site.
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/scrape-places.mjs
+      - name: Push results to data-scrape branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B data-scrape
+          git add -f scrape-output/scrape.json
+          git commit -m "Scrape results $(date -u +%F)"
+          git push -f origin data-scrape
