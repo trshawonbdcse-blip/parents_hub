@@ -21,7 +21,7 @@
       "child": 0,
       "childFreeUnderMonths": 84,
       "family": 28,
-      "note": "Winter prices (gate); online tickets EUR 1 cheaper. Summer: adult 19, family 38. Pre-school children free with a paying adult; family ticket covers up to 2 adults and children up to 19."
+      "note": "Oct–Apr gate prices; online EUR 1 cheaper. Summer (May–Sep): adult 19, family 38. Pre-school children free with the adult who bought the ticket; family ticket = up to 2 adults + children up to 19."
     },
     "discounts": [
       "Pre-school children free",
@@ -57,6 +57,35 @@
     "sources": [
       "https://tallinnzoo.ee/en/accessibility/",
       "https://www.nomadotravel.app/en/attractions/tallinn-zoo"
+    ],
+    "phone": "+372 512 6965",
+    "email": "zoo@tallinnzoo.ee",
+    "photos": [
+      {
+        "src": "https://tallinnzoo.ee/wp-content/uploads/2024/08/tiiger-Danuta-vihmametsapoolses-aedikus_foto-Inari-Leiman-1024x683.jpg",
+        "credit": "tallinnzoo.ee",
+        "page": "https://tallinnzoo.ee/en/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG/960px-EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Reval_Auto_Tallinn_-_panoramio.jpg/960px-Reval_Auto_Tallinn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Reval_Auto_Tallinn_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Neste_-_panoramio.jpg/960px-Neste_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Neste_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Tallinna_Hipodroom_-_panoramio.jpg/960px-Tallinna_Hipodroom_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "giggel · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Hipodroom_-_panoramio.jpg"
+      }
     ]
   },
   {
@@ -77,11 +106,11 @@
     "tips": "The barn is closed on the last Monday of each month for cleaning, and the goat yard shuts in bad or very cold weather.",
     "price": {
       "free": false,
-      "adult": null,
+      "adult": 13,
       "child": 0,
       "childFreeUnderMonths": 84,
-      "family": null,
-      "note": "Included in the Tallinn Zoo ticket."
+      "family": 28,
+      "note": "Included in the Tallinn Zoo ticket (Oct–Apr gate prices; summer adult 19, family 38). Pre-school children free with a paying adult."
     },
     "discounts": [
       "Included in zoo ticket",
@@ -112,6 +141,35 @@
     },
     "sources": [
       "https://tallinnzoo.ee/en/accessibility/"
+    ],
+    "phone": "+372 512 6965",
+    "email": "zoo@tallinnzoo.ee",
+    "photos": [
+      {
+        "src": "https://tallinnzoo.ee/wp-content/uploads/2023/06/oinas-Salava-uurib-uut-lambukest_foto-Inari-Leiman.jpg",
+        "credit": "tallinnzoo.ee",
+        "page": "https://tallinnzoo.ee/en/childrens-zoo/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG/960px-EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-HAABERSTI-VESKIMETS-Zoo.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Reval_Auto_Tallinn_-_panoramio.jpg/960px-Reval_Auto_Tallinn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Reval_Auto_Tallinn_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Tallinna_Hipodroom_-_panoramio.jpg/960px-Tallinna_Hipodroom_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "giggel · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Hipodroom_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Tallinna_Loomaaia_polaarium.jpg/960px-Tallinna_Loomaaia_polaarium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "TallinnZoo · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Loomaaia_polaarium.jpg"
+      }
     ]
   },
   {
@@ -136,7 +194,7 @@
       "child": 6,
       "childFreeUnderMonths": 24,
       "family": 20,
-      "note": "Child EUR 6 from age 3; under-2s free but still need a booked ticket. Family = up to 2 adults + children under 19. Visits capped at 2 hours. The city museum page says under-3s are free, so the cut-off is unclear."
+      "note": "Child EUR 6 from age 3; under-2s free but still need a booked ticket. Family = up to 2 adults + children under 19. Visits capped at 2 hours. City museum page says under-3s are free, so the cut-off is unclear."
     },
     "discounts": [
       "Family ticket",
@@ -190,10 +248,10 @@
     "price": {
       "free": false,
       "adult": 22,
-      "child": 11,
+      "child": 0,
       "childFreeUnderMonths": 96,
       "family": 40,
-      "note": "Combined ticket (hangar, exhibition, Suur Tõll, Valvas); child price for ages 9-18. Free for young children (official page says 8 and under). New prices from 1 Jan 2026. Family = 1-2 adults + minors."
+      "note": "Combined ticket (Hangar, exhibition, Suur Tõll, Valvas): adult €22, child (8–18) €11, family €40. Children under 8 free. Seaplane Harbour + Fat Margaret combo €30/€15/€60; museum ships only €12/€6/€15."
     },
     "discounts": [
       "Children up to 8 free",
@@ -228,6 +286,20 @@
     "sources": [
       "https://meremuuseum.ee/lennusadam/en/accessibility/",
       "https://www.campercontact.com/en/estonia/harju-county/tallinn/78959/parking-lennusadam.md"
+    ],
+    "phone": "+372 641 1408",
+    "email": "info@meremuuseum.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Crocodilia_taxidermy_Lennusadam.jpg/960px-Crocodilia_taxidermy_Lennusadam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Gert7 · CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Crocodilia_taxidermy_Lennusadam.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Cercopithecus_diana_taxidermy_Lennusadam.jpg/960px-Cercopithecus_diana_taxidermy_Lennusadam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Gert7 · CC BY 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Cercopithecus_diana_taxidermy_Lennusadam.jpg"
+      }
     ]
   },
   {
@@ -252,7 +324,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": 32,
-      "note": "Discount ticket EUR 11 (students, seniors 65+, pupils). Family = up to 2 adults + their underage children. Free age for small children not confirmed."
+      "note": "Discount ticket EUR 11 (students, seniors 65+, pupils). Family = up to 2 adults + their underage children. Free age for small children not confirmed; some exhibitions/films are free entry."
     },
     "discounts": [
       "Family ticket EUR 32",
@@ -284,6 +356,34 @@
     },
     "sources": [
       "https://kumu.ekm.ee/en/getting-here/"
+    ],
+    "phone": "+372 602 6000",
+    "photos": [
+      {
+        "src": "https://kumu.ekm.ee/wp-content/uploads/sites/2/2021/08/DJI_0030-scaled3.jpg",
+        "credit": "kumu.ekm.ee",
+        "page": "https://kumu.ekm.ee/en/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287643108702%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287643108702%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7643108702).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637600166%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637600166%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7637600166).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637594938%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637594938%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7637594938).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637596210%29.jpg/960px-Le_KUMU%2C_mus%C3%A9e_dart_estonien_%28Tallinn%29_%287637596210%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Jean-Pierre Dalbéra from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Le_KUMU,_mus%C3%A9e_dart_estonien_(Tallinn)_(7637596210).jpg"
+      }
     ]
   },
   {
@@ -304,8 +404,8 @@
     "tips": "Pair a park walk with Miiamilla or Kumu on the same trip, as all three are a few minutes apart.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Park entry is free."
@@ -341,6 +441,33 @@
       "https://www.kadriorustaadion.ee/?id=1421",
       "https://autlo.com/ee/et/parkimine/Tallinn/P88-Kadrioru-Tennisekeskus",
       "https://mikkelimuuseum.ekm.ee/en/getting-here"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Kadriorg_-_panoramio_-_Aulo_Aasmaa_%281%29.jpg/960px-Kadriorg_-_panoramio_-_Aulo_Aasmaa_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadriorg_-_panoramio_-_Aulo_Aasmaa_(1).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Tallinn_-_panoramio_%2828%29.jpg/960px-Tallinn_-_panoramio_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(28).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Tallinn_-_panoramio_%2829%29.jpg/960px-Tallinn_-_panoramio_%2829%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(29).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Kadrioru_park_-_panoramio_%281%29.jpg/960px-Kadrioru_park_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "tonut · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadrioru_park_-_panoramio_(1).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Kadrioru_park_-_panoramio_%282%29.jpg/960px-Kadrioru_park_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "tonut · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kadrioru_park_-_panoramio_(2).jpg"
+      }
     ]
   },
   {
@@ -361,8 +488,8 @@
     "tips": "Bring sand toys; the city plans a rebuild (finish targeted for summer 2028), so check for short closures.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Free public playground."
@@ -395,6 +522,33 @@
     },
     "sources": [
       "https://kumu.ekm.ee/en/getting-here/"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tuttvart_Luigetiigis.jpg/960px-Tuttvart_Luigetiigis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ivar Leidus · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tuttvart_Luigetiigis.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg/960px-The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Swan_Pond_in_Kadriorg_Park_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Tallina_-_panoramio.jpg/960px-Tallina_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallina_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Tallinn_-_panoramio_%282%29.jpg/960px-Tallinn_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(2).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Tallinn_-_panoramio_%2821%29.jpg/960px-Tallinn_-_panoramio_%2821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(21).jpg"
+      }
     ]
   },
   {
@@ -419,7 +573,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": 16,
-      "note": "Discount (pupils, students, pensioners) EUR 5; family = up to 2 adults + children up to 19; Family Card holders EUR 9. Ticket page about 7 months old; free age for toddlers not confirmed."
+      "note": "Discount (pupils, students, pensioners) €5; family = up to 2 adults + children up to 19 €16; Family Card holders €9; e-discount ticket from €4.50. Free age for toddlers not stated."
     },
     "discounts": [
       "Family ticket",
@@ -453,6 +607,33 @@
     "sources": [
       "https://www.visitestonia.com/en/tallinn-botanic-garden",
       "https://humanrights.ee/app/uploads/2017/03/Kuidas-tulla-kohale.pdf"
+    ],
+    "photos": [
+      {
+        "src": "https://botaanikaaed.ee/wp-content/uploads/2025/11/pilt-uus.jpg",
+        "credit": "botaanikaaed.ee",
+        "page": "https://botaanikaaed.ee/en/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Kloostrimetsa%2C_Tallinn%2C_Estonia_-_panoramio_%285%29.jpg/960px-Kloostrimetsa%2C_Tallinn%2C_Estonia_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ben Bender · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kloostrimetsa,_Tallinn,_Estonia_-_panoramio_(5).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Laansoo%2C_Urmas.IMG_20190629_131549.jpg/960px-Laansoo%2C_Urmas.IMG_20190629_131549.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ave Maria Mõistlik · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Laansoo,_Urmas.IMG_20190629_131549.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Mammillaria_magnimamma.IMG_20190629_124633.jpg/960px-Mammillaria_magnimamma.IMG_20190629_124633.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ave Maria Mõistlik · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mammillaria_magnimamma.IMG_20190629_124633.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/White_Sands.IMG_20190629_134031.jpg/960px-White_Sands.IMG_20190629_134031.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ave Maria Mõistlik · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:White_Sands.IMG_20190629_134031.jpg"
+      }
     ]
   },
   {
@@ -473,8 +654,8 @@
     "tips": "Lifeguards are on duty in summer 9:00-20:00 on weekdays and 9:00-21:00 at weekends, so pick those hours for paddling.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Free public beach."
@@ -508,6 +689,33 @@
     "sources": [
       "https://www.tallinn.ee/en/parking",
       "https://autlo.com/ee/et/parkimine/Tallinn/Pirita"
+    ],
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/4019414/Pirita+rand+ja+p%C3%A4ikeseloojang.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/pirita-beach"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Olympic_Games_monument_in_Tallinn_%288037166757%29.jpg/960px-Olympic_Games_monument_in_Tallinn_%288037166757%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Guillaume Speurt · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Olympic_Games_monument_in_Tallinn_(8037166757).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Surfing_boards_at_Pirita_Beach_-_panoramio.jpg/960px-Surfing_boards_at_Pirita_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Surfing_boards_at_Pirita_Beach_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Pirita_Olympic_Regatta_Center_%28distant_view%29_-_panoramio.jpg/960px-Pirita_Olympic_Regatta_Center_%28distant_view%29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Pirita_Olympic_Regatta_Center_(distant_view)_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tallinn_-_panoramio_%2813%29.jpg/960px-Tallinn_-_panoramio_%2813%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(13).jpg"
+      }
     ]
   },
   {
@@ -528,11 +736,11 @@
     "tips": "Water quality is said to be a bit lower than at Pirita, so check the city's bathing water notices before swimming.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free public beach and park."
+      "note": "Free public beach."
     },
     "discounts": [
       "Free"
@@ -562,6 +770,33 @@
     },
     "sources": [
       "https://www.err.ee/1097629/supelrannas-parkimine-on-kohati-kallis-lobu"
+    ],
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/J%C3%A4%C3%A4_on_kulmunud_pallideks_%28Looduse_veidrused%29._05.jpg/960px-J%C3%A4%C3%A4_on_kulmunud_pallideks_%28Looduse_veidrused%29._05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4%C3%A4_on_kulmunud_pallideks_(Looduse_veidrused)._05.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Stroomi_Rand._Talv.jpg/960px-Stroomi_Rand._Talv.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Stroomi_Rand._Talv.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Rock_hopping_at_sunset_%28in_Explore%29_-_Flickr_-_Vicky_Brock.jpg/960px-Rock_hopping_at_sunset_%28in_Explore%29_-_Flickr_-_Vicky_Brock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Vicky Brock from Tallinn, UK · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rock_hopping_at_sunset_(in_Explore)_-_Flickr_-_Vicky_Brock.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Dog_walking_blues_at_sunset_%28in_explore%29_-_Flickr_-_Vicky_Brock.jpg/960px-Dog_walking_blues_at_sunset_%28in_explore%29_-_Flickr_-_Vicky_Brock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Vicky Brock from Tallinn, UK · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Dog_walking_blues_at_sunset_(in_explore)_-_Flickr_-_Vicky_Brock.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Bleak_beauty_at_the_beach_in_a_blizzard_%28in_explore%29_-_Flickr_-_Vicky_Brock.jpg/960px-Bleak_beauty_at_the_beach_in_a_blizzard_%28in_explore%29_-_Flickr_-_Vicky_Brock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Vicky Brock from Tallinn, UK · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Bleak_beauty_at_the_beach_in_a_blizzard_(in_explore)_-_Flickr_-_Vicky_Brock.jpg"
+      }
     ]
   },
   {
@@ -582,8 +817,8 @@
     "tips": "In winter the pond is a popular skating spot, which toddlers love to watch from the path.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Free public park."
@@ -617,6 +852,33 @@
     "sources": [
       "https://www.parkimine.ee/en/?p=408",
       "https://www.tallinn.ee/en/parking"
+    ],
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/727840/tallinna-toompark-005-visit-estonia.png",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/tallinn-toompark"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Tallinn%2C_Kiriku_tn_6.jpg/960px-Tallinn%2C_Kiriku_tn_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ivar Leidus · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn,_Kiriku_tn_6.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/%C5%A0nelli_Pond_with_Toompea_Hill_circa_1931.jpg/960px-%C5%A0nelli_Pond_with_Toompea_Hill_circa_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rostislav Kristin · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:%C5%A0nelli_Pond_with_Toompea_Hill_circa_1931.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg/960px-%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Maasaak · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C5%A0nelli_Pond_with_Toompea_Hill_2015.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Tallinn_-_panoramio_%2819%29.jpg/960px-Tallinn_-_panoramio_%2819%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_-_panoramio_(19).jpg"
+      }
     ]
   },
   {
@@ -637,8 +899,8 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Free public park."
@@ -669,7 +931,34 @@
       "zone": null,
       "note": "No parking information found. The park is in Kristiine, which appears to be outside the municipal paid zones, so nearby street parking is probably free. Unverified."
     },
-    "sources": []
+    "sources": [],
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176796/lowenruh-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mustam%C3%A4e_tee.JPG/960px-Mustam%C3%A4e_tee.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Mustam%C3%A4e_tee.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/270TAK.JPG/960px-270TAK.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:270TAK.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Tedre-Mooni_intersection.JPG/960px-Tedre-Mooni_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tedre-Mooni_intersection.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/V%C3%A4lja_street_%28between_Mooni_and_Keemia%29.JPG/960px-V%C3%A4lja_street_%28between_Mooni_and_Keemia%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:V%C3%A4lja_street_(between_Mooni_and_Keemia).JPG"
+      }
+    ]
   },
   {
     "id": "kalamaja-cemetery-park",
@@ -689,8 +978,8 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Free public park."
@@ -724,6 +1013,33 @@
     "sources": [
       "https://www.postimees.ee/267870/tallinn-laiendab-tasulise-parkimise-ala",
       "https://www.riigiteataja.ee/akt/408022013090"
+    ],
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/EU-EE-TLN-PT-Volta_street.JPG/960px-EU-EE-TLN-PT-Volta_street.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-PT-Volta_street.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Kalevi_t%C3%A4nav_-_panoramio.jpg/960px-Kalevi_t%C3%A4nav_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kalevi_t%C3%A4nav_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kalevi_29_-_panoramio.jpg/960px-Kalevi_29_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kalevi_29_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Kalevi_29_-_panoramio_-_Aulo_Aasmaa.jpg/960px-Kalevi_29_-_panoramio_-_Aulo_Aasmaa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Kalevi_29_-_panoramio_-_Aulo_Aasmaa.jpg"
+      }
     ]
   },
   {
@@ -748,7 +1064,7 @@
       "child": 0,
       "childFreeUnderMonths": 96,
       "family": 30,
-      "note": "Winter season (29 Sep-22 Apr) prices; summer adult 18, family 38. Children up to 8 free. Family = up to 2 adults + children under 19."
+      "note": "Winter season prices: single €14, reduced €10, family €30 (up to 2 adults + children up to 19), evening ticket from 16:00 €7 (family €15). Summer €18 / €12 / €38. Children up to 8 free."
     },
     "discounts": [
       "Children up to 8 free",
@@ -782,6 +1098,35 @@
     "sources": [
       "https://evm.ee/visitors/getting-here",
       "https://en.wikipedia.org/wiki/Estonian_Open_Air_Museum"
+    ],
+    "phone": "+372 654 9100",
+    "email": "info@evm.ee",
+    "photos": [
+      {
+        "src": "https://evm.ee/photos/suvi_lapsed_large.webp",
+        "credit": "evm.ee",
+        "page": "https://evm.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644656256%29.jpg/960px-Mus%C3%A9e_de_plein_air_%28Tallinn%29_%287644656256%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "dalbera from Paris, France · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_de_plein_air_(Tallinn)_(7644656256).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%283%29.jpg/960px-Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "bynyalcin · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rocca_al_Mare,_Tallinn,_Estonia_-_panoramio_(3).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg/960px-Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "bynyalcin · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rocca_al_Mare,_Tallinn,_Estonia_-_panoramio_(4).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%2815%29.jpg/960px-Rocca_al_Mare%2C_Tallinn%2C_Estonia_-_panoramio_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "bynyalcin · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rocca_al_Mare,_Tallinn,_Estonia_-_panoramio_(15).jpg"
+      }
     ]
   },
   {
@@ -802,11 +1147,11 @@
     "tips": "Ask about the free library card for children under 7, which comes with a keepsake card pocket.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free entry; free reader's card for children up to 7."
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [
       "Free",
@@ -837,6 +1182,15 @@
     },
     "sources": [
       "https://www.tallinn.ee/en/parking"
+    ],
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/S%C3%BCdalinn%2C_Tallinn%2C_Estonia_-_panoramio.jpg/960px-S%C3%BCdalinn%2C_Tallinn%2C_Estonia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Евгений Лыков · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:S%C3%BCdalinn,_Tallinn,_Estonia_-_panoramio.jpg"
+      }
     ]
   },
   {
@@ -857,11 +1211,11 @@
     "tips": "The latest library page says the sessions were paused and would return in autumn, so call 683 0970 or email kalamaja@tln.lib.ee to check dates and registration.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free; registration may be needed as places are limited."
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [
       "Free"
@@ -892,7 +1246,9 @@
     "sources": [
       "https://www.postimees.ee/267870/tallinn-laiendab-tasulise-parkimise-ala",
       "https://www.tallinn.ee/en/parking"
-    ]
+    ],
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee"
   },
   {
     "id": "estonian-childrens-literature-centre",
@@ -944,7 +1300,9 @@
     },
     "sources": [
       "https://www.tallinn.ee/en/parking"
-    ]
+    ],
+    "phone": "+372 617 7236",
+    "email": "elk@elk.ee"
   },
   {
     "id": "mangu-saar-playroom",
@@ -998,6 +1356,14 @@
     },
     "sources": [
       "https://visitestonia.com/en/mangu-saar-playroom"
+    ],
+    "email": "visit@tallinn.ee",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/181740/mangu-saar-playroom"
+      }
     ]
   },
   {
@@ -1022,7 +1388,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Child day passes reported from EUR 11 (third-party); under-3 price not confirmed."
+      "note": "Child day passes reported from EUR 11 (third-party, unconfirmed); under-3 price not confirmed."
     },
     "discounts": [
       "Tallinn Card discount (also for up to 2 children aged 0-6 with an adult card holder)"
@@ -1053,6 +1419,14 @@
     "sources": [
       "https://t1tallinn.com/en/oluline-info/parking/",
       "https://visitestonia.com/en/t1-mall-of-tallinn"
+    ],
+    "email": "visit@tallinn.ee",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/tallinn-card/tallinn-card/offers/179887"
+      }
     ]
   },
   {
@@ -1107,6 +1481,20 @@
     },
     "sources": [
       "https://visitestonia.com/lv/piedzivojumu-pilsetina-lohesaba"
+    ],
+    "phone": "+372 5193 4834",
+    "email": "info@lohesaba.eu",
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/748308/lohesaba-seikluslinnak-030-visit-estonia.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/lohesaba-adventure-city-play-room"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mustam%C3%A4e_tee.JPG/960px-Mustam%C3%A4e_tee.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Mustam%C3%A4e_tee.JPG"
+      }
     ]
   },
   {
@@ -1131,7 +1519,7 @@
       "child": 6.8,
       "childFreeUnderMonths": null,
       "family": 68,
-      "note": "Day ticket for children aged 1-6 EUR 6.80; family pass EUR 68 weekday / EUR 83 weekend (2 adults + up to 3 children). Adult price not confirmed; under-1s may be free (reseller info)."
+      "note": "Day ticket for children aged 1–6 €6.80; family pass €68 weekday / €83 weekend (2 adults + up to 3 children). The price list also shows unlabelled day tickets of €24/€28 and €23 – adult price not confirmed from labels."
     },
     "discounts": [
       "Family pass",
@@ -1162,7 +1550,9 @@
     },
     "sources": [
       "https://kalevspa.ee/en/home/news/uudis/2023/03/23/parking-in-front-of-kalev-spa-water-park/"
-    ]
+    ],
+    "phone": "+372 649 3300",
+    "email": "idu@kalevspa.ee"
   },
   {
     "id": "ulemiste-centre",
@@ -1182,11 +1572,11 @@
     "tips": "Parking is free for 5 hours, and there are wider family spaces near the entrance.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free entry; play area pricing not confirmed."
+      "note": "Free entry; play centres inside are paid separately."
     },
     "discounts": [
       "Free stroller hire (single or twin)",
@@ -1218,6 +1608,25 @@
     "sources": [
       "https://www.ulemiste.ee/en/parkimiskord/",
       "https://www.err.ee/1610065885/tallinna-rocca-al-mare-keskus-piirab-jouliselt-parkimisaega"
+    ],
+    "phone": "+372 603 4999",
+    "email": "info@ulemiste.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%C3%9Clemiste_keskus.JPG/960px-%C3%9Clemiste_keskus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C3%9Clemiste_keskus.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/%C3%9Clemiste%2C_Tallinn%2C_Estonia_-_panoramio_%2824%29.jpg/960px-%C3%9Clemiste%2C_Tallinn%2C_Estonia_-_panoramio_%2824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kirill Savitski · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C3%9Clemiste,_Tallinn,_Estonia_-_panoramio_(24).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Rail_Baltica_%C3%9Clemiste_terminal_under_construction%2C_August_2026.jpg/960px-Rail_Baltica_%C3%9Clemiste_terminal_under_construction%2C_August_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mikaeldui · CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rail_Baltica_%C3%9Clemiste_terminal_under_construction,_August_2026.jpg"
+      }
     ]
   },
   {
@@ -1291,11 +1700,11 @@
     "tips": "One adult per child gets in free, so one parent per toddler pays nothing extra.",
     "price": {
       "free": false,
-      "adult": 2,
+      "adult": 0,
       "child": 15,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Full child ticket €15 Mon-Thu, €17 Fri-Sun and public holidays. Under-1s €7. Extra accompanying adult €2; 1 adult per child is free. Taken from an older homepage snapshot, so check current prices."
+      "note": "Child ticket €15 Mon–Thu, €17 Fri–Sun and holidays; under-1s €7. One accompanying adult per child free; extra adult €2. Large-family/special-needs child €11 Mon–Thu."
     },
     "discounts": [],
     "hours": "Daily 10:00-21:00",
@@ -1326,7 +1735,16 @@
       "https://www.roccaalmare.ee/en/store/marymaris-3/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 600 4500",
+    "email": "info@marymaris.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/EE-TLN-HAABERSTI-Rocca_al_Mare.JPG/960px-EE-TLN-HAABERSTI-Rocca_al_Mare.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-HAABERSTI-Rocca_al_Mare.JPG"
+      }
+    ]
   },
   {
     "id": "seiklusmaa-rocca-al-mare",
@@ -1350,7 +1768,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "The Rocca price page showed the same list as Järve: €8.90 for 30 min, €10 for 1 h, €12 for 2 h, €14.90 day ticket, accompanying adult €2. Not confirmed for this location."
+      "note": "Unconfirmed for this location: Järve list shows €8.90/30 min, €10/1 h, €12/2 h, €14.90 day ticket, accompanying adult €2."
     },
     "discounts": [
       "15% off play time with Perekaart (family card)",
@@ -1383,7 +1801,21 @@
       "https://perekaart.ee/discounts/534"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 5887 7780",
+    "email": "info@trampolino.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "seiklusmaa.ee",
+        "page": "https://seiklusmaa.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/EE-TLN-HAABERSTI-Rocca_al_Mare.JPG/960px-EE-TLN-HAABERSTI-Rocca_al_Mare.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-HAABERSTI-Rocca_al_Mare.JPG"
+      }
+    ]
   },
   {
     "id": "seiklusmaa-jarve",
@@ -1407,7 +1839,7 @@
       "child": 10,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "€8.90 for 30 min, €10 for 1 h, €12 for 2 h, €14.90 day ticket, 5 day tickets €55, extra time €7/h. Accompanying adult €2."
+      "note": "Per visit: €8.90 for 30 min, €10 for 1 h, €12 for 2 h, €14.90 day ticket, 5 day tickets €55; overtime €7/h. Accompanying adult €2. Groups: 1 h €6, 2 h €8, day €10."
     },
     "discounts": [
       "15% off with Perekaart",
@@ -1442,7 +1874,31 @@
       "https://kuhuminnalastega.ee/item/seiklusmaa-jarve/"
     ],
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "phone": "+372 550 7792",
+    "email": "jarve@seiklusmaa.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "seiklusmaa.ee",
+        "page": "https://seiklusmaa.ee/jarve/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/J%C3%A4rve_Keskus_2557.JPG/960px-J%C3%A4rve_Keskus_2557.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4rve_Keskus_2557.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG/960px-P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG/960px-P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG"
+      }
+    ]
   },
   {
     "id": "meie-mangumaa-haabersti",
@@ -1496,7 +1952,14 @@
       "https://lasnamae.meiemangumaa.ee/et/komplektid-ja-asukoht"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://www.meiemangumaa.ee/storage/og_image.png",
+        "credit": "meiemangumaa.ee",
+        "page": "https://www.meiemangumaa.ee/"
+      }
+    ]
   },
   {
     "id": "tikitaka-playroom-mustamae",
@@ -1520,7 +1983,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Price not confirmed; see the 'TikiTaka hinnad' page."
+      "note": "Official site lists only private playroom bookings per time slot (€59–€139 depending on day and slot); per-person entry price not shown."
     },
     "discounts": [],
     "hours": "Open free play Wed 10:00-15:00 (unless booked); parties 10:00-21:00",
@@ -1548,7 +2011,16 @@
       "https://tikitakamangutuba.com/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 553 0718",
+    "email": "tikitakamangutuba@gmail.com",
+    "photos": [
+      {
+        "src": "https://static.tildacdn.net/tild3062-6564-4637-a662-343739386663/FINAL_VERSION___.jpg",
+        "credit": "tikitakamangutuba.com",
+        "page": "https://tikitakamangutuba.com/"
+      }
+    ]
   },
   {
     "id": "miniland-playroom",
@@ -1572,7 +2044,7 @@
       "child": 6,
       "childFreeUnderMonths": 12,
       "family": null,
-      "note": "€6 for 1 h, €8 for 2 h, €9 day ticket for children from age 1 (news page); the English prices page says day tickets 'from €6/hour'."
+      "note": "Per child, by time: 1 h €6, 2 h €8, 3 h €9 (day ticket), from age 1. Adult price not stated."
     },
     "discounts": [],
     "hours": "Weekdays roughly 10/11:00-17:00 (sources differ; see Facebook)",
@@ -1603,7 +2075,16 @@
       "https://kuhuminnalastega.ee/item/mangutuba-miniland/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 5350 2579",
+    "email": "info@miniland.ee",
+    "photos": [
+      {
+        "src": "https://miniland.ee/wp-content/uploads/2015/02/m%C3%A4ngutuba_1-300x200.jpg",
+        "credit": "miniland.ee",
+        "page": "https://miniland.ee/"
+      }
+    ]
   },
   {
     "id": "trampolino-ulemiste",
@@ -1623,11 +2104,11 @@
     "tips": "Under-7s need a companion aged 16 or older with them.",
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 2,
+      "child": 8.5,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "One family guide lists €8.50 for children up to 4; not confirmed officially."
+      "note": "Toddler (up to 4) €8.50; standard ticket €11.50 Mon–Thu / €14.90 Fri–Sun & holidays; accompanying adult €2; socks €3.50."
     },
     "discounts": [],
     "hours": "Mon-Sat 10:00-21:00, Sun 10:00-19:00",
@@ -1656,7 +2137,31 @@
       "https://kuhuminnalastega.ee/item/batuudikeskus-trampolino/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 5379 5555",
+    "email": "info@trampolino.ee",
+    "photos": [
+      {
+        "src": "https://www.trampolino.ee/wp-content/uploads/2025/01/16a6f9ddb0ebd2cfe6347c5c7e08bef0-1.jpg",
+        "credit": "trampolino.ee",
+        "page": "https://www.trampolino.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/%C3%9Clemiste_keskus.JPG/960px-%C3%9Clemiste_keskus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C3%9Clemiste_keskus.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/%C3%9Clemiste%2C_Tallinn%2C_Estonia_-_panoramio_%2824%29.jpg/960px-%C3%9Clemiste%2C_Tallinn%2C_Estonia_-_panoramio_%2824%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kirill Savitski · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C3%9Clemiste,_Tallinn,_Estonia_-_panoramio_(24).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Rail_Baltica_%C3%9Clemiste_terminal_under_construction%2C_August_2026.jpg/960px-Rail_Baltica_%C3%9Clemiste_terminal_under_construction%2C_August_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mikaeldui · CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rail_Baltica_%C3%9Clemiste_terminal_under_construction,_August_2026.jpg"
+      }
+    ]
   },
   {
     "id": "playdate-tabasalu",
@@ -1679,8 +2184,8 @@
       "adult": null,
       "child": null,
       "childFreeUnderMonths": null,
-      "family": null,
-      "note": null
+      "family": 110,
+      "note": "Private play studio hire for your group only: 3 h from €110 (no per-person entry)."
     },
     "discounts": [],
     "hours": "Mon-Sun 9:00-21:00 by booking; open play at set times",
@@ -1710,7 +2215,9 @@
       "https://lastegakoos.ee/listing/avatud-manguaeg-playdate-mangustuudios/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 513 7235",
+    "email": "info@playdate.ee"
   },
   {
     "id": "rocca-al-mare-centre",
@@ -1730,11 +2237,11 @@
     "tips": "Since 1 July 2026 only 2 h per day are free, so start paid parking in the app if you combine shopping with a play centre, or ask the play area to register your extra free time.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free entry; play centres are paid."
+      "note": "Free entry; play centres inside are paid separately."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -1764,7 +2271,16 @@
       "https://visittallinn.ee/eng/visitor/near-me/175694/rocca-al-mare-shopping-centre"
     ],
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 665 9345",
+    "email": "info.roccaalmare@citycon.com",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/EE-TLN-HAABERSTI-Rocca_al_Mare.JPG/960px-EE-TLN-HAABERSTI-Rocca_al_Mare.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-HAABERSTI-Rocca_al_Mare.JPG"
+      }
+    ]
   },
   {
     "id": "kristiine-centre",
@@ -1784,11 +2300,11 @@
     "tips": "The first 2 h of parking are logged automatically by your number plate, with no disc needed.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free entry; play centres inside are paid separately."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -1818,7 +2334,20 @@
       "https://easyfind.ee/en/lastega-sooma-eestis/"
     ],
     "lastVerified": "2026-10-10",
-    "confidence": "medium"
+    "confidence": "medium",
+    "email": "marju.ridamae@eften.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/EE-TLN-Kristiine_keskus.JPG/960px-EE-TLN-Kristiine_keskus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-Kristiine_keskus.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/LHV_Pank_ATM_at_Kristiine_Centre.jpg/960px-LHV_Pank_ATM_at_Kristiine_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Intgr · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:LHV_Pank_ATM_at_Kristiine_Centre.jpg"
+      }
+    ]
   },
   {
     "id": "jarve-centre",
@@ -1838,11 +2367,11 @@
     "tips": "Five free hours is enough for a full play session plus lunch and shopping.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Free entry; Seiklusmaa is paid."
+      "note": "Free entry; play centres inside are paid separately."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -1872,7 +2401,31 @@
       "https://jarvekeskus.ee/en/shops/seiklusmaa/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 614 0247",
+    "email": "info@jarvekeskus.ee",
+    "photos": [
+      {
+        "src": "https://jarvekeskus.ee/wp-content/uploads/2021/09/cropped-shutterstock_1078244033.jpg",
+        "credit": "jarvekeskus.ee",
+        "page": "https://jarvekeskus.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/J%C3%A4rve_Keskus_2557.JPG/960px-J%C3%A4rve_Keskus_2557.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4rve_Keskus_2557.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG/960px-P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4rnu_maantee_-_Viljandi_maantee_intersection.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG/960px-P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4rnu_maantee_-_M%C3%A4nniku_intersection.JPG"
+      }
+    ]
   },
   {
     "id": "t1-mall-of-tallinn",
@@ -1892,11 +2445,11 @@
     "tips": "The 4 free parking hours can only be extended for Super Skypark customers.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free entry; play centres inside are paid separately."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -1925,7 +2478,8 @@
       "https://visittallinn.ee/eng/visitor/near-me/181126/t1-mall-of-tallinn"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 600 5540"
   },
   {
     "id": "cafe-boulevard-olumpia",
@@ -1945,11 +2499,11 @@
     "tips": "The café's own site and Radisson give different weekday closing times, so call if you plan an evening visit.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Play area free for café guests (assumed; not stated)."
+      "note": "Pay for food; play area for café guests (no fee stated)."
     },
     "discounts": [],
     "hours": "Mon-Fri 07:00-19:00, Sat-Sun 08:00-17:00 (café site)",
@@ -1978,7 +2532,16 @@
       "https://www.radissonhotels.com/en-us/hotels/radisson-blu-tallinn-olumpia/restaurant-bar"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 631 5860",
+    "email": "olympia.pastry@radissonblu.com",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/USSR_house_upgrade_in_Liivalaia.JPG/960px-USSR_house_upgrade_in_Liivalaia.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:USSR_house_upgrade_in_Liivalaia.JPG"
+      }
+    ]
   },
   {
     "id": "nop-cafe-kadriorg",
@@ -1998,11 +2561,11 @@
     "tips": "Book a table by phone (+372 603 2270) on busy weekends.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Café prices"
+      "note": "Pay for food; no entry fee."
     },
     "discounts": [],
     "hours": "Mon-Fri 08:00-21:00, Sat-Sun 09:00-20:00 (seasonal)",
@@ -2032,7 +2595,36 @@
       "https://visittallinn.ee/est/k%C3%BClastaja/s%C3%B6%C3%B6-joo/kuhu-minna/k%C3%B5ik-s%C3%B6%C3%B6gikohad/176571/nop-kohvik-pood"
     ],
     "lastVerified": "2026-10-10",
-    "confidence": "high"
+    "confidence": "high",
+    "phone": "+372 603 2270",
+    "email": "hei@nop.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/TLN_-_2010-03-06_-_Liivaoja.JPG/960px-TLN_-_2010-03-06_-_Liivaoja.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Flying Saucer · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:TLN_-_2010-03-06_-_Liivaoja.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Filmi_street_in_Tallinn.JPG/960px-Filmi_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Filmi_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Tormi_street_in_Tallinn.JPG/960px-Tormi_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tormi_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/August_Alle_street_in_Tallinn.JPG/960px-August_Alle_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:August_Alle_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Construction_in_Narva_highway.JPG/960px-Construction_in_Narva_highway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Construction_in_Narva_highway.JPG"
+      }
+    ]
   },
   {
     "id": "babyback-kristiine",
@@ -2052,11 +2644,11 @@
     "tips": "Ask for a table near the playroom so you can keep an eye on your toddler.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Restaurant prices"
+      "note": "Pay for food (mains ~€10–21); no entry fee."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2085,7 +2677,26 @@
       "https://easyfind.ee/en/lastega-sooma-eestis/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 607 7008",
+    "email": "ulemiste@babyback.ee",
+    "photos": [
+      {
+        "src": "https://cdn.prod.website-files.com/69d290bb8bfb5634c70a90ce/69fe106d88ffe7ca32cc837f_BB-OG-IMAGE.jpg",
+        "credit": "babyback.ee",
+        "page": "https://www.babyback.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/EE-TLN-Kristiine_keskus.JPG/960px-EE-TLN-Kristiine_keskus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-Kristiine_keskus.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/LHV_Pank_ATM_at_Kristiine_Centre.jpg/960px-LHV_Pank_ATM_at_Kristiine_Centre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Intgr · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:LHV_Pank_ATM_at_Kristiine_Centre.jpg"
+      }
+    ]
   },
   {
     "id": "lore-bistroo-noblessner",
@@ -2105,11 +2716,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Restaurant prices"
+      "note": "Pay for food; no entry fee."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2137,7 +2748,15 @@
       "https://visitestonia.com/en/best-places-to-eat-with-children-in-estonia"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "email": "dolores.daniel@eis.ee",
+    "photos": [
+      {
+        "src": "https://visitestonia.com/content-images/645782/best-places-to-eat-with-children-en-001-visit-estonia.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/what-to-do/best-places-to-eat-with-children-in-estonia"
+      }
+    ]
   },
   {
     "id": "elamus-spa-mustamae",
@@ -2157,11 +2776,11 @@
     "tips": "Parking is free for spa visitors for 8 hours.",
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 25,
+      "child": 6.9,
       "childFreeUnderMonths": 24,
-      "family": null,
-      "note": "Children 0-1 free; 2-6 about €6.50-6.90 (sources differ); adult ticket €16-34 depending on time."
+      "family": 65,
+      "note": "Elamus Spa: ages 0–1 free; ages 2–6 €6.90; full ticket €25/€32/€38 and reduced €17.90/€27/€33 depending on time; family ticket €65/€75/€92 (15% off with Perekaart). Spa21+ area is 18+ only."
     },
     "discounts": [],
     "hours": "Daily 10:00-24:00",
@@ -2191,7 +2810,15 @@
       "https://visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/179930/mustamae-elamus-spa"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 650 2000",
+    "photos": [
+      {
+        "src": "https://elamusspa.ee/wp-content/uploads/2024/10/dsc3322-scaled.jpg",
+        "credit": "elamusspa.ee",
+        "page": "https://elamusspa.ee/"
+      }
+    ]
   },
   {
     "id": "ring-spa-haabersti",
@@ -2212,10 +2839,10 @@
     "price": {
       "free": false,
       "adult": 19,
-      "child": 6,
-      "childFreeUnderMonths": null,
+      "child": 0,
+      "childFreeUnderMonths": 36,
       "family": 54,
-      "note": "Adults €19 (Mon-Fri 11-15), €22 (Mon-Thu from 15), €31 (Fri evening and weekends). Children 3-6 €6. Family €54-72. Under-3 price not stated."
+      "note": "Children 0–2 free; children 3–6 €6. Adults €19 (Mon–Fri 11–15), €22 (Mon–Thu from 15), €31 (Fri evening and weekends). Family €54–72."
     },
     "discounts": [
       "20% off with Perekaart",
@@ -2249,7 +2876,21 @@
       "https://visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/tallinn-with-children-water-and-adventure-parks"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 699 9100",
+    "email": "info@ringspa.ee",
+    "photos": [
+      {
+        "src": "https://ringspa.ee/wp-content/uploads/2023/03/Ringspaa_saunad_basseinideala.jpg",
+        "credit": "ringspa.ee",
+        "page": "https://ringspa.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/V%C3%A4ike-%C3%95ism%C3%A4e.JPG/960px-V%C3%A4ike-%C3%95ism%C3%A4e.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:V%C3%A4ike-%C3%95ism%C3%A4e.JPG"
+      }
+    ]
   },
   {
     "id": "aqua-spa-tallink",
@@ -2273,7 +2914,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "3-hour gift pass €20-54; child price not confirmed."
+      "note": "3-hour gift pass €20–54 (existing info); child price not confirmed."
     },
     "discounts": [],
     "hours": "Mon-Sun 08:00-22:00",
@@ -2302,7 +2943,21 @@
       "https://chilli.ee/en/vaata-kingitust/tallink-aqva-spa-veekeskus"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 630 1028",
+    "email": "spa@tallink.ee",
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/3198729/Aqua+Spa12.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/aqua-spa-at-tallink-spa-conference-hotel"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Sadama%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg/960px-Sadama%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ben Bender · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Sadama,_Tallinn,_Estonia_-_panoramio_(4).jpg"
+      }
+    ]
   },
   {
     "id": "ujumekoos-baby-swimming",
@@ -2355,7 +3010,36 @@
       "https://ujumekoos.ee/ujumiskursused-lastele/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 5686 0968",
+    "email": "ujumekoos@gmail.com",
+    "photos": [
+      {
+        "src": "https://ujumekoos.ee/wp-content/uploads/2025/11/2022.05.25_EK223959-1024x683.jpg",
+        "credit": "ujumekoos.ee",
+        "page": "https://ujumekoos.ee/beebiujumine/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG/960px-Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/EU-EE-TLN-Haabersti-V%C3%A4ike-%C3%95ism%C3%A4e_pond.JPG/960px-EU-EE-TLN-Haabersti-V%C3%A4ike-%C3%95ism%C3%A4e_pond.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-Haabersti-V%C3%A4ike-%C3%95ism%C3%A4e_pond.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/V%C3%A4ike-%C3%95ism%C3%A4e_pond_panorama.jpg/960px-V%C3%A4ike-%C3%95ism%C3%A4e_pond_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:V%C3%A4ike-%C3%95ism%C3%A4e_pond_panorama.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/%C3%95ism%C3%A4e_tiik_2025.jpg/960px-%C3%95ism%C3%A4e_tiik_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HartOve · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:%C3%95ism%C3%A4e_tiik_2025.jpg"
+      }
+    ]
   },
   {
     "id": "garantbaby-swimming",
@@ -2375,11 +3059,11 @@
     "tips": null,
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 25,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Per lesson: trial lesson €25, private lesson €45; packages €70 / €95 (also listed €75 / €99). Parents free."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2408,7 +3092,16 @@
       "https://garantbaby.ee/babyswim/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 554 4990",
+    "email": "beebid@garant.ee",
+    "photos": [
+      {
+        "src": "https://garantbaby.ee/wp-content/uploads/2021/11/pic1.jpg",
+        "credit": "garantbaby.ee",
+        "page": "https://garantbaby.ee/"
+      }
+    ]
   },
   {
     "id": "kalev-spa-baby-swimming",
@@ -2429,10 +3122,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
+      "child": 17,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "10-visit pass €115, valid 90 days."
+      "note": "Per lesson €17 (single ticket); 10-lesson card €115 valid 90 days; €10 wristband deposit refunded. Pre-registration by e-mail."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2460,7 +3153,9 @@
       "https://www.kalevspa.ee/veekeskus/beebide-ujutamine/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 649 3300",
+    "email": "spordiklubi@kalevspa.ee"
   },
   {
     "id": "lasteklubi-toddler-music",
@@ -2484,7 +3179,7 @@
       "child": 15,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "€42 per month or €15 per class."
+      "note": "Per class €15, or €42 per month."
     },
     "discounts": [],
     "hours": "Weekly; see schedule",
@@ -2534,10 +3229,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
+      "child": 22,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Monthly fee: €22 (25–30 min class) or €25 (30 min music + 30 min play time)."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2565,7 +3260,9 @@
       "https://www.loovuslaps.ee/huviringid-lastele/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 557 4238",
+    "email": "info@loovuslaps.ee"
   },
   {
     "id": "myfitness-toddler-gym",
@@ -2589,7 +3286,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Toddler gym price not shown on the price list (only general memberships)."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2618,7 +3315,15 @@
       "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/beebide-ja-vaikelaste-ujumine/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "email": "myfitness@myfitness.ee",
+    "photos": [
+      {
+        "src": "https://www.myfitness.ee/wp-content/uploads/2025/03/dsc9704.jpg",
+        "credit": "myfitness.ee",
+        "page": "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/vaikelaste-voimlemine/"
+      }
+    ]
   },
   {
     "id": "nomme-library-ponnihommik",
@@ -2638,11 +3343,11 @@
     "tips": "Held on the third Wednesday of the month at 11:00 per library listings; confirm on the events calendar as listings are of mixed dates.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Põnnihommik: 3rd Wednesday of the month 11:00 (unconfirmed for autumn 2026)",
@@ -2672,7 +3377,36 @@
       "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/N%C3%B5mme_raudteepeatus_%282014%29.JPG/960px-N%C3%B5mme_raudteepeatus_%282014%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tibukonn · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme_raudteepeatus_(2014).JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/N%C3%B5mme_fire_station.JPG/960px-N%C3%B5mme_fire_station.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme_fire_station.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/N%C3%B5mme_jaamahoone_%28Jaama_tn_18%29_t%C3%A4nava_poolt.jpg/960px-N%C3%B5mme_jaamahoone_%28Jaama_tn_18%29_t%C3%A4nava_poolt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tibukonn · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme_jaamahoone_(Jaama_tn_18)_t%C3%A4nava_poolt.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Meenutustahvel_N%C3%B5mme_jaamas.jpg/960px-Meenutustahvel_N%C3%B5mme_jaamas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tibukonn · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Meenutustahvel_N%C3%B5mme_jaamas.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/N%C3%B5mme_railway_station.jpg/960px-N%C3%B5mme_railway_station.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ymblanter · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme_railway_station.jpg"
+      }
+    ]
   },
   {
     "id": "tondi-library-ponnihommik",
@@ -2692,11 +3426,11 @@
     "tips": "Listings say every Saturday at 12:00; phone 674 8647 to confirm.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Põnnihommik: Saturdays 12:00 (per older listings)",
@@ -2725,7 +3459,26 @@
       "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Tondi.JPG/960px-Tondi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tondi.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Tallinna_Tondi_Kool_09.04.2021.jpg/960px-Tallinna_Tondi_Kool_09.04.2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Teet Koitjärv · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Tondi_Kool_09.04.2021.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Tallinna_Tondi_Kooli_m%C3%A4nguv%C3%A4ljak_%2809.04.2021%29.jpg/960px-Tallinna_Tondi_Kooli_m%C3%A4nguv%C3%A4ljak_%2809.04.2021%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Teet Koitjärv · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Tondi_Kooli_m%C3%A4nguv%C3%A4ljak_(09.04.2021).jpg"
+      }
+    ]
   },
   {
     "id": "manniku-library-ponnihommik",
@@ -2745,11 +3498,11 @@
     "tips": "Listings conflict (3rd Saturday 10:00 vs 2nd Saturday 11:00); call 655 9718 before going.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Monthly Saturday põnnihommik (date/time conflicting in sources)",
@@ -2778,7 +3531,9 @@
       "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee"
   },
   {
     "id": "kannukuke-library-ponnihommik",
@@ -2798,11 +3553,11 @@
     "tips": "First Saturday of the month at 12:00 per listing; phone 683 0951 to confirm the autumn restart.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Põnnihommik: 1st Saturday of the month 12:00 (summer break)",
@@ -2831,7 +3586,26 @@
       "https://keskraamatukogu.ee/ringid-ja-klubid/mudilastele/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/EU-EE-Tallinn-MUS-Vilde_street.JPG/960px-EU-EE-Tallinn-MUS-Vilde_street.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-MUS-Vilde_street.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/EU-EE-Tallinn-MUS-Vilde.JPG/960px-EU-EE-Tallinn-MUS-Vilde.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-MUS-Vilde.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/EU-EE-TLN-MUS-Vilde-Ararat_wine_store.JPG/960px-EU-EE-TLN-MUS-Vilde-Ararat_wine_store.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · CC0",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Vilde-Ararat_wine_store.JPG"
+      }
+    ]
   },
   {
     "id": "sole-library-ponnihommik",
@@ -2851,11 +3625,11 @@
     "tips": "Contact sole@tln.lib.ee / 601 9153 for the current dates.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Occasional Saturday 11:00–12:00 (2023 listing; check calendar)",
@@ -2884,7 +3658,9 @@
       "https://keskraamatukogu.ee/en/library/sole-library/?id=29350"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee"
   },
   {
     "id": "pirita-library-ponnihommik",
@@ -2904,11 +3680,11 @@
     "tips": "No current schedule found; check the events calendar.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -2937,7 +3713,9 @@
       "https://keskraamatukogu.ee/raamatukogutunnid-veebis/"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee"
   },
   {
     "id": "liivalaia-library-baby-room",
@@ -2957,11 +3735,11 @@
     "tips": "Põnnihommik places are limited and pre-registration is compulsory.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Library sessions are free"
+      "note": "Free entry and free library sessions; registration may be needed when places are limited."
     },
     "discounts": [],
     "hours": "Mon–Fri 10–19, Sat 10–17, Sun closed (per hours page)",
@@ -2991,7 +3769,9 @@
       "https://keskraamatukogu.ee/en/hours-and-locations/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 683 0900",
+    "email": "keskraamatukogu@tln.lib.ee"
   },
   {
     "id": "estonian-museum-of-natural-history",
@@ -3012,10 +3792,10 @@
     "price": {
       "free": false,
       "adult": 12,
-      "child": null,
+      "child": 0,
       "childFreeUnderMonths": 96,
       "family": 24,
-      "note": "Under-8s free; family = up to 2 adults + minor children; pupils/students/pensioners €8"
+      "note": "Children under 8 free; pupils/students/pensioners €8; family (up to 2 adults + minor children) €24. Free for all on the last Friday of Jan/Apr/Jul/Oct."
     },
     "discounts": [
       "Reduced €8 pupils/students/pensioners"
@@ -3047,7 +3827,9 @@
       "https://www.loodusmuuseum.ee/et/joulupeod-ja-synnipaevad"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 5624 7554",
+    "email": "muuseum@loodusmuuseum.ee"
   },
   {
     "id": "fat-margaret-maritime-museum",
@@ -3068,10 +3850,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
+      "child": 0,
       "childFreeUnderMonths": 96,
       "family": null,
-      "note": "Under-8s free; third-party guides quote adult €14–16 and family €28–30 (2026) – verify on meremuuseum.ee"
+      "note": "Children under 8 free. Separate Fat Margaret ticket not listed; Seaplane Harbour + Fat Margaret combined ticket €30 adult / €15 child / €60 family."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -3100,7 +3882,16 @@
       "https://medievalbooker.com/destinations/tallinn/fat-margaret-maritime-museum"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 641 1408",
+    "email": "info@meremuuseum.ee",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Paks_Margareeta_ja_Stoltingi_torn.jpg/960px-Paks_Margareeta_ja_Stoltingi_torn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ivar Leidus · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Paks_Margareeta_ja_Stoltingi_torn.jpg"
+      }
+    ]
   },
   {
     "id": "maarjamae-history-centre",
@@ -3121,10 +3912,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
+      "child": 0,
       "childFreeUnderMonths": 108,
       "family": null,
-      "note": "Children up to and including 8 free; third-party sites quote €15 adult / €10 reduced / €30 family – verify"
+      "note": "Children up to and including 8 free. Official ticket page lists full tickets €12–14 (plus €17), reduced €9–12 and family €24–34 across tables whose labels didn't come through in the scrape, so the Maarjamäe price can't be pinned down."
     },
     "discounts": [
       "Free with Tallinn Card (per reseller)"
@@ -3156,7 +3947,36 @@
       "https://www.tripadvisor.com/Attraction_Review-g274958-d290202-Reviews-Maarjamae_Palace_Estonian_History_Museum_Maarjamae_Loss-Tallinn_Harju_County.html"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 696 8660",
+    "email": "post@ajaloomuuseum.ee",
+    "photos": [
+      {
+        "src": "https://files.voog.com/0000/0052/1836/photos/pole%20sind%20sada%20aastat%20n%C3%A4inud%20kaabu.png",
+        "credit": "ajaloomuuseum.ee",
+        "page": "https://ajaloomuuseum.ee/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Tallinn_skylinefar.jpg/960px-Tallinn_skylinefar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ryan Krahn · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_skylinefar.jpg"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Winter_in_Tallinn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Zetrous at English Wikipedia · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Winter_in_Tallinn.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Navigator_of_the_Seas_in_Tallinn_harbour_-_panoramio.jpg/960px-Navigator_of_the_Seas_in_Tallinn_harbour_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Navigator_of_the_Seas_in_Tallinn_harbour_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Navigator_of_the_Seas_in_Tallinn_-_panoramio.jpg/960px-Navigator_of_the_Seas_in_Tallinn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Navigator_of_the_Seas_in_Tallinn_-_panoramio.jpg"
+      }
+    ]
   },
   {
     "id": "tallinn-city-life-museum",
@@ -3177,10 +3997,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
+      "child": 0,
       "childFreeUnderMonths": 84,
       "family": 20,
-      "note": "Preschool children up to 6 free; family €20 (2 adults + children under 19)"
+      "note": "Pre-school children up to 6 free; family €20 (2 adults + children under 19). Adult price not confirmed."
     },
     "discounts": [
       "Free first Sunday of the month (book ahead)",
@@ -3213,7 +4033,14 @@
       "https://www.tallinn.ee/en/museumsunday"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Elamu_Vene_tn10_hooviansambliga%2C_14.-20.saj..JPG/960px-Elamu_Vene_tn10_hooviansambliga%2C_14.-20.saj..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ekkeri · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Elamu_Vene_tn10_hooviansambliga,_14.-20.saj..JPG"
+      }
+    ]
   },
   {
     "id": "proto-invention-factory",
@@ -3233,11 +4060,11 @@
     "tips": "Weekday tickets are cheaper than weekends; most VR is not for toddlers.",
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
-      "childFreeUnderMonths": 72,
-      "family": null,
-      "note": "Free under 6; 2026 guides: adult €16 Tue–Fri / €20 Sat–Sun, child €11, family €35/€40 – verify on prototehas.ee"
+      "adult": 16,
+      "child": 0,
+      "childFreeUnderMonths": 84,
+      "family": 35,
+      "note": "Adult €16 Tue–Fri / €20 Sat–Sun; ages up to 18 €11; family (2 adults + minor children) €35 / €40; children up to 6 free."
     },
     "discounts": [
       "Weekday pricing"
@@ -3269,7 +4096,9 @@
       "https://www.piletilevi.ee/eng/tickets/kogupere/proto-avastustehas-462486/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 627 6661",
+    "email": "info@protofactory.ee"
   },
   {
     "id": "nuku-museum-of-puppetry-arts",
@@ -3290,10 +4119,10 @@
     "price": {
       "free": false,
       "adult": 10,
-      "child": null,
+      "child": 0,
       "childFreeUnderMonths": 36,
       "family": 22,
-      "note": "Family = up to 2 adults + at least 1 child under 16"
+      "note": "Under-3s free; older child price not confirmed. Family = up to 2 adults + at least 1 child under 16."
     },
     "discounts": [
       "Students, pensioners, pupils",
@@ -3325,7 +4154,16 @@
       "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176984/nuku-museum-of-puppetry-arts"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 667 9555",
+    "email": "kassa@eestinoorsooteater.ee",
+    "photos": [
+      {
+        "src": "https://www.eestinoorsooteater.ee/wp-content/uploads/2025/10/Teatrimaja_foto-Indrek-Rammus.jpg",
+        "credit": "eestinoorsooteater.ee",
+        "page": "https://www.eestinoorsooteater.ee/en/theatre/visiting-info/"
+      }
+    ]
   },
   {
     "id": "nuku-theatre-toddler-shows",
@@ -3345,11 +4183,11 @@
     "tips": "Filter the playbill for 'väikelapsele' (for small children); most current titles are 3+.",
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 13,
+      "child": 13,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Per-show pricing on Piletilevi"
+      "note": "Per show: performances for young children and preschoolers €13 per ticket (Piletilevi service fee €1.90). Group of 10 children gets one free adult ticket."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -3379,7 +4217,9 @@
       "https://www.eestinoorsooteater.ee/teater/mangukava/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 667 9555",
+    "email": "kassa@eestinoorsooteater.ee"
   },
   {
     "id": "estonian-national-opera-concert-for-babies",
@@ -3403,7 +4243,7 @@
       "child": null,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Sources conflict: €15 standard / €10 reduced, or €6–10; child under 3 on reduced ticket – verify when booking"
+      "note": "Sources conflict: €15 standard / €10 reduced, or €6–10; child under 3 on reduced ticket – verify when booking."
     },
     "discounts": [],
     "hours": "Occasional dates (last seen: 6 Sep 2026, 10:00 & 11:30)",
@@ -3433,7 +4273,26 @@
       "https://fienta.com/et/rahvusooper-estonia-kontsert-koige-pisematele-linnud-ja-liblikad"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 683 1210",
+    "email": "estonia@opera.ee",
+    "photos": [
+      {
+        "src": "https://cache-c.koobin.com/eyJidWNrZXQiOiJsaXZlLWtvb2Jpbi1tZWRpYSIsImtleSI6Im1lZGlhL29wZXJhZXN0b25pYS9mb3Rvcy8yMDI1LTIwMjYvc3V1cmVkL0JlZWJpa29udHNlcnQucG5nIiwiZWRpdHMiOnsiYW5pbWF0ZWQiOnRydWUsInJvdGF0ZSI6bnVsbCwicmVzaXplIjp7IndpZHRoIjoxMjAwLCJoZWlnaHQiOjYzMCwiZml0IjoiY292ZXIiLCJwb3NpdGlvbiI6ImVudHJvcHkifX19?signature=3ae4b9495f5f9522ec1dc74476e9b9a342b6d0c9edc9560279d744d18bbd587f",
+        "credit": "tickets.opera.ee",
+        "page": "https://tickets.opera.ee/kontsert-k%C3%B5ige-pisematele?idioma=ET"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Teater_Estonia_-_panoramio.jpg/960px-Teater_Estonia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Teater_Estonia_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Teater_Estonia_-_panoramio_-_Aulo_Aasmaa.jpg/960px-Teater_Estonia_-_panoramio_-_Aulo_Aasmaa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Teater_Estonia_-_panoramio_-_Aulo_Aasmaa.jpg"
+      }
+    ]
   },
   {
     "id": "apollo-kino-mustamae-baby-cinema",
@@ -3454,10 +4313,10 @@
     "price": {
       "free": false,
       "adult": null,
-      "child": null,
-      "childFreeUnderMonths": null,
+      "child": 0,
+      "childFreeUnderMonths": 36,
       "family": null,
-      "note": "One adult ticket; children under 3 free"
+      "note": "One adult ticket; children under 3 free. Adult price not confirmed."
     },
     "discounts": [],
     "hours": "Occasional Tuesday mornings – check the website",
@@ -3486,7 +4345,19 @@
       "https://www.apollokino.ee/special/EmmeBeebiLounakeskus"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Mustam%C3%A4e_tee_view_to_centre.JPG/960px-Mustam%C3%A4e_tee_view_to_centre.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Mustam%C3%A4e_tee_view_to_centre.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Mustam%C3%A4e_tee_view_to_Kadaka.JPG/960px-Mustam%C3%A4e_tee_view_to_Kadaka.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Mustam%C3%A4e_tee_view_to_Kadaka.JPG"
+      }
+    ]
   },
   {
     "id": "tondiraba-park",
@@ -3506,11 +4377,11 @@
     "tips": "Visitor reviews mention a coffee spot on site; head for the smaller-kid play zones as the big structures suit older children.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public playground."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3541,7 +4412,34 @@
       "https://news.err.ee/1608318134/lasnamae-s-tondiraba-park-to-open-on-sunday"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/180371/tondiraba-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/MedicumIMGP6670.JPG/960px-MedicumIMGP6670.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ave Maria Mõistlik · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:MedicumIMGP6670.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/EU-EE-Tallinn-LAS-Laagna-Varraku_bridge.JPG/960px-EU-EE-Tallinn-LAS-Laagna-Varraku_bridge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-LAS-Laagna-Varraku_bridge.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/T%C3%A4hesaju_Lidl.JPG/960px-T%C3%A4hesaju_Lidl.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:T%C3%A4hesaju_Lidl.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Lasnam%C3%A4e_droonilt.jpg/960px-Lasnam%C3%A4e_droonilt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Lauri Veerde · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lasnam%C3%A4e_droonilt.jpg"
+      }
+    ]
   },
   {
     "id": "pae-park",
@@ -3561,11 +4459,11 @@
     "tips": "There is a 1.8 km paved circuit around the park — easy for strollers.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3594,7 +4492,34 @@
       "https://terviserajad.ee/en/rajad/pae-park-health-trail/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177329/pae-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/EU-EE-Tallinn-LAS-Pae-Heap_of_waste.JPG/960px-EU-EE-Tallinn-LAS-Pae-Heap_of_waste.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-LAS-Pae-Heap_of_waste.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Beginning_of_Punane_street_in_Tallinn.jpg/960px-Beginning_of_Punane_street_in_Tallinn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Beginning_of_Punane_street_in_Tallinn.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/V%C3%B5idujooksu.JPG/960px-V%C3%B5idujooksu.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:V%C3%B5idujooksu.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/New_apartments_in_Lasnam%C3%A4e.JPG/960px-New_apartments_in_Lasnam%C3%A4e.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:New_apartments_in_Lasnam%C3%A4e.JPG"
+      }
+    ]
   },
   {
     "id": "kogupere-manguvaljak-paasiku",
@@ -3614,11 +4539,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public playground."
     },
     "discounts": [],
     "hours": "Open 24/7",
@@ -3646,7 +4571,29 @@
       "https://intravel.net/tallinn/attractions/kogupere-manguvaljak"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Parempoolne_kultuskivi_Lasnam%C3%A4el.jpg/960px-Parempoolne_kultuskivi_Lasnam%C3%A4el.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Parempoolne_kultuskivi_Lasnam%C3%A4el.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Parempoolne_kultuskivi1_Lasnam%C3%A4el.jpg/960px-Parempoolne_kultuskivi1_Lasnam%C3%A4el.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Parempoolne_kultuskivi1_Lasnam%C3%A4el.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Vasakpoolne_kultuskivi2_Lasnam%C3%A4el.jpg/960px-Vasakpoolne_kultuskivi2_Lasnam%C3%A4el.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Vasakpoolne_kultuskivi2_Lasnam%C3%A4el.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Vasakpoolne_kultuskivi_Lasnam%C3%A4el.jpg/960px-Vasakpoolne_kultuskivi_Lasnam%C3%A4el.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Vasakpoolne_kultuskivi_Lasnam%C3%A4el.jpg"
+      }
+    ]
   },
   {
     "id": "police-park-playground",
@@ -3666,11 +4613,11 @@
     "tips": "Toddlers may want to steer clear of the skate park side when it's busy.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public playground."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3699,7 +4646,34 @@
       "https://visitestonia.com/en/police-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176800/police-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Tallinn_Kompassi1.jpg/960px-Tallinn_Kompassi1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mmh · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Kompassi1.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Rahaboss_-_2009.JPG/960px-Rahaboss_-_2009.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Flying Saucer · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Rahaboss_-_2009.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Beginning_of_Tartu_highway.JPG/960px-Beginning_of_Tartu_highway.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Beginning_of_Tartu_highway.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Kivisilla%2C_Tallinn.JPG/960px-Kivisilla%2C_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Kivisilla,_Tallinn.JPG"
+      }
+    ]
   },
   {
     "id": "tammsaare-park-playground",
@@ -3719,11 +4693,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public playground."
     },
     "discounts": [],
     "hours": "Open 24/7",
@@ -3752,7 +4726,34 @@
       "https://www.visittallinn.ee/eng/visitor/see-do/sightseeing/pid-33283/tammsaare-park"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/33283/tammsaare-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/BalloonsIMGP6329.JPG/960px-BalloonsIMGP6329.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:BalloonsIMGP6329.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Security_camera_in_Estonian_National_Opera.JPG/960px-Security_camera_in_Estonian_National_Opera.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Security_camera_in_Estonian_National_Opera.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/TLT_bus_line_5_on_P%C3%A4rnu_maantee.jpg/960px-TLT_bus_line_5_on_P%C3%A4rnu_maantee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Leif Jørgensen · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:TLT_bus_line_5_on_P%C3%A4rnu_maantee.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/S%C3%BCdalinn_2018.JPG/960px-S%C3%BCdalinn_2018.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:S%C3%BCdalinn_2018.JPG"
+      }
+    ]
   },
   {
     "id": "cruise-terminal-rooftop-promenade",
@@ -3772,11 +4773,11 @@
     "tips": "Bikes, scooters and skateboards are not allowed on the promenade; bring a windproof layer.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public rooftop promenade and playground."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3806,7 +4807,34 @@
       "https://visittallinn.ee/eng/visitor/ideas-tips/tips-and-guides/5-new-parks-and-promenades-in-the-green-capital"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://www.ts.ee/wp-content/uploads/2026/02/Kruiisiterminal_Lipuvaljak_tribuun-scaled.jpg",
+        "credit": "ts.ee",
+        "page": "https://www.ts.ee/en/cruise-terminal/outdoor-areas/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Tallinn-F%C3%A4hre_nach_Helsinki.jpg/960px-Tallinn-F%C3%A4hre_nach_Helsinki.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nikater · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn-F%C3%A4hre_nach_Helsinki.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Port_of_Tallinn_-_panoramio.jpg/960px-Port_of_Tallinn_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Port_of_Tallinn_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/The_Port_Of_Tallinn%2CEstonia_-_panoramio.jpg/960px-The_Port_Of_Tallinn%2CEstonia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "dan kearney · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Port_Of_Tallinn,Estonia_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Estonia_-_Tallinn_-_panoramio_%2810%29.jpg/960px-Estonia_-_Tallinn_-_panoramio_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "randreu · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Estonia_-_Tallinn_-_panoramio_(10).jpg"
+      }
+    ]
   },
   {
     "id": "reidi-tee-promenade",
@@ -3826,11 +4854,11 @@
     "tips": "Continue past Russalka onto the Pirita promenade if the little one naps.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3860,7 +4888,34 @@
       "https://visitestonia.com/en/pirita-promenade-and-reidi-road"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177339/pirita-promenade"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/TLN_-_2010-03-06_-_Liivaoja.JPG/960px-TLN_-_2010-03-06_-_Liivaoja.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Flying Saucer · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:TLN_-_2010-03-06_-_Liivaoja.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/View_on_Tallinn_Harbour_-_panoramio.jpg/960px-View_on_Tallinn_Harbour_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:View_on_Tallinn_Harbour_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Tallink_Superstar-Tallin.jpg/960px-Tallink_Superstar-Tallin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Егор Журавлёв from Smarde, Latvia · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallink_Superstar-Tallin.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Reidi_tee_street_building_in_Tallinn-20190421_%28view_to_City_Centre%29.jpg/960px-Reidi_tee_street_building_in_Tallinn-20190421_%28view_to_City_Centre%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Teet Koitjärv · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Reidi_tee_street_building_in_Tallinn-20190421_(view_to_City_Centre).jpg"
+      }
+    ]
   },
   {
     "id": "pirita-promenade",
@@ -3880,11 +4935,11 @@
     "tips": "Can be very windy — a stroller rain/wind cover helps.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3914,7 +4969,34 @@
       "https://www.visittallinn.ee/eng/visitor/plan/good-to-know/parking"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177339/pirita-promenade"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/EE-TLN-Pirita.JPG/960px-EE-TLN-Pirita.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EE-TLN-Pirita.JPG"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Maarjam%C3%A4gi3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Tony Bowden · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Maarjam%C3%A4gi3.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Saksa_s%C3%B5jav%C3%A4e_kalmistu.jpg/960px-Saksa_s%C3%B5jav%C3%A4e_kalmistu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Saksa_s%C3%B5jav%C3%A4e_kalmistu.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Kivi_Saksa_s%C3%B5jav%C3%A4e_kalmistul.jpg/960px-Kivi_Saksa_s%C3%B5jav%C3%A4e_kalmistul.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mona-Mia · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Kivi_Saksa_s%C3%B5jav%C3%A4e_kalmistul.jpg"
+      }
+    ]
   },
   {
     "id": "lepistiku-park",
@@ -3934,11 +5016,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -3967,7 +5049,34 @@
       "https://intravel.net/tallinn/entertainment/lepistiku-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176793/lepistiku-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Reason_of_traffic_congestion_in_Mustam%C3%A4e_.JPG/960px-Reason_of_traffic_congestion_in_Mustam%C3%A4e_.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Reason_of_traffic_congestion_in_Mustam%C3%A4e_.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Vihitaja_street_Tallinn.jpg/960px-Vihitaja_street_Tallinn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Vihitaja_street_Tallinn.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/2022_Tallinn_Mustam%C3%A4e_tee.jpg/960px-2022_Tallinn_Mustam%C3%A4e_tee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:2022_Tallinn_Mustam%C3%A4e_tee.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2021_Tallinn_Endine_ABC-7.jpg/960px-2021_Tallinn_Endine_ABC-7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Liilia Moroz · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:2021_Tallinn_Endine_ABC-7.jpg"
+      }
+    ]
   },
   {
     "id": "manni-park",
@@ -3987,11 +5096,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -4020,7 +5129,34 @@
       "https://visitestonia.com/en/manni-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/176797/manni-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG/960px-EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-EE-TLN-MUS-Tammsaare_street_001.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_001.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/EU-EE-TLN-MUS-Tammsaare_street_002.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_002.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/EU-EE-TLN-MUS-Tammsaare_street_003.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_003.JPG"
+      }
+    ]
   },
   {
     "id": "parditiigi-park",
@@ -4040,11 +5176,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -4073,7 +5209,34 @@
       "https://www.puhkaeestis.ee/en/parditiigi-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Lehe_street_in_Tallinn.JPG/960px-Lehe_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Lehe_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/M%C3%B5tuse_street_in_Tallinn.JPG/960px-M%C3%B5tuse_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:M%C3%B5tuse_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Vuti_street_in_Tallinn.JPG/960px-Vuti_street_in_Tallinn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Vuti_street_in_Tallinn.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Tedre-Mooni_intersection.JPG/960px-Tedre-Mooni_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tedre-Mooni_intersection.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Old_and_new_substations_on_Tedre_street.JPG/960px-Old_and_new_substations_on_Tedre_street.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Old_and_new_substations_on_Tedre_street.JPG"
+      }
+    ]
   },
   {
     "id": "oismae-pond-park",
@@ -4093,11 +5256,11 @@
     "tips": "The children's traffic circle is great for balance bikes and trikes.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -4126,7 +5289,34 @@
       "https://en.wikipedia.org/wiki/V%C3%A4ike-%C3%95ism%C3%A4e"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/V%C3%A4ike-%C3%95ism%C3%A4e.JPG/960px-V%C3%A4ike-%C3%95ism%C3%A4e.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:V%C3%A4ike-%C3%95ism%C3%A4e.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Tallinna_Meelespea_Lasteaed.JPG/960px-Tallinna_Meelespea_Lasteaed.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Meelespea_Lasteaed.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Tallinna_Rukkilille_Lasteaed.JPG/960px-Tallinna_Rukkilille_Lasteaed.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_Rukkilille_Lasteaed.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Tallinna_%C3%95ism%C3%A4e_Russian_Lyceum.JPG/960px-Tallinna_%C3%95ism%C3%A4e_Russian_Lyceum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_%C3%95ism%C3%A4e_Russian_Lyceum.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG/960px-Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinna_%C3%95ism%C3%A4e_G%C3%BCmnaasium.JPG"
+      }
+    ]
   },
   {
     "id": "kase-park-kopli",
@@ -4146,11 +5336,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -4181,7 +5371,34 @@
       "https://arhitektuuripreemiad.ee/en/object/kopli-birch-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/176791/kopli-birch-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/EU-EE-Tallinn-PT-Kopli-Kopli_ametikool.JPG/960px-EU-EE-Tallinn-PT-Kopli-Kopli_ametikool.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-PT-Kopli-Kopli_ametikool.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/S%C3%B5le-Kopli-Maleva_intersection.JPG/960px-S%C3%B5le-Kopli-Maleva_intersection.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:S%C3%B5le-Kopli-Maleva_intersection.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/EU-EE-TLN-PT-S%C3%B5le_street.JPG/960px-EU-EE-TLN-PT-S%C3%B5le_street.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-PT-S%C3%B5le_street.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Rail_replacing_near_Maleva.JPG/960px-Rail_replacing_near_Maleva.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Rail_replacing_near_Maleva.JPG"
+      }
+    ]
   },
   {
     "id": "putukavail-pohja-tallinn",
@@ -4201,11 +5418,11 @@
     "tips": "Check recent news or the Põhja-Tallinn district before a dedicated trip.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Check the website",
@@ -4234,7 +5451,34 @@
       "https://www.err.ee/1609756101/galerii-pohja-tallinna-putukavaila-koiki-atraktsioone-veel-kasutada-ei-saa"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://s.err.ee/photo/crop/2025/07/29/2961582h285ct24.jpg",
+        "credit": "err.ee",
+        "page": "https://www.err.ee/1609774299/pohja-tallinna-putukavaila-osadel-atraktsioonidel-pole-endiselt-kasutusluba"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/EU-EE-Tallinn-PT-Angerja.JPG/960px-EU-EE-Tallinn-PT-Angerja.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-PT-Angerja.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/EU-EE-TLN-PT-Karjamaa-STANDARD_factory.JPG/960px-EU-EE-TLN-PT-Karjamaa-STANDARD_factory.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-PT-Karjamaa-STANDARD_factory.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/EU-EE-TLN-PT-Crossing_with_tram_road_will_be_in_70_meters.JPG/960px-EU-EE-TLN-PT-Crossing_with_tram_road_will_be_in_70_meters.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-PT-Crossing_with_tram_road_will_be_in_70_meters.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Peeter_Suure_Merekindluse_garnisoni_%C3%BCleajateenijate_elamu_Kopli_tn_78%2C_1915._a..JPG/960px-Peeter_Suure_Merekindluse_garnisoni_%C3%BCleajateenijate_elamu_Kopli_tn_78%2C_1915._a..JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ekkeri · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:Peeter_Suure_Merekindluse_garnisoni_%C3%BCleajateenijate_elamu_Kopli_tn_78,_1915._a..JPG"
+      }
+    ]
   },
   {
     "id": "paljassaare-boardwalk",
@@ -4254,11 +5498,11 @@
     "tips": "Bus 59 to the Pikakari terminus; paths beyond the boardwalk are unpaved.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free nature trail."
     },
     "discounts": [],
     "hours": "Open all year",
@@ -4288,7 +5532,24 @@
       "https://gigigriffis.com/hiking-estonia-tallinns-paljassaare-hoiuala/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/179804/paljassaare-special-conservation-area"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Tallinn_%2820699998656%29.jpg/960px-Tallinn_%2820699998656%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_(20699998656).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Tallinn_%2820733095651%29.jpg/960px-Tallinn_%2820733095651%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_(20733095651).jpg"
+      }
+    ]
   },
   {
     "id": "pikakari-beach",
@@ -4308,11 +5569,11 @@
     "tips": "Keep toddlers close at the waterline — the sea deepens fast here.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public beach."
     },
     "discounts": [],
     "hours": "Open all year; lifeguards Jun–Aug 9:00–20:00",
@@ -4341,7 +5602,19 @@
       "https://visitharju.ee/en/?p=57168"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177338/pikakari-beach"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/EU-EE-Tallinn-PT-Kopli-view_to_Paljassaare.JPG/960px-EU-EE-Tallinn-PT-Kopli-view_to_Paljassaare.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-PT-Kopli-view_to_Paljassaare.JPG"
+      }
+    ]
   },
   {
     "id": "raagu-park",
@@ -4361,11 +5634,11 @@
     "tips": null,
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public playground."
     },
     "discounts": [],
     "hours": "Open 24/7",
@@ -4394,7 +5667,34 @@
       "https://tallinn.ee/eng/g15917s80125"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/176802/raagu-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Electric_train_in_N%C3%B5mme.JPG/960px-Electric_train_in_N%C3%B5mme.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Electric_train_in_N%C3%B5mme.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Raudtee_street%2C_Tallinn_2013.jpg/960px-Raudtee_street%2C_Tallinn_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Raudtee_street,_Tallinn_2013.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio.jpg/960px-N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme,_Tallinn,_Estonia_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio_-_jadestarr_%281%29.jpg/960px-N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio_-_jadestarr_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme,_Tallinn,_Estonia_-_panoramio_-_jadestarr_(1).jpg"
+      }
+    ]
   },
   {
     "id": "glehn-park",
@@ -4414,11 +5714,11 @@
     "tips": "A sturdy all-terrain stroller or carrier works better than a city stroller on the slopes.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public park/promenade."
     },
     "discounts": [],
     "hours": "Open 24/7, all year",
@@ -4447,7 +5747,34 @@
       "https://www.nomadotravel.app/en/attractions/glehn-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/637071/glehni-park-010-visit-estonia.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/glehn-park"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/S%C3%BCtiste_002.JPG/960px-S%C3%BCtiste_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:S%C3%BCtiste_002.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/150530_Jaan_Kreuksi_hauakivi.jpg/960px-150530_Jaan_Kreuksi_hauakivi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Uutma · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:150530_Jaan_Kreuksi_hauakivi.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Rahum%C3%A4e%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg/960px-Rahum%C3%A4e%2C_Tallinn%2C_Estonia_-_panoramio_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rahum%C3%A4e,_Tallinn,_Estonia_-_panoramio_(4).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Rahum%C3%A4e%2C_Tallinn%2C_Estonia_-_panoramio_%285%29.jpg/960px-Rahum%C3%A4e%2C_Tallinn%2C_Estonia_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Rahum%C3%A4e,_Tallinn,_Estonia_-_panoramio_(5).jpg"
+      }
+    ]
   },
   {
     "id": "paaskula-bog-trail",
@@ -4467,11 +5794,11 @@
     "tips": "Stick to the 2 km children's loop with a stroller; the 280 m floating boardwalk on the long loop isn't stroller-friendly.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free nature trail."
     },
     "discounts": [],
     "hours": "Open all year",
@@ -4501,7 +5828,24 @@
       "https://gigigriffis.com/hiking-estonia-paaskula-bog-study-trail/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/181772/paaskula-bog-nature-trail"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/P%C3%A4%C3%A4sk%C3%BCla_j%C3%B5gi.JPG/960px-P%C3%A4%C3%A4sk%C3%BCla_j%C3%B5gi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:P%C3%A4%C3%A4sk%C3%BCla_j%C3%B5gi.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Piiri_lasteaed.JPG/960px-Piiri_lasteaed.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Avjoska · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Piiri_lasteaed.JPG"
+      }
+    ]
   },
   {
     "id": "harku-lake-beach",
@@ -4521,11 +5865,11 @@
     "tips": "Lifeguards only June–August.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public beach."
     },
     "discounts": [],
     "hours": "Open 24/7; lifeguards Jun–Aug",
@@ -4555,7 +5899,14 @@
       "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/urban-nature/180696"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visitestonia.com/images/3974483/339684913_609096107939452_4169422410405487721_n.jpg",
+        "credit": "visitestonia.com",
+        "page": "https://visitestonia.com/en/harku-lake-and-beach"
+      }
+    ]
   },
   {
     "id": "kakumae-beach",
@@ -4575,11 +5926,11 @@
     "tips": "Arrive early on hot days; parking is free but unguarded.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public beach."
     },
     "discounts": [],
     "hours": "Open all year; lifeguards 1 Jun–31 Aug 9:00–20:00",
@@ -4609,7 +5960,14 @@
       "https://www.visitharju.ee/en/?p=57004"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/attractions-museums/177336/kakumae-beach"
+      }
+    ]
   },
   {
     "id": "harju-street-ice-rink",
@@ -4629,11 +5987,11 @@
     "tips": "Under-3s have skated free in past seasons; bring a helmet and waterproof mittens.",
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 6.9,
+      "child": 0,
       "childFreeUnderMonths": 36,
       "family": null,
-      "note": "2025/26 city rinks: €6.90–10.90/hour, children/seniors €4.70–8.80; skate rental €5. Under-3 free per 2024 reports."
+      "note": "Per hour (2025/26 city-rink prices): €6.90–10.90, children/seniors €4.70–8.80; skate rental €5. Under-3s free (2024 reports). 2026/27 prices not yet published."
     },
     "discounts": [
       "Free entry for under-3s (past seasons)",
@@ -4667,7 +6025,34 @@
       "https://visitharju.ee/en/?p=535569"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://s.err.ee/photo/crop/2025/11/27/3105144hb633t24.jpg",
+        "credit": "news.err.ee",
+        "page": "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Niguliste_kirik_001.jpg/960px-Niguliste_kirik_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kalju Pärtna · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Niguliste_kirik_001.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Niguliste_kirik_003.jpg/960px-Niguliste_kirik_003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kalju Pärtna · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Niguliste_kirik_003.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Niguliste_kirik_012.jpg/960px-Niguliste_kirik_012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kalju Pärtna · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Niguliste_kirik_012.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Niguliste_kirik_013.jpg/960px-Niguliste_kirik_013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kalju Pärtna · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Niguliste_kirik_013.jpg"
+      }
+    ]
   },
   {
     "id": "manni-park-ice-rink",
@@ -4687,11 +6072,11 @@
     "tips": null,
     "price": {
       "free": false,
-      "adult": null,
-      "child": null,
+      "adult": 6.9,
+      "child": 4.7,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "City rinks 2025/26: €6.90–10.90/hour, discounted €4.70–8.80."
+      "note": "Per hour (2025/26 city-rink prices): €6.90–10.90, discounted (children/seniors) €4.70–8.80. An older ERR article quoted €6.30–9.50/hour. 2026/27 prices not yet published."
     },
     "discounts": [],
     "hours": "Seasonal (approx. Oct/Nov–mid-March); check the website",
@@ -4720,7 +6105,34 @@
       "https://news.err.ee/1609869459/tallinn-old-town-ice-skating-rink-open-for-winter-season"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://s.err.ee/photo/crop/2020/11/23/844794h5fcdt24.jpg",
+        "credit": "news.err.ee",
+        "page": "https://news.err.ee/1609147213/tallinn-s-outdoor-ice-rinks-to-open-again-for-winter-from-mid-november"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG/960px-EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-Tallinn-MUS-Szolnok-Vilde92.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/EU-EE-TLN-MUS-Tammsaare_street_001.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_001.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/EU-EE-TLN-MUS-Tammsaare_street_002.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_002.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_002.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/EU-EE-TLN-MUS-Tammsaare_street_003.JPG/960px-EU-EE-TLN-MUS-Tammsaare_street_003.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:EU-EE-TLN-MUS-Tammsaare_street_003.JPG"
+      }
+    ]
   },
   {
     "id": "song-festival-grounds-winter-centre",
@@ -4740,11 +6152,11 @@
     "tips": "Go early on snowy weekend mornings and stick to the gentler edges away from fast sledders.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Sledding on the open slope is free; tubing/rental is paid (prices not confirmed)."
+      "note": "Sledding on the open slope is free; snowtubing/rental is paid (prices not confirmed)."
     },
     "discounts": [],
     "hours": "Listed 1 Dec–15 Mar, depending on snow",
@@ -4774,7 +6186,34 @@
       "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://visittallinn.ee/images/meta/autumn_2.jpeg",
+        "credit": "visittallinn.ee",
+        "page": "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/180706/tallinn-song-festival-grounds-winter-centre-snowtubing-and-sledding"
+      },
+      {
+        "src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flickr_-_tm-tm_-_%22Mon_Repos%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Tony Bowden · CC BY-SA 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_tm-tm_-_%22Mon_Repos%22.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Pedestrian_road_in_Kadriorg.JPG/960px-Pedestrian_road_in_Kadriorg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Pedestrian_road_in_Kadriorg.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Litorale_ghiacciato%2C_Tallinn.jpg/960px-Litorale_ghiacciato%2C_Tallinn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Luca Casartelli · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Litorale_ghiacciato,_Tallinn.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Gabbiano%2C_Tallinn.jpg/960px-Gabbiano%2C_Tallinn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Luca Casartelli · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Gabbiano,_Tallinn.jpg"
+      }
+    ]
   },
   {
     "id": "nomme-forest-sledding",
@@ -4794,11 +6233,11 @@
     "tips": "Bring your own sled; guides warn some Nõmme hills are dangerously steep.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free sledding hill."
     },
     "discounts": [],
     "hours": "When there is snow",
@@ -4826,7 +6265,34 @@
       "https://www.inyourpocket.com/tallinn/active-tallinn/winter-activities"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://s.inyourpocket.com/img/background/11438-992x300.jpg",
+        "credit": "inyourpocket.com",
+        "page": "https://www.inyourpocket.com/estonia/tallinn/venues/categories/winter-activities"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Electric_train_in_N%C3%B5mme.JPG/960px-Electric_train_in_N%C3%B5mme.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Electric_train_in_N%C3%B5mme.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Raudtee_street%2C_Tallinn_2013.jpg/960px-Raudtee_street%2C_Tallinn_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitry G · Public domain",
+        "page": "https://commons.wikimedia.org/wiki/File:Raudtee_street,_Tallinn_2013.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio.jpg/960px-N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme,_Tallinn,_Estonia_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio_-_jadestarr.jpg/960px-N%C3%B5mme%2C_Tallinn%2C_Estonia_-_panoramio_-_jadestarr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "jadestarr · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:N%C3%B5mme,_Tallinn,_Estonia_-_panoramio_-_jadestarr.jpg"
+      }
+    ]
   },
   {
     "id": "nomme-ski-trails",
@@ -4846,11 +6312,11 @@
     "tips": "The 5 km loop is reported lit all night; ski rental is available on site (child sizes unconfirmed).",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": "Trails free to use; rental paid."
+      "note": "Trails free to use; ski rental paid."
     },
     "discounts": [],
     "hours": "Centre Mon–Sat 08:00–22:00, Sun 09:00–22:00; trails depend on snow",
@@ -4879,7 +6345,19 @@
       "https://terviserajad.ee/en/rajad/nomme-harku-health-trails/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Metsa_t%C3%A4nav.jpg/960px-Metsa_t%C3%A4nav.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Epp · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Metsa_t%C3%A4nav.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Krooning.20260716_123034.jpg/960px-Krooning.20260716_123034.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Avjoska · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Krooning.20260716_123034.jpg"
+      }
+    ]
   },
   {
     "id": "tallinn-christmas-market",
@@ -4899,11 +6377,11 @@
     "tips": "Cobbles are bumpy — a carrier is easier than a stroller.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free entry; pay for rides, food and stalls."
     },
     "discounts": [],
     "hours": "Seasonal; 2026/27 reported as 20 Nov–6 Jan, daily at least 12:00–20:00",
@@ -4932,7 +6410,34 @@
       "https://news.err.ee/1609864482/gallery-tallinn-christmas-market-back-friday-for-another-year-of-cheer"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://s.err.ee/photo/crop/2026/03/13/3254753hbf04t24.jpg",
+        "credit": "err.ee",
+        "page": "https://www.err.ee/1610076271/tallinna-jouluturu-korraldab-taas-vana-tuttav"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tallinn-Rathausplatz.jpg/960px-Tallinn-Rathausplatz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nikater · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn-Rathausplatz.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Tallinn-Rathausplatz02.jpg/960px-Tallinn-Rathausplatz02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nikater · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn-Rathausplatz02.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Tallinn%2C_Toompea_%286221148758%29.jpg/960px-Tallinn%2C_Toompea_%286221148758%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Arian Zwegers · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn,_Toompea_(6221148758).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Tallinn_Town_Hall_Square%2C_2013.jpg/960px-Tallinn_Town_Hall_Square%2C_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Julie Anne Workman · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Tallinn_Town_Hall_Square,_2013.jpg"
+      }
+    ]
   },
   {
     "id": "keila-joa-park",
@@ -4952,8 +6457,8 @@
     "tips": "Bring a baby carrier for the stairs down to the waterfall.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
       "note": "Park free; Keila-Joa Castle has separate paid entry."
@@ -4985,7 +6490,34 @@
       "https://visitestonia.com/en/nature-trail-in-keila-joa-park"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://rmk.ee/wp-content/themes/rmk-veeb/assets/images/main_shared.png",
+        "credit": "rmk.ee",
+        "page": "https://rmk.ee/en/exploring-nature/where-to-go/rmk-keila-joa-park/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg/960px-Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aleksandr Abrosimov · CC BY-SA 4.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Talvine_j%C3%B5gi._Keila_j%C3%B5gi.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Keila-Joa_bridge_-_panoramio.jpg/960px-Keila-Joa_bridge_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keila-Joa_bridge_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Keila-Joa_waterfall_-_panoramio_%282%29.jpg/960px-Keila-Joa_waterfall_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keila-Joa_waterfall_-_panoramio_(2).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Keila_Falls_-_panoramio_%281%29.jpg/960px-Keila_Falls_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Dmitrijs Purgalvis · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Keila_Falls_-_panoramio_(1).jpg"
+      }
+    ]
   },
   {
     "id": "jagala-waterfall",
@@ -5005,11 +6537,11 @@
     "tips": "The riverbank is unfenced in places — keep toddlers in hand or carrier near the edge.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free to visit."
     },
     "discounts": [],
     "hours": "Open all year",
@@ -5038,7 +6570,34 @@
       "https://www.campercontact.com/en/estonia/harju-county/joelahtme-vald/59250/parking-jagala-juga.md"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/J%C3%A4gala_juga_22-03-2013.JPG/960px-J%C3%A4gala_juga_22-03-2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ivar Leidus · CC BY-SA 3.0 ee",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_juga_22-03-2013.JPG"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/North_Estonia_banner.jpg/960px-North_Estonia_banner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Alexander Tsirlin · CC BY-SA 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:North_Estonia_banner.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/J%C3%A4gala_waterfall_-_panoramio.jpg/960px-J%C3%A4gala_waterfall_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_waterfall_-_panoramio.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/J%C3%A4gala_waterfall_-_panoramio_-_Aulo_Aasmaa.jpg/960px-J%C3%A4gala_waterfall_-_panoramio_-_Aulo_Aasmaa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:J%C3%A4gala_waterfall_-_panoramio_-_Aulo_Aasmaa.jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Stairs_to_J%C3%A4gala_waterfall_-_panoramio.jpg/960px-Stairs_to_J%C3%A4gala_waterfall_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Aulo Aasmaa · CC BY 3.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Stairs_to_J%C3%A4gala_waterfall_-_panoramio.jpg"
+      }
+    ]
   },
   {
     "id": "viru-bog-boardwalk",
@@ -5058,11 +6617,11 @@
     "tips": "After the tower ramp the boardwalk narrows — turn back at the tower with a stroller; very busy on summer weekends.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free RMK nature trail."
     },
     "discounts": [],
     "hours": "Open all year",
@@ -5091,7 +6650,34 @@
       "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trails-observation-tower-1300-m-from-the-parking/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "photos": [
+      {
+        "src": "https://rmk.ee/wp-content/themes/rmk-veeb/assets/images/main_shared.png",
+        "credit": "rmk.ee",
+        "page": "https://rmk.ee/en/exploring-nature/where-to-go/viru-bog-nature-trail-3-5-km/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Lahemaa_%2830246584280%29.jpg/960px-Lahemaa_%2830246584280%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30246584280).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Lahemaa_%2830428289202%29.jpg/960px-Lahemaa_%2830428289202%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30428289202).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Lahemaa_%2830544865975%29.jpg/960px-Lahemaa_%2830544865975%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30544865975).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Lahemaa_%2830508837806%29.jpg/960px-Lahemaa_%2830508837806%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30508837806).jpg"
+      }
+    ]
   },
   {
     "id": "polli-zoo-tuhala",
@@ -5144,7 +6730,16 @@
       "https://visitharju.ee/en/?p=601556"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "phone": "+372 5558 2821",
+    "email": "info@polliloomaaed.ee",
+    "photos": [
+      {
+        "src": "https://visitharju.ee/wp-content/uploads/2026/02/Polliloomaaedkaanefoto28129.jpg",
+        "credit": "visitharju.ee",
+        "page": "https://visitharju.ee/en/polli-zoo/"
+      }
+    ]
   },
   {
     "id": "kallaste-farm-elamustalu",
@@ -5198,7 +6793,16 @@
       "https://www.visittallinn.ee/eng/visitor/see-do/things-to-do/sports-adventure/179683/kallaste-talu-farm-and-holiday-resort"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "phone": "+372 507 6138",
+    "email": "elamustalu@kallastetalu.ee",
+    "photos": [
+      {
+        "src": "https://visitharju.ee/wp-content/uploads/2026/02/elamustalu-kallaste-turismitalus-016-visit-estonia.jpeg",
+        "credit": "visitharju.ee",
+        "page": "https://visitharju.ee/en/elamustalu-family-activity-center-at-kallaste-farm/"
+      }
+    ]
   },
   {
     "id": "laulasmaa-beach",
@@ -5218,11 +6822,11 @@
     "tips": "You can walk just a short stretch of the shore trail and turn back.",
     "price": {
       "free": true,
-      "adult": null,
-      "child": null,
+      "adult": 0,
+      "child": 0,
       "childFreeUnderMonths": null,
       "family": null,
-      "note": null
+      "note": "Free public beach."
     },
     "discounts": [],
     "hours": "Open all year",
@@ -5251,6 +6855,33 @@
       "https://guides.travel.sygic.com/production/en/Laulasmaa"
     ],
     "lastVerified": null,
-    "confidence": "low"
+    "confidence": "low",
+    "photos": [
+      {
+        "src": "https://visitharju.ee/wp-content/uploads/2026/03/Laulasmaarada.jpg",
+        "credit": "visitharju.ee",
+        "page": "https://visitharju.ee/en/laulasmaa-lohusalu-hiking-trail/"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/L%C3%A4%C3%A4ne-Harju_vald_%2851401453817%29.jpg/960px-L%C3%A4%C3%A4ne-Harju_vald_%2851401453817%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%A4%C3%A4ne-Harju_vald_(51401453817).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/L%C3%A4%C3%A4ne-Harju_vald_%2851003916585%29.jpg/960px-L%C3%A4%C3%A4ne-Harju_vald_%2851003916585%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%A4%C3%A4ne-Harju_vald_(51003916585).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/L%C3%A4%C3%A4ne-Harju_vald_%2851072405623%29.jpg/960px-L%C3%A4%C3%A4ne-Harju_vald_%2851072405623%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%A4%C3%A4ne-Harju_vald_(51072405623).jpg"
+      },
+      {
+        "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/L%C3%A4%C3%A4ne-Harju_vald_%2851003916830%29.jpg/960px-L%C3%A4%C3%A4ne-Harju_vald_%2851003916830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Sergei Gussev · CC BY 2.0",
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%A4%C3%A4ne-Harju_vald_(51003916830).jpg"
+      }
+    ]
   }
 ]
