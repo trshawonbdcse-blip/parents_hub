@@ -9,6 +9,9 @@ export type Category =
   | 'beach'
   | 'mall'
   | 'cafe'
+  | 'theatre'
+  | 'class'
+  | 'winter-fun'
 
 export type Setting = 'indoor' | 'outdoor' | 'both'
 export type Season = 'all-year' | 'summer' | 'winter'
@@ -29,6 +32,15 @@ export interface Facilities {
   cafe: boolean | null
   toilet: boolean | null
   parking: boolean | null
+}
+
+export interface ParkingInfo {
+  available: boolean | null
+  cost: 'free' | 'paid' | 'mixed' | null
+  operator: string | null
+  pargiSupported: boolean | null
+  zone: string | null
+  note: string | null
 }
 
 export interface Place {
@@ -52,9 +64,11 @@ export interface Place {
   hours: string
   durationMinutes: number
   facilities: Facilities
+  parkingInfo?: ParkingInfo
   transport: string | null
   language: string | null
   website: string
+  sources?: string[]
   lastVerified: string | null
   confidence: 'high' | 'medium' | 'low'
 }
@@ -71,4 +85,12 @@ export interface Visit {
   placeId: string
   date: string
   note: string
+}
+
+export interface EventSource {
+  name: string
+  url: string
+  what: string
+  language: string
+  free: boolean
 }

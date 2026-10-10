@@ -180,6 +180,43 @@ export function PlaceDetail() {
       </section>
 
       <section>
+        <h2>Parking</h2>
+        {place.parkingInfo && place.parkingInfo.available !== null ? (
+          <div className="card stack-sm">
+            <p>
+              <strong>
+                {!place.parkingInfo.available
+                  ? '🚫 No parking on site'
+                  : place.parkingInfo.cost === 'free'
+                    ? '🅿️ Free parking'
+                    : place.parkingInfo.cost === 'mixed'
+                      ? '🅿️ Free and paid options'
+                      : place.parkingInfo.cost === 'paid'
+                        ? '🅿️ Paid parking'
+                        : '🅿️ Parking available'}
+              </strong>
+            </p>
+            {place.parkingInfo.operator && <p className="small">Operator: {place.parkingInfo.operator}</p>}
+            {place.parkingInfo.zone && <p className="small">City zone: {place.parkingInfo.zone}</p>}
+            {place.parkingInfo.available && place.parkingInfo.cost !== 'free' && (
+              <p className="small">
+                {place.parkingInfo.pargiSupported === true ? (
+                  <span className="tag pargi">✓ Pay with Pargi.ee</span>
+                ) : place.parkingInfo.pargiSupported === false ? (
+                  <span className="tag">✗ Pargi.ee not supported — use the operator's app/machine</span>
+                ) : (
+                  <span className="tag">Pargi.ee support unknown</span>
+                )}
+              </p>
+            )}
+            {place.parkingInfo.note && <p className="small muted">{place.parkingInfo.note}</p>}
+          </div>
+        ) : (
+          <p className="small muted">No parking info yet.</p>
+        )}
+      </section>
+
+      <section>
         <h2>Getting there</h2>
         <p>{place.address}</p>
         {place.transport && <p className="small">🚌 {place.transport}</p>}
@@ -219,6 +256,21 @@ export function PlaceDetail() {
           </ul>
         )}
       </section>
+
+      {place.sources && place.sources.length > 0 && (
+        <details className="small">
+          <summary>Sources ({place.sources.length})</summary>
+          <ul className="list">
+            {place.sources.map((u) => (
+              <li key={u}>
+                <a href={u} target="_blank" rel="noreferrer">
+                  {u.replace(/^https?:\/\/(www\.)?/, '').slice(0, 60)}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
 
       <footer className="verify small muted">
         {place.lastVerified ? `Info last checked ${place.lastVerified}. ` : 'Info not yet verified. '}

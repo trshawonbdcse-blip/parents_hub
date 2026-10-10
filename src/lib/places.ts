@@ -1,10 +1,14 @@
 import rawPlaces from '../data/places.json'
 import rawTips from '../data/money-tips.json'
-import type { Category, MoneyTip, Place } from '../types'
+import rawEventSources from '../data/event-sources.json'
+import rawParkingRules from '../data/parking-rules.json'
+import type { Category, EventSource, MoneyTip, Place } from '../types'
 import type { Weather } from './weather'
 
 export const places = rawPlaces as Place[]
 export const moneyTips = rawTips as MoneyTip[]
+export const eventSources = rawEventSources as EventSource[]
+export const parkingRules = rawParkingRules as MoneyTip[]
 
 export const placeById = (id: string) => places.find((p) => p.id === id)
 
@@ -19,6 +23,9 @@ export const CATEGORY_LABEL: Record<Category, { label: string; emoji: string }> 
   beach: { label: 'Beach', emoji: '🏖️' },
   mall: { label: 'Mall', emoji: '🛍️' },
   cafe: { label: 'Café', emoji: '☕' },
+  theatre: { label: 'Theatre & shows', emoji: '🎭' },
+  class: { label: 'Class', emoji: '🎵' },
+  'winter-fun': { label: 'Winter fun', emoji: '🛷' },
 }
 
 export function ageInMonths(birthDate: string | null, today = new Date()): number | null {
@@ -41,6 +48,20 @@ export const fitsAge = (p: Place, months: number | null) =>
   months === null || (months >= p.ageMinMonths && months <= p.ageMaxMonths)
 
 // Summer here means roughly May–September, when outdoor-only places make sense.
+export const hasParking = (p: Place) => p.parkingInfo?.available ?? p.facilities.parking ?? false
+export const hasFreeParking = (p: Place) =>
+  hasParking(p) && (p.parkingInfo?.cost === 'free' || p.parkingInfo?.cost === 'mixed')
+
+export function parkingLabel(p: Place): string | null {
+  const info = p.parkingInfo
+  if (!info || info.available === null) return p.facilities.parking ? 'Parking' : null
+  if (!info.available) return 'No parking'
+  if (info.cost === 'free') return 'Free parking'
+  if (info.cost === 'mixed') return 'Free/paid parking'
+  if (info.cost === 'paid') return info.pargiSupported ? 'Paid · Pargi ✓' : 'Paid parking'
+  return 'Parking'
+}
+
 export const isSummer = (d = new Date()) => d.getMonth() >= 4 && d.getMonth() <= 8
 
 export const fitsSeason = (p: Place, d = new Date()) =>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Place } from '../types'
-import { CATEGORY_LABEL, priceLabel, settingLabel } from '../lib/places'
+import { CATEGORY_LABEL, parkingLabel, priceLabel, settingLabel } from '../lib/places'
 import { KEYS, useIdList } from '../lib/storage'
 
 interface Props {
@@ -29,6 +29,7 @@ export function PlaceCard({ place, months, distance }: Props) {
           <div className="tags">
             <span className={`tag ${place.price.free ? 'tag-free' : ''}`}>{priceLabel(place, months)}</span>
             <span className="tag">{settingLabel(place.setting)}</span>
+            {parkingLabel(place) && <span className="tag">🅿️ {parkingLabel(place)}</span>}
             {place.facilities.stroller && <span className="tag" title="Stroller friendly">🚼</span>}
             {place.facilities.changingTable && <span className="tag" title="Changing table">🧷</span>}
             {place.facilities.feedingRoom && <span className="tag" title="Feeding room">🍼</span>}

@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { PlaceCard } from '../components/PlaceCard'
-import { CATEGORY_LABEL, distanceKm, fitsAge, fitsSeason, places } from '../lib/places'
+import { CATEGORY_LABEL, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking, places } from '../lib/places'
 import { useChild } from '../lib/useChild'
 import type { Category } from '../types'
 
@@ -21,6 +21,7 @@ export function Explore() {
   const ageOnly = params.get('age') !== '0'
   const seasonOnly = params.get('season') !== '0'
   const sort = params.get('sort') ?? 'name'
+  const parking = params.get('parking') ?? 'any'
 
   const update = (key: string, value: string | null) => {
     const next = new URLSearchParams(params)
@@ -54,6 +55,9 @@ export function Explore() {
       if (area !== 'any' && p.area !== area) return false
       if (ageOnly && !fitsAge(p, months)) return false
       if (seasonOnly && !fitsSeason(p)) return false
+      if (parking === 'yes' && !hasParking(p)) return false
+      if (parking === 'free' && !hasFreeParking(p)) return false
+      if (parking === 'pargi' && !p.parkingInfo?.pargiSupported) return false
       return true
     })
     .map((p) => ({ p, d: coords ? distanceKm(coords.lat, coords.lng, p.lat, p.lng) : null }))
@@ -108,6 +112,13 @@ export function Explore() {
           ))}
         </select>
       </div>
+
+      <select value={parking} onChange={(e) => update('parking', e.target.value === 'any' ? null : e.target.value)}>
+        <option value="any">🅿️ Any parking</option>
+        <option value="yes">🅿️ Has parking</option>
+        <option value="free">🅿️ Free parking</option>
+        <option value="pargi">🅿️ Pay with Pargi.ee</option>
+      </select>
 
       <div className="toggles small">
         {months !== null && (

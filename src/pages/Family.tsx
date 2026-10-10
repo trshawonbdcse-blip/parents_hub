@@ -1,4 +1,5 @@
-import { formatAge, moneyTips } from '../lib/places'
+import { eventSources, formatAge, moneyTips, parkingRules } from '../lib/places'
+import type { MoneyTip } from '../types'
 import { useChild } from '../lib/useChild'
 
 export function Family() {
@@ -44,17 +45,23 @@ export function Family() {
         <p className="small muted">It then opens like a normal app and works offline for saved info.</p>
       </section>
 
-      {moneyTips.length > 0 && (
+      <TipList title="💰 Money-saving tips" tips={moneyTips} />
+      <TipList title="🅿️ Parking in Tallinn" tips={parkingRules} />
+
+      {eventSources.length > 0 && (
         <section>
-          <h2>💰 Money-saving tips</h2>
+          <h2>📅 Where to find kids' events</h2>
           <ul className="stack">
-            {moneyTips.map((t) => (
-              <li key={t.title} className="card">
-                <strong>{t.title}</strong>
-                <p className="small">{t.detail}</p>
-                <a className="small" href={t.source} target="_blank" rel="noreferrer">
-                  Source ↗
+            {eventSources.map((s) => (
+              <li key={s.url} className="card">
+                <a href={s.url} target="_blank" rel="noreferrer">
+                  <strong>{s.name} ↗</strong>
                 </a>
+                <p className="small">{s.what}</p>
+                <p className="small muted">
+                  {s.language}
+                  {s.free ? ' · free' : ''}
+                </p>
               </li>
             ))}
           </ul>
@@ -63,5 +70,25 @@ export function Family() {
 
       <p className="small muted center">Parents Hub · Tallinn · v0.1</p>
     </div>
+  )
+}
+
+function TipList({ title, tips }: { title: string; tips: MoneyTip[] }) {
+  if (!tips.length) return null
+  return (
+    <section>
+      <h2>{title}</h2>
+      <ul className="stack">
+        {tips.map((t) => (
+          <li key={t.title} className="card">
+            <strong>{t.title}</strong>
+            <p className="small">{t.detail}</p>
+            <a className="small" href={t.source} target="_blank" rel="noreferrer">
+              Source ↗
+            </a>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }
