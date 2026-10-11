@@ -75,13 +75,23 @@ const sameName = (p, s) => {
   const w = firstWord(s.pos_name ?? s.name)
   return Boolean(w) && words(`${p.name} ${p.nameLocal ?? ''}`).has(w)
 }
+// A brand-like name ("Garantbaby", "MyFitness", two shared words like "elamus" + "mustamae") is
+// specific enough to accept a partner further away — our coordinates or theirs can be off.
+const strongName = (p, s) => {
+  const ours = words(`${p.name} ${p.nameLocal ?? ''}`)
+  const shared = [...words(`${s.name} ${s.pos_name ?? ''}`)].filter((w) => ours.has(w))
+  return sameName(p, s) && (shared.length >= 2 || shared.some((w) => w.length >= 6))
+}
 // Stebby is a sport and wellbeing budget: only check places where it can realistically apply.
 const RELEVANT = new Set(['swimming', 'class', 'winter-fun', 'indoor-play'])
 // Bump when the matching rules change, so the next build re-checks everything.
-const VERSION = 2
+const VERSION = 3
+// Matches confirmed by hand ({ placeId: { hash, name } }), for partners the search can't pair up.
+const OVERRIDES = fs.existsSync('scripts/stebby/overrides.json') ? JSON.parse(fs.readFileSync('scripts/stebby/overrides.json', 'utf8')) : {}
 
 // Short search words: the local name, the English name, and the name without generic words.
-const queries = (p) => [...new Set([p.nameLocal, p.name, [...words(p.nameLocal ?? p.name)].slice(0, 2).join(' ')].filter((q) => q && q.length > 2))]
+const queries = (p) =>
+  [...new Set([p.nameLocal, p.name, [...words(p.nameLocal ?? p.name)].slice(0, 2).join(' '), [...words(p.name)][0]].filter((q) => q && q.length > 2))]
 
 // The partner list changes slowly: a full check once a week is enough.
 const fresh = previous?.updatedAt && Date.now() - new Date(previous.updatedAt).getTime() < 6 * 864e5
@@ -100,6 +110,7 @@ for (const p of places) {
     continue
   }
   let best = null
+  const seen = new Map()
   for (const q of queries(p)) {
     let results
     try {
@@ -113,7 +124,8 @@ for (const p of places) {
     for (const s of results) {
       if (!s.latitude || !s.longitude) continue
       const d = metres(p, { lat: Number(s.latitude), lng: Number(s.longitude) })
-      if (d <= 400 && sameName(p, s)) {
+      seen.set(s.pos_hash ?? s.hash, `${s.pos_name ?? s.name} (${d} m)`)
+      if ((d <= 400 && sameName(p, s)) || (d <= 3000 && strongName(p, s))) {
         if (!best || d < best.distanceM) {
           best = { hash: s.pos_hash ?? s.hash, name: s.pos_name ?? s.name, distanceM: d, categories: s.service_categories ?? [], from: s.ticket_starting_from ?? null }
         }
@@ -123,6 +135,8 @@ for (const p of places) {
   }
   if (failures > 15) break
   checked.push(p.id)
+  if (OVERRIDES[p.id]) best = { distanceM: 0, categories: [], from: null, ...OVERRIDES[p.id] }
+  if (!best) console.log(`· ${p.id}: no match; nearest results: ${[...seen.values()].sort((a, b) => parseInt(a.split('(').pop()) - parseInt(b.split('(').pop())).slice(0, 4).join(' | ') || 'none'}`)
   if (best) {
     matches[p.id] = best
     console.log(`✓ ${p.id} → ${best.name} (${best.distanceM} m)`)
