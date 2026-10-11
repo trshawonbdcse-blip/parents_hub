@@ -18,6 +18,7 @@ export const DICT: Record<string, Entry> = {
   Directions: { et: 'Teekond', ru: 'Маршрут' },
   Call: { et: 'Helista', ru: 'Позвонить' },
   Email: { et: 'E-post', ru: 'Эл. почта' },
+  Website: { et: 'Koduleht', ru: 'Сайт' },
   Free: { et: 'Tasuta', ru: 'Бесплатно' },
   'Free entry': { et: 'Tasuta sissepääs', ru: 'Вход бесплатный' },
   'Usually free': { et: 'Tavaliselt tasuta', ru: 'Обычно бесплатно' },

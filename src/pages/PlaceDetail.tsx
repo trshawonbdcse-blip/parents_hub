@@ -10,6 +10,7 @@ import {
   ChevronRight,
   Clock,
   Coffee,
+  Globe,
   Share2,
   Heart,
   HelpCircle,
@@ -253,6 +254,18 @@ export function PlaceDetail() {
                   <span className="row-text">
                     <strong>{place.email}</strong>
                     <small>{t('Email')}</small>
+                  </span>
+                  <ChevronRight size={18} className="muted" />
+                </a>
+              </li>
+            )}
+            {hostOf(place.website) && (
+              <li>
+                <a className="row" href={place.website} target="_blank" rel="noreferrer">
+                  <Globe size={18} className="row-icon" />
+                  <span className="row-text">
+                    <strong>{hostOf(place.website)}</strong>
+                    <small>{t('Website')}</small>
                   </span>
                   <ChevronRight size={18} className="muted" />
                 </a>
