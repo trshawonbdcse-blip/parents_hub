@@ -1,12 +1,46 @@
 import rawEvents from '../data/events.json'
 import towns from '../data/towns.json'
 import type { KidEvent } from '../types'
+import { useEffect, useSyncExternalStore } from 'react'
 import { translate as tr } from './i18n'
+import { DATA_BASE } from './native'
 
 const data = rawEvents as { updatedAt: string | null; events: KidEvent[] }
 
-export const events = data.events
-export const eventsUpdatedAt = data.updatedAt
+// Bundled at build time, then refreshed from the website (the iOS app ships less often
+// than events change). Live bindings: importers see the refreshed list.
+export let events = data.events
+export let eventsUpdatedAt = data.updatedAt
+let version = 0
+let started = false
+const listeners = new Set<() => void>()
+
+function refresh() {
+  if (started) return
+  started = true
+  fetch(`${DATA_BASE}data/events.json`, { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((j: { updatedAt: string | null; events: KidEvent[] }) => {
+      if (!j.updatedAt || (eventsUpdatedAt && j.updatedAt <= eventsUpdatedAt)) return
+      events = j.events
+      eventsUpdatedAt = j.updatedAt
+      version++
+      listeners.forEach((l) => l())
+    })
+    .catch(() => {})
+}
+
+// Call once near the top of the app: re-renders everything when fresher events arrive.
+export function useLiveEvents() {
+  useEffect(refresh, [])
+  return useSyncExternalStore(
+    (l) => {
+      listeners.add(l)
+      return () => listeners.delete(l)
+    },
+    () => version,
+  )
+}
 export const eventById = (id: string) => events.find((e) => e.id === id)
 
 export const TZ = 'Europe/Tallinn'

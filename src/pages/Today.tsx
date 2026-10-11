@@ -1,21 +1,19 @@
 import { ChevronRight, CloudRain, CloudSun, Home as HomeIcon, MapPin, PiggyBank, Sparkles, Sun, Trees, Umbrella, Wallet } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import rawEvents from '../data/events.json'
 import { CityPicker } from '../components/CityPicker'
 import { MilestoneNudge, WeekendPlan, WeeklyGoal } from '../components/Engage'
 import { PlaceCard } from '../components/PlaceCard'
 import { cityCoords, placesIn, useCity } from '../lib/city'
-import { eventInCity } from '../lib/events'
+import { eventInCity, events } from '../lib/events'
 import { ACTIVITY_ICON, activities, fitFor } from '../lib/activities'
 import { formatAge, isSummer, moneyTips, todaysPicks } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather } from '../lib/weather'
-import type { KidEvent, Visit } from '../types'
+import type { Visit } from '../types'
 import { translate as tr, useT } from '../lib/i18n'
 
 const NO_VISITS: Visit[] = []
-const events = (rawEvents as { events: KidEvent[] }).events
 
 function greeting(hour: number) {
   if (hour < 12) return tr('Good morning')

@@ -28,3 +28,4 @@ scripts/photos/dl/
 scripts/photos/strips/
 scripts/photos/sheets/
 public/ics/
+public/data/events.json

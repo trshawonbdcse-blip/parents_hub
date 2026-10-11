@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useSyncExternalStore } from 'react'
 import type { Category, Place } from '../types'
 import { translate as tr, useT, type Lang } from './i18n'
+import { DATA_BASE } from './native'
 import { categoryLabel, placeById, places } from './places'
 
 // Compact record written by scripts/fetch-osm.mjs (data © OpenStreetMap contributors, ODbL).
@@ -36,7 +37,7 @@ const notify = () => listeners.forEach((l) => l())
 function load() {
   if (state !== 'idle') return
   state = 'loading'
-  fetch(`${import.meta.env.BASE_URL}data/osm-places.json`)
+  fetch(`${DATA_BASE}data/osm-places.json`)
     .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
     .then((j: { places: Rec[] }) => {
       records = j.places ?? []

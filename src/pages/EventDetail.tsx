@@ -14,6 +14,7 @@ import {
   TZ,
 } from '../lib/events'
 import { useT } from '../lib/i18n'
+import { shareContent, shareUrl } from '../lib/native'
 
 
 export function EventDetail() {
@@ -69,8 +70,7 @@ export function EventDetail() {
   const share = async () => {
     const text = `${event.title} — ${dateFmt.format(start)}${event.allDay ? '' : ` ${timeFmt.format(start)}`}${where ? `, ${where}` : ''}`
     try {
-      if (navigator.share) await navigator.share({ title: event.title, text, url: location.href })
-      else await navigator.clipboard.writeText(`${text}\n${location.href}`)
+      await shareContent({ title: event.title, text, url: shareUrl(`/event/${encodeURIComponent(event.id)}`) })
     } catch {
       // User cancelled the share sheet.
     }

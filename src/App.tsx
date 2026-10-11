@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
+import { useLiveEvents } from './lib/events'
 import { useT } from './lib/i18n'
 import { Activities } from './pages/Activities'
 import { ActivityDetail } from './pages/ActivityDetail'
@@ -32,6 +33,7 @@ function ScrollToTop() {
 export default function App() {
   // Subscribing here re-renders the whole app when the language changes.
   useT()
+  useLiveEvents()
   return (
     <HashRouter>
       <ScrollToTop />

@@ -39,6 +39,8 @@ jobs:
         run: node scripts/fetch-events.mjs
       - name: Calendar feeds
         run: node scripts/build-ics.mjs
+      # Published copy for the iOS app, which refreshes events from the website.
+      - run: mkdir -p public/data && cp src/data/events.json public/data/events.json
       # Family places from OpenStreetMap (refreshed weekly; the cached copy is reused in between).
       - uses: actions/cache@v4
         with:

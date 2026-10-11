@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { formatAge, moneyTips, parkingRules } from '../lib/places'
 import { useChild } from '../lib/useChild'
 import { useStebby } from '../lib/stebby'
+import { isNative, setWeekendReminder } from '../lib/native'
 import { KEYS, useStored } from '../lib/storage'
 import { Link } from 'react-router-dom'
 import { LANGS, setLang, useT } from '../lib/i18n'
@@ -14,6 +15,11 @@ export function Family() {
   const { name, setName, birthDate, setBirthDate, napStart, setNapStart, months } = useChild()
   const [hasStebby, setHasStebby] = useStebby()
   const [goal, setGoal] = useStored<number>(KEYS.weeklyGoal, 2)
+  const [reminder, setReminder] = useStored<boolean>('ph.weekendReminder', false)
+  const toggleReminder = async () => {
+    const on = await setWeekendReminder(!reminder, t('Your weekend plan is ready'), t('Weather, events and ideas for Saturday and Sunday.'))
+    setReminder(on)
+  }
 
   return (
     <div className="page">
@@ -66,6 +72,14 @@ export function Family() {
           ))}
         </div>
         <p className="small muted">{t('How many outings a week you’d like. Shown on the Today page.')}</p>
+        {isNative && (
+          <div className="list-card padded">
+            <label className="switch-row">
+              <span>{t('Weekend plan reminder (Thursday 18:00)')}</span>
+              <input type="checkbox" role="switch" checked={reminder} onChange={toggleReminder} />
+            </label>
+          </div>
+        )}
       </section>
 
       <section className="block">
@@ -82,6 +96,7 @@ export function Family() {
         </p>
       </section>
 
+      {!isNative && (
       <section className="block">
         <h2>{t('Install the app')}</h2>
         <div className="list-card padded">
@@ -93,6 +108,7 @@ export function Family() {
           </p>
         </div>
       </section>
+      )}
 
       <Accordion title={t('Money-saving tips')} icon={<PiggyBank size={18} />} tips={localizedTips('money', moneyTips)} />
       <Accordion title={t('Parking in Tallinn')} icon={<Car size={18} />} tips={localizedTips('parking', parkingRules)} />

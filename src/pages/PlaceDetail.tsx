@@ -35,6 +35,7 @@ import type { Facilities, Place, Visit } from '../types'
 import { translate as tr, useT } from '../lib/i18n'
 import { placeText } from '../lib/placeText'
 import { usePlace } from '../lib/osm'
+import { shareContent, shareUrl } from '../lib/native'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
@@ -111,8 +112,7 @@ export function PlaceDetail() {
 
   const share = async () => {
     try {
-      if (navigator.share) await navigator.share({ title: place.name, text: `${place.name} — ${place.address}`, url: location.href })
-      else await navigator.clipboard.writeText(`${place.name} — ${location.href}`)
+      await shareContent({ title: place.name, text: `${place.name} — ${place.address}`, url: shareUrl(`/place/${place.id}`) })
     } catch {
       // User cancelled the share sheet.
     }
