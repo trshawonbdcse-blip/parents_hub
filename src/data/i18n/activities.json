@@ -1,1 +1,308 @@
-{ "et": {}, "ru": {} }
+{
+  "et": {
+    "swimming": {
+      "name": "Ujumine",
+      "summary": "Lapsevanema ja beebi ujumisega saab alustada 3–4 kuu vanuselt. Beebi harjub veega ja umbes 4-aastaselt saab laps minna ujumiskooli juba ilma vanemata.",
+      "why": [
+        "Annab veekindluse varakult, enne kui hirm tekib",
+        "Tugevdab kogu keha ja parandab sageli und",
+        "Rahulik ja lähedane tund koos soojas vees"
+      ],
+      "steps": [
+        "Vali enda lähedalt beebi- või väikelaste ujumisrühm (beebiujumine / väikelaste ujumine) — vaata allolevat nimekirja.",
+        "Broneeri kursus teenusepakkuja kodulehel: enamik kursusi kestab 8–10 nädalat ühe tunniga nädalas ja algab septembris ning jaanuaris, kuid vabade kohtade olemasolul saab tihti liituda ka poole pealt.",
+        "Vali aeg, mis ei lähe uneajaga vastuollu, ja toida last umbes tund enne tundi.",
+        "Osta ujumismähkmed — korduvkasutatavad on odavamad ja enamikus basseinides kohustuslikud.",
+        "Tule esimesse tundi 15 minutit varem, käige koos duši all ja hoia last tegevuste vahel soojas.",
+        "Harjutage tundide vahel veekeskuse soojas lastebasseinis — vanema rahulik hääl on tähtsam kui tehnika."
+      ],
+      "bring": ["Ujumismähe (ja üks varuks)", "Sinu ujumisriided", "Kapuutsiga rätik või hommikumantel", "Suupiste ja jook pärast ujumist", "Münt või käepael riidekapi jaoks"],
+      "price": "Tavaliselt 12–20 € tund; 8–10 tunni kursus 100–160 €. Üks vanem ujub tasuta.",
+      "howOften": "Kord nädalas, 30 minutit vees.",
+      "tips": [
+        "Alla 1-aastased vajavad sooja basseini (32–34 °C); küsi enne broneerimist teenusepakkujalt.",
+        "Kui laps esimesel korral nutab, tee tund lühikeseks ja tulge järgmisel nädalal tagasi — enamik harjub kolmandaks tunniks.",
+        "Mõned ujumiskoolid ja veekeskused võtavad vastu Stebbyt — otsi Stebby märki."
+      ]
+    },
+    "music": {
+      "name": "Muusika",
+      "summary": "Beebimuusika rühmad ootavad lapsi alates sünnist: laulmine, rütm, lihtsad pillid ja liikumine koos vanemaga.",
+      "why": ["Toetab varajast keele arengut ja kuulamist", "Rütm aitab koordinatsiooni", "Lihtne esimene rühmategevus — oskusi pole vaja"],
+      "steps": [
+        "Leia oma keeles beebi- või väikelaste muusikarühm — rühmad on jagatud vanuse järgi (nt 0–1, 1–2, 2–3 aastat).",
+        "Küsi proovitundi; enamik rühmi lubab ühe tunni enne terve perioodi ostmist.",
+        "Õpi selgeks kaks-kolm rühma laulu ja laulge neid kodus — lapsed armastavad kordamist."
+      ],
+      "bring": ["Mugavad riided põrandal olemiseks", "Sokid", "Vesi"],
+      "price": "Tavaliselt 10–15 € tund või 80–150 € periood.",
+      "howOften": "Kord nädalas, 30–45 minutit.",
+      "tips": ["Raamatukogude jutu- ja laulutunnid on tasuta võimalus seda esmalt proovida."]
+    },
+    "gym": {
+      "name": "Väikelaste võimlemine",
+      "summary": "Väikelaste võimlemine tähendab ronimist, veeremist, tasakaalu hoidmist ja hüppamist pehmetel vahenditel, umbes 3-aastaseks saamiseni koos vanemaga.",
+      "why": ["Arendab jõudu, tasakaalu ja kehatunnetust", "Laseb energilisel väikelapsel turvaliselt ronida", "Hea enesekindluse ja lihtsate juhiste järgimise jaoks"],
+      "steps": [
+        "Vali oma lapse vanusele sobiv vanema ja väikelapse võimlemisrühm.",
+        "Broneeri proovitund; pane lapsele selga retuusid ja T-särk; jalas võivad olla libisemiskindlad sokid või käib ta paljajalu.",
+        "Lase lapsel omas tempos avastada — treener juhendab rada."
+      ],
+      "bring": ["Spordiriided", "Libisemiskindlad sokid", "Vesi"],
+      "price": "Tavaliselt 10–15 € tund; spordiklubid müüvad sageli kuukaarte.",
+      "howOften": "Üks-kaks korda nädalas, 45 minutit.",
+      "tips": ["Paljud võimlad ja spordiklubid võtavad vastu Stebbyt."]
+    },
+    "dance": {
+      "name": "Tants ja ballett",
+      "summary": "Laste tantsurühmad alustavad tavaliselt 2½–3-aastaselt ja ballett 3–4-aastaselt, ilma et vanem oleks saalis.",
+      "why": ["Koordinatsioon, rüht ja musikaalsus", "Rühma osaks olemine", "Väikesed esinemised kasvatavad enesekindlust"],
+      "steps": [
+        "Kontrolli minimaalset vanust — enamik rühmi võtab lapsi, kes suudavad õpetajat ilma vanemata järgida (umbes 3-aastaselt).",
+        "Mine lahtisesse tundi või proovitundi; stuudiod korraldavad neid sageli augusti lõpus ja jaanuaris.",
+        "Küsi enne registreerumist kostüümide ja kevadkontsertide kohta."
+      ],
+      "bring": ["Retuusid või trikoo", "Balletisussid või sokid (küsi stuudiost)", "Vesi"],
+      "price": "Tavaliselt 40–70 € kuus.",
+      "howOften": "Üks-kaks korda nädalas, 30–45 minutit.",
+      "tips": ["Alusta ühest tunnist nädalas; lisa tunde ainult siis, kui laps ise seda tahab."]
+    },
+    "art": {
+      "name": "Kunst ja sensoorne mäng",
+      "summary": "Umbes aastasest saavad väikelapsed sensoorse ja sodimängu rühmades maalida, pigistada ja avastada; laste kunstistuudiod alustavad umbes 3–4-aastaselt.",
+      "why": ["Peenmotoorika hilisemaks kirjutamiseks", "Sensoorne avastamine kohas, mida sa ei pea ise koristama", "Loovus ja keskendumine"],
+      "steps": [
+        "Alla 3-aastastele otsi sensoorse või sodimängu tunde (sageli ühekordsed, kursust pole vaja).",
+        "3–4-aastaselt proovi laste kunstiringi, kus on perioodi jooksul iganädalased tunnid.",
+        "Pane lapsele selga riided, mida ei ole kahju värviga määrida."
+      ],
+      "bring": ["Vanad riided või põll", "Vahetusriided", "Niisked salvrätikud"],
+      "price": "Sensoorsed tunnid 10–15 €; kunstistuudiod 40–60 € kuus.",
+      "howOften": "Kord nädalas või vabalt valitud ajal, kui tegu on ühekordsete tundidega.",
+      "tips": ["Vaata vahekaarti Üritused — sensoorse mängu hommikud ilmuvad sinna."]
+    },
+    "skating": {
+      "name": "Uisutamine",
+      "summary": "Lapsed saavad uisutamisega alustada umbes 3–4-aastaselt; uisukoolides õpetatakse tasakaalu ja ohutult kukkumist.",
+      "why": ["Tasakaal ja jalgade jõud", "Talvine tegevus kogu perele", "Valmistab ette hilisemaks hokiks või iluuisutamiseks"],
+      "steps": [
+        "Alusta välijääl uisutamise abivahendiga (pingviin või raam), et näha, kas lapsele meeldib.",
+        "Tundide jaoks liitu uisukooli algajate rühmaga — need toimuvad septembrist kevadeni.",
+        "Rendi uisud esialgu jäähallist või liuväljalt; osta alles siis, kui laps tahab jätkata."
+      ],
+      "bring": ["Kiiver (enamikul liuväljadel lastele kohustuslik)", "Soojad kindad", "Talvepüksid", "Termos sooja joogiga"],
+      "price": "Avalikud liuväljad 3–7 € pluss uiskude rent; uisukool 50–90 € kuus.",
+      "howOften": "Hooajal kord nädalas.",
+      "tips": ["Mine tööpäeva hommikuti, kui liuväljadel on vaikne."]
+    },
+    "skiing": {
+      "name": "Suusatamine",
+      "summary": "Murdmaa- või mäesuusatamisega saab alustada umbes 3-aastaselt lühikeste ja mänguliste korradega; talviti toimuvad Eesti suusakeskustes suusakoolid.",
+      "why": ["Värske õhk ja kogu keha liikumine", "Klassikaline Eesti talveoskus", "Arendab vastupidavust ja tasakaalu"],
+      "steps": [
+        "Alusta tasasel lumel kodu juures või pargis lühikeste lastesuuskadega.",
+        "Tundide jaoks broneeri lasterühm suusakeskuses (nt Nõmme, Kõrvemaa, Otepää) — jaanuaris täituvad rühmad kiiresti.",
+        "Hoia esimesed korrad 30–45 minuti pikkused ja lõpeta siis, kui on veel lõbus."
+      ],
+      "bring": ["Kiiver mäesuusatamiseks", "Veekindlad kindad ja püksid", "Soojad kihid", "Suupiste ja soe jook"],
+      "price": "Suuskade rent 10–20 €; lastetunnid 20–40 € korra eest.",
+      "howOften": "Alati, kui on lund — tavaliselt jaanuarist märtsini.",
+      "tips": ["Paljud suusakeskused rendivad lastesuuruses varustust, nii et ostma ei pea."]
+    },
+    "ball": {
+      "name": "Pallimängud",
+      "summary": "Laste jalgpalli- ja pallikoolid võtavad lapsi alates umbes 3–4 aastast, keskendudes mängule, jooksmisele ja lihtsatele pallioskustele.",
+      "why": ["Koordinatsioon ja jooksuoskus", "Meeskonnamäng ja järjekorra ootamine", "Palju energiat saab välja"],
+      "steps": [
+        "Otsi enda lähedal asuvast jalgpalli- või pallimänguklubist mini-rühma (3–5 aastat).",
+        "Enamik klubisid pakub tasuta proovitrenni — tule lihtsalt spordiriietes.",
+        "Küsi, kas talvel kolivad trennid siseruumidesse."
+      ],
+      "bring": ["Spordiriided ja tossud", "Veepudel", "Hiljem säärekaitsmed, kui klubi palub"],
+      "price": "Tavaliselt 30–50 € kuus.",
+      "howOften": "Üks-kaks korda nädalas, 45 minutit.",
+      "tips": ["Paljud spordiklubid võtavad vastu Stebbyt."]
+    },
+    "nature": {
+      "name": "Loodus- ja metsaringid",
+      "summary": "Metsa- ja loodusringid viivad lapsed iga ilmaga õue avastama, mängima ning taimede ja loomade kohta õppima.",
+      "why": ["Aeg õues igal aastaajal", "Uudishimu ja esimesed teadmised loodusteadusest", "Vaba mäng ja vastupidavus"],
+      "steps": [
+        "Leia enda lähedalt loodusring või looduskeskuse pereprogramm.",
+        "Riietu ilmale vastavalt kihtidena — „halba ilma pole olemas, on ainult halvad riided”.",
+        "Kuni sobivat ringi pole leidnud, proovi tasuta matkaradu vahekaardilt Avasta."
+      ],
+      "bring": ["Vihmakomplekt ja kummikud", "Soojad kihid", "Suupiste ja vesi"],
+      "price": "Tasuta kuni 40 € kuus; looduskeskuste perepäevad on sageli tasuta.",
+      "howOften": "Kord nädalas või kord kuus.",
+      "tips": ["RMK matkarajad ja paljud pargid on tasuta ja lapsevankriga läbitavad."]
+    },
+    "language": {
+      "name": "Keel ja ettelugemine",
+      "summary": "Raamatukogud korraldavad beebidele ja väikelastele tasuta ettelugemis- ja lorutunde; keelerühmad (eesti, inglise, vene) aitavad mitme keele vahel kasvavaid lapsi.",
+      "why": ["Esimesed sõnad ja kuulamine", "Kohtu teiste peredega", "Toetab teist keelt — kasulik eesti lasteaia jaoks"],
+      "steps": [
+        "Uuri oma kohaliku raamatukogu lasteosakonnast beebide ettelugemis- või lorutundide kohta.",
+        "Kui teie kodukeel pole eesti keel, otsi eestikeelseid mängurühmi, et lasteaiaks valmistuda.",
+        "Laenuta pildiraamatuid mõlemas keeles ja loe iga päev natuke."
+      ],
+      "bring": ["Raamatukogukaart (tasuta)", "Kott raamatute jaoks"],
+      "price": "Raamatukogu üritused on tasuta; keelerühmad 10–15 € korra eest.",
+      "howOften": "Kord nädalas.",
+      "tips": ["Vahekaart Üritused näitab raamatukogu üritusi automaatselt."]
+    }
+  },
+  "ru": {
+    "swimming": {
+      "name": "Плавание",
+      "summary": "Заниматься плаванием вместе с малышом можно начинать с 3–4 месяцев. Малыш привыкает к воде, а примерно с 4 лет дети ходят в школу плавания уже без родителя.",
+      "why": [
+        "Рано формирует уверенность в воде — до того, как появится страх",
+        "Укрепляет всё тело и часто улучшает сон",
+        "Спокойный час близости вместе в тёплой воде"
+      ],
+      "steps": [
+        "Выберите группу плавания для малышей рядом с вами (beebiujumine / väikelaste ujumine) — см. список ниже.",
+        "Запишитесь на курс на сайте организатора: большинство курсов — это 8–10 еженедельных занятий с началом в сентябре и январе, но часто можно присоединиться и в середине, если есть места.",
+        "Выберите время, которое не совпадает с дневным сном, и покормите ребёнка примерно за час до занятия.",
+        "Купите подгузники для плавания (ujumismähkmed) — многоразовые дешевле, и в большинстве бассейнов они обязательны.",
+        "На первое занятие приходите за 15 минут, примите душ вместе и держите ребёнка в тепле между упражнениями.",
+        "Между занятиями тренируйтесь в тёплом детском бассейне аквапарка — спокойный голос родителя важнее техники."
+      ],
+      "bring": ["Подгузник для плавания (и запасной)", "Ваш купальник или плавки", "Полотенце с капюшоном или халат", "Перекус и питьё на после", "Монета или браслет для шкафчика"],
+      "price": "Обычно 12–20 € за занятие; курс из 8–10 занятий — 100–160 €. Один родитель плавает бесплатно.",
+      "howOften": "Раз в неделю, 30 минут в воде.",
+      "tips": [
+        "Детям до года нужен тёплый бассейн (32–34 °C); уточните у организатора до записи.",
+        "Если ребёнок плачет в первый раз, сократите занятие и приходите снова через неделю — к третьему занятию большинство привыкает.",
+        "Некоторые школы плавания и аквапарки принимают Stebby — ищите значок Stebby."
+      ]
+    },
+    "music": {
+      "name": "Музыка",
+      "summary": "Музыкальные группы для малышей (beebimuusika) принимают детей с рождения: пение, ритм, простые инструменты и движение вместе с родителем.",
+      "why": ["Поддерживает раннее развитие речи и слуха", "Ритм помогает координации", "Простое первое групповое занятие — никаких навыков не нужно"],
+      "steps": [
+        "Найдите музыкальную группу для малышей на вашем языке — группы делятся по возрасту (например, 0–1, 1–2, 2–3 года).",
+        "Попросите пробное занятие; большинство групп разрешают одно до покупки абонемента на сезон.",
+        "Выучите две-три песни группы и пойте их дома — детям нравится повторение."
+      ],
+      "bring": ["Удобная одежда для занятий на полу", "Носки", "Вода"],
+      "price": "Обычно 10–15 € за занятие или 80–150 € за сезон.",
+      "howOften": "Раз в неделю, 30–45 минут.",
+      "tips": ["Чтения и песенные часы в библиотеках — бесплатный способ сначала попробовать."]
+    },
+    "gym": {
+      "name": "Гимнастика для малышей",
+      "summary": "Гимнастика для малышей (väikelaste võimlemine) — это лазание, кувырки, равновесие и прыжки на мягком оборудовании, примерно до 3 лет вместе с родителем.",
+      "why": ["Развивает силу, равновесие и ощущение тела", "Позволяет энергичным малышам безопасно лазать", "Полезно для уверенности и умения следовать простым указаниям"],
+      "steps": [
+        "Выберите группу гимнастики «родитель и малыш» по возрасту ребёнка.",
+        "Запишитесь на пробное занятие; оденьте ребёнка в леггинсы и футболку, босиком или в нескользящих носках.",
+        "Дайте ребёнку исследовать в своём темпе — тренер проведёт по полосе препятствий."
+      ],
+      "bring": ["Спортивная одежда", "Нескользящие носки", "Вода"],
+      "price": "Обычно 10–15 € за занятие; спортклубы часто продают месячные абонементы.",
+      "howOften": "Один-два раза в неделю, 45 минут.",
+      "tips": ["Многие спортзалы и спортклубы принимают Stebby."]
+    },
+    "dance": {
+      "name": "Танцы и балет",
+      "summary": "Детские танцевальные группы обычно принимают с 2½–3 лет, а балет — с 3–4 лет, без родителей в зале.",
+      "why": ["Координация, осанка и музыкальность", "Чувство принадлежности к группе", "Небольшие выступления придают уверенности"],
+      "steps": [
+        "Проверьте минимальный возраст — большинство групп берут детей, которые могут слушать педагога без родителя (примерно с 3 лет).",
+        "Сходите на открытый урок или пробное занятие; студии часто проводят их в конце августа и в январе.",
+        "До записи спросите о костюмах и отчётных концертах в конце года."
+      ],
+      "bring": ["Леггинсы или купальник для танцев", "Балетки или носки (уточните в студии)", "Вода"],
+      "price": "Обычно 40–70 € в месяц.",
+      "howOften": "Один-два раза в неделю, 30–45 минут.",
+      "tips": ["Начните с одного занятия в неделю; добавляйте, только если ребёнок сам попросит."]
+    },
+    "art": {
+      "name": "Рисование и сенсорные игры",
+      "summary": "Примерно с года малыши могут рисовать, мять и исследовать в группах сенсорных и «грязных» игр; детские художественные студии принимают примерно с 3–4 лет.",
+      "why": ["Мелкая моторика для будущего письма", "Сенсорные исследования там, где не вам потом убирать", "Творчество и концентрация"],
+      "steps": [
+        "Для детей до трёх лет ищите сенсорные занятия или «грязные» игры (часто разовые, курс не нужен).",
+        "С 3–4 лет попробуйте детскую художественную студию (kunstiring) с еженедельными занятиями в течение сезона.",
+        "Оденьте ребёнка в одежду, которую не жалко испачкать краской."
+      ],
+      "bring": ["Старая одежда или фартук", "Сменная одежда", "Влажные салфетки"],
+      "price": "Сенсорные занятия 10–15 €; художественные студии 40–60 € в месяц.",
+      "howOften": "Раз в неделю или когда удобно — на разовые занятия.",
+      "tips": ["Загляните во вкладку «События» — там появляются утренние сенсорные занятия."]
+    },
+    "skating": {
+      "name": "Катание на коньках",
+      "summary": "Кататься на коньках дети могут начинать примерно с 3–4 лет; в школах катания (uisukool) учат держать равновесие и безопасно падать.",
+      "why": ["Равновесие и сила ног", "Зимнее занятие для всей семьи", "Подготовка к хоккею или фигурному катанию в будущем"],
+      "steps": [
+        "Начните на открытом катке с помощником для катания (пингвином или рамкой), чтобы понять, нравится ли ребёнку.",
+        "Для занятий запишитесь в группу для начинающих в школе катания — они работают с сентября до весны.",
+        "Сначала берите коньки напрокат на катке; покупайте, только когда ребёнок захочет продолжать."
+      ],
+      "bring": ["Шлем (на большинстве катков обязателен для детей)", "Тёплые перчатки", "Зимние штаны", "Термос с тёплым напитком"],
+      "price": "Общественные катки 3–7 € плюс прокат коньков; школа катания 50–90 € в месяц.",
+      "howOften": "Раз в неделю в сезон.",
+      "tips": ["Приходите в будние дни утром, когда на катках спокойно."]
+    },
+    "skiing": {
+      "name": "Лыжи",
+      "summary": "Беговыми или горными лыжами можно заниматься примерно с 3 лет — короткими игровыми занятиями; зимой в эстонских лыжных центрах работают лыжные школы.",
+      "why": ["Свежий воздух и нагрузка на всё тело", "Классический эстонский зимний навык", "Развивает выносливость и равновесие"],
+      "steps": [
+        "Начните на ровном снегу у дома или в парке на коротких детских лыжах.",
+        "Для занятий запишитесь в детскую группу в лыжном центре (например, Nõmme, Kõrvemaa, Otepää) — в январе группы быстро заполняются.",
+        "Первые занятия ограничьте 30–45 минутами и заканчивайте, пока ещё весело."
+      ],
+      "bring": ["Шлем для горных лыж", "Непромокаемые перчатки и штаны", "Тёплые слои одежды", "Перекус и тёплый напиток"],
+      "price": "Прокат лыж 10–20 €; детские занятия 20–40 € за раз.",
+      "howOften": "Когда есть снег — обычно с января по март.",
+      "tips": ["Многие лыжные центры дают напрокат детское снаряжение, так что покупать не обязательно."]
+    },
+    "ball": {
+      "name": "Игры с мячом",
+      "summary": "Детские футбольные школы и школы игр с мячом принимают детей примерно с 3–4 лет; упор на игру, бег и простые навыки владения мячом.",
+      "why": ["Координация и навыки бега", "Командная игра и умение ждать своей очереди", "Отличный способ выплеснуть энергию"],
+      "steps": [
+        "Ищите «мини»-группу (3–5 лет) в футбольном клубе или клубе игр с мячом рядом с вами.",
+        "Большинство клубов предлагают бесплатную пробную тренировку — просто приходите в спортивной одежде.",
+        "Спросите, переходят ли тренировки зимой в зал."
+      ],
+      "bring": ["Спортивная одежда и кроссовки", "Бутылка воды", "Позже щитки, если клуб попросит"],
+      "price": "Обычно 30–50 € в месяц.",
+      "howOften": "Один-два раза в неделю, 45 минут.",
+      "tips": ["Многие спортклубы принимают Stebby."]
+    },
+    "nature": {
+      "name": "Природные и лесные кружки",
+      "summary": "Лесные и природные кружки (metsaring, loodusring) выводят детей на улицу в любую погоду — исследовать, играть и узнавать о растениях и животных.",
+      "why": ["Время на свежем воздухе в любое время года", "Любознательность и первые шаги в науке", "Свободная игра и стойкость"],
+      "steps": [
+        "Найдите природный кружок или семейную программу природного центра рядом с вами.",
+        "Одевайтесь по погоде, слоями — «не бывает плохой погоды, бывает плохая одежда».",
+        "Пока не нашли подходящий кружок, попробуйте бесплатные природные тропы во вкладке «Обзор»."
+      ],
+      "bring": ["Дождевой костюм и резиновые сапоги", "Тёплые слои одежды", "Перекус и вода"],
+      "price": "От бесплатного до 40 € в месяц; семейные дни в природных центрах часто бесплатны.",
+      "howOften": "Раз в неделю или раз в месяц.",
+      "tips": ["Природные тропы RMK и многие парки бесплатны и подходят для колясок."]
+    },
+    "language": {
+      "name": "Язык и чтение вслух",
+      "summary": "Библиотеки проводят бесплатные чтения и стишки-потешки для малышей; языковые группы (эстонский, английский, русский) помогают детям, растущим между языками.",
+      "why": ["Первые слова и умение слушать", "Знакомство с другими семьями", "Поддержка второго языка — полезно для эстонского детского сада"],
+      "steps": [
+        "Узнайте в детском отделе местной библиотеки о чтениях и потешках для малышей.",
+        "Если ваш домашний язык не эстонский, ищите игровые группы на эстонском, чтобы подготовиться к детскому саду.",
+        "Берите книжки с картинками на обоих языках и читайте понемногу каждый день."
+      ],
+      "bring": ["Читательский билет (бесплатно)", "Сумка для книг"],
+      "price": "Мероприятия в библиотеках бесплатны; языковые группы 10–15 € за занятие.",
+      "howOften": "Раз в неделю.",
+      "tips": ["Во вкладке «События» мероприятия библиотек появляются автоматически."]
+    }
+  }
+}
