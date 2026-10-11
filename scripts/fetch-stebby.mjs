@@ -59,14 +59,18 @@ const metres = (a, b) => {
   const y = (b.lat - a.lat) * r
   return Math.round(Math.sqrt(x * x + y * y) * 6371000)
 }
+// Town and district names say nothing about which business it is ("Viimsi SPA" vs "Viimsi Kuulsaal").
+const fold = (w) => w.toLowerCase().normalize('NFKD').replace(/\p{M}/gu, '').replace(/[^\p{L}\d]+/gu, '')
+const PLACE_WORDS = new Set(places.flatMap((p) => `${p.city} ${p.area}`.split(/[\s-]+/)).map(fold).filter((w) => w.length > 2))
 const words = (s) =>
   new Set(
     (s ?? '')
       .toLowerCase()
       .normalize('NFKD')
+      .replace(/\p{M}/gu, '')
       .replace(/[^\p{L}\d ]+/gu, ' ')
       .split(/\s+/)
-      .filter((w) => w.length > 2 && !['the', 'and', 'park', 'centre', 'center', 'keskus', 'spa', 'mtü', 'tallinn', 'tartu', 'pärnu', 'parnu', 'narva'].includes(w)),
+      .filter((w) => w.length > 2 && !PLACE_WORDS.has(w) && !['the', 'and', 'park', 'centre', 'center', 'keskus', 'spa', 'mtü', 'tallinn', 'tartu', 'pärnu', 'parnu', 'narva'].includes(w)),
   )
 // The partner's own name must start with a word from our place's name ("Aura Keskus" ↔ "Aura water
 // park"), so shops and clinics in the same building or street don't count.
@@ -85,13 +89,14 @@ const strongName = (p, s) => {
 // Stebby is a sport and wellbeing budget: only check places where it can realistically apply.
 const RELEVANT = new Set(['swimming', 'class', 'winter-fun', 'indoor-play'])
 // Bump when the matching rules change, so the next build re-checks everything.
-const VERSION = 3
-// Matches confirmed by hand ({ placeId: { hash, name } }), for partners the search can't pair up.
+const VERSION = 4
+// Partners confirmed by hand ({ placeId: "exact Stebby name" }), for names the rules can't pair up
+// (e.g. "Goldswim" vs "Gold Swim"). The partner still has to show up in the search results.
 const OVERRIDES = fs.existsSync('scripts/stebby/overrides.json') ? JSON.parse(fs.readFileSync('scripts/stebby/overrides.json', 'utf8')) : {}
 
 // Short search words: the local name, the English name, and the name without generic words.
 const queries = (p) =>
-  [...new Set([p.nameLocal, p.name, [...words(p.nameLocal ?? p.name)].slice(0, 2).join(' '), [...words(p.name)][0]].filter((q) => q && q.length > 2))]
+  [...new Set([OVERRIDES[p.id], p.nameLocal, p.name, [...words(p.nameLocal ?? p.name)].slice(0, 2).join(' '), [...words(p.name)][0]].filter((q) => q && q.length > 2))]
 
 // The partner list changes slowly: a full check once a week is enough.
 const fresh = previous?.updatedAt && Date.now() - new Date(previous.updatedAt).getTime() < 6 * 864e5
@@ -125,7 +130,8 @@ for (const p of places) {
       if (!s.latitude || !s.longitude) continue
       const d = metres(p, { lat: Number(s.latitude), lng: Number(s.longitude) })
       seen.set(s.pos_hash ?? s.hash, `${s.pos_name ?? s.name} (${d} m)`)
-      if ((d <= 400 && sameName(p, s)) || (d <= 3000 && strongName(p, s))) {
+      const confirmed = OVERRIDES[p.id] && (s.pos_name ?? s.name) === OVERRIDES[p.id]
+      if (confirmed || (d <= 400 && sameName(p, s)) || (d <= 3000 && strongName(p, s))) {
         if (!best || d < best.distanceM) {
           best = { hash: s.pos_hash ?? s.hash, name: s.pos_name ?? s.name, distanceM: d, categories: s.service_categories ?? [], from: s.ticket_starting_from ?? null }
         }
@@ -135,7 +141,6 @@ for (const p of places) {
   }
   if (failures > 15) break
   checked.push(p.id)
-  if (OVERRIDES[p.id]) best = { distanceM: 0, categories: [], from: null, ...OVERRIDES[p.id] }
   if (!best) console.log(`· ${p.id}: no match; nearest results: ${[...seen.values()].sort((a, b) => parseInt(a.split('(').pop()) - parseInt(b.split('(').pop())).slice(0, 4).join(' | ') || 'none'}`)
   if (best) {
     matches[p.id] = best
