@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { PlaceCard } from '../components/PlaceCard'
 import { PlaceImage } from '../components/ui'
-import { placeById } from '../lib/places'
+import { useAllPlaces } from '../lib/osm'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Place, Visit } from '../types'
@@ -12,7 +12,6 @@ import { useT } from '../lib/i18n'
 const NO_VISITS: Visit[] = []
 type Tab = 'favorites' | 'wishlist' | 'moments'
 
-const resolve = (ids: string[]) => ids.map(placeById).filter((p): p is Place => Boolean(p))
 
 export function Saved() {
   const { t, locale } = useT()
@@ -22,6 +21,9 @@ export function Saved() {
   const favorites = useIdList(KEYS.favorites)
   const wishlist = useIdList(KEYS.wishlist)
   const [visits, setVisits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
+  const all = useAllPlaces()
+  const placeById = (id: string) => all.find((p) => p.id === id)
+  const resolve = (ids: string[]) => ids.map(placeById).filter((p): p is Place => Boolean(p))
 
   const thisMonth = new Date().toISOString().slice(0, 7)
   const monthVisits = visits.filter((v) => v.date.startsWith(thisMonth))

@@ -27,12 +27,13 @@ import {
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, placeById } from '../lib/places'
+import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
 import { translate as tr, useT } from '../lib/i18n'
 import { placeText } from '../lib/placeText'
+import { usePlace } from '../lib/osm'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
@@ -59,11 +60,19 @@ function parkingSummary(p: Place): { title: string; tone: 'good' | 'neutral' | '
   return { title: tr('Parking available'), tone: 'neutral' }
 }
 
+const hostOf = (url: string) => {
+  try {
+    return url ? new URL(url).host.replace(/^www\./, '') : null
+  } catch {
+    return null
+  }
+}
+
 export function PlaceDetail() {
   const { t } = useT()
   const { id = '' } = useParams()
   const navigate = useNavigate()
-  const place = placeById(id)
+  const { place, loading } = usePlace(id)
   const { months } = useChild()
   const favorites = useIdList(KEYS.favorites)
   const wishlist = useIdList(KEYS.wishlist)
@@ -74,6 +83,7 @@ export function PlaceDetail() {
   const [slide, setSlide] = useState(0)
   const [hasStebby] = useStebby()
 
+  if (!place && loading) return <div className="page"><p className="muted">{t('Loading…')}</p></div>
   if (!place) {
     return (
       <div className="page">
@@ -386,10 +396,16 @@ export function PlaceDetail() {
 
         <footer className="verify">
           {place.lastVerified ? t('Information checked {date}.', { date: place.lastVerified }) + ' ' : t('Information not yet verified.') + ' '}
-          {t(place.phone ? 'Prices and hours can change, so call ahead if you are unsure.' : 'Prices and hours can change.')} {t('Official site:')}{' '}
-          <a href={place.website} target="_blank" rel="noreferrer">
-            {new URL(place.website).host.replace(/^www\./, '')}
-          </a>
+          {t(place.phone ? 'Prices and hours can change, so call ahead if you are unsure.' : 'Prices and hours can change.')}{' '}
+          {place.osm && t('Map data © OpenStreetMap contributors.') + ' '}
+          {hostOf(place.website) && (
+            <>
+              {t('Official site:')}{' '}
+              <a href={place.website} target="_blank" rel="noreferrer">
+                {hostOf(place.website)}
+              </a>
+            </>
+          )}
           {place.sources && place.sources.length > 0 && (
             <details>
               <summary>{t('Sources')}</summary>

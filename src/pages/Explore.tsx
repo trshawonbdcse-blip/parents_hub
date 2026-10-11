@@ -7,6 +7,7 @@ import { ALL, cityName, placesIn, useCity } from '../lib/city'
 import { CATEGORY_ICON } from '../components/ui'
 import { categoryLabel, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { useAllPlaces } from '../lib/osm'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Category } from '../types'
 import { useT } from '../lib/i18n'
@@ -21,7 +22,9 @@ export function Explore() {
   const [locError, setLocError] = useState(false)
   const [sheetOpen, setSheetOpen] = useState(false)
   const [city] = useCity()
-  const pool = useMemo(() => placesIn(city), [city])
+  const all = useAllPlaces()
+  const pool = useMemo(() => placesIn(city, all), [city, all])
+  const [limit, setLimit] = useState(40)
 
   const q = params.get('q') ?? ''
   const setting = params.get('setting') ?? 'any'
@@ -79,7 +82,9 @@ export function Explore() {
       if (wantNear && a.d !== null && b.d !== null) return a.d - b.d
       // Places with reviewed photos first, so the list leads with what parents can picture.
       const photo = Number(Boolean(b.p.photos?.length)) - Number(Boolean(a.p.photos?.length))
-      return photo || a.p.name.localeCompare(b.p.name)
+      // Hand-checked places before OpenStreetMap ones.
+      const checked = Number(Boolean(a.p.osm)) - Number(Boolean(b.p.osm))
+      return photo || checked || a.p.name.localeCompare(b.p.name)
     })
 
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
@@ -163,10 +168,16 @@ export function Explore() {
       </p>
 
       <div className="card-grid">
-        {results.map(({ p, d }) => (
+        {results.slice(0, limit).map(({ p, d }) => (
           <PlaceCard key={p.id} place={p} months={months} distance={d} />
         ))}
       </div>
+      {results.length > limit && (
+        <button className="button secondary wide-button" onClick={() => setLimit(limit + 60)}>
+          {t('Show more ({n} left)', { n: results.length - limit })}
+        </button>
+      )}
+      {results.some(({ p }) => p.osm) && <p className="footnote">{t('Includes places from OpenStreetMap (© OpenStreetMap contributors), not checked by us.')}</p>}
       {!results.length && (
         <div className="empty">
           <p>{t('No places match these filters.')}</p>

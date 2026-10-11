@@ -409,6 +409,8 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .activity-banner { display: flex; align-items: center; gap: 10px; margin-top: 12px; padding: 12px 14px; border-radius: var(--r-md); background: var(--brand-soft); color: var(--brand); font-weight: 600; }
 .activity-banner span { flex: 1; }
 
+.wide-button { width: 100%; margin-top: 16px; }
+
 /* Town picker */
 .title-row, .hero-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .title-row .page-title { margin: 0; }

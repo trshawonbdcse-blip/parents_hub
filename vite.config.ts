@@ -34,6 +34,11 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,png}'],
         runtimeCaching: [
           {
+            urlPattern: /data\/osm-places\.json$/,
+            handler: 'StaleWhileRevalidate',
+            options: { cacheName: 'osm-places', expiration: { maxEntries: 1 } },
+          },
+          {
             urlPattern: /^https:\/\/api\.open-meteo\.com\//,
             handler: 'NetworkFirst',
             options: { cacheName: 'weather', expiration: { maxEntries: 4, maxAgeSeconds: 3 * 3600 } },

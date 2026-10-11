@@ -7,6 +7,7 @@ import { ALL, cityName, placesIn, useCity } from '../lib/city'
 import { useT } from '../lib/i18n'
 import { formatAge } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { useAllPlaces } from '../lib/osm'
 
 export function ActivityDetail() {
   const { t } = useT()
@@ -15,6 +16,7 @@ export function ActivityDetail() {
   const { months, name, napStart } = useChild()
   const [city] = useCity()
   const a = activityByKey(key)
+  const all = useAllPlaces()
 
   if (!a) {
     return (
@@ -26,10 +28,10 @@ export function ActivityDetail() {
   }
 
   const Icon = ACTIVITY_ICON[a.key]
-  const pool = placesIn(city)
+  const pool = placesIn(city, all)
   const providers = providersOf(a.key, pool)
   const practice = practiceFor(a.key, pool)
-  const elsewhere = city !== ALL && providers.length === 0 ? providersOf(a.key) : []
+  const elsewhere = city !== ALL && providers.length === 0 ? providersOf(a.key, all) : []
   const fit = fitFor(a, months)
   const who = name || t('your child')
 

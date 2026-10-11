@@ -1,6 +1,7 @@
 import { getLang } from './i18n'
 import { places } from './places'
 import { useStored } from './storage'
+import type { Place } from '../types'
 
 // Hub towns places are grouped under. Coordinates are used for the weather and
 // for picking the nearest town from the phone's location.
@@ -46,7 +47,13 @@ export function nearestCity(lat: number, lng: number) {
   return best
 }
 
-export const placesIn = (city: string) => (city === ALL ? places : places.filter((p) => p.city === city))
+export const placesIn = (city: string, list: Place[] = places) => (city === ALL ? list : list.filter((p) => p.city === city))
+
+// Towns with their number of places, biggest first.
+export function cityCounts(list: Place[]) {
+  const m = list.reduce<Record<string, number>>((acc, p) => ({ ...acc, [p.city]: (acc[p.city] ?? 0) + 1 }), {})
+  return CITIES.map((c) => ({ name: c.name, count: m[c.name] ?? 0 })).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, 'et'))
+}
 
 export function useCity(): [string, (c: string) => void] {
   const [city, setCity] = useStored<string>('ph.city', 'Tallinn')

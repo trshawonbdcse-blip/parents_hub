@@ -6,6 +6,7 @@ import { placesIn, useCity } from '../lib/city'
 import { useT } from '../lib/i18n'
 import { formatAge } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { useAllPlaces } from '../lib/osm'
 
 const ORDER = { now: 0, soon: 1, unknown: 2, later: 3, older: 4 }
 
@@ -13,7 +14,8 @@ export function Activities() {
   const { t } = useT()
   const { months, name } = useChild()
   const [city] = useCity()
-  const pool = placesIn(city)
+  const all = useAllPlaces()
+  const pool = placesIn(city, all)
   const list = activities().sort((a, b) => ORDER[fitFor(a, months)] - ORDER[fitFor(b, months)] || a.fromMonths - b.fromMonths)
 
   return (

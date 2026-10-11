@@ -1,6 +1,7 @@
 import { Check, ChevronDown, LocateFixed, MapPin, X } from 'lucide-react'
 import { useState } from 'react'
-import { ALL, CITIES, cityName, nearestCity, useCity } from '../lib/city'
+import { ALL, cityCounts, cityName, nearestCity, useCity } from '../lib/city'
+import { useAllPlaces } from '../lib/osm'
 import { useT } from '../lib/i18n'
 
 // "📍 Tallinn ▾" button that opens a sheet for choosing the town.
@@ -9,6 +10,8 @@ export function CityPicker() {
   const [city, setCity] = useCity()
   const [open, setOpen] = useState(false)
   const [locating, setLocating] = useState(false)
+  const all = useAllPlaces()
+  const counts = cityCounts(all)
 
   const choose = (c: string) => {
     setCity(c)
@@ -49,7 +52,7 @@ export function CityPicker() {
               <LocateFixed size={18} /> {locating ? t('Finding you…') : t('Use my location')}
             </button>
             <ul className="city-list">
-              {[{ name: ALL, count: CITIES.reduce((n, c) => n + c.count, 0) }, ...CITIES].map((c) => (
+              {[{ name: ALL, count: all.length }, ...counts].map((c) => (
                 <li key={c.name}>
                   <button className={city === c.name ? 'on' : ''} onClick={() => choose(c.name)}>
                     <span>{c.name === ALL ? t('All of Estonia') : cityName(c.name)}</span>
