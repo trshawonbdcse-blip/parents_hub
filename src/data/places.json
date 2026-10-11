@@ -11400,5 +11400,2746 @@
     ],
     "phone": "+372 535 23215",
     "email": "info@padise.ee"
+  },
+  {
+    "id": "nord-sport-baby-swimming-elamus-spa-tallinn",
+    "name": "Nord Sport baby & toddler swimming (Elamus Spa)",
+    "nameLocal": "Nord Sport beebide ja väikelaste ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Elamus Spa, Akadeemia tee 30, Tallinn",
+    "lat": 59.4017,
+    "lng": 24.6693,
+    "ageMinMonths": 4,
+    "ageMaxMonths": 72,
+    "description": "Weekly group lessons in Elamus Spa's warm children's pool, with a parent in the water for babies and toddlers and coach-led groups from about age 4. Lessons build water confidence through play, songs and games, so they suit families who want a steady weekly class in Mustamäe.",
+    "tips": "Register online on nordsport.ee; places are taken by monthly subscription, so ask about free spots in the age group before the month starts.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly fee: 1 lesson/week EUR 58, 2/week EUR 64, 3/week EUR 97 (+ one-off EUR 5.09 registration fee). Check current prices on nordsport.ee."
+    },
+    "discounts": [],
+    "hours": "Weekly lessons on weekdays and weekends; season runs September–May with summer courses",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Mustamäe bus/trolley stops near Akadeemia tee",
+    "language": "Estonian, Russian",
+    "website": "https://www.nordsport.ee/ujumine/elamus-spa-lastebassein",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "Elamus Spa",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Car park at the spa building."
+    },
+    "sources": [
+      "https://www.nordsport.ee/ujumine/elamus-spa-lastebassein",
+      "https://elamusspa.ee/ujula/beebiujumine/",
+      "https://www.nordsport.ee/meeskond"
+    ],
+    "phone": "+372 5551 1066",
+    "email": "ujumine@nordsport.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "orca-swim-club-baby-swimming-tallinn",
+    "name": "Orca Swim Club baby & toddler swimming",
+    "nameLocal": "Orca Swim Club beebi- ja väikelaste ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Põhja-Tallinn (Sõle)",
+    "city": "Tallinn",
+    "address": "Sõle Spordikeskus, Sõle 40a, Tallinn",
+    "lat": 59.4466,
+    "lng": 24.6994,
+    "ageMinMonths": 4,
+    "ageMaxMonths": 48,
+    "description": "Baby classes (4–24 months) and toddler classes (2–4 years) run once a week with a parent in a children's pool of at least 32°C. Orca teaches at Sõle pool in Tallinn and at Järveküla pool in Peetri (Rae vald), handy for families in the southern suburbs.",
+    "tips": "Register for a group on orca.ee; fees are monthly, and the club's FAQ explains what to bring for the first lesson.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly fee for 1 lesson/week: EUR 40 at Sõle pool, EUR 48 at Järveküla pool (Reti tee 20, Peetri)."
+    },
+    "discounts": [],
+    "hours": "Once a week, weekday and weekend slots; school-year season",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://orca.ee/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking at the sports centre."
+    },
+    "sources": [
+      "https://orca.ee/klubi/treeningud",
+      "https://orca.ee/klubi/hinnakiri",
+      "https://www.spordiregister.ee/et/organisatsioon/4233/mtu_orca_swim_club/detail"
+    ],
+    "phone": "+372 509 0330",
+    "email": "info@orca.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "massage-college-baby-swimming-kadaka-tallinn",
+    "name": "Applied Massage and Therapy College baby swimming",
+    "nameLocal": "Rakenduslik Massaaži- ja Teraapiakolledž – imikute ja väikelaste ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe (Kadaka)",
+    "city": "Tallinn",
+    "address": "Kadaka tee 4, 10621 Tallinn",
+    "lat": 59.4282,
+    "lng": 24.6868,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 36,
+    "description": "A small private pool heated to 30°C+, where an experienced children's instructor guides at most two babies with their parents at a time. The very small group makes it a calm first step for young babies and for parents who feel unsure in big public pools.",
+    "tips": "Book a time by phone or email; parking is free for 2 hours with a parking disc or by registering your car at the front desk. Bring a swim nappy and towel.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Price not published in search results; ask when booking."
+    },
+    "discounts": [],
+    "hours": "Weekday daytime slots by appointment",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Kadaka tee stops (buses)",
+    "language": "Estonian",
+    "website": "https://massaaz.ee/et/beebiga-ujuma/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free for 2 hours with a parking disc or by registering your car number with the administrator."
+    },
+    "sources": [
+      "https://massaaz.ee/et/beebiga-ujuma/",
+      "https://massaaz.ee/imikute-ja-vaikelaste-ujutamine/",
+      "https://massaaz.ee/en/contact/"
+    ],
+    "phone": "+372 5333 9652",
+    "email": "salong@massaaz.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "ltkh-haabersti-baby-swimming-tallinn",
+    "name": "West Tallinn Central Hospital baby swimming (Haabersti Health Centre)",
+    "nameLocal": "Lääne-Tallinna Keskhaigla imikute ja väikelaste ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti (Õismäe)",
+    "city": "Tallinn",
+    "address": "Haabersti tervisekeskus, Õismäe tee 179, 13517 Tallinn",
+    "lat": 59.4148,
+    "lng": 24.6375,
+    "ageMinMonths": 2,
+    "ageMaxMonths": 36,
+    "description": "The hospital's rehabilitation centre runs 30-minute group lessons for babies and toddlers with a parent in a 1.2 m deep pool kept at 32–34°C, with groups split by age. It is a medically run, no-frills option that also offers individual sessions for the smallest babies.",
+    "tips": "Register by phone (626 1314) or at the health centre reception.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 15,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Price list from 1 Sep 2025: baby pool training EUR 15 per visit; 20-min infant bath session EUR 25."
+    },
+    "discounts": [],
+    "hours": "Weekday group sessions by age group",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Õismäe bus stops",
+    "language": "Estonian, Russian",
+    "website": "https://www.keskhaigla.ee/kliinikud/ambulatoorne-eriarstiabi/imikute-ja-vaikelaste-ujutamine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking at the health centre."
+    },
+    "sources": [
+      "https://www.keskhaigla.ee/kliinikud/ambulatoorne-eriarstiabi/imikute-ja-vaikelaste-ujutamine/",
+      "https://www.ltkh.ee/patsiendile/hinnakiri/taastusravikeskuse-hinnakiri/"
+    ],
+    "phone": "+372 626 1314",
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "viimsi-spa-baby-swimming-viimsi",
+    "name": "Tallinn Viimsi SPA baby swimming",
+    "nameLocal": "Viimsi SPA beebide ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Viimsi",
+    "city": "Tallinn",
+    "address": "Randvere tee 11, Haabneeme, Viimsi vald",
+    "lat": 59.5027,
+    "lng": 24.842,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 24,
+    "description": "Small Monday groups of at most four babies with a parent, led by physiotherapist Svea Miller in the spa's children's pool. The tiny group size suits young babies and families on the Viimsi peninsula.",
+    "tips": "Pre-register by phone with the coach (+372 5191 8315).",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 13,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 13 per child (EUR 11 for club members); price list also shows baby swimming with pre-registration at EUR 15."
+    },
+    "discounts": [],
+    "hours": "Mondays 17:00 and 17:30 (30-minute lessons)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Viimsi Keskus / Randvere tee bus stops",
+    "language": "Estonian",
+    "website": "https://www.spatallinn.ee/beebide-ujutamine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "Viimsi SPA",
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.spatallinn.ee/beebide-ujutamine/",
+      "https://www.spatallinn.ee/spordiklubi/ujula/",
+      "https://www.spatallinn.ee/spordiklubi/hinnakiri/"
+    ],
+    "phone": "+372 5191 8315",
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "paikesetants-baby-swimming-nomme-tallinn",
+    "name": "Päikesetants baby & toddler swimming",
+    "nameLocal": "Päikesetants beebide ja väikelaste ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Nõmme ujula, Vabaduse pst 156, 10911 Tallinn",
+    "lat": 59.3567,
+    "lng": 24.6626,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 36,
+    "description": "Group lessons for babies and toddlers with a parent at Nõmme pool, split into beginners and more experienced little swimmers. A long-running Estonian family-activity provider that also offers home bath-swimming sessions.",
+    "tips": "Beginner babies go to the Tuesday morning groups; the Monday evening group is for babies and toddlers who already have swimming experience. Report absence by email or SMS to the teacher.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Group prices rose from 10 Oct 2025; see the price list on paikesetants.ee."
+    },
+    "discounts": [],
+    "hours": "Mon 18:30 (experienced); Tue 10:00 and 12:00 (beginners)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Vikerkaare bus stop (buses 14, 18), directly in front of the pool",
+    "language": "Estonian",
+    "website": "https://paikesetants.ee/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://paikesetants.ee/",
+      "https://paikesetants.ee/uudised/",
+      "https://www.tallinn.ee/et/nommeujula"
+    ],
+    "phone": "+372 509 6631",
+    "email": "info@paikesetants.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "reval-sport-baby-swimming-tallinn",
+    "name": "Reval-Sport babies & toddlers swimming",
+    "nameLocal": "Reval-Sport beebide ja väikelaste ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Aia 20, 10111 Tallinn",
+    "lat": 59.4384,
+    "lng": 24.7525,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 48,
+    "description": "30-minute lessons with a parent in a separate baby pool kept at 32°C (1–1.2 m deep) at a big city-centre sports and water centre. Simple drop-in style cards make it easy to fit around a baby's routine.",
+    "tips": "Register in the online client portal or by phone (641 2068). Parking in the club yard is free during the lesson if there are spaces.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Single visit EUR 10; 8-visit card EUR 59 (valid 90 days). Estonian page lists EUR 9 / EUR 56 – check current price."
+    },
+    "discounts": [],
+    "hours": "Several weekday and weekend slots",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Viru / Hobujaama stops, city centre",
+    "language": "Estonian, English, Russian",
+    "website": "https://revalsport.ee/en/swim-club/ujumiskursused/beebide-ja-vaikelaste-ujumine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Reval-Sport",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free in the club yard during the lesson, if spaces are free."
+    },
+    "sources": [
+      "https://revalsport.ee/en/swim-club/ujumiskursused/beebide-ja-vaikelaste-ujumine/",
+      "https://revalsport.ee/toode/beebide-ujumine-1x-kaart/"
+    ],
+    "phone": "+372 641 2068",
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "tabasalu-baby-swimming-tabasalu",
+    "name": "Tabasalu Sports Complex baby & toddler swimming",
+    "nameLocal": "Tabasalu Spordikompleks – beebide ja väikelaste ujumistunnid",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Tabasalu",
+    "city": "Tallinn",
+    "address": "Kooli tn 11, Tabasalu, Harku vald",
+    "lat": 59.4293,
+    "lng": 24.5545,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 18,
+    "description": "Thursday morning groups of up to 10 babies with a parent in the children's pool, which is closed to other swimmers during the class. Groups are split into 3–7 months and 8 months–1.5 years, with a mixed-age slot when enough families sign up.",
+    "tips": "Book a place in advance by phone (+372 5850 9340) or email; a swim nappy is included in the ticket.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Single ticket (child + parent, swim nappy included) EUR 10; 5 tickets EUR 43."
+    },
+    "discounts": [],
+    "hours": "Thursdays 9:20–11:20 (40-minute groups by age)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Tabasalu bus stops (Kooli tn)",
+    "language": "Estonian",
+    "website": "https://www.tabasalusport.ee/et/beebide-ja-vaikelaste-ujumistunnid",
+    "lastVerified": "2026-10-11",
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.tabasalusport.ee/et/beebide-ja-vaikelaste-ujumistunnid",
+      "https://www.spordiregister.ee/et/ehitis/1263/tabasalu_spordikompleks/detail"
+    ],
+    "phone": "+372 5850 9340",
+    "email": "info@tabasalusport.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "laspa-baby-swimming-laulasmaa",
+    "name": "LaSpa Laulasmaa baby swimming",
+    "nameLocal": "LaSpa beebide ujutamistunnid",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Laulasmaa",
+    "city": "Tallinn",
+    "address": "LaSpa, Puhkekodu tee 4, Laulasmaa, Lääne-Harju vald",
+    "lat": 59.37,
+    "lng": 24.2365,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 36,
+    "description": "Thursday lessons in the spa's 32–33°C children's and leisure pool, with age groups from 3–6 months up to 1.5–3 years and a parent in the water. A good fit for families in western Harju County, with the seaside spa for a family swim afterwards.",
+    "tips": "Register with instructor Riin Hiievali by email; lessons are paid monthly, but single visits are possible when there is space.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly fee (amount not published); single lessons possible if space. Babies 0–12 months visit the water centre free."
+    },
+    "discounts": [],
+    "hours": "Thursdays 10:30, 11:00, 11:30, 12:00, September–May (not in school holidays)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.laspa.ee/baby-swimming/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "LaSpa",
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.laspa.ee/baby-swimming/",
+      "https://www.laspa.ee/water-and-sauna-centre/"
+    ],
+    "phone": null,
+    "email": "riin.hiievali@gmail.com",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "lusti-baby-swimming-kurtna",
+    "name": "Lusti baby & toddler swimming (Kurtna)",
+    "nameLocal": "Lusti beebide ja väikelaste ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kurtna, Saku vald",
+    "city": "Tallinn",
+    "address": "Kurtna lasteaia bassein, Kurtna tee 50, Kurtna, Saku vald",
+    "lat": 59.269,
+    "lng": 24.617,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 48,
+    "description": "Monday morning lessons in a quiet 32–33°C kindergarten pool, with baby groups (3–11 months) and a toddler group (1–3 years) with a parent. The small, calm pool suits babies who find big public pools too loud or chlorinated.",
+    "tips": "Enter from the back of the kindergarten through the glass door by the car park and go down to the basement pool. Trial lessons only when places are free.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 13,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly package 4 lessons EUR 42; single/trial lesson EUR 13 when places are free."
+    },
+    "discounts": [],
+    "hours": "Mondays from 21 Sep 2026: 9:00, 9:30, 10:30 babies; 10:00 toddlers (30-minute lessons)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://tunnid.lusti.ee/ujumine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Car park behind the kindergarten."
+    },
+    "sources": [
+      "https://tunnid.lusti.ee/ujumine/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "sk-fortuna-baby-swimming-juri",
+    "name": "SK Fortuna baby swimming (Jüri)",
+    "nameLocal": "Spordiklubi Fortuna beebide ujutamistunnid",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Jüri, Rae vald",
+    "city": "Tallinn",
+    "address": "Jüri spordihoone, Laste tn 3, Jüri, Rae vald",
+    "lat": 59.357,
+    "lng": 24.8935,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 18,
+    "description": "Weekly baby groups (3–7 months and 8–18 months) with a parent in the 31–32°C children's pool of Jüri sports building. A convenient option for families in Rae parish; the club also runs baby groups in Kose.",
+    "tips": "Register through the club website's registration page; registration for 2026/2027 is open.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 39 per month (Jüri groups)."
+    },
+    "discounts": [],
+    "hours": "Weekly lessons during the school year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Jüri bus stops",
+    "language": "Estonian",
+    "website": "https://www.skfortuna.ee/ruhm/beebide-ujutamistunnid",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.skfortuna.ee/ruhm/beebide-ujutamistunnid",
+      "https://www.skfortuna.ee/treeningud",
+      "https://www.raespordikeskus.ee/juri-spordihoone/kontakt/"
+    ],
+    "phone": "+372 5620 8312",
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "aura-baby-swimming-tartu",
+    "name": "Aura Centre baby & toddler swimming",
+    "nameLocal": "Aura Keskus – beebide ja väikelaste ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tartu",
+    "address": "Turu 10, 51014 Tartu",
+    "lat": 58.3768,
+    "lng": 26.733,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 48,
+    "description": "Coach-led drop-in classes in Tartu's main water centre: 30-minute baby swimming (up to about 2 years) and 40-minute toddler swimming for ages 2–4, both with a parent in the water. Babies learn to float on their back and tummy and go under water, and no advance booking is needed.",
+    "tips": "Just turn up – no registration needed. Check the current timetable on aurakeskus.ee, as the schedule changes between summer and the school year.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 9,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Baby swimming EUR 9, toddler swimming EUR 10 per lesson (prices from 1 Aug 2026)."
+    },
+    "discounts": [],
+    "hours": "Several weekday morning classes (e.g. Mon 10:15); see the timetable",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Turu / Aura bus stops, city centre",
+    "language": "Estonian",
+    "website": "https://aurakeskus.ee/ujula/beebide-ja-vaikelaste-ujutamine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "high",
+    "parkingInfo": {
+      "available": true,
+      "cost": "paid",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Paid city-centre parking around the centre."
+    },
+    "sources": [
+      "https://aurakeskus.ee/ujula/beebide-ja-vaikelaste-ujutamine/",
+      "https://www.aurakeskus.ee/hinnakiri/",
+      "https://www.aurakeskus.ee/treeningud/tunniplaan/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "medicum-baby-swimming-tartu",
+    "name": "Medicum Tartu baby swimming",
+    "nameLocal": "Medicum Tartu – imikute ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Annelinn",
+    "city": "Tartu",
+    "address": "Mõisavahe 34b, Tartu",
+    "lat": 58.3708,
+    "lng": 26.7605,
+    "ageMinMonths": 2,
+    "ageMaxMonths": 36,
+    "description": "Physiotherapist-led baby swimming in 32–34°C water at the children's rehabilitation clinic (formerly Babysport), from the second month of life, with one parent in the water and groups by age. Available with a doctor's referral or as a paid service, so it suits babies who need extra support with muscle tone.",
+    "tips": "Book through the clinic registry by phone or email; physiotherapist-led swimming requires a minimum child weight of 7 kg, and there are also family swim sessions.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Current price not found; available with a referral or as a paid service."
+    },
+    "discounts": [],
+    "hours": "Clinic Mon–Thu 9–17, Fri 9–16",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Annelinn bus stops",
+    "language": "Estonian, Russian",
+    "website": "https://www.medicum.ee/laste-taastusravi/fusioteraapia-vees/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.medicum.ee/laste-taastusravi/fusioteraapia-vees/",
+      "https://www.medicum.ee/asukohad/tartu/"
+    ],
+    "phone": "+372 747 7066",
+    "email": "lapsed.tartu@medicum.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "beebipuut-baby-swimming-arena-tartu",
+    "name": "Beebipuut baby swimming at Arena sports club",
+    "nameLocal": "Beebipuut beebide ujumine (Arena spordiklubi)",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Tartu",
+    "city": "Tartu",
+    "address": "Arena spordiklubi, Ravila 51, Tartu",
+    "lat": 58.3647,
+    "lng": 26.693,
+    "ageMinMonths": 2,
+    "ageMaxMonths": 18,
+    "description": "Small morning groups for babies of about 2–8 months and 9 months–1.5 years with a parent, in Arena's 31°C children's pool. Run by the Tartu baby and pregnancy yoga studio Beebipuut, with online booking per lesson.",
+    "tips": "Book and pay each lesson online via the Beebipuut timetable; cancel up to 2 hours before, and join the waiting list if full. No lessons in June–August.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 14.1,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Single lesson EUR 14.10 + EUR 0.94 booking fee; paid by bank transfer when booking."
+    },
+    "discounts": [],
+    "hours": "Mornings at 10:00, 10:30 and 11:00, September–May",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.beebipuut.ee/beebide-ujumine2/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "Arena",
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.beebipuut.ee/beebide-ujumine2/",
+      "https://www.arenasport.ee/noortel/beebide-ujutamine",
+      "https://arenasport.ee/kontakt"
+    ],
+    "phone": "+372 740 9100",
+    "email": "info@beebipuut.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "babyfloat-tartu",
+    "name": "Babyfloat baby spa & swimming",
+    "nameLocal": "Babyfloat",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Raja",
+    "city": "Tartu",
+    "address": "Raja Keskus, Raja 33, Tartu",
+    "lat": 58.357,
+    "lng": 26.748,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 24,
+    "description": "A baby spa where specialists guide babies floating in individual mini-tubs, plus group and family baby swimming sessions in a pool. It suits the youngest babies, before they are ready for a public pool.",
+    "tips": "Book online (SumUp / Veebiregistratuur) or by phone; weekends are by booking only.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Booking listing (not confirmed on official site): group pool baby swimming 45 min EUR 25, family session EUR 45, mini-tub group EUR 24, private EUR 38."
+    },
+    "discounts": [],
+    "hours": "Mon–Fri 9:30–17:00; weekends by booking",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://babyfloat.ee/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://babyfloat.ee/",
+      "https://www.sumupbookings.com/babyfloat",
+      "https://www.veebiregistratuur.ee/326/"
+    ],
+    "phone": "+372 5813 8031",
+    "email": "info@babyfloat.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "orca-swim-club-baby-swimming-parnu",
+    "name": "Orca Swim Club baby & toddler swimming (Pärnu)",
+    "nameLocal": "Orca Swim Club beebi- ja väikelaste ujumine Pärnus",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Pärnu",
+    "city": "Pärnu",
+    "address": "Raja ujula, Raja tn 7, Pärnu",
+    "lat": 58.382,
+    "lng": 24.547,
+    "ageMinMonths": 4,
+    "ageMaxMonths": 48,
+    "description": "Weekly baby (4–24 months) and toddler (2–4 years) lessons with a parent at the city's Raja kindergarten pool. One of the few organised baby-swimming options in Pärnu.",
+    "tips": "Register for a group on orca.ee; Raja pool closes over the summer, so courses follow the school year.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Raja baby/toddler swimming EUR 30 or 40 per month (price list does not make clear which is which)."
+    },
+    "discounts": [],
+    "hours": "Once a week during the school year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://orca.ee/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://orca.ee/klubi/hinnakiri",
+      "https://orca.ee/klubi/treeningud",
+      "https://spordikeskus.parnu.ee/raja-ujula/",
+      "https://www.turundustugi.ee/osalejadhuvikas2026"
+    ],
+    "phone": "+372 509 0330",
+    "email": "info@orca.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "gold-swim-baby-swimming-kohtla-jarve",
+    "name": "Gold Swim baby & toddler swimming (Kohtla-Järve)",
+    "nameLocal": "Ujumisklubi Gold Swim – beebid ja väikelapsed",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kohtla-Järve",
+    "city": "Jõhvi",
+    "address": "Wiru Spordikeskus, Järveküla tee 41, Kohtla-Järve",
+    "lat": 59.3916,
+    "lng": 27.2727,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 48,
+    "description": "Parent-and-child groups for 0–2 and 2–4 year olds in a small 32°C pool at the Wiru sports centre. Gold Swim is one of the few clubs in Ida-Viru County running regular baby and toddler swimming.",
+    "tips": "Call or email the club to join a group and confirm current times.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Kohtla-Järve groups from EUR 70 per month (not confirmed for the baby group)."
+    },
+    "discounts": [],
+    "hours": "0–2 y: Tue & Thu 10:15–11:00; 2–4 y: Tue & Thu 19:00–19:45, Sun 16:30–17:15",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Russian, Estonian",
+    "website": "https://www.goldswim.ee/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.goldswim.ee/",
+      "https://www.goldswim.ee/tunniplaan.html",
+      "https://k-jsk.ee/wiru-spordikeskus/"
+    ],
+    "phone": "+372 5527 248",
+    "email": "info@goldswim.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "aqva-spa-baby-swimming-rakvere",
+    "name": "AQVA Spa baby swimming",
+    "nameLocal": "AQVA Spa beebide ujutamine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Rakvere",
+    "city": "Rakvere",
+    "address": "AQVA Hotel & Spa, Parkali 4, Rakvere",
+    "lat": 59.351,
+    "lng": 26.354,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 24,
+    "description": "Weekly baby swimming classes in the water centre's baby and children's pool, in groups for 0–1 and 1–2 year olds with a parent. The 2026/2027 season started on 14 September 2026.",
+    "tips": "Ask the water centre for the current timetable and how to sign up (+372 326 0010).",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Price not published in search results; ask the water centre."
+    },
+    "discounts": [],
+    "hours": "Last season: Mon & Wed, 0–1 y at 11:00, 1–2 y at 12:00 (confirm for 2026/27)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.aqvahotels.ee/2026/08/treeningud-2026-2027/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "AQVA Hotel & Spa",
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.aqvahotels.ee/2026/08/treeningud-2026-2027/",
+      "https://www.aqvahotels.ee/2025/08/algab-treeningute-uus-hooaeg/"
+    ],
+    "phone": "+372 326 0010",
+    "email": "info@aqvahotels.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "suure-jaani-tervisekoda-baby-swimming",
+    "name": "Suure-Jaani Health House baby swimming",
+    "nameLocal": "Suure-Jaani Tervisekoda – beebide ujumine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Suure-Jaani",
+    "city": "Viljandi",
+    "address": "Pärnu tn 4, Suure-Jaani, Põhja-Sakala vald",
+    "lat": 58.537,
+    "lng": 25.47,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 24,
+    "description": "Weekly 30-minute baby swimming sessions with a parent at a small-town water centre, with a beginners' group and a group for babies who have finished the beginner course. The nearest organised baby swimming we found for Viljandi County families.",
+    "tips": "Advance booking by phone (432 8124) is required; no classes during school holidays.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 8,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "One visit (2 h incl. 30-min baby swimming) EUR 8; 10-visit card EUR 59 (valid 90 days)."
+    },
+    "discounts": [],
+    "hours": "Thu 10:10 (after beginner course), Fri 11:00 (beginners)",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": true,
+      "changingTable": true,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://tervisekoda.ee/veekeskus/beebide-ujumine/",
+    "lastVerified": "2026-10-11",
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://tervisekoda.ee/veekeskus/beebide-ujumine/",
+      "https://tervisekoda.ee/veekeskus/10x-piletid-kuukaardid/"
+    ],
+    "phone": "+372 432 8124",
+    "email": "tervisekoda@tervisekoda.ee",
+    "activities": [
+      "swimming"
+    ]
+  },
+  {
+    "id": "kullo-mudilaskool-tallinn",
+    "name": "Kullo Toddler School (4-year-olds)",
+    "nameLocal": "Kullo 4a mudilaskool",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Mustamäe",
+    "city": "Tallinn",
+    "address": "Vilde tee 69, Tallinn",
+    "lat": 59.4005,
+    "lng": 24.6655,
+    "ageMinMonths": 48,
+    "ageMaxMonths": 60,
+    "description": "A weekly half-day morning group at Tallinn's municipal hobby centre Kullo where 4-year-olds draw, make crafts, sing and move together without a parent. It suits children who are ready for a short group session away from mum or dad and gently prepares them for the 5- and 6-year-old pre-school groups.",
+    "tips": "Register through the city's LAUR hobby-school system or Kullo's website; the school year runs September to May and places fill in spring for the next year.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly fee; the 2024 page listed EUR 45/month (check the 2026/27 rate). Kullo hobby groups in general cost EUR 26-118/month."
+    },
+    "discounts": [
+      "Paid hobby-school fees may qualify for an income tax refund"
+    ],
+    "hours": "Tuesday mornings 9:00-12:15 (2025/26 timetable); September-May",
+    "durationMinutes": 195,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://kullo.ee/4a-eelkool/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://kullo.ee/4a-eelkool/",
+      "https://laur.tallinn.ee/ee/huvikooliryhmad/vaata/1019",
+      "https://kullo.ee/kullo-registreerimine/",
+      "https://www.tallinn.ee/et/huvitegevus-noortele/tallinna-huvikeskus-kullo"
+    ],
+    "phone": "+372 664 6100",
+    "email": "kullo@kullo.ee",
+    "activities": [
+      "art",
+      "music"
+    ]
+  },
+  {
+    "id": "talveunistus-skating-school-tallinn",
+    "name": "Talveunistus Skating School",
+    "nameLocal": "Uisukool Talveunistus",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Tondiraba Ice Hall, Varraku 14, Tallinn",
+    "lat": 59.4432,
+    "lng": 24.8394,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 216,
+    "description": "A figure-skating school at Tondiraba Ice Hall that takes complete beginners from age 3, with a special first-year group for 3-5-year-olds who learn to stand, fall safely and glide through games. Children are on the ice with a coach while parents watch from the stands, so it suits confident pre-schoolers rather than clingy toddlers.",
+    "tips": "The first two training sessions are free; register on the school's website and bring warm clothes, gloves and a helmet.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "2025/26: beginners aged 3-5 (first year) EUR 85/month for 2 sessions a week; other groups from EUR 60/month for 1 session a week. Place fee EUR 45 for a missed month."
+    },
+    "discounts": [
+      "First 2 sessions free",
+      "50% sibling discount (2+ skaters from one family)",
+      "Income tax refund on fees (licensed school)"
+    ],
+    "hours": "Weekday afternoons and weekends at Tondiraba; season September-May",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Bus to Tondiraba / Varraku area, Lasnamäe",
+    "language": "Estonian, Russian",
+    "website": "https://www.talveunistus.planet.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Tondiraba Ice Hall",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Large car park at the ice hall."
+    },
+    "sources": [
+      "https://www.talveunistus.planet.ee/",
+      "https://www.talveunistus.planet.ee/Hinnakiri.html",
+      "https://www.spordiregister.ee/et/organisatsioon/2194/iluuisutamisklubi_talveunistus/detail"
+    ],
+    "phone": "+372 5566 5441",
+    "email": "talveunistus@gmail.com",
+    "activities": [
+      "skating"
+    ]
+  },
+  {
+    "id": "rocca-al-mare-skating-school-tallinn",
+    "name": "Rocca al Mare Skating School",
+    "nameLocal": "Rocca al Mare Uisukool",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Haabersti Ice Hall, Haabersti 3, Tallinn",
+    "lat": 59.4262,
+    "lng": 24.6521,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 216,
+    "description": "A long-running skating school at Haabersti Ice Hall that welcomes children from age 3 all year round, combining ice sessions with an off-ice general-fitness class. The youngest skaters learn basic balance and gliding in small groups with a coach while parents wait by the rink; there is also a Russian-language page.",
+    "tips": "The first two trial sessions are free; apply via the registration form on the website.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly: EUR 90 (1 ice session + 1 off-ice), EUR 120 (2 + 1), EUR 150 (3 + 1). Paid at the school office on the rink's 2nd floor."
+    },
+    "discounts": [
+      "First 2 trial sessions free",
+      "Income tax refund on fees (licensed school)"
+    ],
+    "hours": "All year; weekday afternoons and Saturdays at Haabersti Ice Hall",
+    "durationMinutes": 75,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Rocca al Mare / Haabersti stops (buses), Paldiski mnt",
+    "language": "Estonian, Russian",
+    "website": "https://www.uisukool.edu.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Haabersti Ice Hall / Rocca al Mare area",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking by the ice hall, next to Rocca al Mare shopping centre."
+    },
+    "sources": [
+      "https://www.uisukool.edu.ee/",
+      "https://www.uisukool.edu.ee/lapsed.html",
+      "https://www.uisukool.edu.ee/rus.html"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "skating"
+    ]
+  },
+  {
+    "id": "infonet-kids-football-tallinn",
+    "name": "Infonet Football School (kids' football from 3)",
+    "nameLocal": "Infonet Jalgpallikool / Lastejalgpall",
+    "category": "class",
+    "setting": "both",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Punane 45, Tallinn",
+    "lat": 59.4352,
+    "lng": 24.8302,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 192,
+    "description": "A large Tallinn football school whose youngest groups start at age 3 with playful running, ball and coordination games rather than real matches. Training is mainly in Russian, with toddler groups held in several districts (Lasnamäe, Õismäe, Kopli, Mustamäe), outdoors in summer and in sports halls in winter.",
+    "tips": "New children get a free trial session and a club T-shirt; ask which district hall is nearest for the 3-5-year-old group.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "City listing: EUR 85-105/month depending on group (may be outdated; confirm current fee)."
+    },
+    "discounts": [
+      "Free trial session"
+    ],
+    "hours": "Weekday afternoons/evenings; outdoors in summer, indoor halls in winter",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Russian, Estonian",
+    "website": "https://www.lastejalgpall.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.lastejalgpall.ee/",
+      "https://www.tallinn.ee/et/huvitegevus-noortele/infonet-jalgpallikool",
+      "https://fcitallinn.com/et/about-us/"
+    ],
+    "phone": "+372 520 8686",
+    "email": "info@lastejalgpall.ee",
+    "activities": [
+      "ball"
+    ]
+  },
+  {
+    "id": "arigato-toddler-gymnastics-tallinn",
+    "name": "Arigato Baby & Toddler Gymnastics",
+    "nameLocal": "Arigato beebide ja väikelaste võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Haabersti",
+    "city": "Tallinn",
+    "address": "Rannamõisa tee 3, Tallinn",
+    "lat": 59.4301,
+    "lng": 24.64,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 84,
+    "description": "Parent-and-child gymnastics at the Arigato sports club, run by coaches from Tsirkusekool, with separate Saturday groups for babies (3 months-1 year) and toddlers (1-3 years). Parents stay on the mat and help their child roll, crawl, climb and balance on soft equipment; older children up to 7 can continue in acrobatics groups.",
+    "tips": "Contact the coach Vello Vaher by phone or email to reserve a place; Saturday groups fill fastest.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Price not published online; ask the coach or Arigato club (club trial session EUR 5)."
+    },
+    "discounts": [],
+    "hours": "Saturdays 10:00 (3 months-1 year) and 11:00 (1-3 years)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.arigato.ee/arigato-maja/laste-ja-noorte-treeningud/beebide-voimlemine/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Arigato",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Car park at the sports club."
+    },
+    "sources": [
+      "https://www.arigato.ee/arigato-maja/laste-ja-noorte-treeningud/beebide-voimlemine/",
+      "https://tsirkusekool.ee/treeningud/",
+      "https://www.arigato.ee/"
+    ],
+    "phone": "+372 510 0537",
+    "email": "vello.vaher@gmail.com",
+    "activities": [
+      "gym"
+    ]
+  },
+  {
+    "id": "noor-ballett-fouette-studio-tallinn",
+    "name": "Noor Ballett Fouetté Ballet Studio (3-6 y)",
+    "nameLocal": "Noor Ballett Fouetté balletistuudio 3-6 aastastele",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Parda 4 (7th floor), Tallinn",
+    "lat": 59.4369,
+    "lng": 24.7718,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 84,
+    "description": "A ballet school's studio group for 3-6-year-olds: a short weekly class of music, movement and first ballet positions, taught without the parent in the room. It is a gentle, no-audition introduction to classical dance for pre-schoolers who enjoy music and dressing up.",
+    "tips": "Admission to the 3-6 studio groups runs from mid-August to the end of September without auditions; apply by email.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "2026/27: EUR 65/month for one class a week."
+    },
+    "discounts": [],
+    "hours": "Monday 17:30-18:10 (studio group); school year September-May",
+    "durationMinutes": 40,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://noorballett.ee/vastuvott-ja-oppekorraldus/balletistuudio-3-6-aastastele",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://noorballett.ee/vastuvott-ja-oppekorraldus/balletistuudio-3-6-aastastele",
+      "https://noorballett.ee/kontakt/",
+      "https://noorballett.ee/vastuvott-ja-oppekorraldus/"
+    ],
+    "phone": "+372 555 88 985",
+    "email": "info@noorballett.edu.ee",
+    "activities": [
+      "dance"
+    ]
+  },
+  {
+    "id": "kaie-korb-ballet-studio-tallinn",
+    "name": "Kaie Kõrb Ballet Studio",
+    "nameLocal": "Kaie Kõrbi Balletistuudio",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Hobujaama 12, Tallinn (classes at several venues in Tallinn, Viimsi and Peetri)",
+    "lat": 59.4378,
+    "lng": 24.7568,
+    "ageMinMonths": 48,
+    "ageMaxMonths": 168,
+    "description": "A children's ballet studio founded by former prima ballerina Kaie Kõrb, taking pupils from age 4 in many locations around Tallinn, Viimsi and Rae parish. Classes teach posture, musicality and basic ballet steps in small groups, ending each year with a stage show the children love.",
+    "tips": "The first lesson is free for new pupils; pick the venue closest to you (city centre, Haabersti, Viimsi Huvikeskus, Viimsi Artium or Peetri).",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Per year: EUR 460 (1 class/week) or EUR 660 (2/week); or 9 monthly payments of EUR 65 / EUR 85 (2025/26 price list)."
+    },
+    "discounts": [
+      "First lesson free",
+      "10% family discount for 2+ children"
+    ],
+    "hours": "Weekday afternoons; school year September-May",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.balletistuudio.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.balletistuudio.ee/",
+      "https://www.balletistuudio.ee/et/oppekorraldus/oppemaks",
+      "https://www.balletistuudio.ee/et/kontakt",
+      "https://www.tallinn.ee/et/huvitegevus-noortele/kaie-korbi-balletistuudio",
+      "https://huvikeskus.ee/huviring/kaie-korbi-balletistuudio/"
+    ],
+    "phone": "+372 5696 0500",
+    "email": "info@balletistuudio.ee",
+    "activities": [
+      "dance"
+    ]
+  },
+  {
+    "id": "vaike-muusik-music-studio-nomme-tallinn",
+    "name": "Väike Muusik Baby & Toddler Music Studio",
+    "nameLocal": "Stuudio Väike Muusik",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Nõmme",
+    "city": "Tallinn",
+    "address": "Nõmme Kultuurikeskus, Turu plats 2, Tallinn",
+    "lat": 59.3866,
+    "lng": 24.6857,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 30,
+    "description": "Weekly parent-and-child music classes at Nõmme Culture Centre in three age groups (6-11 months, 1-1.5 years and 1.5-2.5 years): singing, rhythm games, small instruments and movement. Each 30-minute lesson is followed by 20 minutes of free play, so it is a relaxed way for babies and parents to meet others.",
+    "tips": "Book through Nõmme Kultuurikeskus; groups are small, so register early in the autumn.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 34/month (one lesson a week)."
+    },
+    "discounts": [],
+    "hours": "Weekday mornings, three age-group slots; 30 min lesson + 20 min free play",
+    "durationMinutes": 50,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": "Nõmme train station / Nõmme turg bus stops",
+    "language": "Estonian",
+    "website": "https://www.nommekultuur.ee/huviring/stuudio-vaike-muusik-beebide-ja-vaikelaste-muusikatunnid/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking around Turu plats in Nõmme centre."
+    },
+    "sources": [
+      "https://www.nommekultuur.ee/huviring/stuudio-vaike-muusik-beebide-ja-vaikelaste-muusikatunnid/",
+      "https://www.nommekultuur.ee/huviringid/"
+    ],
+    "phone": "+372 677 0372",
+    "email": "post@nommekultuur.ee",
+    "activities": [
+      "music"
+    ]
+  },
+  {
+    "id": "mamma-mia-baby-music-peetri",
+    "name": "Mamma Mia Baby Rhythm & Movement Class",
+    "nameLocal": "Mamma Mia Beebikooli rütmika- ja liikumistund",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Peetri",
+    "city": "Tallinn",
+    "address": "Küti tee 4, Peetri, Rae vald",
+    "lat": 59.3932,
+    "lng": 24.8064,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 36,
+    "description": "A 30-minute rhythm, song and movement class for 1-3-year-olds with a parent at the Mamma Mia singing studio in Peetri, just outside Tallinn. Groups are kept to 6-10 children, which suits families in Rae parish and south-east Tallinn looking for a calm first group activity.",
+    "tips": "Buy a 5-class card if you plan to attend regularly; check the studio's timetable page for the current day and time.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Single class EUR 10; 5-class card EUR 50 (valid 3 months)."
+    },
+    "discounts": [],
+    "hours": "Weekday mornings (previously Tuesdays 10:00); check the 2026/27 timetable",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://mammamia.ee/beebikooli-muusikaring/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking at the Peetri centre."
+    },
+    "sources": [
+      "https://mammamia.ee/beebikooli-muusikaring/",
+      "https://mammamia.ee/tunniplaan/",
+      "https://www.mammamia.ee/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "music"
+    ]
+  },
+  {
+    "id": "laula-ja-kasva-music-circle-keila",
+    "name": "Laula ja kasva Music Circle",
+    "nameLocal": "Laula ja kasva muusikaring",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Keila",
+    "city": "Tallinn",
+    "address": "Keila Teraapiakeskus, Keskväljak 17, Keila",
+    "lat": 59.3036,
+    "lng": 24.4137,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 36,
+    "description": "An early-childhood music circle led by a music therapist for parents with babies and toddlers up to 3: lullabies, nursery songs, simple instruments and movement games. Small, registration-only groups make it a gentle option for families in Keila and western Harju County.",
+    "tips": "Places are limited and advance registration is required; the first lesson is free for newcomers.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 7,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Monthly membership EUR 15-20 (3 or 4 lessons in the month) + EUR 7 per lesson attended; single drop-in EUR 15. First lesson free. An older page lists a 4-lesson card at EUR 35."
+    },
+    "discounts": [
+      "First lesson free"
+    ],
+    "hours": "Tuesday and Thursday mornings at 10:00; new season from September",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://muusikaterapeut.ee/laula-ja-kasva-muusikaring/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://muusikaterapeut.ee/laula-ja-kasva-muusikaring/",
+      "https://muusikaterapeut.ee/laula-ja-kasva/",
+      "https://keilatk.ee/uncategorized/naljanina/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "music"
+    ]
+  },
+  {
+    "id": "viimsi-huvikeskus-baby-gymnastics-viimsi",
+    "name": "Viimsi Hobby Centre Baby & Toddler Gymnastics",
+    "nameLocal": "Viimsi Huvikeskus beebide ja väikelaste võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Viimsi",
+    "city": "Tallinn",
+    "address": "Viimsi Huvikeskus, Nelgi tee 1, Viimsi",
+    "lat": 59.5039,
+    "lng": 24.8296,
+    "ageMinMonths": 2,
+    "ageMaxMonths": 24,
+    "description": "Monday-morning gymnastics for babies and toddlers with a parent at Viimsi Hobby Centre, split into 2-7-month, 7-15-month and 1-2-year groups. The instructor shows age-appropriate exercises and movement games that support rolling, crawling and walking, with the parent doing everything together with the child.",
+    "tips": "Book a trial lesson via the registration link on the hobby centre's page; the 4-class card is valid for 2 months.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 15,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Trial lesson EUR 10; single lesson EUR 15; 4-class card EUR 45 (valid 2 months)."
+    },
+    "discounts": [],
+    "hours": "Mondays 9:00 (7-15 months), 10:00 (1-2 years), 11:00 (2-7 months); from September",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://huvikeskus.ee/huviring/beebide-ja-vaikelaste-voimlemine-reet-post/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking at the Viimsi Huvikeskus / school area."
+    },
+    "sources": [
+      "https://huvikeskus.ee/huviring/beebide-ja-vaikelaste-voimlemine-reet-post/",
+      "https://huvikeskus.ee/beebide-ja-vaikelaste-voimlemine-reet-post/"
+    ],
+    "phone": "+372 523 5639",
+    "email": "reet.pere@gmail.com",
+    "activities": [
+      "gym"
+    ]
+  },
+  {
+    "id": "vimka-ski-school-viimsi",
+    "name": "Vimka Ski School (little skiers 3+)",
+    "nameLocal": "Vimka mäepargi suusakool",
+    "category": "class",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Lubja, Viimsi",
+    "city": "Tallinn",
+    "address": "Randvere tee 30, Lubja küla, Viimsi vald",
+    "lat": 59.518848,
+    "lng": 24.841619,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 144,
+    "description": "The ski school at Viimsi's small downhill park, the closest slope to Tallinn, offers playful snow sessions for children from age 3 on a gentle learning slope. For the youngest it is more about getting used to skis and moving on snow than real technique, which is exactly right for a first try.",
+    "tips": "Book lessons online once the slope opens (usually January, snow permitting) and bring a helmet; equipment can be rented on site.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Little-ones' (3+) group lessons were listed at EUR 9 per session or 5 sessions for EUR 45; small-group lessons (2-3 children) EUR 40 per person / 50 min, plus EUR 5 equipment. Check the current season's price list."
+    },
+    "discounts": [],
+    "hours": "Winter season only, when there is snow; weekends and some weekday afternoons",
+    "durationMinutes": 50,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian, English",
+    "website": "https://www.vimkapark.ee/talv/suusakool/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Vimka",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Car park at the hill."
+    },
+    "sources": [
+      "https://www.vimkapark.ee/talv/suusakool/",
+      "https://www.vimkapark.ee/vimka-viimsi-maepark/kontakt/",
+      "https://www.visitharju.ee/en/viimsi-mountain-park-vimka/"
+    ],
+    "phone": "+372 5812 9619",
+    "email": "vimka@vimkapark.ee",
+    "activities": [
+      "skiing"
+    ]
+  },
+  {
+    "id": "cfc-ski-school-pirita-tallinn",
+    "name": "CFC Ski School (Jaak Mae Ski School)",
+    "nameLocal": "CFC Spordiklubi suusakool",
+    "category": "class",
+    "setting": "both",
+    "season": "all-year",
+    "area": "Pirita",
+    "city": "Tallinn",
+    "address": "Pirita Spordikeskus, Rummu tee 3, Tallinn",
+    "lat": 59.4689,
+    "lng": 24.8385,
+    "ageMinMonths": 48,
+    "ageMaxMonths": 144,
+    "description": "Cross-country skiing school run by Olympic medallist Jaak Mae's club, with a group for 4-6-year-olds that trains all year: running and ball games in autumn, skiing in Pirita when there is snow. Coaches keep it playful, so it suits active pre-schoolers who like being outdoors.",
+    "tips": "There is a free trial week; register on cfc.ee and ask the coach which days the 4-6 group meets.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "4-6-year-old group EUR 40/month (children's page); general ski-school fee EUR 50/month. Invoiced monthly."
+    },
+    "discounts": [
+      "Free trial week",
+      "Income tax refund on training fees"
+    ],
+    "hours": "Weekday afternoons all year; on snow in winter",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://cfc.ee/tule-trenni-suusakooli/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Parking at Pirita Spordikeskus."
+    },
+    "sources": [
+      "https://cfc.ee/tule-trenni-suusakooli/",
+      "https://cfc.ee/teretrenn/",
+      "https://cfc.ee/liitumine-suusakool/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "skiing"
+    ]
+  },
+  {
+    "id": "piruett-dance-gymnastics-tallinn",
+    "name": "Piruett Gymnastics Club - dance gymnastics 4-6 y",
+    "nameLocal": "Võimlemisklubi Piruett tantsuline võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Tatari 58, Tallinn",
+    "lat": 59.4284,
+    "lng": 24.7414,
+    "ageMinMonths": 48,
+    "ageMaxMonths": 156,
+    "description": "A gymnastics club whose youngest 'dance gymnastics' groups (from 4 years) mix basic gymnastics, stretching and dance to music. There are no entry tests, so it suits any active pre-schooler; groups also run in Jüri (Rae Spordikeskus) and Aruküla.",
+    "tips": "A free trial session is offered; a one-off EUR 10 joining fee applies when you sign up.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Around EUR 80-90/month for the 4-6 and 5-6-year-old groups (2025/26); EUR 10 joining fee."
+    },
+    "discounts": [
+      "Free trial session"
+    ],
+    "hours": "Weekday mornings (e.g. Tue 10:30) and afternoons; school year September-May",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.piruett.ee/tantsuline-ja-harrastusvoimlemine/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.piruett.ee/tantsuline-ja-harrastusvoimlemine/",
+      "https://www.piruett.ee/voimlemiskool/",
+      "https://www.piruett.ee/klubi/"
+    ],
+    "phone": "+372 646 3659",
+    "email": "piruett@piruett.ee",
+    "activities": [
+      "gym",
+      "dance"
+    ]
+  },
+  {
+    "id": "kinderdom-studio-lasnamae-tallinn",
+    "name": "Kinderdom Children's Studio",
+    "nameLocal": "Kinderdom lastestuudio",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Lasnamäe",
+    "city": "Tallinn",
+    "address": "Priisle tee 4/2, Tallinn",
+    "lat": 59.4437,
+    "lng": 24.8805,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 144,
+    "description": "A small development studio in Lasnamäe with a 'Beebikool / Music with mum' group for 9 months to 2.5 years, plus art-therapy and sensory play, Estonian and English for little ones. Lessons are short (30-45 minutes) with free play afterwards, and the studio works with Russian-speaking as well as Estonian families.",
+    "tips": "Book individual sessions through the studio's Setmore booking page; message on Instagram or by phone for the group timetable.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Baby music group EUR 10 per 30-min session (+15 min free play); individual English 45 min EUR 25."
+    },
+    "discounts": [],
+    "hours": "Weekday mornings and afternoons by timetable",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Russian, Estonian, English",
+    "website": "https://kinderdom.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://kinderdom.ee/",
+      "https://kinderdom.ee/est",
+      "https://kinderdom.setmore.com/"
+    ],
+    "phone": "+372 5829 0252",
+    "email": "kinderdom.ee@gmail.com",
+    "activities": [
+      "music",
+      "art",
+      "language"
+    ]
+  },
+  {
+    "id": "pingus-english-tallinn",
+    "name": "Pingu's English Tallinn (English for kids 3+)",
+    "nameLocal": "Pingu's English",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Liivalaia 22, Tallinn",
+    "lat": 59.4316,
+    "lng": 24.7558,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 120,
+    "description": "An English-language school for young children using the play-based Pingu's English method: small groups learn through songs, games, stories and the Pingu characters, with the teacher speaking only English. It suits families who want their pre-schooler to pick up English early; the same organisation runs English pre-schools in Kadriorg and Rocca al Mare.",
+    "tips": "Contact the school for a trial lesson and the current course timetable; courses follow the school year.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Course price not published; ask the school. (Half-day English pre-school at Rocca al Mare from EUR 185/month for 1 day a week.)"
+    },
+    "discounts": [],
+    "hours": "Weekday afternoons; courses follow the school year",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "English",
+    "website": "https://pingusenglish.ee/english-for-kids/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://pingusenglish.ee/english-for-kids/",
+      "https://pingusenglish.ee/",
+      "https://pingusenglish.ee/day-eng-rocca/"
+    ],
+    "phone": "+372 5855 2700",
+    "email": "peik@pingusenglish.ee",
+    "activities": [
+      "language"
+    ]
+  },
+  {
+    "id": "fysiongel-baby-gym-kopli-tallinn",
+    "name": "Fysiongel Baby & Toddler Movement Classes",
+    "nameLocal": "Fysiongel beebide ja väikelaste võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Kopli, Põhja-Tallinn",
+    "city": "Tallinn",
+    "address": "Aurora Yoga Studio, Kopli 27-227, Tallinn",
+    "lat": 59.4494,
+    "lng": 24.7184,
+    "ageMinMonths": 2,
+    "ageMaxMonths": 24,
+    "description": "Physiotherapist-led movement classes for babies and young toddlers with a parent, in small groups sorted by developmental stage (youngest babies, first movements, crawlers). It is a good fit if you want gentle, expert guidance on motor development and a chance to ask a physiotherapist questions.",
+    "tips": "Book ahead on the Fysiongel website; ask which of the three Monday groups matches your child's stage.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 15,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 15 per class; monthly card EUR 50."
+    },
+    "discounts": [],
+    "hours": "Mondays 10:00, 10:45 and 11:30 (three developmental groups)",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://fysioingel.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://fysioingel.ee/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "gym"
+    ]
+  },
+  {
+    "id": "akros-toddler-gymnastics-tartu",
+    "name": "Akros Gymnastics Club - toddler & parent gymnastics",
+    "nameLocal": "Võimlemisklubi Akros väikelaste võimlemine",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Tartu",
+    "city": "Tartu",
+    "address": "Tuglase 14, Tartu (also NET spordihall)",
+    "lat": 58.3896,
+    "lng": 26.7016,
+    "ageMinMonths": 12,
+    "ageMaxMonths": 84,
+    "description": "Drop-in toddler gymnastics at Tartu's big gymnastics club: children from 1 year run, jump, climb and roll on mats, trampolines and soft blocks, with a parent or carer joining under-7s. Only the child pays and no pre-registration is needed, which makes it an easy weekend outing.",
+    "tips": "No pre-registration needed; check the club's timetable for the Tuglase 14 and NET hall sessions.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": 10,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "2025/26: EUR 10 per visit for non-members, EUR 6 for Akros members; parent/carer free (paid only for children from 1 year)."
+    },
+    "discounts": [
+      "Parent/carer free",
+      "Cheaper for club members"
+    ],
+    "hours": "Several sessions a week incl. weekends; see timetable",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://akros.ee/spordialad/vaikelaste-voimlemine/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://akros.ee/spordialad/vaikelaste-voimlemine/",
+      "https://akros.ee/spordialad/",
+      "https://www.spordiregister.ee/et/organisatsioon/3394/voimlemisklubi_akros/detail"
+    ],
+    "phone": "+372 524 6141",
+    "email": "akros@akros.ee",
+    "activities": [
+      "gym"
+    ]
+  },
+  {
+    "id": "karlova-beebipill-tartu",
+    "name": "Karlova Beebipill Baby Music Group",
+    "nameLocal": "Karlova Beebipill",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Karlova",
+    "city": "Tartu",
+    "address": "Koidu Keskus, Koidu 13, Tartu",
+    "lat": 58.3712,
+    "lng": 26.7322,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 48,
+    "description": "A friendly community music group in Karlova where parents sing and play simple instruments with babies (0-2) and toddlers (2-4). With several weekly slots and a low monthly fee it is one of the easiest regular baby activities in Tartu.",
+    "tips": "Register by email; daytime slots on Tuesdays and Wednesdays are for 0-2-year-olds, evening slots on Wednesdays for 2-4-year-olds.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 21/month."
+    },
+    "discounts": [],
+    "hours": "0-2 y: Tue 10:30, 11:30, 13:00 and Wed 10:00, 11:00, 12:30; 2-4 y: Wed 17:30 and 18:30",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.karlovabeebipill.com/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.karlovabeebipill.com/",
+      "https://koidukeskus.eu/organisatsioonist/",
+      "https://lapsegatartus.jimdofree.com/huviringid/laulu-ja-loovusringid/"
+    ],
+    "phone": null,
+    "email": "karlovabeebipill@gmail.com",
+    "activities": [
+      "music"
+    ]
+  },
+  {
+    "id": "tartu-loodusmaja-nature-adventurers-tartu",
+    "name": "Tartu Nature House - Nature Adventurers club",
+    "nameLocal": "Tartu loodusmaja Loodusseiklejad",
+    "category": "class",
+    "setting": "both",
+    "season": "all-year",
+    "area": "Tartu kesklinn",
+    "city": "Tartu",
+    "address": "Lille 10, Tartu",
+    "lat": 58.3745,
+    "lng": 26.7198,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 96,
+    "description": "A nature club for 3-7-year-olds at Tartu's Nature House, where children explore the house's park, animals and plants through play and short outdoor discoveries. Children attend without a parent in age-based groups, and a child must have turned 3 before starting.",
+    "tips": "Register for the school year via the Nature House website; preschool sessions last 60 minutes once a week.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "EUR 30/month."
+    },
+    "discounts": [],
+    "hours": "Weekday afternoons, once a week (see timetable); school year September-May",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.tartuloodusmaja.ee/huvikool/loodusseiklejad/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.tartuloodusmaja.ee/huvikool/loodusseiklejad/",
+      "https://www.tartuloodusmaja.ee/huviringide-info-lapsevanematele/"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "nature"
+    ]
+  },
+  {
+    "id": "tartu-skating-school-tartu",
+    "name": "Tartu Skating School",
+    "nameLocal": "Tartu Uisukool (Iluuisutamisklubi Tartu)",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Ränilinn",
+    "city": "Tartu",
+    "address": "Lõunakeskus ice rink, Ringtee 75 / Teaduspargi 4, Tartu",
+    "lat": 58.3578,
+    "lng": 26.6788,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 216,
+    "description": "Tartu's figure-skating club trains at the Lõunakeskus rinks and has a preparatory group for 3-5-year-olds who are just starting out. Little skaters learn balance and gliding through games with a coach on the ice, and the club's own skate shop in Lõunakeskus helps fit proper skates.",
+    "tips": "Ask about the preparatory (ettevalmistav) group by email or phone; buy properly fitted skates from the start.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Youngest group EUR 85/month (club group info)."
+    },
+    "discounts": [],
+    "hours": "Weekday afternoons on the ice and in the arena's small hall; season September-May",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian, Russian",
+    "website": "https://iktartu.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": "free",
+      "operator": "Lõunakeskus",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Free parking at Lõunakeskus shopping centre."
+    },
+    "sources": [
+      "https://iktartu.ee/ettevalmistav/",
+      "https://iktartu.ee/ruhmad/",
+      "https://iktartu.ee/kontakt/",
+      "https://astri.ee/lounakeskus/tartu-uisukool/"
+    ],
+    "phone": "+372 522 8574",
+    "email": "info@iktartu.ee",
+    "activities": [
+      "skating"
+    ]
+  },
+  {
+    "id": "tahtvere-dance-centre-tartu",
+    "name": "Tähtvere Dance Centre - pre-school dance",
+    "nameLocal": "Tähtvere Tantsukeskus",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Tähtvere",
+    "city": "Tartu",
+    "address": "Laulupeo pst 19, Tartu",
+    "lat": 58.3889,
+    "lng": 26.7044,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 84,
+    "description": "Tartu's large dance centre in Tähtvere takes children from age 3 into once-a-week pre-school dance groups built around music, rhythm and simple dance games. It is a good stepping stone into folk, modern or ballroom dance later, and children dance without parents in the room.",
+    "tips": "Sign up for the autumn term on the website; a one-off joining fee and small annual fee apply on top of the monthly fee.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "2025/26: pre-school dance EUR 33/month (1x week) or EUR 43 (2x week); joining fee EUR 15, then EUR 8/year."
+    },
+    "discounts": [
+      "25% off for 2+ main classes (siblings)"
+    ],
+    "hours": "Weekday afternoons; school year September-May",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.tartutants.ee/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.tartutants.ee/",
+      "https://www.tartutants.ee/hinnakiri/",
+      "https://www.tartutants.ee/treeningud/tantsukool/"
+    ],
+    "phone": "+372 5191 1122",
+    "email": "info@tartutants.ee",
+    "activities": [
+      "dance"
+    ]
+  },
+  {
+    "id": "laulupesa-baby-singing-tartu",
+    "name": "Laulupesa Baby & Toddler Singing Groups",
+    "nameLocal": "Laulupesa beebikool",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Tartu kesklinn",
+    "city": "Tartu",
+    "address": "Vaksali 8, Tartu",
+    "lat": 58.3735,
+    "lng": 26.7108,
+    "ageMinMonths": 3,
+    "ageMaxMonths": 36,
+    "description": "A children's singing studio with its own play room, running baby and toddler singing groups in age bands from about 3-8 months up to 2-3 years. Parents sing, bounce and play along with their child, and missed lessons can be swapped for time in the studio's play room.",
+    "tips": "Check the online timetable for your child's age band and email to join; missed lessons can be used for play-room visits.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Baby singing group around EUR 20/month (older listing); confirm current fees on the price page."
+    },
+    "discounts": [],
+    "hours": "Weekday mornings by age group (see timetable)",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": true,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://www.laulupesa.ee/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://www.laulupesa.ee/",
+      "https://www.laulupesa.ee/laulu-maengutunnid/",
+      "https://www.laulupesa.ee/osalustasud/hinnad"
+    ],
+    "phone": "+372 522 9096",
+    "email": "laulupesa@gmail.com",
+    "activities": [
+      "music"
+    ]
+  },
+  {
+    "id": "vanalinna-beebikool-parnu",
+    "name": "Pärnu Old Town Training Centre Baby School",
+    "nameLocal": "Pärnu Vanalinna Koolituskeskuse beebikool",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Pärnu kesklinn",
+    "city": "Pärnu",
+    "address": "Hospidali 22-2, Pärnu",
+    "lat": 58.3836,
+    "lng": 24.5054,
+    "ageMinMonths": 6,
+    "ageMaxMonths": 36,
+    "description": "A central Pärnu baby school with groups for 6-12-month-olds and walkers aged 1-3: a weekly music lesson plus an optional creative session with painting, sticking and modelling. Parents take part with their child, so it is a gentle introduction to group activities.",
+    "tips": "Register by phone or email before the autumn term; the creative group can be combined with music at a combined monthly price.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "1-3-year-olds: about EUR 32-35/month for music; music + creative session about EUR 57/month (older price lists; confirm)."
+    },
+    "discounts": [
+      "Income tax refund on fees"
+    ],
+    "hours": "Weekday mornings (music Mondays, art Wednesdays for walkers)",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": null
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://vanalinnakoolituskeskus.ee/but/beebikool/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://vanalinnakoolituskeskus.ee/but/beebikool/",
+      "https://vlkoolitus.ee/beebikool/",
+      "https://www.turundustugi.ee/osalejadhuvikas2026"
+    ],
+    "phone": "+372 565 3927",
+    "email": "info@vkkoolitus.ee",
+    "activities": [
+      "music",
+      "art"
+    ]
+  },
+  {
+    "id": "parnu-sports-academy-kalev-tennis-parnu",
+    "name": "Pärnu Sports Academy Kalev - mini tennis from 3",
+    "nameLocal": "Pärnu Spordiakadeemia Kalev",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Pärnu",
+    "city": "Pärnu",
+    "address": "Suur-Jõe 50a, Pärnu",
+    "lat": 58.3931,
+    "lng": 24.5264,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 216,
+    "description": "Pärnu's sports academy runs 'blue ball' mini-tennis groups for children from about 3-4 years, using soft balls, small rackets and lots of running and catching games. Groups of 8-12 children train twice a week without parents on court, which suits energetic pre-schoolers.",
+    "tips": "Contact the academy before the autumn term; check whether your child fits the 3-4 or 4-6 blue-ball group (the site lists both age 3 and 4 as the start).",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Ages 3-4 (blue ball): EUR 70-80/month for 2 x 45 min a week."
+    },
+    "discounts": [],
+    "hours": "Weekday afternoons, twice a week; school year September-May",
+    "durationMinutes": 45,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian",
+    "website": "https://spordiakadeemia.ee/spordialad/tennis/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://spordiakadeemia.ee/spordialad/tennis/",
+      "https://spordiakadeemia.ee/tule-trenni/",
+      "https://ariregister.rik.ee/eng/company/80635310"
+    ],
+    "phone": "+372 5194 2902",
+    "email": null,
+    "activities": [
+      "ball"
+    ]
+  },
+  {
+    "id": "paasuke-figure-skating-narva",
+    "name": "Pääsuke Figure Skating Club",
+    "nameLocal": "Narva Iluuisutamise Klubi Pääsuke",
+    "category": "class",
+    "setting": "indoor",
+    "season": "all-year",
+    "area": "Narva",
+    "city": "Narva",
+    "address": "Narva Ice Hall, 26. Juuli 4, Narva",
+    "lat": 59.3696,
+    "lng": 28.1941,
+    "ageMinMonths": 60,
+    "ageMaxMonths": 216,
+    "description": "Narva's figure-skating club trains at the city ice hall and takes beginners from about age 5, with coaching mainly in Russian. It suits older pre-schoolers who already enjoy public skating and want to learn properly; the club also hosts the annual Narva Spring competition.",
+    "tips": "Ask about beginner intake via the club website or the Narva Paemurru sports school, which runs the ice hall.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Fees not published online; ask the club."
+    },
+    "discounts": [],
+    "hours": "Weekday afternoons at Narva Ice Hall; season September-May",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": null,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Russian, Estonian",
+    "website": "https://iknarva.com/",
+    "lastVerified": null,
+    "confidence": "low",
+    "parkingInfo": {
+      "available": null,
+      "cost": null,
+      "operator": null,
+      "pargiSupported": null,
+      "zone": null,
+      "note": null
+    },
+    "sources": [
+      "https://iknarva.com/",
+      "https://www.spordiregister.ee/et/ehitis/1623/narva_paemurru_spordikooli_jaahall",
+      "https://www.uisuliit.ee/iluuisutamine/voistlused/eul-kalenderplaan-2025-2026",
+      "https://en.wikipedia.org/wiki/Narva_Ice_Hall"
+    ],
+    "phone": "+372 356 6181",
+    "email": "npsk@npsk.ee",
+    "activities": [
+      "skating"
+    ]
+  },
+  {
+    "id": "kuutsemae-ski-school-otepaa",
+    "name": "Kuutsemäe Ski School",
+    "nameLocal": "Kuutsekase suusakool",
+    "category": "class",
+    "setting": "outdoor",
+    "season": "winter",
+    "area": "Kuutsemäe",
+    "city": "Otepää",
+    "address": "Kuutsemäe suusakeskus, Arula küla, Otepää vald",
+    "lat": 58.03,
+    "lng": 26.242,
+    "ageMinMonths": 36,
+    "ageMaxMonths": 216,
+    "description": "One of Estonia's main downhill ski centres near Otepää, whose ski school offers separate playful snow sessions for little ones from age 3. Children under 7 ski free on the slope with an adult holding a valid lift ticket, so a family first-skiing weekend is affordable.",
+    "tips": "Book ski-school lessons online ahead of winter weekends and school holidays; helmets are compulsory for all pupils.",
+    "price": {
+      "free": false,
+      "adult": null,
+      "child": null,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Private lesson EUR 45 / 50 min (1 person), EUR 80 / 1 h 40 min; lift card needed (EUR 6 if you don't have one). Under-7s ski free with an adult who has a valid lift ticket."
+    },
+    "discounts": [
+      "Under-7s free on the slopes with a ticketed adult"
+    ],
+    "hours": "Winter season (usually December-March), daily when the slopes are open",
+    "durationMinutes": 50,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": true,
+      "parking": true
+    },
+    "transport": null,
+    "language": "Estonian, English, Russian",
+    "website": "https://kuutsekas.ee/maeinfo/suusakool/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "parkingInfo": {
+      "available": true,
+      "cost": null,
+      "operator": "Kuutsemäe",
+      "pargiSupported": null,
+      "zone": null,
+      "note": "Car park at the ski centre."
+    },
+    "sources": [
+      "https://kuutsekas.ee/maeinfo/suusakool/",
+      "https://kuutsekas.ee/hinnakiri/",
+      "https://puhkaeestis.ee/et/kuutsemae-suusakeskus"
+    ],
+    "phone": null,
+    "email": null,
+    "activities": [
+      "skiing"
+    ]
   }
 ]

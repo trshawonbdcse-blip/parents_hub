@@ -1648,5 +1648,403 @@
       "Muuseumikaart kehtib"
     ],
     "parkingNote": null
+  },
+  "nord-sport-baby-swimming-elamus-spa-tallinn": {
+    "description": "Iganädalased rühmatunnid Elamus Spa soojas lastebasseinis: beebide ja väikelastega on vanem vees kaasas, umbes 4-aastastest alates juhendab treener lapsi üksi. Tunnid kasvatavad mängude, laulude ja harjutustega veekindlust ning sobivad peredele, kes otsivad Mustamäel püsivat nädalatundi.",
+    "tips": "Registreeru nordsport.ee kaudu; kohad täituvad kuutasuga, nii et küsi vabu kohti enne kuu algust.",
+    "hours": "Iganädalased tunnid tööpäevadel ja nädalavahetustel; hooaeg septembrist maini, suvel kursused",
+    "priceNote": "Kuutasu: 1 tund nädalas EUR 58, 2 korda EUR 64, 3 korda EUR 97 (+ ühekordne registreerimistasu EUR 5.09). Kontrolli hindu nordsport.ee-s.",
+    "discounts": [],
+    "parkingNote": "Parkla spaa hoone juures."
+  },
+  "orca-swim-club-baby-swimming-tallinn": {
+    "description": "Beebitunnid (4–24 kuud) ja väikelaste tunnid (2–4 aastat) toimuvad kord nädalas koos vanemaga vähemalt 32-kraadises lastebasseinis. Orca treenib Tallinnas Sõle ujulas ja Peetris Järveküla ujulas (Rae vald), mis sobib hästi lõunapoolsete eeslinnade peredele.",
+    "tips": "Registreeru rühma orca.ee kaudu; tasu on kuupõhine ja klubi KKK selgitab, mida esimeseks tunniks kaasa võtta.",
+    "hours": "Kord nädalas, tööpäeva- ja nädalavahetuse ajad; hooaeg kooliaasta järgi",
+    "priceNote": "Kuutasu 1 tunni eest nädalas: Sõle ujulas EUR 40, Järveküla ujulas (Reti tee 20, Peetri) EUR 48.",
+    "discounts": [],
+    "parkingNote": "Parkimine spordikeskuse juures."
+  },
+  "massage-college-baby-swimming-kadaka-tallinn": {
+    "description": "Väike erabassein, kus vesi on üle 30 kraadi ja kogenud lastejuhendaja juhendab korraga kõige rohkem kahte beebit koos vanematega. Väga väike rühm teeb sellest rahuliku esimese sammu pisikestele beebidele ja vanematele, kes tunnevad end suures ujulas ebakindlalt.",
+    "tips": "Broneeri aeg telefoni või e-posti teel; parkimine on parkimiskellaga või administraatori juures auto registreerides 2 tundi tasuta. Võta kaasa ujumismähe ja rätik.",
+    "hours": "Tööpäeviti päevased ajad broneeringu alusel",
+    "priceNote": "Hinda otsingutulemustes ei olnud; küsi broneerides.",
+    "discounts": [],
+    "parkingNote": "Parkimiskellaga või administraatori juures auto numbri registreerimisel 2 tundi tasuta."
+  },
+  "ltkh-haabersti-baby-swimming-tallinn": {
+    "description": "Haigla taastusravikeskus korraldab beebidele ja väikelastele 30-minutilisi rühmatunde koos vanemaga 1,2 m sügavuses 32–34-kraadises basseinis, rühmad on jagatud vanuse järgi. See on meditsiiniasutuse lihtne ja asjalik valik, kus on ka individuaaltunnid kõige pisematele.",
+    "tips": "Registreeru telefonil 626 1314 või tervisekeskuse registratuuris.",
+    "hours": "Tööpäeviti rühmatunnid vanuserühmade kaupa",
+    "priceNote": "Hinnakiri alates 01.09.2025: beebide basseinitreening EUR 15 kord; 20-min imiku vanniujutamine EUR 25.",
+    "discounts": [],
+    "parkingNote": "Parkimine tervisekeskuse juures."
+  },
+  "viimsi-spa-baby-swimming-viimsi": {
+    "description": "Esmaspäeviti väikesed kuni neljast beebist ja vanemast koosnevad rühmad spaa lastebasseinis, juhendab füsioterapeut Svea Miller. Väga väike rühm sobib pisikestele beebidele ja Viimsi poolsaare peredele.",
+    "tips": "Registreeru eelnevalt treeneri juures telefonil +372 5191 8315.",
+    "hours": "Esmaspäeviti 17:00 ja 17:30 (30-minutilised tunnid)",
+    "priceNote": "EUR 13 laps (klubiliikmele EUR 11); hinnakirjas on beebide ujutamine eelregistreerimisega ka EUR 15.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "paikesetants-baby-swimming-nomme-tallinn": {
+    "description": "Rühmatunnid beebidele ja väikelastele koos vanemaga Nõmme ujulas, eraldi algajatele ja kogenumatele pisiujujatele. Kauaaegne peretegevuste pakkuja, kellel on ka kodused vanniujutamise tunnid.",
+    "tips": "Algajad beebid käivad teisipäeva hommikustes rühmades; esmaspäeva õhturühm on juba ujumiskogemusega beebidele ja väikelastele. Puudumisest teata õpetajale e-posti või SMS-iga.",
+    "hours": "E 18:30 (kogenumad); T 10:00 ja 12:00 (algajad)",
+    "priceNote": "Rühmatundide hinnad tõusid alates 10.10.2025; vaata hinnakirja paikesetants.ee-s.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "reval-sport-baby-swimming-tallinn": {
+    "description": "30-minutilised tunnid koos vanemaga eraldi 32-kraadises beebibasseinis (sügavus 1–1,2 m) suures kesklinna spordi- ja veekeskuses. Lihtsad kordade kaardid teevad tundide sobitamise beebi päevarütmiga lihtsaks.",
+    "tips": "Registreeru kliendikeskkonnas või telefonil 641 2068. Klubi hoovis on tunni ajal parkimine tasuta, kui kohti on.",
+    "hours": "Mitu aega tööpäevadel ja nädalavahetusel",
+    "priceNote": "Ühekordne külastus EUR 10; 8 korra kaart EUR 59 (kehtib 90 päeva). Eestikeelsel lehel EUR 9 / EUR 56 – kontrolli hinda.",
+    "discounts": [],
+    "parkingNote": "Klubi hoovis tunni ajal tasuta, kui kohti on."
+  },
+  "tabasalu-baby-swimming-tabasalu": {
+    "description": "Neljapäeva hommikuti kuni 10 beebist ja vanemast koosnevad rühmad lastebasseinis, mis on tunni ajal teistele suletud. Rühmad on 3–7-kuustele ja 8 kuu kuni 1,5-aastastele, piisava huvi korral ka segarühm.",
+    "tips": "Broneeri koht ette telefonil +372 5850 9340 või e-posti teel; ujumismähe on piletihinna sees.",
+    "hours": "Neljapäeviti 9:20–11:20 (40-minutilised vanuserühmad)",
+    "priceNote": "Üksikpilet (laps + vanem, ujumismähe hinnas) EUR 10; 5 piletit EUR 43.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "laspa-baby-swimming-laulasmaa": {
+    "description": "Neljapäeviti tunnid spaa 32–33-kraadises laste- ja lõõgastusbasseinis, vanuserühmad 3–6-kuustest kuni 1,5–3-aastasteni, vanem on vees kaasas. Sobib hästi Lääne-Harjumaa peredele ning pärast tundi saab mereäärses spaas perega edasi ujuda.",
+    "tips": "Registreeru juhendaja Riin Hiievali juures e-posti teel; tunnid on kuutasuga, kuid vabade kohtade korral saab tulla ka üksikule tunnile.",
+    "hours": "Neljapäeviti 10:30, 11:00, 11:30, 12:00, septembrist maini (koolivaheaegadel mitte)",
+    "priceNote": "Kuutasu (summat pole avaldatud); vabade kohtade korral ka üksiktunnid. 0–12-kuused beebid külastavad veekeskust tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "lusti-baby-swimming-kurtna": {
+    "description": "Esmaspäeva hommikuti tunnid vaikses 32–33-kraadises lasteaia basseinis: beebirühmad (3–11 kuud) ja väikelaste rühm (1–3 aastat) koos vanemaga. Väike rahulik bassein sobib beebidele, kellele suured ujulad on liiga lärmakad või kloorised.",
+    "tips": "Sisene lasteaia tagaküljelt parkla poolt klaasuksest ja mine keldrikorrusel asuvasse basseini. Proovitund ainult vabade kohtade olemasolul.",
+    "hours": "Esmaspäeviti alates 21.09.2026: beebid 9:00, 9:30, 10:30; väikelapsed 10:00 (30-minutilised tunnid)",
+    "priceNote": "Kuupakett 4 tundi EUR 42; üksik-/proovitund EUR 13 vabade kohtade korral.",
+    "discounts": [],
+    "parkingNote": "Parkla lasteaia taga."
+  },
+  "sk-fortuna-baby-swimming-juri": {
+    "description": "Iganädalased beebirühmad (3–7 kuud ja 8–18 kuud) koos vanemaga Jüri spordihoone 31–32-kraadises lastebasseinis. Mugav valik Rae valla peredele; klubil on beebirühmad ka Kosel.",
+    "tips": "Registreeru klubi kodulehe registreerimislehe kaudu; 2026/2027 hooaja registreerimine on avatud.",
+    "hours": "Iganädalased tunnid kooliaasta jooksul",
+    "priceNote": "EUR 39 kuus (Jüri rühmad).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "aura-baby-swimming-tartu": {
+    "description": "Tartu peamises veekeskuses toimuvad treeneri juhendatud tunnid ilma eelregistreerimiseta: 30-minutiline beebide ujutamine (umbes 2-aastaseni) ja 40-minutiline väikelaste ujumine 2–4-aastastele, mõlemas vanem vees kaasas. Beebid õpivad selili ja kõhuli hõljuma ning vee alla minema.",
+    "tips": "Tule lihtsalt kohale – registreerima ei pea. Vaata kehtivat tunniplaani aurakeskus.ee-st, sest suvel ja kooliaastal on ajad erinevad.",
+    "hours": "Mitu tööpäeva hommikust tundi (nt E 10:15); vaata tunniplaani",
+    "priceNote": "Beebide ujutamine EUR 9, väikelaste ujumine EUR 10 tund (hinnad alates 01.08.2026).",
+    "discounts": [],
+    "parkingNote": "Keskuse ümbruses tasuline kesklinna parkimine."
+  },
+  "medicum-baby-swimming-tartu": {
+    "description": "Füsioterapeudi juhendatud beebiujumine 32–34-kraadises vees laste taastusravikliinikus (endine Babysport) alates teisest elukuust; vees on üks vanem ja rühmad on vanuse järgi. Saab saatekirjaga või tasulise teenusena, seega sobib ka beebidele, kes vajavad lihastoonuse toetust.",
+    "tips": "Broneeri aeg registratuurist telefoni või e-posti teel; füsioterapeudi juhendatud ujumisel peab laps kaaluma vähemalt 7 kg, lisaks on ka pereujumise ajad.",
+    "hours": "Kliinik E–N 9–17, R 9–16",
+    "priceNote": "Kehtivat hinda ei leitud; saatekirjaga või tasulise teenusena.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "beebipuut-baby-swimming-arena-tartu": {
+    "description": "Väikesed hommikused rühmad umbes 2–8-kuustele ja 9 kuu kuni 1,5-aastastele beebidele koos vanemaga Arena 31-kraadises lastebasseinis. Korraldab Tartu beebi- ja rasedate joogastuudio Beebipuut, tunde broneeritakse veebis ükshaaval.",
+    "tips": "Broneeri ja maksa iga tund Beebipuudi tunniplaanis; tühistada saab kuni 2 tundi enne algust, täis tundide puhul saab ootenimekirja. Juunist augustini tunde ei toimu.",
+    "hours": "Hommikuti 10:00, 10:30 ja 11:00, septembrist maini",
+    "priceNote": "Üksiktund EUR 14.10 + teenustasu EUR 0.94; tasumine ülekandega broneerimisel.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "babyfloat-tartu": {
+    "description": "Beebispaa, kus spetsialistid juhendavad beebide hõljumist eraldi minivannides, lisaks on rühma- ja pereujutamise tunnid basseinis. Sobib kõige pisematele beebidele, enne kui nad on valmis avalikuks ujulaks.",
+    "tips": "Broneeri veebis (SumUp / Veebiregistratuur) või telefonil; nädalavahetusel ainult broneeringuga.",
+    "hours": "E–R 9:30–17:00; nädalavahetusel broneeringuga",
+    "priceNote": "Broneerimislehe andmed (ametlikul lehel kinnitamata): basseinis rühma beebiujumine 45 min EUR 25, perekord EUR 45, minivanni rühm EUR 24, individuaalne EUR 38.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "orca-swim-club-baby-swimming-parnu": {
+    "description": "Iganädalased beebide (4–24 kuud) ja väikelaste (2–4 aastat) tunnid koos vanemaga linna Raja lasteaia-ujulas. Üks väheseid korraldatud beebiujumise võimalusi Pärnus.",
+    "tips": "Registreeru rühma orca.ee kaudu; Raja ujula on suvel suletud, seega kursused käivad kooliaasta järgi.",
+    "hours": "Kord nädalas kooliaasta jooksul",
+    "priceNote": "Raja beebi-/väikelaste ujumine EUR 30 või 40 kuus (hinnakirjast ei selgu, kumb on kumb).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "gold-swim-baby-swimming-kohtla-jarve": {
+    "description": "Vanema ja lapse rühmad 0–2- ja 2–4-aastastele väikeses 32-kraadises basseinis Wiru spordikeskuses. Gold Swim on üks vähestest Ida-Virumaa klubidest, kus toimub regulaarne beebi- ja väikelaste ujumine.",
+    "tips": "Rühma pääsemiseks ja kehtivate aegade kontrollimiseks helista või kirjuta klubile.",
+    "hours": "0–2 a: T ja N 10:15–11:00; 2–4 a: T ja N 19:00–19:45, P 16:30–17:15",
+    "priceNote": "Kohtla-Järve rühmad alates EUR 70 kuus (beebirühma kohta kinnitamata).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "aqva-spa-baby-swimming-rakvere": {
+    "description": "Iganädalased beebide ujutamise tunnid veekeskuse beebi- ja lastebasseinis, rühmad 0–1- ja 1–2-aastastele koos vanemaga. Hooaeg 2026/2027 algas 14. septembril 2026.",
+    "tips": "Küsi veekeskusest kehtivat tunniplaani ja registreerimise korda (+372 326 0010).",
+    "hours": "Eelmisel hooajal E ja K, 0–1 a kell 11:00, 1–2 a kell 12:00 (kontrolli 2026/27 aegu)",
+    "priceNote": "Hinda otsingutulemustes ei olnud; küsi veekeskusest.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "suure-jaani-tervisekoda-baby-swimming": {
+    "description": "Iganädalased 30-minutilised beebide ujumise tunnid koos vanemaga väikelinna veekeskuses: algajate rühm ja rühm algkursuse läbinud beebidele. Lähim korraldatud beebiujumine, mille Viljandimaa peredele leidsime.",
+    "tips": "Eelregistreerimine telefonil 432 8124 on kohustuslik; koolivaheaegadel tunde ei toimu.",
+    "hours": "N 10:10 (algkursuse läbinud), R 11:00 (algajad)",
+    "priceNote": "Üks külastus (2 h, sh 30 min beebiujumist) EUR 8; 10 korra kaart EUR 59 (kehtib 90 päeva).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kullo-mudilaskool-tallinn": {
+    "description": "Tallinna huvikeskuse Kullo iganädalane poolepäevane hommikurühm, kus 4-aastased joonistavad, meisterdavad, laulavad ja liiguvad koos ilma vanemata. Sobib lapsele, kes on valmis lühikeseks ajaks rühma minema, ja valmistab pehmelt ette 5- ja 6-aastaste eelkoolirühmadeks.",
+    "tips": "Registreeru linna huvikoolide süsteemis LAUR või Kullo kodulehel; õppeaasta kestab septembrist maini ja järgmise aasta kohad täituvad kevadel.",
+    "hours": "Teisipäeva hommikuti 9:00-12:15 (2025/26 tunniplaan); september-mai",
+    "priceNote": "Kuutasu; 2024. aasta lehel EUR 45 kuus (kontrolli 2026/27 hinda). Kullo huviringid maksavad üldiselt EUR 26-118 kuus.",
+    "discounts": [
+      "Huvikooli tasudelt võib saada tulumaksutagastust"
+    ],
+    "parkingNote": null
+  },
+  "talveunistus-skating-school-tallinn": {
+    "description": "Tondiraba jäähallis tegutsev iluuisutamiskool, kuhu võetakse algajaid alates 3. eluaastast; 3-5-aastastele on eraldi esimese aasta rühm, kus mänguliselt õpitakse seisma, turvaliselt kukkuma ja libisema. Lapsed on jääl treeneriga ja vanemad vaatavad tribüünilt, seega sobib see julgemale eelkooliealisele.",
+    "tips": "Kaks esimest trenni on tasuta; registreeru kooli kodulehel ning võta kaasa soojad riided, kindad ja kiiver.",
+    "hours": "Tööpäeva pärastlõunad ja nädalavahetused Tondirabas; hooaeg september-mai",
+    "priceNote": "2025/26: 3-5-aastased algajad (esimene aasta) EUR 85 kuus, 2 trenni nädalas; teised rühmad alates EUR 60 kuus 1 trenni eest nädalas. Puudutud kuu kohatasu EUR 45.",
+    "discounts": [
+      "2 esimest trenni tasuta",
+      "Õe-venna soodustus 50% (2+ uisutajat ühest perest)",
+      "Tulumaksutagastus (koolitusluba olemas)"
+    ],
+    "parkingNote": "Jäähalli juures on suur parkla."
+  },
+  "rocca-al-mare-skating-school-tallinn": {
+    "description": "Haabersti jäähallis aastaringselt tegutsev uisukool, kuhu oodatakse lapsi alates 3. eluaastast; jäätreeningutele lisandub üldkehaline ettevalmistus saalis. Pisemad õpivad väikestes rühmades treeneriga tasakaalu ja libisemist, vanemad ootavad jäähalli ääres; kodulehel on ka venekeelne leht.",
+    "tips": "Kaks esimest proovitrenni on tasuta; kandideeri kodulehe registreerimisvormi kaudu.",
+    "hours": "Aastaringselt; tööpäeva pärastlõunad ja laupäevad Haabersti jäähallis",
+    "priceNote": "Kuutasu: EUR 90 (1 jäätrenn + 1 ÜKE), EUR 120 (2 + 1), EUR 150 (3 + 1). Tasutakse kooli kabinetis jäähalli 2. korrusel.",
+    "discounts": [
+      "2 esimest proovitrenni tasuta",
+      "Tulumaksutagastus (koolitusluba olemas)"
+    ],
+    "parkingNote": "Parkimine jäähalli juures, Rocca al Mare keskuse kõrval."
+  },
+  "infonet-kids-football-tallinn": {
+    "description": "Suur Tallinna jalgpallikool, mille noorimad rühmad alustavad 3-aastastest ning keskenduvad mängulisele jooksule, palli- ja koordinatsioonimängudele, mitte päris mängudele. Trennid on peamiselt vene keeles ja pisemate rühmad toimuvad mitmes linnaosas (Lasnamäe, Õismäe, Kopli, Mustamäe), suvel õues ja talvel saalides.",
+    "tips": "Uus laps saab tasuta proovitrenni ja klubisärgi; küsi, milline linnaosa saal on 3-5-aastaste rühmale kõige lähemal.",
+    "hours": "Tööpäeva pärastlõunad/õhtud; suvel õues, talvel saalis",
+    "priceNote": "Linna andmetel EUR 85-105 kuus olenevalt rühmast (võib olla aegunud; kontrolli hinda).",
+    "discounts": [
+      "Tasuta proovitrenn"
+    ],
+    "parkingNote": null
+  },
+  "arigato-toddler-gymnastics-tallinn": {
+    "description": "Lapse ja vanema võimlemine Arigato spordiklubis, mida juhendavad Tsirkusekooli treenerid; laupäeviti on eraldi rühmad beebidele (3 kuud-1 aasta) ja väikelastele (1-3 aastat). Vanem on matil kaasas ja aitab lapsel pehmetel vahenditel veereda, roomata, ronida ja tasakaalu hoida; kuni 7-aastased saavad jätkata akrobaatikarühmades.",
+    "tips": "Koha broneerimiseks võta ühendust treener Vello Vaheriga telefoni või e-posti teel; laupäevased rühmad täituvad kõige kiiremini.",
+    "hours": "Laupäeviti 10:00 (3 kuud-1 aasta) ja 11:00 (1-3 aastat)",
+    "priceNote": "Hinda veebis ei ole; küsi treenerilt või Arigato klubist (klubi proovitrenn EUR 5).",
+    "discounts": [],
+    "parkingNote": "Spordiklubi juures on parkla."
+  },
+  "noor-ballett-fouette-studio-tallinn": {
+    "description": "Balletikooli stuudiorühm 3-6-aastastele: lühike iganädalane tund muusika, liikumise ja esimeste balletipositsioonidega, vanem tunnis ei viibi. Pehme ja katseteta sissejuhatus klassikalisse tantsu eelkooliealisele, kes armastab muusikat ja ilusaid riideid.",
+    "tips": "Vastuvõtt 3-6-aastaste stuudiorühmadesse toimub augusti keskpaigast septembri lõpuni ilma katseteta; avaldus e-posti teel.",
+    "hours": "Esmaspäeviti 17:30-18:10 (stuudiorühm); õppeaasta september-mai",
+    "priceNote": "2026/27: EUR 65 kuus ühe tunni eest nädalas.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kaie-korb-ballet-studio-tallinn": {
+    "description": "Endise primabaleriini Kaie Kõrbi loodud laste balletistuudio võtab õpilasi alates 4. eluaastast paljudes kohtades Tallinnas, Viimsis ja Rae vallas. Tundides õpitakse väikestes rühmades rühti, musikaalsust ja balleti põhisamme ning iga aasta lõpeb lastele väga meeldiva lavaetendusega.",
+    "tips": "Uutele õpilastele on esimene tund tasuta; vali endale lähim toimumiskoht (kesklinn, Haabersti, Viimsi Huvikeskus, Viimsi Artium või Peetri).",
+    "hours": "Tööpäeva pärastlõunad; õppeaasta september-mai",
+    "priceNote": "Aastas: EUR 460 (1 tund nädalas) või EUR 660 (2 nädalas); või 9 kuumakset EUR 65 / EUR 85 (2025/26 hinnakiri).",
+    "discounts": [
+      "Esimene tund tasuta",
+      "10% peresoodustus 2+ lapsele"
+    ],
+    "parkingNote": null
+  },
+  "vaike-muusik-music-studio-nomme-tallinn": {
+    "description": "Iganädalased lapse ja vanema muusikatunnid Nõmme Kultuurikeskuses kolmes vanuserühmas (6-11 kuud, 1-1,5 aastat ja 1,5-2,5 aastat): laulmine, rütmimängud, väikesed pillid ja liikumine. Igale 30-minutilisele tunnile järgneb 20 minutit vaba mängu, nii et see on lõõgastav viis teiste peredega tutvuda.",
+    "tips": "Registreeru Nõmme Kultuurikeskuse kaudu; rühmad on väikesed, seega registreeru sügisel varakult.",
+    "hours": "Tööpäeva hommikud, kolm vanuserühma; 30 min tund + 20 min vaba mängu",
+    "priceNote": "EUR 34 kuus (üks tund nädalas).",
+    "discounts": [],
+    "parkingNote": "Parkimine Nõmme keskuses Turu platsi ümbruses."
+  },
+  "mamma-mia-baby-music-peetri": {
+    "description": "30-minutiline rütmika-, laulu- ja liikumistund 1-3-aastastele koos vanemaga Mamma Mia laulustuudios Peetris, Tallinna külje all. Rühmas on 6-10 last, mis sobib Rae valla ja Kagu-Tallinna peredele, kes otsivad rahulikku esimest huviringi.",
+    "tips": "Kui plaanid käia regulaarselt, osta 5 korra kaart; kontrolli stuudio tunniplaanist praegust päeva ja kellaaega.",
+    "hours": "Tööpäeva hommikud (varem teisipäeviti 10:00); kontrolli 2026/27 tunniplaani",
+    "priceNote": "Üks tund EUR 10; 5 korra kaart EUR 50 (kehtib 3 kuud).",
+    "discounts": [],
+    "parkingNote": "Parkimine Peetri keskuse juures."
+  },
+  "laula-ja-kasva-music-circle-keila": {
+    "description": "Muusikaterapeudi juhendatud varajase lapsepõlve muusikaring vanematele koos beebide ja kuni 3-aastaste väikelastega: hällilaulud, lastelaulud, lihtsad pillid ja liikumismängud. Väikesed, ainult eelregistreerimisega rühmad on pehme valik Keila ja Lääne-Harjumaa peredele.",
+    "tips": "Kohtade arv on piiratud ja vaja on eelregistreerimist; uutele huvilistele on esimene tund tasuta.",
+    "hours": "Teisipäeva ja neljapäeva hommikuti kell 10:00; uus hooaeg septembrist",
+    "priceNote": "Kuu liikmetasu EUR 15-20 (3 või 4 tundi kuus) + EUR 7 iga osaletud tunni eest; üksik külastus EUR 15. Esimene tund tasuta. Vanemal lehel on 4 korra kaart EUR 35.",
+    "discounts": [
+      "Esimene tund tasuta"
+    ],
+    "parkingNote": null
+  },
+  "viimsi-huvikeskus-baby-gymnastics-viimsi": {
+    "description": "Esmaspäeva hommikune beebide ja väikelaste võimlemine koos vanemaga Viimsi Huvikeskuses, rühmad 2-7 kuud, 7-15 kuud ja 1-2 aastat. Juhendaja näitab eakohaseid harjutusi ja liikumismänge, mis toetavad veeremist, roomamist ja kõndima hakkamist, ning vanem teeb kõike koos lapsega.",
+    "tips": "Broneeri proovitund huvikeskuse lehel oleva registreerimislingi kaudu; 4 korra kaart kehtib 2 kuud.",
+    "hours": "Esmaspäeviti 9:00 (7-15 kuud), 10:00 (1-2 aastat), 11:00 (2-7 kuud); alates septembrist",
+    "priceNote": "Proovitund EUR 10; üks tund EUR 15; 4 korra kaart EUR 45 (kehtib 2 kuud).",
+    "discounts": [],
+    "parkingNote": "Tasuta parkimine Viimsi Huvikeskuse / kooli juures."
+  },
+  "vimka-ski-school-viimsi": {
+    "description": "Viimsi väikese mäepargi suusakool, Tallinnale lähim nõlv, pakub alates 3-aastastele mängulisi lumetunde õrnal õppenõlval. Pisematele on see pigem suuskadega harjumine ja lumel liikumine kui päris tehnika, mis on esimeseks katseks just paras.",
+    "tips": "Broneeri tunnid veebis, kui nõlv avatakse (tavaliselt jaanuaris, kui lund on), ja võta kaasa kiiver; varustust saab kohapeal rentida.",
+    "hours": "Ainult talvehooajal, kui on lund; nädalavahetused ja mõned tööpäeva pärastlõunad",
+    "priceNote": "Väikelaste (3+) rühmaõpe oli EUR 9 kord või 5 korda EUR 45; väikerühm (2-3 last) EUR 40 inimese kohta / 50 min, lisaks EUR 5 varustus. Kontrolli selle hooaja hinnakirja.",
+    "discounts": [],
+    "parkingNote": "Mäe juures on parkla."
+  },
+  "cfc-ski-school-pirita-tallinn": {
+    "description": "Olümpiamedalist Jaak Mae klubi murdmaasuusakool, kus 4-6-aastaste rühm treenib aastaringselt: sügisel jooks ja pallimängud, lume korral suusatamine Pirital. Treenerid hoiavad trenni mängulisena, nii et see sobib aktiivsele õues liikuda armastavale eelkooliealisele.",
+    "tips": "Esimene nädal on tasuta proovimiseks; registreeru cfc.ee lehel ja küsi treenerilt 4-6-aastaste rühma päevi.",
+    "hours": "Tööpäeva pärastlõunad aastaringselt; talvel lumel",
+    "priceNote": "4-6-aastaste rühm EUR 40 kuus (lasterühmade leht); suusakooli üldine tasu EUR 50 kuus. Arve iga kuu.",
+    "discounts": [
+      "Tasuta proovinädal",
+      "Tulumaksutagastus treeningutasudelt"
+    ],
+    "parkingNote": "Parkimine Pirita Spordikeskuse juures."
+  },
+  "piruett-dance-gymnastics-tallinn": {
+    "description": "Võimlemisklubi, mille noorimad tantsulise võimlemise rühmad (alates 4. eluaastast) ühendavad põhivõimlemise, venitused ja tantsu muusika saatel. Sisseastumiskatseid ei ole, nii et sobib igale aktiivsele eelkooliealisele; rühmad on ka Jüris (Rae Spordikeskus) ja Arukülas.",
+    "tips": "Pakutakse tasuta proovitrenni; liitumisel tuleb tasuda ühekordne EUR 10 sisseastumismaks.",
+    "hours": "Tööpäeva hommikud (nt T 10:30) ja pärastlõunad; õppeaasta september-mai",
+    "priceNote": "Umbes EUR 80-90 kuus 4-6- ja 5-6-aastaste rühmades (2025/26); sisseastumismaks EUR 10.",
+    "discounts": [
+      "Tasuta proovitrenn"
+    ],
+    "parkingNote": null
+  },
+  "kinderdom-studio-lasnamae-tallinn": {
+    "description": "Väike arendav stuudio Lasnamäel, kus on beebikool / muusika emaga 9 kuu kuni 2,5-aastastele, lisaks kunstiteraapia ja sensoorne mäng ning eesti ja inglise keel pisikestele. Tunnid on lühikesed (30-45 minutit), pärast on vaba mäng, ja stuudio töötab nii vene- kui ka eestikeelsete peredega.",
+    "tips": "Broneeri individuaaltunnid stuudio Setmore'i lehel; rühmade tunniplaani küsi Instagramis või telefonitsi.",
+    "hours": "Tööpäeva hommikud ja pärastlõunad tunniplaani järgi",
+    "priceNote": "Beebide muusikarühm EUR 10 30-minutilise tunni eest (+15 min vaba mängu); individuaalne inglise keel 45 min EUR 25.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "pingus-english-tallinn": {
+    "description": "Väikelastele mõeldud ingliskeelne kool, mis kasutab mängulist Pingu's English meetodit: väikesed rühmad õpivad laulude, mängude, juttude ja Pingu tegelaste abil ning õpetaja räägib ainult inglise keelt. Sobib peredele, kes soovivad, et eelkooliealine hakkaks varakult inglise keelt omandama; samal organisatsioonil on ingliskeelsed eelkoolid ka Kadriorus ja Rocca al Mares.",
+    "tips": "Küsi koolist proovitundi ja kursuste tunniplaani; kursused järgivad õppeaastat.",
+    "hours": "Tööpäeva pärastlõunad; kursused järgivad õppeaastat",
+    "priceNote": "Kursuse hind pole avalik; küsi koolist. (Rocca al Mare poolepäevane ingliskeelne eelkool alates EUR 185 kuus 1 päeva eest nädalas.)",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "fysiongel-baby-gym-kopli-tallinn": {
+    "description": "Füsioterapeudi juhendatud liikumistunnid beebidele ja väikelastele koos vanemaga, väikestes rühmades arengutaseme järgi (pisimad beebid, esimesed liigutused, roomajad). Sobib, kui soovid pehmet asjatundlikku juhendamist motoorse arengu kohta ja võimalust füsioterapeudilt küsida.",
+    "tips": "Broneeri ette Fysiongeli kodulehel; küsi, milline kolmest esmaspäevasest rühmast sobib sinu lapse arengutasemega.",
+    "hours": "Esmaspäeviti 10:00, 10:45 ja 11:30 (kolm arengurühma)",
+    "priceNote": "EUR 15 tund; kuukaart EUR 50.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "akros-toddler-gymnastics-tartu": {
+    "description": "Tartu suure võimlemisklubi väikelaste võimlemine ilma eelregistreerimiseta: alates 1-aastased lapsed jooksevad, hüppavad, ronivad ja veerevad mattidel, batuutidel ja pehmetel klotsidel, alla 7-aastastega on kaasas vanem või saatja. Tasub ainult laps ja ette registreerima ei pea, nii et see on lihtne nädalavahetuse tegevus.",
+    "tips": "Eelregistreerimist pole vaja; vaata klubi tunniplaanist Tuglase 14 ja NET-i saali aegu.",
+    "hours": "Mitu korda nädalas, ka nädalavahetustel; vaata tunniplaani",
+    "priceNote": "2025/26: mitteliikmele EUR 10 kord, Akrose liikmele EUR 6; vanem/saatja tasuta (tasutakse ainult lapse eest alates 1 a).",
+    "discounts": [
+      "Vanem/saatja tasuta",
+      "Klubi liikmetele soodsam"
+    ],
+    "parkingNote": null
+  },
+  "karlova-beebipill-tartu": {
+    "description": "Sõbralik kogukondlik muusikaring Karlovas, kus vanemad laulavad ja mängivad lihtsaid pille koos beebide (0-2) ja väikelastega (2-4). Mitme nädalase aja ja soodsa kuutasuga on see üks lihtsamaid regulaarseid beebitegevusi Tartus.",
+    "tips": "Registreeru e-posti teel; teisipäeva ja kolmapäeva päevased ajad on 0-2-aastastele, kolmapäeva õhtused 2-4-aastastele.",
+    "hours": "0-2 a: T 10:30, 11:30, 13:00 ja K 10:00, 11:00, 12:30; 2-4 a: K 17:30 ja 18:30",
+    "priceNote": "EUR 21 kuus.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "tartu-loodusmaja-nature-adventurers-tartu": {
+    "description": "Tartu loodusmaja loodusring 3-7-aastastele, kus lapsed avastavad mänguliselt maja parki, loomi ja taimi ning teevad lühikesi õuetegevusi. Lapsed käivad ilma vanemata vanuserühmades ja ringiga alustades peab laps olema saanud 3-aastaseks.",
+    "tips": "Registreeru õppeaastaks loodusmaja kodulehel; eelkooliealiste tund kestab 60 minutit kord nädalas.",
+    "hours": "Tööpäeva pärastlõunad, kord nädalas (vaata tunniplaani); õppeaasta september-mai",
+    "priceNote": "EUR 30 kuus.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "tartu-skating-school-tartu": {
+    "description": "Tartu iluuisutamisklubi treenib Lõunakeskuse jäähallides ja sellel on ettevalmistav rühm 3-5-aastastele algajatele. Pisikesed uisutajad õpivad treeneriga jääl mänguliselt tasakaalu ja libisemist ning klubi enda uisupood Lõunakeskuses aitab sobivad uisud valida.",
+    "tips": "Küsi ettevalmistava rühma kohta e-posti või telefoni teel; osta kohe algusest korralikult sobivad uisud.",
+    "hours": "Tööpäeva pärastlõunad jääl ja areeni väikeses saalis; hooaeg september-mai",
+    "priceNote": "Noorima rühma kuutasu EUR 85 (klubi rühmade info).",
+    "discounts": [],
+    "parkingNote": "Tasuta parkimine Lõunakeskuse juures."
+  },
+  "tahtvere-dance-centre-tartu": {
+    "description": "Tähtvere suur tantsukeskus võtab lapsi alates 3. eluaastast kord nädalas toimuvatesse eelkooli tantsurühmadesse, mis põhinevad muusikal, rütmil ja lihtsatel tantsumängudel. See on hea vahesamm hilisemaks rahva-, moodsa või seltskonnatantsu juurde ning lapsed tantsivad ilma vanemateta.",
+    "tips": "Registreeru sügisperioodiks kodulehel; kuutasule lisandub ühekordne sisseastumistasu ja väike aastatasu.",
+    "hours": "Tööpäeva pärastlõunad; õppeaasta september-mai",
+    "priceNote": "2025/26: eelkooli tants EUR 33 kuus (1x nädalas) või EUR 43 (2x nädalas); sisseastumistasu EUR 15, edaspidi EUR 8 aastas.",
+    "discounts": [
+      "25% soodustus 2+ põhitunnile (õed-vennad)"
+    ],
+    "parkingNote": null
+  },
+  "laulupesa-baby-singing-tartu": {
+    "description": "Laste laulustuudio oma mängupesaga, kus on beebide ja väikelaste laulurühmad vanusegruppides umbes 3-8 kuust kuni 2-3 aastani. Vanemad laulavad, hüplevad ja mängivad koos lapsega ning puudutud tundide eest võib tulla mängupessa mängima.",
+    "tips": "Vaata veebist oma lapse vanuserühma tunniplaani ja kirjuta liitumiseks; puudutud tunde saab kasutada mängupesa külastuseks.",
+    "hours": "Tööpäeva hommikud vanuserühmade kaupa (vaata tunniplaani)",
+    "priceNote": "Beebide laulurühm umbes EUR 20 kuus (vanem teade); kontrolli praeguseid tasusid hinnalehelt.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "vanalinna-beebikool-parnu": {
+    "description": "Pärnu kesklinna beebikool rühmadega 6-12-kuustele ja 1-3-aastastele kõndijatele: kord nädalas muusikatund ning soovi korral loovtund maalimise, kleepimise ja voolimisega. Vanem osaleb koos lapsega, nii et see on pehme sissejuhatus rühmategevustesse.",
+    "tips": "Registreeru enne sügisperioodi telefoni või e-posti teel; loovtunni saab muusikaga ühendada soodsama kuutasuga.",
+    "hours": "Tööpäeva hommikud (kõndijatel muusika esmaspäeviti, kunst kolmapäeviti)",
+    "priceNote": "1-3-aastased: muusika umbes EUR 32-35 kuus; muusika + loovtund umbes EUR 57 kuus (vanemad hinnakirjad; kontrolli).",
+    "discounts": [
+      "Tulumaksutagastus tasudelt"
+    ],
+    "parkingNote": null
+  },
+  "parnu-sports-academy-kalev-tennis-parnu": {
+    "description": "Pärnu spordiakadeemia korraldab umbes 3-4-aastastele lastele 'sinise palli' minitennise rühmi, kus kasutatakse pehmeid palle, väikesi rekette ja palju jooksu- ning püüdmismänge. 8-12-lapselised rühmad treenivad kaks korda nädalas ilma vanemateta, mis sobib energilisele eelkooliealisele.",
+    "tips": "Võta akadeemiaga ühendust enne sügisperioodi; täpsusta, kas laps sobib 3-4- või 4-6-aastaste sinise palli rühma (lehel on alguseks märgitud nii 3 kui ka 4 aastat).",
+    "hours": "Tööpäeva pärastlõunad, kaks korda nädalas; õppeaasta september-mai",
+    "priceNote": "3-4-aastased (sinine pall): EUR 70-80 kuus 2 x 45 min nädalas.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "paasuke-figure-skating-narva": {
+    "description": "Narva iluuisutamisklubi treenib linna jäähallis ja võtab algajaid umbes 5. eluaastast, juhendamine on peamiselt vene keeles. Sobib vanemale eelkooliealisele, kellele juba meeldib vabauisutamine ja kes tahab korralikult õppida; klubi korraldab ka iga-aastast võistlust Narva Spring.",
+    "tips": "Küsi algajate vastuvõtu kohta klubi kodulehe või jäähalli haldava Narva Paemurru Spordikooli kaudu.",
+    "hours": "Tööpäeva pärastlõunad Narva jäähallis; hooaeg september-mai",
+    "priceNote": "Tasusid veebis ei ole; küsi klubist.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kuutsemae-ski-school-otepaa": {
+    "description": "Üks Eesti peamisi mäesuusakeskusi Otepää lähedal, mille suusakool pakub pisikestele alates 3. eluaastast eraldi mängulisi lumetunde. Alla 7-aastased suusatavad nõlval tasuta koos kehtiva mäepiletiga täiskasvanuga, nii et pere esimene suusanädalavahetus on taskukohane.",
+    "tips": "Broneeri suusakooli tunnid veebis enne talviseid nädalavahetusi ja koolivaheaegu; kiiver on kõigile õpilastele kohustuslik.",
+    "hours": "Talvehooaeg (tavaliselt detsember-märts), iga päev, kui nõlvad on avatud",
+    "priceNote": "Eratund EUR 45 / 50 min (1 inimene), EUR 80 / 1 h 40 min; vaja on tõstukikaarti (EUR 6, kui sul seda pole). Alla 7-aastased suusatavad tasuta koos kehtiva mäepiletiga täiskasvanuga.",
+    "discounts": [
+      "Alla 7-aastased nõlval tasuta koos piletiga täiskasvanuga"
+    ],
+    "parkingNote": "Suusakeskuse juures on parkla."
   }
 }
