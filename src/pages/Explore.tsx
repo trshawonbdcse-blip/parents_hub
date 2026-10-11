@@ -15,7 +15,7 @@ export function Explore() {
   const [params, setParams] = useSearchParams()
   const { months } = useChild()
   const [coords, setCoords] = useState<Coords | null>(null)
-  const [locError, setLocError] = useState<string | null>(null)
+  const [locError, setLocError] = useState(false)
   const [sheetOpen, setSheetOpen] = useState(false)
 
   const q = params.get('q') ?? ''
@@ -41,7 +41,7 @@ export function Explore() {
     if (!('geolocation' in navigator)) return
     navigator.geolocation.getCurrentPosition(
       (pos) => setCoords({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-      () => setLocError(t('Location not available — sorted by name.')),
+      () => setLocError(true),
       { maximumAge: 300000, timeout: 10000 },
     )
   }, [wantNear, coords])
@@ -137,7 +137,7 @@ export function Explore() {
 
       <p className="result-count">
         {t(results.length === 1 ? '{n} place' : '{n} places', { n: results.length })}
-        {locError && wantNear && !coords ? ` · ${locError}` : ''}
+        {locError && wantNear && !coords ? ` · ${t('Location not available — sorted by name.')}` : ''}
       </p>
 
       <div className="card-grid">
