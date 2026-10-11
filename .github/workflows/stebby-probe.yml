@@ -1,0 +1,21 @@
+name: Stebby probe (manual)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/stebby/probe.sh']
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/stebby/probe.sh || true
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B stebby-probe
+          git add -f scripts/stebby/probe
+          git commit -m "Stebby probe $(date -u +%F)"
+          git push -f origin stebby-probe
