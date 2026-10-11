@@ -11,12 +11,8 @@ const places = JSON.parse(fs.readFileSync('src/data/places.json', 'utf8'))
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
-const QUERY = `query searchQuery($filters: SearchFiltersGraphQLInputType, $limit: Int, $page: Int, $language_abbr: String) {
-  data: SearchQuery(filters: $filters, limit: $limit, page: $page, language_abbr: $language_abbr) {
-    data { id hash type name latitude longitude address city pos_name pos_hash service_categories ticket_starting_from }
-    total
-  }
-}`
+// Exactly the query app.stebby.eu sends.
+const QUERY = "query searchQuery($filters: SearchFiltersGraphQLInputType, $limit: Int, $page: Int, $orderBy: SearchOrderByTypeGraphQLEnumType, $direction: DirectionTypeEnum, $country_abbr: String, $language_abbr: String) {\n  data: SearchQuery(\n    filters: $filters\n    limit: $limit\n    page: $page\n    order_by: $orderBy\n    direction: $direction\n    country_abbr: $country_abbr\n    language_abbr: $language_abbr\n  ) {\n    data {\n      ...UserSearchResult\n      __typename\n    }\n    total\n    totals {\n      pos\n      service\n      event\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment UserSearchResult on SphinxResultGraphQLType {\n  id\n  hash\n  type\n  name\n  latitude\n  longitude\n  mobile_cover_url\n  description\n  open_by_prior\n  is_virtual\n  open_status\n  open_from\n  open_to\n  address\n  city\n  country_code\n  is_campaign\n  is_compensated\n  pos_name\n  pos_hash\n  ticket_starting_from\n  service_categories\n  distance_from_user\n  is_est_tax_exemption\n  start_at\n  end_at\n  is_favourite\n  __typename\n}"
 
 let cookie = ''
 let xsrf = ''
@@ -39,16 +35,19 @@ async function search(keyword) {
     query: QUERY,
     variables: {
       filters: { categories: [], countries: [], cities: [], boolean_filters: [], distance_from_user: null, location: null, type: null, area: null, price_from: null, price_to: null, keyword },
+      orderBy: null,
+      direction: null,
       page: 1,
       limit: 20,
       language_abbr: 'et-ee',
+      country_abbr: null,
     },
   })
-  const headers = { 'User-Agent': UA, 'Content-Type': 'application/json', Accept: 'application/json', Origin: 'https://app.stebby.eu', Referer: 'https://app.stebby.eu/', 'Accept-Language': 'et-ee' }
+  const headers = { 'User-Agent': UA, 'Content-Type': 'application/json', Accept: 'application/json', Origin: 'https://app.stebby.eu', Referer: 'https://app.stebby.eu/', 'Accept-Language': 'et-ee', 'web-client-version': '86ff721' }
   if (cookie) headers.Cookie = cookie
   if (xsrf) headers['X-XSRF-TOKEN'] = xsrf
   const r = await fetch(API, { method: 'POST', headers, body, signal: AbortSignal.timeout(20000) })
-  if (!r.ok) throw new Error(`HTTP ${r.status}`)
+  if (!r.ok) throw new Error(`HTTP ${r.status} ${(await r.text()).slice(0, 300)}`)
   const j = await r.json()
   if (j.errors?.length) throw new Error(j.errors[0].message)
   return j.data?.data?.data ?? []
