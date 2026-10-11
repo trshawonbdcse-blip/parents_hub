@@ -1,5 +1,6 @@
 import {
   Accessibility,
+  BadgeCheck,
   ArrowLeft,
   Baby,
   Bookmark,
@@ -32,6 +33,7 @@ import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
 import { translate as tr, useT } from '../lib/i18n'
 import { placeText } from '../lib/placeText'
+import { useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
 
@@ -70,6 +72,7 @@ export function PlaceDetail() {
   const [visitNote, setVisitNote] = useState('')
   const [logged, setLogged] = useState(false)
   const [slide, setSlide] = useState(0)
+  const [hasStebby] = useStebby()
 
   if (!place) {
     return (
@@ -173,6 +176,29 @@ export function PlaceDetail() {
             </p>
           )}
         </section>
+
+        {(place.stebby || hasStebby) && (
+          <div className={`stebby-row ${place.stebby?.accepted ? '' : 'no'}`}>
+            {place.stebby?.accepted ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
+            <div>
+              <strong>
+                {place.stebby?.accepted
+                  ? t('Stebby accepted')
+                  : place.stebby
+                    ? t('Not a Stebby partner')
+                    : t('Stebby: not checked yet')}
+              </strong>
+              <p>
+                {place.stebby?.accepted
+                  ? t('Pay from your Stebby balance in the Stebby app at the venue.')
+                  : place.stebby
+                    ? t('Pay as usual — Stebby can’t be used here.')
+                    : t('Ask at the entrance or check in the Stebby app.')}
+                {place.stebby?.note ? ` ${place.stebby.note}` : ''}
+              </p>
+            </div>
+          </div>
+        )}
 
         <div className="facts">
           <div>

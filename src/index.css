@@ -164,7 +164,13 @@ section > h2, .block > h2 { margin-bottom: 12px; }
 .place-card { position: relative; }
 .place-card-link { display: block; color: inherit; }
 .place-card-media { position: relative; aspect-ratio: 16 / 10; border-radius: var(--r-md); overflow: hidden; background: var(--surface-2); }
-.place-card-media .badge { position: absolute; top: 12px; left: 12px; box-shadow: var(--shadow-1); }
+.place-card-media .media-badges { position: absolute; top: 12px; left: 12px; display: flex; gap: 6px; }
+.place-card-media .badge { box-shadow: var(--shadow-1); }
+.badge-stebby { background: #fff4d6; color: #7a4f00; }
+.stebby-row { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: var(--r-md); background: #fff8e5; color: #5c3d00; font-size: 0.9rem; }
+.stebby-row.no { background: var(--surface-2); color: var(--ink-2); }
+.stebby-row svg { flex: none; margin-top: 2px; }
+.stebby-row p { margin: 2px 0 0; font-size: 0.82rem; opacity: 0.85; }
 .place-card-body { padding: 10px 2px 0; display: flex; flex-direction: column; gap: 3px; }
 .place-card-body h3 { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .price-line { font-size: 0.9rem; color: var(--ink-2); }

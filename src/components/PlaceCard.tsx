@@ -2,6 +2,7 @@ import { Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { categoryLabel, priceSummary } from '../lib/places'
 import { KEYS, useIdList } from '../lib/storage'
+import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Place } from '../types'
 import { PlaceImage } from './ui'
 import { useT } from '../lib/i18n'
@@ -18,13 +19,20 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
   const { t } = useT()
   const favorites = useIdList(KEYS.favorites)
   const fav = favorites.has(place.id)
+  const [hasStebby] = useStebby()
+  const stebby = hasStebby && acceptsStebby(place)
 
   return (
     <article className={`place-card ${variant}`}>
       <Link to={`/place/${place.id}`} className="place-card-link">
         <div className="place-card-media">
           <PlaceImage photo={place.photos?.[0]} category={place.category} />
-          {place.price.free && <span className="badge badge-free">{t('Free')}</span>}
+          {(place.price.free || stebby) && (
+            <span className="media-badges">
+              {place.price.free && <span className="badge badge-free">{t('Free')}</span>}
+              {stebby && <span className="badge badge-stebby">Stebby ✓</span>}
+            </span>
+          )}
         </div>
         <div className="place-card-body">
           <p className="overline">

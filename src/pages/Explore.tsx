@@ -7,6 +7,7 @@ import { ALL, cityName, placesIn, useCity } from '../lib/city'
 import { CATEGORY_ICON } from '../components/ui'
 import { categoryLabel, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Category } from '../types'
 import { useT } from '../lib/i18n'
 
@@ -31,6 +32,8 @@ export function Explore() {
   const seasonOnly = params.get('season') !== '0'
   const sort = params.get('sort') ?? 'name'
   const parking = params.get('parking') ?? 'any'
+  const stebbyOnly = params.get('stebby') === '1'
+  const [hasStebby] = useStebby()
 
   const update = (key: string, value: string | null) => {
     const next = new URLSearchParams(params)
@@ -61,6 +64,7 @@ export function Explore() {
       if (setting === 'indoor' && p.setting === 'outdoor') return false
       if (setting === 'outdoor' && p.setting === 'indoor') return false
       if (free && !p.price.free) return false
+      if (stebbyOnly && !acceptsStebby(p)) return false
       if (category !== 'any' && p.category !== category) return false
       if (area !== 'any' && areas.includes(area) && p.area !== area) return false
       if (ageOnly && !fitsAge(p, months)) return false
@@ -104,6 +108,11 @@ export function Explore() {
         </div>
 
         <div className="chip-row" role="group" aria-label="Quick filters">
+          {(hasStebby || stebbyOnly) && (
+            <button className={`chip ${stebbyOnly ? 'on' : ''}`} onClick={() => toggle('stebby', stebbyOnly)}>
+              Stebby
+            </button>
+          )}
           <button className={`chip ${free ? 'on' : ''}`} onClick={() => toggle('free', free)}>
             {t('Free')}
           </button>

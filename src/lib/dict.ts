@@ -261,5 +261,21 @@ export const DICT: Record<string, Entry> = {
   'Safari → Share → Add to Home Screen': { et: 'Safari → Jaga → Lisa avakuvale', ru: 'Safari → Поделиться → На экран «Домой»' },
   'Chrome → ⋮ → Install app': { et: 'Chrome → ⋮ → Installi rakendus', ru: 'Chrome → ⋮ → Установить приложение' },
   'Money-saving tips': { et: 'Kokkuhoiu nõuanded', ru: 'Как сэкономить' },
+  'Stebby accepted': { et: 'Stebby sobib', ru: 'Принимается Stebby' },
+  'Not a Stebby partner': { et: 'Ei ole Stebby partner', ru: 'Не партнёр Stebby' },
+  'Stebby: not checked yet': { et: 'Stebby: veel kontrollimata', ru: 'Stebby: ещё не проверено' },
+  'Pay from your Stebby balance in the Stebby app at the venue.': {
+    et: 'Maksa kohapeal Stebby äpis oma Stebby saldost.',
+    ru: 'Оплатите на месте из баланса Stebby в приложении Stebby.',
+  },
+  'Pay as usual — Stebby can’t be used here.': { et: 'Maksa tavapäraselt — Stebbyt siin kasutada ei saa.', ru: 'Оплата как обычно — Stebby здесь не принимается.' },
+  'Ask at the entrance or check in the Stebby app.': { et: 'Küsi kohapeal või vaata Stebby äpist.', ru: 'Уточните на входе или в приложении Stebby.' },
+  Benefits: { et: 'Hüved', ru: 'Льготы' },
+  'I have a Stebby account': { et: 'Mul on Stebby konto', ru: 'У меня есть аккаунт Stebby' },
+  'Shows a Stebby badge and filter on places where your employer’s Stebby budget can be used.': {
+    et: 'Näitab Stebby märki ja filtrit kohtades, kus saad kasutada tööandja Stebby eelarvet.',
+    ru: 'Показывает значок и фильтр Stebby в местах, где можно использовать бюджет Stebby от работодателя.',
+  },
+  'See Stebby places': { et: 'Vaata Stebby kohti', ru: 'Места со Stebby' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
 }

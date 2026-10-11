@@ -2,6 +2,8 @@ import { Car, PiggyBank, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { formatAge, moneyTips, parkingRules } from '../lib/places'
 import { useChild } from '../lib/useChild'
+import { useStebby } from '../lib/stebby'
+import { Link } from 'react-router-dom'
 import { LANGS, setLang, useT } from '../lib/i18n'
 import { localizedTips } from '../lib/tipsText'
 import type { MoneyTip } from '../types'
@@ -9,6 +11,7 @@ import type { MoneyTip } from '../types'
 export function Family() {
   const { t, lang } = useT()
   const { name, setName, birthDate, setBirthDate, napStart, setNapStart, months } = useChild()
+  const [hasStebby, setHasStebby] = useStebby()
 
   return (
     <div className="page">
@@ -48,6 +51,20 @@ export function Family() {
         </div>
         <p className="small muted">
           {months !== null ? t('{name} is {age} old.', { name: name || t('Your child'), age: formatAge(months) }) + ' ' : ''}{t('Saved only on this phone.')}
+        </p>
+      </section>
+
+      <section className="block">
+        <h2>{t('Benefits')}</h2>
+        <div className="list-card padded">
+          <label className="switch-row">
+            <span>{t('I have a Stebby account')}</span>
+            <input type="checkbox" role="switch" checked={hasStebby} onChange={() => setHasStebby(!hasStebby)} />
+          </label>
+        </div>
+        <p className="small muted">
+          {t('Shows a Stebby badge and filter on places where your employer’s Stebby budget can be used.')}{' '}
+          {hasStebby && <Link to="/explore?stebby=1">{t('See Stebby places')}</Link>}
         </p>
       </section>
 
