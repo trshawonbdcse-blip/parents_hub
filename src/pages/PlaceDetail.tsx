@@ -178,7 +178,7 @@ export function PlaceDetail() {
           )}
         </section>
 
-        {(stebby || hasStebby) && (
+        {(stebby || (hasStebby && !place.price.free)) && (
           <div className={`stebby-row ${stebby ? '' : 'no'}`}>
             {stebby ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
             <div>

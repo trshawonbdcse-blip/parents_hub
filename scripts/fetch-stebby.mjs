@@ -66,16 +66,26 @@ const words = (s) =>
       .normalize('NFKD')
       .replace(/[^\p{L}\d ]+/gu, ' ')
       .split(/\s+/)
-      .filter((w) => w.length > 2 && !['the', 'and', 'park', 'centre', 'center', 'keskus', 'tallinn', 'tartu', 'pärnu', 'parnu'].includes(w)),
+      .filter((w) => w.length > 2 && !['the', 'and', 'park', 'centre', 'center', 'keskus', 'spa', 'mtü', 'tallinn', 'tartu', 'pärnu', 'parnu', 'narva'].includes(w)),
   )
-const shareWord = (a, b) => [...words(a)].some((w) => words(b).has(w))
+// The partner's own name must start with a word from our place's name ("Aura Keskus" ↔ "Aura water
+// park"), so shops and clinics in the same building or street don't count.
+const firstWord = (s) => [...words(s)][0]
+const sameName = (p, s) => {
+  const w = firstWord(s.pos_name ?? s.name)
+  return Boolean(w) && words(`${p.name} ${p.nameLocal ?? ''}`).has(w)
+}
+// Stebby is a sport and wellbeing budget: only check places where it can realistically apply.
+const RELEVANT = new Set(['swimming', 'class', 'winter-fun', 'indoor-play'])
+// Bump when the matching rules change, so the next build re-checks everything.
+const VERSION = 2
 
 // Short search words: the local name, the English name, and the name without generic words.
 const queries = (p) => [...new Set([p.nameLocal, p.name, [...words(p.nameLocal ?? p.name)].slice(0, 2).join(' ')].filter((q) => q && q.length > 2))]
 
 // The partner list changes slowly: a full check once a week is enough.
 const fresh = previous?.updatedAt && Date.now() - new Date(previous.updatedAt).getTime() < 6 * 864e5
-if (fresh && places.every((p) => previous.checked.includes(p.id)) && !process.env.STEBBY_FORCE) {
+if (fresh && previous.version === VERSION && places.every((p) => previous.checked.includes(p.id)) && !process.env.STEBBY_FORCE) {
   console.log(`Stebby: list from ${previous.updatedAt} is recent; skipping`)
   process.exit(0)
 }
@@ -85,6 +95,10 @@ const matches = {}
 const checked = []
 let failures = 0
 for (const p of places) {
+  if (!RELEVANT.has(p.category)) {
+    checked.push(p.id)
+    continue
+  }
   let best = null
   for (const q of queries(p)) {
     let results
@@ -99,9 +113,7 @@ for (const p of places) {
     for (const s of results) {
       if (!s.latitude || !s.longitude) continue
       const d = metres(p, { lat: Number(s.latitude), lng: Number(s.longitude) })
-      const named = shareWord(`${p.name} ${p.nameLocal ?? ''}`, `${s.name} ${s.pos_name ?? ''}`)
-      // Same building (very close) or similar name nearby.
-      if (d <= 60 || (named && d <= 400)) {
+      if (d <= 400 && sameName(p, s)) {
         if (!best || d < best.distanceM) {
           best = { hash: s.pos_hash ?? s.hash, name: s.pos_name ?? s.name, distanceM: d, categories: s.service_categories ?? [], from: s.ticket_starting_from ?? null }
         }
@@ -122,5 +134,5 @@ if (failures > 15 || checked.length < places.length * 0.8) {
   if (!previous) fs.writeFileSync(OUT, JSON.stringify({ updatedAt: null, checked: [], matches: {} }, null, 1) + '\n')
   process.exit(0)
 }
-fs.writeFileSync(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), checked, matches }, null, 1) + '\n')
+fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: new Date().toISOString(), checked, matches }, null, 1) + '\n')
 console.log(`Stebby: ${Object.keys(matches).length} of ${checked.length} places are partners`)
