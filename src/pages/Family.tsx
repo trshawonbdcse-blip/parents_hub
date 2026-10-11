@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { formatAge, moneyTips, parkingRules } from '../lib/places'
 import { useChild } from '../lib/useChild'
 import { useStebby } from '../lib/stebby'
+import { KEYS, useStored } from '../lib/storage'
 import { Link } from 'react-router-dom'
 import { LANGS, setLang, useT } from '../lib/i18n'
 import { localizedTips } from '../lib/tipsText'
@@ -12,6 +13,7 @@ export function Family() {
   const { t, lang } = useT()
   const { name, setName, birthDate, setBirthDate, napStart, setNapStart, months } = useChild()
   const [hasStebby, setHasStebby] = useStebby()
+  const [goal, setGoal] = useStored<number>(KEYS.weeklyGoal, 2)
 
   return (
     <div className="page">
@@ -52,6 +54,18 @@ export function Family() {
         <p className="small muted">
           {months !== null ? t('{name} is {age} old.', { name: name || t('Your child'), age: formatAge(months) }) + ' ' : ''}{t('Saved only on this phone.')}
         </p>
+      </section>
+
+      <section className="block">
+        <h2>{t('Weekly outing goal')}</h2>
+        <div className="segmented wide">
+          {[1, 2, 3, 4].map((n) => (
+            <button key={n} className={goal === n ? 'on' : ''} onClick={() => setGoal(n)}>
+              {n}
+            </button>
+          ))}
+        </div>
+        <p className="small muted">{t('How many outings a week you’d like. Shown on the Today page.')}</p>
       </section>
 
       <section className="block">

@@ -115,7 +115,8 @@ export function todaysPicks(opts: {
   const indoorOnly = mode === 'indoor'
 
   return (opts.pool ?? places)
-    .filter((p) => fitsAge(p, opts.months) && fitsSeason(p, today))
+    // Courses need booking, so they aren't spontaneous ideas for today.
+    .filter((p) => fitsAge(p, opts.months) && fitsSeason(p, today) && !p.activities?.length)
     .filter((p) => !indoorOnly || p.setting !== 'outdoor')
     .map((p) => {
       let score = dailyNoise(p.id, day)

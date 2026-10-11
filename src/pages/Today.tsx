@@ -2,6 +2,7 @@ import { ChevronRight, CloudRain, CloudSun, Home as HomeIcon, MapPin, PiggyBank,
 import { Link } from 'react-router-dom'
 import rawEvents from '../data/events.json'
 import { CityPicker } from '../components/CityPicker'
+import { MilestoneNudge, WeekendPlan, WeeklyGoal } from '../components/Engage'
 import { PlaceCard } from '../components/PlaceCard'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { eventInCity } from '../lib/events'
@@ -90,6 +91,8 @@ export function Today() {
         </div>
       </section>
 
+      <MilestoneNudge />
+
       <section>
         <div className="section-head">
           <h2>{t('Today\'s ideas')}</h2>
@@ -103,6 +106,10 @@ export function Today() {
           ))}
         </div>
       </section>
+
+      <WeekendPlan />
+
+      <WeeklyGoal />
 
       <section>
         <div className="section-head">

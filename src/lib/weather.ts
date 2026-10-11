@@ -107,3 +107,48 @@ export function useWeather(lat = 59.437, lng = 24.7536) {
 
   return { weather, error }
 }
+
+export interface DayForecast {
+  date: string
+  code: number
+  max: number
+  min: number
+  rain: number
+  label: string
+  mode: OutdoorMode
+}
+
+// Daily forecast for the coming week, used for the weekend plan.
+export function useForecast(lat: number, lng: number) {
+  const [days, setDays] = useState<DayForecast[]>([])
+  useEffect(() => {
+    const controller = new AbortController()
+    const url =
+      `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
+      '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,apparent_temperature_max&forecast_days=7&timezone=Europe%2FTallinn'
+    fetch(url, { signal: controller.signal })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((d) => {
+        const t = d.daily
+        setDays(
+          (t.time as string[]).map((date, i) => {
+            const code = t.weather_code[i] as number
+            const rain = t.precipitation_probability_max[i] ?? 0
+            const feels = Math.round(t.apparent_temperature_max[i])
+            return {
+              date,
+              code,
+              max: Math.round(t.temperature_2m_max[i]),
+              min: Math.round(t.temperature_2m_min[i]),
+              rain,
+              label: describe(code),
+              mode: advise(feels, code, 0, rain).mode,
+            }
+          }),
+        )
+      })
+      .catch(() => {})
+    return () => controller.abort()
+  }, [lat, lng])
+  return days
+}

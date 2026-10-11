@@ -1,7 +1,8 @@
-import { CalendarX, ChevronRight, MapPin } from 'lucide-react'
-import { useState } from 'react'
+import { CalendarPlus, CalendarX, ChevronRight, MapPin } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
+import { useNewEvents } from '../components/Engage'
 import { useCity } from '../lib/city'
 import { cleanPrice, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
@@ -29,12 +30,50 @@ function upcoming(range: Range, city: string, now = new Date()) {
     .sort((a, b) => a.start.localeCompare(b.start))
 }
 
+const townSlug = (s: string) => s.toLowerCase().normalize('NFKD').replace(/\p{M}/gu, '').replace(/[^a-z]+/g, '-')
+
+// One-time calendar subscription: new events then appear in the phone's own calendar.
+function SubscribeCard({ city }: { city: string }) {
+  const { t } = useT()
+  const [copied, setCopied] = useState(false)
+  const file = city === 'all' ? 'all' : townSlug(city)
+  const https = `${location.origin}${location.pathname.replace(/[^/]*$/, '')}ics/${file}.ics`
+  const webcal = https.replace(/^https?:/, 'webcal:')
+  return (
+    <section className="subscribe-card">
+      <CalendarPlus size={22} />
+      <div>
+        <strong>{t('Get new events in your calendar')}</strong>
+        <p className="small">{t('Subscribe once — new kids’ events for your town appear automatically.')}</p>
+        <div className="chip-row">
+          <a className="chip" href={webcal}>
+            {t('iPhone / Mac')}
+          </a>
+          <a className="chip" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`} target="_blank" rel="noreferrer">
+            Google Calendar
+          </a>
+          <button
+            className="chip"
+            onClick={() => navigator.clipboard?.writeText(https).then(() => setCopied(true), () => {})}
+          >
+            {copied ? t('Copied') : t('Copy link')}
+          </button>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 export function Events() {
   const { t, locale } = useT()
   const timeOf = (iso: string) => new Date(iso).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const [range, setRange] = useState<Range>('month')
   const [city] = useCity()
   const events = upcoming(range, city)
+  // Remember which events were new when the page opened, then mark everything as seen.
+  const { fresh, markSeen } = useNewEvents()
+  const [newIds] = useState(() => new Set(fresh.map((e) => e.id)))
+  useEffect(() => markSeen(), [markSeen])
   const groups = new Map<string, KidEvent[]>()
   for (const e of events) {
     // Events that already started (multi-day) are listed under today.
@@ -83,6 +122,7 @@ export function Events() {
                       </small>
                     )}
                     <span className="event-meta">
+                      {newIds.has(e.id) && <span className="badge badge-new">{t('New')}</span>}
                       {eventKind(e) && <span className="badge badge-brand">{eventKind(e)}</span>}
                       {eventAudience(e) && <span className="badge">{eventAudience(e)}</span>}
                       {e.free ? <span className="badge badge-free">{t('Free')}</span> : e.price && <span className="badge">{cleanPrice(e.price)}</span>}
@@ -102,6 +142,8 @@ export function Events() {
           <p>{t('No events found for this period yet.')}</p>
         </div>
       )}
+
+      <SubscribeCard city={city} />
 
       <p className="footnote">{t('Events are collected automatically every morning. Confirm details with the organiser before you go.')}</p>
     </div>

@@ -20,6 +20,7 @@ function read<T>(key: string, fallback: T): T {
 }
 
 function write<T>(key: string, value: T) {
+  if (cache.has(key) && Object.is(cache.get(key), value)) return
   cache.set(key, value)
   try {
     localStorage.setItem(key, JSON.stringify(value))
@@ -48,6 +49,8 @@ export const KEYS = {
   childBirthDate: 'ph.childBirthDate',
   childName: 'ph.childName',
   napStart: 'ph.napStart',
+  eventsSeen: 'ph.eventsSeen',
+  weeklyGoal: 'ph.weeklyGoal',
 } as const
 
 const EMPTY: string[] = []

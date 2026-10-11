@@ -411,6 +411,28 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 
 .wide-button { width: 100%; margin-top: 16px; }
 
+/* Engagement */
+.weekend { display: flex; flex-direction: column; gap: 12px; }
+.weekend-days { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.weekend-day { display: flex; flex-direction: column; gap: 4px; padding: 12px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--line); }
+.weekend-day small { color: var(--muted); }
+.weekend-day.outdoor svg { color: #c98a00; }
+.weekend-day.indoor svg { color: #4a6fa5; }
+.goal-card { display: flex; gap: 14px; align-items: center; padding: 14px; border-radius: var(--r-md); background: var(--surface); border: 1px solid var(--line); }
+.goal-card p { margin: 2px 0; }
+.goal-card strong { display: block; }
+.goal-track { fill: none; stroke: var(--surface-2); stroke-width: 6; }
+.goal-fill { fill: none; stroke: var(--brand); stroke-width: 6; stroke-linecap: round; transition: stroke-dasharray 0.4s ease; }
+.nudge { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: var(--r-md); background: #fff4d6; color: #5c3d00; }
+.nudge > span:nth-child(2) { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.nudge small { opacity: 0.8; }
+.nav-item { position: relative; }
+.nav-dot { position: absolute; top: 2px; left: 55%; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: #d64545; color: #fff; font-size: 0.68rem; font-weight: 700; display: grid; place-items: center; }
+.badge-new { background: #ffe1e1; color: #b02a2a; }
+.subscribe-card { display: flex; gap: 12px; align-items: flex-start; padding: 14px; border-radius: var(--r-md); background: var(--brand-soft); color: var(--ink); }
+.subscribe-card svg { flex: none; color: var(--brand); margin-top: 2px; }
+.subscribe-card p { margin: 4px 0 8px; }
+
 /* Town picker */
 .title-row, .hero-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .title-row .page-title { margin: 0; }

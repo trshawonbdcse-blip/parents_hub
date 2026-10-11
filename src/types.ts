@@ -127,4 +127,6 @@ export interface KidEvent {
   description?: string | null
   // Hub town (see towns.json); null when unknown.
   city?: string | null
+  // Date (YYYY-MM-DD) the collector first listed it.
+  firstSeen?: string
 }

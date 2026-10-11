@@ -271,6 +271,8 @@ all = all
     return true
   })
   .sort((a, b) => a.start.localeCompare(b.start))
+  // When we first listed it, so the app can mark events that are new since the last visit.
+  .map((e) => ({ ...e, firstSeen: previous.events.find((p) => p.id === e.id)?.firstSeen ?? new Date().toISOString().slice(0, 10) }))
 
 fs.writeFileSync(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), events: all }, null, 1) + '\n')
 console.log(`Wrote ${all.length} events`)

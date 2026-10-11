@@ -37,6 +37,8 @@ jobs:
           restore-keys: events-
       - name: Collect kids' events
         run: node scripts/fetch-events.mjs
+      - name: Calendar feeds
+        run: node scripts/build-ics.mjs
       # Family places from OpenStreetMap (refreshed weekly; the cached copy is reused in between).
       - uses: actions/cache@v4
         with:
