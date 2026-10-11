@@ -1,0 +1,1445 @@
+[
+ {
+  "method": "GET",
+  "url": "https://consentcdn.cookiebot.com/consentconfig/78839ff2-fabf-4bdc-9dac-d4b3a8df0dac/settings.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\"widget\":{\"enabled\":true,\"position\":{\"position\":\"bottom-left\",\"distanceVerticalPx\":10,\"distanceHorizontalPx\":10},\"theme\":{\"closed\":{\"backgroundColor\":\"#141414\",\"foregroundColor\":\"#FFFFFF\"},\"opened\":{\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#141414\",\"highlightColor\":\"#1032CF\",\"shadeColor\":\"#D6D6D6\",\"changeBackgroundColor\":\"#1032CF\",\"changeTextColor\":\"#FFFFFF\",\"changeBorderColor\":\"#1032CF\",\"withdrawBackgroundColor\":\"#FFFFFF\",\"withdrawTextColor\":\"#141414\",\"withdrawBorderColor\":\"#1032CF\",\"detailsBackgroundColor\":\"#F2F2F2\"}},\"content\":{\"cultures\":[\"en\",\"et\",\"lv\",\"lt\",\"ru\"],\"default\":\"et\",\"autodetectLanguage\":true}}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=ahhaa",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "unknown",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=ahhaa",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "POST",
+  "url": "https://ad.doubleclick.net/ccm/s/collect?auid=1265011783.1791705899&gtm=45He6a80h2v851809651za200zd851809651xeaxf1&fmt=8",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=1&ae=g&auid=1265011783.1791705899&dt=Stebby&en=page_view&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&scrsrc=www.googletagmanager.com&rnd=2062579302.1791705899&navt=n&npa=0&us_privacy=1---&ep.ads_data_redaction=0&gdid=dMWZhNz&gtm=45He6a80h2v851809651za200zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938469~118897920~118897930~120385423~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705898856&tfd=2753&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za20gzb851809651zd851809651xf1&_p=1791705898510&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EEAAAGQC&ae=a&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=2&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=0&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&dt=Stebby&en=view_search_results&ep.search_term=ahhaa&_et=5&tfd=2866",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za20ozb851809651zd851809651xf1&_p=1791705898510&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAACAGQC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&dt=Stebby&_s=3&tfd=2887",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "et-EE"
+  },
+  "post": "en=page_view&_et=2\r\nen=page_view&_ee=1&_et=5",
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za20ozb851809651zd851809651xf1&_p=1791705898510&_gaz=1&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAAAAGAC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=1&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=0&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&dt=Stebby&en=page_view&_fv=1&_nsi=1&_ss=1&tfd=2852",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/989672175/?random=1791705899227&cv=11&fst=1791705899227&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6a72h1v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&rcb=6&frm=0&tiba=Stebby&did=dMWZhNz&gdid=dMWZhNz&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=1265011783.1791705899&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uamb=0&uam=&uap=Linux&uapv=6.17.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=6&frm=0&apvc=0&ae=g&auid=1265011783.1791705899&dt=Stebby&tid=AW-989672175&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&scrsrc=www.googletagmanager.com&rnd=2062579302.1791705899&navt=n&npa=0&us_privacy=1---&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be6a72h1v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705899265&tfd=3163&tids=AW-989672175&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"getAllLanguages\",\"variables\":{},\"query\":\"query getAllLanguages {\\n  languages {\\n    abbreviation\\n    name\\n    default_name\\n    ready\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"languages\":[{\"abbreviation\":\"en-us\",\"name\":\"ENGLISH_US\",\"default_name\":\"English (US)\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"et-ee\",\"name\":\"ESTONIAN\",\"default_name\":\"Eesti\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lt-lt\",\"name\":\"LITHUANIAN\",\"default_name\":\"Lietuvi\\u0173\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lv-lv\",\"name\":\"LATVIAN\",\"default_name\":\"Latvie\\u0161u\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"ru-ru\",\"name\":\"RUSSIAN\",\"default_name\":\"\\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439 \\u044f\\u0437\\u044b\\u043a\",\"ready\":true,\"__typename\":\"language\"}]}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"MeQuery\",\"variables\":{},\"query\":\"query MeQuery {\\n  data: MeQuery {\\n    ...MeQueryUser\\n    __typename\\n  }\\n}\\n\\nfragment MeQueryUser on UserGraphQLType {\\n  role\\n  impersonator {\\n    canImpersonate\\n    activeImpersonation\\n    languageAbbr\\n    __typename\\n  }\\n  hasReceipts\\n  canSubmitReceipt\\n  changesRequestedReceiptCount\\n  expiringTicketCount\\n  hasRepeatingPurchaseContract\\n  email\\n  hash\\n  pin\\n  primaryIdentificationValue\\n  profile {\\n    first_name\\n    last_name\\n    birth_date\\n    gender\\n    __typename\\n  }\\n  settings {\\n    language_abbr\\n    accepted_terms\\n    accepted_privacy\\n    iban_name\\n    iban\\n    time_zone {\\n      name\\n      __typename\\n    }\\n    accepts_direct_marketing\\n    __typename\\n  }\\n  country {\\n    abbreviation\\n    name\\n    primary_identifier\\n    alpha2\\n    __typename\\n  }\\n  activeAccounts {\\n    balance\\n    type\\n    compensationrule {\\n      automatic_reload_amount\\n      accepts_receipt\\n      compensation_period\\n      tax_exception_only\\n      allCategories {\\n        name\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n  insurances {\\n    startAt\\n    endAt\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "client-platform": "WEB",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"FeedbackFormQuery\",\"variables\":{},\"query\":\"query FeedbackFormQuery {\\n  data: MeQuery {\\n    feedbackForms {\\n      ...FeedbackForm\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment FeedbackForm on FeedbackFormGraphQLType {\\n  id\\n  fields {\\n    description\\n    title\\n    text\\n    type\\n    id\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/137a00a7-c074-4888-86bf-7e12329e9534",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "5ab0f13c-a408-4283-a469-3b96ba789fa1",
+   "correlationid": "96e4f1bd-89d1-400a-ad6d-e6a4b02e8850",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "16e48880-5030-4752-a458-754093d44271",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"137a00a7-c074-4888-86bf-7e12329e9534\",\"name\":\"Stebby ET\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Stebby chat\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-kkk.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"et-EE\",\"messages\":[],\"labels\":{\"addReply\":\"Vasta\",\"addYourMessageHere\":\"Sisesta oma sõnum siia...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"Jätkamiseks palun jagage oma e-posti aadressi\",\"aiAnswersButtonDescription\":\"Kohesed vastused teie küsimustele\",\"aiAnswersEndButton\":\"Lõpeta\",\"aiAnswersRatingButton\":\"Esita\",\"aiAnswersRatingCancel\":\"Loobu\",\"aiAnswersRatingCommentsPlaceholder\":\"Kas soovid veel midagi lisada?\",\"aiAnswersRatingGood\":\"Hea\",\"aiAnswersRatingGreat\":\"Suurepärane\",\"aiAnswersRatingLabel\":\"Kuidas läks vestlus Answersiga?\",\"aiAnswersRatingNotGood\":\"Halb\",\"aiAnswersRatingOkay\":\"Käib kah\",\"aiAnswersRatingReturnHome\":\"Tagasi avalehele\",\"aiAnswersRatingThankYou\":\"Aitäh!\",\"aiAnswersStillNeedHelp\":\"Vajan ikka abi\",\"aiAnswersStillNeedHelpAnswer\":\"Aitan teid meeleldi. Koostage oma küsimus allpool või\",\"aiAnswersUnableToVerifyEmail\":\"Jätkamiseks sisestage kehtiv e-posti aadress (näiteks: name@example.com)\",\"aiAssistantLabel\":\"AI-abiline\",\"aiEndButton\":\"Sulge\",\"aiNoPublicSources\":\"Vastuse allikaks on artiklid, mida ei saa kuvada.\",\"aiResolutionModalMessage\":\"Kas leidsid selle, mida otsisid?\",\"aiSearchedFor\":\"Otsiti\",\"aiSourcesLabel\":\"Allikad\",\"aiSuggestionsLabel\":\"Ettepanekud\",\"answer\":\"Vastused\",\"ask\":\"Küsi\",\"askQuestionInputPlaceholder\":\"Esita küsimus...\",\"attachAFile\":\"Manusta fail\",\"attachmentErrorText\":\"Manuse üleslaadimisel tekib tõrge. Palun proovi hetke pärast uuesti.\",\"attachmentSizeErrorText\":\"Manused ei tohi olla suuremad kui 10MB\",\"backButton\":\"Tagasi\",\"beaconButtonChatMinimize\":\"Sulge vestlusaken\",\"beaconButtonChatOpen\":\"Ava vestlus\",\"beaconButtonClose\":\"Sulge\",\"cantFindAnswer\":\"Kas te ei leia vastust?\",\"chatAvailabilityChangeMessage\":\"Meie meeskonna saadavus on muutunud ja enam pole saadaval ühtki spetsialisti. Jäta meile teade ja me vastame Sulle esimesel võimalusel!\",\"chatbotAgentDisconnectedMessage\":\"Kontakti {{ name }} ühendus vestlusega katkes. On võimalik, et tal tekkis probleem internetiühendusega, seega püüan leida asendust. Vabandame viivituse pärast!\",\"chatbotConfirmationMessage\":\"Aitäh! Keegi meie spetsialistidest vastab Sulle peagi!\",\"chatbotGenericErrorMessage\":\"Midagi läks valesti, palun proovi hetke pärast uuesti!\",\"chatbotGreet\":\"Hei! Palun esita oma küsimus. Meie spetsialist vastab Sulle peagi!\",\"chatbotInactivityPrompt\":\"Kuna vestlus on vaikne, sulgen vestluse mõne minuti pärast.\",\"chatbotInvalidEmailMessage\":\"Tundub, et sisestasid vale e-maili. Kas soovid uuesti proovida?\",\"chatbotName\":\"Abibot\",\"chatbotPromptEmail\":\"Selge. Mis on Sinu e-posti aadress? Kasutame seda täiendavate sõnumite jaoks!\",\"chatButtonDescription\":\"Oleme olemas, räägi meiega otse\",\"chatButtonLabel\":\"Vestlus\",\"chatConnected\":\"Ühendatud kontaktiga {{ name }}\",\"chatEndCalloutHeading\":\"Valmis!\",\"chatEndCalloutLink\":\"Tagasi algusesse\",\"chatEndCalloutMessage\":\"Selle vestluse koopia jõuab peagi Sinu postkasti\",\"chatEnded\":\"{{ name }} lõpetas vestluse\",\"chatEndUnassignedCalloutHeading\":\"Vabandame\",\"chatEndUnassignedCalloutMessage\":\"Tundub, et kõik meie spetsialistid on hetkel hõivatud. Saadame Sulle vastuse e-maili teel.\",\"chatEndWaitingCustomerHeading\":\"Vabandame\",\"chatEndWaitingCustomerMessage\":\"Sinu küsimus on lisatud e-posti järjekorda"
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/et-ee.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Lisa video\",\n        \"advertisement\": \"Reklaam\",\n        \"back\": \"Tagasi\",\n        \"campaign\": \"Kampaania\",\n        \"download_from_app_store\": \"Laadi alla App Store'ist\",\n        \"download_from_google_play\": \"Laadi alla Google Playst\",\n        \"fetching_data\": \"Otsin andmeid\",\n        \"follow_us_on\": \"Jälgi meid võrgustikus {{network}}\",\n        \"help\": \"Abi\",\n        \"home\": \"Koduleht\",\n        \"next\": \"Järgmine\",\n        \"previous\": \"Eelmine\",\n        \"settings\": \"Seaded\",\n        \"stebby_homepage\": \"Stebby - koduleht\",\n        \"zoom_in\": \"Suumi sisse\",\n        \"zoom_out\": \"Suumi välja\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Tühista\",\n        \"content\": \"Seda toimingut ei saa tagasi võtta\",\n        \"delete\": \"Kustuta\",\n        \"success\": \"Edukalt kustutatud!\",\n        \"title\": \"Kustuta {{name}}?\"\n    },\n    \"error\": {\n        \"delete\": \"Kustutamine ebaõnnestus\",\n        \"get\": \"Päring ebaõnnestus\",\n        \"missing_account_id\": \"Makset ei saa ilma kasutaja ID-ta teostada.\",\n        \"save\": \"Salvestamine ebaõnnestus\",\n        \"send\": \"Saatmine ebaõnnestus\",\n        \"something_went_wrong_with_request\": \"Midagi läks Sinu päringuga valesti, palun proovi uuesti sisse logida\",\n        \"type_mismatch\": {\n            \"description\": \"Parima kasutajakogemuse pakkumiseks leht värskendatakse automaatselt 10 sekundi pärast.\",\n            \"title\": \"Veebileht vajab värskendamist\"\n        },\n        \"unknown\": \"Tundmatu viga\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} võib sisaldada ainult tähestiku tähti, numbreid, side- ning alakriipse\",\n            \"at_least_one_required\": \"Pileti kehtivusaeg päevades ja/või kehtivuse lõppkuupäev peavad olema märgitud, kui pilet on etteostetav\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Vigane kuupäev\",\n            \"email\": \"Vigane e-post\",\n            \"iban\": \"Vigane IBAN\",\n            \"insurance_max_age\": \"Teenust ei pakuta üle {{ age }}-aastastele isikutele\",\n            \"invalid_date\": \"Vigane kuupäev\",\n            \"invalid_phone_number\": \"Vale telefoninumber\",\n            \"invalid_pin\": \"Vale isikukood\",\n            \"max\": \"Liiga kõrge. Peab olema väiksem või võrdne kui {{ value }}\",\n            \"max_length\": \"Liiga pikk. Peab olema lühem kui {{ length }} märki\",\n            \"min\": \"Liiga madal. Peab olema suurem või võrdne kui {{ value }}\",\n            \"min_length\": \"Liiga lühike. Peab olema vähemalt {{ length }} märki\",\n            \"must_match\": \"Väljade sisu ({{ currentField }}, {{ mustMatchField }}) ei kattu\",\n            \"open_days_required\": \"Lahtiolekuajad peavad olema märgitud\",\n            \"password_has_lowercase\": \"Salasõna peaks sisaldama vähemalt ühte väiketähte\",\n            \"password_has_numeric\": \"Salasõna peaks sisaldama vähemalt ühte numbrilist märki\",\n            \"password_has_special_character\": \"Salasõna peaks sisaldama vähemalt ühte erimärki\",\n            \"password_has_uppercase\": \"Salasõna peaks sisaldama vähemalt ühte suurtähte\",\n            \"password_mismatch\": \"Paroolid ei klapi\",\n            \"pattern\": \"Vigane formaat\",\n            \"promotion\": \"Kampaaniakoodi ei leitud\",\n            \"require_length_between\": \"{{ field }} peab mahtuma {{ min }} kuni {{ max }} tähemärgi piiresse\",\n            \"required\": \"{{ field }} on kohustuslik\",\n            \"required_content\": \"Lubatud tähemärgid: {{ content }}\",\n            \"ticket_max_validity_days\": \"Maksimaalselt lubatud {{ limit }} päeva\",\n            \"user_hash_allowed_characters\": \"Lubatud on ainult väiketähed, numbrid, alakriips (_) ja punkt (.)\",\n            \"user_hash_allowed_content\": \"ladinatähed (a-z, A-Z), numbrid (0-9), punkt (.) ja alakriips (_)\",\n            \"user_hash_requires_letter\": \"Peab sisaldama vähemalt ühte tähte\"\n        }\n    },\n    \"external_purchase\": {\n        \"confirm\": \"Kinnita\",\n        \"date_added\": \"Lisamise kuupäev\",\n        \"info\": \" Luba Teenusepakkujal oma oste tööde"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/137a00a7-c074-4888-86bf-7e12329e9534",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "5ab0f13c-a408-4283-a469-3b96ba789fa1",
+   "correlationid": "9ab41a55-3b6c-444a-94cf-6693d719fefa",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "16e48880-5030-4752-a458-754093d44271",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"137a00a7-c074-4888-86bf-7e12329e9534\",\"name\":\"Stebby ET\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Stebby chat\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-kkk.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"et-EE\",\"messages\":[],\"labels\":{\"addReply\":\"Vasta\",\"addYourMessageHere\":\"Sisesta oma sõnum siia...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"Jätkamiseks palun jagage oma e-posti aadressi\",\"aiAnswersButtonDescription\":\"Kohesed vastused teie küsimustele\",\"aiAnswersEndButton\":\"Lõpeta\",\"aiAnswersRatingButton\":\"Esita\",\"aiAnswersRatingCancel\":\"Loobu\",\"aiAnswersRatingCommentsPlaceholder\":\"Kas soovid veel midagi lisada?\",\"aiAnswersRatingGood\":\"Hea\",\"aiAnswersRatingGreat\":\"Suurepärane\",\"aiAnswersRatingLabel\":\"Kuidas läks vestlus Answersiga?\",\"aiAnswersRatingNotGood\":\"Halb\",\"aiAnswersRatingOkay\":\"Käib kah\",\"aiAnswersRatingReturnHome\":\"Tagasi avalehele\",\"aiAnswersRatingThankYou\":\"Aitäh!\",\"aiAnswersStillNeedHelp\":\"Vajan ikka abi\",\"aiAnswersStillNeedHelpAnswer\":\"Aitan teid meeleldi. Koostage oma küsimus allpool või\",\"aiAnswersUnableToVerifyEmail\":\"Jätkamiseks sisestage kehtiv e-posti aadress (näiteks: name@example.com)\",\"aiAssistantLabel\":\"AI-abiline\",\"aiEndButton\":\"Sulge\",\"aiNoPublicSources\":\"Vastuse allikaks on artiklid, mida ei saa kuvada.\",\"aiResolutionModalMessage\":\"Kas leidsid selle, mida otsisid?\",\"aiSearchedFor\":\"Otsiti\",\"aiSourcesLabel\":\"Allikad\",\"aiSuggestionsLabel\":\"Ettepanekud\",\"answer\":\"Vastused\",\"ask\":\"Küsi\",\"askQuestionInputPlaceholder\":\"Esita küsimus...\",\"attachAFile\":\"Manusta fail\",\"attachmentErrorText\":\"Manuse üleslaadimisel tekib tõrge. Palun proovi hetke pärast uuesti.\",\"attachmentSizeErrorText\":\"Manused ei tohi olla suuremad kui 10MB\",\"backButton\":\"Tagasi\",\"beaconButtonChatMinimize\":\"Sulge vestlusaken\",\"beaconButtonChatOpen\":\"Ava vestlus\",\"beaconButtonClose\":\"Sulge\",\"cantFindAnswer\":\"Kas te ei leia vastust?\",\"chatAvailabilityChangeMessage\":\"Meie meeskonna saadavus on muutunud ja enam pole saadaval ühtki spetsialisti. Jäta meile teade ja me vastame Sulle esimesel võimalusel!\",\"chatbotAgentDisconnectedMessage\":\"Kontakti {{ name }} ühendus vestlusega katkes. On võimalik, et tal tekkis probleem internetiühendusega, seega püüan leida asendust. Vabandame viivituse pärast!\",\"chatbotConfirmationMessage\":\"Aitäh! Keegi meie spetsialistidest vastab Sulle peagi!\",\"chatbotGenericErrorMessage\":\"Midagi läks valesti, palun proovi hetke pärast uuesti!\",\"chatbotGreet\":\"Hei! Palun esita oma küsimus. Meie spetsialist vastab Sulle peagi!\",\"chatbotInactivityPrompt\":\"Kuna vestlus on vaikne, sulgen vestluse mõne minuti pärast.\",\"chatbotInvalidEmailMessage\":\"Tundub, et sisestasid vale e-maili. Kas soovid uuesti proovida?\",\"chatbotName\":\"Abibot\",\"chatbotPromptEmail\":\"Selge. Mis on Sinu e-posti aadress? Kasutame seda täiendavate sõnumite jaoks!\",\"chatButtonDescription\":\"Oleme olemas, räägi meiega otse\",\"chatButtonLabel\":\"Vestlus\",\"chatConnected\":\"Ühendatud kontaktiga {{ name }}\",\"chatEndCalloutHeading\":\"Valmis!\",\"chatEndCalloutLink\":\"Tagasi algusesse\",\"chatEndCalloutMessage\":\"Selle vestluse koopia jõuab peagi Sinu postkasti\",\"chatEnded\":\"{{ name }} lõpetas vestluse\",\"chatEndUnassignedCalloutHeading\":\"Vabandame\",\"chatEndUnassignedCalloutMessage\":\"Tundub, et kõik meie spetsialistid on hetkel hõivatud. Saadame Sulle vastuse e-maili teel.\",\"chatEndWaitingCustomerHeading\":\"Vabandame\",\"chatEndWaitingCustomerMessage\":\"Sinu küsimus on lisatud e-posti järjekorda"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/images/sprite.svg",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=ahhaa",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg style=\"display: none;\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><defs>\n        <clipPath id=\"icons-zoom-in-outline-a\">\n            <path d=\"M0 0h24v24H0z\"/>\n        </clipPath>\n    \n    <linearGradient id=\"socials-google-play-a\" x1=\"-324.451\" y1=\"213.5\" x2=\"-324.531\" y2=\"213.521\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#00a0ff\"/>\n      <stop offset=\".007\" stop-color=\"#00a1ff\"/>\n      <stop offset=\".26\" stop-color=\"#00beff\"/>\n      <stop offset=\".512\" stop-color=\"#00d2ff\"/>\n      <stop offset=\".76\" stop-color=\"#00dfff\"/>\n      <stop offset=\"1\" stop-color=\"#00e3ff\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-b\" x1=\"-408.339\" y1=\"655.269\" x2=\"-408.526\" y2=\"655.269\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ffe000\"/>\n      <stop offset=\".409\" stop-color=\"#ffbd00\"/>\n      <stop offset=\".775\" stop-color=\"orange\"/>\n      <stop offset=\"1\" stop-color=\"#ff9c00\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-c\" x1=\"-254.248\" y1=\"424.457\" x2=\"-254.314\" y2=\"424.567\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ff3a44\"/>\n      <stop offset=\"1\" stop-color=\"#c31162\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-d\" x1=\"-254.81\" y1=\"425.399\" x2=\"-254.781\" y2=\"425.448\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#32a071\"/>\n      <stop offset=\".068\" stop-color=\"#2da771\"/>\n      <stop offset=\".476\" stop-color=\"#15cf74\"/>\n      <stop offset=\".801\" stop-color=\"#06e775\"/>\n      <stop offset=\"1\" stop-color=\"#00f076\"/>\n    </linearGradient>\n  \n<linearGradient id=\"socials-instagram-paint0_linear_1450_483\" x1=\"3.50629\" y1=\"20.4937\" x2=\"20.4937\" y2=\"3.50713\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#FAAD4F\"/>\n<stop offset=\"0.35\" stop-color=\"#DD2A7B\"/>\n<stop offset=\"0.62\" stop-color=\"#9537B0\"/>\n<stop offset=\"1\" stop-color=\"#515BD4\"/>\n</linearGradient>\n\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-15\" y=\"643.4\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-89.3\" y=\"627.8\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"450.7\"/>\n\t\t\t\t<linearGradient id=\"illustrations-data_fly-b\" x1=\"137.638\" y1=\"-22.846\" x2=\"49.224\" y2=\"-33.691\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#95abc2\" stop-opacity=\".244\"/><stop offset=\"1\" stop-color=\"#5c738e\"/></linearGradient><clipPath id=\"illustrations-data_fly-a\"><path fill=\"#fff\" d=\"M0 0h166v80H0z\"/></clipPath>\n    <clipPath id=\"illustrations-empty-search-a\">\n      <path fill=\"#fff\" transform=\"translate(.5)\" d=\"M0 0h120v120H0z\"/>\n    </clipPath>\n  <linearGradient id=\"illustrations-no_folder-b\" x1=\"13.541\" y1=\"28.616\" x2=\"13.541\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-c\" x1=\"41.681\" y1=\"28.616\" x2=\"41.681\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#ccd2d6\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#ccd2d6\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-d\" x1=\"117.5\" y1=\"28.616\" x2=\"117.5\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-e\" x1=\"213.939\" y1=\"28.616\" x2=\"213.939\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\""
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/en-us.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Add video\",\n        \"advertisement\": \"Advertisement\",\n        \"back\": \"Back\",\n        \"campaign\": \"Campaign\",\n        \"download_from_app_store\": \"Download from App Store\",\n        \"download_from_google_play\": \"Download from Google Play\",\n        \"fetching_data\": \"Fetching data\",\n        \"follow_us_on\": \"Follow us on {{network}}\",\n        \"help\": \"Help\",\n        \"home\": \"Home\",\n        \"next\": \"Next\",\n        \"previous\": \"Previous\",\n        \"settings\": \"Settings\",\n        \"stebby_homepage\": \"Stebby - homepage\",\n        \"zoom_in\": \"Zoom in\",\n        \"zoom_out\": \"Zoom out\"\n    },\n    \"data_not_found\": {\n        \"reload_data\": \"Reload data\",\n        \"title\": \"Error loading data, please try again\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Cancel\",\n        \"content\": \"This can't be undone\",\n        \"delete\": \"Delete\",\n        \"success\": \"Successfully deleted!\",\n        \"title\": \"Delete {{name}}?\"\n    },\n    \"error\": {\n        \"csrf_mismatch\": \"We have encountered an error, please refresh the page\",\n        \"delete\": \"Delete failed\",\n        \"get\": \"Request failed\",\n        \"maintenance\": {\n            \"checking_in\": \"Checking again in {{seconds}}s\",\n            \"continue\": \"Continue browsing\",\n            \"description\": \"Stebby is currently getting some maintenance done. Please wait, we should be back shortly!\",\n            \"recovered_description\": \"The system is back up. You can continue browsing.\",\n            \"recovered_title\": \"We're back online!\",\n            \"title\": \"Oops, something went wrong\"\n        },\n        \"missing_account_id\": \"Can not make payment without account id\",\n        \"save\": \"Failed to save\",\n        \"send\": \"Failed to send\",\n        \"something_went_wrong_with_request\": \"Something has gone wrong with your request, please try logging in again\",\n        \"system_unavailable\": \"The system is temporarily unavailable. Please wait a few moments and try again.\",\n        \"type_mismatch\": {\n            \"description\": \"For the best user experience, the page will be refreshed automatically in 10 seconds.\",\n            \"title\": \"Site requires a refresh\"\n        },\n        \"unknown\": \"Unknown error\",\n        \"upload_one_file\": \"At least one file has to be uploaded\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} can only contain alphabet letters, numbers, hyphens and underscores\",\n            \"at_least_one_required\": \"The number of days and/or the valid until date must be provided if the pre-sale option is selected\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Invalid date format\",\n            \"email\": \"Invalid email\",\n            \"iban\": \"Invalid IBAN\",\n            \"insurance_max_age\": \"This service is not offered to customers over {{ age }} years of age\",\n            \"invalid_date\": \"Invalid date\",\n            \"invalid_phone_number\": \"Invalid phone number\",\n            \"invalid_pin\": \"Invalid personal ID code number\",\n            \"max\": \"Too high. Must be smaller than or equal to {{ value }}\",\n            \"max_length\": \"Too long. Must be shorter than {{ length }} characters\",\n            \"min\": \"Too low. Must be greater than or equal to {{ value }}\",\n            \"min_length\": \"Too short. Must be at least {{ length }} characters\",\n            \"must_match\": \"Fields do not match ({{ currentField }}, {{ mustMatchField }})\",\n            \"open_days_required\": \"Opening hours are required\",\n            \"password_has_lowercase\": \"Password should have at least one lowercase character\",\n            \"password_has_numeric\": \"Password should have at least one numeric character\",\n            \"password_has_special_character\": \"Password should have at least one special character\",\n            \"password_has_uppercase\": \"Password should have at least one uppercase character\",\n            \"password_mismatch\": \"Passwords do not match\",\n            \"pattern\": \"Invalid format\",\n            \"promotion\": \"Promotion code not"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlJLNGlTY1NuSWtnamxXVWVINjIxVVE9PSIsInZhbHVlIjoiSUhEd3d4T243U3RTVEMzcFdHSjNiUFg1WG53NnJ4UkZVcGhvSC9lcVlQWkRRUlRISWdlN3FwV0JKSzErODFsZGtyUWlVaHVTL3ZsVDV6TE5iODB4YmE1eGZYclZKRVhJNEMzcnM2aWJwYWhnTDZ1b05FOUwzN3R5clpCTGdkSVQiLCJtYWMiOiJiZDFhZWJmYmRlMDAxOTA5NDVkZWQxOGZjMWY3ODNmNjkzMDUwNTdkMWM3Yjg4YTRlYzM3NzI5Y2JlNDM1N2E4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"UserHeaderDataQuery\",\"variables\":{},\"query\":\"query UserHeaderDataQuery {\\n  data: MeQuery {\\n    ...UserHeaderData\\n    __typename\\n  }\\n}\\n\\nfragment UserHeaderData on UserGraphQLType {\\n  hash\\n  primaryIdentificationValue\\n  profile {\\n    first_name\\n    last_name\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlJLNGlTY1NuSWtnamxXVWVINjIxVVE9PSIsInZhbHVlIjoiSUhEd3d4T243U3RTVEMzcFdHSjNiUFg1WG53NnJ4UkZVcGhvSC9lcVlQWkRRUlRISWdlN3FwV0JKSzErODFsZGtyUWlVaHVTL3ZsVDV6TE5iODB4YmE1eGZYclZKRVhJNEMzcnM2aWJwYWhnTDZ1b05FOUwzN3R5clpCTGdkSVQiLCJtYWMiOiJiZDFhZWJmYmRlMDAxOTA5NDVkZWQxOGZjMWY3ODNmNjkzMDUwNTdkMWM3Yjg4YTRlYzM3NzI5Y2JlNDM1N2E4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"SearchKeywordsQuery\",\"variables\":{\"limit\":12,\"language\":\"et-ee\"},\"query\":\"query SearchKeywordsQuery($limit: Int, $language: String) {\\n  results: SearchKeywordsQuery(limit: $limit, language_abbr: $language)\\n}\"}",
+  "body": "{\"data\":{\"results\":[\"treening\",\"sport\",\"ujumine\",\"vesi\",\"saun\",\"spaa\",\"j\\u00f5usaal\",\"massaa\\u017e\",\"bassein\",\"vesiaeroobika\",\"fitness\",\"veekeskus\"]}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlJLNGlTY1NuSWtnamxXVWVINjIxVVE9PSIsInZhbHVlIjoiSUhEd3d4T243U3RTVEMzcFdHSjNiUFg1WG53NnJ4UkZVcGhvSC9lcVlQWkRRUlRISWdlN3FwV0JKSzErODFsZGtyUWlVaHVTL3ZsVDV6TE5iODB4YmE1eGZYclZKRVhJNEMzcnM2aWJwYWhnTDZ1b05FOUwzN3R5clpCTGdkSVQiLCJtYWMiOiJiZDFhZWJmYmRlMDAxOTA5NDVkZWQxOGZjMWY3ODNmNjkzMDUwNTdkMWM3Yjg4YTRlYzM3NzI5Y2JlNDM1N2E4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"HeaderContentsQuery\",\"variables\":{},\"query\":\"query HeaderContentsQuery {\\n  data: ContentsQuery {\\n    ...HeaderContent\\n    __typename\\n  }\\n}\\n\\nfragment HeaderContent on ContentGraphQLType {\\n  id\\n  imageWeb\\n  linkType\\n  linkContent\\n  createdAt\\n  pointOfSaleTicketSettings {\\n    service {\\n      id\\n      __typename\\n    }\\n    point_of_sale {\\n      id\\n      hash\\n      __typename\\n    }\\n    __typename\\n  }\\n  pointOfSale {\\n    id\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlJLNGlTY1NuSWtnamxXVWVINjIxVVE9PSIsInZhbHVlIjoiSUhEd3d4T243U3RTVEMzcFdHSjNiUFg1WG53NnJ4UkZVcGhvSC9lcVlQWkRRUlRISWdlN3FwV0JKSzErODFsZGtyUWlVaHVTL3ZsVDV6TE5iODB4YmE1eGZYclZKRVhJNEMzcnM2aWJwYWhnTDZ1b05FOUwzN3R5clpCTGdkSVQiLCJtYWMiOiJiZDFhZWJmYmRlMDAxOTA5NDVkZWQxOGZjMWY3ODNmNjkzMDUwNTdkMWM3Yjg4YTRlYzM3NzI5Y2JlNDM1N2E4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"searchFiltersQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null},\"country_abbr\":null,\"language_abbr\":\"et-ee\"},\"query\":\"query searchFiltersQuery($filters: SearchFiltersGraphQLInputType, $country_abbr: String, $language_abbr: String) {\\n  data: SearchFiltersQuery(\\n    filters: $filters\\n    country_abbr: $country_abbr\\n    language_abbr: $language_abbr\\n  ) {\\n    ...SearchFilter\\n    __typename\\n  }\\n}\\n\\nfragment SearchFilter on SearchFiltersGraphQLType {\\n  categories {\\n    name\\n    translated\\n    __typename\\n  }\\n  cities {\\n    name\\n    __typename\\n  }\\n  distances {\\n    distance_from_user\\n    __typename\\n  }\\n  general {\\n    name\\n    value\\n    __typename\\n  }\\n  countries\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"categories\":[{\"name\":\"SPORTS\",\"translated\":\"Sport\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"LEISURE_SPORTS\",\"translated\":\"Aktiivne eluviis\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"PHYSIOTHERAPY\",\"translated\":\"F\\u00fcsioteraapia\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MASSAGE\",\"translated\":\"Massaa\\u017e\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"SPA\",\"translated\":\"Spaa\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"RECOVERY\",\"translated\":\"Taastusravi\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"COMPETITIONS\",\"translated\":\"\\u00dcritused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"NUTRITIONAL_COUNSELLING\",\"translated\":\"Toitumisn\\u00f5ustamine\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"GUIDANCE\",\"translated\":\"Heaolun\\u00f5ustamine\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"INSURANCE\",\"translated\":\"Stebby Ravikindlustus\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MEDICAL\",\"translated\":\"Meditsiiniteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"TESTS\",\"translated\":\"Meditsiinitestid\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"OPTICAL\",\"translated\":\"N\\u00e4gemisteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"DENTAL\",\"translated\":\"Hambaravi\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MENTAL\",\"translated\":\"Vaimne tervis\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"GOODS\",\"translated\":\"Heaolutarbed\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"BEAUTY\",\"translated\":\"Iluteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"OTHER\",\"translated\":\"Muu\",\"__typename\":\"ActivityCategoryGraphQLType\"}],\"cities\":[{\"name\":\"Tallinn\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Tartu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"P\\u00e4rnu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"J\\u00f5hvi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Viljandi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"V\\u00f5ru\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Narva\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Kuressaare\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Rakvere\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Keila\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Kohtla-J\\u00e4rve\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Haapsalu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Rapla\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Viimsi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"P\\u00f5lva\",\"__typename\":\"SearchFilterGeneralGraphQLType\"}],\"distances\":null,\"general\":[{\"name\":\"Allahinnatud\",\"value\":\"only_discounted\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Maksuvabad teenused\",\"value\":\"only_est_tax_exception\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Hetkel avatud\",\"value\":\"only_open_venues\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Osta kohe\",\"value\":\"only_prepurchasable\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"N\\u00e4ita tulemusi k\\u00f5ikidest riikidest\",\"value\":\"include_all_regions\",\"__typename\":\"SearchFilterGeneralGraphQLType\"}],\"countries\":[\"LV\",\"LT\",\"EE\"],\"__typename\":\"SearchFiltersGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IldUME9nL2JJM0ZleVdNS2VwRUtXbnc9PSIsInZhbHVlIjoiMUhoYUZSSElxdk5ad3ZvVUN1TjFvNlExQlZ4dXZwbVFpeUJlYTJDWXgrN1Ntbm1tSzloSlpCb08wdEFrMER5ZHRXZm1iM1hiYnBRUURFRENhOEZuMTNIdktDVjJYdTkzRUhpTHcxWHRMYTdSZE51MHI0R0FnVkVuVUhRTTF1OFkiLCJtYWMiOiI2ZGU3MzY1MWQzZmRkYmQzODUzYzI2YjY0N2VjYTEyODRmZWM5YTY5YjlkM2IzYzQyMTY0MjkzM2ViYThkOGM4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"priceSpreadQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[null],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null}},\"query\":\"query priceSpreadQuery($filters: SearchFiltersGraphQLInputType!, $languageAbbr: String) {\\n  data: PriceSpreadQuery(filters: $filters, language_abbr: $languageAbbr) {\\n    average\\n    max\\n    min\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"average\":63,\"max\":400,\"min\":0,\"__typename\":\"PriceSpreadDataGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IldUME9nL2JJM0ZleVdNS2VwRUtXbnc9PSIsInZhbHVlIjoiMUhoYUZSSElxdk5ad3ZvVUN1TjFvNlExQlZ4dXZwbVFpeUJlYTJDWXgrN1Ntbm1tSzloSlpCb08wdEFrMER5ZHRXZm1iM1hiYnBRUURFRENhOEZuMTNIdktDVjJYdTkzRUhpTHcxWHRMYTdSZE51MHI0R0FnVkVuVUhRTTF1OFkiLCJtYWMiOiI2ZGU3MzY1MWQzZmRkYmQzODUzYzI2YjY0N2VjYTEyODRmZWM5YTY5YjlkM2IzYzQyMTY0MjkzM2ViYThkOGM4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"searchQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null,\"price_from\":null,\"price_to\":null,\"keyword\":\"ahhaa\"},\"orderBy\":null,\"direction\":null,\"page\":1,\"limit\":8,\"language_abbr\":\"et-ee\",\"country_abbr\":null},\"query\":\"query searchQuery($filters: SearchFiltersGraphQLInputType, $limit: Int, $page: Int, $orderBy: SearchOrderByTypeGraphQLEnumType, $direction: DirectionTypeEnum, $country_abbr: String, $language_abbr: String) {\\n  data: SearchQuery(\\n    filters: $filters\\n    limit: $limit\\n    page: $page\\n    order_by: $orderBy\\n    direction: $direction\\n    country_abbr: $country_abbr\\n    language_abbr: $language_abbr\\n  ) {\\n    data {\\n      ...UserSearchResult\\n      __typename\\n    }\\n    total\\n    totals {\\n      pos\\n      service\\n      event\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment UserSearchResult on SphinxResultGraphQLType {\\n  id\\n  hash\\n  type\\n  name\\n  latitude\\n  longitude\\n  mobile_cover_url\\n  description\\n  open_by_prior\\n  is_virtual\\n  open_status\\n  open_from\\n  open_to\\n  address\\n  city\\n  country_code\\n  is_campaign\\n  is_compensated\\n  pos_name\\n  pos_hash\\n  ticket_starting_from\\n  service_categories\\n  distance_from_user\\n  is_est_tax_exemption\\n  start_at\\n  end_at\\n  is_favourite\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"data\":[{\"id\":9570,\"hash\":\"alne.lepna.jooga\",\"type\":\"POS\",\"name\":\"Alne Lepna jooga\",\"latitude\":\"59.001972198486\",\"longitude\":\"22.746349334717\",\"mobile_cover_url\":\"https:\\/\\/data-public.stebby.eu\\/media\\/mobile_cover\\/r\\/o\\/63b92d7b-4863-4a34-8c31-5c5839d447ce.png\",\"description\":\"jooga, K\\u00e4rdla Lasteaed, Hiiumaa, klassikaline jooga, joogatunnid, r\\u00fchmatund, Krishnamacharya jooga, heaolu, liikuvus, tasakaal, hingamine\",\"open_by_prior\":false,\"is_virtual\":false,\"open_status\":\"CLOSED\",\"open_from\":1080,\"open_to\":1140,\"address\":\"K\\u00e4rdla, Kalda tn 11\",\"city\":\"K\\u00e4rdla\",\"country_code\":\"EE\",\"is_campaign\":false,\"is_compensated\":false,\"pos_name\":\"Alne Lepna jooga\",\"pos_hash\":\"alne.lepna.jooga\",\"ticket_starting_from\":10,\"service_categories\":[\"Sport\"],\"distance_from_user\":null,\"is_est_tax_exemption\":true,\"start_at\":null,\"end_at\":null,\"is_favourite\":false,\"__typename\":\"SphinxResultGraphQLType\"}],\"total\":1,\"totals\":{\"pos\":1,\"service\":0,\"event\":0,\"__typename\":\"SphinxResultTotalsGraphQLType\"},\"__typename\":\"SphinxResultsGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IklaVERORE5MS09ialAzSFpjcHpudGc9PSIsInZhbHVlIjoiVy8yUjluTW1uUk9FOEpicmgrbVdDWDVYV0hGaDFteE11bStPWmxpVHdrYWt0ZXR0Y0NEVThQQnNEclB4bi8zaVFHWTlDcFFJa3NvQ0U1Y2VubEZ2OWttVXI4eFdBQWk4NUZ6UGtQNHQrajBjM2x5THg0M1FrVU9HSzFGWFcwOWciLCJtYWMiOiJmZTNjNDJmMmQxNDk1ZTBhM2ZiYjU0MDIyNTM2MmNhMjJkMzE5YjRiZDliMGE1YjY1MjdiMTRmOWEyZTNmNGQzIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"priceSpreadQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null}},\"query\":\"query priceSpreadQuery($filters: SearchFiltersGraphQLInputType!, $languageAbbr: String) {\\n  data: PriceSpreadQuery(filters: $filters, language_abbr: $languageAbbr) {\\n    average\\n    max\\n    min\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"average\":63,\"max\":400,\"min\":0,\"__typename\":\"PriceSpreadDataGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za20gzb851809651zd851809651xf1&_p=1791705898510&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EEAAAGQC&ae=a&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=5&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&tag_exp=115938465~115938469~118897920~118897930~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&dt=Stebby&_s=4&tfd=7889",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "et-EE"
+  },
+  "post": "en=scroll&epn.percent_scrolled=90&_et=9\r\nen=page_view&_et=3679&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa%26orderBy%3Ddefault&dr=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dahhaa&dt=Otsing",
+  "body": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://consentcdn.cookiebot.com/consentconfig/78839ff2-fabf-4bdc-9dac-d4b3a8df0dac/settings.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\"widget\":{\"enabled\":true,\"position\":{\"position\":\"bottom-left\",\"distanceVerticalPx\":10,\"distanceHorizontalPx\":10},\"theme\":{\"closed\":{\"backgroundColor\":\"#141414\",\"foregroundColor\":\"#FFFFFF\"},\"opened\":{\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#141414\",\"highlightColor\":\"#1032CF\",\"shadeColor\":\"#D6D6D6\",\"changeBackgroundColor\":\"#1032CF\",\"changeTextColor\":\"#FFFFFF\",\"changeBorderColor\":\"#1032CF\",\"withdrawBackgroundColor\":\"#FFFFFF\",\"withdrawTextColor\":\"#141414\",\"withdrawBorderColor\":\"#1032CF\",\"detailsBackgroundColor\":\"#F2F2F2\"}},\"content\":{\"cultures\":[\"en\",\"et\",\"lv\",\"lt\",\"ru\"],\"default\":\"et\",\"autodetectLanguage\":true}}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=loomaaed",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "unknown",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=loomaaed",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=0&frm=0&apvc=1&ae=g&auid=1265011783.1791705899&dt=Stebby&en=page_view&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&scrsrc=www.googletagmanager.com&rnd=1271595054.1791705907&navt=n&npa=0&us_privacy=1---&ep.ads_data_redaction=0&gdid=dMWZhNz&gtm=45He6a80h2v851809651za200zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616986~115938466~115938469~118897920~118897930~120385423~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705907441&tfd=493&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za208zd878515571xf1&_p=1791705907360&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAAAAGQC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=1&tag_exp=115616986~115938466~115938468~118012008~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&dt=Stebby&en=page_view&tfd=507",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za200zd878515571xf1&_p=1791705907360&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EEAAAGQC&ae=a&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=2&tag_exp=115616986~115938466~115938468~118012008~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&dt=Stebby&en=view_search_results&ep.search_term=loomaaed&_et=1&tfd=515",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za208zd878515571xf1&_p=1791705907360&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAACAGQC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&tag_exp=115616986~115938466~115938468~118012008~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&dt=Stebby&_s=3&tfd=539",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "et-EE"
+  },
+  "post": "en=page_view&_et=1\r\nen=page_view&_ee=1&_et=1",
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/989672175/?random=1791705907633&cv=11&fst=1791705907633&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6a80h2v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&rcb=2&frm=0&tiba=Stebby&did=dMWZhNz&gdid=dMWZhNz&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=1265011783.1791705899&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uamb=0&uam=&uap=Linux&uapv=6.17.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=2&frm=0&apvc=0&ae=g&auid=1265011783.1791705899&dt=Stebby&tid=AW-989672175&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&scrsrc=www.googletagmanager.com&rnd=1271595054.1791705907&navt=n&npa=0&us_privacy=1---&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be6a80h2v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938466~115938469~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705907675&tfd=728&tids=AW-989672175&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6InQ5Q3pNcXpINk9aWXlXRENQbHpvdGc9PSIsInZhbHVlIjoiSHBTUDlMT24xaGZuRE9uNVY3U05hNXFyQktrUUM3Rnh3TDJLaExYaFArYWZ0ZDVHMVhZYmxhU0pJcHJwZkl6ZWtZOVZuL2VhTWg0S3dKYU13WmgvcHIrMGFtNW5DSFZLTTNqZ1dwTk9hZTBoWjNvUzAydnluSDlTQ2EvVTg3Nk4iLCJtYWMiOiIxNzUzNjVlZWFmYzUxYWZlMmQyMjU2ZTU4YTZmNjc2ODhiNDZjMzgyODkzN2E0NGU0YjNlY2ZhMDUzNmE3MjZlIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"MeQuery\",\"variables\":{},\"query\":\"query MeQuery {\\n  data: MeQuery {\\n    ...MeQueryUser\\n    __typename\\n  }\\n}\\n\\nfragment MeQueryUser on UserGraphQLType {\\n  role\\n  impersonator {\\n    canImpersonate\\n    activeImpersonation\\n    languageAbbr\\n    __typename\\n  }\\n  hasReceipts\\n  canSubmitReceipt\\n  changesRequestedReceiptCount\\n  expiringTicketCount\\n  hasRepeatingPurchaseContract\\n  email\\n  hash\\n  pin\\n  primaryIdentificationValue\\n  profile {\\n    first_name\\n    last_name\\n    birth_date\\n    gender\\n    __typename\\n  }\\n  settings {\\n    language_abbr\\n    accepted_terms\\n    accepted_privacy\\n    iban_name\\n    iban\\n    time_zone {\\n      name\\n      __typename\\n    }\\n    accepts_direct_marketing\\n    __typename\\n  }\\n  country {\\n    abbreviation\\n    name\\n    primary_identifier\\n    alpha2\\n    __typename\\n  }\\n  activeAccounts {\\n    balance\\n    type\\n    compensationrule {\\n      automatic_reload_amount\\n      accepts_receipt\\n      compensation_period\\n      tax_exception_only\\n      allCategories {\\n        name\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n  insurances {\\n    startAt\\n    endAt\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/images/sprite.svg",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/search?query=loomaaed",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg style=\"display: none;\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><defs>\n        <clipPath id=\"icons-zoom-in-outline-a\">\n            <path d=\"M0 0h24v24H0z\"/>\n        </clipPath>\n    \n    <linearGradient id=\"socials-google-play-a\" x1=\"-324.451\" y1=\"213.5\" x2=\"-324.531\" y2=\"213.521\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#00a0ff\"/>\n      <stop offset=\".007\" stop-color=\"#00a1ff\"/>\n      <stop offset=\".26\" stop-color=\"#00beff\"/>\n      <stop offset=\".512\" stop-color=\"#00d2ff\"/>\n      <stop offset=\".76\" stop-color=\"#00dfff\"/>\n      <stop offset=\"1\" stop-color=\"#00e3ff\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-b\" x1=\"-408.339\" y1=\"655.269\" x2=\"-408.526\" y2=\"655.269\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ffe000\"/>\n      <stop offset=\".409\" stop-color=\"#ffbd00\"/>\n      <stop offset=\".775\" stop-color=\"orange\"/>\n      <stop offset=\"1\" stop-color=\"#ff9c00\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-c\" x1=\"-254.248\" y1=\"424.457\" x2=\"-254.314\" y2=\"424.567\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ff3a44\"/>\n      <stop offset=\"1\" stop-color=\"#c31162\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-d\" x1=\"-254.81\" y1=\"425.399\" x2=\"-254.781\" y2=\"425.448\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#32a071\"/>\n      <stop offset=\".068\" stop-color=\"#2da771\"/>\n      <stop offset=\".476\" stop-color=\"#15cf74\"/>\n      <stop offset=\".801\" stop-color=\"#06e775\"/>\n      <stop offset=\"1\" stop-color=\"#00f076\"/>\n    </linearGradient>\n  \n<linearGradient id=\"socials-instagram-paint0_linear_1450_483\" x1=\"3.50629\" y1=\"20.4937\" x2=\"20.4937\" y2=\"3.50713\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#FAAD4F\"/>\n<stop offset=\"0.35\" stop-color=\"#DD2A7B\"/>\n<stop offset=\"0.62\" stop-color=\"#9537B0\"/>\n<stop offset=\"1\" stop-color=\"#515BD4\"/>\n</linearGradient>\n\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-15\" y=\"643.4\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-89.3\" y=\"627.8\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"450.7\"/>\n\t\t\t\t<linearGradient id=\"illustrations-data_fly-b\" x1=\"137.638\" y1=\"-22.846\" x2=\"49.224\" y2=\"-33.691\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#95abc2\" stop-opacity=\".244\"/><stop offset=\"1\" stop-color=\"#5c738e\"/></linearGradient><clipPath id=\"illustrations-data_fly-a\"><path fill=\"#fff\" d=\"M0 0h166v80H0z\"/></clipPath>\n    <clipPath id=\"illustrations-empty-search-a\">\n      <path fill=\"#fff\" transform=\"translate(.5)\" d=\"M0 0h120v120H0z\"/>\n    </clipPath>\n  <linearGradient id=\"illustrations-no_folder-b\" x1=\"13.541\" y1=\"28.616\" x2=\"13.541\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-c\" x1=\"41.681\" y1=\"28.616\" x2=\"41.681\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#ccd2d6\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#ccd2d6\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-d\" x1=\"117.5\" y1=\"28.616\" x2=\"117.5\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-e\" x1=\"213.939\" y1=\"28.616\" x2=\"213.939\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6InQ5Q3pNcXpINk9aWXlXRENQbHpvdGc9PSIsInZhbHVlIjoiSHBTUDlMT24xaGZuRE9uNVY3U05hNXFyQktrUUM3Rnh3TDJLaExYaFArYWZ0ZDVHMVhZYmxhU0pJcHJwZkl6ZWtZOVZuL2VhTWg0S3dKYU13WmgvcHIrMGFtNW5DSFZLTTNqZ1dwTk9hZTBoWjNvUzAydnluSDlTQ2EvVTg3Nk4iLCJtYWMiOiIxNzUzNjVlZWFmYzUxYWZlMmQyMjU2ZTU4YTZmNjc2ODhiNDZjMzgyODkzN2E0NGU0YjNlY2ZhMDUzNmE3MjZlIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"getAllLanguages\",\"variables\":{},\"query\":\"query getAllLanguages {\\n  languages {\\n    abbreviation\\n    name\\n    default_name\\n    ready\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"languages\":[{\"abbreviation\":\"en-us\",\"name\":\"ENGLISH_US\",\"default_name\":\"English (US)\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"et-ee\",\"name\":\"ESTONIAN\",\"default_name\":\"Eesti\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lt-lt\",\"name\":\"LITHUANIAN\",\"default_name\":\"Lietuvi\\u0173\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lv-lv\",\"name\":\"LATVIAN\",\"default_name\":\"Latvie\\u0161u\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"ru-ru\",\"name\":\"RUSSIAN\",\"default_name\":\"\\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439 \\u044f\\u0437\\u044b\\u043a\",\"ready\":true,\"__typename\":\"language\"}]}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/en-us.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Add video\",\n        \"advertisement\": \"Advertisement\",\n        \"back\": \"Back\",\n        \"campaign\": \"Campaign\",\n        \"download_from_app_store\": \"Download from App Store\",\n        \"download_from_google_play\": \"Download from Google Play\",\n        \"fetching_data\": \"Fetching data\",\n        \"follow_us_on\": \"Follow us on {{network}}\",\n        \"help\": \"Help\",\n        \"home\": \"Home\",\n        \"next\": \"Next\",\n        \"previous\": \"Previous\",\n        \"settings\": \"Settings\",\n        \"stebby_homepage\": \"Stebby - homepage\",\n        \"zoom_in\": \"Zoom in\",\n        \"zoom_out\": \"Zoom out\"\n    },\n    \"data_not_found\": {\n        \"reload_data\": \"Reload data\",\n        \"title\": \"Error loading data, please try again\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Cancel\",\n        \"content\": \"This can't be undone\",\n        \"delete\": \"Delete\",\n        \"success\": \"Successfully deleted!\",\n        \"title\": \"Delete {{name}}?\"\n    },\n    \"error\": {\n        \"csrf_mismatch\": \"We have encountered an error, please refresh the page\",\n        \"delete\": \"Delete failed\",\n        \"get\": \"Request failed\",\n        \"maintenance\": {\n            \"checking_in\": \"Checking again in {{seconds}}s\",\n            \"continue\": \"Continue browsing\",\n            \"description\": \"Stebby is currently getting some maintenance done. Please wait, we should be back shortly!\",\n            \"recovered_description\": \"The system is back up. You can continue browsing.\",\n            \"recovered_title\": \"We're back online!\",\n            \"title\": \"Oops, something went wrong\"\n        },\n        \"missing_account_id\": \"Can not make payment without account id\",\n        \"save\": \"Failed to save\",\n        \"send\": \"Failed to send\",\n        \"something_went_wrong_with_request\": \"Something has gone wrong with your request, please try logging in again\",\n        \"system_unavailable\": \"The system is temporarily unavailable. Please wait a few moments and try again.\",\n        \"type_mismatch\": {\n            \"description\": \"For the best user experience, the page will be refreshed automatically in 10 seconds.\",\n            \"title\": \"Site requires a refresh\"\n        },\n        \"unknown\": \"Unknown error\",\n        \"upload_one_file\": \"At least one file has to be uploaded\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} can only contain alphabet letters, numbers, hyphens and underscores\",\n            \"at_least_one_required\": \"The number of days and/or the valid until date must be provided if the pre-sale option is selected\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Invalid date format\",\n            \"email\": \"Invalid email\",\n            \"iban\": \"Invalid IBAN\",\n            \"insurance_max_age\": \"This service is not offered to customers over {{ age }} years of age\",\n            \"invalid_date\": \"Invalid date\",\n            \"invalid_phone_number\": \"Invalid phone number\",\n            \"invalid_pin\": \"Invalid personal ID code number\",\n            \"max\": \"Too high. Must be smaller than or equal to {{ value }}\",\n            \"max_length\": \"Too long. Must be shorter than {{ length }} characters\",\n            \"min\": \"Too low. Must be greater than or equal to {{ value }}\",\n            \"min_length\": \"Too short. Must be at least {{ length }} characters\",\n            \"must_match\": \"Fields do not match ({{ currentField }}, {{ mustMatchField }})\",\n            \"open_days_required\": \"Opening hours are required\",\n            \"password_has_lowercase\": \"Password should have at least one lowercase character\",\n            \"password_has_numeric\": \"Password should have at least one numeric character\",\n            \"password_has_special_character\": \"Password should have at least one special character\",\n            \"password_has_uppercase\": \"Password should have at least one uppercase character\",\n            \"password_mismatch\": \"Passwords do not match\",\n            \"pattern\": \"Invalid format\",\n            \"promotion\": \"Promotion code not"
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/et-ee.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Lisa video\",\n        \"advertisement\": \"Reklaam\",\n        \"back\": \"Tagasi\",\n        \"campaign\": \"Kampaania\",\n        \"download_from_app_store\": \"Laadi alla App Store'ist\",\n        \"download_from_google_play\": \"Laadi alla Google Playst\",\n        \"fetching_data\": \"Otsin andmeid\",\n        \"follow_us_on\": \"Jälgi meid võrgustikus {{network}}\",\n        \"help\": \"Abi\",\n        \"home\": \"Koduleht\",\n        \"next\": \"Järgmine\",\n        \"previous\": \"Eelmine\",\n        \"settings\": \"Seaded\",\n        \"stebby_homepage\": \"Stebby - koduleht\",\n        \"zoom_in\": \"Suumi sisse\",\n        \"zoom_out\": \"Suumi välja\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Tühista\",\n        \"content\": \"Seda toimingut ei saa tagasi võtta\",\n        \"delete\": \"Kustuta\",\n        \"success\": \"Edukalt kustutatud!\",\n        \"title\": \"Kustuta {{name}}?\"\n    },\n    \"error\": {\n        \"delete\": \"Kustutamine ebaõnnestus\",\n        \"get\": \"Päring ebaõnnestus\",\n        \"missing_account_id\": \"Makset ei saa ilma kasutaja ID-ta teostada.\",\n        \"save\": \"Salvestamine ebaõnnestus\",\n        \"send\": \"Saatmine ebaõnnestus\",\n        \"something_went_wrong_with_request\": \"Midagi läks Sinu päringuga valesti, palun proovi uuesti sisse logida\",\n        \"type_mismatch\": {\n            \"description\": \"Parima kasutajakogemuse pakkumiseks leht värskendatakse automaatselt 10 sekundi pärast.\",\n            \"title\": \"Veebileht vajab värskendamist\"\n        },\n        \"unknown\": \"Tundmatu viga\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} võib sisaldada ainult tähestiku tähti, numbreid, side- ning alakriipse\",\n            \"at_least_one_required\": \"Pileti kehtivusaeg päevades ja/või kehtivuse lõppkuupäev peavad olema märgitud, kui pilet on etteostetav\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Vigane kuupäev\",\n            \"email\": \"Vigane e-post\",\n            \"iban\": \"Vigane IBAN\",\n            \"insurance_max_age\": \"Teenust ei pakuta üle {{ age }}-aastastele isikutele\",\n            \"invalid_date\": \"Vigane kuupäev\",\n            \"invalid_phone_number\": \"Vale telefoninumber\",\n            \"invalid_pin\": \"Vale isikukood\",\n            \"max\": \"Liiga kõrge. Peab olema väiksem või võrdne kui {{ value }}\",\n            \"max_length\": \"Liiga pikk. Peab olema lühem kui {{ length }} märki\",\n            \"min\": \"Liiga madal. Peab olema suurem või võrdne kui {{ value }}\",\n            \"min_length\": \"Liiga lühike. Peab olema vähemalt {{ length }} märki\",\n            \"must_match\": \"Väljade sisu ({{ currentField }}, {{ mustMatchField }}) ei kattu\",\n            \"open_days_required\": \"Lahtiolekuajad peavad olema märgitud\",\n            \"password_has_lowercase\": \"Salasõna peaks sisaldama vähemalt ühte väiketähte\",\n            \"password_has_numeric\": \"Salasõna peaks sisaldama vähemalt ühte numbrilist märki\",\n            \"password_has_special_character\": \"Salasõna peaks sisaldama vähemalt ühte erimärki\",\n            \"password_has_uppercase\": \"Salasõna peaks sisaldama vähemalt ühte suurtähte\",\n            \"password_mismatch\": \"Paroolid ei klapi\",\n            \"pattern\": \"Vigane formaat\",\n            \"promotion\": \"Kampaaniakoodi ei leitud\",\n            \"require_length_between\": \"{{ field }} peab mahtuma {{ min }} kuni {{ max }} tähemärgi piiresse\",\n            \"required\": \"{{ field }} on kohustuslik\",\n            \"required_content\": \"Lubatud tähemärgid: {{ content }}\",\n            \"ticket_max_validity_days\": \"Maksimaalselt lubatud {{ limit }} päeva\",\n            \"user_hash_allowed_characters\": \"Lubatud on ainult väiketähed, numbrid, alakriips (_) ja punkt (.)\",\n            \"user_hash_allowed_content\": \"ladinatähed (a-z, A-Z), numbrid (0-9), punkt (.) ja alakriips (_)\",\n            \"user_hash_requires_letter\": \"Peab sisaldama vähemalt ühte tähte\"\n        }\n    },\n    \"external_purchase\": {\n        \"confirm\": \"Kinnita\",\n        \"date_added\": \"Lisamise kuupäev\",\n        \"info\": \" Luba Teenusepakkujal oma oste tööde"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/d637c0ea-2b42-438f-8d1f-dce4099edf11",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "d3c4a9ee-484a-44d2-8912-8f9c5e15b480",
+   "correlationid": "6163138c-b869-41d3-bbf9-c923fd36b47e",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "75a29594-2a1e-4c6a-858b-eb69aae95aa5",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"d637c0ea-2b42-438f-8d1f-dce4099edf11\",\"name\":\"Stebby EN\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Help\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-faq.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"en-US\",\"messages\":[],\"labels\":{\"addReply\":\"Add a reply\",\"addYourMessageHere\":\"Add your message here...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"To continue, please share your email address\",\"aiAnswersButtonDescription\":\"Instant answers to your questions\",\"aiAnswersEndButton\":\"End\",\"aiAnswersRatingButton\":\"Submit\",\"aiAnswersRatingCancel\":\"Cancel\",\"aiAnswersRatingCommentsPlaceholder\":\"Any additional feedback?\",\"aiAnswersRatingGood\":\"Good\",\"aiAnswersRatingGreat\":\"Great\",\"aiAnswersRatingLabel\":\"How was your chat with Answers?\",\"aiAnswersRatingNotGood\":\"Not Good\",\"aiAnswersRatingOkay\":\"Okay\",\"aiAnswersRatingReturnHome\":\"Return home\",\"aiAnswersRatingThankYou\":\"Thank you!\",\"aiAnswersStillNeedHelp\":\"I still need help\",\"aiAnswersStillNeedHelpAnswer\":\"I'm here to help. You can refine your question below, or:\",\"aiAnswersUnableToVerifyEmail\":\"Please enter a valid email address to proceed (e.g. name@example.com)\",\"aiAssistantLabel\":\"AI assistant\",\"aiEndButton\":\"End\",\"aiNoPublicSources\":\"The answer was sourced from articles that cannot be displayed.\",\"aiResolutionModalMessage\":\"Did you find what you were looking for?\",\"aiSearchedFor\":\"Searched for\",\"aiSourcesLabel\":\"Sources\",\"aiSuggestionsLabel\":\"Suggestions\",\"answer\":\"Answers\",\"ask\":\"Ask\",\"askQuestionInputPlaceholder\":\"Ask a question...\",\"attachAFile\":\"Attach a file\",\"attachmentErrorText\":\"There was a problem uploading your attachment. Please try again in a moment.\",\"attachmentSizeErrorText\":\"Attachments may be no larger than 10MB\",\"backButton\":\"Back\",\"beaconButtonChatMinimize\":\"Minimize chat window\",\"beaconButtonChatOpen\":\"Open chat\",\"beaconButtonClose\":\"Close\",\"cantFindAnswer\":\"Can’t find an answer?\",\"chatAvailabilityChangeMessage\":\"Our team’s availability has changed and there’s no longer anyone available to chat. Send us a message instead and we’ll get back to you.\",\"chatbotAgentDisconnectedMessage\":\"{{ name }} has disconnected from the chat. It’s possible they lost their internet connection, so I’m looking for someone else to take over. Sorry for the delay!\",\"chatbotConfirmationMessage\":\"Thanks! Someone from our team will jump into the chat soon.\",\"chatbotGenericErrorMessage\":\"Something went wrong sending your message, please try again in a few minutes.\",\"chatbotGreet\":\"Hey! Please write your question. Somebody will be with you shortly!\",\"chatbotInactivityPrompt\":\"Since the chat has gone idle, I’ll end this chat in a few minutes.\",\"chatbotInvalidEmailMessage\":\"Looks like you’ve entered an invalid email address. Want to try again?\",\"chatbotName\":\"Help Bot\",\"chatbotPromptEmail\":\"Got it. Real quick, what’s your email address? We’ll use it for any follow-up messages.\",\"chatButtonDescription\":\"We're online, talk to us\",\"chatButtonLabel\":\"Chat\",\"chatConnected\":\"Connected to {{ name }}\",\"chatEndCalloutHeading\":\"All done!\",\"chatEndCalloutLink\":\"Return home\",\"chatEndCalloutMessage\":\"A copy of this conversation will land in your inbox shortly.\",\"chatEnded\":\"{{ name }} ended the chat\",\"chatEndUnassignedCalloutHeading\":\"Sorry about that\",\"chatEndUnassignedCalloutMessage\":\"It seems that all of our specialists are currently busy. We'll get back to you via e-mail soon.\",\"chatEndWaitingCustomerHeading\":\"Sorry abo"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6InQ5Q3pNcXpINk9aWXlXRENQbHpvdGc9PSIsInZhbHVlIjoiSHBTUDlMT24xaGZuRE9uNVY3U05hNXFyQktrUUM3Rnh3TDJLaExYaFArYWZ0ZDVHMVhZYmxhU0pJcHJwZkl6ZWtZOVZuL2VhTWg0S3dKYU13WmgvcHIrMGFtNW5DSFZLTTNqZ1dwTk9hZTBoWjNvUzAydnluSDlTQ2EvVTg3Nk4iLCJtYWMiOiIxNzUzNjVlZWFmYzUxYWZlMmQyMjU2ZTU4YTZmNjc2ODhiNDZjMzgyODkzN2E0NGU0YjNlY2ZhMDUzNmE3MjZlIiwidGFnIjoiIn0=",
+   "client-platform": "WEB",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"FeedbackFormQuery\",\"variables\":{},\"query\":\"query FeedbackFormQuery {\\n  data: MeQuery {\\n    feedbackForms {\\n      ...FeedbackForm\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment FeedbackForm on FeedbackFormGraphQLType {\\n  id\\n  fields {\\n    description\\n    title\\n    text\\n    type\\n    id\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/137a00a7-c074-4888-86bf-7e12329e9534",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "d3c4a9ee-484a-44d2-8912-8f9c5e15b480",
+   "correlationid": "a36c1443-562f-4dab-863f-0da8ee427cb3",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "16e48880-5030-4752-a458-754093d44271",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"137a00a7-c074-4888-86bf-7e12329e9534\",\"name\":\"Stebby ET\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Stebby chat\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-kkk.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"et-EE\",\"messages\":[],\"labels\":{\"addReply\":\"Vasta\",\"addYourMessageHere\":\"Sisesta oma sõnum siia...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"Jätkamiseks palun jagage oma e-posti aadressi\",\"aiAnswersButtonDescription\":\"Kohesed vastused teie küsimustele\",\"aiAnswersEndButton\":\"Lõpeta\",\"aiAnswersRatingButton\":\"Esita\",\"aiAnswersRatingCancel\":\"Loobu\",\"aiAnswersRatingCommentsPlaceholder\":\"Kas soovid veel midagi lisada?\",\"aiAnswersRatingGood\":\"Hea\",\"aiAnswersRatingGreat\":\"Suurepärane\",\"aiAnswersRatingLabel\":\"Kuidas läks vestlus Answersiga?\",\"aiAnswersRatingNotGood\":\"Halb\",\"aiAnswersRatingOkay\":\"Käib kah\",\"aiAnswersRatingReturnHome\":\"Tagasi avalehele\",\"aiAnswersRatingThankYou\":\"Aitäh!\",\"aiAnswersStillNeedHelp\":\"Vajan ikka abi\",\"aiAnswersStillNeedHelpAnswer\":\"Aitan teid meeleldi. Koostage oma küsimus allpool või\",\"aiAnswersUnableToVerifyEmail\":\"Jätkamiseks sisestage kehtiv e-posti aadress (näiteks: name@example.com)\",\"aiAssistantLabel\":\"AI-abiline\",\"aiEndButton\":\"Sulge\",\"aiNoPublicSources\":\"Vastuse allikaks on artiklid, mida ei saa kuvada.\",\"aiResolutionModalMessage\":\"Kas leidsid selle, mida otsisid?\",\"aiSearchedFor\":\"Otsiti\",\"aiSourcesLabel\":\"Allikad\",\"aiSuggestionsLabel\":\"Ettepanekud\",\"answer\":\"Vastused\",\"ask\":\"Küsi\",\"askQuestionInputPlaceholder\":\"Esita küsimus...\",\"attachAFile\":\"Manusta fail\",\"attachmentErrorText\":\"Manuse üleslaadimisel tekib tõrge. Palun proovi hetke pärast uuesti.\",\"attachmentSizeErrorText\":\"Manused ei tohi olla suuremad kui 10MB\",\"backButton\":\"Tagasi\",\"beaconButtonChatMinimize\":\"Sulge vestlusaken\",\"beaconButtonChatOpen\":\"Ava vestlus\",\"beaconButtonClose\":\"Sulge\",\"cantFindAnswer\":\"Kas te ei leia vastust?\",\"chatAvailabilityChangeMessage\":\"Meie meeskonna saadavus on muutunud ja enam pole saadaval ühtki spetsialisti. Jäta meile teade ja me vastame Sulle esimesel võimalusel!\",\"chatbotAgentDisconnectedMessage\":\"Kontakti {{ name }} ühendus vestlusega katkes. On võimalik, et tal tekkis probleem internetiühendusega, seega püüan leida asendust. Vabandame viivituse pärast!\",\"chatbotConfirmationMessage\":\"Aitäh! Keegi meie spetsialistidest vastab Sulle peagi!\",\"chatbotGenericErrorMessage\":\"Midagi läks valesti, palun proovi hetke pärast uuesti!\",\"chatbotGreet\":\"Hei! Palun esita oma küsimus. Meie spetsialist vastab Sulle peagi!\",\"chatbotInactivityPrompt\":\"Kuna vestlus on vaikne, sulgen vestluse mõne minuti pärast.\",\"chatbotInvalidEmailMessage\":\"Tundub, et sisestasid vale e-maili. Kas soovid uuesti proovida?\",\"chatbotName\":\"Abibot\",\"chatbotPromptEmail\":\"Selge. Mis on Sinu e-posti aadress? Kasutame seda täiendavate sõnumite jaoks!\",\"chatButtonDescription\":\"Oleme olemas, räägi meiega otse\",\"chatButtonLabel\":\"Vestlus\",\"chatConnected\":\"Ühendatud kontaktiga {{ name }}\",\"chatEndCalloutHeading\":\"Valmis!\",\"chatEndCalloutLink\":\"Tagasi algusesse\",\"chatEndCalloutMessage\":\"Selle vestluse koopia jõuab peagi Sinu postkasti\",\"chatEnded\":\"{{ name }} lõpetas vestluse\",\"chatEndUnassignedCalloutHeading\":\"Vabandame\",\"chatEndUnassignedCalloutMessage\":\"Tundub, et kõik meie spetsialistid on hetkel hõivatud. Saadame Sulle vastuse e-maili teel.\",\"chatEndWaitingCustomerHeading\":\"Vabandame\",\"chatEndWaitingCustomerMessage\":\"Sinu küsimus on lisatud e-posti järjekorda"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Im9iQitrbTd5SlFBcDQ3U3RCOURpYnc9PSIsInZhbHVlIjoiMDd4TUd3REt1Z1NqZE5GRjlXallBZENBTTdCMWMwZE1PQkJ5bFlFSUh4dWxKZXozdEJpazRLYmxjbGpyQjk2b2NRd0pCamlHS2xlK3RiSldQcXo4a1NaL2RyTzRJOXZrME1OUkdEemlrczNPSGlWT2VxSmVsMFMyN0Q2VWRRT3oiLCJtYWMiOiIwNzQwMDY0NDhjNjg3ZjljZTI2YjBhMzQ2Y2ZkYWJmZGRhNmNjNzhhNjY5YjNkYzdiZTM5M2UwZDM0ZWIzOWI5IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"UserHeaderDataQuery\",\"variables\":{},\"query\":\"query UserHeaderDataQuery {\\n  data: MeQuery {\\n    ...UserHeaderData\\n    __typename\\n  }\\n}\\n\\nfragment UserHeaderData on UserGraphQLType {\\n  hash\\n  primaryIdentificationValue\\n  profile {\\n    first_name\\n    last_name\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Im9iQitrbTd5SlFBcDQ3U3RCOURpYnc9PSIsInZhbHVlIjoiMDd4TUd3REt1Z1NqZE5GRjlXallBZENBTTdCMWMwZE1PQkJ5bFlFSUh4dWxKZXozdEJpazRLYmxjbGpyQjk2b2NRd0pCamlHS2xlK3RiSldQcXo4a1NaL2RyTzRJOXZrME1OUkdEemlrczNPSGlWT2VxSmVsMFMyN0Q2VWRRT3oiLCJtYWMiOiIwNzQwMDY0NDhjNjg3ZjljZTI2YjBhMzQ2Y2ZkYWJmZGRhNmNjNzhhNjY5YjNkYzdiZTM5M2UwZDM0ZWIzOWI5IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"HeaderContentsQuery\",\"variables\":{},\"query\":\"query HeaderContentsQuery {\\n  data: ContentsQuery {\\n    ...HeaderContent\\n    __typename\\n  }\\n}\\n\\nfragment HeaderContent on ContentGraphQLType {\\n  id\\n  imageWeb\\n  linkType\\n  linkContent\\n  createdAt\\n  pointOfSaleTicketSettings {\\n    service {\\n      id\\n      __typename\\n    }\\n    point_of_sale {\\n      id\\n      hash\\n      __typename\\n    }\\n    __typename\\n  }\\n  pointOfSale {\\n    id\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Im9iQitrbTd5SlFBcDQ3U3RCOURpYnc9PSIsInZhbHVlIjoiMDd4TUd3REt1Z1NqZE5GRjlXallBZENBTTdCMWMwZE1PQkJ5bFlFSUh4dWxKZXozdEJpazRLYmxjbGpyQjk2b2NRd0pCamlHS2xlK3RiSldQcXo4a1NaL2RyTzRJOXZrME1OUkdEemlrczNPSGlWT2VxSmVsMFMyN0Q2VWRRT3oiLCJtYWMiOiIwNzQwMDY0NDhjNjg3ZjljZTI2YjBhMzQ2Y2ZkYWJmZGRhNmNjNzhhNjY5YjNkYzdiZTM5M2UwZDM0ZWIzOWI5IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"SearchKeywordsQuery\",\"variables\":{\"limit\":12,\"language\":null},\"query\":\"query SearchKeywordsQuery($limit: Int, $language: String) {\\n  results: SearchKeywordsQuery(limit: $limit, language_abbr: $language)\\n}\"}",
+  "body": "{\"data\":{\"results\":[\"treening\",\"sport\",\"ujumine\",\"vesi\",\"saun\",\"spaa\",\"j\\u00f5usaal\",\"massaa\\u017e\",\"bassein\",\"vesiaeroobika\",\"fitness\",\"veekeskus\"]}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Im9iQitrbTd5SlFBcDQ3U3RCOURpYnc9PSIsInZhbHVlIjoiMDd4TUd3REt1Z1NqZE5GRjlXallBZENBTTdCMWMwZE1PQkJ5bFlFSUh4dWxKZXozdEJpazRLYmxjbGpyQjk2b2NRd0pCamlHS2xlK3RiSldQcXo4a1NaL2RyTzRJOXZrME1OUkdEemlrczNPSGlWT2VxSmVsMFMyN0Q2VWRRT3oiLCJtYWMiOiIwNzQwMDY0NDhjNjg3ZjljZTI2YjBhMzQ2Y2ZkYWJmZGRhNmNjNzhhNjY5YjNkYzdiZTM5M2UwZDM0ZWIzOWI5IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"searchFiltersQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null},\"country_abbr\":null,\"language_abbr\":null},\"query\":\"query searchFiltersQuery($filters: SearchFiltersGraphQLInputType, $country_abbr: String, $language_abbr: String) {\\n  data: SearchFiltersQuery(\\n    filters: $filters\\n    country_abbr: $country_abbr\\n    language_abbr: $language_abbr\\n  ) {\\n    ...SearchFilter\\n    __typename\\n  }\\n}\\n\\nfragment SearchFilter on SearchFiltersGraphQLType {\\n  categories {\\n    name\\n    translated\\n    __typename\\n  }\\n  cities {\\n    name\\n    __typename\\n  }\\n  distances {\\n    distance_from_user\\n    __typename\\n  }\\n  general {\\n    name\\n    value\\n    __typename\\n  }\\n  countries\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"categories\":[{\"name\":\"SPORTS\",\"translated\":\"Sport\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"LEISURE_SPORTS\",\"translated\":\"Aktiivne eluviis\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"PHYSIOTHERAPY\",\"translated\":\"F\\u00fcsioteraapia\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MASSAGE\",\"translated\":\"Massaa\\u017e\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"SPA\",\"translated\":\"Spaa\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"RECOVERY\",\"translated\":\"Taastusravi\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"COMPETITIONS\",\"translated\":\"\\u00dcritused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"NUTRITIONAL_COUNSELLING\",\"translated\":\"Toitumisn\\u00f5ustamine\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"GUIDANCE\",\"translated\":\"Heaolun\\u00f5ustamine\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"INSURANCE\",\"translated\":\"Stebby Ravikindlustus\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MEDICAL\",\"translated\":\"Meditsiiniteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"TESTS\",\"translated\":\"Meditsiinitestid\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"OPTICAL\",\"translated\":\"N\\u00e4gemisteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"DENTAL\",\"translated\":\"Hambaravi\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"MENTAL\",\"translated\":\"Vaimne tervis\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"GOODS\",\"translated\":\"Heaolutarbed\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"BEAUTY\",\"translated\":\"Iluteenused\",\"__typename\":\"ActivityCategoryGraphQLType\"},{\"name\":\"OTHER\",\"translated\":\"Muu\",\"__typename\":\"ActivityCategoryGraphQLType\"}],\"cities\":[{\"name\":\"Tallinn\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Tartu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"P\\u00e4rnu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"J\\u00f5hvi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Viljandi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"V\\u00f5ru\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Narva\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Kuressaare\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Rakvere\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Keila\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Kohtla-J\\u00e4rve\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Haapsalu\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Rapla\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Viimsi\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"P\\u00f5lva\",\"__typename\":\"SearchFilterGeneralGraphQLType\"}],\"distances\":null,\"general\":[{\"name\":\"Allahinnatud\",\"value\":\"only_discounted\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Maksuvabad teenused\",\"value\":\"only_est_tax_exception\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Hetkel avatud\",\"value\":\"only_open_venues\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"Osta kohe\",\"value\":\"only_prepurchasable\",\"__typename\":\"SearchFilterGeneralGraphQLType\"},{\"name\":\"N\\u00e4ita tulemusi k\\u00f5ikidest riikidest\",\"value\":\"include_all_regions\",\"__typename\":\"SearchFilterGeneralGraphQLType\"}],\"countries\":[\"LV\",\"LT\",\"EE\"],\"__typename\":\"SearchFiltersGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjNlUURkYUFOVW9rN1p0QWhLUGxTZlE9PSIsInZhbHVlIjoiYll6WHl5WFU3MSt5K0NyZVIveHpJY25ZdUs5WVQ2YVBFOFc4RDYxRzZqdzRPSjBuL0VsTWFNeWRPTWdkQkFTWE05a1daczdnMk1jdnZsNXFaVEZIcVJJYVJqNkw1cGduWUVnQlhUem5YNjF0Z0IwTHhBbDV6QTA0Mnk3emtwKzYiLCJtYWMiOiJlNWEzNTkzMWNlNTYyOTFmYjRiNWVjNzRjMzQ2OTBhNDQ1OGQ2N2IxMzg4YzRlN2FlMjVhNGMzZmJjNTJhNzgzIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"priceSpreadQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[null],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null}},\"query\":\"query priceSpreadQuery($filters: SearchFiltersGraphQLInputType!, $languageAbbr: String) {\\n  data: PriceSpreadQuery(filters: $filters, language_abbr: $languageAbbr) {\\n    average\\n    max\\n    min\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"average\":63,\"max\":400,\"min\":0,\"__typename\":\"PriceSpreadDataGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjNlUURkYUFOVW9rN1p0QWhLUGxTZlE9PSIsInZhbHVlIjoiYll6WHl5WFU3MSt5K0NyZVIveHpJY25ZdUs5WVQ2YVBFOFc4RDYxRzZqdzRPSjBuL0VsTWFNeWRPTWdkQkFTWE05a1daczdnMk1jdnZsNXFaVEZIcVJJYVJqNkw1cGduWUVnQlhUem5YNjF0Z0IwTHhBbDV6QTA0Mnk3emtwKzYiLCJtYWMiOiJlNWEzNTkzMWNlNTYyOTFmYjRiNWVjNzRjMzQ2OTBhNDQ1OGQ2N2IxMzg4YzRlN2FlMjVhNGMzZmJjNTJhNzgzIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"searchQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null,\"price_from\":null,\"price_to\":null,\"keyword\":\"loomaaed\"},\"orderBy\":null,\"direction\":null,\"page\":1,\"limit\":8,\"language_abbr\":\"et-ee\",\"country_abbr\":null},\"query\":\"query searchQuery($filters: SearchFiltersGraphQLInputType, $limit: Int, $page: Int, $orderBy: SearchOrderByTypeGraphQLEnumType, $direction: DirectionTypeEnum, $country_abbr: String, $language_abbr: String) {\\n  data: SearchQuery(\\n    filters: $filters\\n    limit: $limit\\n    page: $page\\n    order_by: $orderBy\\n    direction: $direction\\n    country_abbr: $country_abbr\\n    language_abbr: $language_abbr\\n  ) {\\n    data {\\n      ...UserSearchResult\\n      __typename\\n    }\\n    total\\n    totals {\\n      pos\\n      service\\n      event\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment UserSearchResult on SphinxResultGraphQLType {\\n  id\\n  hash\\n  type\\n  name\\n  latitude\\n  longitude\\n  mobile_cover_url\\n  description\\n  open_by_prior\\n  is_virtual\\n  open_status\\n  open_from\\n  open_to\\n  address\\n  city\\n  country_code\\n  is_campaign\\n  is_compensated\\n  pos_name\\n  pos_hash\\n  ticket_starting_from\\n  service_categories\\n  distance_from_user\\n  is_est_tax_exemption\\n  start_at\\n  end_at\\n  is_favourite\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"data\":[],\"total\":0,\"totals\":{\"pos\":0,\"service\":0,\"event\":0,\"__typename\":\"SphinxResultTotalsGraphQLType\"},\"__typename\":\"SphinxResultsGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IkUvWVFsYW1kZ0swaHlmaFBPMVUxcEE9PSIsInZhbHVlIjoic2pwZ05KdEhwcnNhcTRLZC9aaDlTMzNEWFdlUGY3cnY0L0RSak9iS0tnN1Y5T1ZZczdMeHlIRGZoMjlIRytSeERtemFLUXpLYnd6NDc4TjBuY01oTSs3RlBqUVJmaXdJUjZ6YWh3dldtT2NXMUJlTzdtZS85OGFUa01SUVpjWFAiLCJtYWMiOiIyN2U2ZDM4ODdiOTg0YjU1ZDk1NzM3NmEwNjU2MTQwOWE2YTM3MjA3NmUxNDllNWE4YzI5MTgyNjM5NmE0YWIxIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"priceSpreadQuery\",\"variables\":{\"filters\":{\"categories\":[],\"countries\":[],\"cities\":[],\"boolean_filters\":[],\"distance_from_user\":null,\"location\":null,\"type\":null,\"area\":null}},\"query\":\"query priceSpreadQuery($filters: SearchFiltersGraphQLInputType!, $languageAbbr: String) {\\n  data: PriceSpreadQuery(filters: $filters, language_abbr: $languageAbbr) {\\n    average\\n    max\\n    min\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"average\":63,\"max\":400,\"min\":0,\"__typename\":\"PriceSpreadDataGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za200zd878515571xf1&_p=1791705907360&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EEAAAGQC&ae=a&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=9&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&tag_exp=115616986~115938466~115938468~118012008~118897920~118897930~120213116~120385423~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&dt=Stebby&_s=4&tfd=5540",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "et-EE"
+  },
+  "post": "en=scroll&epn.percent_scrolled=90&_et=17\r\nen=page_view&_et=1967&dl=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed%26orderBy%3Ddefault&dr=https%3A%2F%2Fapp.stebby.eu%2Fsearch%3Fquery%3Dloomaaed&dt=Otsing",
+  "body": ""
+ },
+ {
+  "method": "GET",
+  "url": "https://consentcdn.cookiebot.com/consentconfig/78839ff2-fabf-4bdc-9dac-d4b3a8df0dac/settings.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\"widget\":{\"enabled\":true,\"position\":{\"position\":\"bottom-left\",\"distanceVerticalPx\":10,\"distanceHorizontalPx\":10},\"theme\":{\"closed\":{\"backgroundColor\":\"#141414\",\"foregroundColor\":\"#FFFFFF\"},\"opened\":{\"backgroundColor\":\"#FFFFFF\",\"foregroundColor\":\"#141414\",\"highlightColor\":\"#1032CF\",\"shadeColor\":\"#D6D6D6\",\"changeBackgroundColor\":\"#1032CF\",\"changeTextColor\":\"#FFFFFF\",\"changeBorderColor\":\"#1032CF\",\"withdrawBackgroundColor\":\"#FFFFFF\",\"withdrawTextColor\":\"#141414\",\"withdrawBorderColor\":\"#1032CF\",\"detailsBackgroundColor\":\"#F2F2F2\"}},\"content\":{\"cultures\":[\"en\",\"et\",\"lv\",\"lt\",\"ru\"],\"default\":\"et\",\"autodetectLanguage\":true}}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/pos/aqva.spa.veekeskus",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "unknown",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/config.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/pos/aqva.spa.veekeskus",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": "{\n  \"version\": \"86ff721\"\n}\n"
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=14&frm=0&apvc=1&ae=g&auid=1265011783.1791705899&dt=Stebby&en=page_view&dl=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&scrsrc=www.googletagmanager.com&rnd=2107915933.1791705913&navt=n&npa=0&us_privacy=1---&ep.ads_data_redaction=0&gdid=dMWZhNz&gtm=45He6a80h2v851809651za200zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115616985~115938465~115938468~118897920~118897930~119863601~120385422~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705913165&tfd=454&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za208zd878515571xf1&_p=1791705913114&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAAAAGQC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=1&tag_exp=115938465~115938469~118897920~118897930~119863601~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&dt=Stebby&en=page_view&tfd=473",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/ccm/collect?rcb=13&frm=0&apvc=0&ae=g&auid=1265011783.1791705899&dt=Stebby&tid=AW-989672175&dl=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&scrsrc=www.googletagmanager.com&rnd=2107915933.1791705913&navt=n&npa=0&us_privacy=1---&did=dMWZhNz&gdid=dMWZhNz&_tu=CA&gtm=45be6a80h2v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119863601~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&tft=1791705913207&tfd=497&tids=AW-989672175&fmt=8",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://www.google.com/rmkt/collect/989672175/?random=1791705913201&cv=11&fst=1791705913201&fmt=8&bg=ffffff&guid=ON&async=1&gtm=45be6a80h2v886280111z8851809651za20gzb851809651zd851809651xeaxf1&gcd=13l3l3l3l1l1&dma=0&tag_exp=115938465~115938469~118897920~118897930~119863601~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&u_w=1280&u_h=720&url=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&rcb=13&frm=0&tiba=Stebby&did=dMWZhNz&gdid=dMWZhNz&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=1265011783.1791705899&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uamb=0&uam=&uap=Linux&uapv=6.17.0&uaw=0&_tu=CA&ept=68&gcp=5",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za208zd878515571xf1&_p=1791705913114&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EAACAGQC&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&tag_exp=115938465~115938469~118897920~118897930~119863601~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&dt=Stebby&_s=2&tfd=524",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "content-type": "text/plain;charset=UTF-8",
+   "sec-ch-ua-mobile": "?0",
+   "accept-language": "et-EE"
+  },
+  "post": "en=page_view&_et=1\r\nen=page_view&_ee=1&_et=1",
+  "body": ""
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjI1VDk2NWJvcDB3U1lQQ1dYbDRmbkE9PSIsInZhbHVlIjoickJWVldRTkdmVnZ3dnJKMm9SU1IxYWZLVnBRb2NDUkh3MVE0OUpUaStLM2hHMDJFZ1plNG9sdHl4VjZLTkgrSWVVRHZacGVHNzRVRUgzanhSRzAvUGNTK3FaeThNS3FsazloUUwvU1ZEUzZYOGYvaGdER3V3YXNGdTZJTm9iUjkiLCJtYWMiOiI4ZGJjNjQ0YmNmOGY2NDc0OTBiZjM5YjMxZmYxODUyZjNjNjg2MmVjNmE3ZGNhMTcyZmI3ZWFjNjdhYWViZDc4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"MeQuery\",\"variables\":{},\"query\":\"query MeQuery {\\n  data: MeQuery {\\n    ...MeQueryUser\\n    __typename\\n  }\\n}\\n\\nfragment MeQueryUser on UserGraphQLType {\\n  role\\n  impersonator {\\n    canImpersonate\\n    activeImpersonation\\n    languageAbbr\\n    __typename\\n  }\\n  hasReceipts\\n  canSubmitReceipt\\n  changesRequestedReceiptCount\\n  expiringTicketCount\\n  hasRepeatingPurchaseContract\\n  email\\n  hash\\n  pin\\n  primaryIdentificationValue\\n  profile {\\n    first_name\\n    last_name\\n    birth_date\\n    gender\\n    __typename\\n  }\\n  settings {\\n    language_abbr\\n    accepted_terms\\n    accepted_privacy\\n    iban_name\\n    iban\\n    time_zone {\\n      name\\n      __typename\\n    }\\n    accepts_direct_marketing\\n    __typename\\n  }\\n  country {\\n    abbreviation\\n    name\\n    primary_identifier\\n    alpha2\\n    __typename\\n  }\\n  activeAccounts {\\n    balance\\n    type\\n    compensationrule {\\n      automatic_reload_amount\\n      accepts_receipt\\n      compensation_period\\n      tax_exception_only\\n      allCategories {\\n        name\\n        __typename\\n      }\\n      __typename\\n    }\\n    __typename\\n  }\\n  insurances {\\n    startAt\\n    endAt\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/d637c0ea-2b42-438f-8d1f-dce4099edf11",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "d0a7c43f-b75d-4d58-a4ad-ef9e04e35174",
+   "correlationid": "6d401202-9c4d-47d2-9d10-75f17b811a36",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "75a29594-2a1e-4c6a-858b-eb69aae95aa5",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"d637c0ea-2b42-438f-8d1f-dce4099edf11\",\"name\":\"Stebby EN\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Help\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-faq.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"en-US\",\"messages\":[],\"labels\":{\"addReply\":\"Add a reply\",\"addYourMessageHere\":\"Add your message here...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"To continue, please share your email address\",\"aiAnswersButtonDescription\":\"Instant answers to your questions\",\"aiAnswersEndButton\":\"End\",\"aiAnswersRatingButton\":\"Submit\",\"aiAnswersRatingCancel\":\"Cancel\",\"aiAnswersRatingCommentsPlaceholder\":\"Any additional feedback?\",\"aiAnswersRatingGood\":\"Good\",\"aiAnswersRatingGreat\":\"Great\",\"aiAnswersRatingLabel\":\"How was your chat with Answers?\",\"aiAnswersRatingNotGood\":\"Not Good\",\"aiAnswersRatingOkay\":\"Okay\",\"aiAnswersRatingReturnHome\":\"Return home\",\"aiAnswersRatingThankYou\":\"Thank you!\",\"aiAnswersStillNeedHelp\":\"I still need help\",\"aiAnswersStillNeedHelpAnswer\":\"I'm here to help. You can refine your question below, or:\",\"aiAnswersUnableToVerifyEmail\":\"Please enter a valid email address to proceed (e.g. name@example.com)\",\"aiAssistantLabel\":\"AI assistant\",\"aiEndButton\":\"End\",\"aiNoPublicSources\":\"The answer was sourced from articles that cannot be displayed.\",\"aiResolutionModalMessage\":\"Did you find what you were looking for?\",\"aiSearchedFor\":\"Searched for\",\"aiSourcesLabel\":\"Sources\",\"aiSuggestionsLabel\":\"Suggestions\",\"answer\":\"Answers\",\"ask\":\"Ask\",\"askQuestionInputPlaceholder\":\"Ask a question...\",\"attachAFile\":\"Attach a file\",\"attachmentErrorText\":\"There was a problem uploading your attachment. Please try again in a moment.\",\"attachmentSizeErrorText\":\"Attachments may be no larger than 10MB\",\"backButton\":\"Back\",\"beaconButtonChatMinimize\":\"Minimize chat window\",\"beaconButtonChatOpen\":\"Open chat\",\"beaconButtonClose\":\"Close\",\"cantFindAnswer\":\"Can’t find an answer?\",\"chatAvailabilityChangeMessage\":\"Our team’s availability has changed and there’s no longer anyone available to chat. Send us a message instead and we’ll get back to you.\",\"chatbotAgentDisconnectedMessage\":\"{{ name }} has disconnected from the chat. It’s possible they lost their internet connection, so I’m looking for someone else to take over. Sorry for the delay!\",\"chatbotConfirmationMessage\":\"Thanks! Someone from our team will jump into the chat soon.\",\"chatbotGenericErrorMessage\":\"Something went wrong sending your message, please try again in a few minutes.\",\"chatbotGreet\":\"Hey! Please write your question. Somebody will be with you shortly!\",\"chatbotInactivityPrompt\":\"Since the chat has gone idle, I’ll end this chat in a few minutes.\",\"chatbotInvalidEmailMessage\":\"Looks like you’ve entered an invalid email address. Want to try again?\",\"chatbotName\":\"Help Bot\",\"chatbotPromptEmail\":\"Got it. Real quick, what’s your email address? We’ll use it for any follow-up messages.\",\"chatButtonDescription\":\"We're online, talk to us\",\"chatButtonLabel\":\"Chat\",\"chatConnected\":\"Connected to {{ name }}\",\"chatEndCalloutHeading\":\"All done!\",\"chatEndCalloutLink\":\"Return home\",\"chatEndCalloutMessage\":\"A copy of this conversation will land in your inbox shortly.\",\"chatEnded\":\"{{ name }} ended the chat\",\"chatEndUnassignedCalloutHeading\":\"Sorry about that\",\"chatEndUnassignedCalloutMessage\":\"It seems that all of our specialists are currently busy. We'll get back to you via e-mail soon.\",\"chatEndWaitingCustomerHeading\":\"Sorry abo"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjI1VDk2NWJvcDB3U1lQQ1dYbDRmbkE9PSIsInZhbHVlIjoickJWVldRTkdmVnZ3dnJKMm9SU1IxYWZLVnBRb2NDUkh3MVE0OUpUaStLM2hHMDJFZ1plNG9sdHl4VjZLTkgrSWVVRHZacGVHNzRVRUgzanhSRzAvUGNTK3FaeThNS3FsazloUUwvU1ZEUzZYOGYvaGdER3V3YXNGdTZJTm9iUjkiLCJtYWMiOiI4ZGJjNjQ0YmNmOGY2NDc0OTBiZjM5YjMxZmYxODUyZjNjNjg2MmVjNmE3ZGNhMTcyZmI3ZWFjNjdhYWViZDc4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"getAllLanguages\",\"variables\":{},\"query\":\"query getAllLanguages {\\n  languages {\\n    abbreviation\\n    name\\n    default_name\\n    ready\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"languages\":[{\"abbreviation\":\"en-us\",\"name\":\"ENGLISH_US\",\"default_name\":\"English (US)\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"et-ee\",\"name\":\"ESTONIAN\",\"default_name\":\"Eesti\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lt-lt\",\"name\":\"LITHUANIAN\",\"default_name\":\"Lietuvi\\u0173\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"lv-lv\",\"name\":\"LATVIAN\",\"default_name\":\"Latvie\\u0161u\",\"ready\":true,\"__typename\":\"language\"},{\"abbreviation\":\"ru-ru\",\"name\":\"RUSSIAN\",\"default_name\":\"\\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439 \\u044f\\u0437\\u044b\\u043a\",\"ready\":true,\"__typename\":\"language\"}]}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://app.stebby.eu/assets/images/sprite.svg",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/pos/aqva.spa.veekeskus",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\"><svg style=\"display: none;\" aria-hidden=\"true\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><defs>\n        <clipPath id=\"icons-zoom-in-outline-a\">\n            <path d=\"M0 0h24v24H0z\"/>\n        </clipPath>\n    \n    <linearGradient id=\"socials-google-play-a\" x1=\"-324.451\" y1=\"213.5\" x2=\"-324.531\" y2=\"213.521\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#00a0ff\"/>\n      <stop offset=\".007\" stop-color=\"#00a1ff\"/>\n      <stop offset=\".26\" stop-color=\"#00beff\"/>\n      <stop offset=\".512\" stop-color=\"#00d2ff\"/>\n      <stop offset=\".76\" stop-color=\"#00dfff\"/>\n      <stop offset=\"1\" stop-color=\"#00e3ff\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-b\" x1=\"-408.339\" y1=\"655.269\" x2=\"-408.526\" y2=\"655.269\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ffe000\"/>\n      <stop offset=\".409\" stop-color=\"#ffbd00\"/>\n      <stop offset=\".775\" stop-color=\"orange\"/>\n      <stop offset=\"1\" stop-color=\"#ff9c00\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-c\" x1=\"-254.248\" y1=\"424.457\" x2=\"-254.314\" y2=\"424.567\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#ff3a44\"/>\n      <stop offset=\"1\" stop-color=\"#c31162\"/>\n    </linearGradient>\n    <linearGradient id=\"socials-google-play-d\" x1=\"-254.81\" y1=\"425.399\" x2=\"-254.781\" y2=\"425.448\" gradientUnits=\"objectBoundingBox\">\n      <stop offset=\"0\" stop-color=\"#32a071\"/>\n      <stop offset=\".068\" stop-color=\"#2da771\"/>\n      <stop offset=\".476\" stop-color=\"#15cf74\"/>\n      <stop offset=\".801\" stop-color=\"#06e775\"/>\n      <stop offset=\"1\" stop-color=\"#00f076\"/>\n    </linearGradient>\n  \n<linearGradient id=\"socials-instagram-paint0_linear_1450_483\" x1=\"3.50629\" y1=\"20.4937\" x2=\"20.4937\" y2=\"3.50713\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"#FAAD4F\"/>\n<stop offset=\"0.35\" stop-color=\"#DD2A7B\"/>\n<stop offset=\"0.62\" stop-color=\"#9537B0\"/>\n<stop offset=\"1\" stop-color=\"#515BD4\"/>\n</linearGradient>\n\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"525\" cy=\"466.3\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-15\" y=\"643.4\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t\t<rect x=\"-89.3\" y=\"627.8\" width=\"1080\" height=\"141.7\"/>\n\t\t\t\t\t\n\t\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"449\"/>\n\t\t\t\t\n\t\t\t\t\t<circle cx=\"450.7\" cy=\"450.7\" r=\"450.7\"/>\n\t\t\t\t<linearGradient id=\"illustrations-data_fly-b\" x1=\"137.638\" y1=\"-22.846\" x2=\"49.224\" y2=\"-33.691\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#95abc2\" stop-opacity=\".244\"/><stop offset=\"1\" stop-color=\"#5c738e\"/></linearGradient><clipPath id=\"illustrations-data_fly-a\"><path fill=\"#fff\" d=\"M0 0h166v80H0z\"/></clipPath>\n    <clipPath id=\"illustrations-empty-search-a\">\n      <path fill=\"#fff\" transform=\"translate(.5)\" d=\"M0 0h120v120H0z\"/>\n    </clipPath>\n  <linearGradient id=\"illustrations-no_folder-b\" x1=\"13.541\" y1=\"28.616\" x2=\"13.541\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-c\" x1=\"41.681\" y1=\"28.616\" x2=\"41.681\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#ccd2d6\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#ccd2d6\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-d\" x1=\"117.5\" y1=\"28.616\" x2=\"117.5\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\"/></linearGradient><linearGradient id=\"illustrations-no_folder-e\" x1=\"213.939\" y1=\"28.616\" x2=\"213.939\" y2=\"214.79\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#b4c5ca\" stop-opacity=\".1\"/><stop offset=\"1\" stop-color=\"#b4c5ca\" stop-opacity=\".25\""
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/en-us.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Add video\",\n        \"advertisement\": \"Advertisement\",\n        \"back\": \"Back\",\n        \"campaign\": \"Campaign\",\n        \"download_from_app_store\": \"Download from App Store\",\n        \"download_from_google_play\": \"Download from Google Play\",\n        \"fetching_data\": \"Fetching data\",\n        \"follow_us_on\": \"Follow us on {{network}}\",\n        \"help\": \"Help\",\n        \"home\": \"Home\",\n        \"next\": \"Next\",\n        \"previous\": \"Previous\",\n        \"settings\": \"Settings\",\n        \"stebby_homepage\": \"Stebby - homepage\",\n        \"zoom_in\": \"Zoom in\",\n        \"zoom_out\": \"Zoom out\"\n    },\n    \"data_not_found\": {\n        \"reload_data\": \"Reload data\",\n        \"title\": \"Error loading data, please try again\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Cancel\",\n        \"content\": \"This can't be undone\",\n        \"delete\": \"Delete\",\n        \"success\": \"Successfully deleted!\",\n        \"title\": \"Delete {{name}}?\"\n    },\n    \"error\": {\n        \"csrf_mismatch\": \"We have encountered an error, please refresh the page\",\n        \"delete\": \"Delete failed\",\n        \"get\": \"Request failed\",\n        \"maintenance\": {\n            \"checking_in\": \"Checking again in {{seconds}}s\",\n            \"continue\": \"Continue browsing\",\n            \"description\": \"Stebby is currently getting some maintenance done. Please wait, we should be back shortly!\",\n            \"recovered_description\": \"The system is back up. You can continue browsing.\",\n            \"recovered_title\": \"We're back online!\",\n            \"title\": \"Oops, something went wrong\"\n        },\n        \"missing_account_id\": \"Can not make payment without account id\",\n        \"save\": \"Failed to save\",\n        \"send\": \"Failed to send\",\n        \"something_went_wrong_with_request\": \"Something has gone wrong with your request, please try logging in again\",\n        \"system_unavailable\": \"The system is temporarily unavailable. Please wait a few moments and try again.\",\n        \"type_mismatch\": {\n            \"description\": \"For the best user experience, the page will be refreshed automatically in 10 seconds.\",\n            \"title\": \"Site requires a refresh\"\n        },\n        \"unknown\": \"Unknown error\",\n        \"upload_one_file\": \"At least one file has to be uploaded\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} can only contain alphabet letters, numbers, hyphens and underscores\",\n            \"at_least_one_required\": \"The number of days and/or the valid until date must be provided if the pre-sale option is selected\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Invalid date format\",\n            \"email\": \"Invalid email\",\n            \"iban\": \"Invalid IBAN\",\n            \"insurance_max_age\": \"This service is not offered to customers over {{ age }} years of age\",\n            \"invalid_date\": \"Invalid date\",\n            \"invalid_phone_number\": \"Invalid phone number\",\n            \"invalid_pin\": \"Invalid personal ID code number\",\n            \"max\": \"Too high. Must be smaller than or equal to {{ value }}\",\n            \"max_length\": \"Too long. Must be shorter than {{ length }} characters\",\n            \"min\": \"Too low. Must be greater than or equal to {{ value }}\",\n            \"min_length\": \"Too short. Must be at least {{ length }} characters\",\n            \"must_match\": \"Fields do not match ({{ currentField }}, {{ mustMatchField }})\",\n            \"open_days_required\": \"Opening hours are required\",\n            \"password_has_lowercase\": \"Password should have at least one lowercase character\",\n            \"password_has_numeric\": \"Password should have at least one numeric character\",\n            \"password_has_special_character\": \"Password should have at least one special character\",\n            \"password_has_uppercase\": \"Password should have at least one uppercase character\",\n            \"password_mismatch\": \"Passwords do not match\",\n            \"pattern\": \"Invalid format\",\n            \"promotion\": \"Promotion code not"
+ },
+ {
+  "method": "GET",
+  "url": "https://translations.stebby.eu/translations/et-ee.json",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\n    \"accessibility\": {\n        \"add\": \"Lisa video\",\n        \"advertisement\": \"Reklaam\",\n        \"back\": \"Tagasi\",\n        \"campaign\": \"Kampaania\",\n        \"download_from_app_store\": \"Laadi alla App Store'ist\",\n        \"download_from_google_play\": \"Laadi alla Google Playst\",\n        \"fetching_data\": \"Otsin andmeid\",\n        \"follow_us_on\": \"Jälgi meid võrgustikus {{network}}\",\n        \"help\": \"Abi\",\n        \"home\": \"Koduleht\",\n        \"next\": \"Järgmine\",\n        \"previous\": \"Eelmine\",\n        \"settings\": \"Seaded\",\n        \"stebby_homepage\": \"Stebby - koduleht\",\n        \"zoom_in\": \"Suumi sisse\",\n        \"zoom_out\": \"Suumi välja\"\n    },\n    \"delete_prompt\": {\n        \"cancel\": \"Tühista\",\n        \"content\": \"Seda toimingut ei saa tagasi võtta\",\n        \"delete\": \"Kustuta\",\n        \"success\": \"Edukalt kustutatud!\",\n        \"title\": \"Kustuta {{name}}?\"\n    },\n    \"error\": {\n        \"delete\": \"Kustutamine ebaõnnestus\",\n        \"get\": \"Päring ebaõnnestus\",\n        \"missing_account_id\": \"Makset ei saa ilma kasutaja ID-ta teostada.\",\n        \"save\": \"Salvestamine ebaõnnestus\",\n        \"send\": \"Saatmine ebaõnnestus\",\n        \"something_went_wrong_with_request\": \"Midagi läks Sinu päringuga valesti, palun proovi uuesti sisse logida\",\n        \"type_mismatch\": {\n            \"description\": \"Parima kasutajakogemuse pakkumiseks leht värskendatakse automaatselt 10 sekundi pärast.\",\n            \"title\": \"Veebileht vajab värskendamist\"\n        },\n        \"unknown\": \"Tundmatu viga\",\n        \"validation\": {\n            \"alphanumeric_hyphen_underscore\": \"{{ field }} võib sisaldada ainult tähestiku tähti, numbreid, side- ning alakriipse\",\n            \"at_least_one_required\": \"Pileti kehtivusaeg päevades ja/või kehtivuse lõppkuupäev peavad olema märgitud, kui pilet on etteostetav\",\n            \"bank_reference_nr\": \"Vigane viitenumber\",\n            \"date_format\": \"Vigane kuupäev\",\n            \"email\": \"Vigane e-post\",\n            \"iban\": \"Vigane IBAN\",\n            \"insurance_max_age\": \"Teenust ei pakuta üle {{ age }}-aastastele isikutele\",\n            \"invalid_date\": \"Vigane kuupäev\",\n            \"invalid_phone_number\": \"Vale telefoninumber\",\n            \"invalid_pin\": \"Vale isikukood\",\n            \"max\": \"Liiga kõrge. Peab olema väiksem või võrdne kui {{ value }}\",\n            \"max_length\": \"Liiga pikk. Peab olema lühem kui {{ length }} märki\",\n            \"min\": \"Liiga madal. Peab olema suurem või võrdne kui {{ value }}\",\n            \"min_length\": \"Liiga lühike. Peab olema vähemalt {{ length }} märki\",\n            \"must_match\": \"Väljade sisu ({{ currentField }}, {{ mustMatchField }}) ei kattu\",\n            \"open_days_required\": \"Lahtiolekuajad peavad olema märgitud\",\n            \"password_has_lowercase\": \"Salasõna peaks sisaldama vähemalt ühte väiketähte\",\n            \"password_has_numeric\": \"Salasõna peaks sisaldama vähemalt ühte numbrilist märki\",\n            \"password_has_special_character\": \"Salasõna peaks sisaldama vähemalt ühte erimärki\",\n            \"password_has_uppercase\": \"Salasõna peaks sisaldama vähemalt ühte suurtähte\",\n            \"password_mismatch\": \"Paroolid ei klapi\",\n            \"pattern\": \"Vigane formaat\",\n            \"promotion\": \"Kampaaniakoodi ei leitud\",\n            \"require_length_between\": \"{{ field }} peab mahtuma {{ min }} kuni {{ max }} tähemärgi piiresse\",\n            \"required\": \"{{ field }} on kohustuslik\",\n            \"required_content\": \"Lubatud tähemärgid: {{ content }}\",\n            \"ticket_max_validity_days\": \"Maksimaalselt lubatud {{ limit }} päeva\",\n            \"user_hash_allowed_characters\": \"Lubatud on ainult väiketähed, numbrid, alakriips (_) ja punkt (.)\",\n            \"user_hash_allowed_content\": \"ladinatähed (a-z, A-Z), numbrid (0-9), punkt (.) ja alakriips (_)\",\n            \"user_hash_requires_letter\": \"Peab sisaldama vähemalt ühte tähte\"\n        }\n    },\n    \"external_purchase\": {\n        \"confirm\": \"Kinnita\",\n        \"date_added\": \"Lisamise kuupäev\",\n        \"info\": \" Luba Teenusepakkujal oma oste tööde"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjI1VDk2NWJvcDB3U1lQQ1dYbDRmbkE9PSIsInZhbHVlIjoickJWVldRTkdmVnZ3dnJKMm9SU1IxYWZLVnBRb2NDUkh3MVE0OUpUaStLM2hHMDJFZ1plNG9sdHl4VjZLTkgrSWVVRHZacGVHNzRVRUgzanhSRzAvUGNTK3FaeThNS3FsazloUUwvU1ZEUzZYOGYvaGdER3V3YXNGdTZJTm9iUjkiLCJtYWMiOiI4ZGJjNjQ0YmNmOGY2NDc0OTBiZjM5YjMxZmYxODUyZjNjNjg2MmVjNmE3ZGNhMTcyZmI3ZWFjNjdhYWViZDc4IiwidGFnIjoiIn0=",
+   "client-platform": "WEB",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"FeedbackFormQuery\",\"variables\":{},\"query\":\"query FeedbackFormQuery {\\n  data: MeQuery {\\n    feedbackForms {\\n      ...FeedbackForm\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment FeedbackForm on FeedbackFormGraphQLType {\\n  id\\n  fields {\\n    description\\n    title\\n    text\\n    type\\n    id\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "GET",
+  "url": "https://d3hb14vkzrxvla.cloudfront.net/v1/137a00a7-c074-4888-86bf-7e12329e9534",
+  "status": 200,
+  "reqHeaders": {
+   "beacon-device-id": "d0a7c43f-b75d-4d58-a4ad-ef9e04e35174",
+   "correlationid": "5fc3eadc-617a-49ee-ab3b-0d622ad0fe07",
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "beacon-device-instance-id": "16e48880-5030-4752-a458-754093d44271",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "helpscout-origin": "Beacon-Embed",
+   "sec-ch-ua-mobile": "?0",
+   "helpscout-release": "2.2.351",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*"
+  },
+  "post": null,
+  "body": "{\"id\":\"137a00a7-c074-4888-86bf-7e12329e9534\",\"name\":\"Stebby ET\",\"companyName\":\"Stebby OÜ\",\"timezone\":\"Europe/Bucharest\",\"display\":{\"focusMode\":\"askFirst\",\"style\":\"icon\",\"text\":\"Stebby chat\",\"textAlign\":\"right\",\"iconImage\":\"message\",\"color\":\"#09d19b\",\"position\":\"right\",\"zIndex\":1050,\"showPoweredBy\":true},\"docsEnabled\":true,\"docs\":{\"siteVisible\":true,\"domains\":[\"stebby-kkk.helpscoutdocs.com\"]},\"messagingEnabled\":true,\"messaging\":{\"mailboxId\":287772,\"expectedResponseTime\":\"hrs\",\"avatars\":\"none\",\"chatEnabled\":true,\"chat\":{\"customFieldsEnabled\":true,\"emailTranscriptEnabled\":true,\"ratingsEnabled\":true,\"requireEmail\":true},\"contactForm\":{\"customFieldsEnabled\":false,\"showName\":true,\"showSubject\":true,\"allowAttachments\":true,\"showGetInTouch\":true},\"authType\":\"basic\",\"secureModeOnly\":false},\"language\":\"et-EE\",\"messages\":[],\"labels\":{\"addReply\":\"Vasta\",\"addYourMessageHere\":\"Sisesta oma sõnum siia...\",\"aiAnswers\":\"Answers\",\"aiAnswersAskForEmail\":\"Jätkamiseks palun jagage oma e-posti aadressi\",\"aiAnswersButtonDescription\":\"Kohesed vastused teie küsimustele\",\"aiAnswersEndButton\":\"Lõpeta\",\"aiAnswersRatingButton\":\"Esita\",\"aiAnswersRatingCancel\":\"Loobu\",\"aiAnswersRatingCommentsPlaceholder\":\"Kas soovid veel midagi lisada?\",\"aiAnswersRatingGood\":\"Hea\",\"aiAnswersRatingGreat\":\"Suurepärane\",\"aiAnswersRatingLabel\":\"Kuidas läks vestlus Answersiga?\",\"aiAnswersRatingNotGood\":\"Halb\",\"aiAnswersRatingOkay\":\"Käib kah\",\"aiAnswersRatingReturnHome\":\"Tagasi avalehele\",\"aiAnswersRatingThankYou\":\"Aitäh!\",\"aiAnswersStillNeedHelp\":\"Vajan ikka abi\",\"aiAnswersStillNeedHelpAnswer\":\"Aitan teid meeleldi. Koostage oma küsimus allpool või\",\"aiAnswersUnableToVerifyEmail\":\"Jätkamiseks sisestage kehtiv e-posti aadress (näiteks: name@example.com)\",\"aiAssistantLabel\":\"AI-abiline\",\"aiEndButton\":\"Sulge\",\"aiNoPublicSources\":\"Vastuse allikaks on artiklid, mida ei saa kuvada.\",\"aiResolutionModalMessage\":\"Kas leidsid selle, mida otsisid?\",\"aiSearchedFor\":\"Otsiti\",\"aiSourcesLabel\":\"Allikad\",\"aiSuggestionsLabel\":\"Ettepanekud\",\"answer\":\"Vastused\",\"ask\":\"Küsi\",\"askQuestionInputPlaceholder\":\"Esita küsimus...\",\"attachAFile\":\"Manusta fail\",\"attachmentErrorText\":\"Manuse üleslaadimisel tekib tõrge. Palun proovi hetke pärast uuesti.\",\"attachmentSizeErrorText\":\"Manused ei tohi olla suuremad kui 10MB\",\"backButton\":\"Tagasi\",\"beaconButtonChatMinimize\":\"Sulge vestlusaken\",\"beaconButtonChatOpen\":\"Ava vestlus\",\"beaconButtonClose\":\"Sulge\",\"cantFindAnswer\":\"Kas te ei leia vastust?\",\"chatAvailabilityChangeMessage\":\"Meie meeskonna saadavus on muutunud ja enam pole saadaval ühtki spetsialisti. Jäta meile teade ja me vastame Sulle esimesel võimalusel!\",\"chatbotAgentDisconnectedMessage\":\"Kontakti {{ name }} ühendus vestlusega katkes. On võimalik, et tal tekkis probleem internetiühendusega, seega püüan leida asendust. Vabandame viivituse pärast!\",\"chatbotConfirmationMessage\":\"Aitäh! Keegi meie spetsialistidest vastab Sulle peagi!\",\"chatbotGenericErrorMessage\":\"Midagi läks valesti, palun proovi hetke pärast uuesti!\",\"chatbotGreet\":\"Hei! Palun esita oma küsimus. Meie spetsialist vastab Sulle peagi!\",\"chatbotInactivityPrompt\":\"Kuna vestlus on vaikne, sulgen vestluse mõne minuti pärast.\",\"chatbotInvalidEmailMessage\":\"Tundub, et sisestasid vale e-maili. Kas soovid uuesti proovida?\",\"chatbotName\":\"Abibot\",\"chatbotPromptEmail\":\"Selge. Mis on Sinu e-posti aadress? Kasutame seda täiendavate sõnumite jaoks!\",\"chatButtonDescription\":\"Oleme olemas, räägi meiega otse\",\"chatButtonLabel\":\"Vestlus\",\"chatConnected\":\"Ühendatud kontaktiga {{ name }}\",\"chatEndCalloutHeading\":\"Valmis!\",\"chatEndCalloutLink\":\"Tagasi algusesse\",\"chatEndCalloutMessage\":\"Selle vestluse koopia jõuab peagi Sinu postkasti\",\"chatEnded\":\"{{ name }} lõpetas vestluse\",\"chatEndUnassignedCalloutHeading\":\"Vabandame\",\"chatEndUnassignedCalloutMessage\":\"Tundub, et kõik meie spetsialistid on hetkel hõivatud. Saadame Sulle vastuse e-maili teel.\",\"chatEndWaitingCustomerHeading\":\"Vabandame\",\"chatEndWaitingCustomerMessage\":\"Sinu küsimus on lisatud e-posti järjekorda"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlZqdFVvVDdDYnlwZThqSEtoc0t3dWc9PSIsInZhbHVlIjoiQkFqajdCcm5sSVN2U0xHdklPam9IODA3UjVxSEF3a3VML28wZnQvSml5RkVFb3VPekp2MHpCWklVSGdOS3NraitaSStzOGlVTEJIT1lQMFFoN3p0VEpHOFdzOEM2N3hsQlA5TmRWNm16K2JubWZXdXFyQXJHTzJ6V1NrQXpVWGwiLCJtYWMiOiIyMzI4YTcxYWIyZmJhOGNkYzc0ZGYzMzU5ZGMzOTYzNDgwNTcxMTBjNzVmZTljYjg5ODYzYzAyMjA2ODMyODhmIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-EE",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleNameQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleNameQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    id\\n    hash\\n    name\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"id\":18,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"pointOfSaleEventsQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\",\"page\":0,\"limit\":11,\"orderDirection\":\"ASC\",\"orderBy\":\"start_at\",\"dateFrom\":\"2026-10-11T00:00:00.000Z\"},\"query\":\"query pointOfSaleEventsQuery($posId: String!, $limit: Int, $page: Int, $orderBy: event_search_order_by, $orderDirection: DirectionTypeEnum, $dateFrom: DateTime, $endTo: DateTime, $onlyPrivate: Boolean) {\\n  events: event_search(\\n    point_of_sale_hash: $posId\\n    limit: $limit\\n    page: $page\\n    orderBy: $orderBy\\n    orderDirection: $orderDirection\\n    date_from: $dateFrom\\n    end_to: $endTo\\n    only_private: $onlyPrivate\\n  ) {\\n    total\\n    perPage\\n    data {\\n      ...HighlightedEvent\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment HighlightedEvent on event {\\n  id\\n  name\\n  category_name_translated\\n  is_compensated\\n  start_at\\n  end_at\\n  location {\\n    id\\n    address\\n    city\\n    post_code\\n    country_code\\n    __typename\\n  }\\n  highlighted_ticket_settings {\\n    ...TicketSettingsForEvent\\n    __typename\\n  }\\n  __typename\\n}\\n\\nfragment TicketSettingsForEvent on ticket_settings {\\n  id\\n  name\\n  active\\n  can_purchase\\n  can_purchase_online\\n  purchasable_from\\n  activeCampaign {\\n    id\\n    __typename\\n  }\\n  events {\\n    id\\n    name\\n    category_name_translated\\n    is_compensated\\n    __typename\\n  }\\n  ticket_price {\\n    id\\n    price\\n    current_price\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"events\":{\"total\":0,\"perPage\":11,\"data\":[],\"__typename\":\"eventPagination\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleAvatarDataQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleAvatarDataQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleAvatarData\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleAvatarData on PointOfSaleGraphQLType {\\n  hash\\n  avatar\\n  name\\n  usergroup {\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"hash\":\"aqva.spa.veekeskus\",\"avatar\":\"https:\\/\\/data-public.stebby.eu\\/media\\/avatar\\/s\\/u\\/7bbe925d50db15fc02f2ec362cfdfdff.jpg\",\"name\":\"Aqva Spa Veekeskus\",\"usergroup\":{\"hash\":\"aqva.spa.veekeskus\",\"__typename\":\"UsergroupGraphQLType\"},\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleAboutDataQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleAboutDataQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleAboutData\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleAboutData on PointOfSaleGraphQLType {\\n  hash\\n  name\\n  info\\n  merole\\n  gallery {\\n    id\\n    type\\n    url\\n    __typename\\n  }\\n  usergroup {\\n    id\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"info\":\"Aqva Hotels O\\u00dc teavitab: piletite kehtivusaega ei pikendata.\\nPalume kasutada oma pileteid nende kehtivuse perioodil, kuna p\\u00e4rast seda need enam ei kehti. \\nHotel & Spa veekeskus pakub laia valikut atraktsioone nii lastele kui t\\u00e4iskasvanutele. Veekeskuses ootavad Sind kuus basseini, mis pakuvad palju ujumis- ja suplemisr\\u00f5\\u00f5mu. Valikust leiad:\\nkosedega lainebasseini\\nvastuvoolu ujumisraja\\nl\\u00f5bubasseini, kus on mitmeid koskesid ja veealuseid massaa\\u017eiv\\u00f5imalusi\\naastaringselt avatud v\\u00e4libasseini\\n25-meetrise sportbasseini, millel on 6 rada\\nLiutoru valgusefektidega\\n2 lastebasseini ja mullivannid\\nSeiklushimulistele soovitame kindlasti k\\u00fclastada valgusefektidega liutoru.\\n\\nSaunakeskuses ootab Sind kaheksa erinevat sauna, mis pakuvad v\\u00f5imalust nautida parimat saunakultuuri. Valikust leiad:\\nkadakasauna\\naroomi-aurusauna\\nsoola-aurusauna\\ninfrapunasauna\\nsanaariumi\\nLeilisaunad erinevate temperatuuridega\\nLisaks on v\\u00f5imalik osaleda vesiaeroobika ja j\\u00f5usaali ringtreeningutes.\\n\\nMeie spaa men\\u00fc\\u00fcs on lai valik massaa\\u017ee, kehahooldusi ja iluteenuseid, kus kasutame eksklusiivseid tooteid tuntud br\\u00e4ndidelt nagu Phytomer, Phytoceane ja Alessandro. Sind ootab hellitav ilu ja heaolu!\\n\\nT\\u00e4psem info meie lahtiolekuaegade ja hoolitsuste kohta on saadaval meie kodulehel: www.aqvahotels.ee\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\",\"merole\":\"guest\",\"gallery\":[],\"usergroup\":{\"id\":36,\"hash\":\"aqva.spa.veekeskus\",\"__typename\":\"UsergroupGraphQLType\"},\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"pointOfSaleInfoForSidebarQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query pointOfSaleInfoForSidebarQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleInfoForSidebar\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleInfoForSidebar on PointOfSaleGraphQLType {\\n  id\\n  hash\\n  name\\n  activities\\n  email\\n  phone\\n  registration_link\\n  open_days {\\n    day_of_week\\n    from_minutes\\n    to_minutes\\n    __typename\\n  }\\n  location {\\n    address\\n    city\\n    __typename\\n  }\\n  locationInfo\\n  is_favourite\\n  open_by_prior\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"id\":18,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"activities\":\"ujumine, bassein, vesiaeroobika, j\\u00f5usaal, saunad, hoolitsused, treeningud,ilukeskus, j\\u00f5usaal, veekeskus, saun, massaa\\u017e, spa, spaa, saunakeskus, j\\u00f5usaali ringtreeing, aqva mix, aqva box, hommikuujumine\",\"email\":\"marju@aqvahotels.ee\",\"phone\":\"+372 326 0010\",\"registration_link\":null,\"open_days\":[{\"day_of_week\":7,\"from_minutes\":480,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":1,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":2,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":3,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":4,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":5,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":6,\"from_minutes\":480,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"}],\"location\":{\"address\":\"Parkali 4\",\"city\":\"Rakvere\",\"__typename\":\"LocationGraphQLType\"},\"locationInfo\":null,\"is_favourite\":false,\"open_by_prior\":false,\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/cashier",
+  "status": 401,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"pointsOfSale\",\"variables\":{\"pointOfSaleHash\":\"aqva.spa.veekeskus\"},\"query\":\"query pointsOfSale($pointOfSaleHash: String!) {\\n  data: PointsOfSaleQuery(pointOfSaleHash: $pointOfSaleHash) {\\n    ...PointOfSale\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSale on PointOfSaleGraphQLType {\\n  canExtendTickets\\n  hash\\n  meRole\\n  name\\n  userGroupHash\\n  __typename\\n}\"}",
+  "body": "{\"errors\":[{\"message\":\"\\u00d5igused puuduvad\",\"code\":1001}],\"data\":{\"data\":null}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Ilc3Uk1zWmo4bGdlRXIweWY0MGFhRWc9PSIsInZhbHVlIjoicE5RaGMrUnBpNk5YYVAwdzFET1RaVWJGdUEraDJaRCtuTGxROThkWFNWY2NqM3pxTjM2MENzWTkvOVY5UVZqeUFvdDZodlZMeU5YNWdSM2JYNHVMRDRlc00xRzVKaWpLUS9XZENNMzRZQW1jeXV4am45ck9xUm16dlRPd29XbTMiLCJtYWMiOiI2ZDkyZWNkMzQ2OTI2YTExZmQ4MjAxNmI2NGUyZDg0NzQyZjkzYTU1MGQ2M2M4YzVlZjgxNzkzMzc0ZDQ5MDlhIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"usergroupPointsOfSaleSidebarQuery\",\"variables\":{\"usergroupHash\":\"aqva.spa.veekeskus\"},\"query\":\"query usergroupPointsOfSaleSidebarQuery($usergroupHash: String!, $search: String) {\\n  points_of_sale: usergroup_points_of_sale(\\n    usergroup_hash: $usergroupHash\\n    search: $search\\n  ) {\\n    ...UsergroupPointsOfSaleSidebar\\n    __typename\\n  }\\n}\\n\\nfragment UsergroupPointsOfSaleSidebar on point_of_sale {\\n  id\\n  hash\\n  name\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"points_of_sale\":[{\"id\":18,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"__typename\":\"point_of_sale\"}]}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"getPointOfSaleHighlightedTickets\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\",\"limit\":11},\"query\":\"query getPointOfSaleHighlightedTickets($posId: String!, $limit: Int) {\\n  pointOfSale: pos_highlighted_tickets(pos_hash: $posId, limit: $limit) {\\n    ...HighlightedPosTicketSettings\\n    __typename\\n  }\\n}\\n\\nfragment HighlightedPosTicketSettings on pos_ticket_settings {\\n  id\\n  can_purchase_online\\n  current_price\\n  ticket_settings {\\n    id\\n    name\\n    active\\n    can_purchase_online\\n    purchasable_from\\n    activeCampaign {\\n      id\\n      __typename\\n    }\\n    __typename\\n  }\\n  service {\\n    id\\n    name\\n    category_name_translated\\n    is_compensated\\n    __typename\\n  }\\n  ticket_price {\\n    id\\n    price\\n    current_price\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"pointOfSale\":[{\"id\":89188,\"can_purchase_online\":true,\"current_price\":27,\"ticket_settings\":{\"id\":4176,\"name\":\"Veekeskus + saunakeskus 2,5h R-P kell 08.00-22.00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":5035,\"name\":\"Veekeskus + saunakeskus 2,5h R-P kell 08.00-22.00\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":19519,\"price\":30,\"current_price\":27,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89190,\"can_purchase_online\":true,\"current_price\":24.3,\"ticket_settings\":{\"id\":26480,\"name\":\"Veekeskus + saunakeskus 2,5h E-N kell 15.00-22.00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":15921,\"name\":\"Veekeskus + saunakeskus 2,5h E-N kell 15.00-22.00\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":41883,\"price\":27,\"current_price\":24.3,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89441,\"can_purchase_online\":true,\"current_price\":9,\"ticket_settings\":{\"id\":4177,\"name\":\"Treeningud 1.5h\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":5036,\"name\":\"Treeningud 1.5h\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":19520,\"price\":10,\"current_price\":9,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89137,\"can_purchase_online\":true,\"current_price\":22.5,\"ticket_settings\":{\"id\":586,\"name\":\"Veekeskus + saunakeskus 2,5h E-N kell 10.00-15.00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":974,\"name\":\"Veekeskus- ja saunakeskus 2,5h E-N kell 10.00-15.00\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":19483,\"price\":25,\"current_price\":22.5,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89198,\"can_purchase_online\":true,\"current_price\":31.5,\"ticket_settings\":{\"id\":6761,\"name\":\"Vee- ja saunakeskus 4h t\\u00e4ispilet R-P  8:00-22:00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":7955,\"name\":\"Vee- ja saunakeskus 4h t\\u00e4ispilet R-P  8:00-22:00\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":19529,\"price\":35,\"current_price\":31.5,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89128,\"can_purchase_online\":true,\"current_price\":8.1,\"ticket_settings\":{\"id\":87,\"name\":\"Hommikuujumine, 2h E-R kell 7.00-10.00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":223,\"name\":\"Hommikuujumine, 2h E-R kell 7.00-10.00\",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":19478,\"price\":9,\"current_price\":8.1,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89202,\"can_purchase_online\":true,\"current_price\":23.4,\"ticket_settings\":{\"id\":26479,\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, R-P\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":null,\"activeCampaign\":null,\"__typename\":\"ticket_settings\"},\"service\":{\"id\":15920,\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, R-P \",\"category_name_translated\":\"Sport\",\"is_compensated\":false,\"__typename\":\"service\"},\"ticket_price\":{\"id\":41882,\"price\":26,\"current_price\":23.4,\"__typename\":\"ticket_price\"},\"__typename\":\"pos_ticket_settings\"},{\"id\":89204,\"can_purchase_online\":true,\"current_price\":19.8,\"ticket_settings\":{\"id\":26478,\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, E-N kell 15.00-22.00\",\"active\":true,\"can_purchase_online\":true,\"purchasable_from\":nu"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjcyNFRseFNNblEzSTgrZnJ5TlBXUGc9PSIsInZhbHVlIjoiT20vWHhrSitQSGErVldCR1J5TzhiVVNyVEFUOXZHeFRkeUQwVjc5WVNXMFV2VnVSNWlCaXJ6NDZhOXJqMEI5OGVWR3lzQjZvOXlRbWFxNjRJdnFmV0ZmN2xXVTJ4d2ZXc2pBN2lmRW91QTc3QXFvWEdEUVcwOGEwK0NDN2pQVHYiLCJtYWMiOiI4ZTBlNWIyMmUyNTY4MWQ3NDM5NzY2OGE5YTA4ODQ1Y2JjMDk2ZmU4NGMzN2U1ZjNlZDlmMzViOGJkNzljOGM4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"usergroupQuery\",\"variables\":{\"usergroupHash\":\"aqva.spa.veekeskus\"},\"query\":\"query usergroupQuery($usergroupHash: String!) {\\n  usergroup: usergroup(usergroup_hash: $usergroupHash) {\\n    id\\n    hash\\n    name\\n    merole\\n    is_business\\n    is_service_provider\\n    is_event_provider\\n    is_contract_provider\\n    confirmed\\n    profile {\\n      url\\n      phone\\n      email\\n      country_abbr\\n      language_abbr\\n      reg_nr\\n      vat_nr\\n      business_name\\n      location {\\n        address\\n        city\\n        country_code\\n        post_code\\n        __typename\\n      }\\n      __typename\\n    }\\n    billinginfo {\\n      different_billing\\n      email\\n      send_invoices_via_email\\n      invoice_deadline_days\\n      po_number\\n      contactPerson\\n      location {\\n        address\\n        city\\n        country_code\\n        post_code\\n        __typename\\n      }\\n      __typename\\n    }\\n    is_compensating\\n    privacy {\\n      id\\n      __typename\\n    }\\n    businesspackages {\\n      ...BusinessPackageWithDates\\n      __typename\\n    }\\n    active_businesspackage {\\n      ...ActiveBusinessPackage\\n      __typename\\n    }\\n    businessAccount {\\n      id\\n      bankAccounts {\\n        id\\n        iban\\n        iban_name\\n        reference_nr\\n        __typename\\n      }\\n      __typename\\n    }\\n    payment_info {\\n      compensated_amount\\n      service_fee_amount\\n      __typename\\n    }\\n    compensationgroup {\\n      insurance\\n      multi_account\\n      __typename\\n    }\\n    __typename\\n  }\\n}\\n\\nfragment BusinessPackageWithDates on businesspackagewithdates {\\n  id\\n  active\\n  name\\n  service_fee_percentage\\n  ticket_max_validity_days\\n  start_at\\n  end_at\\n  module_discount\\n  __typename\\n}\\n\\nfragment ActiveBusinessPackage on businesspackagewithdates {\\n  id\\n  active\\n  name\\n  public\\n  start_at\\n  end_at\\n  module_discount\\n  media_types\\n  module_service_reorder\\n  module_campaign\\n  module_purchase_contract\\n  ticket_max_validity_days\\n  ticket_extension_count\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"usergroup\":{\"id\":36,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Hotel & Spa\",\"merole\":\"guest\",\"is_business\":true,\"is_service_provider\":true,\"is_event_provider\":false,\"is_contract_provider\":false,\"confirmed\":true,\"profile\":{\"url\":\"www.aqvahotels.ee\",\"phone\":\"+372 326 0010\",\"email\":\"info@aqvahotels.ee\",\"country_abbr\":\"EST\",\"language_abbr\":\"et-ee\",\"reg_nr\":\"11236415\",\"vat_nr\":\"EE101069746\",\"business_name\":\"Aqva Hotels Osa\\u00fching\",\"location\":{\"address\":\"L\\u00e4\\u00e4ne-Viru maakond, Rakvere linn, Parkali tn 4\",\"city\":\"Rakvere\",\"country_code\":\"EE\",\"post_code\":\"44308\",\"__typename\":\"location\"},\"__typename\":\"usergroup_profile\"},\"billinginfo\":null,\"is_compensating\":false,\"privacy\":null,\"businesspackages\":null,\"active_businesspackage\":null,\"businessAccount\":null,\"payment_info\":null,\"compensationgroup\":null,\"__typename\":\"usergroup\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjVxdVdtNzhLZVJvcTNpeUZKZHJpV2c9PSIsInZhbHVlIjoiNkdLbnloaEJzckMrSGF1Vzd3dDh1b1hTTWVhQnlhL1BlRGNGYWF0STRYU0U3T0c5N2hVcnFWVmJTTTZkSkFZV21RZnRpa25FOFoyS2FlVkNLRXhNWk4zdjZNMUloWUd6UnhTbEhJMCs5ZjRjNzI4UDdKR0VneHRNaE8raS81dlAiLCJtYWMiOiIwMTM2MThkYzcwNjIzZTQ2NWUxYjg1M2ViOGJlYWM4Mjc3YjRiNDAzZGEyMDc0YjU1MzE5MDI4MTgyMmE0YTIwIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleHeaderDataQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleHeaderDataQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleHeaderData\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleHeaderData on PointOfSaleGraphQLType {\\n  hash\\n  merole\\n  coverMedia {\\n    ...PointOfSaleMediaData\\n    __typename\\n  }\\n  name\\n  hostsEvents\\n  services {\\n    name\\n    __typename\\n  }\\n  usergroup {\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\\n\\nfragment PointOfSaleMediaData on MediaGraphQLType {\\n  type\\n  url\\n  sizes {\\n    id\\n    size\\n    url\\n    x1\\n    x2\\n    y1\\n    y2\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"hash\":\"aqva.spa.veekeskus\",\"merole\":\"guest\",\"coverMedia\":{\"type\":\"IMAGE\",\"url\":\"https:\\/\\/data-public.stebby.eu\\/media\\/I\\/O\\/IOMWlBFgxXvNdEr5OKGFRO00uYrp0a4T6XowzjZh.jpg\",\"sizes\":[{\"id\":34468,\"size\":\"COVER\",\"url\":\"https:\\/\\/data-public.stebby.eu\\/media\\/cover\\/2\\/B\\/942108f7cf7bad1887366cb47766a9c1.jpg\",\"x1\":0,\"x2\":2048,\"y1\":477,\"y2\":1080,\"__typename\":\"MediaSizeGraphQLType\"},{\"id\":34469,\"size\":\"MOBILE_COVER\",\"url\":\"https:\\/\\/data-public.stebby.eu\\/media\\/mobile_cover\\/L\\/U\\/942108f7cf7bad1887366cb47766a9c1.jpg\",\"x1\":0,\"x2\":2048,\"y1\":151,\"y2\":1215,\"__typename\":\"MediaSizeGraphQLType\"}],\"__typename\":\"MediaGraphQLType\"},\"name\":\"Aqva Spa Veekeskus\",\"hostsEvents\":false,\"services\":[{\"name\":\"Hommikuujumine, 2h E-R kell 7.00-10.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, E-N kell 09.00-15.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskuse kuukaart\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskuse kuukaart\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskus- ja saunakeskus 2,5h E-N kell 10.00-15.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskus + saunakeskus 2,5h R-P kell 08.00-22.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h sooduspilet E-N 9:00-15:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, R-P \",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h sooduspilet E-N 15:00-22:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Treeningud 1.5h\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h sooduspilet R-P 8:00-22:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskus + saunakeskus 2,5h E-N kell 15.00-22.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h t\\u00e4ispilet E-N 9:00-15:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h t\\u00e4ispilet E-N 15:00-22:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 4h t\\u00e4ispilet R-P  8:00-22:00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskuse k\\u00fclastus 2,5 tundi, E-N kell 15.00-22.00\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Kehahoolitsus\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Vee- ja saunakeskus 2,5h sooduspilet\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Massaa\\u017e\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Jalamassaa\\u017e\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Jalahoolitsus\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"N\\u00e4ohoolitsus\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"K\\u00e4tehoolitsus\",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskuse 4 h \",\"__typename\":\"ServiceGraphQLType\"},{\"name\":\"Veekeskus 4h soodus\",\"__typename\":\"ServiceGraphQLType\"}],\"usergroup\":{\"hash\":\"aqva.spa.veekeskus\",\"__typename\":\"UsergroupGraphQLType\"},\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IjcyNFRseFNNblEzSTgrZnJ5TlBXUGc9PSIsInZhbHVlIjoiT20vWHhrSitQSGErVldCR1J5TzhiVVNyVEFUOXZHeFRkeUQwVjc5WVNXMFV2VnVSNWlCaXJ6NDZhOXJqMEI5OGVWR3lzQjZvOXlRbWFxNjRJdnFmV0ZmN2xXVTJ4d2ZXc2pBN2lmRW91QTc3QXFvWEdEUVcwOGEwK0NDN2pQVHYiLCJtYWMiOiI4ZTBlNWIyMmUyNTY4MWQ3NDM5NzY2OGE5YTA4ODQ1Y2JjMDk2ZmU4NGMzN2U1ZjNlZDlmMzViOGJkNzljOGM4IiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleAvatarDataQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleAvatarDataQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleAvatarData\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleAvatarData on PointOfSaleGraphQLType {\\n  hash\\n  avatar\\n  name\\n  usergroup {\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"hash\":\"aqva.spa.veekeskus\",\"avatar\":\"https:\\/\\/data-public.stebby.eu\\/media\\/avatar\\/s\\/u\\/7bbe925d50db15fc02f2ec362cfdfdff.jpg\",\"name\":\"Aqva Spa Veekeskus\",\"usergroup\":{\"hash\":\"aqva.spa.veekeskus\",\"__typename\":\"UsergroupGraphQLType\"},\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6Ilc3Uk1zWmo4bGdlRXIweWY0MGFhRWc9PSIsInZhbHVlIjoicE5RaGMrUnBpNk5YYVAwdzFET1RaVWJGdUEraDJaRCtuTGxROThkWFNWY2NqM3pxTjM2MENzWTkvOVY5UVZqeUFvdDZodlZMeU5YNWdSM2JYNHVMRDRlc00xRzVKaWpLUS9XZENNMzRZQW1jeXV4am45ck9xUm16dlRPd29XbTMiLCJtYWMiOiI2ZDkyZWNkMzQ2OTI2YTExZmQ4MjAxNmI2NGUyZDg0NzQyZjkzYTU1MGQ2M2M4YzVlZjgxNzkzMzc0ZDQ5MDlhIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleNameQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleNameQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    id\\n    hash\\n    name\\n    __typename\\n  }\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"id\":18,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IlY4Y0UwdWR6aW85cHVzRTIyU3g5Q2c9PSIsInZhbHVlIjoiR1JESGw5NkNvZDE5SlVPaURFMUt3Vy9VVCtSQVloMWFaZEVza3BqR2swRUUzK2d5Y0tLRVRGM09DbVZkTWErN0FpWlNTeHcwalhIYUt4UXBJNzlQWGFmMzVEbnBQYTl6QVUrVTR2cmVhMlc4MDFlTkRHeFNjeVZYSENvNWtidU8iLCJtYWMiOiIwNTBhNzNiMDdkMWIwMDRiMWI1YjAxMDBlMjIyNzA5OTM5NGEyY2M1YzJiZGRjODQ5MmM0YWFjOWY5Y2E3YmRjIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"PointOfSaleAboutDataQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query PointOfSaleAboutDataQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleAboutData\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleAboutData on PointOfSaleGraphQLType {\\n  hash\\n  name\\n  info\\n  merole\\n  gallery {\\n    id\\n    type\\n    url\\n    __typename\\n  }\\n  usergroup {\\n    id\\n    hash\\n    __typename\\n  }\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"info\":\"Aqva Hotels O\\u00dc teavitab: piletite kehtivusaega ei pikendata.\\nPalume kasutada oma pileteid nende kehtivuse perioodil, kuna p\\u00e4rast seda need enam ei kehti. \\nHotel & Spa veekeskus pakub laia valikut atraktsioone nii lastele kui t\\u00e4iskasvanutele. Veekeskuses ootavad Sind kuus basseini, mis pakuvad palju ujumis- ja suplemisr\\u00f5\\u00f5mu. Valikust leiad:\\nkosedega lainebasseini\\nvastuvoolu ujumisraja\\nl\\u00f5bubasseini, kus on mitmeid koskesid ja veealuseid massaa\\u017eiv\\u00f5imalusi\\naastaringselt avatud v\\u00e4libasseini\\n25-meetrise sportbasseini, millel on 6 rada\\nLiutoru valgusefektidega\\n2 lastebasseini ja mullivannid\\nSeiklushimulistele soovitame kindlasti k\\u00fclastada valgusefektidega liutoru.\\n\\nSaunakeskuses ootab Sind kaheksa erinevat sauna, mis pakuvad v\\u00f5imalust nautida parimat saunakultuuri. Valikust leiad:\\nkadakasauna\\naroomi-aurusauna\\nsoola-aurusauna\\ninfrapunasauna\\nsanaariumi\\nLeilisaunad erinevate temperatuuridega\\nLisaks on v\\u00f5imalik osaleda vesiaeroobika ja j\\u00f5usaali ringtreeningutes.\\n\\nMeie spaa men\\u00fc\\u00fcs on lai valik massaa\\u017ee, kehahooldusi ja iluteenuseid, kus kasutame eksklusiivseid tooteid tuntud br\\u00e4ndidelt nagu Phytomer, Phytoceane ja Alessandro. Sind ootab hellitav ilu ja heaolu!\\n\\nT\\u00e4psem info meie lahtiolekuaegade ja hoolitsuste kohta on saadaval meie kodulehel: www.aqvahotels.ee\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\",\"merole\":\"guest\",\"gallery\":[],\"usergroup\":{\"id\":36,\"hash\":\"aqva.spa.veekeskus\",\"__typename\":\"UsergroupGraphQLType\"},\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://api.stebby.eu/graphql/user",
+  "status": 200,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "x-xsrf-token": "eyJpdiI6IkRnTXJUVGJlUWJHRUMzQ1JudGRCelE9PSIsInZhbHVlIjoib2JNdm0yU2FxWml4dHBuRGhuWDB5WlU4V2Exb0lVZ09qclhEMnBkdDdkSmlBcVFDeENpZ1R4ZWpzV2hxQTh2TGxLT1lNdlNzQUI3eXgrV1JUYnc4UEFBQUVUMHloY0dKZ0lrZkNNdGhVTkdEakEvcnMyY3l6RXhRUjdVQ1VqaTEiLCJtYWMiOiJhNjAwYmNlODUzMGJhOTU0MTAzYTQ1ZWRiNjc2NThiMDU3MTJlM2NmNTQ0ZGQxYzc2ZGIxOGFhZjhmOTY2ZGNlIiwidGFnIjoiIn0=",
+   "referer": "https://app.stebby.eu/",
+   "accept-language": "et-ee",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "web-client-version": "86ff721",
+   "sec-ch-ua-mobile": "?0",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "accept": "application/json, text/plain, */*",
+   "content-type": "application/json"
+  },
+  "post": "{\"operationName\":\"pointOfSaleInfoForSidebarQuery\",\"variables\":{\"posId\":\"aqva.spa.veekeskus\"},\"query\":\"query pointOfSaleInfoForSidebarQuery($posId: String!) {\\n  data: PointOfSaleQuery(point_of_sale_hash: $posId) {\\n    ...PointOfSaleInfoForSidebar\\n    __typename\\n  }\\n}\\n\\nfragment PointOfSaleInfoForSidebar on PointOfSaleGraphQLType {\\n  id\\n  hash\\n  name\\n  activities\\n  email\\n  phone\\n  registration_link\\n  open_days {\\n    day_of_week\\n    from_minutes\\n    to_minutes\\n    __typename\\n  }\\n  location {\\n    address\\n    city\\n    __typename\\n  }\\n  locationInfo\\n  is_favourite\\n  open_by_prior\\n  __typename\\n}\"}",
+  "body": "{\"data\":{\"data\":{\"id\":18,\"hash\":\"aqva.spa.veekeskus\",\"name\":\"Aqva Spa Veekeskus\",\"activities\":\"ujumine, bassein, vesiaeroobika, j\\u00f5usaal, saunad, hoolitsused, treeningud,ilukeskus, j\\u00f5usaal, veekeskus, saun, massaa\\u017e, spa, spaa, saunakeskus, j\\u00f5usaali ringtreeing, aqva mix, aqva box, hommikuujumine\",\"email\":\"marju@aqvahotels.ee\",\"phone\":\"+372 326 0010\",\"registration_link\":null,\"open_days\":[{\"day_of_week\":7,\"from_minutes\":480,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":1,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":2,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":3,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":4,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":5,\"from_minutes\":420,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"},{\"day_of_week\":6,\"from_minutes\":480,\"to_minutes\":1320,\"__typename\":\"PointOfSaleOpenDayGraphQLType\"}],\"location\":{\"address\":\"Parkali 4\",\"city\":\"Rakvere\",\"__typename\":\"LocationGraphQLType\"},\"locationInfo\":null,\"is_favourite\":false,\"open_by_prior\":false,\"__typename\":\"PointOfSaleGraphQLType\"}}}"
+ },
+ {
+  "method": "POST",
+  "url": "https://analytics.google.com/g/collect?v=2&tid=G-LWYL37SHPN&gtm=45je6a72h1v878515571za200zd878515571xf1&_p=1791705913114&gcd=13l3l3l3l1l1&npa=0&dma=0&gdid=dMWZhNz&_eu=EEAAAGQC&ae=a&are=1&cid=133331376.1791705899&frm=0&ir=1&pscdl=noapi&rcb=12&sr=1280x720&uaa=x86&uab=64&uafvl=Chromium%3B130.0.6723.31%7CHeadlessChrome%3B130.0.6723.31%7CNot%253FA_Brand%3B99.0.0.0&uam=&uamb=0&uap=Linux&uapv=6.17.0&uaw=0&ul=et-ee&gaf=2&_s=3&tag_exp=115938465~115938469~118897920~118897930~119863601~120213116~120385422~120469145~120469153~121046263~121046271~121246026~121246034&sid=1791705898&sct=1&seg=1&dl=https%3A%2F%2Fapp.stebby.eu%2Fpos%2Faqva.spa.veekeskus&dt=Stebby&en=scroll&epn.percent_scrolled=90&_et=45&tfd=5526",
+  "status": 204,
+  "reqHeaders": {
+   "sec-ch-ua-platform": "\"Linux\"",
+   "referer": "https://app.stebby.eu/",
+   "user-agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/130.0.6723.31 Safari/537.36",
+   "sec-ch-ua": "\"Chromium\";v=\"130\", \"HeadlessChrome\";v=\"130\", \"Not?A_Brand\";v=\"99\"",
+   "accept-language": "et-EE",
+   "sec-ch-ua-mobile": "?0"
+  },
+  "post": null,
+  "body": ""
+ }
+]
