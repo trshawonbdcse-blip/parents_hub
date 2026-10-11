@@ -33,7 +33,7 @@ import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
 import { translate as tr, useT } from '../lib/i18n'
 import { placeText } from '../lib/placeText'
-import { useStebby } from '../lib/stebby'
+import { stebbyInfo, useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
 
@@ -84,6 +84,7 @@ export function PlaceDetail() {
   }
 
   const text = placeText(place)
+  const stebby = stebbyInfo(place)
   const photos = place.photos ?? []
   const fav = favorites.has(place.id)
   const myVisits = visits.filter((v) => v.placeId === place.id)
@@ -177,24 +178,15 @@ export function PlaceDetail() {
           )}
         </section>
 
-        {(place.stebby || hasStebby) && (
-          <div className={`stebby-row ${place.stebby?.accepted ? '' : 'no'}`}>
-            {place.stebby?.accepted ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
+        {(stebby || hasStebby) && (
+          <div className={`stebby-row ${stebby ? '' : 'no'}`}>
+            {stebby ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
             <div>
-              <strong>
-                {place.stebby?.accepted
-                  ? t('Stebby accepted')
-                  : place.stebby
-                    ? t('Not a Stebby partner')
-                    : t('Stebby: not checked yet')}
-              </strong>
+              <strong>{stebby ? t('Stebby accepted') : stebby === false ? t('Not found among Stebby partners') : t('Stebby: not checked yet')}</strong>
               <p>
-                {place.stebby?.accepted
-                  ? t('Pay from your Stebby balance in the Stebby app at the venue.')
-                  : place.stebby
-                    ? t('Pay as usual — Stebby can’t be used here.')
-                    : t('Ask at the entrance or check in the Stebby app.')}
-                {place.stebby?.note ? ` ${place.stebby.note}` : ''}
+                {stebby
+                  ? t('Pay from your Stebby balance in the Stebby app at the venue.') + ` (${stebby.name})`
+                  : t('Ask at the entrance or check in the Stebby app.')}
               </p>
             </div>
           </div>

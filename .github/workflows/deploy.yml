@@ -37,6 +37,14 @@ jobs:
           restore-keys: events-
       - name: Collect kids' events
         run: node scripts/fetch-events.mjs
+      # Stebby partner list (checked weekly; the cached copy is reused in between).
+      - uses: actions/cache@v4
+        with:
+          path: src/data/stebby.json
+          key: stebby-${{ github.run_id }}
+          restore-keys: stebby-
+      - name: Check Stebby partners
+        run: node scripts/fetch-stebby.mjs
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

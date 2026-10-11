@@ -78,8 +78,6 @@ export interface Place {
   phone?: string | null
   email?: string | null
   photos?: Photo[]
-  // Stebby employee-benefit acceptance: accepted=true when the venue is a Stebby partner.
-  stebby?: { accepted: boolean; note: string | null; source: string | null } | null
   sources?: string[]
   lastVerified: string | null
   confidence: 'high' | 'medium' | 'low'
