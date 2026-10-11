@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
 import { useT } from './lib/i18n'
+import { Activities } from './pages/Activities'
+import { ActivityDetail } from './pages/ActivityDetail'
 import { EventDetail } from './pages/EventDetail'
 import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
@@ -41,6 +43,8 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetail />} />
           <Route path="/saved" element={<Saved />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/activity/:key" element={<ActivityDetail />} />
           <Route path="/me" element={<Family />} />
           <Route path="*" element={<Today />} />
         </Routes>

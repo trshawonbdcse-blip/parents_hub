@@ -159,6 +159,13 @@ export function childPriceText(p: Place, months: number | null): string | null {
 // typical prices (marked ≈) filling any gaps.
 export function priceSummary(place: Place, months: number | null) {
   if (place.price.free) return tr('Free entry')
+  // Courses: one price per lesson (the parent joins free).
+  if (place.activities?.length) {
+    const lesson = place.price.child ?? place.price.adult
+    if (lesson) return tr('{p} per lesson', { p: euroText(lesson) })
+    const est = estimatedChildText(place, months)
+    return est ? tr('{p} per lesson', { p: est }) : tr('Price on request')
+  }
   const adult = adultPriceText(place) ?? estimatedAdultText(place)
   const child = childPriceText(place, months) ?? estimatedChildText(place, months)
   if (!adult && !child) return tr('Price on request')

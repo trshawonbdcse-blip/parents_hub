@@ -78,6 +78,8 @@ export interface Place {
   phone?: string | null
   email?: string | null
   photos?: Photo[]
+  // Activity guides this place teaches (see activities.json), for classes and courses.
+  activities?: string[]
   sources?: string[]
   lastVerified: string | null
   confidence: 'high' | 'medium' | 'low'

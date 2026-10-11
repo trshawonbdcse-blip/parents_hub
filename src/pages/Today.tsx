@@ -5,6 +5,7 @@ import { CityPicker } from '../components/CityPicker'
 import { PlaceCard } from '../components/PlaceCard'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { eventInCity } from '../lib/events'
+import { ACTIVITY_ICON, activities, fitFor } from '../lib/activities'
 import { formatAge, isSummer, moneyTips, todaysPicks } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
@@ -35,6 +36,7 @@ export function Today() {
   const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 6, pool: placesIn(city) })
   const mode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
   const tip = moneyTips.length ? moneyTips[new Date().getDate() % moneyTips.length] : null
+  const startable = activities().filter((a) => ['now', 'soon', 'unknown'].includes(fitFor(a, months)))
   const now = Date.now()
   const upcoming = events
     .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now)
@@ -99,6 +101,27 @@ export function Today() {
           {picks.map((p) => (
             <PlaceCard key={p.id} place={p} months={months} variant="narrow" />
           ))}
+        </div>
+      </section>
+
+      <section>
+        <div className="section-head">
+          <h2>{months !== null ? t('Start something new') : t('Activities by age')}</h2>
+          <Link to="/activities" className="link-more">
+            {t('See all')} <ChevronRight size={16} />
+          </Link>
+        </div>
+        <div className="carousel">
+          {startable.map((a) => {
+            const Icon = ACTIVITY_ICON[a.key]
+            return (
+              <Link key={a.key} to={`/activity/${a.key}`} className="activity-chip">
+                <span className="activity-icon">{Icon && <Icon size={20} />}</span>
+                <strong>{a.name}</strong>
+                <small>{(a.fromMonths === 0 ? t('From birth') : t('From {age}', { age: formatAge(a.fromMonths) }))}</small>
+              </Link>
+            )
+          })}
         </div>
       </section>
 

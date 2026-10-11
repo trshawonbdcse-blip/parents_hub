@@ -1,0 +1,183 @@
+[
+  {
+    "key": "swimming",
+    "name": "Swimming",
+    "fromMonths": 3,
+    "toMonths": 84,
+    "summary": "Parent-and-baby swimming can start at 3–4 months. Babies get used to water, and from about 4 years children join a swim school without a parent.",
+    "why": [
+      "Builds water confidence early, before fear sets in",
+      "Strengthens the whole body and often improves sleep",
+      "A calm, close hour together in warm water"
+    ],
+    "steps": [
+      "Pick a baby or toddler swimming group (beebiujumine / väikelaste ujumine) near you — see the list below.",
+      "Book a course on the provider's website: most run 8–10 weekly lessons and start in September and January, but many let you join mid-term if there is space.",
+      "Choose a time that doesn't clash with nap time, and feed your child about an hour before.",
+      "Buy swim nappies (ujumismähkmed) — reusable ones are cheaper and required in most pools.",
+      "At the first lesson arrive 15 minutes early, shower together and keep your child warm between activities.",
+      "Between lessons, practise in a warm children's pool at a water park — the parent's calm voice matters more than technique."
+    ],
+    "bring": ["Swim nappy (and a spare)", "Your swimsuit", "Hooded towel or robe", "Snack and drink for after", "Lock coin or bracelet for the locker"],
+    "price": "Usually €12–20 per lesson; a course of 8–10 lessons €100–160. One parent swims free.",
+    "howOften": "Once a week, 30 minutes in the water.",
+    "tips": [
+      "Under-ones need a warm pool (32–34 °C); ask the provider before booking.",
+      "If your child cries the first time, keep it short and come back next week — most settle by the third lesson.",
+      "Some swim schools and water parks accept Stebby — look for the Stebby badge."
+    ]
+  },
+  {
+    "key": "music",
+    "name": "Music",
+    "fromMonths": 0,
+    "toMonths": 84,
+    "summary": "Baby music groups (beebimuusika) welcome children from birth: singing, rhythm, simple instruments and movement with a parent.",
+    "why": ["Supports early language and listening", "Rhythm helps coordination", "Easy first group activity — no skills needed"],
+    "steps": [
+      "Find a baby or toddler music group in your language — groups are split by age (e.g. 0–1, 1–2, 2–3 years).",
+      "Ask for a trial lesson; most groups allow one before you buy a term.",
+      "Learn two or three of the group's songs and sing them at home — repetition is what children love."
+    ],
+    "bring": ["Comfortable clothes for the floor", "Socks", "Water"],
+    "price": "Usually €10–15 per lesson or €80–150 per term.",
+    "howOften": "Once a week, 30–45 minutes.",
+    "tips": ["Library story and song times are a free way to try this first."]
+  },
+  {
+    "key": "gym",
+    "name": "Toddler gym",
+    "fromMonths": 10,
+    "toMonths": 72,
+    "summary": "Toddler gymnastics (väikelaste võimlemine) is climbing, rolling, balancing and jumping on soft equipment, with a parent until about 3 years.",
+    "why": ["Builds strength, balance and body awareness", "Lets energetic toddlers climb safely", "Good for confidence and following simple instructions"],
+    "steps": [
+      "Choose a parent-and-toddler gym group for your child's age.",
+      "Book a trial; dress your child in leggings and a T-shirt, barefoot or in grip socks.",
+      "Let your child explore at their own pace — the trainer will guide the circuit."
+    ],
+    "bring": ["Sporty clothes", "Grip socks", "Water"],
+    "price": "Usually €10–15 per lesson; sports clubs often sell monthly passes.",
+    "howOften": "Once or twice a week, 45 minutes.",
+    "tips": ["Many gyms and sports clubs accept Stebby."]
+  },
+  {
+    "key": "dance",
+    "name": "Dance & ballet",
+    "fromMonths": 30,
+    "toMonths": 84,
+    "summary": "Children's dance groups usually start at 2½–3 years and ballet at 3–4 years, without parents in the room.",
+    "why": ["Coordination, posture and musicality", "Being part of a group", "Little performances build confidence"],
+    "steps": [
+      "Check the minimum age — most groups take children who can follow a teacher without a parent (around 3).",
+      "Visit an open lesson or trial; studios often hold them in late August and January.",
+      "Ask about costumes and end-of-year shows before you sign up."
+    ],
+    "bring": ["Leggings or a leotard", "Ballet shoes or socks (ask the studio)", "Water"],
+    "price": "Usually €40–70 per month.",
+    "howOften": "Once or twice a week, 30–45 minutes.",
+    "tips": ["Start with one lesson a week; add more only if your child asks for it."]
+  },
+  {
+    "key": "art",
+    "name": "Art & messy play",
+    "fromMonths": 12,
+    "toMonths": 84,
+    "summary": "From about one year, sensory and messy-play groups let toddlers paint, squish and explore; art studios for children start at about 3–4 years.",
+    "why": ["Fine motor skills for later writing", "Sensory exploration in a place you don't have to clean", "Creativity and concentration"],
+    "steps": [
+      "For under-threes, look for sensory or messy play sessions (often one-off, no course needed).",
+      "From 3–4 years, try a children's art studio (kunstiring) with a term of weekly lessons.",
+      "Dress your child in clothes that can get paint on them."
+    ],
+    "bring": ["Old clothes or an apron", "Spare clothes", "Wet wipes"],
+    "price": "Sensory sessions €10–15; art studios €40–60 per month.",
+    "howOften": "Weekly or whenever you like for drop-in sessions.",
+    "tips": ["Check the Events tab — sensory play mornings appear there."]
+  },
+  {
+    "key": "skating",
+    "name": "Ice skating",
+    "fromMonths": 36,
+    "toMonths": 120,
+    "summary": "Children can start skating at about 3–4 years; skating schools (uisukool) teach balance and falling safely.",
+    "why": ["Balance and leg strength", "A winter activity the whole family can share", "Prepares for hockey or figure skating later"],
+    "steps": [
+      "Start on an outdoor rink with a skating aid (a penguin or frame) to see if your child enjoys it.",
+      "For lessons, join a beginners' group at a skating school — they run from September to spring.",
+      "Rent skates at the rink first; buy only once your child wants to continue."
+    ],
+    "bring": ["Helmet (required for children at most rinks)", "Warm gloves", "Snow trousers", "Thermos with warm drink"],
+    "price": "Public rinks €3–7 plus skate hire; skating school €50–90 per month.",
+    "howOften": "Weekly in season.",
+    "tips": ["Go on weekday mornings when rinks are quiet."]
+  },
+  {
+    "key": "skiing",
+    "name": "Skiing",
+    "fromMonths": 36,
+    "toMonths": 120,
+    "summary": "Cross-country or downhill skiing can start at about 3 years with short, playful sessions; ski schools run at Estonian ski centres in winter.",
+    "why": ["Fresh air and full-body exercise", "A classic Estonian winter skill", "Builds endurance and balance"],
+    "steps": [
+      "Begin on flat snow at home or in a park with short children's skis.",
+      "For lessons, book a children's group at a ski centre (e.g. Nõmme, Kõrvemaa, Otepää) — groups fill quickly in January.",
+      "Keep the first sessions to 30–45 minutes and stop while it's still fun."
+    ],
+    "bring": ["Helmet for downhill", "Waterproof gloves and trousers", "Warm layers", "Snack and warm drink"],
+    "price": "Ski hire €10–20; children's lessons €20–40 per session.",
+    "howOften": "Whenever there's snow — usually January to March.",
+    "tips": ["Many ski centres rent child-size equipment, so you don't need to buy."]
+  },
+  {
+    "key": "ball",
+    "name": "Ball games",
+    "fromMonths": 36,
+    "toMonths": 120,
+    "summary": "Kids' football and ball schools take children from about 3–4 years, focusing on play, running and simple ball skills.",
+    "why": ["Coordination and running skills", "Team play and taking turns", "Lots of energy used up"],
+    "steps": [
+      "Look for a 'mini' group (3–5 years) at a football or ball-games club near you.",
+      "Most clubs offer a free trial training — just come in sports clothes.",
+      "Ask whether training moves indoors in winter."
+    ],
+    "bring": ["Sports clothes and trainers", "Water bottle", "Shin guards later, if the club asks"],
+    "price": "Usually €30–50 per month.",
+    "howOften": "Once or twice a week, 45 minutes.",
+    "tips": ["Many sports clubs accept Stebby."]
+  },
+  {
+    "key": "nature",
+    "name": "Nature & forest clubs",
+    "fromMonths": 24,
+    "toMonths": 84,
+    "summary": "Forest and nature clubs (metsaring, loodusring) take children outdoors in all weather to explore, play and learn about plants and animals.",
+    "why": ["Time outdoors in every season", "Curiosity and early science", "Free play and resilience"],
+    "steps": [
+      "Find a nature club or a nature centre's family programme near you.",
+      "Dress for the weather in layers — 'there's no bad weather, only bad clothes'.",
+      "Until a club suits you, try free nature trails from the Explore tab."
+    ],
+    "bring": ["Rain suit and rubber boots", "Warm layers", "Snack and water"],
+    "price": "Free to €40 per month; nature centres' family days are often free.",
+    "howOften": "Weekly or monthly.",
+    "tips": ["RMK nature trails and many parks are free and stroller-friendly."]
+  },
+  {
+    "key": "language",
+    "name": "Language & story time",
+    "fromMonths": 0,
+    "toMonths": 84,
+    "summary": "Libraries run free story and rhyme times for babies and toddlers; language groups (Estonian, English, Russian) help children growing up between languages.",
+    "why": ["Early words and listening", "Meet other families", "Supports a second language — useful for Estonian kindergarten"],
+    "steps": [
+      "Check your local library's children's department for baby story or rhyme times.",
+      "If your home language isn't Estonian, look for playgroups in Estonian to prepare for kindergarten.",
+      "Borrow picture books in both languages and read a little every day."
+    ],
+    "bring": ["Library card (free)", "A bag for books"],
+    "price": "Library events are free; language groups €10–15 per session.",
+    "howOften": "Weekly.",
+    "tips": ["The Events tab lists library events automatically."]
+  }
+]

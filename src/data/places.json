@@ -2716,6 +2716,9 @@
         "credit": "ujumekoos.ee",
         "page": "https://ujumekoos.ee/beebiujumine/"
       }
+    ],
+    "activities": [
+      "swimming"
     ]
   },
   {
@@ -2778,6 +2781,9 @@
         "credit": "garantbaby.ee",
         "page": "https://garantbaby.ee/"
       }
+    ],
+    "activities": [
+      "swimming"
     ]
   },
   {
@@ -2832,7 +2838,10 @@
     "lastVerified": null,
     "confidence": "medium",
     "phone": "+372 649 3300",
-    "email": "spordiklubi@kalevspa.ee"
+    "email": "spordiklubi@kalevspa.ee",
+    "activities": [
+      "swimming"
+    ]
   },
   {
     "id": "lasteklubi-toddler-music",
@@ -2885,7 +2894,10 @@
       "https://www.lasteklubi.ee/huviring/voimlemine-vaikelastele-1-2-a/"
     ],
     "lastVerified": null,
-    "confidence": "medium"
+    "confidence": "medium",
+    "activities": [
+      "music"
+    ]
   },
   {
     "id": "loovuslaps-baby-toddler-group",
@@ -2939,7 +2951,11 @@
     "lastVerified": null,
     "confidence": "low",
     "phone": "+372 557 4238",
-    "email": "info@loovuslaps.ee"
+    "email": "info@loovuslaps.ee",
+    "activities": [
+      "art",
+      "music"
+    ]
   },
   {
     "id": "myfitness-toddler-gym",
@@ -3000,6 +3016,10 @@
         "credit": "myfitness.ee",
         "page": "https://www.myfitness.ee/ruhmatreeningud/ema-ja-beebi/vaikelaste-voimlemine/"
       }
+    ],
+    "activities": [
+      "gym",
+      "swimming"
     ]
   },
   {

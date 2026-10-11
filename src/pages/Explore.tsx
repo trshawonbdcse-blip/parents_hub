@@ -1,6 +1,6 @@
-import { LayoutGrid, Search, SlidersHorizontal, X } from 'lucide-react'
+import { ChevronRight, GraduationCap, LayoutGrid, Search, SlidersHorizontal, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { PlaceCard } from '../components/PlaceCard'
 import { ALL, cityName, placesIn, useCity } from '../lib/city'
@@ -130,6 +130,12 @@ export function Explore() {
           </button>
         </div>
       </div>
+
+      <Link to="/activities" className="activity-banner">
+        <GraduationCap size={20} />
+        <span>{t('Classes and activities by age')}</span>
+        <ChevronRight size={18} />
+      </Link>
 
       <div className="category-row" role="group" aria-label="Type of place">
         <button className={`category ${category === 'any' ? 'on' : ''}`} onClick={() => update('cat', null)}>
