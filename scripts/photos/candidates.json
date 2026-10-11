@@ -1864,6 +1864,36 @@
    "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ahhaa_Tartu_web-1002_03.jpg",
    "credit": "Märt Kose · Wikimedia Commons (Wiki Science Competition 2019, attribution licence)",
    "page": "https://commons.wikimedia.org/wiki/File:Ahhaa_Tartu_web-1002_03.jpg"
+  },
+  {
+   "src": "https://www.ahhaa.ee/photos/CV7R5775-1.jpg",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0045/3839/photos/Lennukas%20perep%C3%A4ev%202026_2564x600%20koduka%20PEALEHE%20b%C3%A4nner%20TEKSTIGA-1.jpg",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0045/3839/photos/RL26%20veeb%20ja%20SoMe%20vol2_2564x600%20koduka%20PEALEHE%20b%C3%A4nner%20TEKSTIGA-1.jpg",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0045/3839/photos/%C3%96%C3%B6laager%20inseneeria%202026%20oktoober_2564x600%20koduka%20PEALEHE%20b%C3%A4nner%20TEKSTIGA.jpg",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0045/3839/photos/Pii%20m%C3%A4ngud_2564x600%20koduka%20event%20pealehe%20b%C3%A4nner%20TEKSTIGA.jpg",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0045/3839/photos/Streetview_large.webp",
+   "credit": "ahhaa.ee",
+   "page": "https://www.ahhaa.ee/"
   }
  ],
  "narva-castle-narva": [
@@ -1883,6 +1913,21 @@
    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rakvere_linnuse_varemed_vallikraaviga.jpg/960px-Rakvere_linnuse_varemed_vallikraaviga.jpg",
    "credit": "Wikimedia Commons (check author/licence)",
    "page": "https://commons.wikimedia.org/wiki/File:Rakvere_linnuse_varemed_vallikraaviga.jpg"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2023/04/a_05-konvendihoov-scaled.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/rakvere-castle/"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2022/12/DJI_0940-scaled.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/rakvere-castle/"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2023/01/ME_0516-900x600.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/rakvere-castle/"
   }
  ],
  "palmse-manor-lahemaa": [
@@ -1900,6 +1945,1488 @@
    "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Palmse_manor_2.jpg/960px-Palmse_manor_2.jpg",
    "credit": "Liilia Moroz · CC0",
    "page": "https://commons.wikimedia.org/wiki/File:Palmse_manor_2.jpg"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2022/12/20220713_3939-900x600.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/palmse-manor/"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2022/12/11d2720-400x400.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/palmse-manor/"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2023/02/Palmse-2022-hobusega-peahoone-900x600.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/palmse-manor/"
+  },
+  {
+   "src": "https://virumaamuuseumid.ee/wp-content/uploads/2022/12/071_PA1-900x600.jpg",
+   "credit": "virumaamuuseumid.ee",
+   "page": "https://virumaamuuseumid.ee/en/palmse-manor/"
+  }
+ ],
+ "estonian-national-museum-tartu": [
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2025/08/og.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2026/07/slider-inglise-1920-x-1080.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2026/07/slider-inglise-1080x1620-1.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2026/08/Artefacta_kodukabanner-608x405.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2026/07/24.07.26-ERM-1-23-608x405.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2025/09/b1c4b76dd5999e6198bc3e1a9f5907eb2fbbdbd7-1.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  },
+  {
+   "src": "https://www.erm.ee/wp-content/uploads/2026/08/4748001004189-274x405.jpg",
+   "credit": "erm.ee",
+   "page": "https://www.erm.ee/en"
+  }
+ ],
+ "aura-water-park-tartu": [
+  {
+   "src": "https://aurakeskus.ee/ui/images/logo/Aura_Keskus_logo_(1).svg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/picture/Lapsed1.jpg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/list/2021/-Aura_Keskus_-_(Veeb)-_DSF2529-Edit.jpeg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/list/2021/fail_(214_of_128).jpg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/list/2021/fail_(223_of_128).jpg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/list/2021/Aura_keskus_2022_(Veeb)-__5T_2768-Edit.jpg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  },
+  {
+   "src": "https://www.aurakeskus.ee/userfiles/image/list/-Aura_Keskus_-_(Veeb)-_DSF2327-Edit.jpeg",
+   "credit": "aurakeskus.ee",
+   "page": "https://www.aurakeskus.ee/"
+  }
+ ],
+ "botanical-garden-tartu": [
+  {
+   "src": "https://natmuseum.ut.ee/themes/utheme/assets/img/logos/2024_04_24_TU_logo.jpg",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-09/1617.jpg?h=2848f5af&itok=8VIyZRkw",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-03/645815948_1369405998537690_1354831297116171780_n.jpg?h=75dffb35&itok=_LIAtRuO",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-10/Karu.jpeg?h=404059e4&itok=TQnvBbeh",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_teaser/public/2021-11/IMG_3878.jpeg?h=926d89e9&itok=1WQjJizh",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-09/20260917_152522-2.jpg?h=f49ed93f&itok=ic5HcLSh",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  },
+  {
+   "src": "https://botaanikaaed.ut.ee/sites/default/files/styles/ut_content_main_medium/public/2026-09/1617.jpg?h=2848f5af&itok=hDRYkUwQ",
+   "credit": "botaanikaaed.ut.ee",
+   "page": "https://botaanikaaed.ut.ee/"
+  }
+ ],
+ "natural-history-museum-tartu": [
+  {
+   "src": "https://natmuseum.ut.ee/themes/utheme/assets/img/logos/2024_04_24_TU_logo.jpg",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  },
+  {
+   "src": "https://natmuseum.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-02/IMG_0904%281%29.JPG?h=e75c301f&itok=zkEdU1Bq",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  },
+  {
+   "src": "https://natmuseum.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-02/amblik_alus_SUUR.jpg?h=66df090c&itok=XnOeSHXo",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  },
+  {
+   "src": "https://natmuseum.ut.ee/sites/default/files/styles/ut_content_teaser/public/2021-12/Vanemuise%20%C3%B5ppehoone.jpg?h=a92f03cd&itok=1dEWkaSI",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  },
+  {
+   "src": "https://natmuseum.ut.ee/sites/default/files/styles/ut_content_teaser/public/2025-03/pexels-jibarofoto-2774556.jpg?h=acc427f0&itok=UcMOvrAG",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  },
+  {
+   "src": "https://natmuseum.ut.ee/sites/default/files/styles/ut_content_teaser/public/2026-02/IMG_1480.JPG?h=2f83cd36&itok=Ub_ZKriq",
+   "credit": "natmuseum.ut.ee",
+   "page": "https://natmuseum.ut.ee/en"
+  }
+ ],
+ "anne-canal-beach-tartu": [
+  {
+   "src": "https://visitestonia.com/images/3220527/anne-kanal-beach-visit-tartu-visit-estonia.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/de/badestrand-am-anne-kanal"
+  },
+  {
+   "src": "https://visitestonia.com/images/661108/anne-kanali-rand-005-visit-estonia.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/de/badestrand-am-anne-kanal"
+  }
+ ],
+ "lounakeskus-tartu": [
+  {
+   "src": "https://www.astri.ee/lounakeskus/ui/images/logo/logo.svg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  },
+  {
+   "src": "https://www.astri.ee/lounakeskus/userfiles/image/list/DSC04179_1,91x1.jpg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  },
+  {
+   "src": "https://www.astri.ee/lounakeskus/userfiles/image/list/DSC05215_(1).jpg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  },
+  {
+   "src": "https://www.astri.ee/lounakeskus/userfiles/image/list/DSC03959_(1).jpg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  },
+  {
+   "src": "https://www.astri.ee/lounakeskus/userfiles/image/list/IMG_305_(1).jpg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  },
+  {
+   "src": "https://www.astri.ee/lounakeskus/userfiles/external/1773667840-a5e0e3049bd1efcf4ef7240aed71465f.jpg",
+   "credit": "astri.ee",
+   "page": "https://www.astri.ee/lounakeskus/"
+  }
+ ],
+ "tasku-centre-tartu": [
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2023/02/tasku_testost_koduleht_1920x973px.png",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  },
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2025/08/Ponniga_kinno_Ylemiste_Tasku_IG-FB_post_1080x1080px.jpg",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  },
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2024/11/Kodulehele-copy-1024x1024.jpg",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  },
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2025/02/EE_Tasku_teisipaeval_event_banner_1200x1200.jpg",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  },
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2026/02/1015516_Mango-Hand-Balm-30ml_SILV_INAEHPS206.jpg",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  },
+  {
+   "src": "https://tasku.ee/wp-content/uploads/2024/05/Oranz_esmaspaev_UUS_IG-FB_post_1080x1080px-1024x1024.jpg",
+   "credit": "tasku.ee",
+   "page": "https://www.tasku.ee/"
+  }
+ ],
+ "tartu-city-library-childrens-department": [
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2025-09/lehed.jpg?itok=nLtBJJu_",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2026-09/ton_2026.jpg?itok=ar2ABhHQ",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2026-10/819580911_1078948885006407_4595875771339086861_n.jpg?itok=TFEupZ7i",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2023-03/pexels-cottonbro-lugsoov.jpg?itok=XbpbWUJL",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2021-12/pexels-skitterphoto-1005324.jpg?itok=Ykx0jn6Q",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2022-02/lehitsemine.jpg?itok=g0rfpn7l",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  },
+  {
+   "src": "https://www.luts.ee/sites/default/files/styles/small_square/public/2024-11/tartu_kuvatommis_0.jpg?itok=1heAkWj8",
+   "credit": "luts.ee",
+   "page": "https://www.luts.ee/"
+  }
+ ],
+ "elistvere-animal-park": [
+  {
+   "src": "https://rmk.ee/wp-content/themes/rmk-veeb/assets/images/main_shared.png",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/elistvere-animal-park/come-and-visit"
+  }
+ ],
+ "palamuse-parish-school-museum": [
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2020/04/IMG_20200221_122655-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2018/10/Katekismus-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2018/10/koolikell-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2018/10/mask-ja-maakera-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2018/10/Tunnistused-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2025/12/Joulu-programm-2025-K.Neare-39-scaled-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  },
+  {
+   "src": "https://www.palamusemuuseum.ee/wp-content/uploads/2020/03/Palamuse1-suur-270x270.jpg",
+   "credit": "palamusemuuseum.ee",
+   "page": "https://www.palamusemuuseum.ee/"
+  }
+ ],
+ "puhajarve-beach-otepaa": [
+  {
+   "src": "https://visitsouthestonia.com/static/objects/4158/image_1.jpg",
+   "credit": "visitsouthestonia.com",
+   "page": "https://visitsouthestonia.com/mida-teha-louna-eestis/puhajarve-rand/"
+  }
+ ],
+ "otepaa-adventure-park": [
+  {
+   "src": "https://seikluspark.ee/%3Cimg%20src=",
+   "credit": "seikluspark.ee",
+   "page": "https://www.seikluspark.ee/"
+  },
+  {
+   "src": "https://seikluspark.ee/images/7.jpg",
+   "credit": "seikluspark.ee",
+   "page": "https://www.seikluspark.ee/"
+  },
+  {
+   "src": "https://seikluspark.ee/images/13.jpg",
+   "credit": "seikluspark.ee",
+   "page": "https://www.seikluspark.ee/"
+  },
+  {
+   "src": "https://seikluspark.ee/images/14.jpg",
+   "credit": "seikluspark.ee",
+   "page": "https://www.seikluspark.ee/"
+  }
+ ],
+ "valga-valka-central-square": [
+  {
+   "src": "https://visitestonia.com/images/3754845/zf_SvenZacek_210801_075.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/valga-central-square"
+  },
+  {
+   "src": "https://visitestonia.com/images/3659643/valga-keskv%C3%A4ljak-valgamaa-visit-estonia.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/valga-central-square"
+  }
+ ],
+ "valga-museum": [
+  {
+   "src": "https://valgamuuseum.ee/ui/images/logo/vmlogo.svg",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/Noortekoda__2.jpg?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/Valga-Muuseum-Foto-Margit-Behrsin-1-1320x990_jpg.webp?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/VaMF1156_1_pisipilt.jpg?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/VaMAr2150_8.jpg?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/johmul2.jpg?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  },
+  {
+   "src": "https://www.valgamuuseum.ee/get/image/userfiles/image/picture/IMG_20211201_085016.jpg?w=1040&h=590&fit=",
+   "credit": "valgamuuseum.ee",
+   "page": "https://www.valgamuuseum.ee/"
+  }
+ ],
+ "parnu-beach-parnu": [
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/12/Kabli-rand.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/parnu-beaches/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/12/Kabli-rand-1024x682.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/parnu-beaches/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/12/Matsi-rand-1024x682.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/parnu-beaches/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/11/EL_Regionaalarengu_Fond_horisontaalne_vaike.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/parnu-beaches/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2023/01/Collaborating-with-Influencers-Parnu-1024x682.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/parnu-beaches/"
+  }
+ ],
+ "munamae-park-playground-parnu": [
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2026/03/laste-manguvaljak-parnu-munamae-pargis-013-visit-estonia-1024x683.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitestonia.com/images/714106/laste-manguvaljak-parnu-munamae-pargis-013-visit-estonia.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitestonia.com/images/714105/laste-manguvaljak-parnu-munamae-pargis-012-visit-estonia.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitestonia.com/images/714107/laste-manguvaljak-parnu-munamae-pargis-014-visit-estonia.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitestonia.com/images/714163/parnu-munamae-park-017-visit-estonia.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitestonia.com/images/714118/laste-manguvaljak-parnu-munamae-pargis-025-visit-estonia.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/11/EL_Regionaalarengu_Fond_horisontaalne_vaike.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-munamae-park-2/"
+  }
+ ],
+ "vallikaar-playground-parnu": [
+  {
+   "src": "https://visitestonia.com/images/3876546/20220704_134539083_iOS.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/vallikaar-playground-in-parnu"
+  },
+  {
+   "src": "https://visitestonia.com/images/2805039/Vallik22r_manguv2ljak_parnu_playground_children.JPG",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/vallikaar-playground-in-parnu"
+  }
+ ],
+ "parnu-childrens-park-parnu": [
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/11/Muuseumioo-20190518-Eili-Menshikovi-foto-scaled-1.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitestonia.com/images/3379328/1.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitestonia.com/images/3379329/5.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitestonia.com/images/3379330/32.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitestonia.com/images/3742580/51654663754_00ff007f4d_k.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitestonia.com/images/3777618/IMG_20220112_111701.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  },
+  {
+   "src": "https://visitparnu.com/wp-content/uploads/2022/11/EL_Regionaalarengu_Fond_horisontaalne_vaike.jpg",
+   "credit": "visitparnu.com",
+   "page": "https://visitparnu.com/en/objekt/parnu-childrens-park/"
+  }
+ ],
+ "lottemaa-theme-park-reiu": [
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2026/05/DSC_9629-scaled.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2026/10/jo%E2%95%A0aulumaa2026_192x1080_eng.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2026/09/Lottemaa_kinkekaart_talvine_1920x1080_eng.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2026/09/suvi2027_eng.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2025/08/joulumaa2025_perepaevad_285x296-002-285x285.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2024/11/kinkekaart_banner_talvine_1080x1080_eng-285x297.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  },
+  {
+   "src": "https://lottemaa.ee/wp-content/uploads/2024/10/Lottemaa-gallerii-285x291.jpg",
+   "credit": "lottemaa.ee",
+   "page": "https://lottemaa.ee/en/"
+  }
+ ],
+ "parnu-museum-parnu": [
+  {
+   "src": "https://media.voog.com/0000/0041/5968/photos/monument_banner_block.webp",
+   "credit": "parnumuuseum.ee",
+   "page": "https://www.parnumuuseum.ee/"
+  },
+  {
+   "src": "https://media.voog.com/0000/0041/5968/photos/Jalus%20(3)_block.webp",
+   "credit": "parnumuuseum.ee",
+   "page": "https://www.parnumuuseum.ee/"
+  }
+ ],
+ "parnu-central-library-children-parnu": [
+  {
+   "src": "https://www.pkr.ee/fileadmin/_processed_/1/d/csm_lasteosakond_d807f78b88.jpg",
+   "credit": "pkr.ee",
+   "page": "https://www.pkr.ee/lugejale/osakonnad/lasteosakond/"
+  },
+  {
+   "src": "https://www.pkr.ee/fileadmin/_processed_/7/5/csm_karud_4dd974e324.jpg",
+   "credit": "pkr.ee",
+   "page": "https://www.pkr.ee/lugejale/osakonnad/lasteosakond/"
+  }
+ ],
+ "skypark-kaubamajakas-parnu": [
+  {
+   "src": "https://parnuskypark.ee/ui/images/logo/skypark_parnu.png",
+   "credit": "parnuskypark.ee",
+   "page": "https://parnuskypark.ee/en/home/"
+  }
+ ],
+ "pernova-nature-house-parnu": [
+  {
+   "src": "https://www.pernova.ee/loodusmaja/wp-content/uploads/2020/06/loodusmaja.png",
+   "credit": "pernova.ee",
+   "page": "https://www.pernova.ee/loodusmaja/en/"
+  },
+  {
+   "src": "https://www.pernova.ee/loodusmaja/wp-content/uploads/2025/09/FILMID-KERAKINOS.jpg",
+   "credit": "pernova.ee",
+   "page": "https://www.pernova.ee/loodusmaja/en/"
+  },
+  {
+   "src": "https://www.pernova.ee/loodusmaja/wp-content/uploads/2020/06/EL_Regionaalarengu_Fond_horisontaalne-300x174-1.jpg",
+   "credit": "pernova.ee",
+   "page": "https://www.pernova.ee/loodusmaja/en/"
+  },
+  {
+   "src": "https://www.pernova.ee/loodusmaja/wp-content/uploads/2021/01/loodusmaja-2021-1024x683.jpg",
+   "credit": "pernova.ee",
+   "page": "https://www.pernova.ee/loodusmaja/en/"
+  }
+ ],
+ "haapsalu-episcopal-castle-haapsalu": [
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2018/08/Haapsalu-linnuse-logo.png",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/06/Haapsalu-linnuse-muuseum_Foto_-Vendo-Jugapuu-1.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/07/Haapsalu-linnuse-muuseumi-k%C3%BClastusinfo.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/07/S%C3%BCndmuste-kalender.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/06/Korralda-s%C3%BCndmus-Haapsalu-linnuses_Markus-Sein.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/07/Haapsalu-linnuse-muuseumi-galerii.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  },
+  {
+   "src": "https://linnus.salm.ee/wp-content/uploads/2019/07/Kontakt.jpg",
+   "credit": "linnus.salm.ee",
+   "page": "https://linnus.salm.ee/en/"
+  }
+ ],
+ "haapsalu-railway-museum-haapsalu": [
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/02/700x461_haapsalu-linnuse-muuseumi-siseou_tonu-tunnel.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/02/raekoda.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/03/raudtee-ja-sidemuuseum_hele-otti-700x461@2x.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/03/Ants_Laikmaa_majamuuseum-3-700x461-1.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/03/r.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/03/Jaam-50-700x461-1.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  },
+  {
+   "src": "https://salm.ee/wp-content/uploads/2021/03/r4-700x461-1.jpg",
+   "credit": "salm.ee",
+   "page": "https://salm.ee/en/railway-and-communications-museum/"
+  }
+ ],
+ "paralepa-beach-haapsalu": [
+  {
+   "src": "https://www.visithaapsalu.com/wp-content/uploads/visit/Paraleparand.jpg",
+   "credit": "visithaapsalu.com",
+   "page": "https://www.visithaapsalu.com/objekt/paralepa-beach/?lang=en"
+  },
+  {
+   "src": "https://www.visithaapsalu.com/wp-content/uploads/visit/Paraleparand-1024x427.jpg",
+   "credit": "visithaapsalu.com",
+   "page": "https://www.visithaapsalu.com/objekt/paralepa-beach/?lang=en"
+  },
+  {
+   "src": "https://www.visithaapsalu.com/wp-content/uploads/2025/01/el_est.jpg",
+   "credit": "visithaapsalu.com",
+   "page": "https://www.visithaapsalu.com/objekt/paralepa-beach/?lang=en"
+  }
+ ],
+ "kuressaare-castle-kuressaare": [
+  {
+   "src": "https://linnus.samu.ee/wp-content/uploads/sites/4/2024/01/linnusepood__uus-1024x576.webp",
+   "credit": "linnus.samu.ee",
+   "page": "https://linnus.samu.ee/en/"
+  },
+  {
+   "src": "http://linnus.samu.ee/wp-content/uploads/sites/4/2025/06/vaade-tornist-768x1024.webp",
+   "credit": "linnus.samu.ee",
+   "page": "https://linnus.samu.ee/en/"
+  }
+ ],
+ "kuressaare-beach-kuressaare": [
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/10/visit-saaremaa-perepuhkus-asva-viikingikula.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/10/visit-saaremaa-thule-koda.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/10/visit-saaremaa-saaremaa-loomaaed.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2025/03/v6taoogmaha_4-1080x720.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/10/winter-activities-kristina-magi-1080x720.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/08/kaavi-sauna-priidu-saart-768x512.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  },
+  {
+   "src": "https://www.visitsaaremaa.ee/wp-content/uploads/2024/10/poppies-in-the-field-margit-korvits-768x512.jpg",
+   "credit": "visitsaaremaa.ee",
+   "page": "https://www.visitsaaremaa.ee/en/discover/family-holiday/"
+  }
+ ],
+ "angla-windmill-hill-angla": [
+  {
+   "src": "https://angla.saaremaa-top.ee/angla/wp-content/uploads/ANgla-tuulikud-450.jpg",
+   "credit": "angla.saaremaa-top.ee",
+   "page": "https://angla.saaremaa-top.ee/angla/en/"
+  },
+  {
+   "src": "https://angla.saaremaa-top.ee/angla/wp-content/uploads/ANgla-perega.jpg",
+   "credit": "angla.saaremaa-top.ee",
+   "page": "https://angla.saaremaa-top.ee/angla/en/"
+  },
+  {
+   "src": "https://angla.saaremaa-top.ee/angla/wp-content/uploads/ANgla-grupp-prouad-giidiga.jpg",
+   "credit": "angla.saaremaa-top.ee",
+   "page": "https://angla.saaremaa-top.ee/angla/en/"
+  },
+  {
+   "src": "https://angla.saaremaa-top.ee/angla/wp-content/uploads/angla-leivatuba-fb-eng-1024x577.jpg",
+   "credit": "angla.saaremaa-top.ee",
+   "page": "https://angla.saaremaa-top.ee/angla/en/"
+  }
+ ],
+ "hiiumaa-museum-long-house-kardla": [
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2023/06/20220715_145443-scaled-e1687783638411.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2023/01/Pikk-Maja_-avalehe-menuu.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2023/01/Kassari_avalehe-menuu.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2023/01/Tobiase_avalehe-menuu.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2023/01/Mihkli_avalehe-menuu.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2024/04/DJI_0021-scaled.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  },
+  {
+   "src": "https://hiiumaamuuseum.ee/wp-content/uploads/2026/10/1920x1080-Helgi-naitus-09.10.2026-scaled.jpg",
+   "credit": "hiiumaamuuseum.ee",
+   "page": "https://hiiumaamuuseum.ee/"
+  }
+ ],
+ "kardla-beach-park-kardla": [
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/t1_NIK_9369.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/k1_DSCF1293_2015-300x198.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/k2_NIK_0411_2021-300x200.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/k3_NIK_9387-300x200.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/k4_NIK_2376_2015-300x200.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/Rannapark_kaart_3_2000px-783x1024.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  },
+  {
+   "src": "https://hiiumaa.ee/wp-content/uploads/2022/11/t1_NIK_9369-300x200.jpg",
+   "credit": "hiiumaa.ee",
+   "page": "https://hiiumaa.ee/rannapark/"
+  }
+ ],
+ "kardla-beach-kardla": [
+  {
+   "src": "https://visitestonia.com/images/747435/kardla-rand-004-visit-estonia.jpg",
+   "credit": "puhkaeestis.ee",
+   "page": "https://puhkaeestis.ee/et/kardla-rand"
+  },
+  {
+   "src": "https://visitestonia.com/images/747436/kardla-rand-005-visit-estonia.jpg",
+   "credit": "puhkaeestis.ee",
+   "page": "https://puhkaeestis.ee/et/kardla-rand"
+  }
+ ],
+ "narva-river-promenade-narva": [
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_fd53fa2c9010eee0df21fd99e90e1d24.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://img.youtube.com/vi/1TlPi5ZmRPc/hqdefault.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_bd0476b3f32d7c6aa0d17170cf1f8e40-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_9dfc02f15a601bc1858a7c51e5124311-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_34fb91c0edaaa0f4e9b16666d23671e1-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_7640a2fa214e264b600ec37b38063e5c-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_fd53fa2c9010eee0df21fd99e90e1d24-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/en/object/2472903/narva-joepromenaad/"
+  }
+ ],
+ "joaoru-beach-narva": [
+  {
+   "src": "https://visitestonia.com/images/3851546/Joaoru+rannahoone_Sven+Zacek.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/recreation-area-of-joaorg-and-beach-in-narva"
+  },
+  {
+   "src": "https://visitestonia.com/images/3306615/Narva+Joaoru+puhkeala.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/recreation-area-of-joaorg-and-beach-in-narva"
+  }
+ ],
+ "astri-centre-play-room-narva": [
+  {
+   "src": "https://astri.ee/ui/images/logo/logo.svg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/DJI__(58).jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/539464612_1210927891062757_2749103076102729849_n.jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/DJI__(66).jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/FK4A8219.jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/DJI_0008-Edit.jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  },
+  {
+   "src": "https://astri.ee/userfiles/images/groupCenters/pk_martens_13.jpg",
+   "credit": "astri.ee",
+   "page": "https://astri.ee/"
+  }
+ ],
+ "meresuu-spa-water-centre-narva-joesuu": [
+  {
+   "src": "https://www.meresuu.ee/wp-content/uploads/2017/07/Meresuu_hotell_7-min-1.jpg",
+   "credit": "meresuu.ee",
+   "page": "https://www.meresuu.ee/en/"
+  }
+ ],
+ "narva-joesuu-beach": [
+  {
+   "src": "https://static.tildacdn.com/tild6232-3766-4663-b933-663431343764/53867655619_1c16249f.jpg",
+   "credit": "en.visitnarvajoesuu.ee",
+   "page": "https://en.visitnarvajoesuu.ee/"
+  },
+  {
+   "src": "https://thb.tildacdn.com/tild6334-3335-4238-b862-326466323662/-/resize/20x/106204523_9523297485.jpg",
+   "credit": "en.visitnarvajoesuu.ee",
+   "page": "https://en.visitnarvajoesuu.ee/"
+  }
+ ],
+ "sillamae-seaside-promenade": [
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/05/1_-1_false_false_805e31fba0c9e1d1f8d46930be835f34.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_391401c77e1b1e109b74d1724cb27f4c-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_baf089534a7ddafc41fd4d8b3a4b9adb-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_a4b7b74bd91b137361bb10b74d016385-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_9aca254c9857590c788a863d6d0d62bd-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_d19c947d7772b55bec1bc25b45c810ee-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  },
+  {
+   "src": "https://idaviru.ee/wp-content/uploads/2023/04/1_-1_false_false_76fda09ed9da848f6103436ce66d5e7c-295x200.jpg",
+   "credit": "idaviru.ee",
+   "page": "https://idaviru.ee/object/1642249/sillamae-mere-puiestee-ja-promenaad/"
+  }
+ ],
+ "toila-oru-park-toila": [
+  {
+   "src": "https://rmk.ee/wp-content/themes/rmk-veeb/assets/images/main_shared.png",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6667_large.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6687.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6689.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6692.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6696.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/07/DSC_6697.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/en/exploring-nature/where-to-go/oru-park-2/"
+  }
+ ],
+ "toila-spa-termid-toila": [
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2019/11/gallery-5.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2024/12/hotell-ja-tanav-vaike.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2026/06/tunnuspilt.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2019/11/chocolate-massage-Toila-Spa-Hotel-768x432.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2020/01/PUS-foto-apelsinidega-1-768x512.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2019/11/Pere-Termide-soolasaunas-3-2-scaled.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  },
+  {
+   "src": "https://toilaspa.ee/wp-content/uploads/2021/01/Hotelli-v%C3%A4lisvaade-1400x663.jpg",
+   "credit": "toilaspa.ee",
+   "page": "https://toilaspa.ee/en/"
+  }
+ ],
+ "estonian-mining-museum-kohtla-nomme": [
+  {
+   "src": "https://kaevandusmuuseum.ee/wp-content/uploads/2020/11/Kaevandusmuuseum_5.png",
+   "credit": "kaevandusmuuseum.ee",
+   "page": "https://kaevandusmuuseum.ee/en/"
+  }
+ ],
+ "johvi-concert-hall-johvi": [
+  {
+   "src": "https://johvi.concert.ee/wp-content/themes/concerts/img/ek_image_default.jpg",
+   "credit": "johvi.concert.ee",
+   "page": "https://johvi.concert.ee/en/"
+  }
+ ],
+ "kivioli-adventure-centre": [
+  {
+   "src": "https://seikluskeskus.ee/app/uploads/2024/08/Kivioli-trosslaskumine.png",
+   "credit": "seikluskeskus.ee",
+   "page": "https://seikluskeskus.ee/en/"
+  }
+ ],
+ "aqva-water-centre-rakvere": [
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/sergeizjuganov_ZJU_8843.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/KADAKAS_5626.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/02/img-slide-basseinid.jpeg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/sergeizjuganov_ZJU_8843-1536x1025.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/sergeizjuganov_ZJU_8827-1536x1024.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/sergeizjuganov_ZJU_8830-1536x1025.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  },
+  {
+   "src": "https://www.aqvahotels.ee/wp-content/uploads/2023/03/sergeizjuganov_ZJU_8825-1536x1024.jpg",
+   "credit": "aqvahotels.ee",
+   "page": "https://www.aqvahotels.ee/en/water-sauna-centre/"
+  }
+ ],
+ "hurraa-mangumaa-rakvere": [
+  {
+   "src": "https://hurraamangumaa.ee/wp-content/uploads/2025/10/uued-sissepa%CC%88a%CC%88su-hinnad-01.10.25-scaled.jpg",
+   "credit": "hurraamangumaa.ee",
+   "page": "https://hurraamangumaa.ee/"
+  },
+  {
+   "src": "https://hurraamangumaa.ee/wp-content/uploads/2022/11/DSC05340.jpg",
+   "credit": "hurraamangumaa.ee",
+   "page": "https://hurraamangumaa.ee/"
+  },
+  {
+   "src": "https://hurraamangumaa.ee/wp-content/uploads/2022/11/DSC05269.jpg",
+   "credit": "hurraamangumaa.ee",
+   "page": "https://hurraamangumaa.ee/"
+  },
+  {
+   "src": "https://hurraamangumaa.ee/wp-content/uploads/2022/11/DSC05354.jpg",
+   "credit": "hurraamangumaa.ee",
+   "page": "https://hurraamangumaa.ee/"
+  }
+ ],
+ "sagadi-manor-forest-museum-lahemaa": [
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2024/11/Sagadi_IMG_4651_Elvis_Antson.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera12-1024x651.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera11-1024x683.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera13-1024x651.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera6-1024x683.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera1-1024x705.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  },
+  {
+   "src": "https://rmk.ee/wp-content/uploads/2025/01/Sagadi_metsamuuseum_J6epera5-1024x683.jpg",
+   "credit": "rmk.ee",
+   "page": "https://rmk.ee/sagadi-mois/muuseum/"
+  }
+ ],
+ "vosu-beach-lahemaa": [
+  {
+   "src": "https://haljala.ee/sites/default/files/styles/opengraph/public/2025-04/v%C3%B5su-beach-visit-estonia.jpg",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  },
+  {
+   "src": "https://www.haljala.ee/sites/default/files/styles/templates_text_box/public/2025-05/Haljala%20vald-1-3.jpg?itok=ogJDp0df",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  },
+  {
+   "src": "https://www.haljala.ee/sites/default/files/styles/employee/public/2025-04/Priit_Pahklamae.jpg?itok=vPxEJRRX",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  },
+  {
+   "src": "https://www.haljala.ee/sites/default/files/styles/employee/public/2025-05/Avo_Bergstr%C3%B6m_v1.JPG?itok=Ho9Ha39x",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  },
+  {
+   "src": "https://www.haljala.ee/sites/default/files/styles/employee/public/2026-06/GreeteToming_100.jpg?itok=EL_1TOYg",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  },
+  {
+   "src": "https://www.haljala.ee/sites/default/files/styles/employee/public/2025-05/Lea_M%C3%A4gi.JPG?itok=s9yv6Jzy",
+   "credit": "haljala.ee",
+   "page": "https://www.haljala.ee/vosu-rand"
+  }
+ ],
+ "pokumaa-urvaste": [
+  {
+   "src": "https://pokumaa.ee/photos/Nimetu%20kujundus-3.jpg",
+   "credit": "pokumaa.ee",
+   "page": "https://pokumaa.ee/"
+  }
+ ],
+ "tamula-beach-promenade-voru": [
+  {
+   "src": "https://visitestonia.com/images/3808542/tamula-rannapromenaad-visit-estonia.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/lake-tamula-beach-and-the-beach-promenade"
+  },
+  {
+   "src": "https://visitestonia.com/images/4076076/Tamula-rannapromenaad-visit-estonia.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/en/lake-tamula-beach-and-the-beach-promenade"
+  }
+ ],
+ "suur-munamagi-tower-haanja": [
+  {
+   "src": "https://suurmunamagi.ee/wp-content/uploads/2026/04/SuurMunamagi4-scaled-e1775046993972.jpeg",
+   "credit": "suurmunamagi.ee",
+   "page": "https://suurmunamagi.ee/"
+  }
+ ],
+ "karilatsi-open-air-museum": [
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/09/LEIVANDL-2026-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/09/MIHKLIPV-2026-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/08/Jahvatamine-kasikivil-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/07/Pilt2-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/07/Pilt1.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/06/metallitoo-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  },
+  {
+   "src": "https://vanavorumaamuuseumid.ee/wp-content/uploads/2026/06/Laagri-plakat-480x270.jpg",
+   "credit": "karilatsimuuseum.ee",
+   "page": "https://karilatsimuuseum.ee/"
+  }
+ ],
+ "polva-sports-centre-pool": [
+  {
+   "src": "https://polvaspordikool.weebly.com/uploads/2/4/5/3/2453975/esipilt_1_orig.jpg",
+   "credit": "polvaspordikool.weebly.com",
+   "page": "https://polvaspordikool.weebly.com/"
+  },
+  {
+   "src": "https://polvaspordikool.weebly.com/uploads/2/4/5/3/2453975/psk-alates-28-09-2026.png?250",
+   "credit": "polvaspordikool.weebly.com",
+   "page": "https://polvaspordikool.weebly.com/"
+  },
+  {
+   "src": "https://polvaspordikool.weebly.com/uploads/2/4/5/3/2453975/tunniplaan-01-2026_orig.png",
+   "credit": "polvaspordikool.weebly.com",
+   "page": "https://polvaspordikool.weebly.com/"
+  },
+  {
+   "src": "https://polvaspordikool.weebly.com/uploads/2/4/5/3/2453975/tunniplaan-02-2026_orig.png",
+   "credit": "polvaspordikool.weebly.com",
+   "page": "https://polvaspordikool.weebly.com/"
+  }
+ ],
+ "wittenstein-time-centre-paide": [
+  {
+   "src": "https://wittenstein.ee/wp-content/uploads/2023/03/tunnuspilt-yoast-1024x576.png",
+   "credit": "wittenstein.ee",
+   "page": "https://wittenstein.ee/"
+  },
+  {
+   "src": "https://wittenstein.ee/wp-content/uploads/2023/03/800x460px-tegevusmuuseumi-maja-vers2.jpg",
+   "credit": "wittenstein.ee",
+   "page": "https://wittenstein.ee/"
+  },
+  {
+   "src": "https://wittenstein.ee/wp-content/uploads/2023/03/taustapilt-01.jpg",
+   "credit": "wittenstein.ee",
+   "page": "https://wittenstein.ee/"
+  },
+  {
+   "src": "https://wittenstein.ee/wp-content/uploads/2026/09/777024039_1563435852462586_4768044811827384302_n-400x250.jpg",
+   "credit": "wittenstein.ee",
+   "page": "https://wittenstein.ee/"
+  }
+ ],
+ "paide-vallimagi-castle-hill": [
+  {
+   "src": "https://visitestonia.com/images/3913206/Paide+vallima%CC%88e+droonifoto.jpg",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/paide-vallitorn-and-ruins-of-the-order-castle-at-vallimagi"
+  },
+  {
+   "src": "https://visitestonia.com/images/1617546/AjakeskusWittenstein_keskaja+t%C3%A4nav.JPG",
+   "credit": "visitestonia.com",
+   "page": "https://visitestonia.com/paide-vallitorn-and-ruins-of-the-order-castle-at-vallimagi"
+  }
+ ],
+ "kallaste-hobby-farm-jarva": [
+  {
+   "src": "https://kallastehobitalu.ee/wp-content/uploads/2024/12/D85_8860-scaled.jpg",
+   "credit": "kallastehobitalu.ee",
+   "page": "https://kallastehobitalu.ee/en/"
+  },
+  {
+   "src": "https://kallastehobitalu.ee/wp-content/uploads/2026/04/image-801-1.jpg",
+   "credit": "kallastehobitalu.ee",
+   "page": "https://kallastehobitalu.ee/en/"
+  },
+  {
+   "src": "https://kallastehobitalu.ee/wp-content/uploads/2026/04/image-800.jpg",
+   "credit": "kallastehobitalu.ee",
+   "page": "https://kallastehobitalu.ee/en/"
+  },
+  {
+   "src": "https://kallastehobitalu.ee/wp-content/uploads/2026/04/image-799.jpg",
+   "credit": "kallastehobitalu.ee",
+   "page": "https://kallastehobitalu.ee/en/"
+  }
+ ],
+ "rapla-childrens-park": [
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/Visit-Raplamaa.webp",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/visit-estonia-api/308742b61c49b3b41e7607ebaf32591c.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/elementor/thumbs/d4297c3b4e5b3616d3d2c22710b7bcfa-rtsrz2bxpdkjz40vzfu0r6eyswkp11000ckxg2d0t8.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/elementor/thumbs/aa199a2086b2ea835b543423fdb88c3f-rtsrz63agppp9jvfdhgj15gt6g25vtexcv6vd67g4c.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/elementor/thumbs/308742b61c49b3b41e7607ebaf32591c-rtsrz714njqzl5u27zv5ln89rtxj3iinozucug61y4.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/elementor/thumbs/2afadc07d12f9071eb72c01f9a8447d4-rtsrz8wt17tk8drbx0oeqmr6ylo9iwq4d95bt039lo.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  },
+  {
+   "src": "https://visitraplamaa.ee/wp-content/uploads/elementor/thumbs/4da5f4ea387df81224c77cb616b3e946-rtsrzco5sjypitlvb2ax0lt1c55qdp51prr9q3xows.jpg",
+   "credit": "visitraplamaa.ee",
+   "page": "https://visitraplamaa.ee/portfolio/rapla-lastepark/"
+  }
+ ],
+ "mae-talu-palukula": [
+  {
+   "src": "https://maetalu.ee/wp-content/uploads/2023/02/maetalu-raplamaa-alpakad-illustreeriv-pilt-v2.jpg",
+   "credit": "maetalu.ee",
+   "page": "https://maetalu.ee/"
+  },
+  {
+   "src": "https://maetalu.ee/wp-content/uploads/2023/02/maetalu-raplamaa-alpakad-illustreeriv-pilt-v1.jpg",
+   "credit": "maetalu.ee",
+   "page": "https://maetalu.ee/"
+  }
+ ],
+ "viimsi-open-air-museum": [
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2026/01/a770eab2da2069f05fb2a64b65f52a775d292bdc-1024x586.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  },
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2026/01/a770eab2da2069f05fb2a64b65f52a775d292bdc-scaled.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  },
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2019/01/VM-Hilja-1024x683.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  },
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2019/01/Spirdivedajad-2.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  },
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2019/01/tuletornide-allee-1024x683.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  },
+  {
+   "src": "https://rannarahvamuuseum.ee/wp-content/uploads/2018/12/IMG_3240-1024x682.jpg",
+   "credit": "rannarahvamuuseum.ee",
+   "page": "https://rannarahvamuuseum.ee/en/viimsi-open-air-museum/"
+  }
+ ],
+ "keila-health-centre-pool": [
+  {
+   "src": "https://keilasport.ee/wp-content/uploads/2013/11/ujula.jpg",
+   "credit": "keilasport.ee",
+   "page": "https://keilasport.ee/ujula/"
+  }
+ ],
+ "muumioru-alpacafarm-saue": [
+  {
+   "src": "http://muumioru.ee/wp-content/uploads/2025/07/30083799-5147-4b0d-939d-e61d746da69d-1-scaled-1-768x1024.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  },
+  {
+   "src": "https://muumioru.ee/wp-content/uploads/2025/07/30083799-5147-4b0d-939d-e61d746da69d-1-scaled-1-768x1024.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  },
+  {
+   "src": "https://muumioru.ee/wp-content/uploads/2025/07/Mustangi-ruum-1-1024x768-1.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  },
+  {
+   "src": "https://muumioru.ee/wp-content/uploads/2025/07/Korva-soojendajad-1-1024x1024-1.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  },
+  {
+   "src": "https://muumioru.ee/wp-content/uploads/2025/07/alpaka-votmehoidja.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  },
+  {
+   "src": "https://muumioru.ee/wp-content/uploads/2025/07/Muumioru-Alpacafarm-Alpaca-Kaisukas.webp",
+   "credit": "muumioru.ee",
+   "page": "https://muumioru.ee/"
+  }
+ ],
+ "padise-monastery": [
+  {
+   "src": "https://padise.ee/wp-content/uploads/2023/02/Pulmad-Padise-Mois6-1024x683.jpg",
+   "credit": "padise.ee",
+   "page": "https://padise.ee/en/"
   }
  ]
 }
