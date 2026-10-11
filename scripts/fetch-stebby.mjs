@@ -89,7 +89,7 @@ const strongName = (p, s) => {
 // Stebby is a sport and wellbeing budget: only check places where it can realistically apply.
 const RELEVANT = new Set(['swimming', 'class', 'winter-fun', 'indoor-play'])
 // Bump when the matching rules change, so the next build re-checks everything.
-const VERSION = 4
+const VERSION = 5
 // Partners confirmed by hand ({ placeId: "exact Stebby name" }), for names the rules can't pair up
 // (e.g. "Goldswim" vs "Gold Swim"). The partner still has to show up in the search results.
 const OVERRIDES = fs.existsSync('scripts/stebby/overrides.json') ? JSON.parse(fs.readFileSync('scripts/stebby/overrides.json', 'utf8')) : {}
