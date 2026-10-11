@@ -11752,6 +11752,13 @@
     "email": "info@paikesetants.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://paikesetants.ee/wp-content/themes/paikesetants2019/img/esileht_ruut_2.jpg",
+        "credit": "paikesetants.ee",
+        "page": "https://paikesetants.ee/"
+      }
     ]
   },
   {
@@ -11810,6 +11817,13 @@
     "email": "info@revalsport.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://revalsport.ee/wp-content/uploads/2022/10/DSC03761-scaled.jpg",
+        "credit": "revalsport.ee",
+        "page": "https://revalsport.ee/en/swim-club/ujumiskursused/beebide-ja-vaikelaste-ujumine/"
+      }
     ]
   },
   {
@@ -11926,6 +11940,23 @@
     "email": "riin.hiievali@gmail.com",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://www.laspa.ee/wp-content/uploads/2021/01/beebi_ujutamine.jpg",
+        "credit": "laspa.ee",
+        "page": "https://www.laspa.ee/baby-swimming/"
+      },
+      {
+        "src": "https://www.laspa.ee/wp-content/uploads/2021/08/20JJ1103_011.jpg",
+        "credit": "laspa.ee",
+        "page": "https://www.laspa.ee/baby-swimming/"
+      },
+      {
+        "src": "https://www.laspa.ee/wp-content/uploads/2021/08/20200826_121248-1-1150x755.jpg",
+        "credit": "laspa.ee",
+        "page": "https://www.laspa.ee/baby-swimming/"
+      }
     ]
   },
   {
@@ -11983,6 +12014,28 @@
     "email": null,
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://tunnid.lusti.ee/wp-content/uploads/2015/05/cropped-Image33.jpg",
+        "credit": "tunnid.lusti.ee",
+        "page": "https://tunnid.lusti.ee/ujumine/"
+      },
+      {
+        "src": "https://tunnid.lusti.ee/wp-content/uploads/2012/10/ujumine-150x150.jpg",
+        "credit": "tunnid.lusti.ee",
+        "page": "https://tunnid.lusti.ee/ujumine/"
+      },
+      {
+        "src": "https://tunnid.lusti.ee/wp-content/uploads/2012/10/Image1-300x244.jpg",
+        "credit": "tunnid.lusti.ee",
+        "page": "https://tunnid.lusti.ee/ujumine/"
+      },
+      {
+        "src": "https://tunnid.lusti.ee/wp-content/uploads/2012/10/jaanuar2-150x150.jpg",
+        "credit": "tunnid.lusti.ee",
+        "page": "https://tunnid.lusti.ee/ujumine/"
+      }
     ]
   },
   {
@@ -12042,6 +12095,13 @@
     "email": "info@skfortuna.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://www.skfortuna.ee/sites/default/files/styles/node_inner/public/2026-06/1671026575.jpg?itok=FNcxq_Qf",
+        "credit": "skfortuna.ee",
+        "page": "https://www.skfortuna.ee/ruhm/beebide-ujutamistunnid"
+      }
     ]
   },
   {
@@ -12218,6 +12278,13 @@
     "email": "info@beebipuut.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://470de0ed1f.clvaw-cdnwnd.com/1811376fce708c845562a9ebb1570d49/200000158-e6bb3e6bb5/700/ujumine.jpeg?ph=470de0ed1f",
+        "credit": "beebipuut.ee",
+        "page": "https://www.beebipuut.ee/beebide-ujumine2/"
+      }
     ]
   },
   {
@@ -12277,6 +12344,23 @@
     "email": "info@babyfloat.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://babyfloat.ee/wp-content/uploads/2026/08/IMG_5355-683x1024.jpg",
+        "credit": "babyfloat.ee",
+        "page": "https://babyfloat.ee/"
+      },
+      {
+        "src": "https://babyfloat.ee/wp-content/uploads/2026/04/IMG_0475-1024x683.jpg",
+        "credit": "babyfloat.ee",
+        "page": "https://babyfloat.ee/"
+      },
+      {
+        "src": "https://babyfloat.ee/wp-content/uploads/2026/04/IMG_0689-1024x683.jpg",
+        "credit": "babyfloat.ee",
+        "page": "https://babyfloat.ee/"
+      }
     ]
   },
   {
@@ -12396,6 +12480,23 @@
     "email": "info@goldswim.ee",
     "activities": [
       "swimming"
+    ],
+    "photos": [
+      {
+        "src": "https://www.goldswim.ee/img/feature/feature-3.jpg",
+        "credit": "goldswim.ee",
+        "page": "https://www.goldswim.ee/"
+      },
+      {
+        "src": "https://www.goldswim.ee/img/feature/feature-4.jpg",
+        "credit": "goldswim.ee",
+        "page": "https://www.goldswim.ee/"
+      },
+      {
+        "src": "https://www.goldswim.ee/img/hero-slider/hero-4-1.jpg",
+        "credit": "goldswim.ee",
+        "page": "https://www.goldswim.ee/"
+      }
     ]
   },
   {
@@ -12638,6 +12739,13 @@
     "email": "talveunistus@gmail.com",
     "activities": [
       "skating"
+    ],
+    "photos": [
+      {
+        "src": "https://www.talveunistus.planet.ee/images/Tule3.jpg",
+        "credit": "talveunistus.planet.ee",
+        "page": "https://www.talveunistus.planet.ee/"
+      }
     ]
   },
   {
@@ -12943,6 +13051,23 @@
     "email": "info@balletistuudio.ee",
     "activities": [
       "dance"
+    ],
+    "photos": [
+      {
+        "src": "https://www.balletistuudio.ee/slides/44.jpg",
+        "credit": "balletistuudio.ee",
+        "page": "https://www.balletistuudio.ee/"
+      },
+      {
+        "src": "https://www.balletistuudio.ee/slides/40.jpg",
+        "credit": "balletistuudio.ee",
+        "page": "https://www.balletistuudio.ee/"
+      },
+      {
+        "src": "https://www.balletistuudio.ee/slides/43.jpg",
+        "credit": "balletistuudio.ee",
+        "page": "https://www.balletistuudio.ee/"
+      }
     ]
   },
   {
@@ -13179,6 +13304,18 @@
     "email": "reet.pere@gmail.com",
     "activities": [
       "gym"
+    ],
+    "photos": [
+      {
+        "src": "https://huvikeskus.ee/wp-content/uploads/2024/05/BEEBIDE-JA-VAIKELASTE-VOIMLEMINE-1.jpg",
+        "credit": "huvikeskus.ee",
+        "page": "https://huvikeskus.ee/huviring/beebide-ja-vaikelaste-voimlemine-reet-post/"
+      },
+      {
+        "src": "https://huvikeskus.ee/wp-content/uploads/2026/09/Laste-tants-kuulutus-pilt.jpg",
+        "credit": "huvikeskus.ee",
+        "page": "https://huvikeskus.ee/huviring/beebide-ja-vaikelaste-voimlemine-reet-post/"
+      }
     ]
   },
   {
@@ -13300,6 +13437,13 @@
     "email": "info@cfc.ee",
     "activities": [
       "skiing"
+    ],
+    "photos": [
+      {
+        "src": "https://cfc.ee/wp-content/uploads/2016/08/IMG_1760-scaled.jpg",
+        "credit": "cfc.ee",
+        "page": "https://cfc.ee/tule-trenni-suusakooli/"
+      }
     ]
   },
   {
@@ -13482,6 +13626,18 @@
     "email": "peik@pingusenglish.ee",
     "activities": [
       "language"
+    ],
+    "photos": [
+      {
+        "src": "https://pingusenglish.ee/wp-content/uploads/2016/06/EFKPreschool.jpg",
+        "credit": "pingusenglish.ee",
+        "page": "https://pingusenglish.ee/english-for-kids/"
+      },
+      {
+        "src": "https://pingusenglish.ee/wp-content/uploads/2016/06/EFKKindergarten.jpg",
+        "credit": "pingusenglish.ee",
+        "page": "https://pingusenglish.ee/english-for-kids/"
+      }
     ]
   },
   {
@@ -13601,6 +13757,28 @@
     "email": "akros@akros.ee",
     "activities": [
       "gym"
+    ],
+    "photos": [
+      {
+        "src": "https://akros.ee/wp-content/uploads/2023/07/akros-vaikelaste-voimlemine-06-620x360.jpg",
+        "credit": "akros.ee",
+        "page": "https://akros.ee/spordialad/vaikelaste-voimlemine/"
+      },
+      {
+        "src": "https://akros.ee/wp-content/uploads/2023/07/akros-vaikelaste-voimlemine-08-620x360.jpg",
+        "credit": "akros.ee",
+        "page": "https://akros.ee/spordialad/vaikelaste-voimlemine/"
+      },
+      {
+        "src": "https://akros.ee/wp-content/uploads/2023/07/akros-vaikelaste-voimlemine-18-1280x853.jpg",
+        "credit": "akros.ee",
+        "page": "https://akros.ee/spordialad/vaikelaste-voimlemine/"
+      },
+      {
+        "src": "https://akros.ee/wp-content/uploads/2023/07/akros-vaikelaste-voimlemine-07-620x360.jpg",
+        "credit": "akros.ee",
+        "page": "https://akros.ee/spordialad/vaikelaste-voimlemine/"
+      }
     ]
   },
   {
@@ -13718,6 +13896,23 @@
     "email": null,
     "activities": [
       "nature"
+    ],
+    "photos": [
+      {
+        "src": "https://www.tartuloodusmaja.ee/wp-content/uploads/2025/08/4f6264b8-af14-4c32-bc92-14ee94c157c9-768x1024.jpg",
+        "credit": "tartuloodusmaja.ee",
+        "page": "https://www.tartuloodusmaja.ee/huvikool/loodusseiklejad/"
+      },
+      {
+        "src": "https://www.tartuloodusmaja.ee/wp-content/uploads/2018/08/Vihjeorienteerumine_fb-5-300x200.jpg",
+        "credit": "tartuloodusmaja.ee",
+        "page": "https://www.tartuloodusmaja.ee/huvikool/loodusseiklejad/"
+      },
+      {
+        "src": "https://www.tartuloodusmaja.ee/wp-content/uploads/2025/08/20250604_173609-1024x768.jpg",
+        "credit": "tartuloodusmaja.ee",
+        "page": "https://www.tartuloodusmaja.ee/huvikool/loodusseiklejad/"
+      }
     ]
   },
   {
@@ -14019,6 +14214,18 @@
     "email": "info@spordiakadeemia.ee",
     "activities": [
       "ball"
+    ],
+    "photos": [
+      {
+        "src": "https://spordiakadeemia.ee/wp-content/uploads/fly-images/444/LT66-470x320-c.jpg",
+        "credit": "spordiakadeemia.ee",
+        "page": "https://spordiakadeemia.ee/spordialad/tennis/"
+      },
+      {
+        "src": "https://spordiakadeemia.ee/wp-content/uploads/fly-images/980/parnutk-062-470x320-c.jpg",
+        "credit": "spordiakadeemia.ee",
+        "page": "https://spordiakadeemia.ee/spordialad/tennis/"
+      }
     ]
   },
   {
@@ -14079,6 +14286,18 @@
     "email": "npsk@npsk.ee",
     "activities": [
       "skating"
+    ],
+    "photos": [
+      {
+        "src": "https://iknarva.com/wp-content/uploads/2020/01/tap_0045-2.jpg",
+        "credit": "iknarva.com",
+        "page": "https://iknarva.com/"
+      },
+      {
+        "src": "https://iknarva.com/wp-content/uploads/2020/01/tap_0183.jpg",
+        "credit": "iknarva.com",
+        "page": "https://iknarva.com/"
+      }
     ]
   },
   {

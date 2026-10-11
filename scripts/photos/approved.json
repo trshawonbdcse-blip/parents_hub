@@ -91,5 +91,22 @@
   "mae-talu-palukula": [0, 1],
   "viimsi-open-air-museum": [0, 2, 5],
   "keila-health-centre-pool": [0],
-  "muumioru-alpacafarm-saue": [0]
+  "muumioru-alpacafarm-saue": [0],
+  "paikesetants-baby-swimming-nomme-tallinn": [0],
+  "reval-sport-baby-swimming-tallinn": [0],
+  "laspa-baby-swimming-laulasmaa": [0, 1, 3],
+  "lusti-baby-swimming-kurtna": [0, 1, 5, 3],
+  "sk-fortuna-baby-swimming-juri": [0],
+  "beebipuut-baby-swimming-arena-tartu": [0],
+  "babyfloat-tartu": [1, 2, 4],
+  "gold-swim-baby-swimming-kohtla-jarve": [1, 2, 0],
+  "talveunistus-skating-school-tallinn": [0],
+  "kaie-korb-ballet-studio-tallinn": [5, 3, 4],
+  "viimsi-huvikeskus-baby-gymnastics-viimsi": [0, 1],
+  "cfc-ski-school-pirita-tallinn": [0],
+  "pingus-english-tallinn": [0, 1],
+  "akros-toddler-gymnastics-tartu": [1, 3, 0, 2],
+  "tartu-loodusmaja-nature-adventurers-tartu": [4, 5, 3],
+  "parnu-sports-academy-kalev-tennis-parnu": [4, 2],
+  "paasuke-figure-skating-narva": [2, 5]
 }
