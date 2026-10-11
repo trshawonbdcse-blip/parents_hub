@@ -7,10 +7,15 @@ cd "$(dirname "$0")"
 mkdir -p dl sheets strips
 # Keep a log next to the sheets so failures can be read from the branch.
 exec > >(tee sheets/log.txt) 2>&1
+# Optional review-ids.txt limits the run to those places (one id per line).
+ids() { node -e '
+const fs=require("fs"); const c=require("./candidates.json");
+const only=fs.existsSync("review-ids.txt") ? new Set(fs.readFileSync("review-ids.txt","utf8").split(/\s+/).filter(Boolean)) : null;
+console.log(Object.keys(c).filter(id=>!only||only.has(id)).join(" "))'; }
 node -e '
-const c=require("./candidates.json");
-for (const [id, list] of Object.entries(c)) list.forEach((p,i)=>console.log(`${id}\t${i}\t${p.src}`))
-' | while IFS=$'\t' read -r id i src; do
+const c=require("./candidates.json"); const keep=new Set(process.argv[1].split(" "));
+for (const [id, list] of Object.entries(c)) if (keep.has(id)) list.forEach((p,i)=>console.log(`${id}\t${i}\t${p.src}`))
+' "$(ids)" | while IFS=$'\t' read -r id i src; do
   f="dl/${id}__${i}.jpg"
   code=$(curl -sSL --max-time 25 -A "ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; photo review)" -w '%{http_code}' "$src" -o "$f.src" 2>/dev/null)
   if [ "$code" != "200" ]; then echo "skip $id#$i http=$code"; rm -f "$f.src"; continue; fi
@@ -20,7 +25,7 @@ for (const [id, list] of Object.entries(c)) list.forEach((p,i)=>console.log(`${i
   rm -f "$f.src"
 done
 n=0
-for id in $(node -e 'console.log(Object.keys(require("./candidates.json")).join(" "))'); do
+for id in $(ids); do
   files=$(ls dl/${id}__*.jpg 2>/dev/null | sort -t_ -k3 -n)
   [ -z "$files" ] && continue
   args=()

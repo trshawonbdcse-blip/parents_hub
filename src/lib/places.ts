@@ -107,13 +107,14 @@ export function todaysPicks(opts: {
   visitedRecently: Set<string>
   favorites: Set<string>
   count?: number
+  pool?: Place[]
 }): Place[] {
   const today = new Date()
   const day = today.toISOString().slice(0, 10)
   const mode = opts.weather?.mode ?? (isSummer(today) ? 'outdoor' : 'indoor')
   const indoorOnly = mode === 'indoor'
 
-  return places
+  return (opts.pool ?? places)
     .filter((p) => fitsAge(p, opts.months) && fitsSeason(p, today))
     .filter((p) => !indoorOnly || p.setting !== 'outdoor')
     .map((p) => {
@@ -165,7 +166,7 @@ export function priceSummary(place: Place, months: number | null) {
 }
 
 // --- Estimated prices --------------------------------------------------------
-// When a place doesn't publish a price, show what similar places in Tallinn
+// When a place doesn't publish a price, show what similar places in Estonia
 // usually charge so families can still plan. Always labelled as an estimate.
 const median = (xs: number[]) => {
   if (!xs.length) return null

@@ -21,7 +21,12 @@ const isKidEvent = (title, desc = '') =>
   (KID_WORDS.test(title) || STRONG_DESC.test(desc.slice(0, 400))) && !BLOCK_WORDS.test(`${title} ${desc.slice(0, 400)}`) && !NOT_EVENT.test(title)
 const BLOCK_WORDS = /(webinar|вебинар|online|kinkekaart|gift ?card|18\+|stand-?up|kabaree|õhtusöök|konverents|conference|koolitus|training|breathwork|human design|lasteaedades töötamise|infoõhtu|infotund|vahetusõpila|koolikontsert|algklass|noortegrupp|dog show|koerte|lapsepõlve)/i
 const ET_MONTHS = { jaanuar: 1, veebruar: 2, märts: 3, aprill: 4, mai: 5, juuni: 6, juuli: 7, august: 8, september: 9, oktoober: 10, november: 11, detsember: 12 }
-const NEAR_TALLINN = /(tallinn|harju|keila|saue|maardu|viimsi|rae|saku|kiili|harku|jõelähtme|kohila|tabasalu|laagri|peetri)/i
+// Town of an event, from its venue/address text (Estonian case endings are fine: we match stems).
+const TOWNS = JSON.parse(fs.readFileSync(new URL('../src/data/towns.json', import.meta.url), 'utf8')).towns.map(([re, hub]) => [
+  new RegExp(`(^|[^\\p{L}])(${re})`, 'iu'),
+  hub,
+])
+const townOf = (text) => TOWNS.find(([re]) => re.test(text ?? ''))?.[1] ?? null
 
 const get = async (url) => {
   const r = await fetch(url, { headers: UA, signal: AbortSignal.timeout(30000) })
@@ -54,7 +59,6 @@ async function fienta() {
   const j = await (await get('https://fienta.com/api/v1/public/events?country=EE')).json()
   return (j.events ?? [])
     .filter((e) => e.is_public !== false && e.event_status === 'scheduled' && e.attendance_mode !== 'online')
-    .filter((e) => NEAR_TALLINN.test(e.address ?? ''))
     .filter((e) => {
       return isKidEvent(e.title, stripHtml(e.description))
     })
@@ -243,7 +247,11 @@ all.push(...previous.events.filter((e) => !ids.has(e.id) && e.source !== 'Facebo
 // and tidy prices saved by older versions.
 all = all
   .filter((e) => e.source === 'Facebook' || isKidEvent(e.title, e.description ?? e.summary ?? ''))
-  .map((e) => ({ ...e, price: e.price ? e.price.replace(/^from\s+from\s+/i, 'From ') : e.price }))
+  .map((e) => ({
+    ...e,
+    price: e.price ? e.price.replace(/^from\s+from\s+/i, 'From ') : e.price,
+    city: townOf(`${e.venue ?? ''} ${e.address ?? ''}`) ?? townOf(`${e.title} ${e.summary ?? ''}`),
+  }))
 
 if (!anyOk) {
   console.warn('All sources failed; keeping previous events.json')
@@ -257,7 +265,7 @@ all = all
     return end >= now - DAY && new Date(e.start).getTime() <= HORIZON
   })
   .filter((e) => {
-    const key = e.title.toLowerCase().replace(/\s*\(\d{1,2}\.\d{1,2}\)\s*$/, '')
+    const key = `${e.city}|${e.title.toLowerCase().replace(/\s*\(\d{1,2}\.\d{1,2}\)\s*$/, '')}`
     if (seen.has(key)) return false
     seen.add(key)
     return true
@@ -266,4 +274,4 @@ all = all
 
 fs.writeFileSync(OUT, JSON.stringify({ updatedAt: new Date().toISOString(), events: all }, null, 1) + '\n')
 console.log(`Wrote ${all.length} events`)
-for (const e of all.slice(0, 40)) console.log(` - ${e.start.slice(0, 16)} [${e.source}] ${e.title}`)
+for (const e of all.slice(0, 60)) console.log(` - ${e.start.slice(0, 16)} [${e.source}] ${e.city ?? '?'} · ${e.title}`)

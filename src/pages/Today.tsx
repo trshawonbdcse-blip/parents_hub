@@ -1,7 +1,10 @@
 import { ChevronRight, CloudRain, CloudSun, Home as HomeIcon, MapPin, PiggyBank, Sparkles, Sun, Trees, Umbrella, Wallet } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import rawEvents from '../data/events.json'
+import { CityPicker } from '../components/CityPicker'
 import { PlaceCard } from '../components/PlaceCard'
+import { cityCoords, placesIn, useCity } from '../lib/city'
+import { eventInCity } from '../lib/events'
 import { formatAge, isSummer, moneyTips, todaysPicks } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
@@ -21,24 +24,30 @@ function greeting(hour: number) {
 export function Today() {
   const { t, locale } = useT()
   const { months, name } = useChild()
-  const { weather, error } = useWeather()
+  const [city] = useCity()
+  const here = cityCoords(city)
+  const { weather, error } = useWeather(here.lat, here.lng)
   const favorites = useIdList(KEYS.favorites)
   const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
-  const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 6 })
+  const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 6, pool: placesIn(city) })
   const mode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
   const tip = moneyTips.length ? moneyTips[new Date().getDate() % moneyTips.length] : null
   const now = Date.now()
   const upcoming = events
     .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now)
+    .filter((e) => eventInCity(e, city))
     .slice(0, 3)
 
   return (
     <div className="page">
       <header className="hero-header">
-        <p className="muted">{greeting(new Date().getHours())}</p>
+        <div className="hero-top">
+          <p className="muted">{greeting(new Date().getHours())}</p>
+          <CityPicker />
+        </div>
         <h1>{name ? t('What shall we do today with {name}?', { name }) : t('What shall we do today?')}</h1>
         {months !== null ? (
           <span className="chip-static">{t('Ideas for {age}', { age: formatAge(months) })}</span>

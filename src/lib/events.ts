@@ -1,4 +1,5 @@
 import rawEvents from '../data/events.json'
+import towns from '../data/towns.json'
 import type { KidEvent } from '../types'
 import { translate as tr } from './i18n'
 
@@ -9,6 +10,20 @@ export const eventsUpdatedAt = data.updatedAt
 export const eventById = (id: string) => events.find((e) => e.id === id)
 
 export const TZ = 'Europe/Tallinn'
+
+const TOWNS = towns.towns.map(([re, hub]) => [new RegExp(`(^|[^\\p{L}])(${re})`, 'iu'), hub] as const)
+const townOf = (text: string) => TOWNS.find(([re]) => re.test(text))?.[1] ?? null
+
+// Hub town of an event (saved by the collector; guessed for older entries).
+export const eventCity = (e: KidEvent) =>
+  e.city !== undefined ? e.city : (townOf(`${e.venue ?? ''} ${e.address ?? ''}`) ?? townOf(`${e.title} ${e.source}`))
+
+// Events whose town is unknown are shown everywhere.
+export function eventInCity(e: KidEvent, city: string) {
+  if (city === 'all') return true
+  const c = eventCity(e)
+  return c === null || c === city
+}
 
 const DAY = 864e5
 export const eventEndsAt = (e: KidEvent) => new Date(e.end ?? e.start).getTime() + (e.allDay ? DAY : 0)

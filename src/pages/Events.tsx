@@ -1,7 +1,9 @@
 import { CalendarX, ChevronRight, MapPin } from 'lucide-react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { cleanPrice, eventAudience, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
+import { CityPicker } from '../components/CityPicker'
+import { useCity } from '../lib/city'
+import { cleanPrice, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
 import { localeOf, translate as tr, useT } from '../lib/i18n'
 
@@ -18,11 +20,12 @@ function dayLabel(key: string) {
   return new Date(`${key}T12:00:00`).toLocaleDateString(localeOf(), { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
 }
 
-function upcoming(range: Range, now = new Date()) {
+function upcoming(range: Range, city: string, now = new Date()) {
   const limit = range === 'week' ? 7 : range === 'month' ? 31 : 3650
   const until = now.getTime() + limit * 864e5
   return allEvents
     .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now.getTime() && new Date(e.start).getTime() <= until)
+    .filter((e) => eventInCity(e, city))
     .sort((a, b) => a.start.localeCompare(b.start))
 }
 
@@ -30,7 +33,8 @@ export function Events() {
   const { t, locale } = useT()
   const timeOf = (iso: string) => new Date(iso).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const [range, setRange] = useState<Range>('month')
-  const events = upcoming(range)
+  const [city] = useCity()
+  const events = upcoming(range, city)
   const groups = new Map<string, KidEvent[]>()
   for (const e of events) {
     // Events that already started (multi-day) are listed under today.
@@ -40,7 +44,10 @@ export function Events() {
 
   return (
     <div className="page">
-      <h1 className="page-title">{t('Events')}</h1>
+      <div className="title-row">
+        <h1 className="page-title">{t('Events')}</h1>
+        <CityPicker />
+      </div>
       <p className="muted small">
         {t("Kids' and family events, collected every morning")}
         {eventsUpdatedAt ? ` · ${t('updated {date}', { date: new Date(eventsUpdatedAt).toLocaleDateString(locale, { day: 'numeric', month: 'short' }) })}` : ''}
@@ -70,15 +77,15 @@ export function Events() {
                   <span className="event-time">{e.allDay ? t('All day') : timeOf(e.start)}</span>
                   <span className="row-text">
                     <strong>{e.title}</strong>
-                    {e.venue && (
+                    {(e.venue || (city === 'all' && eventCity(e))) && (
                       <small className="with-icon">
-                        <MapPin size={13} /> {e.venue}
+                        <MapPin size={13} /> {[e.venue, city === 'all' && eventCity(e) && !e.venue?.includes(eventCity(e)!) ? eventCity(e) : null].filter(Boolean).join(', ')}
                       </small>
                     )}
                     <span className="event-meta">
                       {eventKind(e) && <span className="badge badge-brand">{eventKind(e)}</span>}
                       {eventAudience(e) && <span className="badge">{eventAudience(e)}</span>}
-                      {e.free ? <span className="badge badge-free">Free</span> : e.price && <span className="badge">{cleanPrice(e.price)}</span>}
+                      {e.free ? <span className="badge badge-free">{t('Free')}</span> : e.price && <span className="badge">{cleanPrice(e.price)}</span>}
                     </span>
                   </span>
                   <ChevronRight size={18} className="muted" />

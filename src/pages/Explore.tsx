@@ -1,9 +1,11 @@
 import { LayoutGrid, Search, SlidersHorizontal, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { CityPicker } from '../components/CityPicker'
 import { PlaceCard } from '../components/PlaceCard'
+import { ALL, cityName, placesIn, useCity } from '../lib/city'
 import { CATEGORY_ICON } from '../components/ui'
-import { categoryLabel, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking, places } from '../lib/places'
+import { categoryLabel, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking } from '../lib/places'
 import { useChild } from '../lib/useChild'
 import type { Category } from '../types'
 import { useT } from '../lib/i18n'
@@ -17,6 +19,8 @@ export function Explore() {
   const [coords, setCoords] = useState<Coords | null>(null)
   const [locError, setLocError] = useState(false)
   const [sheetOpen, setSheetOpen] = useState(false)
+  const [city] = useCity()
+  const pool = useMemo(() => placesIn(city), [city])
 
   const q = params.get('q') ?? ''
   const setting = params.get('setting') ?? 'any'
@@ -46,19 +50,19 @@ export function Explore() {
     )
   }, [wantNear, coords])
 
-  const areas = useMemo(() => [...new Set(places.map((p) => p.area))].sort(), [])
-  const categories = useMemo(() => [...new Set(places.map((p) => p.category))], [])
+  const areas = useMemo(() => [...new Set(pool.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'et')), [pool])
+  const categories = useMemo(() => [...new Set(pool.map((p) => p.category))], [pool])
   const sheetFilters = [area !== 'any', parking !== 'any', !ageOnly, !seasonOnly].filter(Boolean).length
 
-  const results = places
+  const results = pool
     .filter((p) => {
-      const text = `${p.name} ${p.nameLocal ?? ''} ${p.area} ${p.description}`.toLowerCase()
+      const text = `${p.name} ${p.nameLocal ?? ''} ${p.area} ${p.city} ${p.description}`.toLowerCase()
       if (q && !text.includes(q.toLowerCase())) return false
       if (setting === 'indoor' && p.setting === 'outdoor') return false
       if (setting === 'outdoor' && p.setting === 'indoor') return false
       if (free && !p.price.free) return false
       if (category !== 'any' && p.category !== category) return false
-      if (area !== 'any' && p.area !== area) return false
+      if (area !== 'any' && areas.includes(area) && p.area !== area) return false
       if (ageOnly && !fitsAge(p, months)) return false
       if (seasonOnly && !fitsSeason(p)) return false
       if (parking === 'yes' && !hasParking(p)) return false
@@ -79,13 +83,16 @@ export function Explore() {
   return (
     <div className="page">
       <div className="sticky-top">
-        <h1 className="page-title">{t('Explore')}</h1>
+        <div className="title-row">
+          <h1 className="page-title">{t('Explore')}</h1>
+          <CityPicker />
+        </div>
         <div className="search-row">
           <label className="search-field">
             <Search size={18} aria-hidden="true" />
             <input
               type="search"
-              placeholder={t('Search places in Tallinn')}
+              placeholder={city === ALL ? t('Search places in Estonia') : t('Search places in {city}', { city: cityName(city) })}
               value={q}
               onChange={(e) => update('q', e.target.value || null)}
             />

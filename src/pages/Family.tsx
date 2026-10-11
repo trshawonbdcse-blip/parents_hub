@@ -66,7 +66,7 @@ export function Family() {
       <Accordion title={t('Money-saving tips')} icon={<PiggyBank size={18} />} tips={localizedTips('money', moneyTips)} />
       <Accordion title={t('Parking in Tallinn')} icon={<Car size={18} />} tips={localizedTips('parking', parkingRules)} />
 
-      <p className="footnote">Parents Hub · Tallinn</p>
+      <p className="footnote">Parents Hub · Eesti</p>
     </div>
   )
 }

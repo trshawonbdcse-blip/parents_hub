@@ -1,0 +1,23 @@
+{
+  "_note": "Town name stems (lower case) → hub town. Used to place events in a town. Order matters: more specific first.",
+  "towns": [
+    ["kohtla-järve|kohtla järve|kohtla", "Jõhvi"],
+    ["jõhvi|toila|ahtme|kiviõli|püssi", "Jõhvi"],
+    ["narva|sillamäe|narva-jõesuu", "Narva"],
+    ["tallinn|harju|keila|saue|maardu|viimsi|rae vald|jüri|saku|kiili|harku|jõelähtme|kohila|tabasalu|laagri|peetri|paldiski|laulasmaa|loksa|kehra|kose", "Tallinn"],
+    ["tartu|elva|kambja|ülenurme|nõo|kallaste", "Tartu"],
+    ["pärnu|sindi|tori|kilingi-nõmme|häädemeeste", "Pärnu"],
+    ["rakvere|tapa|kunda|väike-maarja|tamsalu|haljala|palmse|sagadi", "Rakvere"],
+    ["viljandi|abja|karksi|mustla|suure-jaani|võhma", "Viljandi"],
+    ["haapsalu|lääne-nigula|lihula", "Haapsalu"],
+    ["kuressaare|saaremaa|orissaare|muhu", "Kuressaare"],
+    ["kärdla|hiiumaa|käina", "Kärdla"],
+    ["paide|türi|järva", "Paide"],
+    ["rapla|märjamaa", "Rapla"],
+    ["võru|antsla|rõuge|haanja", "Võru"],
+    ["otepää|pühajärve", "Otepää"],
+    ["valga|tõrva", "Valga"],
+    ["põlva|räpina|mooste", "Põlva"],
+    ["jõgeva|põltsamaa|mustvee|kuremaa", "Jõgeva"]
+  ]
+}

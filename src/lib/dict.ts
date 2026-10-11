@@ -98,7 +98,12 @@ export const DICT: Record<string, Entry> = {
   'Pleasant weather — a good day to be outside.': { et: 'Mõnus ilm — hea päev õues olemiseks.', ru: 'Приятная погода — хороший день для прогулки.' },
 
   // Explore
-  'Search places in Tallinn': { et: 'Otsi kohti Tallinnas', ru: 'Поиск мест в Таллинне' },
+  'Search places in Estonia': { et: 'Otsi kohti üle Eesti', ru: 'Поиск мест по Эстонии' },
+  'Search places in {city}': { et: 'Otsi kohti: {city}', ru: 'Поиск мест: {city}' },
+  'Choose a town': { et: 'Vali linn', ru: 'Выберите город' },
+  'All of Estonia': { et: 'Kogu Eesti', ru: 'Вся Эстония' },
+  'Use my location': { et: 'Kasuta minu asukohta', ru: 'Определить по местоположению' },
+  'Finding you…': { et: 'Otsin asukohta…', ru: 'Определяем местоположение…' },
   'More filters': { et: 'Rohkem filtreid', ru: 'Больше фильтров' },
   'Free parking': { et: 'Tasuta parkimine', ru: 'Бесплатная парковка' },
   All: { et: 'Kõik', ru: 'Все' },
@@ -122,9 +127,9 @@ export const DICT: Record<string, Entry> = {
   'Place not found.': { et: 'Kohta ei leitud.', ru: 'Место не найдено.' },
   'Back to Explore': { et: 'Tagasi avastama', ru: 'Назад к обзору' },
   'Photo: {credit}': { et: 'Foto: {credit}', ru: 'Фото: {credit}' },
-  '≈ is a typical price for similar places in Tallinn, not this place’s official price.': {
-    et: '≈ on Tallinna sarnaste kohtade tavaline hind, mitte selle koha ametlik hind.',
-    ru: '≈ — обычная цена похожих мест в Таллинне, а не официальная цена этого места.',
+  '≈ is a typical price for similar places in Estonia, not this place’s official price.': {
+    et: '≈ on Eesti sarnaste kohtade tavaline hind, mitte selle koha ametlik hind.',
+    ru: '≈ — обычная цена похожих мест в Эстонии, а не официальная цена этого места.',
   },
   'Price not published.': { et: 'Hind pole avaldatud.', ru: 'Цена не опубликована.' },
   'Call to confirm': { et: 'Helista ja täpsusta', ru: 'Позвоните и уточните' },

@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/photos/candidates.json', 'scripts/photos/contact-sheets.sh']
+    paths: ['scripts/photos/candidates.json', 'scripts/photos/contact-sheets.sh', 'scripts/photos/review-ids.txt']
 
 permissions:
   contents: write

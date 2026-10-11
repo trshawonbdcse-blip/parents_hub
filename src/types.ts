@@ -121,4 +121,6 @@ export interface KidEvent {
   summary: string | null
   // Longer text shown on the in-app event page.
   description?: string | null
+  // Hub town (see towns.json); null when unknown.
+  city?: string | null
 }

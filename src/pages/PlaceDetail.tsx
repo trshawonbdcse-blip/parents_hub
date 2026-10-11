@@ -149,7 +149,7 @@ export function PlaceDetail() {
       <div className="detail-body">
         <header className="detail-header">
           <p className="overline">
-            {categoryLabel(place.category)} · {place.area}
+            {categoryLabel(place.category)} · {place.area === place.city || place.city === 'Tallinn' ? place.area : `${place.area}, ${place.city}`}
           </p>
           <h1>{place.name}</h1>
           {place.nameLocal && place.nameLocal !== place.name && <p className="muted">{place.nameLocal}</p>}
@@ -167,7 +167,7 @@ export function PlaceDetail() {
           {(adult === null || child === null) && (
             <p className="price-warning">
               {(adult === null && adultEst) || (child === null && childEst)
-                ? t('≈ is a typical price for similar places in Tallinn, not this place’s official price.') + ' '
+                ? t('≈ is a typical price for similar places in Estonia, not this place’s official price.') + ' '
                 : t('Price not published.') + ' '}
               {place.phone ? <a href={telHref(place.phone)}>{t('Call to confirm')}</a> : t('Confirm at the entrance.')}
             </p>

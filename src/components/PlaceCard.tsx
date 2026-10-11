@@ -28,7 +28,7 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
         </div>
         <div className="place-card-body">
           <p className="overline">
-            {categoryLabel(place.category)} · {place.area}
+            {categoryLabel(place.category)} · {place.area === place.city || place.city === 'Tallinn' ? place.area : `${place.area}, ${place.city}`}
             {distance != null && ` · ${distance.toFixed(1)} km`}
           </p>
           <h3>{place.name}</h3>
