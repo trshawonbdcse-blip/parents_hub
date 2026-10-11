@@ -1858,5 +1858,48 @@
    "credit": "Sergei Gussev · CC BY 2.0",
    "page": "https://commons.wikimedia.org/wiki/File:Lahemaa_(30000826313).jpg"
   }
+ ],
+ "ahhaa-science-centre-tartu": [
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/d/da/Ahhaa_Tartu_web-1002_03.jpg",
+   "credit": "Märt Kose · Wikimedia Commons (Wiki Science Competition 2019, attribution licence)",
+   "page": "https://commons.wikimedia.org/wiki/File:Ahhaa_Tartu_web-1002_03.jpg"
+  }
+ ],
+ "narva-castle-narva": [
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Narva_castle_2008.JPG/960px-Narva_castle_2008.JPG",
+   "credit": "Simm · CC BY-SA 3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Narva_castle_2008.JPG"
+  },
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Narva_asv2022-04_img09_Castle.jpg/960px-Narva_asv2022-04_img09_Castle.jpg",
+   "credit": "A.Savin · Free Art License",
+   "page": "https://commons.wikimedia.org/wiki/File:Narva_asv2022-04_img09_Castle.jpg"
+  }
+ ],
+ "rakvere-castle-rakvere": [
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rakvere_linnuse_varemed_vallikraaviga.jpg/960px-Rakvere_linnuse_varemed_vallikraaviga.jpg",
+   "credit": "Wikimedia Commons (check author/licence)",
+   "page": "https://commons.wikimedia.org/wiki/File:Rakvere_linnuse_varemed_vallikraaviga.jpg"
+  }
+ ],
+ "palmse-manor-lahemaa": [
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Palmse_manor_house_at_summer.jpg/960px-Palmse_manor_house_at_summer.jpg",
+   "credit": "Abrget47j · CC BY-SA",
+   "page": "https://commons.wikimedia.org/wiki/File:Palmse_manor_house_at_summer.jpg"
+  },
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Palmse_Manor.jpg/960px-Palmse_Manor.jpg",
+   "credit": "Liilia Moroz · CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palmse_Manor.jpg"
+  },
+  {
+   "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Palmse_manor_2.jpg/960px-Palmse_manor_2.jpg",
+   "credit": "Liilia Moroz · CC0",
+   "page": "https://commons.wikimedia.org/wiki/File:Palmse_manor_2.jpg"
+  }
  ]
 }

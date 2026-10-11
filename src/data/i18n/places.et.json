@@ -865,5 +865,788 @@
     "priceNote": "Tasuta avalik rand.",
     "discounts": [],
     "parkingNote": null
+  },
+  "ahhaa-science-centre-tartu": {
+    "description": "Eesti suurimas teaduskeskuses on mitu korrust käega katsutavaid eksponaate, planetaarium ja vahetuvad näitused. Enamik eksponaate on mõeldud kooliealistele, kuid ka väike leiab rõõmu vee-, valguse- ja helijaamadest ning paljudest nuppudest.",
+    "tips": "Eelkooliealised pääsevad tasuta koos piletit ostva vähemalt 14-aastase saatjaga, nii et väikelapsega maksad vaid täiskasvanu- või perepileti eest.",
+    "hours": "Tavaliselt iga päev alates 10:00 (enamasti kuni 19:00, R-L kuni 20:00); pühade ajal kontrolli",
+    "priceNote": "Päevapilet täiskasvanule EUR 20; perepilet EUR 45 (kuni 2 täiskasvanut + kõik alla 18-aastased lapsed); eelkooliealised EUR 0 koos piletit ostva vähemalt 14-aastase saatjaga. Vanemates allikates EUR 17 / pere 39, seega kontrolli kehtivaid hindu.",
+    "discounts": [
+      "Eelkooliealised tasuta",
+      "Perepilet (kuni 2 täiskasvanut + alla 18-aastased lapsed)",
+      "AHHAA piletiga 20% soodustust Aura veekeskuses"
+    ],
+    "parkingNote": "Hoone kõrval on tasuline parkla; kehtivad hinnad leiad keskuse asukoha ja parkimise lehelt."
+  },
+  "estonian-national-museum-tartu": {
+    "description": "Eesti Rahva Muuseum asub endisel Raadi lennuväljal hiiglaslikus moodsas hoones, kus pikad tasased ja trepivabad saalid sobivad hästi lapsevankriga. Väikest paeluvad enim avar ruum, värvikad väljapanekud ja õueala; peretegevusi ja lasteprogramme vaata muuseumi kodulehelt.",
+    "tips": "Pikad tasased koridorid sobivad hästi kõndida tahtvale väikelapsele ning väljas olev Raadi park ja lennuväli on pärast tasuta jooksmiseks.",
+    "hours": "T-P 10:00-18:00, E suletud",
+    "priceNote": "Kogu maja pilet EUR 16, sooduspilet EUR 12, aastapilet EUR 45. Perepilet kehtib kuni 2 täiskasvanule koos alaealiste lastega; Perekaardiga peredele perehind sõltumata laste arvust. Lapse/väikelapse hind kinnitamata.",
+    "discounts": [
+      "Perepilet (kuni 2 täiskasvanut + alaealised lapsed)",
+      "Eesti perekaart: perehind sõltumata laste arvust",
+      "Aastapilet EUR 45"
+    ],
+    "parkingNote": null
+  },
+  "tartu-toy-museum": {
+    "description": "Väike muuseum Tartu vanalinna vanades puumajades, kus on tuhandeid mänguasju, nukke ja nukuteatri nukke ning lastele mängutuba. See on üks parimaid sisekohti Tartus 1–3-aastasele, sest siin on päris mänguruum, mitte ainult vitriinid.",
+    "tips": "Mängutuba sulgub varem (16:00) kui näitused, nii et kui mängimine on peamine eesmärk, tule hommikul või varasel pärastlõunal.",
+    "hours": "K-P 11:00-18:00 (mängutuba 11:00-16:00); E, T ja riigipühadel suletud",
+    "priceNote": "Täiskasvanu EUR 10; lapsed/õpilased EUR 8; väikelapsed 1-3 a EUR 4; perepääse EUR 28 (kuni 2 täiskasvanut + nende alla 16-aastased lapsed). Internetis odavam.",
+    "discounts": [
+      "Perepääse (kuni 2 täiskasvanut + alla 16-aastased lapsed)",
+      "Internetipiletid odavamad"
+    ],
+    "parkingNote": "Tänavaparkimine vanalinna tasulises tsoonis. Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "aura-water-park-tartu": {
+    "description": "Tartu kesklinna veekeskuses on ujula, liumägedega veepark ja saunakeskus, kohe AHHAA kõrval. Soe madal vesi teeb sellest hea vihmase päeva valiku väikelapsega, kuid lapsed siin tasuta ei pääse.",
+    "tips": "Kõige odavamad on tööpäeva päevased piletid; alla 10-aastane laps vajab vähemalt 16-aastast saatjat, kellel on sama tsooni pilet.",
+    "hours": "Ujula E-R 6:30-22:00, L-P 10:00-22:00; veepark ja saunad tööpäeviti lühemalt (vaata kodulehelt)",
+    "priceNote": "Hinnakiri alates 01.08.2026 sõltub päevast ja kellaajast: nt tööpäeviti 10:00-14:59 täispilet EUR 7, sooduspilet (lapsed, õpilased, pensionärid) EUR 5; nädalavahetusel/pühal täispilet EUR 11, sooduspilet EUR 8.50. Perepileti tingimused kinnitamata; lapsed ei ole tasuta.",
+    "discounts": [
+      "Lastele sooduspiletid",
+      "AHHAA tšekiga 20% soodustust",
+      "Sünnipäevalaps tasuta, kui vähemalt 4 sõpra ostavad pileti"
+    ],
+    "parkingNote": null
+  },
+  "botanical-garden-tartu": {
+    "description": "Välisaed on tasuta, seal on vankrisõbralikud teed, tiigid ja laste mänguala; ülikool on rajanud ka loodusliku mänguala mudaköögi ja mänguojaga. Piletiga palmimaja pakub sooja ja rohelist talvist jalutuskäiku, mis väikestele tavaliselt väga meeldib.",
+    "tips": "Jäta tasuline kasvuhoone külmaks või vihmaseks päevaks; suvel piisab väikelapsele tasuta välisaiast ja mängualast.",
+    "hours": "Kasvuhooned iga päev 10:00-17:00; välisaed hooajal kauem avatud",
+    "priceNote": "Välisaed tasuta. Kasvuhooned: täiskasvanu alates EUR 5, üliõpilased/õpilased/pensionärid alates EUR 3, pere alates EUR 10 (täpsusta aiaga).",
+    "discounts": [
+      "Välisaed tasuta",
+      "Kasvuhoonete perepilet"
+    ],
+    "parkingNote": "Lähedal tänavaparkimine linna tasulises tsoonis. Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "natural-history-museum-tartu": {
+    "description": "Loodusmuuseumis on tuhandeid topiseid, mineraale ja kivistisi ning elusloodusenurk püütoni, kilpkonna, iguaani ja teiste väikeste loomadega. Väikelastele meeldib enim vitriinides loomi otsida ja elusaid loomi vaadata; plaani lühike külastus.",
+    "tips": "Mine otse elusloomade ning suurte imetajate ja lindude juurde; väikelapsele piisab 45 minutist.",
+    "hours": "T-P 10:00-18:00, E suletud (kontrolli enne külastust)",
+    "priceNote": "Täiskasvanu alates EUR 10; pere alates EUR 20; õpilased, üliõpilased ja pensionärid alates EUR 5. Väikelapse hind kinnitamata.",
+    "discounts": [
+      "Perepilet"
+    ],
+    "parkingNote": "Tänavaparkimine linna tasulises tsoonis. Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "toomemagi-playground-tartu": {
+    "description": "Varjuline mänguväljak Toomemäe pargis, kesklinnast umbes 10-minutilise jalutuskäigu kaugusel, kus on beebikiik, liivakast ja palju pinke. Atraktsioonid on peamiselt 3-6-aastastele, kuid kiik ja liivakast sobivad hästi ka noorematele.",
+    "tips": "Ühenda see vankrijalutuskäiguga Toomemäe pargis ja toomkiriku varemete juures; teed on osaliselt kallakuga.",
+    "hours": "Avatud ööpäev läbi",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Tänavaparkimine mäe ümbruses linna tasulises tsoonis. Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "kaubamaja-playground-tartu": {
+    "description": "Väike kesklinna mänguväljak Tartu Kaubamaja kõrval, mille atraktsioonid on mõeldud kõige pisematele: mängumaja ja mängulett 1-aastastele ning karussell ja vedrukiiged 3-aastastele. Mugav kiire mängupaus poodlemise või kesklinna asjaajamiste vahel.",
+    "tips": "Tualetti ja mähkimisvõimalust kasuta lähedal asuvas kaubamajas.",
+    "hours": "Avatud ööpäev läbi",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "tahtvere-childrens-park-tartu": {
+    "description": "Suur mänguväljak Tähtvere pargis, kus on atraktsioonid 2–16-aastastele, kaks jalgrattaõpperada ja korvpalliplats. Sobib paremini 2-3-aastastele kui beebidele; vanematele on piknikulauad, olemas on tualetid ja tasuta parkla.",
+    "tips": "Võta kaasa jooksuratas: jalgrattaõpperajad on hea koht esimesteks sõitudeks.",
+    "hours": "Avatud ööpäev läbi",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Pargi juures tasuta parkla."
+  },
+  "anne-canal-beach-tartu": {
+    "description": "Tartu peamine linnarand on pikk liivariba Anne kanali ääres sooja veega, mänguväljakuga (kiiged, ronimisraamid, liumägi) ja suvel rannavalvega. Kesklinnast on sinna umbes 10-minutiline jalutuskäik üle Turu jalakäijate silla, nii et vankriga on lihtne minna.",
+    "tips": "Kuumadel nädalavahetustel tule hommikul, sest rand täitub kiiresti. Talvel on kanalil taliujumine ja vahel jääkarussell.",
+    "hours": "Avatud kogu aeg; rannavalve ja teenused suvehooajal",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "lounakeskus-tartu": {
+    "description": "Lõuna-Eesti suurimas kaubanduskeskuses on 670 m² sisemänguväljak (Lappset, 2024), mehaaniliste loomadega seikluspark ja Astri Arena uisuväljak. Kindel soe valik väikelapsega hallil päeval ning parkimine on tasuta.",
+    "tips": "Astri Arenal saab laenutada kiivreid ja uisutamise abivahendeid, nii et ka väike laps saab koos vanemaga jääd proovida.",
+    "hours": "E-L 10:00-21:00, P 10:00-19:00",
+    "priceNote": "Mänguväljak tasuta; seikluspargi atraktsioonid ja uisuväljak eraldi tasu eest.",
+    "discounts": [],
+    "parkingNote": "Keskuse juures suur tasuta parkla."
+  },
+  "tasku-centre-tartu": {
+    "description": "Kesklinna kaubanduskeskus Emajõe ääres, kus on ema-lapse tuba, mängutuba ja perede parkimiskohad. Mugav soe peatus toitmiseks, mähkimiseks ja lühikeseks mänguks kõrvalasuvate AHHAA ja Aura vahel.",
+    "tips": "Kasuta parkla perekohti, mis on laiemad ja kus on lihtsam vankrit autosse ja autost välja saada.",
+    "hours": "E-L 10:00-21:00, P 10:00-18:00",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Keskuse parklas on perede parkimiskohad."
+  },
+  "tartu-city-library-childrens-department": {
+    "description": "Raekoja platsi kõrval asuvas linnaraamatukogus on laste- ja noorteosakond pildiraamatute ja lugemisnurkadega. See on tasuta ja vaikne sisepeatus väikelapsega; raamatukogu rõhub lugemisnurkadele, mitte mänguvahenditele.",
+    "tips": "Lugejakaardiga saab pildiraamatuid tasuta laenutada; küsi töötajatelt beebide ja väikelaste ettelugemistundide kohta.",
+    "hours": "Keskkogu E-R 10:00-20:00, L 10:00-16:00, P suletud (kontrolli suviseid aegu)",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "emajogi-riverside-tartu": {
+    "description": "Kesklinnas kulgevad Emajõe mõlemal kaldal kõvakattega tasased teed, mis ühendavad Kaarsilla ümbrust, Tasku, AHHAA ja Turu jalakäijate silla Anne kanaliga. Tasuta ja lihtne vankrijalutuskäik, kus väike saab vaadata paate, parte ja sildu.",
+    "tips": "Tee ring: kõnni ühel kaldal, mine üle Turu silla ja tule teisel kaldal tagasi Kaarsillani.",
+    "hours": "Avatud ööpäev läbi",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": "Tartu kesklinna tasuline tänavaparkimine: A-tsoon EUR 3/h, B-tsoon EUR 1.5/h tööpäeviti 8-19 (A-tsoon ka L 11-17); parkimiskellaga A-tsoonis 15 min ja B-tsoonis 90 min tasuta. Maksa automaadis, SMS-iga või äppidega nagu Pargi.ee."
+  },
+  "verevi-beach-elva": {
+    "description": "Elva populaarses järverannas, Tartust umbes 25 km edelas, on laste ujumisala, riietuskabiinid, tualetid, rannavalve ja suvine kohvik. Lähedal spordipargis on mändide all Seeneriigi mänguväljak, mis sobib väikelastele.",
+    "tips": "Ühenda rannahommik kõrvaloleva Seeneriigi mänguväljakuga; talvel on järvel uisuväljak ja uiske saab laenutada Verevi motellist.",
+    "hours": "Avatud aasta ringi; rannavalve ja kohvik suvel",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "elistvere-animal-park": {
+    "description": "RMK metsaloomapark, kus metsaraja ääres on suured aedikud Eesti metsloomadele nagu karu, hunt, ilves, põder ja metssiga. Väikestele meeldib suuri loomi otsida; piletid on odavad ja alla 3-aastased pääsevad tasuta.",
+    "tips": "Metsarada on pikk ja osaliselt kõvakatteta, seega sobib kõige paremini vastupidav vanker või kandekott.",
+    "hours": "T-P: nov-jaan 10:00-15:00; veebr-mai ja sept-okt 10:00-17:00; juuni-aug 10:00-18:00; E suletud",
+    "priceNote": "Täiskasvanu EUR 4; õpilased 7-19 EUR 2; eelkooliealised (3-6) EUR 1; perepilet EUR 8 (2 täiskasvanut + kuni 3 last kuni 19 a). Vanemates allikates täiskasvanu EUR 5 / pere EUR 10, seega kontrolli rmk.ee-st.",
+    "discounts": [
+      "Perepilet (2 täiskasvanut + kuni 3 last)",
+      "Alla 3-aastased tasuta"
+    ],
+    "parkingNote": null
+  },
+  "palamuse-parish-school-museum": {
+    "description": "Oskar Lutsu romaanist ja filmist „Kevade“ tuntud vana kihelkonnakool, kus on perenäitus ja laste mängutuba. Sobib paremini vanematele väikelastele ja eelkooliealistele; ümbritsev külaplats, kirik ja jõgi teevad sellest mõnusa vankripeatuse.",
+    "tips": "Vaata enne minekut muuseumi peretöötubasid ja programme; mängutuba annab pisikestele pausi näitustest.",
+    "hours": "Mai-sept iga päev 10:00-18:00; okt-apr T-L 10:00-18:00",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kuremaa-beach-jogeva": {
+    "description": "250 m pikkune liivarand Kuremaa järve põhjakaldal on Jõgevamaa peamine avalik rand, kus suvel on rannavalve ja kohvikud. Kõrval asuv mõisapark ja tuuleveski sobivad pärast suplust vankrijalutuskäiguks.",
+    "tips": "Vaata enne minekut valla uudiseid: ujumisala on olnud renoveerimisel (uus liivakiht).",
+    "hours": "Avatud kogu aeg; rannavalve suvel",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "puhajarve-beach-otepaa": {
+    "description": "Otepää uuendatud järverannas on uus liiv, eraldi madal laste veeala ja mänguväljak ning suvel rannahoone, kohvikud ja rannavalve. Ümbritsevas pargis on palliplats ja paadilaenutus ning seal on vankriga lihtne jalutada.",
+    "tips": "Võta kaasa partidele sobivat toitu (mitte leiba): partide toitmine kaldal on väikeste lemmiktegevus. 12 km järvematkarada on pisikestele liiga pikk, seega jää parki.",
+    "hours": "Avatud kogu aeg; rannavalve, kohvikud ja laenutus suvel",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "otepaa-adventure-park": {
+    "description": "Tehvandi spordikeskuses asuv köis- ja trossipark, kus on eri raskusastmega rajad ja väikelastele minirada. Sobib vaid vanimatele väikelastele (umbes 3+, kehtivad pikkusepiirangud); nooremad õed-vennad saavad maast vaadata.",
+    "tips": "Täpsusta vanuse- ja pikkusepiiranguid enne minekut; allikad annavad alampiiriks kas 3 või 6 aastat.",
+    "hours": "Juuni-aug iga päev 11:00-19:00; mai ja sept L-P 12:00-19:00; talvel suletud",
+    "priceNote": "Hinnad kinnitamata; väidetavalt alla 1 m pikkused lapsed laste rajal tasuta. Kontrolli seikluspark.ee-st.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "valga-valka-central-square": {
+    "description": "Valga (Eesti) ja Valka (Läti) ühisel keskväljakul on värviline laste mänguväljak ja suur kiik, mis kiigub üle riigipiiri. Sealt pääseb Pedeli jõe parki, kus on veel mänguväljakuid, rand ja 5 km pikkune jõeäärne rada.",
+    "tips": "Lase väikesel piirikiigel „kahe riigi vahel“ kiikuda ja jaluta siis vankriga mööda tasast Pedeli jõe rada.",
+    "hours": "Avatud ööpäev läbi",
+    "priceNote": null,
+    "discounts": [],
+    "parkingNote": null
+  },
+  "valga-museum": {
+    "description": "Juugendstiilis hoones asuv maakonnamuuseum tutvustab Valgamaa loodust, ajalugu ja kultuuri, sh Eesti loomi ja linde ning hundikoopa ja Helme koobaste makette. Lühike sisepeatus, kus väike saab loomade väljapanekuid vaadata; mängule keskendunud muuseum see ei ole.",
+    "tips": "Hoia külastus lühike ja keskendu loodusväljapanekutele, siis mine paari minuti kaugusel asuvale keskväljaku mänguväljakule.",
+    "hours": "Sept-mai T-R 11:00-18:00, L 10:00-15:00; juuni-aug K-L 11:00-18:00, P 10:00-15:00 (kontrolli enne külastust)",
+    "priceNote": "Tavapiletite hinnad kinnitamata; vaata valgamuuseum.ee.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "parnu-beach-parnu": {
+    "description": "Pärnu pikas liivases Sinilipuga rannas on väga madal ja kiiresti soojenev vesi, nii et väike saab kalda ääres sulistada, kui sina oled kõrval. Promenaadi ääres on WC-d, riietuskabiinid, dušid, kohvikud ja mänguväljakud.",
+    "tips": "Küsi rannavalvuritelt lapse käepael ja kirjuta sinna oma telefoninumber juhuks, kui pisike peaks eksima.",
+    "hours": "Avatud ööpäevaringselt; rannavalve 1.06-31.08",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu ranna tasuline ala 1.05-31.08, iga päev 8-18 (ka riigipühadel): EUR 3/h või EUR 15/24h, esimesed 30 min tasuta (tsoonikood PRAND30). Sept-apr tasuta."
+  },
+  "parnu-beach-playground-parnu": {
+    "description": "Suur kaasaegne mänguväljak ajaloolise Rannapargi mere poolses osas, otse liiva kõrval. Seal on atraktsioone ka väikestele ja osaliselt kaetud alad, nii et see sobib väikelapsele ka hallil päeval ja hästi koos rannajalutuskäiguga.",
+    "tips": "Ühenda see vankrijalutuskäiguga mööda ranna taga olevaid varjulisi Rannapargi radu.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu ranna tasuline ala 1.05-31.08, iga päev 8-18 (ka riigipühadel): EUR 3/h või EUR 15/24h, esimesed 30 min tasuta (tsoonikood PRAND30). Sept-apr tasuta."
+  },
+  "munamae-park-playground-parnu": {
+    "description": "See kesklinna park avati pärast suurt rekonstrueerimist uuesti 2025. aasta juulis ning Lõuna tänava poolel on nüüd eraldi mänguala 1-4-aastastele. Purskkaevu lähedal olev suurem mänguväljak on jagatud vanuse järgi osadeks, kus on vanematele õdedele-vendadele batuudid ja ronimine.",
+    "tips": "Mine Lõuna tänava poolsele väikelaste alale; purskkaevu juures olev suur mänguväljak on rahvarohkem ja mõeldud vanematele lastele.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu kesklinna tasulise parkimise ala (alates 1.06.2026): E-R 8-18, L 8-15, EUR 2/h või EUR 10/24h; pühapäeval ja riigipühadel tasuta; esimesed 60 min parkimiskellaga tasuta."
+  },
+  "vallikaar-playground-parnu": {
+    "description": "Mänguväljak renoveeritud Vallikääru pargis vanalinna ajalooliste vallide juures, kus on kiiged, liivakast ja fantaasiat arendavad atraktsioonid. Varjulised pärnaalleed ja linna kõrgeim purskkaev teevad sellest meeldiva peatuse vanalinna vankrijalutuskäigul.",
+    "tips": "Jaluta pargi kõrval olevast Tallinna väravast läbi ja edasi jõe äärde, et teha pikem ring.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu kesklinna tasulise parkimise ala (alates 1.06.2026): E-R 8-18, L 8-15, EUR 2/h või EUR 10/24h; pühapäeval ja riigipühadel tasuta; esimesed 60 min parkimiskellaga tasuta."
+  },
+  "parnu-childrens-park-parnu": {
+    "description": "Väike haljasala vanalinnas Rüütli tänaval, kus on aasta läbi väljas loomateemalised karussellid. Suvel töötab purskkaev ja talvel on valgusskulptuurid, nii et see on mugav lühike peatus väikelapsega jalakäijate tänaval jalutades.",
+    "tips": null,
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Sissepääs tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu kesklinna tasulise parkimise ala (alates 1.06.2026): E-R 8-18, L 8-15, EUR 2/h või EUR 10/24h; pühapäeval ja riigipühadel tasuta; esimesed 60 min parkimiskellaga tasuta."
+  },
+  "tervise-paradiis-water-park-parnu": {
+    "description": "Eesti suurim veekeskus ranna lähedal, kus on liumäed ja lainebasseinid ning eraldi madal bassein väikelastele. Kuni 3-aastased (k.a) ujuvad tasuta koos pileti ostnud täiskasvanuga, nii et see on hea vihmase päeva valik.",
+    "tips": "Väikelapsega piisab tavaliselt 3-tunnisest piletist; kontrolli hoolduspäevi (nt 06.10, 10.11, 08.12), mil keskus avatakse alles kell 17:00.",
+    "hours": "Väljaspool hooaega E-N ja P 10:00-21:00, R-L 10:00-22:00; suvel (juuni lõpp-aug) iga päev 10:00-22:00; hoolduspäevadel avatud alates 17:00",
+    "priceNote": "Väljaspool hooaega 3 h piletid (E-N): täiskasvanu EUR 22, laps 4-6 EUR 5, pere EUR 60. Suvel 3 h: täiskasvanu 25, laps 4-6 6, pere 70. Päevapiletid: täiskasvanu 30 (suvel 34). Kuni 3-aastased (k.a) tasuta koos pileti ostnud täiskasvanuga. Pere = 2 täiskasvanut + 2 last kuni 15.",
+    "discounts": [
+      "Kuni 3-aastased (k.a) tasuta koos pileti ostnud täiskasvanuga",
+      "Perepilet (2 täiskasvanut + 2 last kuni 15)",
+      "Soodushind 4-6-aastastele"
+    ],
+    "parkingNote": "Spaahotelli juures on parkla; kontrolli kohapeal, kas see on veekeskuse külastajatele tasuta. Lähedal tänaval kehtib suvine ranna tasuline ala."
+  },
+  "lottemaa-theme-park-reiu": {
+    "description": "Suur teemapark Eesti multikakoera Lotte põhjal umbes 6 km Pärnust lõunas, kus on teemamajad, rahulikud atraktsioonid, mänguväljakud ja etendused. Lottet tundvad väikelapsed on vaimustuses, aga see on terve päev peamiselt õues, nii et võta vanker kaasa ja planeeri lõunauinak.",
+    "tips": "0-1-aastased on tasuta (veebis ostes kasuta koodi \"LAPS\"); alates 2. eluaastast on vaja täispiletit, nii et peaaegu 2-aastane võib veel tasuta pääseda.",
+    "hours": "Suvehooaeg 13.06-30.08.2026, iga päev 10:00-18:00; väljaspool hooaega suletud (vaata jõuluürituste infot)",
+    "priceNote": "Suvi 2026: üks hind EUR 28 kõigile alates 2. eluaastast, kahepäevane pilet EUR 41; 0-1-aastased tasuta. Pargirong parkla ja värava vahel EUR 2 ühes suunas. Hooaeg lõppes 30.08.2026; talvel võib toimuda eraldi jõuluüritus.",
+    "discounts": [
+      "0-1-aastased tasuta",
+      "Kahepäevane pilet (EUR 41)",
+      "Puudega külastaja saatja tasuta"
+    ],
+    "parkingNote": "Pargi juures on tasuline parkla; parklast sissepääsuni sõidab väike rong (EUR 2 ühes suunas)."
+  },
+  "parnu-museum-parnu": {
+    "description": "Linnamuuseum avati uuesti 21. veebruaril 2026 uue püsinäitusega Pärnu ajaloost alates esiaja leidudest kuni suvituslinnani. Eelkooliealised pääsevad tasuta ja seal on laste mängutuba, nii et see sobib lühikeseks toaskäiguks väikelapsega.",
+    "tips": "Kasuta mängutuba pausiks saalide vahel; perepilet katab 2 täiskasvanut ja kõik sinu alla 18-aastased lapsed.",
+    "hours": "T-P 10:00-18:00, E suletud; suvel pikemalt avatud; piletimüük lõpeb 30 min enne sulgemist",
+    "priceNote": "Täiskasvanu EUR 15, sooduspilet EUR 11, perepilet EUR 31 (kuni 2 täiskasvanut + nende alaealised lapsed). Eelkooliealised tasuta. Ühispilet Pärnu Muuseumi, Koidula muuseumi ja Punase torni jaoks: täiskasvanu 23, soodus 17, pere 48, kehtib 1 aasta.",
+    "discounts": [
+      "Eelkooliealised lapsed tasuta",
+      "Perepilet (2 täiskasvanut + alaealised lapsed)",
+      "Ühispilet 3 filiaali jaoks",
+      "Muuseumipileti saab laenutada Pärnu Keskraamatukogust"
+    ],
+    "parkingNote": "Pärnu kesklinna tasulise parkimise ala (alates 1.06.2026): E-R 8-18, L 8-15, EUR 2/h või EUR 10/24h; pühapäeval ja riigipühadel tasuta; esimesed 60 min parkimiskellaga tasuta."
+  },
+  "parnu-central-library-children-parnu": {
+    "description": "Pärnu Keskraamatukogu lasteosakonnas on pildiraamatud, lauamängud ja lasteajakirjad ning regulaarselt toimuvad üritused ja ettelugemised. See on tasuta, soe ja rahulik koht väikelapsega lugemiseks külmal või vihmasel päeval.",
+    "tips": "Raamatukogu on iga kuu viimasel reedel suletud (sisetööpäev).",
+    "hours": "T-R 10:00-19:00, L 10:00-15:00; juuni-aug tööpäeviti 10:00-18:00; P-E ja kuu viimasel reedel suletud",
+    "priceNote": "Tasuta; lugejakaart on tasuta.",
+    "discounts": [],
+    "parkingNote": "Pärnu kesklinna tasulise parkimise ala (alates 1.06.2026): E-R 8-18, L 8-15, EUR 2/h või EUR 10/24h; pühapäeval ja riigipühadel tasuta; esimesed 60 min parkimiskellaga tasuta."
+  },
+  "skypark-kaubamajakas-parnu": {
+    "description": "Batuudi- ja mängukeskus Kaubamajaka keskuses, kus on hüppamise, ronimise ja aktiivse mängu alad ning soodsam väikelapse pilet. See on Pärnu peamine siseruumide mänguvõimalus, väikestele parim tööpäeva hommikuti, kui on vaiksem.",
+    "tips": "Mine E-N, kui väikelapse pilet on odavam (EUR 6) ja saalis rahulikum; võta kaasa libisemisvastased sokid.",
+    "hours": "Alates 14.09.2026: E-N 10:00-20:00, R-L 10:00-21:00, P 10:00-19:00",
+    "priceNote": "Väikelapse pilet EUR 6 E-N, EUR 8 R-P; tavaline päevapilet EUR 11 E-N, EUR 13 R-P/koolivaheajal; saatja EUR 2.",
+    "discounts": [
+      "Soodsam väikelapse pilet",
+      "Tööpäeviti madalamad hinnad"
+    ],
+    "parkingNote": "Suur kaubanduskeskuse parkla."
+  },
+  "pernova-nature-house-parnu": {
+    "description": "Kolmekorruseline pere loodusmaja, kus on Eesti metsaloomade ja lindude topised, talveaed, filmi- ja helikoobas ning kerakino. Väikelapsed näitavad rõõmuga loomi ja rohelust; planetaariumietendused sobivad pigem veidi vanematele lastele.",
+    "tips": "Viimane sissepääs on 60 minutit enne sulgemist; väljaspool suve on maja pühapäeviti tavaliselt suletud.",
+    "hours": "Sept-mai E-R 10:00-19:00, L 10:00-16:00; juuni-aug iga päev 10:00-18:00",
+    "priceNote": "Viimati avaldatud hinnad (võivad olla aegunud): täiskasvanu EUR 11, õpilane/üliõpilane/pensionär EUR 8, lapsed 4-7 EUR 4, alla 3 tasuta, perepilet EUR 30 (2 täiskasvanut + alaealised lapsed). Päevapilet sisaldab planetaariumietendusi.",
+    "discounts": [
+      "Alla 3-aastased tasuta",
+      "Perepilet (2 täiskasvanut + alaealised lapsed)"
+    ],
+    "parkingNote": null
+  },
+  "haapsalu-episcopal-castle-haapsalu": {
+    "description": "Keskaegne linnusevare, mille tasuta murune linnuseõu sobib suurepäraselt ringi jooksmiseks, ning muuseum linnuse taastatud osas. 0-8-aastased pääsevad muuseumi tasuta, aga järsud trepid ja kitsad käigud teevad kandelina sees mugavamaks kui vankri.",
+    "tips": "Linnuseõu on aasta ringi tasuta, nii et võid lihtsalt piknikku pidada ja lasta pisikesel ringi joosta ilma piletit ostmata.",
+    "hours": "Juuni-aug iga päev 10:00-18:00; sept-mai vähem päevi (E-T suletud) - vaata kodulehte; kassa suletakse 30 min varem",
+    "priceNote": "Muuseum: täiskasvanu EUR 12, soodus EUR 8, perepilet EUR 28 (kuni 2 täiskasvanut + nende alla 18-aastased lapsed). 0-8-aastased tasuta. Linnuseõu tasuta.",
+    "discounts": [
+      "0-8-aastased tasuta",
+      "Perepilet (2 täiskasvanut + alla 18-aastased lapsed)",
+      "Linnuseõu tasuta"
+    ],
+    "parkingNote": "Haapsalu kesklinnas on kohati tasuline munitsipaalparkimine; jälgi märke."
+  },
+  "haapsalu-railway-museum-haapsalu": {
+    "description": "Muuseum asub pikas ja uhkes endises Haapsalu raudteejaamas ning väljas rööbastel seisavad vanad vedurid ja vagunid. Rongisõbrad väikelapsed naudivad vedurite lähedalt vaatamist ja pikk kaetud perroon sobib vankriga jalutamiseks.",
+    "tips": "Hoones asub ka Haapsalu bussijaam, nii et sinna on lihtne autota jõuda.",
+    "hours": "K-P 11:00-17:00",
+    "priceNote": "Märgitud EUR 6 / EUR 5 (täis / soodus); lastehinnad kinnitamata.",
+    "discounts": [],
+    "parkingNote": "Parkimine jaama / bussijaama juures."
+  },
+  "aafrika-beach-playground-haapsalu": {
+    "description": "Haapsalu armastatuim mänguväljak asub mereäärse promenaadi alguses, kus on taastatud puuskulptuurid ja linna ainuke linnuvaatlustorn. Tasane promenaad on ideaalne vankriga jalutamiseks ja lähedal on Kuursaali suvekohvik.",
+    "tips": "Jaluta promenaadi teise otsa, kus on teine, ratastooliga ligipääsetav mänguväljak.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "paralepa-beach-haapsalu": {
+    "description": "Haapsalu peamine liivane supelrand männimetsa ääres, kus on laste mänguväljak, riietuskabiinid ja välikäimlad. Vesi on üsna madal ja rahulik ning suvel on rannas rannavalve.",
+    "tips": "Korraliku duši ja vesiklosetiga WC jaoks kasuta kõrval asuva Paralepa kämpingu või Fra Mare spaahotelli tasulisi võimalusi.",
+    "hours": "Avatud ööpäevaringselt; ametlik hooaeg 1.06-31.08, rannavalve iga päev 10:00-22:00",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kuressaare-castle-kuressaare": {
+    "description": "Baltimaade kõige paremini säilinud keskaegne linnus, mida ümbritsevad vallikraav, vallid ja park, on Saaremaa Muuseumi kodu. Väikelastele meeldivad tornid, kahurid ja avarad vallid, aga sees on järsud kivitrepid, nii et kandelina on mugavam kui vanker.",
+    "tips": "Jaluta kõigepealt vallidel ja lossipargis ning põiga siis läheduses olevale lossihoovi mänguväljakule.",
+    "hours": "16.09-14.05 K-P 11:00-18:00 (pilet kuni 17:30); 15.05-15.09 iga päev 10:00-18:00",
+    "priceNote": "Põhipileti hinnad kinnitamata; ajutise näituse pilet täiskasvanu EUR 9, soodus EUR 7. Saadaval on perepilet (kuni 2 täiskasvanut + nende lapsed).",
+    "discounts": [
+      "Perepilet (kuni 2 täiskasvanut + nende lapsed)"
+    ],
+    "parkingNote": null
+  },
+  "kuressaare-castle-playground-kuressaare": {
+    "description": "Ligi 800 m² keskaja teemaline mänguväljak lossi juures, avatud 2019. aastal, kus on eraldi ala alla 3-aastastele ja teine 3-8-aastastele. See on üks Saaremaa parimaid väikelaste mänguväljakuid ja lihtne lisa lossikülastusele.",
+    "tips": null,
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kuressaare-beach-kuressaare": {
+    "description": "Väike linnarand otse lossi ja lossipargi taga, kus on kaasaegne laste mänguväljak, kiiged, liivakast, WC-d ja riietuskabiinid. Laht on madal, nii et väike saab ohutult sulistada, ja kesklinnast saab sinna vankriga jalutada.",
+    "tips": "Ühenda hommik lossis siin pikniku pidamisega; suvel on toitlustus ja vesirataste laenutus.",
+    "hours": "Avatud ööpäevaringselt; teenused suvel",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "angla-windmill-hill-angla": {
+    "description": "Saaremaa tuntud puust tuuleveskite rida koos pärandkultuurikeskusega ning suvel saab seal kohtuda taluloomade ja -lindudega. Avar ala sobib jooksmist armastavale väikelapsele ja eelkooliealised pääsevad tasuta.",
+    "tips": "Tule mai-augustis, kui pisike tahab taluloomi näha; koht asub Kuressaarest umbes 40 km põhja pool.",
+    "hours": "Mai-aug iga päev 9:00-20:00; sept-apr iga päev 10:00-17:00",
+    "priceNote": "Täiskasvanu EUR 10, õpilane EUR 5, pensionär/üliõpilane EUR 7, perepilet EUR 20 (2 täiskasvanut + lapsed kuni 18); eelkooliealised tasuta. Piiramatu ühepäevane külastus.",
+    "discounts": [
+      "Eelkooliealised lapsed tasuta",
+      "Perepilet (2 täiskasvanut + lapsed kuni 18)"
+    ],
+    "parkingNote": null
+  },
+  "hiiumaa-museum-long-house-kardla": {
+    "description": "Hiiumaa peamuuseum asub 60 meetri pikkuses endises vabrikujuhtide elamus ning selle püsinäitus on suuresti mõeldud väikestele lastele. Seal on ka Kärdla ainus laste mängutuba, nii et see on saarel parim toaskäigu koht.",
+    "tips": "Astu pärast muuseumi tagauksest välja Rannaparki, kus on mänguväljak ja jalutusrada.",
+    "hours": "Mai-aug iga päev 10:00-18:00; sept iga päev 10:00-17:00; okt-apr E-R 10:00-17:00, L 10:00-15:00",
+    "priceNote": "Hinnad veebis kinnitamata; küsi muuseumist.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kardla-beach-park-kardla": {
+    "description": "3,3-hektariline park Hiiumaa Muuseumi taga, kus on lauluväljaku kõrval mänguväljak, liivakast ja madalseiklusrada. See on lihtne ja tasuta õuepeatus, kus tasased teed sobivad vankrile.",
+    "tips": "Madalseiklusrada on mõeldud vanematele lastele, aga väike võib madalaimaid elemente proovida käest kinni hoides.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kardla-beach-kardla": {
+    "description": "Madal liivane linnarand Kärdla sadama kõrval, kus on puuskulptuurid, väike mänguväljak, kiiged, WC-d ja riietuskabiinid. Madala vee ajal tekivad väikesed liivasaared, mida väikelapsed armastavad, kuigi liivariba on kitsas ja madalas vees on kohati kive.",
+    "tips": "Korralikku parklat pole, nii et jaluta või sõida rattaga kesklinnast (1-2 km) ja võta kivistele kohtadele kaasa vesijalanõud.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Parklat pole; autod jäetakse tee äärde. Kõige lihtsam on jalgsi või rattaga."
+  },
+  "narva-castle-narva": {
+    "description": "Keskaegne Hermanni linnus Narva jõe kaldal, otse üle piiri Jaanilinna kindluse vastas, kus tornis on muuseumisaalid ja hoovis käsitöötoad. Väikelapsele pakuvad enim rõõmu hoov, müürid ja jõevaade; torni näitustel on palju treppe ja need sobivad pigem suurematele lastele.",
+    "tips": "Jäta lapsevankar hoovi ja võta torni jaoks kaasa kandekott; muuseumis toimuvad lastele perepäevad ja jõuluüritused, nii et vaata 'Lastele' kalendrit.",
+    "hours": "Suvel (11. mai-31. aug) iga päev 10:00-18:00; väljaspool hooaega K-L 10:00-18:00, P 10:00-16:00 (kontrolli, lehed erinevad); piletimüük lõpeb 1 h enne sulgemist",
+    "priceNote": "Täispilet 16, sooduspilet 10, perepilet 32 (2 täiskasvanut + nende alaealised lapsed). Linnus + Kunstigalerii: 18 / 12 / 36. Kuni 8-aastased lapsed tasuta (ametliku piletilehe järgi; kontrolli kassas).",
+    "discounts": [
+      "Perepilet (2 täiskasvanut + nende alaealised lapsed)",
+      "Kuni 8-aastased lapsed tasuta",
+      "Ühispilet Narva Kunstigaleriiga"
+    ],
+    "parkingNote": "Tänava- ja platsiparkimine Peterburi mnt ja Raekoja platsi ümbruses linnuse kõrval; tasulise aja kohta vaata märke."
+  },
+  "narva-river-promenade-narva": {
+    "description": "Umbes 1 km pikkune kõvakattega jõepromenaad linnuse müüride all, pinkide ja vaatega Jaanilinna kindlusele. Rootsi terrassi osas on perede ala lõvikujuliste mänguatraktsioonidega, nii et see sobib tasuta jalutuskäiguks lapsevankriga koos lühikese mängupausiga.",
+    "tips": "Ühenda Narva linnuse külastusega ja jaluta suvel mööda jõge põhja poole Joaoru rannaalale.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta, avalik promenaad.",
+    "discounts": [],
+    "parkingNote": "Pargi linnuse / Raekoja platsi lähedal ja jaluta jõe äärde."
+  },
+  "joaoru-beach-narva": {
+    "description": "17-hektariline jõeäärne puhkeala, mis jätkab Narva promenaadi: liivane jõerand, vetelpäästetorn, mänguväljakud ja rannamaja riietusruumidega. Hea tasuta suvekoht, kus väike saab liivas kaevata ja murul joosta.",
+    "tips": "Jõgi on riigipiiri ääres; püsi tähistatud supluskohas ja hoia väikelast vee ääres enda lähedal.",
+    "hours": "Rannahooaeg mai-august; rannamaja E-R 12:00-22:00, L 11:00-22:00, P 11:00-21:00 (võib olla muutunud)",
+    "priceNote": "Rand ja mänguväljakud tasuta; rannamajas saab tasu eest laenutada rattaid, lamamistoole ja mänge.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "astri-centre-play-room-narva": {
+    "description": "Narva suurim kaubandus- ja meelelahutuskeskus, kus on kino ja keegli kõrval ka laste mängutuba. Kasulik soe siseruum vihmasel või külmal päeval, mida saab ühendada poeskäigu ja kohvikuga.",
+    "tips": "Mängutoa enda lahtiolekuaegu ja hindu internetis ei avaldata; helista enne spetsiaalset sõitu keskusesse.",
+    "hours": "Keskus E-L 10:00-20:00, P 10:00-18:00",
+    "priceNote": "Keskusesse sisenemine tasuta; mängutoa hinda ei ole avaldatud.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "meresuu-spa-water-centre-narva-joesuu": {
+    "description": "Mereäärne spaahotell, mille vee- ja saunakeskuses on väikeste atraktsioonidega lastebassein ja eraldi beebibassein. Üks väheseid sooja veega võimalusi väikelastele Narva piirkonnas.",
+    "tips": "Päevapiletite hindu internetis ei avaldata; helista spaa vastuvõttu ja küsi laste vanusepiiride ja ujumismähkmete kohta.",
+    "hours": "E-R 9:00-22:00, L-P 8:00-22:00",
+    "priceNote": "Päevakülastaja hinnad pole internetis avaldatud; hotellikülalistele tasuta.",
+    "discounts": [],
+    "parkingNote": "Narva-Jõesuus on linnaparkimine tasuline 1. mai-30. sept (päevapilet 5 EUR, parkimiskellaga 30 min tasuta); hotelli parkimise reeglid võivad erineda."
+  },
+  "narva-joesuu-beach": {
+    "description": "Pikk peeneliivaline Soome lahe rand puitpromenaadi, ronimise, kiikumise ja liivamänguga laste mänguväljaku, riietuskabiinide ja välidušiga. Madal ja aeglaselt sügavnev vesi sobib soojadel päevadel hästi väikelastele.",
+    "tips": "Võta kaasa päikesetelk; ranna taga olev männimets pakub varju lõunauneks.",
+    "hours": "Avatud kogu aeg; rannakohvik suvel iga päev alates 11:00",
+    "priceNote": "Tasuta avalik rand.",
+    "discounts": [],
+    "parkingNote": "Tasuline linnaparkimine 1. mai-30. sept: parkimiskellaga 30 min tasuta, päevapilet 5 EUR (SMS, mobiil, kaardiautomaadid); eraparklatel on oma tasud."
+  },
+  "sillamae-seaside-promenade": {
+    "description": "Uuendatud jalakäijate promenaad, mis kulgeb stalinistlikult Mere puiesteelt mere äärde ja mööda kallast, mitme mänguväljaku, liivakastide, purskkaevude ja väikese rannaga, kus on riietuskabiinid. Tasased kõvakattega teed teevad sellest mugava lapsevankri-jalutuskäigu mängupausidega.",
+    "tips": "Alusta Mere puiestee ülemisest otsast suure trepi vaate pärast ja jätka promenaadil mereäärsete mänguväljakuteni.",
+    "hours": "Avatud ööpäevaringselt; purskkaevud ainult suvel",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "toila-oru-park-toila": {
+    "description": "President Pätsi endine suveresidentsi park Pühajõe orus pankranniku ääres, mida haldab RMK: jalutusrajad, sillad, terrassid, laste mänguväljak ja piknikukohad. Peamised teed sobivad lapsevankriga, kuid trepid alla jõe ja ranna äärde on järsud.",
+    "tips": "Kasuta peasissepääsu parklat ja püsi lapsevankriga ülemistel radadel; jõesuudmesse minekuks võta kaasa kandekott.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta sissepääs.",
+    "discounts": [],
+    "parkingNote": "Parklad on pargi sissepääsude juures; Toilas kehtib suviti (alates maist) tasuline parkimine, vaata märke."
+  },
+  "toila-spa-termid-toila": {
+    "description": "Oru pargi kõrval asuv mereäärne spaahotell, mille bassein ja peredele mõeldud saunakeskus 'Toila Termid' võtavad vastu ka väikesi lapsi; hotellis on ka laste mänguala. Alla 3-aastased pääsevad tasuta, nii et see on väikelapsega soodne sooja vee väljasõit.",
+    "tips": "Alla 3-aastased peavad kandma ujumismähet; tööpäeviti päeval (10-16) on piletid kõige odavamad.",
+    "hours": "Tariifid: tööpäeviti 10:00-16:00 ja 16:00-22:00, R-P ja pühad eraldi; kontrolli täpseid aegu",
+    "priceNote": "Alla 3-aastased tasuta. Laps (4-14) 8-11 EUR olenevalt päevast/kellaajast ja 1,5 h või 3 h piletist. Pere 2 täiskasvanut + 2 last (4-14) 33 EUR tööpäeva tariifiga. Täiskasvanu hinnad sõltuvad ajavahemikust; vaata hinnakirja.",
+    "discounts": [
+      "Alla 3-aastased tasuta",
+      "Perepilet (2 täiskasvanut + 2 last 4-14)",
+      "Hotellikülalistele tasuta"
+    ],
+    "parkingNote": null
+  },
+  "estonian-mining-museum-kohtla-nomme": {
+    "description": "Endine põlevkivikaevandus, kus 1,5-tunnisel maa-alusel tuuril sõidetakse kaevandusrongiga ja nähakse päris masinaid; maa peal on ka lasteekspositsioon. Alla 4-aastased pääsevad tasuta, kuid pime ja mürarikas tuur sobib pigem julgetele 2-3-aastastele ja on paljudele väikelastele liiga pikk.",
+    "tips": "Maa-alune osa tuleb ette broneerida telefoni teel; võta kaasa soojad riided (maa all on aasta ringi jahe) ja lapsevankri asemel kandekott.",
+    "hours": "T-L 11:00-17:00; maa-aluse tuuri piletimüük lõpeb 2 h enne sulgemist; broneerimine vajalik",
+    "priceNote": "Maa-alune tuur 1,5 h: täiskasvanu 23, sooduspilet (lapsed, õpilased, üliõpilased, pensionärid) umbes 15, perepilet 60 (2 täiskasvanut + kuni 5 alla 19-aastast last). Alla 4-aastased tasuta.",
+    "discounts": [
+      "Alla 4-aastased tasuta",
+      "Perepilet (2 täiskasvanut + kuni 5 alla 19-aastast last)"
+    ],
+    "parkingNote": "Tasuta parkla muuseumi juures."
+  },
+  "johvi-concert-hall-johvi": {
+    "description": "Eesti Kontserdi kaasaegne kontserdimaja Jõhvis, kus toimuvad regulaarselt lasteetendused ja -kontserdid, sageli nädalavahetuse hommikuti (nt 'Pöial-Liisi' 18.10.2026). Lühikesed lasteetendused kammersaalis on hea esimene teatrielamus 2-3-aastasele.",
+    "tips": "Otsi kavast 'lasteetendus' märgisega etendusi ja vali hommikused ajad, mis sobivad lõunaune ümber.",
+    "hours": "Ürituste ajad erinevad; kassa/administratsioon E-R 10:00-17:00",
+    "priceNote": "Piletihinnad sõltuvad üritusest; osta maja kodulehelt või Piletilevist.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "johvi-town-park-playground-johvi": {
+    "description": "Kesklinna park kontserdimaja kõrval, kus on uuendatud ja suurendatud mänguväljak ning puude all madalseiklusrada. Tasuta varjuline peatuspaik, mida on hea ühendada lasteetenduse või jalutuskäiguga linna promenaadil.",
+    "tips": "Madalseiklusrada on suurematele lastele; väikelastele sobivad paremini mänguväljaku põhiatraktsioonid.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Pargi kontserdimaja juures või kesklinnas."
+  },
+  "kivioli-adventure-centre": {
+    "description": "Elamuskeskus Kiviõli tuhamägedel: suvel mänguväljakuga perepark, talvel suusakeskus 90-meetrise algajate nõlva ja linttõstukiga. Enamik atraktsioone on suurematele lastele, kuid mänguväljak ja algajate nõlv sobivad 2-3-aastasele koos vanemaga.",
+    "tips": "Talvel proovi esimest korda kelku või suuski linttõstukiga algajate alal; suvepark avatakse jaanipäeva paiku (2026 20. juunil).",
+    "hours": "Talvel: T-N 12:00-19:00, R 12:00-20:00, L 10:00-20:00, P 10:00-18:00 (koolivaheajal erinev); suvepark alates juuni lõpust",
+    "priceNote": "Talvised päevapiletid olid täiskasvanutele ja lastele umbes 15-25 EUR (hooaeg 2023-24); 2026-27 hinnad pole veel kinnitatud.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "rakvere-castle-rakvere": {
+    "description": "Vallimäel asuv keskaegne linnus, millest on tehtud käed-külge 'keskaja teemapark' kostümeeritud töötajate, loomade, käsitöö ja suurematele lastele vibulaskmisega. Väikelastele meeldivad avar hoov ja kostüümid, kuid mõned pimedad ruumid (piinakamber, 'põrgu') võivad hirmutada ja trepid on järsud.",
+    "tips": "Tundliku väikelapsega jäta pimedad keldriruumid vahele; Vallimäe suur Tarvase kuju ja mänguväljak on tasuta lisa.",
+    "hours": "Suvel (juuli-aug) T-P 10:00-18:00; okt-nov K-P 10:00-16:00; piletimüük lõpeb 1 h enne sulgemist",
+    "priceNote": "Täiskasvanu 13, sooduspilet 10, perepilet 27 (kuni 2 täiskasvanut koos lastega). Kuni 8-aastased lapsed tasuta. Hinnad 2025. aasta hinnalehelt; eriüritused on kallimad.",
+    "discounts": [
+      "Kuni 8-aastased lapsed tasuta",
+      "Perepilet (kuni 2 täiskasvanut koos lastega)"
+    ],
+    "parkingNote": "Parkimine Vallimäe all; Rakvere kesklinnas on munitsipaalsed tasulised tsoonid."
+  },
+  "aqva-water-centre-rakvere": {
+    "description": "Rakvere spaahotelli veekeskus basseinide, liumägede ja saunadega; kuni 5-aastased lapsed pääsevad tasuta koos piletiga täiskasvanuga ning toimuvad tasulised beebiujumise tunnid. Usaldusväärne iga ilmaga variant väikelastele Lääne-Virumaal.",
+    "tips": "Alla 5-aastased jagavad täiskasvanu kappi; külastusreeglite järgi peab alla 12-aastast last saatma vähemalt 16-aastane.",
+    "hours": "E-R 7:00-22:00, L-P 8:00-22:00",
+    "priceNote": "Täiskasvanu üksikpilet umbes 16-20 EUR 2,5 h eest olenevalt ajast; perepilet alates 44 (kuni 2 täiskasvanut + 3 kuni 18-aastast last). Kuni 5-aastased tasuta koos piletiga täiskasvanuga. Beebiujumine 7 EUR.",
+    "discounts": [
+      "Kuni 5-aastased tasuta koos piletiga täiskasvanuga",
+      "Perepilet (kuni 2 täiskasvanut + 3 last)"
+    ],
+    "parkingNote": null
+  },
+  "hurraa-mangumaa-rakvere": {
+    "description": "Siseruumides mängukeskus Rakvere põhjaservas Põhjakeskuse kvartalis, kus on ronimisraamid, liumäed, pehme mänguala ja sünnipäevaruumid. Praktiline vihmase päeva variant; alla 5-aastastel peab olema saatja ja üks saatev täiskasvanu pääseb tasuta.",
+    "tips": "Vaata enne külastust kodulehelt kollektiivpuhkuse aega; ületunni eest võetakse tasu minutipõhiselt, nii et jälgi kella.",
+    "hours": "T-N 11:00-20:00, L-P 10:00-21:00 (ametlik leht; teistes allikates T-R 12:00-21:00); E suletud",
+    "priceNote": "Mängupilet 8 EUR 1 h, 12 2 h, 14 3 h; ületund 0,05 EUR/min. Üks saatev täiskasvanu tasuta. Uued hinnad alates 01.10.2025.",
+    "discounts": [
+      "Üks saatev täiskasvanu tasuta"
+    ],
+    "parkingNote": "Tasuta kaubanduskeskuse parkla."
+  },
+  "rakvere-theatre-park-playground": {
+    "description": "Aiaga piiratud mänguväljak Rakvere teatri taga tiigi kõrval: kaks eri kõrgusega liumäge, ronimisala, liivakast, kiiged koos beebikiigega, vedruloom ja pingid vanematele. Aiaga ja kompaktne, seega üks lihtsamaid mänguväljakuid Rakveres väikelapse jaoks.",
+    "tips": "Uuema ja suurema variandina asub J. Kunderi tänava lõpus Palermo metsa mänguväljak (2024) terviseradade ja kelgumäe kõrval.",
+    "hours": "Avatud ööpäevaringselt",
+    "priceNote": "Tasuta.",
+    "discounts": [],
+    "parkingNote": "Tänavaparkimine teatri lähedal; Rakvere kesklinnas on tasulised munitsipaaltsoonid."
+  },
+  "palmse-manor-lahemaa": {
+    "description": "Taastatud barokkmõis Lahemaa rahvuspargis, kus on sisustatud peahoone, koduloomad, tiigid ja suur park, kus jalutamine on tasuta. Väikelastele meeldivad loomad ja avar park ning tasased kruusateed sobivad tugeva lapsevankriga.",
+    "tips": "Kui peahoone ekskursioon on väikelapsele liiga palju, jaluta tasuta pargis ja tiikide ääres ning söö Palmse kõrtsis.",
+    "hours": "Mai-sept iga päev 10:00-18:00; okt-apr K-P 10:00-16:00 (kontrolli, mõnel lehel T-P)",
+    "priceNote": "1. mai-30. sept: täiskasvanu 12, õpilane/pensionär 10, perepilet 24 (2 täiskasvanut koos lastega). 1. okt-30. apr: 8 / 7 / 18. Pilet hõlmab peahoonet ja loomi; park on tasuta.",
+    "discounts": [
+      "Perepilet (2 täiskasvanut koos lastega)",
+      "Pargis jalutamine tasuta"
+    ],
+    "parkingNote": null
+  },
+  "sagadi-manor-forest-museum-lahemaa": {
+    "description": "RMK mõisakompleks Lahemaal, kus on interaktiivne metsamuuseum (loomade väljapanek, mängud, väike kino) ja peahoone koos regulaarpargiga. Loomade ja looduse väljapanekud köidavad väikelapse tähelepanu ning odav perepilet teeb sellest pingevaba peatuse.",
+    "tips": "Üks pilet kehtib nii metsamuuseumis kui ka peahoones; RMK looduskool korraldab programme kokkuleppel.",
+    "hours": "1. mai-30. sept iga päev 10:00-18:00; 1. okt-30. apr 10:00-16:00 (ühel RMK lehel N-P; kontrolli)",
+    "priceNote": "Täiskasvanu 5, õpilane/pensionär 3, perepilet 10 (1-2 täiskasvanut + kuni 17-aastased lapsed). Üks pilet metsamuuseumi, peahoone ja talveaia jaoks.",
+    "discounts": [
+      "Perepilet (1-2 täiskasvanut + lapsed)"
+    ],
+    "parkingNote": null
+  },
+  "vosu-beach-lahemaa": {
+    "description": "Pikk liivane ja madal lahesopi rand Lahemaal, kus suvel on vetelpäästjad, riietuskabiinid, tualetid, dušid ja mitu eri vanustele mõeldud mänguväljakut. Rahulik madal vesi ja männivari teevad sellest piirkonna ühe parima ranna väikelastele.",
+    "tips": "Kasuta 30-minutilist tasuta parkimiskella ainult lühikesteks peatusteks; rannapäevaks maksa parkimise eest või tule varakult.",
+    "hours": "Avatud kogu aeg; vetelpäästjad suvehooajal",
+    "priceNote": "Tasuta avalik rand.",
+    "discounts": [],
+    "parkingNote": "Võsu aleviku keskuses on parkimine 15. mai-31. aug ööpäevaringselt tasuline; Rannaklubi parklas parkimiskellaga 30 min tasuta; Rannaklubi ürituste ajal tasuta. Parkla on merest umbes 150 m kaugusel."
+  },
+  "viljandi-castle-ruins": {
+    "description": "Keskaegse ordulinnuse varemed asuvad suures rohelises pargis Viljandi järve kohal küngastel ning neid ühendab punane rippsild, mille peal väikesed lapsed armastavad kõndida. Teed on osaliselt kruusased ja künklikud järskude nõlvadega, seega sobib see kõige paremini lühikeseks jalutuskäiguks vankriga või kandelinaga.",
+    "tips": "Ühenda külastus allpool asuva suure järveäärse mänguväljakuga; tee alla on järsk, seega vankriga sõida autoga või mine ringiga mööda teed.",
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta, avatud park.",
+    "discounts": [],
+    "parkingNote": "Tänavaparkimine vanalinnas lossipargi lähedal; jälgi märke, sest Viljandi kesklinnas on tasulised tsoonid."
+  },
+  "viljandi-lake-beach-playground": {
+    "description": "Suur 2200 m² liivakattega mänguväljak Viljandi järve kaldal, kus on kiiged, liumäed, ronimisraamid, üle 6 m kõrgune püramiid ja Tarzani rada ning mida jagab kaheks pinkidega laudtee. Osa atraktsioone on mõeldud suurematele lastele, kuid väikestele on kiiged ja madalad liumäed ning rand ja ujumiskoht on kohe kõrval.",
+    "tips": "Suvel ühenda külastus kõrval asuvas rannas sulistamisega; võta suure liivaala jaoks kaasa labidas ja ämber.",
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta avalik mänguväljak.",
+    "discounts": [],
+    "parkingNote": "Parkimine Ranna puiesteel ranna ja staadioni lähedal."
+  },
+  "viljandi-childrens-park": {
+    "description": "Väike ja vaikne park kesklinnas, kus on väikestele liivakast, liumägi, köisronila ja kiiged ning graniidist lasteskulptuurid. See on mugav tasuta peatus asjaajamiste vahel, kuid väiksem ja lihtsam kui järveäärne mänguväljak.",
+    "tips": null,
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta avalik park.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "pokumaa-urvaste": {
+    "description": "Metsane teemapark, mis on rajatud Edgar Valteri Poku-raamatute tegelaste ümber ning kus on pokukujuline külastuskeskus, metsarajad ja mängukohad. Kõige rohkem naudivad seda väikesed, kes Poku-raamatuid tunnevad; metsarajad on ebatasased, seega on kandelina või maastikuvanker mugavam.",
+    "tips": "Loe enne minekut mõnda Poku-raamatut ja varu pargi soovitusel umbes 3 tundi.",
+    "hours": "20. juuni-25. aug iga päev 11:00-18:00; 1. mai-19. juuni ja 26. aug-30. sept L-P 12:00-16:00; talvel ainult ettetellimisel",
+    "priceNote": "Perepilet 24 eurot (2 täiskasvanut + nende lapsed, kehtib 2026). Vanem hinnakiri: täiskasvanu 10, laps 7, alla 3 tasuta. Grupihinnad olemas.",
+    "discounts": [
+      "Perepilet (2 täiskasvanut + lapsed)",
+      "Eesti perekaardi soodustus",
+      "Muuseumikaart kehtib",
+      "Alla 3-aastased tasuta"
+    ],
+    "parkingNote": "Parkla pargi juures."
+  },
+  "tamula-beach-promenade-voru": {
+    "description": "Võru linnarand Tamula järve ääres pakub liivarannikut, ronimisvõrkude ja kiikedega mänguväljakut ning 800 m pikkust pinkide ja kiikedega promenaadi Tamula hotellist Roosisaare sillani. Tasane promenaad sobib aasta ringi vankriga jalutamiseks ja väike saab vaadata parte ja luiki.",
+    "tips": "Promenaad on tasane ja vankriga hästi läbitav ka väljaspool suplushooaega.",
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta avalik rand.",
+    "discounts": [],
+    "parkingNote": "Parkimine ranna ja Tamula hotelli lähedal."
+  },
+  "suur-munamagi-tower-haanja": {
+    "description": "Baltimaade kõrgeima mäe tipus asuvas tornis on lift, nii et väikelapse ja isegi vankri saab viia vaateplatvormile puulatvade kohale. Tee parklast tornini on lühike, kuid järsk trepiga metsarada, seega on kandelina mugavam kui vanker.",
+    "tips": "Kuni 6-aastased lapsed pääsevad tasuta; mine selge ilmaga ja varu umbes 45-60 minutit.",
+    "hours": "Apr-aug iga päev 10:00-20:00; sept-okt iga päev 10:00-17:00; nov-märts iga päev 10:00-15:00",
+    "priceNote": "Viimati nähtud hinnakiri (võib olla aegunud): täiskasvanu 7, sooduspilet 4 (lapsed 7-18, õpilased, 63+), perepilet 15 (2 täiskasvanut + lapsed 7-18); kuni 6-aastased tasuta.",
+    "discounts": [
+      "Kuni 6-aastased tasuta",
+      "Perepilet"
+    ],
+    "parkingNote": "Parkla mäe jalamil Haanja-Rõuge tee ääres."
+  },
+  "karilatsi-open-air-museum": {
+    "description": "Lõuna-Eesti suurim vabaõhumuuseum tutvustab 5 hektaril vana küla talu- ja kõrvalhoonete, vana koolimaja ja tuuleveskiga. Väikesel on rahulik ja avar ringi uudistada; muru- ja kruusateedel on parem kasutada tugevamat vankrit.",
+    "tips": "Piletimüük lõpeb tund enne sulgemist; talvel on avatud ainult tööpäevadel.",
+    "hours": "1. mai-30. sept E-P 10:00-18:00; 1. okt-30. apr E-R 10:00-16:00",
+    "priceNote": "Värske info: täispilet 6, sooduspilet alates 3, perepilet 12 (vanem info: 5/2/10).",
+    "discounts": [
+      "Perepilet",
+      "Muuseumikaart kehtib"
+    ],
+    "parkingNote": "Parkla muuseumi juures."
+  },
+  "polva-sports-centre-pool": {
+    "description": "Linna siseujula ja saunad on soe valik vihmaseks päevaks koos väikesega. Kuni 6-aastased lapsed ujuvad pileti ostnud täiskasvanuga tasuta, seega on väikelapsega ujumine odav.",
+    "tips": "2024. aasta hinnakirjas olid tööpäeviti päevased (08:00-17:00) piletid poole odavamad kui õhtused.",
+    "hours": "E-R 8:00-22:00, L-P 12:00-21:00",
+    "priceNote": "2024. aasta hinnakiri (1. juulist 2025 kehtib uus hinnakiri, numbrid kinnitamata): tööpäeviti 08-17 täiskasvanu 5 / pere 15, õhtuti ja nädalavahetusel täiskasvanu 10 / pere 24; kuni 6-aastased tasuta pileti ostnud täiskasvanuga.",
+    "discounts": [
+      "Kuni 6-aastased täiskasvanuga tasuta",
+      "Perepilet",
+      "Odavamad tööpäeva päevased piletid"
+    ],
+    "parkingNote": null
+  },
+  "polva-lake-beach": {
+    "description": "Põlva paisjärve renoveeritud linnarannas on laudteed, ujumissild, riietuskabiinid ja suvel vetelpäästjad ning suurematele lastele pumptrack. Väike saab liivas kaevata ja kaldal sulistada otse linna keskel.",
+    "tips": "Vetelpäästjad on valves 1. juunist 31. augustini.",
+    "hours": "Avatud kogu aeg; vetelpäästjad 1. juuni-31. aug",
+    "priceNote": "Tasuta avalik rand.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "wittenstein-time-centre-paide": {
+    "description": "Taastatud Paide linnusetornis Vallimäel asuv interaktiivne ajaloo keskus, kus liigutakse läbi eri ajastute stseenide. See on mõeldud pigem kooliealistele, kuid eelkooliealised pääsevad tasuta, nii et uudishimuliku väikesega on see lihtne sisepeatus.",
+    "tips": "Eelkooliealised on tasuta; pärast külastust lase väikesel väljas murusel Vallimäel joosta.",
+    "hours": "K-P 10:00-18:00 (juuni-aug iga päev); 8. jaan-14. apr ainult ettetellimisel",
+    "priceNote": "Täiskasvanu 12, pensionär 11, õpilane 9, perepilet 25 (lapsed koos vanematega); eelkooliealised tasuta. Ühispilet Tegevusmuuseumiga: täiskasvanu 19, pere 40. Vanemal lehel 8/7/5/17.",
+    "discounts": [
+      "Eelkooliealised tasuta",
+      "Perepilet",
+      "Ühispilet Wittensteini Tegevusmuuseumiga"
+    ],
+    "parkingNote": null
+  },
+  "paide-vallimagi-castle-hill": {
+    "description": "Kaheksanurkse Vallitorni ümbritsevad murused vallid ja linnusevaremed moodustavad Paide kesklinna kõrval tasuta rohelise pargi. Väike saab nõlvadel veereda ja vanu müüre uudistada, kuid jälgi servades järske langusi.",
+    "tips": null,
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta, avatud park (tornis asuv Ajakeskus on piletiga).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "kallaste-hobby-farm-jarva": {
+    "description": "Väike perekonnatalu, kus lapsed saavad loomi ja linde toita ning vabalt aedikutesse minna, ilma ajapiiranguta. See on rahulik ja käega katsutav väljasõit loomi armastavale väikesele; teed on taluõue moodi, mitte kõvakattega.",
+    "tips": "Väljaspool tavahooaega kirjuta või helista enne sõitu.",
+    "hours": "Mai-sept T-P 11:00-20:00 (aprillis N-P); muul ajal kokkuleppel",
+    "priceNote": "Mai-sept 7 eurot inimese kohta; alla 3-aastased tasuta.",
+    "discounts": [
+      "Alla 3-aastased tasuta"
+    ],
+    "parkingNote": null
+  },
+  "rapla-childrens-park": {
+    "description": "Renoveeritud mänguväljak kesklinna rohelises ja vaikses nurgas, kus on liivakast, erinevad kiiged, ronimisredelid ja liumäed nii väiksematele kui suurematele lastele. Kummikate ja turvakaamerad teevad sellest mugava igapäevase koha, kust on lühike jalutuskäik keskväljaku, raamatukogu ja kohvikuteni.",
+    "tips": null,
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta avalik mänguväljak.",
+    "discounts": [],
+    "parkingNote": "Tasuta parkimine pargi juures (viidastus puudub)."
+  },
+  "rapla-central-square": {
+    "description": "Rapla keskväljakul on mänguplats, purskkaev, istumisalad ja kohvik ning uuem turuosa oma lastealaga. Hooajal toimuvad seal perepäevad nagu Rapla Melu ja Lasteparadiis karusellide ja batuutidega.",
+    "tips": "Vaata Rapla sündmuste kalendrist keskväljaku perepäevi.",
+    "hours": "Avatud kogu aeg",
+    "priceNote": "Tasuta avalik väljak.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "mae-talu-palukula": {
+    "description": "Perekonnatalu, kus on alpakad, küülikud, kanad ja teised loomad ning mänguväljak suure kiige, võrkkiige, piraadilaeva, liumäe ja puumajaga. Külastus toimub ettetellimisel, seega sobib see pigem planeeritud nädalavahetuse väljasõiduks või väikeseks sünnipäevaks kui spontaanseks läbisõiduks.",
+    "tips": "Broneeri ette; mänguväljakut saab ka eraldi rentida.",
+    "hours": "Ettetellimisel",
+    "priceNote": "Taluskülastus 35 eurot (pole selge, kas grupi kohta); mänguväljaku rent 25 eurot. Täpsusta broneerimisel.",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "viimsi-open-air-museum": {
+    "description": "Taastatud rannaküla vanade talumajade, võrkude ja paatidega, suure kiikede alaga ning taluloomadega, mida väikesed lapsed eriti naudivad. See on kompaktne ja muruga, väikesele hea ringi uudistamiseks; kruusa- ja murueed sobivad tugevama vankriga.",
+    "tips": "Vaata sündmuste kalendrit: muuseumis on hooajalised perepäevad ja lähedal asuv Rannarahva muuseum on tasuta.",
+    "hours": "Mai-sept iga päev 10:00-19:00; okt-apr K-P 11:00-17:00 (allikad erinevad, kontrolli enne)",
+    "priceNote": "Täispilet 8, sooduspilet 5 (lapsed 9-17, õpilased, eakad), perepilet 15. Viimsi elanike aastapilet 10. Rannarahva muuseum (Nurme tee 3) on tasuta.",
+    "discounts": [
+      "Perepilet",
+      "Muuseumikaart kehtib",
+      "Aastapilet Viimsi elanikele"
+    ],
+    "parkingNote": "Parkla muuseumi juures."
+  },
+  "atlantis-h2o-aquapark-viimsi": {
+    "description": "Viimsi Spa veepargis on liumäed, laine- ja mängubasseinid ning madal lasteala, kõik ühe katuse all. 0-5-aastased lapsed pääsevad pileti ostnud vanemaga tasuta, seega on see väikelapsega soodne, kuigi nädalavahetustel on lärmakas ja rahvarohke.",
+    "tips": "Mine koolivaheajal tööpäeval kohe avamise ajal, siis on lastebassein rahulikum.",
+    "hours": "Väljaspool suve R 14:00-22:00, L-P 10:00-22:00; suvel (8. juuni-31. aug) ning Eesti, Soome ja Läti koolivaheaegadel iga päev alates 10:00",
+    "priceNote": "3-tunnine külastus alates 18 eurost (täiskasvanu). 0-5-aastased tasuta pileti ostnud vanemaga (muidu 0-3 a 4 eurot, 4-5 a 6 eurot). Hotellikülalistele 15 eurot inimese kohta kogu viibimise ajaks.",
+    "discounts": [
+      "0-5-aastased tasuta pileti ostnud vanemaga",
+      "Hotellikülalise pakett"
+    ],
+    "parkingNote": "Parkla Viimsi Spa juures."
+  },
+  "keila-health-centre-pool": {
+    "description": "Keila ujulas on 25 m bassein, väiksem bassein, liumägi, mullivann ja saunad ning välibassein. Väike bassein sobib väikelastele ja alla 3-aastane maksab ujumismähkmega vaid 1 euro.",
+    "tips": "Alla 10-aastased peavad olema vähemalt 16-aastase saatjaga; võta kaasa ujumismähe.",
+    "hours": "1. sept-31. mai E-R 6:30-22:00, L-P 9:00-21:00; 1. juuni-31. aug E-R 7:00-20:00, L-P 10:00-19:00",
+    "priceNote": "Lapsed: 0-3 a 1 euro (ujumismähkmega), 4-6 a 2 eurot, 7-12 a 3,5 eurot. Täiskasvanu hinnad kinnitamata (2020. aasta hinnakiri: 3,50-8 olenevalt kellaajast).",
+    "discounts": [],
+    "parkingNote": null
+  },
+  "muumioru-alpacafarm-saue": {
+    "description": "Põhja-Eesti suurim alpakafarm, kus saab alpakadega kohtuda, neid toita ja paitada ning giidiga karjamaadel jalutada. Väikestele meeldib leebeid loomi toita; alla 2-aastased on tasuta, seega on see lühike ja lihtne väljasõit Tallinnast.",
+    "tips": "Nädalavahetuse avatud päev erineb lehtedel (laupäev või pühapäev) - kontrolli enne sõitu kodulehelt.",
+    "hours": "Sügis-talv: nädalavahetusel 12:00-16:00 (avalehe järgi laupäeval, kontaktilehe järgi pühapäeval 12:00-15:00); muudel päevadel broneerimisel (vähemalt 5 piletit)",
+    "priceNote": "Meet & Feed pilet 15; perepilet 55 (2 täiskasvanut + 3 last); 5+ pileti ette ostmisel 13 tk; alla 2-aastased tasuta.",
+    "discounts": [
+      "Alla 2-aastased tasuta",
+      "Perepilet (2 täiskasvanut + 3 last)",
+      "Grupihind 5+ piletile"
+    ],
+    "parkingNote": null
+  },
+  "padise-monastery": {
+    "description": "Keskaegse tsistertslaste kloostri meeleolukad varemed koos kaasaegse külastuskeskuse, tornide ja võlvruumidega. Suuremad väikelapsed naudivad kajavaid saale ja muruplatse, kuid treppe ja ebatasaseid põrandaid on palju, seega kanna väikest sees süles.",
+    "tips": "Piletid müüakse külastuskeskuses, mitte kloostris.",
+    "hours": "Mai-sept T-P 11:00-18:00; okt-apr R-P 11:00-16:00; esmaspäeval suletud",
+    "priceNote": "Täiskasvanu 10, sooduspilet 7, perepilet 22; grupisoodustused; ekskursioon 50 (eesti keeles) / 70 (võõrkeeles). Kohati on näha ka vanemaid hindu 8/5/16.",
+    "discounts": [
+      "Perepilet",
+      "Grupisoodustused",
+      "Muuseumikaart kehtib"
+    ],
+    "parkingNote": null
   }
 }
