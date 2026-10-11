@@ -1,0 +1,13 @@
+skip aura-baby-swimming-tartu#1 http=404
+convert-im6.q16: no decode delegate for this image format `SRC' @ error/constitute.c/ReadImage/581.
+convert-im6.q16: no images defined `dl/rocca-al-mare-skating-school-tallinn__0.jpg' @ error/convert.c/ConvertImageCommand/3234.
+skip rocca-al-mare-skating-school-tallinn#0 not an image (empty)
+skip vimka-ski-school-viimsi#1 http=404
+skip vimka-ski-school-viimsi#2 http=404
+skip vimka-ski-school-viimsi#3 http=404
+skip vimka-ski-school-viimsi#4 http=404
+skip kuutsemae-ski-school-otepaa#1 http=404
+skip kuutsemae-ski-school-otepaa#2 http=404
+skip kuutsemae-ski-school-otepaa#3 http=404
+downloaded: 114
+sheets: 8
