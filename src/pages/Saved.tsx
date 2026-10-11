@@ -1,7 +1,7 @@
 import { Bookmark, Heart, Sparkles, Trash2 } from 'lucide-react'
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { PlaceCard } from '../components/PlaceCard'
+import { PlaceRow } from '../components/PlaceRow'
+import { WeeklyGoal } from '../components/Engage'
 import { PlaceImage } from '../components/ui'
 import { useAllPlaces } from '../lib/osm'
 import { KEYS, useIdList, useStored } from '../lib/storage'
@@ -10,13 +10,12 @@ import type { Place, Visit } from '../types'
 import { useT } from '../lib/i18n'
 
 const NO_VISITS: Visit[] = []
-type Tab = 'favorites' | 'wishlist' | 'moments'
 
 
-export function Saved() {
+// Favourites + want-to-go lists, or the moments diary (shown inside the Me page).
+export function Saved({ view }: { view: 'saved' | 'moments' }) {
   const { t, locale } = useT()
   const dateFmt = new Intl.DateTimeFormat(locale, { weekday: 'short', day: 'numeric', month: 'long' })
-  const [tab, setTab] = useState<Tab>('favorites')
   const { months } = useChild()
   const favorites = useIdList(KEYS.favorites)
   const wishlist = useIdList(KEYS.wishlist)
@@ -28,47 +27,43 @@ export function Saved() {
   const thisMonth = new Date().toISOString().slice(0, 7)
   const monthVisits = visits.filter((v) => v.date.startsWith(thisMonth))
   const monthPlaces = new Set(monthVisits.map((v) => v.placeId))
-  const list = tab === 'favorites' ? favorites.ids : wishlist.ids
+
+  const section = (title: string, ids: string[], empty: string, Icon: typeof Heart) => (
+    <section>
+      <h2 className="list-head">
+        {title} <span className="count">{ids.length}</span>
+      </h2>
+      {ids.length > 0 ? (
+        <div className="row-list">
+          {resolve(ids).map((p) => (
+            <PlaceRow key={p.id} place={p} months={months} />
+          ))}
+        </div>
+      ) : (
+        <p className="empty-line">
+          <Icon size={18} /> {empty}
+        </p>
+      )}
+    </section>
+  )
 
   return (
-    <div className="page">
-      <h1 className="page-title">{t('Saved')}</h1>
-
-      <div className="segmented wide" role="tablist">
-        {(
-          [
-            ['favorites', 'Favourites', favorites.ids.length],
-            ['wishlist', 'Want to go', wishlist.ids.length],
-            ['moments', 'Moments', visits.length],
-          ] as const
-        ).map(([key, label, n]) => (
-          <button key={key} role="tab" aria-selected={tab === key} className={tab === key ? 'on' : ''} onClick={() => setTab(key)}>
-            {t(label)} <span className="count">{n}</span>
-          </button>
-        ))}
-      </div>
-
-      {tab !== 'moments' && (
+    <>
+      {view === 'saved' && (
         <>
-          <div className="card-grid">
-            {resolve(list).map((p) => (
-              <PlaceCard key={p.id} place={p} months={months} />
-            ))}
-          </div>
-          {list.length === 0 && (
-            <div className="empty">
-              {tab === 'favorites' ? <Heart size={32} /> : <Bookmark size={32} />}
-              <p>{tab === 'favorites' ? t('Tap the heart on any place to keep it here.') : t('Tap the bookmark on a place you want to try.')}</p>
-              <Link to="/explore" className="button primary">
-                {t('Explore places')}
-              </Link>
-            </div>
+          {section(t('Favourites'), favorites.ids, t('Tap the heart on any place to keep it here.'), Heart)}
+          {section(t('Want to go'), wishlist.ids, t('Tap the bookmark on a place you want to try.'), Bookmark)}
+          {favorites.ids.length + wishlist.ids.length === 0 && (
+            <Link to="/explore" className="button primary">
+              {t('Explore places')}
+            </Link>
           )}
         </>
       )}
 
-      {tab === 'moments' && (
+      {view === 'moments' && (
         <>
+          <WeeklyGoal />
           <section className="stats">
             <div>
               <strong>{monthVisits.length}</strong>
@@ -111,6 +106,6 @@ export function Saved() {
           )}
         </>
       )}
-    </div>
+    </>
   )
 }

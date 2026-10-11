@@ -1,7 +1,7 @@
 import { ArrowLeft, Backpack, CalendarClock, Check, Lightbulb, Wallet } from 'lucide-react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
-import { PlaceCard } from '../components/PlaceCard'
+import { PlaceRow } from '../components/PlaceRow'
 import { ACTIVITY_ICON, activityByKey, fitFor, practiceFor, providersOf } from '../lib/activities'
 import { ALL, cityName, placesIn, useCity } from '../lib/city'
 import { useT } from '../lib/i18n'
@@ -117,9 +117,9 @@ export function ActivityDetail() {
       <section className="block">
         <h2>{city === ALL ? t('Courses and groups') : t('Courses and groups in {city}', { city: cityName(city) })}</h2>
         {providers.length > 0 ? (
-          <div className="card-grid">
+          <div className="row-list">
             {providers.map((p) => (
-              <PlaceCard key={p.id} place={p} months={months} />
+              <PlaceRow key={p.id} place={p} months={months} />
             ))}
           </div>
         ) : (
@@ -129,9 +129,9 @@ export function ActivityDetail() {
           </p>
         )}
         {elsewhere.length > 0 && (
-          <div className="card-grid">
+          <div className="row-list">
             {elsewhere.slice(0, 4).map((p) => (
-              <PlaceCard key={p.id} place={p} months={months} />
+              <PlaceRow key={p.id} place={p} months={months} />
             ))}
           </div>
         )}
@@ -140,9 +140,9 @@ export function ActivityDetail() {
       {practice.length > 0 && (
         <section className="block">
           <h2>{t('Practise together')}</h2>
-          <div className="card-grid">
+          <div className="row-list">
             {practice.slice(0, 6).map((p) => (
-              <PlaceCard key={p.id} place={p} months={months} />
+              <PlaceRow key={p.id} place={p} months={months} />
             ))}
           </div>
         </section>

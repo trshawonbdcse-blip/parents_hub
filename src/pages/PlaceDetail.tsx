@@ -4,7 +4,6 @@ import {
   ArrowLeft,
   Baby,
   Bookmark,
-  Bus,
   Car,
   Check,
   ChevronRight,
@@ -22,13 +21,12 @@ import {
   Tag,
   Timer,
   Users,
-  X,
   type LucideIcon,
 } from 'lucide-react'
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge } from '../lib/places'
+import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, isChecked, priceShort } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
@@ -81,7 +79,7 @@ export function PlaceDetail() {
   const { notes, setNote } = useNotes()
   const [visits, setVisits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
   const [visitNote, setVisitNote] = useState('')
-  const [logged, setLogged] = useState(false)
+  const [logged, setLogged] = useState<string | null>(null)
   const [slide, setSlide] = useState(0)
   const [hasStebby] = useStebby()
 
@@ -109,6 +107,11 @@ export function PlaceDetail() {
   const adultEst = estimatedAdultText(place)
   const childEst = estimatedChildText(place, months)
   const parking = parkingSummary(place)
+  const known = FACILITIES.map((f) => ({ ...f, v: place.facilities[f.key] }))
+    .filter((f) => f.v !== null && f.key !== 'parking')
+    .map((f) => ({ ...f, yes: f.v === true }))
+  const hasPriceDetails =
+    !place.price.free && (place.price.adult !== null || place.price.child !== null || place.price.family !== null || Boolean(text.priceNote) || text.discounts.length > 0)
 
   const share = async () => {
     try {
@@ -127,7 +130,13 @@ export function PlaceDetail() {
     }
     setVisits([visit, ...visits])
     setVisitNote('')
-    setLogged(true)
+    setLogged(visit.id)
+  }
+
+  // Optional note for the visit just logged.
+  const saveMomentNote = () => {
+    if (!logged || !visitNote.trim()) return
+    setVisits(visits.map((v) => (v.id === logged ? { ...v, note: visitNote.trim() } : v)))
   }
 
   return (
@@ -168,26 +177,75 @@ export function PlaceDetail() {
           </p>
           <h1>{place.name}</h1>
           {place.nameLocal && place.nameLocal !== place.name && <p className="muted">{place.nameLocal}</p>}
+          <div className="chip-line">
+            {isChecked(place) ? (
+              <span className="mini-badge checked">
+                <BadgeCheck size={13} /> {t('Checked {date}', { date: place.lastVerified! })}
+              </span>
+            ) : place.osm ? (
+              <span className="mini-badge">{t('From the community map')}</span>
+            ) : (
+              <span className="mini-badge">{t('Not yet checked')}</span>
+            )}
+            {stebby && (
+              <span className="mini-badge stebby">
+                <BadgeCheck size={13} /> Stebby
+              </span>
+            )}
+          </div>
         </header>
 
-        <section className="price-panel">
+        <section className="glance">
           <div>
-            <span>{t('Adult')}</span>
-            <strong className={adult === null && adultEst ? 'estimate' : ''}>{adult ?? adultEst ?? '—'}</strong>
+            <Tag size={18} />
+            <span>
+              <strong className={adult === null && child === null && !place.price.free ? 'estimate' : ''}>{priceShort(place, months)}</strong>
+              <small>{t('Price')}</small>
+            </span>
           </div>
           <div>
-            <span>{t('Child')}{months !== null ? ` · ${formatAge(months)}` : ''}</span>
-            <strong className={child === null && childEst ? 'estimate' : ''}>{child ?? childEst ?? '—'}</strong>
+            <Clock size={18} />
+            <span>
+              <strong className="clamp2">{text.hours || t('Hours not published')}</strong>
+              <small>{t('Opening hours')}</small>
+            </span>
           </div>
-          {(adult === null || child === null) && (
-            <p className="price-warning">
-              {(adult === null && adultEst) || (child === null && childEst)
-                ? t('≈ is a typical price for similar places in Estonia, not this place’s official price.') + ' '
-                : t('Price not published.') + ' '}
-              {place.phone ? <a href={telHref(place.phone)}>{t('Call to confirm')}</a> : t('Confirm at the entrance.')}
-            </p>
-          )}
+          <div>
+            <Baby size={18} />
+            <span>
+              <strong>{ageText}</strong>
+              <small className={months !== null && !fitsAge(place, months) ? 'warn' : ''}>
+                {months !== null && !fitsAge(place, months) ? t('Not ideal for your child') : t('Ages')}
+              </small>
+            </span>
+          </div>
+          <div>
+            <Timer size={18} />
+            <span>
+              <strong>{t('About {d}', { d: duration })}</strong>
+              <small>{t(place.setting === 'indoor' ? 'Indoor' : place.setting === 'outdoor' ? 'Outdoor' : 'Indoor & outdoor')}</small>
+            </span>
+          </div>
         </section>
+
+        <p className="lead">{text.description}</p>
+
+        {text.tips && (
+          <aside className="callout">
+            <Lightbulb size={18} />
+            <p>{text.tips}</p>
+          </aside>
+        )}
+
+        {known.length > 0 && (
+          <ul className="facility-chips">
+            {known.map(({ key, label, Icon, yes }) => (
+              <li key={key} className={yes ? 'yes' : 'no'}>
+                <Icon size={15} /> {yes ? t(label) : t('No {thing}', { thing: t(label).toLowerCase() })}
+              </li>
+            ))}
+          </ul>
+        )}
 
         {(stebby || (hasStebby && !place.price.free)) && (
           <div className={`stebby-row ${stebby ? '' : 'no'}`}>
@@ -203,38 +261,33 @@ export function PlaceDetail() {
           </div>
         )}
 
-        <div className="facts">
-          <div>
-            <Baby size={18} />
-            <span>{ageText}</span>
-            {months !== null && !fitsAge(place, months) && <small className="warn">{t('Not ideal for your child')}</small>}
-          </div>
-          <div>
-            <Timer size={18} />
-            <span>{t('About {d}', { d: duration })}</span>
-          </div>
-          <div>
-            <MapPin size={18} />
-            <span>{t(place.setting === 'indoor' ? 'Indoor' : place.setting === 'outdoor' ? 'Outdoor' : 'Indoor & outdoor')}</span>
-          </div>
-          <div>
-            <Car size={18} />
-            <span>{parking?.title ?? t('Parking unknown')}</span>
-          </div>
-        </div>
-
-        <p className="lead">{text.description}</p>
-
-        {text.tips && (
-          <aside className="callout">
-            <Lightbulb size={18} />
-            <p>{text.tips}</p>
-          </aside>
+        <button className={`button ${logged ? 'secondary' : 'primary'} wide-button went-button`} onClick={logVisit} disabled={Boolean(logged)}>
+          <Check size={18} /> {logged ? t('Saved to your moments') : t('We went today')}
+        </button>
+        {logged && (
+          <input
+            type="text"
+            className="moment-input"
+            placeholder={t('A moment to remember (optional)')}
+            value={visitNote}
+            onChange={(e) => setVisitNote(e.target.value)}
+            onBlur={saveMomentNote}
+          />
         )}
 
         <section className="block">
           <h2>{t('Contact & location')}</h2>
           <ul className="list-card">
+            <li>
+              <a className="row" href={directions} target="_blank" rel="noreferrer">
+                <MapPin size={18} className="row-icon" />
+                <span className="row-text">
+                  <strong>{place.address}</strong>
+                  <small>{place.transport ? place.transport : t('Open in maps')}</small>
+                </span>
+                <ChevronRight size={18} className="muted" />
+              </a>
+            </li>
             {place.phone && (
               <li>
                 <a className="row" href={telHref(place.phone)}>
@@ -242,18 +295,6 @@ export function PlaceDetail() {
                   <span className="row-text">
                     <strong>{place.phone}</strong>
                     <small>{t('Call')}</small>
-                  </span>
-                  <ChevronRight size={18} className="muted" />
-                </a>
-              </li>
-            )}
-            {place.email && (
-              <li>
-                <a className="row" href={`mailto:${place.email}`}>
-                  <Mail size={18} className="row-icon" />
-                  <span className="row-text">
-                    <strong>{place.email}</strong>
-                    <small>{t('Email')}</small>
                   </span>
                   <ChevronRight size={18} className="muted" />
                 </a>
@@ -271,37 +312,35 @@ export function PlaceDetail() {
                 </a>
               </li>
             )}
-            <li>
-              <a className="row" href={directions} target="_blank" rel="noreferrer">
-                <MapPin size={18} className="row-icon" />
-                <span className="row-text">
-                  <strong>{place.address}</strong>
-                  <small>{place.transport ? place.transport : t('Open in maps')}</small>
-                </span>
-                <ChevronRight size={18} className="muted" />
-              </a>
-            </li>
-            <li className="row static">
-              <Clock size={18} className="row-icon" />
-              <span className="row-text">
-                <strong>{t('Opening hours')}</strong>
-                <small>{text.hours}</small>
-              </span>
-            </li>
+            {place.email && (
+              <li>
+                <a className="row" href={`mailto:${place.email}`}>
+                  <Mail size={18} className="row-icon" />
+                  <span className="row-text">
+                    <strong>{place.email}</strong>
+                    <small>{t('Email')}</small>
+                  </span>
+                  <ChevronRight size={18} className="muted" />
+                </a>
+              </li>
+            )}
           </ul>
         </section>
 
-        {!place.price.free && (place.price.family !== null || place.price.note || place.price.childFreeUnderMonths !== null) && (
-          <section className="block">
-            <h2>{t('All prices')}</h2>
+        {hasPriceDetails && (
+          <details className="fold">
+            <summary>{t('Prices & discounts')}</summary>
             <dl className="kv">
               <div>
                 <dt>{t('Adult')}</dt>
-                <dd>{euro(place.price.adult)}</dd>
+                <dd className={adult === null && adultEst ? 'estimate' : ''}>{adult ?? adultEst ?? '—'}</dd>
               </div>
               <div>
-                <dt>{t('Child')}</dt>
-                <dd>{euro(place.price.child)}</dd>
+                <dt>
+                  {t('Child')}
+                  {months !== null ? ` · ${formatAge(months)}` : ''}
+                </dt>
+                <dd className={child === null && childEst ? 'estimate' : ''}>{child ?? childEst ?? '—'}</dd>
               </div>
               {place.price.family !== null && (
                 <div>
@@ -317,84 +356,57 @@ export function PlaceDetail() {
               )}
             </dl>
             {text.priceNote && <p className="small muted">{text.priceNote}</p>}
-          </section>
+            {text.discounts.length > 0 && (
+              <ul className="bullets">
+                {text.discounts.map((d) => (
+                  <li key={d}>
+                    <Tag size={16} /> {d}
+                  </li>
+                ))}
+              </ul>
+            )}
+            {(adult === null || child === null) && (
+              <p className="small muted">
+                {(adult === null && adultEst) || (child === null && childEst)
+                  ? t('≈ is a typical price for similar places in Estonia, not this place’s official price.') + ' '
+                  : t('Price not published.') + ' '}
+                {place.phone ? <a href={telHref(place.phone)}>{t('Call to confirm')}</a> : t('Confirm at the entrance.')}
+              </p>
+            )}
+          </details>
         )}
-
-        {text.discounts.length > 0 && (
-          <section className="block">
-            <h2>{t('Discounts & free days')}</h2>
-            <ul className="bullets">
-              {text.discounts.map((d) => (
-                <li key={d}>
-                  <Tag size={16} /> {d}
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
-
-        <section className="block">
-          <h2>{t('For parents')}</h2>
-          <ul className="amenities">
-            {FACILITIES.map(({ key, label, Icon }) => {
-              const v = place.facilities[key]
-              const StateIcon = v === true ? Check : v === false ? X : HelpCircle
-              return (
-                <li key={key} className={v === true ? 'yes' : v === false ? 'no' : 'unknown'}>
-                  <Icon size={18} />
-                  <span>{t(label)}</span>
-                  <StateIcon size={16} className="state" aria-label={v === true ? 'Yes' : v === false ? 'No' : 'Unknown'} />
-                </li>
-              )
-            })}
-          </ul>
-        </section>
 
         {parking && (
-          <section className="block">
-            <h2>{t('Parking')}</h2>
-            <div className="list-card padded">
-              <span className={`status ${parking.tone}`}>{parking.title}</span>
-              {place.parkingInfo?.operator && <p className="small">{t('Operator: {op}', { op: place.parkingInfo.operator })}</p>}
-              {place.parkingInfo?.zone && <p className="small">{t('City zone: {zone}', { zone: place.parkingInfo.zone })}</p>}
-              {place.parkingInfo?.available && place.parkingInfo.cost !== 'free' && (
-                <p className="small">
-                  {place.parkingInfo.pargiSupported === true
-                    ? t('✓ You can pay with Pargi.ee')
-                    : place.parkingInfo.pargiSupported === false
-                      ? t('Pargi.ee not supported — use the operator’s app or machine')
-                      : t('Pargi.ee support unknown')}
-                </p>
-              )}
-              {text.parkingNote && <p className="small muted">{text.parkingNote}</p>}
-            </div>
-          </section>
+          <details className="fold">
+            <summary>
+              {t('Parking')} · <span className={`status ${parking.tone}`}>{parking.title}</span>
+            </summary>
+            {place.parkingInfo?.operator && <p className="small">{t('Operator: {op}', { op: place.parkingInfo.operator })}</p>}
+            {place.parkingInfo?.zone && <p className="small">{t('City zone: {zone}', { zone: place.parkingInfo.zone })}</p>}
+            {place.parkingInfo?.available && place.parkingInfo.cost !== 'free' && (
+              <p className="small">
+                {place.parkingInfo.pargiSupported === true
+                  ? t('✓ You can pay with Pargi.ee')
+                  : place.parkingInfo.pargiSupported === false
+                    ? t('Pargi.ee not supported — use the operator’s app or machine')
+                    : t('Pargi.ee support unknown')}
+              </p>
+            )}
+            {text.parkingNote && <p className="small muted">{text.parkingNote}</p>}
+          </details>
         )}
 
-        {place.transport && (
-          <section className="block">
-            <h2>{t('Public transport')}</h2>
-            <p className="with-icon">
-              <Bus size={18} /> {place.transport}
-            </p>
-          </section>
-        )}
-
-        <section className="block">
-          <h2>{t('Your notes')}</h2>
+        <details className="fold">
+          <summary>
+            {t('Your notes')}
+            {myVisits.length > 0 && ` · ${t(myVisits.length === 1 ? '{n} visit' : '{n} visits', { n: myVisits.length })}`}
+          </summary>
           <textarea
             rows={3}
             placeholder={t('e.g. Go before 11 — it gets busy after.')}
             value={notes[place.id] ?? ''}
             onChange={(e) => setNote(place.id, e.target.value)}
           />
-          <div className="visit-row">
-            <input type="text" placeholder={t('A moment to remember (optional)')} value={visitNote} onChange={(e) => setVisitNote(e.target.value)} />
-            <button className="button secondary" onClick={logVisit}>
-              {t('We went today')}
-            </button>
-          </div>
-          {logged && <p className="small ok">{t('Saved to your moments')}</p>}
           {myVisits.length > 0 && (
             <ul className="bullets small">
               {myVisits.map((v) => (
@@ -405,20 +417,12 @@ export function PlaceDetail() {
               ))}
             </ul>
           )}
-        </section>
+        </details>
 
         <footer className="verify">
-          {place.lastVerified ? t('Information checked {date}.', { date: place.lastVerified }) + ' ' : t('Information not yet verified.') + ' '}
-          {t(place.phone ? 'Prices and hours can change, so call ahead if you are unsure.' : 'Prices and hours can change.')}{' '}
-          {place.osm && t('Map data © OpenStreetMap contributors.') + ' '}
-          {hostOf(place.website) && (
-            <>
-              {t('Official site:')}{' '}
-              <a href={place.website} target="_blank" rel="noreferrer">
-                {hostOf(place.website)}
-              </a>
-            </>
-          )}
+          {place.osm
+            ? t('From OpenStreetMap — details may be missing.') + ' ' + t('Map data © OpenStreetMap contributors.') + ' '
+            : t(place.phone ? 'Prices and hours can change, so call ahead if you are unsure.' : 'Prices and hours can change.') + ' '}
           {place.sources && place.sources.length > 0 && (
             <details>
               <summary>{t('Sources')}</summary>

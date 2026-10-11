@@ -1,9 +1,10 @@
-import { ChevronRight, GraduationCap, LayoutGrid, Search, SlidersHorizontal, X } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
-import { Link, useSearchParams } from 'react-router-dom'
+import { LayoutGrid, List, Map as MapIcon, Search, SlidersHorizontal, X } from 'lucide-react'
+import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { PlaceCard } from '../components/PlaceCard'
-import { ALL, cityName, placesIn, useCity } from '../lib/city'
+import { ALL, cityCoords, cityName, placesIn, useCity } from '../lib/city'
+import { PlaceRow } from '../components/PlaceRow'
 import { CATEGORY_ICON } from '../components/ui'
 import { categoryLabel, distanceKm, fitsAge, fitsSeason, hasFreeParking, hasParking } from '../lib/places'
 import { useChild } from '../lib/useChild'
@@ -13,6 +14,9 @@ import type { Category } from '../types'
 import { useT } from '../lib/i18n'
 
 type Coords = { lat: number; lng: number }
+
+// Leaflet is only downloaded when the map is opened.
+const ExploreMap = lazy(() => import('../components/ExploreMap'))
 
 export function Explore() {
   const { t } = useT()
@@ -35,6 +39,7 @@ export function Explore() {
   const seasonOnly = params.get('season') !== '0'
   const sort = params.get('sort') ?? 'name'
   const parking = params.get('parking') ?? 'any'
+  const mapView = params.get('view') === 'map'
   const stebbyOnly = params.get('stebby') === '1'
   const [hasStebby] = useStebby()
 
@@ -88,6 +93,11 @@ export function Explore() {
     })
 
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
+  // With no search or filters, lead with photo cards of hand-checked places.
+  const browsing = !q && category === 'any' && setting === 'any' && !free && !wantNear && !stebbyOnly && parking === 'any'
+  const featured = browsing ? results.filter(({ p }) => p.photos?.length && !p.osm).slice(0, 10) : []
+  const featuredIds = new Set(featured.map(({ p }) => p.id))
+  const listed = results.filter(({ p }) => !featuredIds.has(p.id))
 
   return (
     <div className="page">
@@ -136,12 +146,6 @@ export function Explore() {
         </div>
       </div>
 
-      <Link to="/activities" className="activity-banner">
-        <GraduationCap size={20} />
-        <span>{t('Classes and activities by age')}</span>
-        <ChevronRight size={18} />
-      </Link>
-
       <div className="category-row" role="group" aria-label="Type of place">
         <button className={`category ${category === 'any' ? 'on' : ''}`} onClick={() => update('cat', null)}>
           <span className="category-icon">
@@ -162,20 +166,56 @@ export function Explore() {
         })}
       </div>
 
-      <p className="result-count">
-        {t(results.length === 1 ? '{n} place' : '{n} places', { n: results.length })}
-        {locError && wantNear && !coords ? ` · ${t('Location not available — sorted by name.')}` : ''}
-      </p>
-
-      <div className="card-grid">
-        {results.slice(0, limit).map(({ p, d }) => (
-          <PlaceCard key={p.id} place={p} months={months} distance={d} />
-        ))}
+      <div className="view-row">
+        <p className="result-count">
+          {t(results.length === 1 ? '{n} place' : '{n} places', { n: results.length })}
+          {locError && wantNear && !coords ? ` · ${t('Location not available — sorted by name.')}` : ''}
+        </p>
+        <div className="segmented small" role="tablist" aria-label={t('View')}>
+          <button className={mapView ? '' : 'on'} onClick={() => update('view', null)} aria-label={t('List')}>
+            <List size={16} /> {t('List')}
+          </button>
+          <button className={mapView ? 'on' : ''} onClick={() => update('view', 'map')} aria-label={t('Map')}>
+            <MapIcon size={16} /> {t('Map')}
+          </button>
+        </div>
       </div>
-      {results.length > limit && (
-        <button className="button secondary wide-button" onClick={() => setLimit(limit + 60)}>
-          {t('Show more ({n} left)', { n: results.length - limit })}
-        </button>
+
+      {mapView ? (
+        <Suspense fallback={<div className="map-wrap loading">{t('Loading…')}</div>}>
+          <ExploreMap
+            places={results.map((r) => r.p)}
+            center={coords ?? cityCoords(city)}
+            zoom={coords ? 14 : city === ALL ? 7 : 12}
+            months={months}
+            me={coords}
+            onLocate={() => update('sort', 'near')}
+          />
+        </Suspense>
+      ) : (
+        <>
+          {featured.length > 0 && (
+            <section>
+              <h2 className="list-head">{t('Featured')}</h2>
+              <div className="carousel">
+                {featured.map(({ p, d }) => (
+                  <PlaceCard key={p.id} place={p} months={months} distance={d} variant="narrow" />
+                ))}
+              </div>
+            </section>
+          )}
+          {featured.length > 0 && <h2 className="list-head">{t('All places')}</h2>}
+          <div className="row-list">
+            {listed.slice(0, limit).map(({ p, d }) => (
+              <PlaceRow key={p.id} place={p} months={months} distance={d} />
+            ))}
+          </div>
+          {listed.length > limit && (
+            <button className="button secondary wide-button" onClick={() => setLimit(limit + 60)}>
+              {t('Show more ({n} left)', { n: listed.length - limit })}
+            </button>
+          )}
+        </>
       )}
       {results.some(({ p }) => p.osm) && <p className="footnote">{t('Includes places from OpenStreetMap (© OpenStreetMap contributors), not checked by us.')}</p>}
       {!results.length && (

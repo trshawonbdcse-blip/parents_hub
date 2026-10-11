@@ -10,7 +10,7 @@ import { KEYS, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useForecast, type DayForecast } from '../lib/weather'
 import type { KidEvent, Visit } from '../types'
-import { PlaceCard } from './PlaceCard'
+import { PlaceRow } from './PlaceRow'
 
 const NO_VISITS: Visit[] = []
 const dayKey = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
@@ -23,7 +23,7 @@ function weekStart(now = new Date()) {
 }
 
 // "This weekend": shown Thursday–Sunday with the forecast, events and ideas for Sat & Sun.
-export function WeekendPlan() {
+export function WeekendPlan({ exclude = [] }: { exclude?: string[] }) {
   const { t, locale } = useT()
   const [city] = useCity()
   const { months } = useChild()
@@ -31,7 +31,7 @@ export function WeekendPlan() {
   const forecast = useForecast(here.lat, here.lng)
   const today = new Date()
   const dow = today.getDay()
-  if (![4, 5, 6, 0].includes(dow)) return null
+  if (![4, 5, 6].includes(dow)) return null
 
   // Thu–Sat: the coming Saturday and Sunday; on Sunday just today.
   const days = forecast.filter((f) => [6, 0].includes(new Date(`${f.date}T12:00:00`).getDay())).slice(0, dow === 0 ? 1 : 2)
@@ -46,7 +46,7 @@ export function WeekendPlan() {
     visitedRecently: new Set(),
     favorites: new Set(),
     count: 3,
-    pool: placesIn(city).filter((p) => (wet ? p.setting !== 'outdoor' : true)),
+    pool: placesIn(city).filter((p) => !exclude.includes(p.id) && (wet ? p.setting !== 'outdoor' : true)),
   })
   const Icon = (d: DayForecast) => (d.mode === 'indoor' ? CloudRain : d.mode === 'mixed' ? CloudSun : Sun)
 
@@ -95,22 +95,29 @@ export function WeekendPlan() {
           ))}
         </ul>
       )}
-      <div className="carousel">
-        {ideas.map((p) => (
-          <PlaceCard key={p.id} place={p} months={months} variant="narrow" />
-        ))}
-      </div>
+      {ideas.length > 0 && (
+        <div className="row-list">
+          {ideas.map((p) => (
+            <PlaceRow key={p.id} place={p} months={months} />
+          ))}
+        </div>
+      )}
     </section>
   )
+}
+
+// Outings this week (days with a "We went today") against the family's goal.
+export function useWeeklyProgress() {
+  const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
+  const [goal] = useStored<number>(KEYS.weeklyGoal, 2)
+  const start = weekStart()
+  return { done: new Set(visits.filter((v) => v.date >= start).map((v) => v.date)).size, goal }
 }
 
 // Weekly outing goal, counted from "We went today".
 export function WeeklyGoal() {
   const { t } = useT()
-  const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
-  const [goal] = useStored<number>(KEYS.weeklyGoal, 2)
-  const start = weekStart()
-  const done = new Set(visits.filter((v) => v.date >= start).map((v) => v.date)).size
+  const { done, goal } = useWeeklyProgress()
   const pct = Math.min(1, done / goal)
   const r = 22
   const c = 2 * Math.PI * r

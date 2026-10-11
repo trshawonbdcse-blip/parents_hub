@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
 import { useLiveEvents } from './lib/events'
 import { useT } from './lib/i18n'
@@ -8,9 +8,8 @@ import { ActivityDetail } from './pages/ActivityDetail'
 import { EventDetail } from './pages/EventDetail'
 import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
-import { Family } from './pages/Family'
 import { PlaceDetail } from './pages/PlaceDetail'
-import { Saved } from './pages/Saved'
+import { Me } from './pages/Me'
 import { Today } from './pages/Today'
 
 // Place and event pages have their own bottom action bar, so the tab bar is hidden there.
@@ -44,10 +43,10 @@ export default function App() {
           <Route path="/place/:id" element={<PlaceDetail />} />
           <Route path="/events" element={<Events />} />
           <Route path="/event/:id" element={<EventDetail />} />
-          <Route path="/saved" element={<Saved />} />
+          <Route path="/saved" element={<Navigate to="/me?tab=saved" replace />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/activity/:key" element={<ActivityDetail />} />
-          <Route path="/me" element={<Family />} />
+          <Route path="/me" element={<Me />} />
           <Route path="*" element={<Today />} />
         </Routes>
       </main>

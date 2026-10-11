@@ -1,4 +1,4 @@
-import { CalendarDays, Compass, Heart, Home, User } from 'lucide-react'
+import { CalendarDays, Compass, GraduationCap, Home, User } from 'lucide-react'
 import { NavLink } from 'react-router-dom'
 import { useEffect } from 'react'
 import { useT } from '../lib/i18n'
@@ -7,9 +7,9 @@ import { useNewEvents } from './Engage'
 const items = [
   { to: '/', label: 'Today', Icon: Home, end: true },
   { to: '/explore', label: 'Explore', Icon: Compass, end: false },
+  { to: '/activities', label: 'Activities', Icon: GraduationCap, end: false },
   { to: '/events', label: 'Events', Icon: CalendarDays, end: false },
-  { to: '/saved', label: 'Saved', Icon: Heart, end: false },
-  { to: '/me', label: 'Family', Icon: User, end: false },
+  { to: '/me', label: 'Me', Icon: User, end: false },
 ]
 
 export function BottomNav() {

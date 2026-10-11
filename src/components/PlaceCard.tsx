@@ -1,6 +1,6 @@
 import { Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { categoryLabel, priceSummary } from '../lib/places'
+import { categoryLabel, priceShort } from '../lib/places'
 import { KEYS, useIdList } from '../lib/storage'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Place } from '../types'
@@ -40,7 +40,7 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
             {distance != null && ` · ${distance.toFixed(1)} km`}
           </p>
           <h3>{place.name}</h3>
-          <p className="price-line">{priceSummary(place, months)}</p>
+          <p className="price-line">{priceShort(place, months)}</p>
         </div>
       </Link>
       <button

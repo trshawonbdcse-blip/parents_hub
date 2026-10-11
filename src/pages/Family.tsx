@@ -22,8 +22,7 @@ export function Family() {
   }
 
   return (
-    <div className="page">
-      <h1 className="page-title">{t('Family')}</h1>
+    <>
 
       <section className="block">
         <h2>{t('Language')}</h2>
@@ -114,7 +113,7 @@ export function Family() {
       <Accordion title={t('Parking in Tallinn')} icon={<Car size={18} />} tips={localizedTips('parking', parkingRules)} />
 
       <p className="footnote">Parents Hub · Eesti</p>
-    </div>
+    </>
   )
 }
 

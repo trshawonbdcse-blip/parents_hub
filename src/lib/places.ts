@@ -158,6 +158,38 @@ export function childPriceText(p: Place, months: number | null): string | null {
 
 // One-line price for cards: what an adult and this family's child pay, with
 // typical prices (marked ≈) filling any gaps.
+// Short, plain price line for lists: "Free", "€12 · kids free", "€15 adult · €8 child",
+// "≈ €10 (typical)", "€18 / lesson".
+export function priceShort(place: Place, months: number | null): string {
+  if (place.price.free) return tr('Free')
+  if (place.activities?.length) {
+    const lesson = place.price.child ?? place.price.adult
+    if (lesson) return tr('{p} / lesson', { p: euroText(lesson) })
+    const est = categoryPrices.get(place.category)?.child
+    return est ? tr('≈ {p} / lesson', { p: euroText(est) }) : tr('Price on request')
+  }
+  const free = tr('Free')
+  const usually = tr('Usually free')
+  const adult = adultPriceText(place) ?? estimatedAdultText(place)
+  const child = childPriceText(place, months) ?? estimatedChildText(place, months)
+  const isFree = (x: string | null) => x === free || x === usually
+  if (!adult && !child) return tr('Price on request')
+  if (isFree(adult) && isFree(child)) return adult === free && child === free ? free : usually
+  const typical = (x: string) => x
+  if (adult && !isFree(adult) && (isFree(child) || !child)) {
+    if (!child) return tr('{a} adult', { a: typical(adult) })
+    return child === free ? tr('{a} · kids free', { a: typical(adult) }) : tr('{a} · kids usually free', { a: typical(adult) })
+  }
+  if (child && !isFree(child) && (isFree(adult) || !adult)) {
+    if (!adult) return tr('{c} child', { c: typical(child) })
+    return tr('Kids {c} · adults free', { c: typical(child) })
+  }
+  return tr('{a} adult · {c} child', { a: adult!, c: child! })
+}
+
+// Hand-checked against an official source (not OpenStreetMap, not unverified research).
+export const isChecked = (p: Place) => !p.osm && Boolean(p.lastVerified)
+
 export function priceSummary(place: Place, months: number | null) {
   if (place.price.free) return tr('Free entry')
   // Courses: one price per lesson (the parent joins free).
