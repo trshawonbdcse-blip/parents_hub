@@ -34,6 +34,7 @@ import { translate as tr, useT } from '../lib/i18n'
 import { placeText } from '../lib/placeText'
 import { usePlace } from '../lib/osm'
 import { shareContent, shareUrl } from '../lib/native'
+import { track } from '../lib/analytics'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
@@ -122,6 +123,7 @@ export function PlaceDetail() {
   }
 
   const logVisit = () => {
+    track('We went', { place: place.id })
     const visit: Visit = {
       id: crypto.randomUUID?.() ?? String(Date.now()),
       placeId: place.id,
@@ -163,7 +165,10 @@ export function PlaceDetail() {
         <button className="float-button left" onClick={() => (history.length > 1 ? navigate(-1) : navigate('/explore'))} aria-label={t('Back')}>
           <ArrowLeft size={20} />
         </button>
-        <button className={`float-button right ${fav ? 'on' : ''}`} onClick={() => favorites.toggle(place.id)} aria-label={fav ? t('Remove from saved') : t('Save')}>
+        <button className={`float-button right ${fav ? 'on' : ''}`} onClick={() => {
+            if (!fav) track('Save', { place: place.id })
+            favorites.toggle(place.id)
+          }} aria-label={fav ? t('Remove from saved') : t('Save')}>
           <Heart size={20} fill={fav ? 'currentColor' : 'none'} />
         </button>
         {photos.length > 1 && (
@@ -456,7 +461,7 @@ export function PlaceDetail() {
             <Share2 size={18} /> {t('Share')}
           </button>
         )}
-        <a className="button primary" href={directions} target="_blank" rel="noreferrer">
+        <a className="button primary" href={directions} target="_blank" rel="noreferrer" onClick={() => track('Directions', { place: place.id })}>
           <Navigation size={18} /> {t('Directions')}
         </a>
       </div>

@@ -10,6 +10,9 @@ import './index.css'
 import App from './App.tsx'
 import { registerSW } from 'virtual:pwa-register'
 import { isNative } from './lib/native'
+import { startAnalytics } from './lib/analytics'
+
+startAnalytics()
 
 // Installed apps on phones stay open for days, so look for a new version every hour
 // and whenever the app comes back to the foreground; the page reloads itself when found.

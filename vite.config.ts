@@ -5,6 +5,14 @@ import { VitePWA } from 'vite-plugin-pwa'
 // Relative base so the build works from any sub-path (e.g. GitHub Pages /parents_hub/).
 export default defineConfig({
   base: './',
+  build: {
+    // The map's worker ships as .mjs; give it a .js name so every server (and the iOS app) sends it as JavaScript.
+    rolldownOptions: {
+      output: {
+        assetFileNames: (info) => (info.names?.[0]?.endsWith('.mjs') ? 'assets/[name]-[hash].js' : 'assets/[name]-[hash][extname]'),
+      },
+    },
+  },
   plugins: [
     react(),
     VitePWA({

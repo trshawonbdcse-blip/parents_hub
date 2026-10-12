@@ -1,5 +1,10 @@
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import '@maplibre/maplibre-gl-leaflet'
+import { setWorkerUrl } from 'maplibre-gl'
+import 'maplibre-gl/dist/maplibre-gl.css'
+// MapLibre looks for its worker next to its own file, which bundling moves; point it at the copied file.
+import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import { LocateFixed, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { useT } from '../lib/i18n'
@@ -32,7 +37,32 @@ interface Props {
   onLocate: () => void
 }
 
-// Leaflet map with OpenStreetMap tiles; thousands of points are drawn on a canvas.
+// Base map: OpenFreeMap vector tiles (free, no key, no usage limit, made for apps like this).
+// Phones without WebGL fall back to plain OpenStreetMap images.
+const STYLE = 'https://tiles.openfreemap.org/styles/liberty'
+const ATTRIBUTION =
+  '<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> © <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">OpenMapTiles</a> · © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
+
+setWorkerUrl(workerUrl)
+
+function hasWebGL() {
+  try {
+    const c = document.createElement('canvas')
+    return Boolean(c.getContext('webgl2') || c.getContext('webgl'))
+  } catch {
+    return false
+  }
+}
+
+function baseLayer(): L.Layer {
+  if (hasWebGL()) return L.maplibreGL({ style: STYLE, attributionControl: { customAttribution: ATTRIBUTION } })
+  return L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  })
+}
+
+// Leaflet map; thousands of points are drawn on a canvas above the base map.
 export default function ExploreMap({ places, center, zoom, months, me, onLocate }: Props) {
   const { t } = useT()
   const el = useRef<HTMLDivElement>(null)
@@ -44,10 +74,7 @@ export default function ExploreMap({ places, center, zoom, months, me, onLocate 
   useEffect(() => {
     if (!el.current || map.current) return
     map.current = L.map(el.current, { preferCanvas: true, zoomControl: false, attributionControl: true }).setView([center.lat, center.lng], zoom)
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    }).addTo(map.current)
+    baseLayer().addTo(map.current)
     layer.current = L.layerGroup().addTo(map.current)
     return () => {
       map.current?.remove()

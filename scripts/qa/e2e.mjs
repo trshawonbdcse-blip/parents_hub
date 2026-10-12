@@ -52,6 +52,8 @@ async function newPage({ lang = 'en', width = 390, height = 844, storage = {} } 
     const u = route.request().url()
     if (u.startsWith(URL0)) return route.continue()
     if (u.includes('open-meteo.com')) return route.fulfill({ contentType: 'application/json', body: JSON.stringify(WEATHER) })
+    // Map style without tiles, so the base map starts cleanly offline.
+    if (u.startsWith('https://tiles.openfreemap.org/styles/')) return route.fulfill({ contentType: 'application/json', body: JSON.stringify({ version: 8, sources: {}, layers: [{ id: 'bg', type: 'background', paint: { 'background-color': '#eef0ec' } }] }) })
     return route.abort()
   })
   const page = await ctx.newPage()
@@ -231,7 +233,11 @@ await flow('town picker changes places and weather town', async (page) => {
 await flow('map view renders markers', async (page) => {
   await page.goto(URL0 + '#/explore?view=map')
   await page.waitForSelector('.leaflet-container', { timeout: 8000 })
-  await page.waitForTimeout(500)
+  // Base map: the vector layer (or the image fallback without WebGL) must be there.
+  await page.waitForSelector('.leaflet-container canvas.maplibregl-canvas, .leaflet-tile-pane img', { state: 'attached', timeout: 8000 })
+  await page.waitForTimeout(800)
+  const base = await page.evaluate(() => (document.querySelector('canvas.maplibregl-canvas') ? 'vector' : 'images'))
+  console.log(`  map base layer: ${base}`)
 })
 await flow('save place → appears in Me', async (page) => {
   await page.goto(URL0 + '#/place/tallinn-zoo')
