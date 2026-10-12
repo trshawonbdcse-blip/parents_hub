@@ -23,7 +23,7 @@ export function Saved({ view }: { view: 'saved' | 'moments' }) {
   const placeById = (id: string) => all.find((p) => p.id === id)
   const resolve = (ids: string[]) => ids.map(placeById).filter((p): p is Place => Boolean(p))
 
-  const thisMonth = new Date().toISOString().slice(0, 7)
+  const thisMonth = new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' }).slice(0, 7)
   const monthVisits = visits.filter((v) => v.date.startsWith(thisMonth))
   const monthPlaces = new Set(monthVisits.map((v) => v.placeId))
 

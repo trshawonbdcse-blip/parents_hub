@@ -110,7 +110,7 @@ export function todaysPicks(opts: {
   pool?: Place[]
 }): Place[] {
   const today = new Date()
-  const day = today.toISOString().slice(0, 10)
+  const day = today.toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
   const mode = opts.weather?.mode ?? (isSummer(today) ? 'outdoor' : 'indoor')
   const indoorOnly = mode === 'indoor'
 

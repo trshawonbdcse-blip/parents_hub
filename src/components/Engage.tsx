@@ -15,11 +15,11 @@ import { PlaceRow } from './PlaceRow'
 const NO_VISITS: Visit[] = []
 const dayKey = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
 
-// Start of the current week (Monday), as YYYY-MM-DD.
+// Start of the current week (Monday) in Estonian time, as YYYY-MM-DD.
 function weekStart(now = new Date()) {
-  const d = new Date(now)
-  d.setDate(d.getDate() - ((d.getDay() + 6) % 7))
-  return dayKey(d)
+  const d = new Date(`${dayKey(now)}T12:00:00Z`)
+  d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7))
+  return d.toISOString().slice(0, 10)
 }
 
 // "This weekend": shown Thursday–Sunday with the forecast, events and ideas for Sat & Sun.

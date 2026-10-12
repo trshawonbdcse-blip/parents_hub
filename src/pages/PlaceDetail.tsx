@@ -127,7 +127,8 @@ export function PlaceDetail() {
     const visit: Visit = {
       id: crypto.randomUUID?.() ?? String(Date.now()),
       placeId: place.id,
-      date: new Date().toISOString().slice(0, 10),
+      // The day in Estonia, so a visit just after midnight counts for the right day and week.
+      date: new Date().toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' }),
       note: visitNote.trim(),
     }
     setVisits([visit, ...visits])
