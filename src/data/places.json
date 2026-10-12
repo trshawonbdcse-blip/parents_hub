@@ -1528,7 +1528,7 @@
     },
     "transport": null,
     "language": null,
-    "website": "https://visitharju.ee/en/harjumaa/nature-wildlife/zoos-farms/",
+    "website": "",
     "lastVerified": null,
     "confidence": "low",
     "parkingInfo": {
@@ -2888,7 +2888,7 @@
     },
     "transport": null,
     "language": null,
-    "website": "https://www.lasteklubi.ee/huviring/muusikaring-vaikelastele-1-3-a/",
+    "website": "https://www.lasteklubi.ee/",
     "sources": [
       "https://www.lasteklubi.ee/huviring/muusikaring-vaikelastele-1-3-a/",
       "https://www.lasteklubi.ee/huviring/voimlemine-vaikelastele-1-2-a/"
@@ -4596,7 +4596,7 @@
     },
     "transport": null,
     "language": null,
-    "website": "https://www.visitestonia.com/en/parditiigi-park",
+    "website": "",
     "sources": [
       "https://www.visitestonia.com/en/parditiigi-park",
       "https://www.puhkaeestis.ee/en/parditiigi-park"
@@ -5486,7 +5486,7 @@
     },
     "transport": null,
     "language": null,
-    "website": "https://visit2-fe.prod.puhkaeestis.ee/en/nomme-sports-centre",
+    "website": "",
     "sources": [
       "https://visit2-fe.prod.puhkaeestis.ee/en/nomme-sports-centre",
       "https://terviserajad.ee/en/rajad/nomme-harku-health-trails/"
@@ -5689,7 +5689,7 @@
     },
     "transport": null,
     "language": null,
-    "website": "https://www.nomadotravel.app/en/attractions/jagala-waterfall",
+    "website": "",
     "sources": [
       "https://www.nomadotravel.app/en/attractions/jagala-waterfall",
       "https://www.campercontact.com/en/estonia/harju-county/joelahtme-vald/59250/parking-jagala-juga.md"
@@ -6395,7 +6395,7 @@
     },
     "transport": "Walk up from Town Hall Square (about 10 minutes)",
     "language": null,
-    "website": "https://visittartu.com/?p=30239",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -6451,7 +6451,7 @@
     },
     "transport": "City-centre bus stops (Kaubamaja)",
     "language": null,
-    "website": "https://www.visitestonia.com/en/kaubamaja-playground",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -7046,7 +7046,7 @@
     },
     "transport": "Bus to Kuremaa; about 10 km from Jõgeva",
     "language": null,
-    "website": "https://visitestonia.com/en/kuremaa-beach",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -7439,7 +7439,7 @@
     },
     "transport": "Rannapark / Ranna pst bus stops",
     "language": null,
-    "website": "https://visitparnu.com/objekt/playground-on-parnu-beach",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -8244,7 +8244,7 @@
     },
     "transport": "Walk from the castle / old town (about 10 min)",
     "language": null,
-    "website": "https://www.visithaapsalu.com/objekt/aafrika-ranna-manguvaljak/",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -9874,7 +9874,7 @@
     },
     "transport": "Walk from Rakvere centre",
     "language": "Estonian",
-    "website": "https://puhkaeestis.ee/et/rakvere-teatripargi-manguvaljak",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -10214,7 +10214,7 @@
     },
     "transport": "About 15 minutes' walk downhill from the old town; car parking by the beach",
     "language": null,
-    "website": "https://www.visitestonia.com/en/manguvaljak-viljandi-jarve-rannas",
+    "website": "",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {
@@ -11556,7 +11556,7 @@
     },
     "transport": "Kadaka tee stops (buses)",
     "language": "Estonian",
-    "website": "https://massaaz.ee/et/beebiga-ujuma/",
+    "website": "https://massaaz.ee/",
     "lastVerified": "2026-10-11",
     "confidence": "medium",
     "parkingInfo": {
@@ -11615,7 +11615,7 @@
     },
     "transport": "Õismäe bus stops",
     "language": "Estonian, Russian",
-    "website": "https://www.keskhaigla.ee/kliinikud/ambulatoorne-eriarstiabi/imikute-ja-vaikelaste-ujutamine/",
+    "website": "https://www.keskhaigla.ee/",
     "lastVerified": "2026-10-11",
     "confidence": "high",
     "parkingInfo": {
@@ -12811,67 +12811,6 @@
     ]
   },
   {
-    "id": "infonet-kids-football-tallinn",
-    "name": "Infonet Football School (kids' football from 3)",
-    "nameLocal": "Infonet Jalgpallikool / Lastejalgpall",
-    "category": "class",
-    "setting": "both",
-    "season": "all-year",
-    "area": "Lasnamäe",
-    "city": "Tallinn",
-    "address": "Punane 45, Tallinn",
-    "lat": 59.4357,
-    "lng": 24.83833,
-    "ageMinMonths": 36,
-    "ageMaxMonths": 192,
-    "description": "A large Tallinn football school whose youngest groups start at age 3 with playful running, ball and coordination games rather than real matches. Training is mainly in Russian, with toddler groups held in several districts (Lasnamäe, Õismäe, Kopli, Mustamäe), outdoors in summer and in sports halls in winter.",
-    "tips": "New children get a free trial session and a club T-shirt; ask which district hall is nearest for the 3-5-year-old group.",
-    "price": {
-      "free": false,
-      "adult": null,
-      "child": null,
-      "childFreeUnderMonths": null,
-      "family": null,
-      "note": "City listing: EUR 85-105/month depending on group (may be outdated; confirm current fee)."
-    },
-    "discounts": [
-      "Free trial session"
-    ],
-    "hours": "Weekday afternoons/evenings; outdoors in summer, indoor halls in winter",
-    "durationMinutes": 60,
-    "facilities": {
-      "stroller": null,
-      "changingTable": null,
-      "feedingRoom": null,
-      "cafe": null,
-      "toilet": true,
-      "parking": true
-    },
-    "transport": null,
-    "language": "Russian, Estonian",
-    "website": "https://www.lastejalgpall.ee/",
-    "lastVerified": null,
-    "confidence": "medium",
-    "parkingInfo": {
-      "available": null,
-      "cost": null,
-      "operator": null,
-      "pargiSupported": null,
-      "zone": null,
-      "note": null
-    },
-    "sources": [
-      "https://www.lastejalgpall.ee/",
-      "https://www.tallinn.ee/et/huvitegevus-noortele/infonet-jalgpallikool",
-      "https://fcitallinn.com/et/about-us/"
-    ],
-    "phone": "+372 520 8686",
-    "email": "info@lastejalgpall.ee",
-    "activities": [
-      "ball"
-    ]
-  },
-  {
     "id": "arigato-toddler-gymnastics-tallinn",
     "name": "Arigato Baby & Toddler Gymnastics",
     "nameLocal": "Arigato beebide ja väikelaste võimlemine",
@@ -13782,65 +13721,6 @@
     ]
   },
   {
-    "id": "karlova-beebipill-tartu",
-    "name": "Karlova Beebipill Baby Music Group",
-    "nameLocal": "Karlova Beebipill",
-    "category": "class",
-    "setting": "indoor",
-    "season": "all-year",
-    "area": "Karlova",
-    "city": "Tartu",
-    "address": "Koidu Keskus, Koidu 13, Tartu",
-    "lat": 58.3712,
-    "lng": 26.7322,
-    "ageMinMonths": 0,
-    "ageMaxMonths": 48,
-    "description": "A friendly community music group in Karlova where parents sing and play simple instruments with babies (0-2) and toddlers (2-4). With several weekly slots and a low monthly fee it is one of the easiest regular baby activities in Tartu.",
-    "tips": "Register by email; daytime slots on Tuesdays and Wednesdays are for 0-2-year-olds, evening slots on Wednesdays for 2-4-year-olds.",
-    "price": {
-      "free": false,
-      "adult": null,
-      "child": null,
-      "childFreeUnderMonths": null,
-      "family": null,
-      "note": "EUR 21/month."
-    },
-    "discounts": [],
-    "hours": "0-2 y: Tue 10:30, 11:30, 13:00 and Wed 10:00, 11:00, 12:30; 2-4 y: Wed 17:30 and 18:30",
-    "durationMinutes": 45,
-    "facilities": {
-      "stroller": true,
-      "changingTable": null,
-      "feedingRoom": null,
-      "cafe": null,
-      "toilet": true,
-      "parking": null
-    },
-    "transport": null,
-    "language": "Estonian",
-    "website": "https://www.karlovabeebipill.com/",
-    "lastVerified": null,
-    "confidence": "medium",
-    "parkingInfo": {
-      "available": null,
-      "cost": null,
-      "operator": null,
-      "pargiSupported": null,
-      "zone": null,
-      "note": null
-    },
-    "sources": [
-      "https://www.karlovabeebipill.com/",
-      "https://koidukeskus.eu/organisatsioonist/",
-      "https://lapsegatartus.jimdofree.com/huviringid/laulu-ja-loovusringid/"
-    ],
-    "phone": null,
-    "email": "karlovabeebipill@gmail.com",
-    "activities": [
-      "music"
-    ]
-  },
-  {
     "id": "tartu-loodusmaja-nature-adventurers-tartu",
     "name": "Tartu Nature House - Nature Adventurers club",
     "nameLocal": "Tartu loodusmaja Loodusseiklejad",
@@ -14134,7 +14014,7 @@
     },
     "transport": null,
     "language": "Estonian",
-    "website": "https://vanalinnakoolituskeskus.ee/but/beebikool/",
+    "website": "https://vanalinnakoolituskeskus.ee/",
     "lastVerified": null,
     "confidence": "medium",
     "parkingInfo": {

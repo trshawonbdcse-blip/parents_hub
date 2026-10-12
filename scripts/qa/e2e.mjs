@@ -93,7 +93,7 @@ async function checkScreen(page, hash, label) {
 }
 
 const CHILD = { 'ph.childBirthDate': '2025-07-10', 'ph.childName': 'Ayaan', 'ph.napStart': '13:00', 'ph.city': 'Tallinn' }
-const SCREENS = ['#/', '#/explore', '#/explore?view=map', '#/activities', ...activities.map((k) => `#/activity/${k}`), '#/events', '#/me?tab=saved', '#/me?tab=moments', '#/me?tab=family', '#/place/does-not-exist', '#/event/does-not-exist', '#/nonsense']
+const SCREENS = ['#/', '#/explore', '#/explore?view=map', '#/activities', ...activities.map((k) => `#/activity/${k}`), '#/events', '#/me?tab=saved', '#/me?tab=moments', '#/me?tab=family', '#/privacy', '#/place/does-not-exist', '#/event/does-not-exist', '#/nonsense']
 
 // 1. Every screen, every language, two phone sizes; with and without a child profile.
 const NAV = { en: 'Explore', et: 'Avasta', ru: 'Обзор' }
@@ -169,24 +169,33 @@ async function flow(name, fn) {
   await page.context().close()
 }
 const count = async (page) => Number((await page.locator('.result-count').innerText()).match(/\d+/)?.[0] ?? -1)
+// The OpenStreetMap places arrive a moment after the screen opens: wait until the count settles.
+async function settledCount(page) {
+  let last = -2
+  for (let i = 0; i < 20; i++) {
+    const n = await count(page)
+    if (n === last) return n
+    last = n
+    await page.waitForTimeout(400)
+  }
+  return last
+}
 
 await flow('search narrows results', async (page) => {
   await page.goto(URL0 + '#/explore')
   await page.waitForSelector('.result-count')
-  const before = await count(page)
+  const before = await settledCount(page)
   await page.fill('input[type=search]', 'zoo')
-  await page.waitForTimeout(200)
-  const after = await count(page)
+  const after = await settledCount(page)
   if (!(after > 0 && after < before)) throw new Error(`search "zoo": ${before} → ${after}`)
   await page.fill('input[type=search]', 'qqqqzzzz')
   await page.waitForSelector('.empty')
 })
 await flow('category, free and filter sheet', async (page) => {
   await page.goto(URL0 + '#/explore')
-  const all = await count(page)
+  const all = await settledCount(page)
   await page.locator('.chip', { hasText: /^Free$/ }).click()
-  await page.waitForTimeout(250)
-  const free = await count(page)
+  const free = await settledCount(page)
   if (!(free > 0 && free < all)) throw new Error(`free filter ${all} → ${free}`)
   await page.click('.icon-button[aria-label="More filters"]')
   await page.waitForSelector('.sheet')

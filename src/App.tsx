@@ -11,6 +11,7 @@ import { Events } from './pages/Events'
 import { Explore } from './pages/Explore'
 import { PlaceDetail } from './pages/PlaceDetail'
 import { Me } from './pages/Me'
+import { Privacy } from './pages/Privacy'
 import { Today } from './pages/Today'
 
 // Place and event pages have their own bottom action bar, so the tab bar is hidden there.
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/activity/:key" element={<ActivityDetail />} />
           <Route path="/me" element={<Me />} />
+          <Route path="/privacy" element={<Privacy />} />
           <Route path="*" element={<Today />} />
         </Routes>
       </main>

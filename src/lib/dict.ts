@@ -356,6 +356,11 @@ export const DICT: Record<string, Entry> = {
   'Activities by age': { et: 'Tegevused vanuse järgi', ru: 'Занятия по возрасту' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
   // Redesign
+  'Your data': { et: 'Sinu andmed', ru: 'Ваши данные' },
+  'Everything you enter stays on this phone. No account, no tracking.': { et: 'Kõik, mida sisestad, jääb sellesse telefoni. Kontot ega jälgimist ei ole.', ru: 'Всё, что вы вводите, остаётся на этом телефоне. Без аккаунта и отслеживания.' },
+  Privacy: { et: 'Privaatsus', ru: 'Конфиденциальность' },
+  'Delete your child’s details, favourites, notes and moments from this phone?': { et: 'Kas kustutada lapse andmed, lemmikud, märkmed ja hetked sellest telefonist?', ru: 'Удалить данные ребёнка, избранное, заметки и моменты с этого телефона?' },
+  'Delete all my data': { et: 'Kustuta kõik minu andmed', ru: 'Удалить все мои данные' },
   Photos: { et: 'Fotod', ru: 'Фото' },
   'Main menu': { et: 'Peamenüü', ru: 'Главное меню' },
   'Quick filters': { et: 'Kiirfiltrid', ru: 'Быстрые фильтры' },

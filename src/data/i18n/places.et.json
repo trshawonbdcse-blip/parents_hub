@@ -1834,16 +1834,6 @@
     ],
     "parkingNote": "Parkimine jäähalli juures, Rocca al Mare keskuse kõrval."
   },
-  "infonet-kids-football-tallinn": {
-    "description": "Suur Tallinna jalgpallikool, mille noorimad rühmad alustavad 3-aastastest ning keskenduvad mängulisele jooksule, palli- ja koordinatsioonimängudele, mitte päris mängudele. Trennid on peamiselt vene keeles ja pisemate rühmad toimuvad mitmes linnaosas (Lasnamäe, Õismäe, Kopli, Mustamäe), suvel õues ja talvel saalides.",
-    "tips": "Uus laps saab tasuta proovitrenni ja klubisärgi; küsi, milline linnaosa saal on 3-5-aastaste rühmale kõige lähemal.",
-    "hours": "Tööpäeva pärastlõunad/õhtud; suvel õues, talvel saalis",
-    "priceNote": "Linna andmetel EUR 85-105 kuus olenevalt rühmast (võib olla aegunud; kontrolli hinda).",
-    "discounts": [
-      "Tasuta proovitrenn"
-    ],
-    "parkingNote": null
-  },
   "arigato-toddler-gymnastics-tallinn": {
     "description": "Lapse ja vanema võimlemine Arigato spordiklubis, mida juhendavad Tsirkusekooli treenerid; laupäeviti on eraldi rühmad beebidele (3 kuud-1 aasta) ja väikelastele (1-3 aastat). Vanem on matil kaasas ja aitab lapsel pehmetel vahenditel veereda, roomata, ronida ja tasakaalu hoida; kuni 7-aastased saavad jätkata akrobaatikarühmades.",
     "tips": "Koha broneerimiseks võta ühendust treener Vello Vaheriga telefoni või e-posti teel; laupäevased rühmad täituvad kõige kiiremini.",
@@ -1967,14 +1957,6 @@
       "Vanem/saatja tasuta",
       "Klubi liikmetele soodsam"
     ],
-    "parkingNote": null
-  },
-  "karlova-beebipill-tartu": {
-    "description": "Sõbralik kogukondlik muusikaring Karlovas, kus vanemad laulavad ja mängivad lihtsaid pille koos beebide (0-2) ja väikelastega (2-4). Mitme nädalase aja ja soodsa kuutasuga on see üks lihtsamaid regulaarseid beebitegevusi Tartus.",
-    "tips": "Registreeru e-posti teel; teisipäeva ja kolmapäeva päevased ajad on 0-2-aastastele, kolmapäeva õhtused 2-4-aastastele.",
-    "hours": "0-2 a: T 10:30, 11:30, 13:00 ja K 10:00, 11:00, 12:30; 2-4 a: K 17:30 ja 18:30",
-    "priceNote": "EUR 21 kuus.",
-    "discounts": [],
     "parkingNote": null
   },
   "tartu-loodusmaja-nature-adventurers-tartu": {

@@ -1,4 +1,4 @@
-import { Car, PiggyBank, Smartphone } from 'lucide-react'
+import { Car, ChevronRight, PiggyBank, Smartphone } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { formatAge, moneyTips, parkingRules } from '../lib/places'
 import { useChild } from '../lib/useChild'
@@ -111,6 +111,30 @@ export function Family() {
 
       <Accordion title={t('Money-saving tips')} icon={<PiggyBank size={18} />} tips={localizedTips('money', moneyTips)} />
       <Accordion title={t('Parking in Tallinn')} icon={<Car size={18} />} tips={localizedTips('parking', parkingRules)} />
+
+      <section className="block">
+        <h2>{t('Your data')}</h2>
+        <div className="list-card padded">
+          <p className="small">{t('Everything you enter stays on this phone. No account, no tracking.')}</p>
+          <Link to="/privacy" className="link-more">
+            {t('Privacy')} <ChevronRight size={16} />
+          </Link>
+          <button
+            className="button secondary danger"
+            onClick={() => {
+              if (!confirm(t('Delete your child’s details, favourites, notes and moments from this phone?'))) return
+              try {
+                Object.keys(localStorage).filter((k) => k.startsWith('ph.')).forEach((k) => localStorage.removeItem(k))
+              } catch {
+                // Storage blocked: nothing to delete.
+              }
+              location.reload()
+            }}
+          >
+            {t('Delete all my data')}
+          </button>
+        </div>
+      </section>
 
       <p className="footnote">Parents Hub · Eesti</p>
     </>
