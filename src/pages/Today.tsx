@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { MilestoneNudge, WeekendPlan, useWeeklyProgress } from '../components/Engage'
 import { PlaceRow } from '../components/PlaceRow'
-import { PlaceImage } from '../components/ui'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { eventInCity, events } from '../lib/events'
 import { translate as tr, useT } from '../lib/i18n'
@@ -16,11 +15,7 @@ import type { Place, Visit } from '../types'
 
 const NO_VISITS: Visit[] = []
 
-function greeting(hour: number) {
-  if (hour < 12) return tr('Good morning')
-  if (hour < 18) return tr('Good afternoon')
-  return tr('Good evening')
-}
+const durationShort = (m: number) => (m >= 60 ? tr('{n} h', { n: Math.round((m / 60) * 2) / 2 }) : tr('{n} min', { n: m }))
 
 const minutesOf = (hhmm: string) => {
   const [h, m] = hhmm.split(':').map(Number)
@@ -60,6 +55,7 @@ export function Today() {
   const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 3, pool: placesIn(city) })
   const mode: OutdoorMode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
   const [best, ...more] = picks
+  const price = best ? priceShort(best, months).split(' · ') : []
   const reasons = best ? reasonsFor(best, mode, months, napStart, favorites.has(best.id)) : []
   const dow = new Date().getDay()
   const weekend = [4, 5, 6].includes(dow)
@@ -74,10 +70,29 @@ export function Today() {
     <div className="page today">
       <header className="hero-header">
         <div className="hero-top">
-          <p className="muted">{greeting(new Date().getHours())}</p>
+          <span className="brand" aria-label="Parents Hub">
+            parents hub
+          </span>
           <CityPicker />
         </div>
         <h1>{name ? t('What shall we do today with {name}?', { name }) : t('What shall we do today?')}</h1>
+        <div className="today-sub">
+          <WeatherIcon size={18} aria-hidden="true" />
+          {weather ? (
+            <span>
+              {weather.temperature}° {t(weather.label)} · {t(weather.advice)}
+              <small>
+                <span className="live">{t('Live')}</span> · {ago(weather.updatedAt)}
+                {weather.rainFrom && ` · ${t('Rain likely from {time}', { time: weather.rainFrom })}`}
+              </small>
+            </span>
+          ) : (
+            <span>
+              {error ? t('Weather unavailable right now') : t('Checking the weather…')}
+              {error && <small>{t('Ideas are based on the season instead.')}</small>}
+            </span>
+          )}
+        </div>
         <div className="chip-line">
           {months !== null ? (
             <span className="chip-static">{t('Ideas for {age}', { age: formatAge(months) })}</span>
@@ -99,40 +114,21 @@ export function Today() {
       {best ? (
         <section className="best-pick">
           <Link to={`/place/${best.id}`} className="hero best-card">
-            <div className="weather-line">
-              <WeatherIcon size={18} aria-hidden="true" />
-              {weather ? (
-                <span>
-                  <strong>
-                    {weather.temperature}° {t(weather.label)}
-                  </strong>{' '}
-                  · {t(weather.advice)}
-                  <small>
-                    <span className="live">{t('Live')}</span> · {ago(weather.updatedAt)}
-                    {weather.rainFrom && ` · ${t('Rain likely from {time}', { time: weather.rainFrom })}`}
-                  </small>
-                </span>
-              ) : (
-                <span>
-                  {error ? t('Weather unavailable right now') : t('Checking the weather…')}
-                  {error && <small>{t('Ideas are based on the season instead.')}</small>}
-                </span>
-              )}
-            </div>
             <span className="hero-badge">
               <Sparkles size={13} aria-hidden="true" /> {t('Best idea right now')}
             </span>
-            {best.photos?.[0] && (
-              <div className="hero-media">
-                <PlaceImage photo={best.photos[0]} category={best.category} />
+            <div className="hero-line">
+              <span className="hero-square">{durationShort(best.durationMinutes)}</span>
+              <div className="hero-stack">
+                <span className="hero-name">{best.name}</span>
+                <small className="hero-sub">
+                  {categoryLabel(best.category)} · {best.area}
+                </small>
               </div>
-            )}
-            <div className="hero-stack">
-              <small className="hero-sub">
-                {categoryLabel(best.category)} · {best.area}
-              </small>
-              <h2 className="hero-title">{best.name}</h2>
-              <p className="best-price">{priceShort(best, months)}</p>
+              <span className="hero-value">
+                {price[0]}
+                {price.length > 1 && <small>{price.slice(1).join(' · ')}</small>}
+              </span>
             </div>
             {reasons.length > 0 && (
               <ul className="hero-chips">
@@ -141,9 +137,6 @@ export function Today() {
                 ))}
               </ul>
             )}
-            <span className="hero-action">
-              {t('See the place')} <ChevronRight size={18} aria-hidden="true" />
-            </span>
           </Link>
           {more.length > 0 && (
             <>

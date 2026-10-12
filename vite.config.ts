@@ -39,7 +39,7 @@ export default defineConfig({
         clientsClaim: true,
         skipWaiting: true,
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,svg,png}', '**/figtree-latin-*-normal.woff2', '**/nunito-latin-{800,900}-normal.woff2'],
+        globPatterns: ['**/*.{js,css,html,svg,png}', '**/geologica-latin-{400,500,600,700,800}-normal.woff2'],
         runtimeCaching: [
           {
             urlPattern: /data\/osm-places\.json$/,

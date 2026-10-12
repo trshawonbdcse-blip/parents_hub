@@ -12,6 +12,7 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
   const [hasStebby] = useStebby()
   const Icon = CATEGORY_ICON[place.category]
   const photo = place.photos?.[0]
+  const price = priceShort(place, months).split(' · ')
   const where = place.area === place.city || place.city === 'Tallinn' ? place.area : `${place.area}, ${place.city}`
   return (
     <Link to={`/place/${place.id}`} className="place-row">
@@ -37,7 +38,8 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
         )}
       </span>
       <span className="place-row-value">
-        <span className={place.price.free ? 'price free' : 'price'}>{priceShort(place, months)}</span>
+        <span className={place.price.free ? 'price free' : 'price'}>{price[0]}</span>
+        {price.length > 1 && <small className="price-note">{price.slice(1).join(' · ')}</small>}
       </span>
       <ChevronRight size={18} className="muted" aria-hidden="true" />
     </Link>

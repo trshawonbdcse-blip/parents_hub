@@ -1,17 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// Fonts served from the app itself (no request to Google Fonts → no visitor IPs shared).
-// Nunito: headings and big numbers. Figtree: body text (Nunito also covers Cyrillic body text).
-import '@fontsource/figtree/400.css'
-import '@fontsource/figtree/500.css'
-import '@fontsource/figtree/600.css'
-import '@fontsource/figtree/700.css'
-import '@fontsource/figtree/800.css'
-import '@fontsource/nunito/400.css'
-import '@fontsource/nunito/600.css'
-import '@fontsource/nunito/700.css'
-import '@fontsource/nunito/800.css'
-import '@fontsource/nunito/900.css'
+// Font served from the app itself (no request to Google Fonts → no visitor IPs shared).
+// Geologica: one modern family for headings, numbers and body text, with Latin and Cyrillic.
+import '@fontsource/geologica/400.css'
+import '@fontsource/geologica/500.css'
+import '@fontsource/geologica/600.css'
+import '@fontsource/geologica/700.css'
+import '@fontsource/geologica/800.css'
 import './index.css'
 import App from './App.tsx'
 import { registerSW } from 'virtual:pwa-register'
