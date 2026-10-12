@@ -1,11 +1,17 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// Font served from the app itself (no request to Google Fonts → no visitor IPs shared).
-import '@fontsource/plus-jakarta-sans/400.css'
-import '@fontsource/plus-jakarta-sans/500.css'
-import '@fontsource/plus-jakarta-sans/600.css'
-import '@fontsource/plus-jakarta-sans/700.css'
-import '@fontsource/plus-jakarta-sans/800.css'
+// Fonts served from the app itself (no request to Google Fonts → no visitor IPs shared).
+// Nunito: headings and big numbers. Figtree: body text (Nunito also covers Cyrillic body text).
+import '@fontsource/figtree/400.css'
+import '@fontsource/figtree/500.css'
+import '@fontsource/figtree/600.css'
+import '@fontsource/figtree/700.css'
+import '@fontsource/figtree/800.css'
+import '@fontsource/nunito/400.css'
+import '@fontsource/nunito/600.css'
+import '@fontsource/nunito/700.css'
+import '@fontsource/nunito/800.css'
+import '@fontsource/nunito/900.css'
 import './index.css'
 import App from './App.tsx'
 import { registerSW } from 'virtual:pwa-register'

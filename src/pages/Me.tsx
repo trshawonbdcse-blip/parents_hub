@@ -2,6 +2,7 @@ import { useSearchParams } from 'react-router-dom'
 import { useT } from '../lib/i18n'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import type { Visit } from '../types'
+import { WeeklyGoal } from '../components/Engage'
 import { Family } from './Family'
 import { Saved } from './Saved'
 
@@ -20,6 +21,7 @@ export function Me() {
   return (
     <div className="page">
       <h1 className="page-title">{t('Me')}</h1>
+      <WeeklyGoal />
       <div className="segmented wide" role="tablist">
         {(
           [

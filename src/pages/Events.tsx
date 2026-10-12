@@ -70,6 +70,8 @@ export function Events() {
   const [range, setRange] = useState<Range>('month')
   const [city] = useCity()
   const events = upcoming(range, city)
+  const week = upcoming('week', city)
+  const next = week[0]
   // Remember which events were new when the page opened, then mark everything as seen.
   const { fresh, markSeen } = useNewEvents()
   const [newIds] = useState(() => new Set(fresh.map((e) => e.id)))
@@ -87,12 +89,25 @@ export function Events() {
         <h1 className="page-title">{t('Events')}</h1>
         <CityPicker />
       </div>
-      <p className="muted small">
-        {t("Kids' and family events, collected every morning")}
-        {eventsUpdatedAt ? ` · ${t('updated {date}', { date: new Date(eventsUpdatedAt).toLocaleDateString(locale, { day: 'numeric', month: 'short' }) })}` : ''}
-      </p>
+      <section className="hero">
+        {newIds.size > 0 && <span className="hero-badge">{t('{n} new since your last visit', { n: newIds.size })}</span>}
+        <div className="hero-stack">
+          <span className="hero-number">{week.length}</span>
+          <span className="hero-label">{t('events in the next 7 days')}</span>
+        </div>
+        {next && (
+          <Link to={`/event/${encodeURIComponent(next.id)}`} className="hero-chip with-icon">
+            {t('Next')}: {next.title} · {dayLabel(dayKey(new Date(next.start) < new Date() ? new Date() : new Date(next.start)))}
+            {!next.allDay && ` ${timeOf(next.start)}`}
+          </Link>
+        )}
+        <p className="hero-sub">
+          {t("Kids' and family events, collected every morning")}
+          {eventsUpdatedAt ? ` · ${t('updated {date}', { date: new Date(eventsUpdatedAt).toLocaleDateString(locale, { day: 'numeric', month: 'short' }) })}` : ''}
+        </p>
+      </section>
 
-      <div className="segmented wide">
+      <div className="chip-row" role="group" aria-label={t('Show')}>
         {(
           [
             ['week', 'This week'],
@@ -100,7 +115,7 @@ export function Events() {
             ['all', 'All'],
           ] as const
         ).map(([key, label]) => (
-          <button key={key} className={range === key ? 'on' : ''} onClick={() => setRange(key)}>
+          <button key={key} className={`chip ${range === key ? 'on' : ''}`} aria-pressed={range === key} onClick={() => setRange(key)}>
             {t(label)}
           </button>
         ))}
@@ -138,8 +153,13 @@ export function Events() {
 
       {!events.length && (
         <div className="empty">
-          <CalendarX size={32} />
+          <CalendarX size={32} aria-hidden="true" />
           <p>{t('No events found for this period yet.')}</p>
+          {range !== 'all' && (
+            <button className="button secondary" onClick={() => setRange('all')}>
+              {t('Show all upcoming events')}
+            </button>
+          )}
         </div>
       )}
 

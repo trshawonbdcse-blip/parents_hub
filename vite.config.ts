@@ -24,8 +24,8 @@ export default defineConfig({
         name: 'Parents Hub',
         short_name: 'Parents Hub',
         description: 'Where to go with babies and toddlers in Estonia — places, prices, events and activities.',
-        theme_color: '#136f63',
-        background_color: '#f6f5f2',
+        theme_color: '#0f5c5c',
+        background_color: '#ffffff',
         display: 'standalone',
         start_url: './',
         scope: './',
@@ -39,7 +39,7 @@ export default defineConfig({
         clientsClaim: true,
         skipWaiting: true,
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,svg,png}', '**/plus-jakarta-sans-latin-*-normal.woff2'],
+        globPatterns: ['**/*.{js,css,html,svg,png}', '**/figtree-latin-*-normal.woff2', '**/nunito-latin-{800,900}-normal.woff2'],
         runtimeCaching: [
           {
             urlPattern: /data\/osm-places\.json$/,

@@ -8,25 +8,12 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?url'
 import { LocateFixed, X } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
 import { useT } from '../lib/i18n'
-import type { Category, Place } from '../types'
+import type { Place } from '../types'
 import { PlaceRow } from './PlaceRow'
 
-// Marker colours per kind of place (hand-checked places are drawn bigger, with a ring).
-const COLOR: Record<Category, string> = {
-  playground: '#e07a2f',
-  park: '#3f8f4f',
-  museum: '#7a5cc2',
-  'indoor-play': '#d6457a',
-  library: '#c99a1a',
-  swimming: '#2f7fc4',
-  'zoo-farm': '#8a6a3a',
-  beach: '#e0b13a',
-  mall: '#6b7280',
-  cafe: '#6b7280',
-  theatre: '#b03a6a',
-  class: '#136f63',
-  'winter-fun': '#4aa3c7',
-}
+// Theme colours, read once from the CSS tokens. Hand-checked places are bigger and darker
+// (with a yellow ring), so the difference never depends on colour alone.
+const token = (name: string) => getComputedStyle(document.documentElement).getPropertyValue(name).trim()
 
 interface Props {
   places: Place[]
@@ -94,13 +81,14 @@ export default function ExploreMap({ places, center, zoom, months, me, onLocate 
     group.clearLayers()
     // Community places first, so hand-checked ones are drawn on top.
     const sorted = [...places].sort((a, b) => Number(Boolean(b.osm)) - Number(Boolean(a.osm)))
+    const [primary, deep, accent, surface] = ['--primary', '--deep', '--accent', '--surface'].map(token)
     for (const p of sorted) {
       L.circleMarker([p.lat, p.lng], {
         radius: p.osm ? 5 : 8,
-        color: p.osm ? '#ffffff' : '#1b2422',
-        weight: p.osm ? 1 : 2,
-        fillColor: COLOR[p.category],
-        fillOpacity: 0.9,
+        color: p.osm ? surface : accent,
+        weight: p.osm ? 1 : 3,
+        fillColor: p.osm ? primary : deep,
+        fillOpacity: p.osm ? 0.85 : 1,
       })
         .on('click', () => setSelected(p))
         .addTo(group)
@@ -111,7 +99,7 @@ export default function ExploreMap({ places, center, zoom, months, me, onLocate 
     if (!map.current) return
     meMarker.current?.remove()
     if (me) {
-      meMarker.current = L.circleMarker([me.lat, me.lng], { radius: 8, color: '#fff', weight: 3, fillColor: '#2f6fe0', fillOpacity: 1 }).addTo(map.current)
+      meMarker.current = L.circleMarker([me.lat, me.lng], { radius: 9, color: token('--surface'), weight: 3, fillColor: token('--info'), fillOpacity: 1 }).addTo(map.current)
       map.current.setView([me.lat, me.lng], Math.max(map.current.getZoom(), 14))
     }
   }, [me])

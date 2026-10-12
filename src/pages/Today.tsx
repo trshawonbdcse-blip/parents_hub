@@ -1,4 +1,4 @@
-import { CalendarDays, ChevronRight, CloudRain, CloudSun, Sun, Umbrella } from 'lucide-react'
+import { CalendarDays, ChevronRight, CloudRain, CloudSun, Sparkles, Sun } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { MilestoneNudge, WeekendPlan, useWeeklyProgress } from '../components/Engage'
@@ -11,6 +11,7 @@ import { categoryLabel, fitsAge, formatAge, isSummer, priceShort, todaysPicks } 
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather, type OutdoorMode } from '../lib/weather'
+import { useAgo } from '../lib/useAgo'
 import type { Place, Visit } from '../types'
 
 const NO_VISITS: Visit[] = []
@@ -52,6 +53,7 @@ export function Today() {
   const favorites = useIdList(KEYS.favorites)
   const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
   const { done, goal } = useWeeklyProgress()
+  const ago = useAgo()
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
@@ -94,50 +96,58 @@ export function Today() {
         </div>
       </header>
 
-      <div className={`weather-strip ${mode}`}>
-        <WeatherIcon size={20} />
-        {weather ? (
-          <span>
-            <strong>
-              {weather.temperature}° {t(weather.label)}
-            </strong>{' '}
-            · {t(weather.advice)}
-            {weather.rainFrom && (
-              <small className="with-icon">
-                <Umbrella size={12} /> {t('Rain likely from {time}', { time: weather.rainFrom })}
-              </small>
-            )}
-          </span>
-        ) : (
-          <span>{error ? t('Weather unavailable right now') : t('Checking the weather…')}</span>
-        )}
-      </div>
-
-      {best && (
+      {best ? (
         <section className="best-pick">
-          <p className="overline">{t('Best idea right now')}</p>
-          <Link to={`/place/${best.id}`} className="best-card">
-            <div className="best-media">
-              <PlaceImage photo={best.photos?.[0]} category={best.category} />
-            </div>
-            <div className="best-body">
-              <small className="muted">
-                {categoryLabel(best.category)} · {best.area}
-              </small>
-              <h2>{best.name}</h2>
-              <p className="best-price">{priceShort(best, months)}</p>
-              {reasons.length > 0 && (
-                <ul className="reasons">
-                  {reasons.map((r) => (
-                    <li key={r}>{r}</li>
-                  ))}
-                </ul>
+          <Link to={`/place/${best.id}`} className="hero best-card">
+            <div className="weather-line">
+              <WeatherIcon size={18} aria-hidden="true" />
+              {weather ? (
+                <span>
+                  <strong>
+                    {weather.temperature}° {t(weather.label)}
+                  </strong>{' '}
+                  · {t(weather.advice)}
+                  <small>
+                    <span className="live">{t('Live')}</span> · {ago(weather.updatedAt)}
+                    {weather.rainFrom && ` · ${t('Rain likely from {time}', { time: weather.rainFrom })}`}
+                  </small>
+                </span>
+              ) : (
+                <span>
+                  {error ? t('Weather unavailable right now') : t('Checking the weather…')}
+                  {error && <small>{t('Ideas are based on the season instead.')}</small>}
+                </span>
               )}
             </div>
+            <span className="hero-badge">
+              <Sparkles size={13} aria-hidden="true" /> {t('Best idea right now')}
+            </span>
+            {best.photos?.[0] && (
+              <div className="hero-media">
+                <PlaceImage photo={best.photos[0]} category={best.category} />
+              </div>
+            )}
+            <div className="hero-stack">
+              <small className="hero-sub">
+                {categoryLabel(best.category)} · {best.area}
+              </small>
+              <h2 className="hero-title">{best.name}</h2>
+              <p className="best-price">{priceShort(best, months)}</p>
+            </div>
+            {reasons.length > 0 && (
+              <ul className="hero-chips">
+                {reasons.map((r) => (
+                  <li key={r}>{r}</li>
+                ))}
+              </ul>
+            )}
+            <span className="hero-action">
+              {t('See the place')} <ChevronRight size={18} aria-hidden="true" />
+            </span>
           </Link>
           {more.length > 0 && (
             <>
-              <p className="overline">{t('Or try')}</p>
+              <h2 className="list-head">{t('Or try')}</h2>
               <div className="row-list">
                 {more.map((p) => (
                   <PlaceRow key={p.id} place={p} months={months} />
@@ -147,6 +157,15 @@ export function Today() {
           )}
           <Link to="/explore" className="link-more">
             {t('See all places')} <ChevronRight size={16} />
+          </Link>
+        </section>
+      ) : (
+        <section className="hero">
+          <span className="hero-badge">{t('Best idea right now')}</span>
+          <p className="hero-title">{t('No ideas for this town yet')}</p>
+          <p className="hero-sub">{t('Try another town or look through all places.')}</p>
+          <Link to="/explore" className="hero-action">
+            {t('Explore places')} <ChevronRight size={18} aria-hidden="true" />
           </Link>
         </section>
       )}

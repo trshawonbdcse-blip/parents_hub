@@ -25,17 +25,21 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
           {categoryLabel(place.category)} · {where}
           {distance != null && ` · ${distance < 1 ? `${Math.round(distance * 1000)} m` : `${distance.toFixed(1)} km`}`}
         </small>
-        <span className="place-row-meta">
-          <span className={place.price.free ? 'price free' : 'price'}>{priceShort(place, months)}</span>
-          {isChecked(place) && (
-            <span className="mini-badge checked" title={t('Checked by us')}>
-              <BadgeCheck size={13} /> {t('Checked')}
-            </span>
-          )}
-          {hasStebby && acceptsStebby(place) && <span className="mini-badge stebby">Stebby</span>}
-        </span>
+        {(isChecked(place) || (hasStebby && acceptsStebby(place))) && (
+          <span className="place-row-meta">
+            {isChecked(place) && (
+              <span className="mini-badge checked" title={t('Checked by us')}>
+                <BadgeCheck size={13} aria-hidden="true" /> {t('Checked')}
+              </span>
+            )}
+            {hasStebby && acceptsStebby(place) && <span className="mini-badge stebby">Stebby</span>}
+          </span>
+        )}
       </span>
-      <ChevronRight size={18} className="muted" />
+      <span className="place-row-value">
+        <span className={place.price.free ? 'price free' : 'price'}>{priceShort(place, months)}</span>
+      </span>
+      <ChevronRight size={18} className="muted" aria-hidden="true" />
     </Link>
   )
 }

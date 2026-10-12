@@ -44,7 +44,7 @@ export function ActivityDetail() {
         <CityPicker />
       </div>
 
-      <header className="activity-hero">
+      <header className="hero activity-hero">
         <span className="activity-icon big">{Icon && <Icon size={30} />}</span>
         <div>
           <h1>{a.name}</h1>

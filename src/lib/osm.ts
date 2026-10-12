@@ -55,6 +55,11 @@ const subscribe = (l: () => void) => {
   return () => listeners.delete(l)
 }
 
+// Whether the community (OpenStreetMap) list is still loading or could not be loaded.
+export function useOsmStatus() {
+  return useSyncExternalStore(subscribe, () => state)
+}
+
 const DESCRIPTION: Record<Category, string> = {
   playground: 'A public playground. Free to use — check the equipment suits your child’s age.',
   park: 'A public park — free, good for a walk with the stroller.',

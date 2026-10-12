@@ -114,28 +114,26 @@ export function useWeeklyProgress() {
   return { done: new Set(visits.filter((v) => v.date >= start).map((v) => v.date)).size, goal }
 }
 
-// Weekly outing goal, counted from "We went today".
+// Weekly outing goal, counted from "We went today" (the Me screen's hero card).
 export function WeeklyGoal() {
   const { t } = useT()
   const { done, goal } = useWeeklyProgress()
-  const pct = Math.min(1, done / goal)
-  const r = 22
-  const c = 2 * Math.PI * r
+  const shown = Math.min(done, goal)
   return (
-    <section className="goal-card">
-      <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true">
-        <circle cx="28" cy="28" r={r} className="goal-track" />
-        <circle cx="28" cy="28" r={r} className="goal-fill" strokeDasharray={`${c * pct} ${c}`} transform="rotate(-90 28 28)" />
-      </svg>
-      <div>
-        <p className="overline with-icon">
-          <Target size={14} /> {t('This week')}
-        </p>
-        <strong>{t('{done} of {goal} outings', { done: Math.min(done, goal), goal })}</strong>
-        <p className="small muted">
-          {done >= goal ? t('Goal reached — well done!') : t('Tap “We went today” on a place to count an outing.')}
-        </p>
+    <section className="hero goal-hero">
+      <span className="hero-badge">
+        <Target size={13} aria-hidden="true" /> {done >= goal ? t('Goal reached — well done!') : t('This week')}
+      </span>
+      <div className="hero-stack">
+        <span className="hero-number">
+          {shown}/{goal}
+        </span>
+        <span className="hero-label">{t('outings this week')}</span>
       </div>
+      <div className="hero-progress" role="progressbar" aria-label={t('This week')} aria-valuemin={0} aria-valuemax={goal} aria-valuenow={shown}>
+        <span style={{ width: `${(100 * shown) / goal}%` }} />
+      </div>
+      {done < goal && <p className="hero-sub">{t('Tap “We went today” on a place to count an outing.')}</p>}
     </section>
   )
 }

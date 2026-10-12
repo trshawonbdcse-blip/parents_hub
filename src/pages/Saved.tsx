@@ -1,7 +1,6 @@
 import { Bookmark, Heart, Sparkles, Trash2 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { PlaceRow } from '../components/PlaceRow'
-import { WeeklyGoal } from '../components/Engage'
 import { PlaceImage } from '../components/ui'
 import { useAllPlaces } from '../lib/osm'
 import { KEYS, useIdList, useStored } from '../lib/storage'
@@ -63,7 +62,6 @@ export function Saved({ view }: { view: 'saved' | 'moments' }) {
 
       {view === 'moments' && (
         <>
-          <WeeklyGoal />
           <section className="stats">
             <div>
               <strong>{monthVisits.length}</strong>
