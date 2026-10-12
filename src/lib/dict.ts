@@ -356,6 +356,7 @@ export const DICT: Record<string, Entry> = {
   'Activities by age': { et: 'Tegevused vanuse järgi', ru: 'Занятия по возрасту' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
   // Teal & Sun theme
+  'Rain soon': { et: 'Varsti vihma', ru: 'Скоро дождь' },
   'outings this week': { et: 'väljaskäiku sel nädalal', ru: 'вылазок на этой неделе' },
   'updated just now': { et: 'uuendatud just praegu', ru: 'обновлено только что' },
   'updated {n} min ago': { et: 'uuendatud {n} min tagasi', ru: 'обновлено {n} мин назад' },

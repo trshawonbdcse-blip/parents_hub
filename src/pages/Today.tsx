@@ -1,4 +1,4 @@
-import { CalendarDays, ChevronRight, CloudRain, CloudSun, Sparkles, Sun } from 'lucide-react'
+import { Baby, CalendarDays, ChevronRight, CloudRain, CloudSun, Sparkles, Sun } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { MilestoneNudge, WeekendPlan, useWeeklyProgress } from '../components/Engage'
@@ -6,7 +6,7 @@ import { PlaceRow } from '../components/PlaceRow'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { eventInCity, events } from '../lib/events'
 import { translate as tr, useT } from '../lib/i18n'
-import { categoryLabel, fitsAge, formatAge, isSummer, priceShort, todaysPicks } from '../lib/places'
+import { categoryLabel, formatAge, isSummer, priceShort, todaysPicks } from '../lib/places'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather, type OutdoorMode } from '../lib/weather'
@@ -23,7 +23,7 @@ const minutesOf = (hhmm: string) => {
 }
 
 // Why this place is a good idea right now, in a few short phrases.
-function reasonsFor(p: Place, mode: OutdoorMode, months: number | null, napStart: string, favourite: boolean): string[] {
+function reasonsFor(p: Place, mode: OutdoorMode, napStart: string, favourite: boolean): string[] {
   const out: string[] = []
   if (mode === 'indoor' && p.setting !== 'outdoor') out.push(tr('Indoors — right for today’s weather'))
   else if (mode === 'outdoor' && p.setting !== 'indoor') out.push(tr('Good weather to be outside'))
@@ -33,7 +33,6 @@ function reasonsFor(p: Place, mode: OutdoorMode, months: number | null, napStart
     const left = minutesOf(napStart) - (now.getHours() * 60 + now.getMinutes())
     if (left > p.durationMinutes + 45) out.push(tr('Back before nap time'))
   }
-  if (months !== null && fitsAge(p, months)) out.push(tr('Right for {age}', { age: formatAge(months) }))
   if (favourite) out.push(tr('One of your favourites'))
   if (p.price.free) out.push(tr('Free'))
   return out.slice(0, 3)
@@ -44,11 +43,12 @@ export function Today() {
   const { months, name, napStart } = useChild()
   const [city] = useCity()
   const here = cityCoords(city)
-  const { weather, error } = useWeather(here.lat, here.lng)
+  const { weather } = useWeather(here.lat, here.lng)
   const favorites = useIdList(KEYS.favorites)
   const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
   const { done, goal } = useWeeklyProgress()
   const ago = useAgo()
+  const firstName = name.trim().split(/\s+/)[0] ?? ''
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
@@ -56,7 +56,7 @@ export function Today() {
   const mode: OutdoorMode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
   const [best, ...more] = picks
   const price = best ? priceShort(best, months).split(' · ') : []
-  const reasons = best ? reasonsFor(best, mode, months, napStart, favorites.has(best.id)) : []
+  const reasons = best ? reasonsFor(best, mode, napStart, favorites.has(best.id)) : []
   const dow = new Date().getDay()
   const weekend = [4, 5, 6].includes(dow)
   const now = Date.now()
@@ -75,27 +75,17 @@ export function Today() {
           </span>
           <CityPicker />
         </div>
-        <h1>{name ? t('What shall we do today with {name}?', { name }) : t('What shall we do today?')}</h1>
-        <div className="today-sub">
-          <WeatherIcon size={18} aria-hidden="true" />
-          {weather ? (
-            <span>
-              {weather.temperature}° {t(weather.label)} · {t(weather.advice)}
-              <small>
-                <span className="live">{t('Live')}</span> · {ago(weather.updatedAt)}
-                {weather.rainFrom && ` · ${t('Rain likely from {time}', { time: weather.rainFrom })}`}
-              </small>
-            </span>
-          ) : (
-            <span>
-              {error ? t('Weather unavailable right now') : t('Checking the weather…')}
-              {error && <small>{t('Ideas are based on the season instead.')}</small>}
+        <h1>{firstName ? t('What shall we do today with {name}?', { name: firstName }) : t('What shall we do today?')}</h1>
+        <div className="chip-line">
+          {weather && (
+            <span className="chip-static" title={`${t(weather.label)} · ${ago(weather.updatedAt)}`}>
+              <WeatherIcon size={16} aria-hidden="true" /> {weather.temperature}°{weather.rainFrom ? ` · ${t('Rain soon')}` : ''}
             </span>
           )}
-        </div>
-        <div className="chip-line">
           {months !== null ? (
-            <span className="chip-static">{t('Ideas for {age}', { age: formatAge(months) })}</span>
+            <span className="chip-static">
+              <Baby size={16} aria-hidden="true" /> {formatAge(months)}
+            </span>
           ) : (
             <Link to="/me?tab=family" className="inline-cta">
               {t("Add your child's age for better ideas")} <ChevronRight size={16} />

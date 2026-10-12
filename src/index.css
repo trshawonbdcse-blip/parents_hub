@@ -528,3 +528,5 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .today-sub .live::before { background: var(--success); }
 .price { font-size: var(--fs-body); }
 .price-note { font-size: var(--fs-caption); color: var(--muted); line-height: 1.2; }
+.chip-static { gap: 6px; }
+.chip-static svg { color: var(--primary); }
