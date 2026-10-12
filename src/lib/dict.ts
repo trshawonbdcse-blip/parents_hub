@@ -356,6 +356,10 @@ export const DICT: Record<string, Entry> = {
   'Activities by age': { et: 'Tegevused vanuse järgi', ru: 'Занятия по возрасту' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
   // Redesign
+  Photos: { et: 'Fotod', ru: 'Фото' },
+  'Main menu': { et: 'Peamenüü', ru: 'Главное меню' },
+  'Quick filters': { et: 'Kiirfiltrid', ru: 'Быстрые фильтры' },
+  'Type of place': { et: 'Koha tüüp', ru: 'Тип места' },
   '{a} · kids usually free': { et: '{a} · lapsed tavaliselt tasuta', ru: '{a} · дети обычно бесплатно' },
   '{p} (typical)': { et: '{p} (tavaline)', ru: '{p} (обычно)' },
   '{p} / lesson': { et: '{p} / tund', ru: '{p} / занятие' },

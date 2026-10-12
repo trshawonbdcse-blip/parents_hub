@@ -7,13 +7,16 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "qa": "node scripts/qa/check-data.mjs && node scripts/qa/check-i18n.mjs",
+    "test:e2e": "node scripts/qa/e2e.mjs"
   },
   "dependencies": {
     "@capacitor/core": "^8.5.3",
     "@capacitor/ios": "^8.5.3",
     "@capacitor/local-notifications": "^8.3.1",
     "@capacitor/share": "^8.0.3",
+    "@fontsource/plus-jakarta-sans": "^5.3.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.55.0",
     "react": "^19.2.8",
@@ -28,6 +31,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
+    "axe-core": "^4.10.2",
     "oxlint": "^1.81.0",
     "typescript": "~6.0.2",
     "vite": "^8.3.0"

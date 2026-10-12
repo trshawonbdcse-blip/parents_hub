@@ -13,9 +13,9 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Parents Hub Tallinn',
+        name: 'Parents Hub',
         short_name: 'Parents Hub',
-        description: 'Where to go with your little one in Tallinn — places, prices, discounts.',
+        description: 'Where to go with babies and toddlers in Estonia — places, prices, events and activities.',
         theme_color: '#136f63',
         background_color: '#f6f5f2',
         display: 'standalone',
@@ -31,7 +31,7 @@ export default defineConfig({
         clientsClaim: true,
         skipWaiting: true,
         cleanupOutdatedCaches: true,
-        globPatterns: ['**/*.{js,css,html,svg,png}'],
+        globPatterns: ['**/*.{js,css,html,svg,png}', '**/plus-jakarta-sans-latin-*-normal.woff2'],
         runtimeCaching: [
           {
             urlPattern: /data\/osm-places\.json$/,

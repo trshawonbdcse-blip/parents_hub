@@ -1,0 +1,43 @@
+name: QA
+
+# Full quality check: data, translations, end-to-end browser tests (every screen in three
+# languages, every place and event, user flows, accessibility) and a live link check.
+# Runs on every push to main, weekly, and on demand. The report is in the run summary.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5 * * 1'
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Data check
+        run: node scripts/qa/check-data.mjs
+      - name: Translation check
+        run: node scripts/qa/check-i18n.mjs
+      - name: Use the live events and OpenStreetMap data
+        run: |
+          mkdir -p public/data
+          curl -fsSL https://trshawonbdcse-blip.github.io/parents_hub/data/osm-places.json -o public/data/osm-places.json || true
+          curl -fsSL https://trshawonbdcse-blip.github.io/parents_hub/data/events.json -o src/data/events.json || true
+      - run: npm run build
+      - run: npm i --no-save playwright@1.48.2 && npx playwright install --with-deps chromium
+      - name: End-to-end tests
+        run: node scripts/qa/e2e.mjs
+      - name: Link check
+        if: always()
+        run: node scripts/qa/check-links.mjs link-report.md && cat link-report.md >> "$GITHUB_STEP_SUMMARY"

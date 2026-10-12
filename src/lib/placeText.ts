@@ -1,7 +1,6 @@
-import et from '../data/i18n/places.et.json'
-import ru from '../data/i18n/places.ru.json'
+import { useEffect, useSyncExternalStore } from 'react'
 import type { Place } from '../types'
-import { getLang } from './i18n'
+import { getLang, type Lang } from './i18n'
 
 interface PlaceTranslation {
   description?: string
@@ -12,7 +11,41 @@ interface PlaceTranslation {
   parkingNote?: string | null
 }
 
-const TABLES: Record<string, Record<string, PlaceTranslation>> = { et, ru }
+// Place texts in Estonian/Russian are downloaded only for the language in use
+// (they are about a third of the app's size). English is built in.
+const TABLES: Partial<Record<Lang, Record<string, PlaceTranslation>>> = {}
+const LOADERS = {
+  et: () => import('../data/i18n/places.et.json'),
+  ru: () => import('../data/i18n/places.ru.json'),
+}
+let version = 0
+const listeners = new Set<() => void>()
+
+function load(lang: Lang) {
+  if (lang === 'en' || TABLES[lang]) return
+  TABLES[lang] = {}
+  LOADERS[lang]()
+    .then((m) => {
+      TABLES[lang] = m.default as Record<string, PlaceTranslation>
+      version++
+      listeners.forEach((l) => l())
+    })
+    .catch(() => {
+      delete TABLES[lang]
+    })
+}
+
+// Call near the top of the app: loads the current language's texts and re-renders when ready.
+export function usePlaceTexts(lang: Lang) {
+  useEffect(() => load(lang), [lang])
+  return useSyncExternalStore(
+    (l) => {
+      listeners.add(l)
+      return () => listeners.delete(l)
+    },
+    () => version,
+  )
+}
 
 // A place's free-text fields in the current language, falling back to English.
 export function placeText(p: Place) {

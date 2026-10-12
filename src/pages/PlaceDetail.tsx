@@ -144,6 +144,9 @@ export function PlaceDetail() {
       <div className="detail-media">
         {photos.length ? (
           <div
+            tabIndex={0}
+            role="region"
+            aria-label={t('Photos')}
             className="detail-gallery"
             onScroll={(e) => setSlide(Math.round(e.currentTarget.scrollLeft / e.currentTarget.clientWidth))}
           >

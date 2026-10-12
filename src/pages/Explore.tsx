@@ -122,7 +122,7 @@ export function Explore() {
           </button>
         </div>
 
-        <div className="chip-row" role="group" aria-label="Quick filters">
+        <div className="chip-row" role="group" aria-label={t('Quick filters')}>
           {(hasStebby || stebbyOnly) && (
             <button className={`chip ${stebbyOnly ? 'on' : ''}`} onClick={() => toggle('stebby', stebbyOnly)}>
               Stebby
@@ -146,7 +146,7 @@ export function Explore() {
         </div>
       </div>
 
-      <div className="category-row" role="group" aria-label="Type of place">
+      <div className="category-row" role="group" aria-label={t('Type of place')}>
         <button className={`category ${category === 'any' ? 'on' : ''}`} onClick={() => update('cat', null)}>
           <span className="category-icon">
             <LayoutGrid size={20} />
@@ -172,10 +172,10 @@ export function Explore() {
           {locError && wantNear && !coords ? ` · ${t('Location not available — sorted by name.')}` : ''}
         </p>
         <div className="segmented small" role="tablist" aria-label={t('View')}>
-          <button className={mapView ? '' : 'on'} onClick={() => update('view', null)} aria-label={t('List')}>
+          <button role="tab" aria-selected={!mapView} className={mapView ? '' : 'on'} onClick={() => update('view', null)}>
             <List size={16} /> {t('List')}
           </button>
-          <button className={mapView ? 'on' : ''} onClick={() => update('view', 'map')} aria-label={t('Map')}>
+          <button role="tab" aria-selected={mapView} className={mapView ? 'on' : ''} onClick={() => update('view', 'map')}>
             <MapIcon size={16} /> {t('Map')}
           </button>
         </div>

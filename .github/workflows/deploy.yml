@@ -28,6 +28,9 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      # Never publish broken data or missing translations.
+      - run: node scripts/qa/check-data.mjs
+      - run: node scripts/qa/check-i18n.mjs
       # Restore the event list from the previous run, so sources that only show their newest
       # listings (and temporary source failures) don't make events disappear.
       - uses: actions/cache@v4
