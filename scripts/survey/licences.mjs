@@ -27,14 +27,31 @@ const report = (title, r, words = ['litsents', 'license', 'licence', 'CC BY', 'C
   lines.push(...(hits.length ? hits.slice(0, 6).map((h) => `- ${h}`) : [`- (no licence words found) ${text.slice(0, 300)}`]), '')
 }
 
-// Estonian open data portal (andmed.eesti.ee): try its API and the search page.
-for (const q of ['turismi', 'Visit Estonia', 'supluskoh', 'spordiregister', 'RMK']) {
-  for (const url of [`https://andmed.eesti.ee/api/datasets?search=${encodeURIComponent(q)}&limit=5`, `https://andmed.eesti.ee/api/v1/datasets?q=${encodeURIComponent(q)}`, `https://andmed.eesti.ee/datasets?search=${encodeURIComponent(q)}`]) {
-    const r = await tryFetch(url)
-    if (r.status === 200) { report(`andmed.eesti.ee "${q}" — ${url}`, r); break }
-    lines.push(`- ${url} → HTTP ${r.status}`)
+// Estonian open data portal (andmed.eesti.ee): find datasets, then read each one's licence fields.
+const seen = new Set()
+for (const q of ['turism', 'vaatamisväärsus', 'puhkaeestis', 'Ettevõtluse ja Innovatsiooni', 'supluskoh', 'spordirajatis', 'spordiregister', 'matkarada', 'RMK', 'Riigimetsa', 'muuseum', 'üritus', 'kultuur']) {
+  const r = await tryFetch(`https://andmed.eesti.ee/api/datasets?search=${encodeURIComponent(q)}&limit=10`)
+  let list = []
+  try { list = JSON.parse(r.text).data ?? [] } catch { /* not JSON */ }
+  lines.push(`### search "${q}": ${list.length} datasets`)
+  for (const d of list) {
+    if (seen.has(d.id)) continue
+    seen.add(d.id)
+    const det = await tryFetch(`https://andmed.eesti.ee/api/datasets/${d.id}`)
+    let info = ''
+    try {
+      const j = JSON.parse(det.text)
+      const flat = JSON.stringify(j)
+      const lic = [...flat.matchAll(/"[^"]*licen[cs]e[^"]*"\s*:\s*("[^"]*"|\{[^}]*\}|null)/gi)].map((m) => m[0]).slice(0, 4).join(' ; ')
+      const org = j.organization?.name ?? j.data?.organization?.name ?? ''
+      const upd = j.updateIntervalUnit ?? j.data?.updateIntervalUnit ?? ''
+      info = `org: ${org} · update: ${upd} · ${lic || 'licence field not found: ' + flat.slice(0, 300)}`
+    } catch { info = `HTTP ${det.status}` }
+    lines.push(`- **${d.title}** (${d.slug}) — ${info}`)
   }
 }
+lines.push('')
+
 const pages = {
   'Visit Estonia open data (info)': 'https://www.visitestonia.com/en/open-data',
   'Visit Estonia API (puhkaeestis)': 'https://www.puhkaeestis.ee/et/avaandmed',

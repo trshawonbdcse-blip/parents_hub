@@ -42,27 +42,35 @@ const AREAS = {
 }
 
 async function overpass(q) {
-  for (const url of ENDPOINTS) {
-    try {
-      const r = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(q), headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'ParentsHub-survey/1.0' } })
-      if (r.ok) return await r.json()
-      console.warn(url, r.status)
-    } catch (e) {
-      console.warn(url, e.message)
+  for (let attempt = 0; attempt < 4; attempt++) {
+    for (const url of ENDPOINTS) {
+      try {
+        const r = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(q), headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'ParentsHub-survey/1.0' }, signal: AbortSignal.timeout(200000) })
+        if (r.ok) return await r.json()
+        console.warn(url, r.status)
+      } catch (e) {
+        console.warn(url, e.message)
+      }
     }
+    await new Promise((r) => setTimeout(r, 20000 * (attempt + 1)))
   }
-  throw new Error('Overpass unavailable')
+  return null
 }
 
 const names = Object.keys(CATEGORIES)
 const table = {}
+// Small batches per area keep each Overpass query short enough not to time out.
 for (const [areaName, areaSel] of Object.entries(AREAS)) {
-  const q = `[out:json][timeout:180];${areaSel}->.a;` + names.map((n) => `${CATEGORIES[n].replace(/^(nwr|relation)/, '$1')}(area.a);out count;`).join('')
-  const j = await overpass(q)
-  const counts = j.elements.filter((e) => e.type === 'count').map((e) => Number(e.tags.total))
-  table[areaName] = Object.fromEntries(names.map((n, i) => [n, counts[i] ?? null]))
-  console.log(`done ${areaName}`)
-  await new Promise((r) => setTimeout(r, 3000))
+  table[areaName] = {}
+  for (let i = 0; i < names.length; i += 7) {
+    const batch = names.slice(i, i + 7)
+    const q = `[out:json][timeout:170];${areaSel}->.a;` + batch.map((n) => `${CATEGORIES[n]}(area.a);out count;`).join('')
+    const j = await overpass(q)
+    const counts = j ? j.elements.filter((e) => e.type === 'count').map((e) => Number(e.tags.total)) : []
+    batch.forEach((n, k) => (table[areaName][n] = counts[k] ?? null))
+    console.log(areaName, JSON.stringify(Object.fromEntries(batch.map((n) => [n, table[areaName][n]]))))
+    await new Promise((r) => setTimeout(r, 5000))
+  }
 }
 
 const areas = Object.keys(AREAS)
