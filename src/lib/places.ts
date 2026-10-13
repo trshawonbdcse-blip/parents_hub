@@ -189,6 +189,9 @@ export function priceShort(place: Place, months: number | null): string {
 
 // Hand-checked against an official source (not OpenStreetMap, not unverified research).
 export const isChecked = (p: Place) => !p.osm && Boolean(p.lastVerified)
+// Six months after the last check, prices and hours may have changed: say so on the place.
+export const STALE_DAYS = 180
+export const isStale = (p: Place) => isChecked(p) && Date.now() - new Date(p.lastVerified!).getTime() > STALE_DAYS * 864e5
 
 export function priceSummary(place: Place, months: number | null) {
   if (place.price.free) return tr('Free entry')

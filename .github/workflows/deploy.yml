@@ -64,6 +64,8 @@ jobs:
         env:
           # Optional: Plausible script URL (Settings → Secrets and variables → Actions → Variables).
           VITE_PLAUSIBLE_SCRIPT: ${{ vars.PLAUSIBLE_SCRIPT }}
+          # Optional: address for "Report a mistake" and feedback e-mails.
+          VITE_CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

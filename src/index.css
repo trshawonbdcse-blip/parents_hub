@@ -530,3 +530,5 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .price-note { font-size: var(--fs-caption); color: var(--muted); line-height: 1.2; }
 .chip-static { gap: 6px; }
 .chip-static svg { color: var(--primary); }
+.mini-badge.stale { background: var(--warning-bg); color: var(--warning); }
+.report-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: 4px; font-weight: 700; color: var(--primary); }

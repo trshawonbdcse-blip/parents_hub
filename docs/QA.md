@@ -52,3 +52,9 @@ Test on an iPhone (Safari) and an Android phone (Chrome), in English, Estonian a
 
 ## Reporting a problem
 Note the phone, language, screen and what you tapped; a screenshot helps.
+
+## Keeping place details fresh
+
+- `node scripts/qa/freshness.mjs` lists places whose prices and hours were checked more than 180 days ago (the app then shows "may be out of date" on the place), those due within a month, and those never checked. The weekly QA run adds this list to its summary.
+- A scheduled Claude routine runs on the 15th of January, April, July and October (before summer and winter): it re-checks the most visible places against their official websites, updates prices, hours and `lastVerified` in all three languages, runs the checks and publishes.
+- "Report a mistake" (place and event pages) and "Send feedback" (Me → Family) open an e-mail to the address in the repository variable `CONTACT_EMAIL`. Without it the buttons are hidden.

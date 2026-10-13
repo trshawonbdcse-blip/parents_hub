@@ -1,7 +1,7 @@
 import { BadgeCheck, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useT } from '../lib/i18n'
-import { categoryLabel, isChecked, priceShort } from '../lib/places'
+import { categoryLabel, isChecked, isStale, priceShort } from '../lib/places'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Place } from '../types'
 import { CATEGORY_ICON } from './ui'
@@ -26,9 +26,9 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
           {categoryLabel(place.category)} · {where}
           {distance != null && ` · ${distance < 1 ? `${Math.round(distance * 1000)} m` : `${distance.toFixed(1)} km`}`}
         </small>
-        {(isChecked(place) || (hasStebby && acceptsStebby(place))) && (
+        {((isChecked(place) && !isStale(place)) || (hasStebby && acceptsStebby(place))) && (
           <span className="place-row-meta">
-            {isChecked(place) && (
+            {isChecked(place) && !isStale(place) && (
               <span className="mini-badge checked" title={t('Checked by us')}>
                 <BadgeCheck size={13} aria-hidden="true" /> {t('Checked')}
               </span>

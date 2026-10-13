@@ -1,4 +1,6 @@
 import {
+  AlertTriangle,
+  Flag,
   Accessibility,
   BadgeCheck,
   ArrowLeft,
@@ -26,7 +28,7 @@ import {
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, isChecked, priceShort } from '../lib/places'
+import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, isChecked, isStale, priceShort } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
@@ -35,6 +37,7 @@ import { placeText } from '../lib/placeText'
 import { usePlace } from '../lib/osm'
 import { shareContent, shareUrl } from '../lib/native'
 import { track } from '../lib/analytics'
+import { CONTACT_EMAIL, mistakeMail } from '../lib/feedback'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
 const NO_VISITS: Visit[] = []
@@ -187,7 +190,11 @@ export function PlaceDetail() {
           <h1>{place.name}</h1>
           {place.nameLocal && place.nameLocal !== place.name && <p className="muted">{place.nameLocal}</p>}
           <div className="chip-line">
-            {isChecked(place) ? (
+            {isStale(place) ? (
+              <span className="mini-badge stale">
+                <AlertTriangle size={13} aria-hidden="true" /> {t('Checked {date} — may be out of date', { date: place.lastVerified! })}
+              </span>
+            ) : isChecked(place) ? (
               <span className="mini-badge checked">
                 <BadgeCheck size={13} /> {t('Checked {date}', { date: place.lastVerified! })}
               </span>
@@ -445,6 +452,11 @@ export function PlaceDetail() {
                 ))}
               </ul>
             </details>
+          )}
+          {CONTACT_EMAIL && (
+            <a className="report-link" href={mistakeMail(`${place.name} (${place.id})`, `/place/${place.id}`, t('What is wrong or has changed? (price, opening hours, closed…)'))}>
+              <Flag size={14} aria-hidden="true" /> {t('Report a mistake')}
+            </a>
           )}
         </footer>
       </div>

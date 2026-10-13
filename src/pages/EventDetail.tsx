@@ -1,4 +1,5 @@
-import { ArrowLeft, Baby, CalendarPlus, CalendarX, Clock, Languages, MapPin, Navigation, Share2, Sparkles, Tag, Ticket, Timer } from 'lucide-react'
+import { ArrowLeft, Baby, Flag, CalendarPlus, CalendarX, Clock, Languages, MapPin, Navigation, Share2, Sparkles, Tag, Ticket, Timer } from 'lucide-react'
+import { CONTACT_EMAIL, mistakeMail } from '../lib/feedback'
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import {
@@ -185,7 +186,17 @@ export function EventDetail() {
           )}
         </div>
 
-        <footer className="verify">{t('From {source}, collected automatically. Confirm with the organiser before you go.', { source: event.source })}</footer>
+        <footer className="verify">
+          {t('From {source}, collected automatically. Confirm with the organiser before you go.', { source: event.source })}
+          {CONTACT_EMAIL && (
+            <>
+              {' '}
+              <a className="report-link" href={mistakeMail(event.title, `/event/${encodeURIComponent(event.id)}`, t('What is wrong or has changed? (date, place, cancelled…)'))}>
+                <Flag size={14} aria-hidden="true" /> {t('Report a mistake')}
+              </a>
+            </>
+          )}
+        </footer>
       </div>
 
       <div className="action-bar">

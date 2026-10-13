@@ -8,6 +8,7 @@ import { KEYS, useStored } from '../lib/storage'
 import { Link } from 'react-router-dom'
 import { LANGS, setLang, useT } from '../lib/i18n'
 import { localizedTips } from '../lib/tipsText'
+import { CONTACT_EMAIL } from '../lib/feedback'
 import type { MoneyTip } from '../types'
 
 export function Family() {
@@ -116,6 +117,11 @@ export function Family() {
         <h2>{t('Your data')}</h2>
         <div className="list-card padded">
           <p className="small">{t('Everything you enter stays on this phone. No account, no tracking.')}</p>
+          {CONTACT_EMAIL && (
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Parents Hub')}`} className="link-more">
+              {t('Send feedback')} <ChevronRight size={16} />
+            </a>
+          )}
           <Link to="/privacy" className="link-more">
             {t('Privacy')} <ChevronRight size={16} />
           </Link>

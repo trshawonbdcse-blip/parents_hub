@@ -41,3 +41,5 @@ jobs:
       - name: Link check
         if: always()
         run: node scripts/qa/check-links.mjs link-report.md && cat link-report.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Places that need a fresh check
+        run: node scripts/qa/freshness.mjs freshness.md && cat freshness.md >> "$GITHUB_STEP_SUMMARY"

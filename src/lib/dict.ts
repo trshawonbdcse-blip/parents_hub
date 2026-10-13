@@ -356,6 +356,11 @@ export const DICT: Record<string, Entry> = {
   'Activities by age': { et: 'Tegevused vanuse järgi', ru: 'Занятия по возрасту' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
   // Teal & Sun theme
+  'What is wrong or has changed? (date, place, cancelled…)': { et: 'Mis on valesti või muutunud? (kuupäev, koht, ära jäänud…)', ru: 'Что неверно или изменилось? (дата, место, отменено…)' },
+  'What is wrong or has changed? (price, opening hours, closed…)': { et: 'Mis on valesti või muutunud? (hind, lahtiolekuajad, suletud…)', ru: 'Что неверно или изменилось? (цена, часы работы, закрыто…)' },
+  'Report a mistake': { et: 'Teata veast', ru: 'Сообщить об ошибке' },
+  'Send feedback': { et: 'Saada tagasisidet', ru: 'Отправить отзыв' },
+  'Checked {date} — may be out of date': { et: 'Kontrollitud {date} — võib olla aegunud', ru: 'Проверено {date} — могло устареть' },
   'Rain soon': { et: 'Varsti vihma', ru: 'Скоро дождь' },
   'outings this week': { et: 'väljaskäiku sel nädalal', ru: 'вылазок на этой неделе' },
   'updated just now': { et: 'uuendatud just praegu', ru: 'обновлено только что' },
