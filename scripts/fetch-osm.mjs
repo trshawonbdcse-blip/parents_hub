@@ -1,15 +1,15 @@
-// Family places across Estonia from OpenStreetMap (playgrounds, parks, libraries, museums, pools,
-// beaches, ice rinks…) via the Overpass API. These complement the hand-checked places in
+// Places across Estonia from OpenStreetMap: family places (playgrounds, parks, libraries, museums, pools,
+// beaches, ice rinks…) and, for "Just me" mode, gyms, cinemas, theatres, galleries and nature spots, via the Overpass API. These complement the hand-checked places in
 // places.json: anything near a hand-checked place of the same kind is skipped.
 // Writes public/data/osm-places.json (compact keys, loaded by the app on demand).
 // Data © OpenStreetMap contributors, ODbL — the app shows the attribution.
 import fs from 'node:fs'
 
 const OUT = 'public/data/osm-places.json'
-const UA = 'ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/)'
+const UA = 'KuhuMinnaBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/)'
 const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null
-const VERSION = 1
+const VERSION = 2
 
 // Refresh weekly; in between the cached file is reused.
 const fresh = previous?.updatedAt && previous.version === VERSION && Date.now() - new Date(previous.updatedAt).getTime() < 6 * 864e5
@@ -19,19 +19,23 @@ if (fresh && !process.env.OSM_FORCE) {
 }
 
 async function overpass(query) {
-  for (const url of ENDPOINTS) {
-    try {
-      const r = await fetch(url, {
-        method: 'POST',
-        headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: 'data=' + encodeURIComponent(query),
-        signal: AbortSignal.timeout(240000),
-      })
-      if (!r.ok) throw new Error(`HTTP ${r.status}`)
-      return (await r.json()).elements ?? []
-    } catch (e) {
-      console.warn(`${url}: ${e.message}`)
+  // The public Overpass servers are often busy: try each one, a few rounds, before giving up.
+  for (let round = 0; round < 3; round++) {
+    for (const url of ENDPOINTS) {
+      try {
+        const r = await fetch(url, {
+          method: 'POST',
+          headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: 'data=' + encodeURIComponent(query),
+          signal: AbortSignal.timeout(240000),
+        })
+        if (!r.ok) throw new Error(`HTTP ${r.status}`)
+        return (await r.json()).elements ?? []
+      } catch (e) {
+        console.warn(`${url}: ${e.message}`)
+      }
     }
+    await new Promise((res) => setTimeout(res, 30000 * (round + 1)))
   }
   throw new Error('all Overpass endpoints failed')
 }
@@ -52,6 +56,13 @@ const FEATURES = `[out:json][timeout:220];${AREA}(
   nwr["natural"="beach"]["name"](area.ee);
   nwr["leisure"="beach_resort"](area.ee);
   nwr["leisure"="ice_rink"](area.ee);
+  nwr["leisure"="fitness_centre"]["name"](area.ee);
+  nwr["amenity"="cinema"]["name"](area.ee);
+  nwr["amenity"~"^(theatre|concert_hall|music_venue)$"]["name"](area.ee);
+  nwr["tourism"="gallery"]["name"](area.ee);
+  nwr["tourism"="viewpoint"]["name"](area.ee);
+  nwr["leisure"="nature_reserve"]["name"](area.ee);
+  relation["route"="hiking"]["name"](area.ee);
 );out center tags;`
 const PLACES = `[out:json][timeout:120];${AREA}node["place"~"^(city|town|village|suburb|quarter|neighbourhood|borough)$"]["name"](area.ee);out;`
 
@@ -66,6 +77,12 @@ function category(t) {
   if (t.leisure === 'park') return 'park'
   if (t.natural === 'beach' || t.leisure === 'beach_resort') return 'beach'
   if (t.leisure === 'ice_rink') return 'winter-fun'
+  // "Just me" mode (adults)
+  if (t.leisure === 'fitness_centre') return 'gym'
+  if (t.amenity === 'cinema') return 'cinema'
+  if (['theatre', 'concert_hall', 'music_venue'].includes(t.amenity)) return 'theatre'
+  if (t.tourism === 'gallery') return 'museum'
+  if (t.tourism === 'viewpoint' || t.leisure === 'nature_reserve' || t.route === 'hiking') return 'nature'
   return null
 }
 
@@ -83,8 +100,16 @@ const km = (a1, o1, a2, o2) => {
 }
 const nearestHub = (la, lo) => Object.entries(HUBS).reduce((b, [n, [a, o]]) => (km(la, lo, a, o) < b.d ? { n, d: km(la, lo, a, o) } : b), { n: 'Tallinn', d: Infinity }).n
 
-const elements = await overpass(FEATURES)
-const placeNodes = await overpass(PLACES)
+let elements, placeNodes
+try {
+  elements = await overpass(FEATURES)
+  placeNodes = await overpass(PLACES)
+} catch (e) {
+  // Never block a deploy on a busy map server: keep the previous list and try again next run.
+  console.warn(`OSM: ${e.message}; keeping the previous file`)
+  if (!previous) fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: null, places: [] }) + '\n')
+  process.exit(0)
+}
 console.log(`OSM: ${elements.length} features, ${placeNodes.length} place names`)
 if (elements.length < 500) {
   console.warn('OSM: suspiciously few features; keeping previous file')

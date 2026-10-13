@@ -74,16 +74,19 @@ const DESCRIPTION: Record<Category, string> = {
   cafe: '',
   theatre: '',
   class: '',
+  gym: 'A gym. Check day-pass prices and opening hours before you go.',
+  cinema: 'A cinema. See today’s films and times on its website.',
+  nature: 'A nature spot or trail, free to visit. Wear good shoes and check the season.',
 }
 
-const FREE_KINDS: Category[] = ['playground', 'park', 'beach', 'library']
-const DURATION: Partial<Record<Category, number>> = { playground: 60, park: 60, library: 45, museum: 90, swimming: 120, beach: 120, 'winter-fun': 60, 'indoor-play': 120, 'zoo-farm': 120 }
+const FREE_KINDS: Category[] = ['playground', 'park', 'beach', 'library', 'nature']
+const DURATION: Partial<Record<Category, number>> = { playground: 60, park: 60, library: 45, museum: 90, swimming: 120, beach: 120, 'winter-fun': 60, 'indoor-play': 120, 'zoo-farm': 120, gym: 75, cinema: 120, nature: 120, theatre: 120 }
 const yesNo = (v?: string) => (v === 'yes' ? true : v === 'no' ? false : null)
 
 function toPlace(r: Rec, lang: Lang): Place {
   const area = r.a ?? r.h
   const named = (lang === 'ru' && r.ru) || (lang === 'en' && r.en) || r.n
-  const indoor = r.in === 1 || ['library', 'museum', 'indoor-play'].includes(r.c)
+  const indoor = r.in === 1 || ['library', 'museum', 'indoor-play', 'gym', 'cinema', 'theatre'].includes(r.c)
   const free = r.f === 0 || (r.f !== 1 && FREE_KINDS.includes(r.c))
   return {
     id: `osm-${r.i}`,

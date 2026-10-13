@@ -1,5 +1,8 @@
 import {
   Baby,
+  Clapperboard,
+  Dumbbell,
+  Mountain,
   BookOpen,
   Coffee,
   Drama,
@@ -31,6 +34,9 @@ export const CATEGORY_ICON: Record<Category, LucideIcon> = {
   theatre: Drama,
   class: Music,
   'winter-fun': Snowflake,
+  gym: Dumbbell,
+  cinema: Clapperboard,
+  nature: Mountain,
 }
 
 // A place photo, or a calm gradient with the category icon when there is none (or it fails to load).

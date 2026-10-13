@@ -46,7 +46,9 @@ const WEATHER = {
   daily: { time: [...Array(7)].map((_, i) => new Date(Date.now() + i * 864e5).toISOString().slice(0, 10)), weather_code: [3, 61, 0, 2, 3, 1, 63], temperature_2m_max: [9, 8, 11, 10, 9, 12, 7], temperature_2m_min: [3, 4, 5, 2, 1, 4, 3], precipitation_probability_max: [20, 80, 5, 10, 20, 10, 70], apparent_temperature_max: [7, 6, 10, 8, 7, 11, 5] },
 }
 
-async function newPage({ lang = 'en', width = 390, height = 844, storage = {} } = {}) {
+async function newPage({ lang = 'en', width = 390, height = 844, storage = {}, mode = 'family' } = {}) {
+  // Family mode unless a test asks otherwise (null = first open, shows the chooser).
+  if (mode) storage = { 'ph.mode': mode, ...storage }
   const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1, serviceWorkers: 'block', locale: lang === 'en' ? 'en-GB' : lang === 'et' ? 'et-EE' : 'ru-RU' })
   await ctx.route('**/*', (route) => {
     const u = route.request().url()
@@ -159,9 +161,9 @@ for (const lang of ['en', 'et', 'ru']) {
 }
 
 // 3. User flows.
-async function flow(name, fn) {
+async function flow(name, fn, opts = { storage: CHILD }) {
   checks++
-  const page = await newPage({ storage: CHILD })
+  const page = await newPage(opts)
   try {
     await fn(page)
   } catch (e) {
@@ -265,7 +267,10 @@ await flow('change language in Family', async (page) => {
 })
 await flow('birthday updates ideas', async (page) => {
   await page.goto(URL0)
-  await page.evaluate(() => localStorage.clear())
+  await page.evaluate(() => {
+    localStorage.clear()
+    localStorage.setItem('ph.mode', JSON.stringify('family'))
+  })
   await page.goto(URL0 + '#/me?tab=family')
   await page.fill('input[type=date]', '2024-04-01')
   await page.goto(URL0 + '#/')
@@ -292,11 +297,27 @@ await flow('broken links show friendly pages', async (page) => {
   await page.waitForSelector('text=This event is no longer listed.')
 })
 
+// "Just me" mode: first-open choice, screens in every language, category tiles.
+await flow('first open asks who you plan for → Just me', async (page) => {
+  await page.goto(URL0 + '#/')
+  await page.click('.chooser-option:has-text("Just me")')
+  await page.waitForSelector('h1:has-text("What shall I do today?")')
+  await page.goto(URL0 + '#/explore')
+  await page.waitForSelector('.cat-tile')
+  await page.click('.mode-switch button:has-text("Family")')
+  await page.waitForSelector('.cat-tile', { state: 'detached' })
+}, { storage: {}, mode: null })
+for (const lang of ['en', 'et', 'ru']) {
+  const page = await newPage({ lang, mode: 'me', storage: { 'ph.stebby': true } })
+  for (const s of ['#/', '#/explore', '#/explore?cat=swimming', '#/explore?cat=museum', '#/place/kalev-spa-water-park', '#/me?tab=moments']) await checkScreen(page, s, `${lang} just-me ${s}`)
+  await page.context().close()
+}
+
 // 4. Accessibility (serious and critical issues only).
 const axe = fs.readFileSync('node_modules/axe-core/axe.min.js', 'utf8')
-for (const s of ['#/', '#/explore', '#/place/tallinn-zoo', '#/activities', '#/activity/swimming', '#/events', '#/me?tab=family']) {
+for (const [s, mode] of [['#/', 'family'], ['#/explore', 'family'], ['#/place/tallinn-zoo', 'family'], ['#/activities', 'family'], ['#/activity/swimming', 'family'], ['#/events', 'family'], ['#/me?tab=family', 'family'], ['#/', 'me'], ['#/explore', 'me'], ['#/place/kalev-spa-water-park', 'me'], ['#/', null]]) {
   checks++
-  const page = await newPage({ storage: CHILD })
+  const page = await newPage({ storage: mode === null ? {} : CHILD, mode })
   await page.goto(URL0 + s)
   await page.waitForTimeout(400)
   await page.addScriptTag({ content: axe })

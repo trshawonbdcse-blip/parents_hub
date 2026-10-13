@@ -12,6 +12,8 @@ import { useAllPlaces, useOsmStatus } from '../lib/osm'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Category } from '../types'
 import { useT } from '../lib/i18n'
+import { ME_CATEGORIES, forMode, meCategoryLabel, useMode } from '../lib/mode'
+import { ModeSwitch } from '../components/ModeSwitch'
 
 type Coords = { lat: number; lng: number }
 
@@ -27,7 +29,9 @@ export function Explore() {
   const [sheetOpen, setSheetOpen] = useState(false)
   const [city] = useCity()
   const all = useAllPlaces()
-  const pool = useMemo(() => placesIn(city, all), [city, all])
+  const [appMode] = useMode()
+  const me = appMode === 'me'
+  const pool = useMemo(() => forMode(me ? 'me' : 'family', placesIn(city, all)), [city, all, me])
   const [limit, setLimit] = useState(40)
 
   const q = params.get('q') ?? ''
@@ -62,7 +66,11 @@ export function Explore() {
   }, [wantNear, coords])
 
   const areas = useMemo(() => [...new Set(pool.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'et')), [pool])
-  const categories = useMemo(() => [...new Set(pool.map((p) => p.category))], [pool])
+  const categories = useMemo(() => {
+    const present = new Set(pool.map((p) => p.category))
+    return me ? ME_CATEGORIES.filter((c) => present.has(c)) : [...present]
+  }, [pool, me])
+  const catLabel = (c: Category) => (me ? meCategoryLabel(c) : categoryLabel(c))
   const sheetFilters = [area !== 'any', parking !== 'any', !ageOnly, !seasonOnly].filter(Boolean).length
 
   const osm = useOsmStatus()
@@ -76,7 +84,7 @@ export function Explore() {
       if (stebbyOnly && !acceptsStebby(p)) return false
       if (category !== 'any' && p.category !== category) return false
       if (area !== 'any' && areas.includes(area) && p.area !== area) return false
-      if (ageOnly && !fitsAge(p, months)) return false
+      if (ageOnly && !me && !fitsAge(p, months)) return false
       if (seasonOnly && !fitsSeason(p)) return false
       if (parking === 'yes' && !hasParking(p)) return false
       if (parking === 'free' && !hasFreeParking(p)) return false
@@ -100,7 +108,7 @@ export function Explore() {
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
   // With no search or filters, lead with photo cards of hand-checked places.
   const browsing = !q && category === 'any' && setting === 'any' && !free && !wantNear && !stebbyOnly && parking === 'any'
-  const featured = browsing ? results.filter(({ p }) => p.photos?.length && !p.osm).slice(0, 10) : []
+  const featured = browsing && !me ? results.filter(({ p }) => p.photos?.length && !p.osm).slice(0, 10) : []
   const featuredIds = new Set(featured.map(({ p }) => p.id))
   const listed = results.filter(({ p }) => !featuredIds.has(p.id))
 
@@ -127,6 +135,8 @@ export function Explore() {
           </button>
         </div>
       </div>
+
+      <ModeSwitch />
 
       <section className="hero explore-hero">
         <div className="hero-row">
@@ -187,7 +197,7 @@ export function Explore() {
                 <span className="category-icon">
                   <Icon size={20} />
                 </span>
-                {categoryLabel(c)}
+                {catLabel(c)}
               </button>
             )
           })}
@@ -207,6 +217,23 @@ export function Explore() {
         </Suspense>
       ) : (
         <>
+          {me && browsing && (
+            <section className="cat-tiles" aria-label={t('Type of place')}>
+              {categories.map((c) => {
+                const Icon = CATEGORY_ICON[c]
+                const n = pool.filter((p) => p.category === c).length
+                return (
+                  <button key={c} type="button" className="cat-tile" onClick={() => update('cat', c)}>
+                    <span className="ic">
+                      <Icon size={20} aria-hidden="true" />
+                    </span>
+                    <strong>{catLabel(c)}</strong>
+                    <small>{t(n === 1 ? '{n} place' : '{n} places', { n })}</small>
+                  </button>
+                )
+              })}
+            </section>
+          )}
           {featured.length > 0 && (
             <section>
               <h2 className="list-head">{t('Featured')}</h2>
@@ -286,7 +313,7 @@ export function Explore() {
               </div>
             </div>
 
-            {months !== null && (
+            {months !== null && !me && (
               <label className="switch-row">
                 <span>{t("Only places for my child's age")}</span>
                 <input type="checkbox" role="switch" checked={ageOnly} onChange={() => update('age', ageOnly ? '0' : null)} />

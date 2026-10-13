@@ -9,7 +9,7 @@ import fs from 'node:fs'
 const idsFile = process.argv[2] ?? 'scripts/photos/review-ids.txt'
 const ids = new Set(fs.readFileSync(idsFile, 'utf8').split(/\s+/).filter(Boolean))
 const places = JSON.parse(fs.readFileSync('src/data/places.json', 'utf8')).filter((p) => ids.has(p.id))
-const UA = 'ParentsHubBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; data check)'
+const UA = 'KuhuMinnaBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/; data check)'
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 async function get(url, type = 'text') {

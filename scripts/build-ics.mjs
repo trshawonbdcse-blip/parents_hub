@@ -11,7 +11,7 @@ const day = (d) => new Date(d).toLocaleDateString('en-CA', { timeZone: 'Europe/T
 const APP = 'https://trshawonbdcse-blip.github.io/parents_hub/'
 
 function feed(name, list) {
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Parents Hub//Kids events//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:${esc(name)}`, 'X-WR-TIMEZONE:Europe/Tallinn', 'REFRESH-INTERVAL;VALUE=DURATION:PT12H', 'X-PUBLISHED-TTL:PT12H']
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Kuhu Minna//Kids events//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:${esc(name)}`, 'X-WR-TIMEZONE:Europe/Tallinn', 'REFRESH-INTERVAL;VALUE=DURATION:PT12H', 'X-PUBLISHED-TTL:PT12H']
   for (const e of list) {
     lines.push('BEGIN:VEVENT', `UID:${esc(e.id)}@parents-hub`, `DTSTAMP:${stamp(Date.now())}`)
     if (e.allDay) lines.push(`DTSTART;VALUE=DATE:${day(e.start)}`)
@@ -31,9 +31,9 @@ function feed(name, list) {
 }
 
 fs.mkdirSync('public/ics', { recursive: true })
-fs.writeFileSync('public/ics/all.ics', feed('Parents Hub — kids’ events in Estonia', events))
+fs.writeFileSync('public/ics/all.ics', feed('Kuhu Minna — kids’ events in Estonia', events))
 for (const town of new Set(towns)) {
   const list = events.filter((e) => !e.city || e.city === town)
-  fs.writeFileSync(`public/ics/${slug(town)}.ics`, feed(`Parents Hub — kids’ events, ${town}`, list))
+  fs.writeFileSync(`public/ics/${slug(town)}.ics`, feed(`Kuhu Minna — kids’ events, ${town}`, list))
 }
 console.log(`Calendar feeds written for ${new Set(towns).size} towns`)

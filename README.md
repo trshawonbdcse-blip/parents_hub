@@ -1,4 +1,4 @@
-# Parents Hub Tallinn
+# Kuhu Minna (formerly Parents Hub)
 
 A mobile-first web app (PWA) that helps parents of toddlers in Tallinn decide **where to go today**:
 places, prices, free entry rules, discounts and toddler-practical details (stroller access, changing

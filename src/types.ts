@@ -12,6 +12,10 @@ export type Category =
   | 'theatre'
   | 'class'
   | 'winter-fun'
+  // "Just me" mode (adults)
+  | 'gym'
+  | 'cinema'
+  | 'nature'
 
 export type Setting = 'indoor' | 'outdoor' | 'both'
 export type Season = 'all-year' | 'summer' | 'winter'

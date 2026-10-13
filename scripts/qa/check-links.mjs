@@ -6,7 +6,7 @@ import fs from 'node:fs'
 const out = process.argv[2] ?? 'link-report.md'
 const places = JSON.parse(fs.readFileSync('src/data/places.json', 'utf8'))
 const events = fs.existsSync('src/data/events.json') ? JSON.parse(fs.readFileSync('src/data/events.json', 'utf8')).events ?? [] : []
-const UA = 'Mozilla/5.0 (compatible; ParentsHubLinkCheck/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)'
+const UA = 'Mozilla/5.0 (compatible; KuhuMinnaLinkCheck/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)'
 
 const jobs = []
 for (const p of places) {

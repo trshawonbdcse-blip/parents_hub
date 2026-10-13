@@ -28,7 +28,7 @@ import {
 import { useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import { PlaceImage } from '../components/ui'
-import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, isChecked, isStale, priceShort } from '../lib/places'
+import { adultPriceText, categoryLabel, childPriceText, estimatedAdultText, estimatedChildText, fitsAge, formatAge, isChecked, isStale, priceAdultShort, priceShort } from '../lib/places'
 import { KEYS, useIdList, useNotes, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import type { Facilities, Place, Visit } from '../types'
@@ -37,6 +37,7 @@ import { placeText } from '../lib/placeText'
 import { usePlace } from '../lib/osm'
 import { shareContent, shareUrl } from '../lib/native'
 import { track } from '../lib/analytics'
+import { meCategoryLabel, useMode } from '../lib/mode'
 import { CONTACT_EMAIL, mistakeMail } from '../lib/feedback'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
@@ -86,6 +87,8 @@ export function PlaceDetail() {
   const [logged, setLogged] = useState<string | null>(null)
   const [slide, setSlide] = useState(0)
   const [hasStebby] = useStebby()
+  const [appMode] = useMode()
+  const me = appMode === 'me'
 
   if (!place && loading) return <div className="page"><p className="muted">{t('Loading…')}</p></div>
   if (!place) {
@@ -112,7 +115,7 @@ export function PlaceDetail() {
   const childEst = estimatedChildText(place, months)
   const parking = parkingSummary(place)
   const known = FACILITIES.map((f) => ({ ...f, v: place.facilities[f.key] }))
-    .filter((f) => f.v !== null && f.key !== 'parking')
+    .filter((f) => f.v !== null && f.key !== 'parking' && !(me && ['stroller', 'changingTable', 'feedingRoom'].includes(f.key)))
     .map((f) => ({ ...f, yes: f.v === true }))
   const hasPriceDetails =
     !place.price.free && (place.price.adult !== null || place.price.child !== null || place.price.family !== null || Boolean(text.priceNote) || text.discounts.length > 0)
@@ -215,8 +218,8 @@ export function PlaceDetail() {
           <div>
             <Tag size={18} />
             <span>
-              <strong className={adult === null && child === null && !place.price.free ? 'estimate' : ''}>{priceShort(place, months)}</strong>
-              <small>{t('Price')}</small>
+              <strong className={adult === null && (me || child === null) && !place.price.free ? 'estimate' : ''}>{me ? priceAdultShort(place) : priceShort(place, months)}</strong>
+              <small>{me ? t('Adult ticket') : t('Price')}</small>
             </span>
           </div>
           <div>
@@ -229,9 +232,9 @@ export function PlaceDetail() {
           <div>
             <Baby size={18} />
             <span>
-              <strong>{ageText}</strong>
-              <small className={months !== null && !fitsAge(place, months) ? 'warn' : ''}>
-                {months !== null && !fitsAge(place, months) ? t('Not ideal for your child') : t('Ages')}
+              <strong>{me ? meCategoryLabel(place.category) : ageText}</strong>
+              <small className={!me && months !== null && !fitsAge(place, months) ? 'warn' : ''}>
+                {me ? t('Type of place') : months !== null && !fitsAge(place, months) ? t('Not ideal for your child') : t('Ages')}
               </small>
             </span>
           </div>
@@ -267,10 +270,10 @@ export function PlaceDetail() {
           <div className={`stebby-row ${stebby ? '' : 'no'}`}>
             {stebby ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
             <div>
-              <strong>{stebby ? t('Stebby partner') : stebby === false ? t('Not found among Stebby partners') : t('Stebby: not checked yet')}</strong>
+              <strong>{stebby ? (me ? t('Pay with Stebby') : t('Stebby partner')) : stebby === false ? t('Not found among Stebby partners') : t('Stebby: not checked yet')}</strong>
               <p>
                 {stebby
-                  ? t('Your Stebby budget is for you, not your child: use it for your own ticket or a class you take part in, such as parent-and-baby swimming.') + ` (${stebby.name})`
+                  ? (me ? t('Your Stebby sports budget can pay for your own ticket here.') : t('Your Stebby budget is for you, not your child: use it for your own ticket or a class you take part in, such as parent-and-baby swimming.')) + ` (${stebby.name})`
                   : t('Ask at the entrance or check in the Stebby app.')}
               </p>
             </div>
@@ -278,7 +281,7 @@ export function PlaceDetail() {
         )}
 
         <button className={`button ${logged ? 'secondary' : 'primary'} wide-button went-button`} onClick={logVisit} disabled={Boolean(logged)}>
-          <Check size={18} /> {logged ? t('Saved to your moments') : t('We went today')}
+          <Check size={18} /> {logged ? t('Saved to your moments') : me ? t('I went today') : t('We went today')}
         </button>
         {logged && (
           <input

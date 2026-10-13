@@ -27,6 +27,9 @@ export const CATEGORY_LABEL: Record<Category, { label: string; emoji: string }> 
   theatre: { label: 'Theatre & shows', emoji: '🎭' },
   class: { label: 'Class', emoji: '🎵' },
   'winter-fun': { label: 'Winter fun', emoji: '🛷' },
+  gym: { label: 'Gym', emoji: '🏋️' },
+  cinema: { label: 'Cinema', emoji: '🎬' },
+  nature: { label: 'Nature walk', emoji: '🥾' },
 }
 
 export const categoryLabel = (c: Category) => tr(CATEGORY_LABEL[c].label)
@@ -160,6 +163,12 @@ export function childPriceText(p: Place, months: number | null): string | null {
 // typical prices (marked ≈) filling any gaps.
 // Short, plain price line for lists: "Free", "€12 · kids free", "€15 adult · €8 child",
 // "≈ €10 (typical)", "€18 / lesson".
+// Price for an adult going alone ("Just me" mode).
+export function priceAdultShort(place: Place): string {
+  if (place.price.free) return tr('Free')
+  return adultPriceText(place) ?? estimatedAdultText(place) ?? tr('Price on request')
+}
+
 export function priceShort(place: Place, months: number | null): string {
   if (place.price.free) return tr('Free')
   if (place.activities?.length) {
@@ -232,6 +241,9 @@ const TYPICAL: Partial<Record<Category, { adult: number; child: number }>> = {
   library: { adult: 0, child: 0 },
   cafe: { adult: 0, child: 0 },
   mall: { adult: 0, child: 0 },
+  gym: { adult: 10, child: 0 },
+  cinema: { adult: 8, child: 6 },
+  nature: { adult: 0, child: 0 },
 }
 
 const categoryPrices = (() => {

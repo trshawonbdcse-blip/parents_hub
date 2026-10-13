@@ -1,7 +1,8 @@
 import { BadgeCheck, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useT } from '../lib/i18n'
-import { categoryLabel, isChecked, isStale, priceShort } from '../lib/places'
+import { categoryLabel, isChecked, isStale, priceAdultShort, priceShort } from '../lib/places'
+import { meCategoryLabel, useMode } from '../lib/mode'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Place } from '../types'
 import { CATEGORY_ICON } from './ui'
@@ -12,7 +13,9 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
   const [hasStebby] = useStebby()
   const Icon = CATEGORY_ICON[place.category]
   const photo = place.photos?.[0]
-  const price = priceShort(place, months).split(' · ')
+  const [mode] = useMode()
+  const me = mode === 'me'
+  const price = (me ? priceAdultShort(place) : priceShort(place, months)).split(' · ')
   const where = place.area === place.city || place.city === 'Tallinn' ? place.area : `${place.area}, ${place.city}`
   return (
     <Link to={`/place/${place.id}`} className="place-row">
@@ -23,7 +26,7 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
       <span className="place-row-text">
         <strong>{place.name}</strong>
         <small>
-          {categoryLabel(place.category)} · {where}
+          {me ? meCategoryLabel(place.category) : categoryLabel(place.category)} · {where}
           {distance != null && ` · ${distance < 1 ? `${Math.round(distance * 1000)} m` : `${distance.toFixed(1)} km`}`}
         </small>
         {((isChecked(place) && !isStale(place)) || (hasStebby && acceptsStebby(place))) && (

@@ -21,9 +21,9 @@ export default defineConfig({
       injectRegister: false,
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Parents Hub',
-        short_name: 'Parents Hub',
-        description: 'Where to go with babies and toddlers in Estonia — places, prices, events and activities.',
+        name: 'Kuhu Minna',
+        short_name: 'Kuhu Minna',
+        description: 'Where to go in Estonia today — with your kids or just you.',
         theme_color: '#0f5c5c',
         background_color: '#ffffff',
         display: 'standalone',

@@ -5,7 +5,7 @@
 import fs from 'node:fs'
 
 const places = JSON.parse(fs.readFileSync(new URL('../src/data/places.json', import.meta.url), 'utf8'))
-const UA = { 'user-agent': 'Mozilla/5.0 (compatible; ParentsHubBot/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)', 'accept-language': 'et,en;q=0.8' }
+const UA = { 'user-agent': 'Mozilla/5.0 (compatible; KuhuMinnaBot/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)', 'accept-language': 'et,en;q=0.8' }
 
 const fetchText = async (url) => {
   const r = await fetch(url, { headers: UA, redirect: 'follow', signal: AbortSignal.timeout(20000) })

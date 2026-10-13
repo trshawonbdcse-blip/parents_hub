@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
 import { BottomNav } from './components/BottomNav'
+import { ModeChooser } from './components/ModeChooser'
 import { useLiveEvents } from './lib/events'
 import { useT } from './lib/i18n'
 import { usePlaceTexts } from './lib/placeText'
@@ -55,6 +56,7 @@ export default function App() {
         </Routes>
       </main>
       <Nav />
+      <ModeChooser />
     </HashRouter>
   )
 }

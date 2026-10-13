@@ -6,7 +6,7 @@ import fs from 'node:fs'
 
 const OUT = new URL('../src/data/events.json', import.meta.url)
 const FB_LIST = new URL('./facebook-events.txt', import.meta.url)
-const UA = { 'user-agent': 'Mozilla/5.0 (compatible; ParentsHubBot/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)', 'accept-language': 'et,en;q=0.8' }
+const UA = { 'user-agent': 'Mozilla/5.0 (compatible; KuhuMinnaBot/1.0; +https://trshawonbdcse-blip.github.io/parents_hub/)', 'accept-language': 'et,en;q=0.8' }
 const DAY = 864e5
 const now = Date.now()
 const HORIZON = now + 90 * DAY

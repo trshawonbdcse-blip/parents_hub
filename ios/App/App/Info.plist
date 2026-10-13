@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-        <string>Parents Hub</string>
+        <string>Kuhu Minna</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -67,7 +67,7 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Parents Hub uses your location to show family places near you and pick your town.</string>
+	<string>Kuhu Minna uses your location to show places near you and pick your town.</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>en</string>

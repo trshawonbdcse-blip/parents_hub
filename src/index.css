@@ -532,3 +532,24 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .chip-static svg { color: var(--primary); }
 .mini-badge.stale { background: var(--warning-bg); color: var(--warning); }
 .report-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: 4px; font-weight: 700; color: var(--primary); }
+
+/* Family / Just me ------------------------------------------------ */
+.mode-switch { display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--tile); }
+.mode-switch button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; border: none; border-radius: 999px; background: transparent; font-weight: 700; font-size: var(--fs-secondary); color: var(--ink); }
+.mode-switch button.on { background: var(--primary); color: var(--surface); }
+.chooser { position: fixed; inset: 0; z-index: 50; background: var(--surface); display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: calc(env(safe-area-inset-top) + 24px) 20px calc(env(safe-area-inset-bottom) + 24px); max-width: 560px; margin: 0 auto; }
+.chooser .brand { text-align: center; font-size: 28px; }
+.chooser h1 { text-align: center; }
+.chooser-option { display: flex; align-items: center; gap: 14px; padding: 18px; border-radius: var(--r-hero); border: 2px solid var(--primary); background: var(--surface); color: var(--ink); text-align: left; }
+.chooser-option.primary { background: var(--primary); color: var(--surface); }
+.chooser-option span { display: flex; flex-direction: column; gap: 4px; }
+.chooser-option strong { font-family: var(--font-head); font-size: var(--fs-section); }
+.chooser-option small { font-size: var(--fs-secondary); opacity: 0.85; }
+.chooser p { text-align: center; }
+.cat-tiles { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.cat-tile { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 14px; min-height: 96px; border-radius: var(--r-card); border: none; background: var(--tile); color: var(--ink); text-align: left; }
+.cat-tile .ic { width: 40px; height: 40px; border-radius: var(--r-input); background: var(--surface); color: var(--primary); display: grid; place-items: center; }
+.cat-tile strong { font-size: var(--fs-body); line-height: 1.2; }
+.cat-tile small { color: var(--muted); font-size: var(--fs-caption); font-variant-numeric: tabular-nums; }
+.stebby-chip { background: var(--warning-bg); color: var(--warning); }
+.stebby-chip svg { color: var(--warning); }

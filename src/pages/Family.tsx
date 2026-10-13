@@ -118,7 +118,7 @@ export function Family() {
         <div className="list-card padded">
           <p className="small">{t('Everything you enter stays on this phone. No account, no tracking.')}</p>
           {CONTACT_EMAIL && (
-            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Parents Hub')}`} className="link-more">
+            <a href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent('Kuhu Minna')}`} className="link-more">
               {t('Send feedback')} <ChevronRight size={16} />
             </a>
           )}
@@ -142,7 +142,7 @@ export function Family() {
         </div>
       </section>
 
-      <p className="footnote">Parents Hub · Eesti</p>
+      <p className="footnote">Kuhu Minna · Eesti</p>
     </>
   )
 }

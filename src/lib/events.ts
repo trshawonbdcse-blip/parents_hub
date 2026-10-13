@@ -72,7 +72,7 @@ export function icsFor(e: KidEvent): string {
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Parents Hub Tallinn//EN',
+    'PRODID:-//Kuhu Minna//EN',
     'BEGIN:VEVENT',
     `UID:${e.id}@parents-hub`,
     `DTSTAMP:${stamp(new Date())}`,

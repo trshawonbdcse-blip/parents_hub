@@ -11,6 +11,9 @@ import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
 import { useWeather, type OutdoorMode } from '../lib/weather'
 import { useAgo } from '../lib/useAgo'
+import { useMode } from '../lib/mode'
+import { ModeSwitch } from '../components/ModeSwitch'
+import { TodayMe } from './TodayMe'
 import type { Place, Visit } from '../types'
 
 const NO_VISITS: Visit[] = []
@@ -39,6 +42,11 @@ function reasonsFor(p: Place, mode: OutdoorMode, napStart: string, favourite: bo
 }
 
 export function Today() {
+  const [appMode] = useMode()
+  return appMode === 'me' ? <TodayMe /> : <TodayFamily />
+}
+
+function TodayFamily() {
   const { t, locale } = useT()
   const { months, name, napStart } = useChild()
   const [city] = useCity()
@@ -70,11 +78,12 @@ export function Today() {
     <div className="page today">
       <header className="hero-header">
         <div className="hero-top">
-          <span className="brand" aria-label="Parents Hub">
-            parents hub
+          <span className="brand" aria-label="Kuhu Minna">
+            kuhu minna
           </span>
           <CityPicker />
         </div>
+        <ModeSwitch />
         <h1>{firstName ? t('What shall we do today with {name}?', { name: firstName }) : t('What shall we do today?')}</h1>
         <div className="chip-line">
           {weather && (
