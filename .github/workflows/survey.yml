@@ -1,0 +1,32 @@
+name: Data survey
+
+# One-off research runs (started by hand): OSM counts per category and city, dataset licences.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: OSM counts
+        run: node scripts/survey/osm-counts.mjs
+        continue-on-error: true
+      - name: Dataset licences
+        run: node scripts/survey/licences.mjs
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: survey
+          path: |
+            osm-counts.md
+            osm-counts.json
+            licences.md
+          if-no-files-found: warn
