@@ -10,17 +10,17 @@ permissions:
 jobs:
   survey:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: OSM counts
-        run: node scripts/survey/osm-counts.mjs
-        continue-on-error: true
       - name: Dataset licences
         run: node scripts/survey/licences.mjs
+        continue-on-error: true
+      - name: OSM counts
+        run: node scripts/survey/osm-counts.mjs
         continue-on-error: true
       - uses: actions/upload-artifact@v4
         with:

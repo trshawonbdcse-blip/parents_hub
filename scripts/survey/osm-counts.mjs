@@ -32,48 +32,62 @@ const CATEGORIES = {
   'Sports centre (any)': 'nwr["leisure"="sports_centre"]',
 }
 
-const AREAS = {
-  Estonia: 'area["ISO3166-1"="EE"][admin_level=2]',
-  Tallinn: 'area["name"="Tallinn"]["boundary"="administrative"]',
-  Tartu: 'area["name"="Tartu linn"]["boundary"="administrative"]',
-  Pärnu: 'area["name"="Pärnu linn"]["boundary"="administrative"]',
-  Narva: 'area["name"="Narva linn"]["boundary"="administrative"]',
-  'Ida-Viru county': 'area["name"="Ida-Viru maakond"]["boundary"="administrative"]',
+// City boxes (south, west, north, east): good enough for a survey count.
+const BOXES = {
+  Tallinn: [59.35, 24.55, 59.51, 24.93],
+  Tartu: [58.33, 26.64, 58.42, 26.81],
+  Pärnu: [58.34, 24.43, 58.43, 24.6],
+  Narva: [59.34, 28.13, 59.41, 28.23],
+  'Ida-Viru (east)': [58.95, 26.9, 59.5, 28.25],
 }
 
 async function overpass(q) {
-  for (let attempt = 0; attempt < 4; attempt++) {
+  for (let attempt = 0; attempt < 5; attempt++) {
     for (const url of ENDPOINTS) {
       try {
-        const r = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(q), headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'ParentsHub-survey/1.0' }, signal: AbortSignal.timeout(200000) })
+        const r = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(q), headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'User-Agent': 'ParentsHub-survey/1.0' }, signal: AbortSignal.timeout(400000) })
         if (r.ok) return await r.json()
         console.warn(url, r.status)
       } catch (e) {
         console.warn(url, e.message)
       }
     }
-    await new Promise((r) => setTimeout(r, 20000 * (attempt + 1)))
+    await new Promise((r) => setTimeout(r, 30000 * (attempt + 1)))
   }
-  return null
+  throw new Error('Overpass unavailable')
 }
 
+// One download of everything (centre points + tags), then count per category and city locally.
 const names = Object.keys(CATEGORIES)
-const table = {}
-// Small batches per area keep each Overpass query short enough not to time out.
-for (const [areaName, areaSel] of Object.entries(AREAS)) {
-  table[areaName] = {}
-  for (let i = 0; i < names.length; i += 7) {
-    const batch = names.slice(i, i + 7)
-    const q = `[out:json][timeout:170];${areaSel}->.a;` + batch.map((n) => `${CATEGORIES[n]}(area.a);out count;`).join('')
-    const j = await overpass(q)
-    const counts = j ? j.elements.filter((e) => e.type === 'count').map((e) => Number(e.tags.total)) : []
-    batch.forEach((n, k) => (table[areaName][n] = counts[k] ?? null))
-    console.log(areaName, JSON.stringify(Object.fromEntries(batch.map((n) => [n, table[areaName][n]]))))
-    await new Promise((r) => setTimeout(r, 5000))
-  }
+const q = `[out:json][timeout:360];area["ISO3166-1"="EE"][admin_level=2]->.a;(${names.map((n) => `${CATEGORIES[n]}(area.a);`).join('')});out tags center;`
+const j = await overpass(q)
+console.log(`downloaded ${j.elements.length} elements`)
+const matchers = Object.fromEntries(
+  names.map((n) => {
+    const sel = CATEGORIES[n]
+    const type = sel.startsWith('relation') ? 'relation' : null
+    const conds = [...sel.matchAll(/\["([^"]+)"(?:(=|!~|~)"([^"]*)")?\]/g)].map(([, k, op, v]) => ({ k, op, v }))
+    return [n, (e) => (!type || e.type === type) && conds.every(({ k, op, v }) => {
+      const val = e.tags?.[k]
+      if (!op) return val !== undefined
+      if (op === '=') return val === v
+      if (op === '~') return val !== undefined && new RegExp(v).test(val)
+      return val === undefined || !new RegExp(v).test(val)
+    })]
+  }),
+)
+const where = (e) => {
+  const lat = e.center?.lat ?? e.lat, lon = e.center?.lon ?? e.lon
+  return Object.entries(BOXES).filter(([, [s, w, n, ea]]) => lat >= s && lat <= n && lon >= w && lon <= ea).map(([k]) => k)
+}
+const areasList = ['Estonia', ...Object.keys(BOXES)]
+const table = Object.fromEntries(areasList.map((a) => [a, Object.fromEntries(names.map((n) => [n, 0]))]))
+for (const e of j.elements) {
+  const inAreas = ['Estonia', ...where(e)]
+  for (const n of names) if (matchers[n](e)) for (const a of inAreas) table[a][n]++
 }
 
-const areas = Object.keys(AREAS)
+const areas = areasList
 const md = ['# OSM counts per category and area', '', `| Category | ${areas.join(' | ')} |`, `|---|${areas.map(() => '---:').join('|')}|`, ...names.map((n) => `| ${n} | ${areas.map((a) => table[a][n] ?? '–').join(' | ')} |`)].join('\n')
 console.log(md)
 import fs from 'node:fs'
