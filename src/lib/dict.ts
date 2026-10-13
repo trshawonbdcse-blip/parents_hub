@@ -384,6 +384,17 @@ export const DICT: Record<string, Entry> = {
   Beaches: { et: 'Rannad', ru: 'Пляжи' },
   'Ice skating': { et: 'Uisutamine', ru: 'Катание на коньках' },
   Libraries: { et: 'Raamatukogud', ru: 'Библиотеки' },
+  // Adult descriptions for OpenStreetMap places
+  'A gym. Check day-pass prices and opening hours before you go.': { et: 'Jõusaal. Vaata enne minekut päevapileti hinda ja lahtiolekuaegu.', ru: 'Спортзал. Перед походом уточните цену разового посещения и часы работы.' },
+  'A cinema. See today’s films and times on its website.': { et: 'Kino. Tänased filmid ja ajad leiad kodulehelt.', ru: 'Кинотеатр. Сегодняшние фильмы и сеансы — на его сайте.' },
+  'A nature spot or trail, free to visit. Wear good shoes and check the season.': { et: 'Looduskoht või matkarada, tasuta. Pane selga mugavad jalanõud ja arvesta aastaajaga.', ru: 'Природное место или тропа, бесплатно. Наденьте удобную обувь и учитывайте сезон.' },
+  'A public park, free to visit. Good for a walk, some fresh air or a quiet bench.': { et: 'Avalik park, tasuta. Hea koht jalutuskäiguks, värske õhu või vaikse pingi jaoks.', ru: 'Городской парк, вход свободный. Подходит для прогулки, свежего воздуха или тихой скамейки.' },
+  'A public library, free to visit. A quiet place to read, work or borrow books.': { et: 'Avalik raamatukogu, tasuta. Vaikne koht lugemiseks, töötamiseks või raamatute laenutamiseks.', ru: 'Публичная библиотека, вход свободный. Тихое место, чтобы почитать, поработать или взять книги.' },
+  'A museum or gallery. Check its website for current exhibitions and tickets.': { et: 'Muuseum või galerii. Vaata kodulehelt praeguseid näitusi ja pileteid.', ru: 'Музей или галерея. Текущие выставки и билеты смотрите на сайте.' },
+  'A swimming pool or water park. Check lane times and adult tickets before you go.': { et: 'Ujula või veekeskus. Vaata enne minekut radade aegu ja täiskasvanu pileteid.', ru: 'Бассейн или аквапарк. Перед походом уточните время дорожек и цены взрослых билетов.' },
+  'Animals to see, at your own pace. Check opening times before you go.': { et: 'Loomi saab vaadata omas tempos. Vaata enne minekut lahtiolekuaegu.', ru: 'Животных можно смотреть в своём темпе. Перед походом уточните часы работы.' },
+  'A public beach, free. Good for a swim or a walk by the water in summer.': { et: 'Avalik rand, tasuta. Suvel hea koht ujumiseks või jalutamiseks vee ääres.', ru: 'Общественный пляж, бесплатно. Летом — чтобы поплавать или погулять у воды.' },
+  'An ice rink. Check the season, opening times and skate hire before you go.': { et: 'Uisuväli. Vaata enne minekut hooaega, lahtiolekuaegu ja uiskude laenutust.', ru: 'Каток. Перед походом уточните сезон, часы работы и прокат коньков.' },
   // Teal & Sun theme
   'What is wrong or has changed? (date, place, cancelled…)': { et: 'Mis on valesti või muutunud? (kuupäev, koht, ära jäänud…)', ru: 'Что неверно или изменилось? (дата, место, отменено…)' },
   'What is wrong or has changed? (price, opening hours, closed…)': { et: 'Mis on valesti või muutunud? (hind, lahtiolekuajad, suletud…)', ru: 'Что неверно или изменилось? (цена, часы работы, закрыто…)' },

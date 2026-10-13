@@ -79,6 +79,17 @@ const DESCRIPTION: Record<Category, string> = {
   nature: 'A nature spot or trail, free to visit. Wear good shoes and check the season.',
 }
 
+// The same kinds of place, described for an adult going alone ("Just me" mode).
+const DESCRIPTION_ME: Partial<Record<Category, string>> = {
+  park: 'A public park, free to visit. Good for a walk, some fresh air or a quiet bench.',
+  library: 'A public library, free to visit. A quiet place to read, work or borrow books.',
+  museum: 'A museum or gallery. Check its website for current exhibitions and tickets.',
+  swimming: 'A swimming pool or water park. Check lane times and adult tickets before you go.',
+  'zoo-farm': 'Animals to see, at your own pace. Check opening times before you go.',
+  beach: 'A public beach, free. Good for a swim or a walk by the water in summer.',
+  'winter-fun': 'An ice rink. Check the season, opening times and skate hire before you go.',
+}
+
 const FREE_KINDS: Category[] = ['playground', 'park', 'beach', 'library', 'nature']
 const DURATION: Partial<Record<Category, number>> = { playground: 60, park: 60, library: 45, museum: 90, swimming: 120, beach: 120, 'winter-fun': 60, 'indoor-play': 120, 'zoo-farm': 120, gym: 75, cinema: 120, nature: 120, theatre: 120 }
 const yesNo = (v?: string) => (v === 'yes' ? true : v === 'no' ? false : null)
@@ -104,6 +115,7 @@ function toPlace(r: Rec, lang: Lang): Place {
     ageMinMonths: 0,
     ageMaxMonths: 144,
     description: tr(DESCRIPTION[r.c], undefined, lang),
+    descriptionMe: DESCRIPTION_ME[r.c] ? tr(DESCRIPTION_ME[r.c]!, undefined, lang) : undefined,
     tips: null,
     price: { free, adult: free ? 0 : null, child: free ? 0 : null, childFreeUnderMonths: null, family: null, note: null },
     discounts: [],

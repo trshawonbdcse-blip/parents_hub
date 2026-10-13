@@ -69,6 +69,8 @@ export interface Place {
   ageMinMonths: number
   ageMaxMonths: number
   description: string
+  // Written for an adult going alone ("Just me" mode); falls back to description.
+  descriptionMe?: string
   tips: string | null
   price: Price
   discounts: string[]

@@ -100,7 +100,7 @@ export function PlaceDetail() {
     )
   }
 
-  const text = placeText(place)
+  const text = placeText(place, me)
   const stebby = stebbyInfo(place)
   const photos = place.photos ?? []
   const fav = favorites.has(place.id)

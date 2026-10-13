@@ -4,6 +4,7 @@ import { getLang, type Lang } from './i18n'
 
 interface PlaceTranslation {
   description?: string
+  descriptionMe?: string
   tips?: string | null
   hours?: string
   priceNote?: string | null
@@ -48,10 +49,12 @@ export function usePlaceTexts(lang: Lang) {
 }
 
 // A place's free-text fields in the current language, falling back to English.
-export function placeText(p: Place) {
+// me = "Just me" mode: use the adult description when there is one.
+export function placeText(p: Place, me = false) {
   const tr = TABLES[getLang()]?.[p.id] ?? {}
+  const adult = me ? tr.descriptionMe || (getLang() === 'en' || !tr.description ? p.descriptionMe : undefined) : undefined
   return {
-    description: tr.description || p.description,
+    description: adult || tr.description || p.description,
     tips: tr.tips ?? p.tips,
     hours: tr.hours || p.hours,
     priceNote: tr.priceNote ?? p.price.note,
