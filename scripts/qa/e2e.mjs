@@ -310,6 +310,11 @@ await flow('first open asks who you plan for → Just me', async (page) => {
 for (const lang of ['en', 'et', 'ru']) {
   const page = await newPage({ lang, mode: 'me', storage: { 'ph.stebby': true } })
   for (const s of ['#/', '#/explore', '#/explore?cat=swimming', '#/explore?cat=museum', '#/place/kalev-spa-water-park', '#/me?tab=moments']) await checkScreen(page, s, `${lang} just-me ${s}`)
+  // Adult description in Just me mode, in the page's language.
+  const kalev = places.find((p) => p.id === 'kalev-spa-water-park')
+  const want = lang === 'en' ? kalev.descriptionMe : PT[lang]['kalev-spa-water-park'].descriptionMe
+  const text = await checkScreen(page, '#/place/kalev-spa-water-park', `${lang} just-me adult text`)
+  if (!text.replace(/\s+/g, ' ').includes(want.slice(0, 40))) fail(`${lang} just-me place`, 'adult description not shown')
   await page.context().close()
 }
 

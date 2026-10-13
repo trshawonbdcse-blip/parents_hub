@@ -14,6 +14,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Estonia's only zoo has wide paved paths that work well with a stroller and plenty of big animals for a toddler to point at. In winter the indoor exhibitions and the Children's Zoo barn give you warm breaks between outdoor loops.",
+    "descriptionMe": "Estonia's only zoo, with wide paved paths and plenty of big animals for an unhurried walk. In winter the indoor exhibitions give you warm breaks between outdoor loops.",
     "tips": "Pre-school children get in free with the paying adult, so a toddler visit costs only the adult or family ticket.",
     "price": {
       "free": false,
@@ -93,6 +94,7 @@
     "ageMinMonths": 6,
     "ageMaxMonths": 144,
     "description": "A small farm-animal corner inside the zoo, with goats and other domestic animals at toddler eye level. In winter the animals live in a barn you can walk through, so it still works on cold days.",
+    "descriptionMe": "A small farm-animal corner inside Tallinn Zoo with goats and other domestic animals. Mostly for families; for you it's a short, calm stop on a zoo walk.",
     "tips": "The barn is closed on the last Monday of each month for cleaning, and the goat yard shuts in bad or very cold weather.",
     "price": {
       "free": false,
@@ -157,6 +159,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A hands-on children's museum in Kadriorg Park with role-play rooms and things to touch, open, and climb. It's aimed mostly at preschoolers, but a confident walker will find plenty to do too.",
+    "descriptionMe": "A hands-on museum built for preschoolers, so there's little here for an adult alone. Kadriorg Park around it, with Kumu a few minutes away, is the better plan for you.",
     "tips": "You need a time-slot ticket for everyone, including free babies, and on weekends tickets are sold only online in advance.",
     "price": {
       "free": false,
@@ -221,6 +224,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A huge maritime museum in old seaplane hangars, with a real submarine, boats, and lots of open floor for a toddler to wander. Outside you can visit the Suur Tõll icebreaker on the same ticket.",
+    "descriptionMe": "A huge maritime museum in old seaplane hangars, with a real submarine and boats to explore. Outside, the Suur Tõll icebreaker is included in the same ticket.",
     "tips": "Food and drink can't be brought inside, so plan snacks before or after.",
     "price": {
       "free": false,
@@ -304,6 +308,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Estonia's main art museum is a big, airy modern building where a toddler can look at colourful works while you have a quieter, warm outing. It runs family programmes, but those are aimed at 4-8 year olds, so with a 1-2 year old treat it as a slow stroll.",
+    "descriptionMe": "Estonia's main art museum, a big, airy modern building for a quiet, warm outing with art. A good bad-weather choice in Kadriorg.",
     "tips": "The family ticket allows one visit within a year of purchase, so you can buy it ahead and go on a bad-weather day.",
     "price": {
       "free": false,
@@ -383,6 +388,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Tallinn's grandest park has paved paths for strollers, the Swan Pond, and flower gardens that are nice for a slow walk with a napping baby. Cafés, toilets, and playgrounds are spread around the park, so it's easy to stay for half a day.",
+    "descriptionMe": "Tallinn's grandest park, with the Swan Pond, flower gardens and paved paths for a slow walk. Cafés are spread around, and Kumu is a few minutes away.",
     "tips": "Pair a park walk with Miiamilla or Kumu on the same trip, as all three are a few minutes apart.",
     "price": {
       "free": true,
@@ -533,6 +539,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Big outdoor gardens and forest paths for summer, plus a warm Palm House and greenhouses that make a good winter outing with a toddler. Paths are mostly calm and spacious, with picnic areas for snack breaks.",
+    "descriptionMe": "Big outdoor gardens and forest paths for summer, plus a warm Palm House and greenhouses in winter. The paths are calm and spacious, with picnic spots along the way.",
     "tips": "The Palm House is closed on the last Monday of each month.",
     "price": {
       "free": false,
@@ -613,6 +620,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Tallinn's longest sandy beach has children's playgrounds, changing cabins, and lifeguards in summer. The shallow sand is great for a toddler with a bucket and spade, and the pine woods behind it give shade.",
+    "descriptionMe": "Tallinn's longest sandy beach, with pine woods behind it for shade and lifeguards in summer. Good for sea air, a swim or a long walk along the sand.",
     "tips": "Lifeguards are on duty in summer 9:00-20:00 on weekdays and 9:00-21:00 at weekends, so pick those hours for paddling.",
     "price": {
       "free": true,
@@ -680,6 +688,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A locals' beach in northern Tallinn with shallow water, a playground, and long paved paths for strollers. Outdoor cafés and an ice-cream truck in summer make it easy to stay a while.",
+    "descriptionMe": "A locals' beach in northern Tallinn with long paved paths for a walk and outdoor cafés in summer. Check the city's bathing water notices before swimming.",
     "tips": "Water quality is said to be a bit lower than at Pirita, so check the city's bathing water notices before swimming.",
     "price": {
       "free": true,
@@ -751,6 +760,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A green park right under the Old Town walls, built around the last surviving piece of the old moat. It's a short, flat loop with ducks to watch, ideal for a quick stroller walk between city errands.",
+    "descriptionMe": "A green park right under the Old Town walls, built around the last surviving piece of the old moat. A short, flat loop with ducks; in winter the pond is a popular skating spot.",
     "tips": "In winter the pond is a popular skating spot, which toddlers love to watch from the path.",
     "price": {
       "free": true,
@@ -902,6 +912,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A former cemetery turned into a leafy local park in the Kalamaja neighbourhood, popular with families for a quiet walk. It's a handy stop if you're spending the day in Kalamaja or at the Seaplane Harbour.",
+    "descriptionMe": "A former cemetery turned into a leafy local park in Kalamaja, good for a quiet walk. A handy stop if you're spending the day in Kalamaja or at the Seaplane Harbour.",
     "tips": null,
     "price": {
       "free": true,
@@ -969,6 +980,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A big seaside park of old farmhouses, windmills, and forest paths, with Farm Kid's World offering domestic animals and an outdoor adventure trail for small children. It's a full day out with lots of space for a toddler to explore.",
+    "descriptionMe": "A big seaside park of old farmhouses, windmills and forest paths, easily a full day out. Farm Kid's World is aimed at small children; the rest is yours to wander.",
     "tips": "Children up to 8 get in free, and Farm Kid's World is only open Thursday to Sunday in winter.",
     "price": {
       "free": false,
@@ -1051,6 +1063,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "The central library's main building has a parent-and-baby room with a changing table, sink, and armchair for feeding, which makes it a calm city-centre stop with a little one. Children up to 7 can get a free library card under the 'Born to Be a Reader' programme.",
+    "descriptionMe": "The Tallinn Central Library's main building in the city centre, a calm indoor stop for browsing books or reading quietly.",
     "tips": "Ask about the free library card for children under 7, which comes with a keepsake card pocket.",
     "price": {
       "free": true,
@@ -1108,6 +1121,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 60,
     "description": "A small neighbourhood library that has run 'põnnihommik' (toddler mornings) with stories and play for 2-5 year olds and their parents. It's free, gentle, and a nice way to meet other local families.",
+    "descriptionMe": "A small neighbourhood library in Kalamaja. These toddler mornings are only for families with small children; for you it's simply a quiet local library.",
     "tips": "The latest library page says the sessions were paused and would return in autumn, so call 683 0970 or email kalamaja@tln.lib.ee to check dates and registration.",
     "price": {
       "free": true,
@@ -1165,6 +1179,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "An Old Town house full of children's books, illustration galleries, and a fairytale attic on the top floor where kids can play and read. It runs toddler sessions and Saturday family mornings, so it's a cosy winter option.",
+    "descriptionMe": "An Old Town house devoted to children's books, with illustration galleries worth a look if you like book art. Most of the programme is for families.",
     "tips": "Groups and special sessions should be booked ahead by phone.",
     "price": {
       "free": false,
@@ -1391,6 +1406,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A city-centre water park with a small children's pool with attractions, kids' slides, and a separate training pool, a good warm option in winter. It's walkable from the Old Town, so it's easy to combine with other plans.",
+    "descriptionMe": "A city-centre water park with a separate training pool for swimming laps, a warm option in winter. Walkable from the Old Town, so it's easy to fit into a day in town.",
     "tips": "Go on a weekday, when the family pass is cheaper than at weekends.",
     "price": {
       "free": false,
@@ -1506,6 +1522,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A farm west of Tallinn with goats, sheep, rabbits, poultry, and more unusual animals like kangaroos and ostriches, most of which you can pet. A guide introduces the animals, which toddlers usually love.",
+    "descriptionMe": "A farm west of Tallinn with goats, sheep, poultry and more unusual animals like kangaroos and ostriches, most of which you can pet. A guide introduces the animals.",
     "tips": "Visits are by advance booking only, so contact info@ratsepa.ee or +372 529 9849 first.",
     "price": {
       "free": false,
@@ -2480,6 +2497,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A large spa and pool complex with a separate toddler pool, a kids' area with slides and a 25 m sports pool. The adults-only Spa21+ is a separate zone. Babies under 2 go free, which makes it one of the best-value water trips with a toddler.",
+    "descriptionMe": "A large spa and pool complex with a 25 m sports pool for laps. The adults-only Spa21+ is a separate zone, away from the family areas.",
     "tips": "Parking is free for spa visitors for 8 hours.",
     "price": {
       "free": false,
@@ -2542,6 +2560,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A spa and sauna centre in Õismäe with several pools and a separate children's pool. Child tickets are cheap, so it's a relaxed option for parents who also want a sauna.",
+    "descriptionMe": "A spa and sauna centre in Õismäe with several pools, a relaxed place for a swim and a sauna. Weekday late mornings are the quietest.",
     "tips": "Weekday mornings (11:00-13:00) are cheapest and quietest.",
     "price": {
       "free": false,
@@ -2609,6 +2628,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A hotel water centre near the passenger port with a large indoor pool, a 30 cm deep children's pool and an outdoor pool open all year. The paddling pool is a gentle spot for toddlers.",
+    "descriptionMe": "A hotel water centre near the passenger port with a large indoor pool and an outdoor pool open all year, so you can swim in the open air even in winter.",
     "tips": null,
     "price": {
       "free": false,
@@ -3037,6 +3057,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 36,
     "description": "Nõmme's branch library runs a monthly põnnihommik (toddler morning) with stories, play and drawing, and one listing pitches it at roughly 1.5–3-year-olds. A calm, small-group first library experience close to Nõmme station.",
+    "descriptionMe": "Nõmme's branch library close to Nõmme station. The toddler morning is only for small children with parents; for you it's a calm local library.",
     "tips": "Held on the third Wednesday of the month at 11:00 per library listings; confirm on the events calendar as listings are of mixed dates.",
     "price": {
       "free": true,
@@ -3093,6 +3114,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 60,
     "description": "Tondi library invites 2–5-year-olds with a parent to a Saturday põnnihommik of picture books, play and crafts. One of the few branches listed as running it every week rather than monthly.",
+    "descriptionMe": "Tondi's neighbourhood library in Kristiine. The Saturday toddler morning is for families only; for you it's a quiet place to browse books.",
     "tips": "Listings say every Saturday at 12:00; phone 674 8647 to confirm.",
     "price": {
       "free": true,
@@ -3148,6 +3170,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 60,
     "description": "Männiku's library, upstairs in the Männi community centre, holds a monthly Saturday põnnihommik for 2–5-year-olds with parents. Expect picture books, simple games and a craft.",
+    "descriptionMe": "Männiku's library, upstairs in the Männi community centre in Nõmme. The toddler morning is for families; for you it's a small, quiet local library.",
     "tips": "Listings conflict (3rd Saturday 10:00 vs 2nd Saturday 11:00); call 655 9718 before going.",
     "price": {
       "free": true,
@@ -3203,6 +3226,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 60,
     "description": "Kännukuke, Mustamäe's children-oriented branch, welcomes toddlers with a parent to a põnnihommik on the first Saturday of the month. Sessions break over summer and resume in autumn.",
+    "descriptionMe": "Kännukuke is Mustamäe's children-oriented library branch, and the toddler morning is for parents with little ones. Little here is aimed at an adult alone.",
     "tips": "First Saturday of the month at 12:00 per listing; phone 683 0951 to confirm the autumn restart.",
     "price": {
       "free": true,
@@ -3258,6 +3282,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 60,
     "description": "Sõle library in Põhja-Tallinn has run Saturday põnnihommik sessions (11:00–12:00) for pre-schoolers with a parent, in both Estonian and Russian. Useful for Russian-speaking families too.",
+    "descriptionMe": "Sõle library in Põhja-Tallinn. The toddler mornings in Estonian and Russian are for pre-schoolers with a parent; for you it's a quiet neighbourhood library.",
     "tips": "Contact sole@tln.lib.ee / 601 9153 for the current dates.",
     "price": {
       "free": true,
@@ -3313,6 +3338,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 48,
     "description": "Pirita library is listed among branches holding põnnihommik sessions for 2–4-year-olds with a parent, with stories, games and drawing in Estonian and Russian. A small neighbourhood library near Pirita's forest paths.",
+    "descriptionMe": "A small neighbourhood library near Pirita's forest paths. The toddler sessions are for families; for you it's a quiet stop before or after a walk in the woods.",
     "tips": "No current schedule found; check the events calendar.",
     "price": {
       "free": true,
@@ -3368,6 +3394,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 48,
     "description": "The foreign-language literature library has a dedicated parent-and-baby room (armchair, changing table, sink) and runs a Russian-language põnnihommik for 2–4-year-olds. A good central stop for international families looking for books in other languages.",
+    "descriptionMe": "The foreign-language literature library in the city centre, a good stop for books in other languages. The parent-and-baby room and toddler mornings are for families.",
     "tips": "Põnnihommik places are limited and pre-registration is compulsory.",
     "price": {
       "free": true,
@@ -3424,6 +3451,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "Stuffed animals, aquariums and nature dioramas that toddlers love pointing at, in a compact Old Town building. The Lai street house closes on 31 October 2026 and the museum reopens in a new Noblessner building in 2027.",
+    "descriptionMe": "Stuffed animals, aquariums and nature dioramas in a compact Old Town building. The Lai street house closes on 31 October 2026, and the museum reopens at Noblessner in 2027.",
     "tips": "Last chance until 31 Oct 2026; afterwards re-list at the Noblessner address when it opens.",
     "price": {
       "free": false,
@@ -3482,6 +3510,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "A medieval cannon tower with a medieval cog wreck, ship models and around 50 hands-on and digital stations. Fun for older toddlers who like buttons and boats, but expect towers and stairs.",
+    "descriptionMe": "A medieval cannon tower housing a medieval cog wreck, ship models and around 50 hands-on and digital stations. Expect towers and stairs.",
     "tips": "Children 8 and under are free, so one adult ticket plus toddler is cheap; family ticket if two adults.",
     "price": {
       "free": false,
@@ -3549,6 +3578,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "The palace museum has a hands-on children's exhibition ('I want to play!' / Children's Republic) and an outdoor playground shaped like the map of Estonia overlooking Tallinn Bay. Easy to combine with a seaside walk along Pirita tee.",
+    "descriptionMe": "A palace museum of Estonian history overlooking Tallinn Bay, easy to pair with a seaside walk along Pirita tee. The hands-on exhibition and playground are aimed at children.",
     "tips": "The Estonia-shaped playground outside is a good reward after the indoor rooms.",
     "price": {
       "free": false,
@@ -3607,6 +3637,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 144,
     "description": "Tallinn City Museum's Old Town house tells the city's story with historic interiors and objects; better for curious older toddlers than babies. Preschoolers up to 6 enter free and the first Sunday of the month is free for everyone.",
+    "descriptionMe": "Tallinn City Museum's Old Town house tells the city's story through historic interiors and objects, a focused look at local history right in the Old Town.",
     "tips": "Free Museum Sunday (1st Sunday) needs advance booking, with a ticket issued for every visitor including children.",
     "price": {
       "free": false,
@@ -3664,6 +3695,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 144,
     "description": "A VR-heavy experience centre about historic inventions; mostly for older kids, but toddlers get a construction area, air cannons and curved mirrors. Under-6s are free, so it works if you are bringing older siblings.",
+    "descriptionMe": "An experience centre in Kalamaja about historic inventions, built around VR. A playful way to spend an hour or two indoors, even without kids.",
     "tips": "Weekday tickets are cheaper than weekends; most VR is not for toddlers.",
     "price": {
       "free": false,
@@ -3744,6 +3776,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 144,
     "description": "Kids can handle table, rod and hand puppets and marionettes, and short plays or storytimes sometimes run during the day. Under-3s free, but the museum is not stroller-accessible.",
+    "descriptionMe": "A museum of puppetry in the city centre with table, rod and hand puppets and marionettes, some of which you can try yourself. Short performances sometimes run during the day.",
     "tips": "Leave the stroller near the main entrance; reduced and family tickets only at the box office.",
     "price": {
       "free": false,
@@ -4058,6 +4091,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A former limestone quarry turned modern park around a lake with a red suspension bridge; its 'Perepark' (family park) section has many playgrounds and sports courts. Good for a lakeside stroller loop plus playground stop.",
+    "descriptionMe": "A former limestone quarry turned into a modern park around a lake, with a red suspension bridge. A 1.8 km paved loop makes for an easy walk or run.",
     "tips": "There is a 1.8 km paved circuit around the park — easy for strollers.",
     "price": {
       "free": true,
@@ -4330,6 +4364,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A ~2 km seaside walking and cycling route on smooth asphalt with benches and eight playgrounds along the way. Perfect for a stroller walk with regular playground stops.",
+    "descriptionMe": "A roughly 2 km seaside walking and cycling route on smooth asphalt, with benches along the way. Keep going past Russalka onto the Pirita promenade for a longer walk.",
     "tips": "Continue past Russalka onto the Pirita promenade if the little one naps.",
     "price": {
       "free": true,
@@ -4384,6 +4419,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A long seaside path (about 4 km from Russalka to the Pirita river mouth) with separate pedestrian and cycling lanes, sea views and several playgrounds and sports fields along the way. Great for long stroller walks.",
+    "descriptionMe": "A long seaside path, about 4 km from Russalka to the Pirita river mouth, with separate walking and cycling lanes and open sea views. It can get very windy, so dress for it.",
     "tips": "Can be very windy — a stroller rain/wind cover helps.",
     "price": {
       "free": true,
@@ -4460,6 +4496,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A lit nature-conservation park in the middle of Mustamäe with ponds, a children's playground, sports courts and a pedestrian bridge. A calm, local spot for duck-watching and a playground run.",
+    "descriptionMe": "A lit nature-conservation park in the middle of Mustamäe with ponds, sports courts and a pedestrian bridge. A calm local spot for a walk and some duck-watching.",
     "tips": null,
     "price": {
       "free": true,
@@ -4513,6 +4550,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "One of Mustamäe's largest pine parks, with a children's playground, a stony picnic area and a bandstand. In winter the city sets up an outdoor ice rink here.",
+    "descriptionMe": "One of Mustamäe's largest pine parks, with a picnic area and a bandstand. Good for a breath of pine air; in winter the city sets up an outdoor ice rink here.",
     "tips": null,
     "price": {
       "free": true,
@@ -4566,6 +4604,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A nearly six-hectare park around a pond with resident mallards, a lit fountain, paths, benches and children's playgrounds. Duck-spotting plus a playground makes an easy toddler outing.",
+    "descriptionMe": "A nearly six-hectare park around a pond with resident mallards, a lit fountain, paths and benches. An easy place for a short stroll and a sit by the water.",
     "tips": null,
     "price": {
       "free": true,
@@ -4641,6 +4680,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A 9-hectare park ringing the round Õismäe pond, with a family playground, a children's traffic circle, a fitness path and paved loops. A flat, stroller-friendly circuit popular with local families.",
+    "descriptionMe": "A 9-hectare park ringing the round Õismäe pond, with a fitness path and flat paved loops. Popular with local families; for you it's an easy walk or jog around the water.",
     "tips": "The children's traffic circle is great for balance bikes and trikes.",
     "price": {
       "free": true,
@@ -4694,6 +4734,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A protected forest park in Kopli, refurbished in 2021, with winding lit paths, a children's playground, swings, picnic spots and benches. A shady forest walk reachable by tram.",
+    "descriptionMe": "A protected forest park in Kopli, refurbished in 2021, with winding lit paths, picnic spots and benches. A shady forest walk you can reach by tram.",
     "tips": null,
     "price": {
       "free": true,
@@ -4749,6 +4790,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A new green corridor (part of Tallinn's 14 km Putukaväil 'Bug Trail') with play and sports areas between Sõle street and Stroomi beach. In 2025 ERR reported that its play equipment and toilets were closed pending a usage permit, so check status before going.",
+    "descriptionMe": "A new green corridor between Sõle street and Stroomi beach, part of Tallinn's 14 km Putukaväil trail. Fine for a walk toward the sea, but facilities may be closed, so check first.",
     "tips": "Check recent news or the Põhja-Tallinn district before a dedicated trip.",
     "price": {
       "free": true,
@@ -4809,6 +4851,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A 550 m boardwalk (two sections) through the Paljassaare conservation area, where over 220 bird species have been recorded and Highland cattle graze in summer. Toddlers love spotting the cows and birds.",
+    "descriptionMe": "A 550 m boardwalk through the Paljassaare conservation area, where over 220 bird species have been recorded and Highland cattle graze in summer. Bring binoculars if you have them.",
     "tips": "Bus 59 to the Pikakari terminus; paths beyond the boardwalk are unpaved.",
     "price": {
       "free": true,
@@ -4863,6 +4906,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A Blue Flag sandy beach on the Paljassaare peninsula with swings, a children's playground, a boardwalk and outdoor toilets. Note that the water gets deep quickly, so it is better for sand play than paddling.",
+    "descriptionMe": "A Blue Flag sandy beach on the Paljassaare peninsula with a boardwalk. Good for sun and sea air; the water gets deep quickly, so swim with care.",
     "tips": "Keep toddlers close at the waterline — the sea deepens fast here.",
     "price": {
       "free": true,
@@ -4986,6 +5030,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A forested hillside park around Baron von Glehn's 19th-century castle, dotted with unusual sculptures that make a fun 'spot the statue' walk for toddlers. Paths are hilly and partly unpaved.",
+    "descriptionMe": "A forested hillside park around Baron von Glehn's 19th-century castle, dotted with unusual sculptures. Hilly, partly unpaved paths make it a proper little hike in Nõmme.",
     "tips": "A sturdy all-terrain stroller or carrier works better than a city stroller on the slopes.",
     "price": {
       "free": true,
@@ -5056,6 +5101,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A real bog inside city limits: a 4 km trail of dirt paths and boardwalks, plus a separate 2 km children's/accessible route that mainly runs on paved paths and is fully passable with a stroller. A 10 m observation tower sits in the Männiku area.",
+    "descriptionMe": "A real bog inside city limits: a 4 km trail of dirt paths and boardwalks, including a 280 m floating section, plus a 10 m observation tower in Männiku.",
     "tips": "Stick to the 2 km children's loop with a stroller; the 280 m floating boardwalk on the long loop isn't stroller-friendly.",
     "price": {
       "free": true,
@@ -5110,6 +5156,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "Tallinn's only lakeside beach, with children's playgrounds, changing cabins, a shower and ball-game areas. The lake warms up early, so it's one of the first places to paddle in late spring.",
+    "descriptionMe": "Tallinn's only lakeside beach, with changing cabins, a shower and ball-game areas. The lake warms up early, so it's one of the first places for a swim in late spring.",
     "tips": "Lifeguards only June–August.",
     "price": {
       "free": true,
@@ -5171,6 +5218,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A sandy, usually calm beach with relatively shallow water that the official listings call suitable for families with children. Has playgrounds, ball courts, changing cabins, a shower and an ice-cream stand.",
+    "descriptionMe": "A sandy, usually calm beach with fairly shallow water, ball courts, changing cabins, a shower and an ice-cream stand. Arrive early on hot days.",
     "tips": "Arrive early on hot days; parking is free but unguarded.",
     "price": {
       "free": true,
@@ -5232,6 +5280,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "Tallinn's atmospheric open-air rink at the edge of the Old Town, usually open from late November to the end of March. Little ones can toddle on the ice or watch from the side, especially pretty under the evening lights.",
+    "descriptionMe": "Tallinn's atmospheric open-air rink at the edge of the Old Town, usually open from late November to the end of March. Especially pretty for an evening skate under the lights.",
     "tips": "Under-3s have skated free in past seasons; bring a helmet and waterproof mittens.",
     "price": {
       "free": false,
@@ -5297,6 +5346,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "One of Tallinn's city-run outdoor rinks, set up in Männi Park and typically opening earlier (late October/November) than the Old Town rink. A less crowded place for a first wobble on skates.",
+    "descriptionMe": "A city-run outdoor rink in Männi Park that typically opens earlier than the Old Town rink. A less crowded place to get your skating legs back.",
     "tips": null,
     "price": {
       "free": false,
@@ -5350,6 +5400,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "The long, gentle slope of the Song Festival Grounds is Tallinn's classic sledding hill, with snow-tubing tracks and equipment rental when snow allows. Great for toddler sledging with a parent, though it can get crowded.",
+    "descriptionMe": "The long slope of the Song Festival Grounds is Tallinn's classic sledding hill, with snow-tubing tracks and equipment rental when snow allows. Busy on snowy weekends.",
     "tips": "Go early on snowy weekend mornings and stick to the gentler edges away from fast sledders.",
     "price": {
       "free": true,
@@ -5404,6 +5455,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "The hilly Nõmme-Mustamäe forest park near Nõmme market is a favourite free sledding area. Some slopes are steep and nothing is supervised, so pick a gentle run for toddlers.",
+    "descriptionMe": "The hilly Nõmme-Mustamäe forest park near Nõmme market is a favourite free sledding area. Some slopes are steep and unsupervised; bring your own sled.",
     "tips": "Bring your own sled; guides warn some Nõmme hills are dangerously steep.",
     "price": {
       "free": true,
@@ -5456,6 +5508,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "Lit, maintained cross-country trails (1–15 km loops, including an artificial-snow loop) connected by tunnel to the Harku forest trails. Toddlers can ride in a ski pulk/sled while a parent skis, or try their first steps on mini skis.",
+    "descriptionMe": "Lit, maintained cross-country trails with 1 to 15 km loops, including an artificial-snow loop, linked by tunnel to the Harku forest trails. Ski rental is available on site.",
     "tips": "The 5 km loop is reported lit all night; ski rental is available on site (child sizes unconfirmed).",
     "price": {
       "free": true,
@@ -5509,6 +5562,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "The festive market on Town Hall Square with a big Christmas tree, stalls and lights. For toddlers the tree, lights and carousel-style atmosphere are the draw; go early in the day to avoid evening crowds.",
+    "descriptionMe": "The festive market on Town Hall Square with a big Christmas tree, stalls and lights. Wander the cobbles and soak up the atmosphere; evenings get crowded.",
     "tips": "Cobbles are bumpy — a carrier is easier than a stroller.",
     "price": {
       "free": true,
@@ -5584,6 +5638,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A riverside manor park with the Keila waterfall, footbridges and a 2.1 km nature trail, about 30–40 minutes' drive west of Tallinn. Only the first 250 m are stroller/wheelchair accessible, and stairs lead down to the falls.",
+    "descriptionMe": "A riverside manor park with the Keila waterfall, footbridges and a 2.1 km nature trail, about 30–40 minutes' drive west of Tallinn. Stairs lead down to the falls.",
     "tips": "Bring a baby carrier for the stairs down to the waterfall.",
     "price": {
       "free": true,
@@ -5659,6 +5714,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "Estonia's widest natural waterfall, about 25 km (≈30 min) east of Tallinn, reached by a short walk from the car park on gravel paths. Toddlers love the roar; in cold winters it freezes into ice curtains.",
+    "descriptionMe": "Estonia's widest natural waterfall, about 30 minutes east of Tallinn, a short walk from the car park. In cold winters it freezes into ice curtains; the bank is unfenced in places.",
     "tips": "The riverbank is unfenced in places — keep toddlers in hand or carrier near the edge.",
     "price": {
       "free": true,
@@ -5729,6 +5785,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "RMK's famous bog boardwalk; the first 1.3 km to the observation tower is built to suit wheelchairs and prams (with a ramp to the tower's first platform). Roughly 45–50 minutes' drive from Tallinn, so it's at the edge of a toddler day trip.",
+    "descriptionMe": "RMK's famous bog boardwalk in Lahemaa, about 45–50 minutes' drive from Tallinn, with an observation tower along the way. Very busy on summer weekends.",
     "tips": "After the tower ramp the boardwalk narrows — turn back at the tower with a stroller; very busy on summer weekends.",
     "price": {
       "free": true,
@@ -5789,6 +5846,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A small farm zoo where children can see and pet animals and birds, visit the barn and stables, and ride a pony. Combine it with the nearby Tuhala Witch's Well (Nõiakaev).",
+    "descriptionMe": "A small farm zoo with animals and birds, a barn and stables. Mostly for families; for you it's a quiet countryside stop to pair with the nearby Tuhala Witch's Well.",
     "tips": "Bring cabbage, carrots or bird seed to feed the animals; call ahead for hours.",
     "price": {
       "free": false,
@@ -5851,6 +5909,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A tourist farm about 45 minutes southwest of Tallinn with pygmy goats, rabbits, chickens and geese to meet and feed, plus a playground with an old bus to explore and a trampoline. Near Rummu lake.",
+    "descriptionMe": "A tourist farm about 45 minutes southwest of Tallinn with pygmy goats, rabbits, chickens and geese, near Rummu lake. Mostly for families; the animal park is by booking only.",
     "tips": "The animal park is by advance booking only.",
     "price": {
       "free": false,
@@ -5914,6 +5973,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A sandy-bottomed seaside beach backed by pine forest, about 40 km west of Tallinn, and the start of the 7 km Laulasmaa–Lohusalu shore trail. Sand play and pine-forest picnics make an easy summer day out.",
+    "descriptionMe": "A sandy seaside beach backed by pine forest, about 40 km west of Tallinn, and the start of the 7 km Laulasmaa–Lohusalu shore trail. Walk as much of it as you like.",
     "tips": "You can walk just a short stretch of the shore trail and turn back.",
     "price": {
       "free": true,
@@ -5974,6 +6034,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 216,
     "description": "Estonia's biggest science centre has several floors of hands-on exhibits, a planetarium and changing exhibitions. Most exhibits target school-age children, but a toddler can still enjoy the water, light and sound stations and lots of buttons to press.",
+    "descriptionMe": "Estonia's biggest science centre, with several floors of hands-on exhibits, a planetarium and changing exhibitions. Fun to explore at your own pace as a curious adult.",
     "tips": "Pre-school children enter free with a ticket-buying adult (14+), so for a toddler you only pay the adult or family ticket.",
     "price": {
       "free": false,
@@ -6043,6 +6104,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Estonia's national museum sits in a huge modern building on the old Raadi airfield, with long, level, step-free halls that are easy with a stroller. A toddler will mostly enjoy the space, the colourful displays and the open grounds outside; check the museum's site for family activities and children's programmes.",
+    "descriptionMe": "Estonia's national museum in a huge modern building on the old Raadi airfield, with long, open halls. Afterwards, walk the Raadi park and airfield grounds outside.",
     "tips": "The long flat corridors are good for a toddler who wants to walk, and the Raadi park and airfield outside are free for a run-around afterwards.",
     "price": {
       "free": false,
@@ -6115,6 +6177,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A small museum in old wooden houses in Tartu Old Town with thousands of toys, dolls and puppets, plus a children's playroom. It is one of the best indoor places in Tartu for a 1–3 year old because there is a dedicated play space, not just display cases.",
+    "descriptionMe": "A small museum in old wooden houses in Tartu Old Town, with thousands of toys, dolls and puppets on display. A quirky, nostalgic stop on an Old Town walk.",
     "tips": "The playroom closes earlier (16:00) than the exhibitions, so come in the morning or early afternoon if play is the main goal.",
     "price": {
       "free": false,
@@ -6175,6 +6238,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Tartu's central water centre has a swimming pool, a leisure water park with slides and a sauna centre, right next to AHHAA. Warm shallow water makes it a good rainy-day option with a toddler, though children are not free here.",
+    "descriptionMe": "Tartu's central water centre next to AHHAA, with a swimming pool, slides and a sauna centre. Good for swimming laps or warming up in the sauna on a rainy day.",
     "tips": "Weekday daytime tickets are the cheapest; children under 10 need an accompanying person aged 16+ with a ticket for the same zone.",
     "price": {
       "free": false,
@@ -6247,6 +6311,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "The outdoor garden is free and has stroller-friendly paths, ponds and a children's play area; the university has been building a nature play space with a mud kitchen and a play stream. The ticketed palm house is a warm, green winter walk that toddlers usually love.",
+    "descriptionMe": "A free outdoor garden in Tartu Old Town with ponds and calm paths, plus a ticketed palm house that makes a warm, green walk in winter.",
     "tips": "Keep the paid greenhouse for cold or rainy days; in summer the free outdoor garden and play area are enough for a toddler.",
     "price": {
       "free": false,
@@ -6307,6 +6372,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 168,
     "description": "A natural history museum with thousands of stuffed animals, minerals and fossils, plus a live corner with a python, a turtle, an iguana and other small animals. Toddlers mostly enjoy spotting animals in the cases and watching the live ones; plan a short visit.",
+    "descriptionMe": "A university museum with thousands of stuffed animals, minerals and fossils, plus a live corner with a python, a turtle and an iguana. A good indoor stop for nature lovers.",
     "tips": "Head straight to the live animals and the big mammal and bird displays; a 45-minute visit is plenty for a toddler.",
     "price": {
       "free": false,
@@ -6541,6 +6607,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Tartu's main city beach is a long sandy strip along the Anne Canal with warm water, a playground with swings, climbing frames and a slide, and lifeguards in summer. It is about a 10-minute walk from the centre over the Turu footbridge, so easy to reach with a stroller.",
+    "descriptionMe": "Tartu's main city beach, a long sandy strip along the Anne Canal about 10 minutes' walk from the centre over the Turu footbridge. In winter the canal is used for ice bathing.",
     "tips": "Go in the morning on hot weekends; the sand fills up fast. In winter the canal hosts ice bathing and sometimes an ice carousel.",
     "price": {
       "free": true,
@@ -6722,6 +6789,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 168,
     "description": "The central city library next to Town Hall Square has a children's and youth department with picture books and reading corners. It is a free, quiet indoor stop for a toddler; the library focuses on reading corners rather than play equipment.",
+    "descriptionMe": "The children's department of the central library by Town Hall Square is mainly for families; the library itself is a free, quiet indoor place to read.",
     "tips": "Picture books can be borrowed for free with a library card; ask staff about baby and toddler story times.",
     "price": {
       "free": true,
@@ -6779,6 +6847,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Paved, level paths run along both banks of the Emajõgi river through the centre, linking the Arched Bridge area, Tasku, AHHAA and the Turu footbridge to Anne Canal. A free, easy stroller walk where toddlers can watch boats, ducks and the bridges.",
+    "descriptionMe": "Level paved paths along both banks of the Emajõgi through the centre, linking the Arched Bridge, Tasku, AHHAA and the Turu footbridge. Walk one bank and return on the other for an easy loop.",
     "tips": "Make a loop: walk one bank, cross the Turu footbridge and return on the other side to the Arched Bridge (Kaarsild).",
     "price": {
       "free": true,
@@ -6835,6 +6904,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Elva's popular lake beach about 25 km south-west of Tartu has a children's pool area, changing cabins, toilets, lifeguards and a summer café. The nearby sports park has the Seeneriik (Mushroom Kingdom) playground among the pines, which suits toddlers.",
+    "descriptionMe": "Elva's popular lake beach about 25 km south-west of Tartu, with lifeguards and a summer café, next to a sports park among the pines. In winter the lake has a skating rink with skate rental.",
     "tips": "Pair a beach morning with the Seeneriik playground next door; in winter the lake has a skating rink with skate rental at Verevi Motel.",
     "price": {
       "free": true,
@@ -6892,6 +6962,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 192,
     "description": "A forest animal park run by the state forest agency RMK, with large enclosures for Estonian wild animals such as bears, wolves, lynx, elk and wild boar along a forest trail. Toddlers love spotting the big animals; tickets are cheap and children under 3 are free.",
+    "descriptionMe": "An RMK forest animal park where a trail leads past large enclosures with bears, wolves, lynx, elk and wild boar. A good forest walk with a chance to see Estonia's wild animals up close.",
     "tips": "The forest path is long and partly unpaved, so a sturdy stroller or a carrier works best.",
     "price": {
       "free": false,
@@ -6951,6 +7022,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 168,
     "description": "The old village school made famous by Oskar Luts's novel and the film 'Kevade', with a family exhibition and a children's playroom. Best for older toddlers and pre-schoolers; the village green, church and river around it make a pleasant stroller stop.",
+    "descriptionMe": "The old village school made famous by Oskar Luts's novel and the film 'Kevade'. Worth a stop for fans of the story, with the village green, church and river around it.",
     "tips": "Check the museum's family workshops and programmes before you go; the playroom gives little ones a break from the exhibits.",
     "price": {
       "free": false,
@@ -7024,6 +7096,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "A 250 m sandy beach on the north shore of Lake Kuremaa, the main public beach in Jõgeva County, with lifeguards and cafés in summer. The manor park and windmill next to it make a nice stroller walk after a paddle.",
+    "descriptionMe": "A 250 m sandy beach on the north shore of Lake Kuremaa, with lifeguards and cafés in summer. The manor park and windmill next door make a nice walk after a swim.",
     "tips": "Check the municipality's news before visiting: the swimming area has been under renovation (new sand layer).",
     "price": {
       "free": true,
@@ -7080,6 +7153,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Otepää's renovated lake beach has new sand, a separate shallow children's water area and a playground, with a beach building, cafés and lifeguards in summer. The surrounding park has a ball court and boat rental and is easy to walk with a stroller.",
+    "descriptionMe": "Otepää's renovated lake beach with new sand, cafés and lifeguards in summer, plus a park with boat rental. If you want a longer outing, there is a 12 km lake trail.",
     "tips": "Bring bread-free duck snacks: feeding ducks along the shore is a favourite toddler activity here. The 12 km lake trail is too long for little legs, so stick to the park.",
     "price": {
       "free": true,
@@ -7281,6 +7355,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 168,
     "description": "The county museum in an art nouveau building covers the nature, history and culture of Valga County, including Estonian animals and birds and models of a wolf's den and the Helme caves. A short indoor stop where a toddler can look at the animal displays; not a play-focused museum.",
+    "descriptionMe": "The county museum in an art nouveau building covers Valga County's nature, history and culture, with Estonian animals and birds and models of a wolf's den and the Helme caves.",
     "tips": "Keep it short and focus on the nature displays, then head to the central square playground a few minutes away.",
     "price": {
       "free": false,
@@ -7349,6 +7424,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Pärnu's long, sandy Blue Flag beach has very shallow water that warms up quickly, so a toddler can splash near the shore while you stay close. Toilets, changing cabins, showers, cafés and playgrounds are spread along the promenade.",
+    "descriptionMe": "Pärnu's long, sandy Blue Flag beach with a promenade lined with cafés. Shallow water that warms up quickly, plenty of sea air and room for a long walk.",
     "tips": "Ask the lifeguards for a child wristband and write your phone number on it in case your little one wanders off.",
     "price": {
       "free": true,
@@ -7620,6 +7696,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 96,
     "description": "A small green square on Rüütli street in the old town with animal-themed carousels that stay out all year. In summer there is a fountain and in winter light sculptures, so it is an easy short stop for a toddler while you walk the pedestrian street.",
+    "descriptionMe": "Mostly for families: a small green square with carousels on Rüütli street in the old town. For you it's a short stop on a walk, with a fountain in summer and light sculptures in winter.",
     "tips": null,
     "price": {
       "free": true,
@@ -7692,6 +7769,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Estonia's largest water park, next to the beach, has slides and wave pools plus a dedicated shallow pool for small children. Toddlers up to and including age 3 swim free with a paying adult, which makes it a good rainy-day option.",
+    "descriptionMe": "Estonia's largest water park, right next to the beach, with slides and wave pools. A lively way to spend a rainy day in Pärnu.",
     "tips": "A 3-hour ticket is usually plenty with a toddler; check the maintenance days (e.g. 06.10, 10.11, 08.12) when it opens only at 17:00.",
     "price": {
       "free": false,
@@ -7753,6 +7831,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 144,
     "description": "A large theme park based on the Estonian cartoon dog Lotte, about 6 km south of Pärnu, with themed houses, gentle rides, playgrounds and shows. Toddlers who know Lotte love it, but it is a full, mostly outdoor day, so bring a stroller and plan a nap.",
+    "descriptionMe": "Mostly for families: a large theme park about 6 km south of Pärnu based on the cartoon dog Lotte, with themed houses, gentle rides and shows. Alone, it's mainly for Lotte fans.",
     "tips": "Children aged 0-1 are free (use code \"LAPS\" when booking online); from age 2 a full ticket is needed, so a toddler near their 2nd birthday may still be free.",
     "price": {
       "free": false,
@@ -7822,6 +7901,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 216,
     "description": "The town museum reopened on 21 February 2026 with a new permanent exhibition on Pärnu's history, from prehistoric finds to the summer resort. Preschoolers get in free and there is a children's playroom, so it works as a short indoor outing with a toddler.",
+    "descriptionMe": "The town museum reopened in February 2026 with a new permanent exhibition on Pärnu's history, from prehistoric finds to the summer resort era.",
     "tips": "Use the playroom as a break between halls; the family ticket covers 2 adults and all your under-18 children.",
     "price": {
       "free": false,
@@ -7884,6 +7964,7 @@
     "ageMinMonths": 6,
     "ageMaxMonths": 144,
     "description": "The children's department of Pärnu's main library has picture books, board games and children's magazines, plus regular events and reading sessions. It is a free, warm and calm place to read with a toddler on a cold or rainy day.",
+    "descriptionMe": "The children's department of Pärnu's main library is mainly for families; the library itself is a free, warm and calm place to read on a cold or rainy day.",
     "tips": "The library is closed on the last Friday of every month (internal working day).",
     "price": {
       "free": true,
@@ -8005,6 +8086,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 168,
     "description": "A three-floor family nature centre with stuffed Estonian forest animals and birds, a winter garden, a film-and-sound cave and a dome cinema. Toddlers enjoy pointing at the animals and the greenery; the planetarium shows suit slightly older children better.",
+    "descriptionMe": "A three-floor nature centre with stuffed Estonian forest animals and birds, a winter garden, a film-and-sound cave and a dome cinema with planetarium shows.",
     "tips": "Last entry is 60 minutes before closing; the centre is usually closed on Sundays outside summer.",
     "price": {
       "free": false,
@@ -8072,6 +8154,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 216,
     "description": "A medieval castle ruin with a free, grassy castle park that is great for running around, plus a museum in the restored part of the castle. Children aged 0-8 get into the museum free, though steep stairs and narrow passages mean a carrier is easier than a stroller inside.",
+    "descriptionMe": "A medieval castle ruin with a free, grassy castle park and a museum in the restored part. Good for a picnic or a stroll; inside expect steep stairs and narrow passages.",
     "tips": "The castle grounds are free all year, so you can just picnic and let your toddler roam without buying a ticket.",
     "price": {
       "free": false,
@@ -8149,6 +8232,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 216,
     "description": "The museum fills the long, ornate former Haapsalu railway station, and old locomotives and carriages stand on the tracks outside. Train-loving toddlers enjoy seeing the engines up close, and the long covered platform is good for a stroller walk.",
+    "descriptionMe": "The museum fills the long, ornate former Haapsalu railway station, with old locomotives and carriages on the tracks outside. Worth it for the architecture alone, and easy to reach by bus.",
     "tips": "The building is also Haapsalu's bus station, so it is easy to reach without a car.",
     "price": {
       "free": false,
@@ -8278,6 +8362,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Haapsalu's main sandy swimming beach, backed by pine forest, with a children's playground, changing cabins and portable toilets. The water is fairly shallow and calm, and lifeguards are on duty in summer.",
+    "descriptionMe": "Haapsalu's main sandy swimming beach, backed by pine forest, with calm, fairly shallow water and lifeguards in summer. The Fra Mare spa hotel is right next door.",
     "tips": "For a proper shower and flush toilet, use the paid facilities at Paralepa Camping or the Fra Mare spa hotel next door.",
     "price": {
       "free": true,
@@ -8340,6 +8425,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 216,
     "description": "The best-preserved medieval castle in the Baltics, surrounded by a moat, ramparts and park, houses the Saaremaa Museum. Toddlers enjoy the towers, cannons and open ramparts outside, but the steep stone stairs inside mean a baby carrier beats a stroller.",
+    "descriptionMe": "The best-preserved medieval castle in the Baltics, with a moat, ramparts and park, home to the Saaremaa Museum. Walk the ramparts and park, then head inside to the museum.",
     "tips": "Walk the ramparts and castle park first, then pop into the castle courtyard playground nearby.",
     "price": {
       "free": false,
@@ -8452,6 +8538,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "A small town beach right behind the castle and castle park, with a modern children's playground, swings, a sandbox, toilets and changing cabins. The bay is shallow, so a toddler can paddle safely, and you can walk there from the centre with a stroller.",
+    "descriptionMe": "A small town beach right behind the castle and castle park, with a shallow bay, food service and pedal-boat rental in summer. Easy to combine with a castle visit.",
     "tips": "Combine a morning at the castle with a picnic here; there is food service and pedal-boat rental in summer.",
     "price": {
       "free": true,
@@ -8508,6 +8595,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 216,
     "description": "Saaremaa's iconic row of wooden windmills, with a heritage centre and, in summer, farm animals and birds to meet. The open grounds suit a toddler who likes to run, and preschool children get in free.",
+    "descriptionMe": "Saaremaa's iconic row of wooden windmills with a heritage centre, about 40 km north of Kuressaare. In summer there are farm animals and birds, and the open grounds are good for a wander.",
     "tips": "Visit May-August if your toddler wants to see the farm animals; the site is about 40 km north of Kuressaare.",
     "price": {
       "free": false,
@@ -8584,6 +8672,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 168,
     "description": "Hiiumaa's main museum is housed in a 60-metre-long former factory managers' house, with a permanent exhibition aimed largely at small children. It also has the only children's playroom in Kärdla, making it the go-to indoor stop on the island.",
+    "descriptionMe": "Hiiumaa's main museum, in a 60-metre-long former factory managers' house. The exhibition is aimed largely at children, but the building is worth a look and the Beach Park is out the back.",
     "tips": "Step out the back door into the Beach Park (Rannapark) for a playground and a walk after the museum.",
     "price": {
       "free": false,
@@ -8652,6 +8741,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A 3.3-hectare park behind the Hiiumaa Museum with a playground next to the song festival grounds, a sandpit and a low ropes adventure trail. It is an easy, free outdoor stop with flat paths for a stroller.",
+    "descriptionMe": "A 3.3-hectare park behind the Hiiumaa Museum, next to the song festival grounds. Mostly a family play spot; for you it's a free green place for a short walk on flat paths.",
     "tips": "The low ropes trail is for older kids, but toddlers can try the lowest elements with a hand to hold.",
     "price": {
       "free": true,
@@ -8729,6 +8819,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "A shallow, sandy town beach next to Kärdla harbour with wooden sculptures, a small playground, swings, toilets and changing cabins. At low water little sand islands appear that toddlers love, though the strip of sand is narrow and parts of the shallows are stony.",
+    "descriptionMe": "A shallow, sandy town beach next to Kärdla harbour with wooden sculptures. Walk or cycle from the centre and bring water shoes for the stony patches.",
     "tips": "There is no proper car park, so walk or cycle from the centre (1-2 km) and bring water shoes for the stony patches.",
     "price": {
       "free": true,
@@ -8797,6 +8888,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "Medieval Hermann Castle on the Narva River, facing Ivangorod fortress across the border, with museum halls in the tower and a castle yard with craft workshops. Toddlers mostly enjoy the courtyard, the walls and the river view; the tower exhibitions have stairs and are better for older children.",
+    "descriptionMe": "Medieval Hermann Castle on the Narva River, facing Ivangorod fortress across the border, with museum halls in the tower and craft workshops in the castle yard.",
     "tips": "Leave the stroller in the courtyard area and carry a baby carrier for the tower; the museum runs family days and Christmas events for children, so check the 'For children' calendar.",
     "price": {
       "free": false,
@@ -8869,6 +8961,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A paved, roughly 1 km riverside promenade below the castle walls, with benches and views of Ivangorod fortress. The Swedish terrace section has a family area with lion-shaped play figures, so it works as a free stroller walk with a short play stop.",
+    "descriptionMe": "A paved riverside promenade of about 1 km below the castle walls, with benches and views of Ivangorod fortress. In summer you can continue north along the river to the Joaoru beach area.",
     "tips": "Combine with Narva Castle and continue north along the river to the Joaoru beach area in summer.",
     "price": {
       "free": true,
@@ -8941,6 +9034,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A 17-hectare riverside recreation area that continues the Narva promenade, with a sandy river beach, lifeguard tower, playgrounds and a beach house with changing rooms. It is a good free summer spot for toddlers to dig in the sand and run around on the grass.",
+    "descriptionMe": "A large riverside recreation area continuing the Narva promenade, with a sandy river beach and lawns. Good for a summer swim, a riverside walk or sunbathing.",
     "tips": "The river is next to the state border; stay within the marked bathing area and keep toddlers close to the water's edge.",
     "price": {
       "free": true,
@@ -9063,6 +9157,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Seaside spa hotel whose water and sauna centre has a children's pool with small attractions and a separate pool for babies. One of the few warm-water options for toddlers in the Narva area.",
+    "descriptionMe": "A seaside spa hotel in Narva-Jõesuu with a water and sauna centre, a warm way to unwind after a walk by the sea.",
     "tips": "Day-ticket prices are not published online; call the spa reception and ask about child ages and swim nappies.",
     "price": {
       "free": false,
@@ -9119,6 +9214,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A long, fine-sand Gulf of Finland beach with a wooden promenade, a children's playground for climbing, swinging and sand play, changing cabins and an outdoor shower. The shallow, gently sloping water is pleasant for toddlers on warm days.",
+    "descriptionMe": "A long, fine-sand Gulf of Finland beach with a wooden promenade and pine forest behind it. Good for a seaside walk, a swim on warm days or a quiet hour in the shade.",
     "tips": "Bring a sun tent; the pine forest behind the beach offers shade for naps.",
     "price": {
       "free": true,
@@ -9248,6 +9344,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Former summer residence park of President Päts in the Pühajõgi river valley by the sea cliff, managed by RMK, with walking paths, bridges, terraces, a children's playground and picnic spots. Main paths are fine for a stroller, while the steps down to the river and beach are steep.",
+    "descriptionMe": "The former summer residence park of President Päts in the Pühajõgi valley by the sea cliff. Paths, bridges and terraces, with steep steps down to the river mouth and beach.",
     "tips": "Use the main entrance car park and stay on the upper paths with a stroller; bring a carrier if you want to go down to the river mouth.",
     "price": {
       "free": true,
@@ -9326,6 +9423,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 168,
     "description": "Seaside spa hotel next to Oru park whose pool and family-oriented 'Toila Termid' sauna centre accept small children, and the hotel also has a play area for kids. Children under 3 go in free, which makes it an inexpensive warm-water outing for toddlers.",
+    "descriptionMe": "A seaside spa hotel next to Oru park with a pool and the Toila Termid sauna centre, an easy way to warm up after a walk in the park.",
     "tips": "Children under 3 must wear swim nappies; weekday daytime (10-16) tickets are the cheapest.",
     "price": {
       "free": false,
@@ -9398,6 +9496,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 168,
     "description": "Former oil-shale mine where visitors ride a mine train and see real machinery on a 1.5-hour underground tour, plus a kids' exhibition above ground. Children under 4 enter free, but the dark, noisy underground tour suits confident 2-3 year olds best and is too long for many toddlers.",
+    "descriptionMe": "A former oil-shale mine with a 1.5-hour underground tour by mine train past real machinery. Book by phone in advance and bring warm clothes, as it is cool below.",
     "tips": "The underground part requires advance booking by phone; bring warm clothes (it is cool underground all year) and a carrier instead of a stroller.",
     "price": {
       "free": false,
@@ -9569,6 +9668,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 168,
     "description": "Activity centre on Kiviõli's oil-shale ash hills: a family adventure park with a playground in summer and a ski centre with a 90 m beginner slope and magic-carpet lift in winter. Most attractions target older children, but the playground and beginner slope work for 2-3 year olds with a parent.",
+    "descriptionMe": "An activity centre on Kiviõli's oil-shale ash hills: an adventure park in summer and a ski centre with a beginner slope in winter, good for a first try at skiing.",
     "tips": "In winter, use the magic-carpet beginner area for a first sledge or ski try; the summer park opens around midsummer (20 June in 2026).",
     "price": {
       "free": false,
@@ -9625,6 +9725,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A medieval castle on Vallimägi hill turned into a hands-on 'medieval theme park', with costumed staff, animals, crafts and archery for older kids. Toddlers enjoy the open yard and costumes, though some dark rooms (torture chamber, 'hell') can be scary and stairs are steep.",
+    "descriptionMe": "A medieval castle on Vallimägi hill run as a medieval theme park, with costumed staff, animals, crafts and dark cellar rooms. The big Tarvas aurochs statue outside is free.",
     "tips": "Skip the dark cellar rooms with a sensitive toddler; the big Tarvas aurochs statue and playground on Vallimägi make a free add-on.",
     "price": {
       "free": false,
@@ -9701,6 +9802,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Rakvere's spa-hotel water park with pools, slides and saunas; children up to 5 enter free with a paying adult, and there are paid baby swimming sessions. A reliable all-weather option for toddlers in Lääne-Viru county.",
+    "descriptionMe": "Rakvere's spa-hotel water centre with pools, slides and saunas, a reliable all-weather option in Lääne-Viru county.",
     "tips": "Under-5s share the adult's locker; the visitor rules require children under 12 to be supervised by someone at least 16.",
     "price": {
       "free": false,
@@ -9908,6 +10010,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A restored baroque manor in Lahemaa National Park with a furnished manor house, farm animals, ponds and a large park that is free to walk. Toddlers enjoy the animals and the open park, and the flat gravel paths are manageable with a sturdy stroller.",
+    "descriptionMe": "A restored baroque manor in Lahemaa National Park with a furnished manor house, ponds and a large park that is free to walk. The Palmse inn is there for a meal.",
     "tips": "If the house tour is too much for a toddler, walk the free park and ponds and eat at the Palmse inn (kõrts).",
     "price": {
       "free": false,
@@ -9989,6 +10092,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "RMK's manor complex in Lahemaa with an interactive forest museum (animal displays, games, a small cinema) and a manor house with a formal park. The animal and nature exhibits hold a toddler's attention, and the cheap family ticket makes it a low-stress stop.",
+    "descriptionMe": "RMK's manor complex in Lahemaa with an interactive forest museum, animal displays and a manor house with a formal park. One ticket covers both.",
     "tips": "One ticket covers both the forest museum and the manor house; the RMK nature school runs programmes by arrangement.",
     "price": {
       "free": false,
@@ -10069,6 +10173,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "A long, sandy, shallow bay beach in Lahemaa with lifeguards in summer, changing cabins, toilets, showers and several playgrounds aimed at different ages. The calm shallow water and pine shade make it one of the best toddler beaches in the area.",
+    "descriptionMe": "A long, sandy bay beach in Lahemaa with calm shallow water, pine shade and lifeguards in summer. For a longer stay, arrive early or pay for parking.",
     "tips": "Use the 30-minute free parking disc only for short stops; for a beach day pay for parking or arrive early.",
     "price": {
       "free": true,
@@ -10137,6 +10242,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "The ruins of the medieval Order castle sit in a big green park on hills above Lake Viljandi, crossed by a red suspension bridge that toddlers love to walk over. Paths are partly gravel and hilly with steep slopes, so it works best for a short stroller walk or with a carrier.",
+    "descriptionMe": "The ruins of the medieval Order castle in a hilly green park above Lake Viljandi, with a red suspension bridge. A scenic walk over the hills; some slopes are steep.",
     "tips": "Combine it with the big lakeside playground below the hills; the walk down is steep, so drive or go round by the road with a stroller.",
     "price": {
       "free": true,
@@ -10301,6 +10407,7 @@
     "ageMinMonths": 18,
     "ageMaxMonths": 120,
     "description": "A forest theme park built around Edgar Valter's Poku picture-book characters, with a poku-shaped visitor house, forest paths and play spots. Toddlers who know the Poku books enjoy it most; forest paths are uneven, so a carrier or all-terrain stroller is easier.",
+    "descriptionMe": "A forest theme park built around Edgar Valter's Poku picture-book characters, with a poku-shaped visitor house. Mostly for families; for you it's a walk on forest paths.",
     "tips": "Read a Poku book before you go, and allow about 3 hours as the park suggests.",
     "price": {
       "free": false,
@@ -10362,6 +10469,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "Võru's town beach on Lake Tamula has a sandy shore, a playground with climbing nets and swings, and an 800 m promenade with benches and swings from Tamula Hotel to Roosisaare bridge. The flat promenade is great for a stroller walk year-round, and toddlers can watch ducks and swans.",
+    "descriptionMe": "Võru's beach on Lake Tamula and an 800 m promenade with benches from Tamula Hotel to Roosisaare bridge. A flat walk in any season, with ducks and swans to watch.",
     "tips": "The promenade is flat and paved enough for a stroller even outside the swimming season.",
     "price": {
       "free": true,
@@ -10429,6 +10537,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "The tower on top of the Baltic states' highest hill has a lift, so you can take a toddler and even a stroller up to the viewing platform above the treetops. The climb from the car park to the tower is a short but steep forest path with steps, so a carrier is easier than a stroller.",
+    "descriptionMe": "An observation tower on the Baltic states' highest hill, with a lift to a platform above the treetops. Go on a clear day; a short, steep forest path leads up from the car park.",
     "tips": "Children up to 6 go free; go on a clear day and allow about 45-60 minutes.",
     "price": {
       "free": false,
@@ -10495,6 +10604,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 168,
     "description": "South Estonia's largest open-air museum shows an old village on 5 hectares, with farm buildings, an old schoolhouse and a windmill to wander between. It is calm and spacious for a toddler to explore on foot; grass and gravel paths make a sturdy stroller the better choice.",
+    "descriptionMe": "South Estonia's largest open-air museum, an old village on 5 hectares with farm buildings, a schoolhouse and a windmill. Calm and spacious for an unhurried wander.",
     "tips": "Ticket sales end an hour before closing; in winter it is open only on weekdays.",
     "price": {
       "free": false,
@@ -10566,6 +10676,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "The town's indoor pool and saunas are a warm option for a rainy day with a little one. Children up to 6 swim free with a paying adult, which makes a toddler swim cheap.",
+    "descriptionMe": "Põlva's indoor town pool with saunas, a warm option for a swim and a sauna on a rainy day.",
     "tips": "Weekday daytime (08:00-17:00) tickets were half the evening price in the 2024 list.",
     "price": {
       "free": false,
@@ -10625,6 +10736,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "The renovated town beach on Põlva's dam lake has boardwalks, a swimming jetty, changing cabins and lifeguards in summer, plus a pump track for older kids. Toddlers can dig in the sand and paddle at the edge while you stay in the town centre.",
+    "descriptionMe": "The renovated town beach on Põlva's dam lake, with boardwalks, a swimming jetty and lifeguards in summer, right in the town centre.",
     "tips": "Lifeguards are on duty from 1 June to 31 August.",
     "price": {
       "free": true,
@@ -10679,6 +10791,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 168,
     "description": "A hands-on history centre inside the rebuilt Paide castle tower on Vallimägi hill, where visitors walk through scenes from different eras. It is aimed more at school-age kids, but pre-schoolers get in free, so it is an easy indoor stop with a curious toddler.",
+    "descriptionMe": "A hands-on history centre inside the rebuilt Paide castle tower on Vallimägi hill, where you walk through scenes from different eras. Then stroll the grassy hill outside.",
     "tips": "Pre-school children are free; after the visit let the toddler run around the grassy castle hill outside.",
     "price": {
       "free": false,
@@ -10751,6 +10864,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 144,
     "description": "The grassy ramparts and castle ruins around the octagonal Vallitorn tower form a free green park right next to Paide centre. Toddlers can roll down the slopes and explore the old walls, but watch for steep drops at the edges.",
+    "descriptionMe": "Grassy ramparts and castle ruins around the octagonal Vallitorn tower, a free green park by Paide centre. Good for a short walk among the old walls; mind the steep edges.",
     "tips": null,
     "price": {
       "free": true,
@@ -10812,6 +10926,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A small family farm where children can feed the animals and birds and walk into the enclosures freely, with no time limits. It is a relaxed, hands-on outing for a toddler who loves animals; expect farmyard ground rather than paved paths.",
+    "descriptionMe": "A small family farm where you can feed the animals and birds and walk into the enclosures with no time limit. Mostly for families, but a relaxed stop if you like animals.",
     "tips": "Outside the regular season write or call ahead before driving out.",
     "price": {
       "free": false,
@@ -11020,6 +11135,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A family farm with alpacas, rabbits, chickens and other animals plus a playground with a big swing, net swing, pirate ship, slide and tree house. Visits are by advance booking, so it suits a planned weekend outing or a small birthday rather than a drop-in.",
+    "descriptionMe": "A family farm with alpacas, rabbits, chickens and other animals, visited by advance booking. Mostly for families; for you it's a planned visit to meet the animals.",
     "tips": "Book ahead; the playground can also be rented separately.",
     "price": {
       "free": false,
@@ -11089,6 +11205,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "A recreated coastal fishing village with old farmhouses, nets and boats, a big swing area and farm animals that small children especially enjoy. It is compact and grassy, good for a toddler to roam; gravel and grass paths are fine with a sturdy stroller.",
+    "descriptionMe": "A recreated coastal fishing village with old farmhouses, nets, boats and farm animals. A compact, grassy place to see coastal life; the Museum of Coastal Folk is nearby.",
     "tips": "Check the events calendar; the museum hosts seasonal family days and the Museum of Coastal Folk nearby is free.",
     "price": {
       "free": false,
@@ -11167,6 +11284,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "The water park at Viimsi Spa has slides, wave and play pools and a shallow children's area, all under one roof. Children aged 0-5 get in free with a paying parent, so it is good value for a toddler, though it gets loud and busy at weekends.",
+    "descriptionMe": "The water park at Viimsi Spa with slides and wave pools under one roof. It gets loud and busy at weekends, so weekdays are calmer.",
     "tips": "Go on a weekday in the school holidays at opening time for a quieter children's pool.",
     "price": {
       "free": false,
@@ -11226,6 +11344,7 @@
     "ageMinMonths": 0,
     "ageMaxMonths": 216,
     "description": "Keila's swimming centre has a 25 m pool plus a smaller pool, a slide, jacuzzi and saunas, and an outdoor pool. The small pool suits toddlers, and a child under 3 costs just EUR 1 with a swim nappy.",
+    "descriptionMe": "Keila's swimming centre with a 25 m pool, a slide, jacuzzi, saunas and an outdoor pool, good for swimming laps and a sauna session.",
     "tips": "Children under 10 must be accompanied by someone aged 16 or over; bring a swim nappy.",
     "price": {
       "free": false,
@@ -11289,6 +11408,7 @@
     "ageMinMonths": 12,
     "ageMaxMonths": 144,
     "description": "North Estonia's largest alpaca farm, where visitors can meet, feed and pet alpacas and walk the pastures on a guided tour. Toddlers enjoy feeding the gentle animals; children under 2 are free, so it is a short, easy outing from Tallinn.",
+    "descriptionMe": "North Estonia's largest alpaca farm, where you can meet, feed and pet alpacas and walk the pastures on a guided tour. A short trip from Tallinn.",
     "tips": "Weekend opening day differs between pages (Sat or Sun) - check the website before driving out.",
     "price": {
       "free": false,
@@ -11356,6 +11476,7 @@
     "ageMinMonths": 24,
     "ageMaxMonths": 216,
     "description": "The atmospheric ruins of a medieval Cistercian monastery with a modern visitor centre, towers and vaulted rooms to explore. Older toddlers enjoy the echoing halls and grassy grounds, but there are many stairs and uneven floors, so carry the little one inside.",
+    "descriptionMe": "The atmospheric ruins of a medieval Cistercian monastery with towers, vaulted rooms and echoing halls, plus a modern visitor centre. Expect stairs and uneven floors.",
     "tips": "Tickets are sold at the visitor centre, not in the monastery itself.",
     "price": {
       "free": false,
