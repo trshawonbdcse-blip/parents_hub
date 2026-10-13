@@ -14,8 +14,9 @@ export function useMode(): [Mode | null, (m: Mode) => void] {
 
 // Places that only make sense for adults are hidden in Family mode.
 const ADULT_ONLY: Category[] = ['gym', 'cinema', 'nature']
-// The launch categories of "Just me", in the order shown.
-export const ME_CATEGORIES: Category[] = ['nature', 'gym', 'swimming', 'cinema', 'theatre', 'museum']
+// Everything an adult can enjoy alone, in the order shown. Only places made for small
+// children (playgrounds, indoor play, kids' classes and shows) stay in Family mode.
+export const ME_CATEGORIES: Category[] = ['nature', 'park', 'swimming', 'museum', 'zoo-farm', 'cinema', 'theatre', 'gym', 'beach', 'winter-fun', 'library']
 
 // Hand-checked children's shows and classes are not "Just me" ideas.
 export const forMode = (mode: Mode, list: Place[]) =>
@@ -31,5 +32,10 @@ const ME_LABEL: Partial<Record<Category, string>> = {
   cinema: 'Cinema',
   theatre: 'Concerts & theatre',
   museum: 'Museums & galleries',
+  park: 'Parks & gardens',
+  'zoo-farm': 'Zoo & animals',
+  beach: 'Beaches',
+  'winter-fun': 'Ice skating',
+  library: 'Libraries',
 }
 export const meCategoryLabel = (c: Category) => tr(ME_LABEL[c] ?? c)

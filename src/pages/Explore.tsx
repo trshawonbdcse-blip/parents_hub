@@ -221,7 +221,8 @@ export function Explore() {
             <section className="cat-tiles" aria-label={t('Type of place')}>
               {categories.map((c) => {
                 const Icon = CATEGORY_ICON[c]
-                const n = pool.filter((p) => p.category === c).length
+                const n = pool.filter((p) => p.category === c && fitsSeason(p)).length
+                if (!n) return null
                 return (
                   <button key={c} type="button" className="cat-tile" onClick={() => update('cat', c)}>
                     <span className="ic">

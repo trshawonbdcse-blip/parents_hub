@@ -379,6 +379,11 @@ export const DICT: Record<string, Entry> = {
   'Swimming & spa': { et: 'Ujumine ja spaa', ru: 'Плавание и спа' },
   'Concerts & theatre': { et: 'Kontserdid ja teater', ru: 'Концерты и театр' },
   'Museums & galleries': { et: 'Muuseumid ja galeriid', ru: 'Музеи и галереи' },
+  'Parks & gardens': { et: 'Pargid ja aiad', ru: 'Парки и сады' },
+  'Zoo & animals': { et: 'Loomaaed ja loomad', ru: 'Зоопарк и животные' },
+  Beaches: { et: 'Rannad', ru: 'Пляжи' },
+  'Ice skating': { et: 'Uisutamine', ru: 'Катание на коньках' },
+  Libraries: { et: 'Raamatukogud', ru: 'Библиотеки' },
   // Teal & Sun theme
   'What is wrong or has changed? (date, place, cancelled…)': { et: 'Mis on valesti või muutunud? (kuupäev, koht, ära jäänud…)', ru: 'Что неверно или изменилось? (дата, место, отменено…)' },
   'What is wrong or has changed? (price, opening hours, closed…)': { et: 'Mis on valesti või muutunud? (hind, lahtiolekuajad, suletud…)', ru: 'Что неверно или изменилось? (цена, часы работы, закрыто…)' },
