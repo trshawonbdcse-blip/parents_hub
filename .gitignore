@@ -29,3 +29,7 @@ scripts/photos/strips/
 scripts/photos/sheets/
 public/ics/
 public/data/events.json
+
+# Research notes and reports (local only)
+research_notes/
+reports/
