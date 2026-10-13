@@ -7,7 +7,7 @@ import fs from 'node:fs'
 
 const OUT = 'public/data/osm-places.json'
 const UA = 'KuhuMinnaBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/)'
-const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
+const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null
 const VERSION = 2
 
