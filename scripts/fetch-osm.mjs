@@ -42,28 +42,17 @@ async function overpass(query) {
 
 const AREA = 'area["ISO3166-1"="EE"][admin_level=2]->.ee;'
 const NOT_PRIVATE = '["access"!~"^(private|customers|no|permissive_school)$"]'
-const FEATURES = `[out:json][timeout:220];${AREA}(
-  nwr["leisure"="playground"]${NOT_PRIVATE}(area.ee);
-  nwr["leisure"="indoor_play"](area.ee);
-  nwr["amenity"="library"](area.ee);
-  nwr["tourism"="museum"]["name"](area.ee);
-  nwr["leisure"="water_park"](area.ee);
-  nwr["leisure"="sports_centre"]["sport"~"swimming"](area.ee);
-  nwr["leisure"="swimming_pool"]["name"]${NOT_PRIVATE}["indoor"!="no"](area.ee);
-  nwr["tourism"="zoo"](area.ee);
-  nwr["tourism"="theme_park"](area.ee);
-  nwr["leisure"="park"]["name"](area.ee);
-  nwr["natural"="beach"]["name"](area.ee);
-  nwr["leisure"="beach_resort"](area.ee);
-  nwr["leisure"="ice_rink"](area.ee);
-  nwr["leisure"="fitness_centre"]["name"](area.ee);
-  nwr["amenity"="cinema"]["name"](area.ee);
-  nwr["amenity"~"^(theatre|concert_hall|music_venue)$"]["name"](area.ee);
-  nwr["tourism"="gallery"]["name"](area.ee);
-  nwr["tourism"="viewpoint"]["name"](area.ee);
-  nwr["leisure"="nature_reserve"]["name"](area.ee);
-  relation["route"="hiking"]["name"](area.ee);
-);out center tags;`
+// Split into small queries so one busy server or slow query doesn't lose everything.
+// If a group fails, its places from the previous run are kept.
+const GROUPS = [
+  { cats: ['playground', 'indoor-play'], q: `nwr["leisure"="playground"]${NOT_PRIVATE}(area.ee);nwr["leisure"="indoor_play"](area.ee);` },
+  { cats: ['library', 'museum', 'zoo-farm'], q: `nwr["amenity"="library"](area.ee);nwr["tourism"="museum"]["name"](area.ee);nwr["tourism"="gallery"]["name"](area.ee);nwr["tourism"="zoo"](area.ee);` },
+  { cats: ['swimming', 'winter-fun'], q: `nwr["leisure"="water_park"](area.ee);nwr["leisure"="sports_centre"]["sport"~"swimming"](area.ee);nwr["leisure"="swimming_pool"]["name"]${NOT_PRIVATE}["indoor"!="no"](area.ee);nwr["leisure"="ice_rink"](area.ee);` },
+  { cats: ['park', 'beach'], q: `nwr["tourism"="theme_park"](area.ee);nwr["leisure"="park"]["name"](area.ee);nwr["natural"="beach"]["name"](area.ee);nwr["leisure"="beach_resort"](area.ee);` },
+  { cats: ['gym', 'cinema', 'theatre'], q: `nwr["leisure"="fitness_centre"]["name"](area.ee);nwr["amenity"="cinema"]["name"](area.ee);nwr["amenity"~"^(theatre|concert_hall|music_venue)$"]["name"](area.ee);` },
+  { cats: ['nature'], q: `nwr["tourism"="viewpoint"]["name"](area.ee);nwr["leisure"="nature_reserve"]["name"](area.ee);relation["route"="hiking"]["name"](area.ee);` },
+]
+const groupQuery = (g) => `[out:json][timeout:170];${AREA}(${g.q});out center tags;`
 const PLACES = `[out:json][timeout:120];${AREA}node["place"~"^(city|town|village|suburb|quarter|neighbourhood|borough)$"]["name"](area.ee);out;`
 
 function category(t) {
@@ -100,9 +89,18 @@ const km = (a1, o1, a2, o2) => {
 }
 const nearestHub = (la, lo) => Object.entries(HUBS).reduce((b, [n, [a, o]]) => (km(la, lo, a, o) < b.d ? { n, d: km(la, lo, a, o) } : b), { n: 'Tallinn', d: Infinity }).n
 
-let elements, placeNodes
+let placeNodes
+const elements = []
+const failedCats = []
+for (const g of GROUPS) {
+  try {
+    elements.push(...(await overpass(groupQuery(g))))
+  } catch (e) {
+    console.warn(`OSM: group ${g.cats.join('/')} failed (${e.message}); keeping its previous places`)
+    failedCats.push(...g.cats)
+  }
+}
 try {
-  elements = await overpass(FEATURES)
   placeNodes = await overpass(PLACES)
 } catch (e) {
   // Never block a deploy on a busy map server: keep the previous list and try again next run.
@@ -111,7 +109,7 @@ try {
   process.exit(0)
 }
 console.log(`OSM: ${elements.length} features, ${placeNodes.length} place names`)
-if (elements.length < 500) {
+if (elements.length < 300 && failedCats.length === GROUPS.flatMap((g) => g.cats).length) {
   console.warn('OSM: suspiciously few features; keeping previous file')
   if (!previous) fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: null, places: [] }) + '\n')
   process.exit(0)
@@ -172,7 +170,11 @@ for (const e of elements) {
   out.push(rec)
 }
 
+// Groups that failed this time keep their places from the last good run.
+if (failedCats.length && previous?.places) out.push(...previous.places.filter((r) => failedCats.includes(r.c)))
+
 const byCat = out.reduce((m, r) => ({ ...m, [r.c]: (m[r.c] ?? 0) + 1 }), {})
 console.log(`OSM: ${out.length} places after de-duplication`, byCat)
 fs.mkdirSync('public/data', { recursive: true })
-fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: new Date().toISOString(), places: out }) + '\n')
+// A partial run is not marked fresh, so the next deploy tries the missing groups again.
+fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: failedCats.length ? null : new Date().toISOString(), places: out }) + '\n')
