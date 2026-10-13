@@ -262,19 +262,19 @@ export const DICT: Record<string, Entry> = {
   'Safari → Share → Add to Home Screen': { et: 'Safari → Jaga → Lisa avakuvale', ru: 'Safari → Поделиться → На экран «Домой»' },
   'Chrome → ⋮ → Install app': { et: 'Chrome → ⋮ → Installi rakendus', ru: 'Chrome → ⋮ → Установить приложение' },
   'Money-saving tips': { et: 'Kokkuhoiu nõuanded', ru: 'Как сэкономить' },
-  'Stebby accepted': { et: 'Stebby sobib', ru: 'Принимается Stebby' },
+  'Stebby partner': { et: 'Stebby partner', ru: 'Партнёр Stebby' },
   'Not found among Stebby partners': { et: 'Stebby partnerite seas ei leidu', ru: 'Нет среди партнёров Stebby' },
   'Stebby: not checked yet': { et: 'Stebby: veel kontrollimata', ru: 'Stebby: ещё не проверено' },
-  'Pay from your Stebby balance in the Stebby app at the venue.': {
-    et: 'Maksa kohapeal Stebby äpis oma Stebby saldost.',
-    ru: 'Оплатите на месте из баланса Stebby в приложении Stebby.',
+  'Your Stebby budget is for you, not your child: use it for your own ticket or a class you take part in, such as parent-and-baby swimming.': {
+    et: 'Stebby eelarve on sinu, mitte lapse jaoks: kasuta seda oma pileti või tunni jaoks, kus ise osaled, näiteks lapsevanema ja beebi ujumine.',
+    ru: 'Бюджет Stebby предназначен для вас, а не для ребёнка: используйте его для своего билета или занятия, в котором участвуете сами, например плавания родителя с малышом.',
   },
   'Ask at the entrance or check in the Stebby app.': { et: 'Küsi kohapeal või vaata Stebby äpist.', ru: 'Уточните на входе или в приложении Stebby.' },
   Benefits: { et: 'Hüved', ru: 'Льготы' },
   'I have a Stebby account': { et: 'Mul on Stebby konto', ru: 'У меня есть аккаунт Stebby' },
-  'Shows a Stebby badge and filter on places where your employer’s Stebby budget can be used.': {
-    et: 'Näitab Stebby märki ja filtrit kohtades, kus saad kasutada tööandja Stebby eelarvet.',
-    ru: 'Показывает значок и фильтр Stebby в местах, где можно использовать бюджет Stebby от работодателя.',
+  'Shows which places are Stebby partners. The budget is for you, not your child: use it for your own ticket or classes you join.': {
+    et: 'Näitab, millised kohad on Stebby partnerid. Eelarve on sinu, mitte lapse jaoks: kasuta seda oma pileti või tundide jaoks, kus ise osaled.',
+    ru: 'Показывает, какие места — партнёры Stebby. Бюджет предназначен для вас, а не для ребёнка: используйте его для своего билета или занятий, в которых участвуете сами.',
   },
   'See Stebby places': { et: 'Vaata Stebby kohti', ru: 'Места со Stebby' },
   Activities: { et: 'Tegevused', ru: 'Занятия' },

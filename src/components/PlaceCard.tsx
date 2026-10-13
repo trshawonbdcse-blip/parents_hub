@@ -30,7 +30,7 @@ export function PlaceCard({ place, months, distance, variant = 'wide' }: Props) 
           {(place.price.free || stebby) && (
             <span className="media-badges">
               {place.price.free && <span className="badge badge-free">{t('Free')}</span>}
-              {stebby && <span className="badge badge-stebby">Stebby ✓</span>}
+              {stebby && <span className="badge badge-stebby">{t('Stebby partner')}</span>}
             </span>
           )}
         </div>

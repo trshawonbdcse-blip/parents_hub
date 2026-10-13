@@ -91,7 +91,7 @@ export function Family() {
           </label>
         </div>
         <p className="small muted">
-          {t('Shows a Stebby badge and filter on places where your employer’s Stebby budget can be used.')}{' '}
+          {t('Shows which places are Stebby partners. The budget is for you, not your child: use it for your own ticket or classes you join.')}{' '}
           {hasStebby && <Link to="/explore?stebby=1">{t('See Stebby places')}</Link>}
         </p>
       </section>

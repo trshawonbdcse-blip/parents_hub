@@ -205,7 +205,7 @@ export function PlaceDetail() {
             )}
             {stebby && (
               <span className="mini-badge stebby">
-                <BadgeCheck size={13} /> Stebby
+                {t('Stebby partner')}
               </span>
             )}
           </div>
@@ -267,10 +267,10 @@ export function PlaceDetail() {
           <div className={`stebby-row ${stebby ? '' : 'no'}`}>
             {stebby ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
             <div>
-              <strong>{stebby ? t('Stebby accepted') : stebby === false ? t('Not found among Stebby partners') : t('Stebby: not checked yet')}</strong>
+              <strong>{stebby ? t('Stebby partner') : stebby === false ? t('Not found among Stebby partners') : t('Stebby: not checked yet')}</strong>
               <p>
                 {stebby
-                  ? t('Pay from your Stebby balance in the Stebby app at the venue.') + ` (${stebby.name})`
+                  ? t('Your Stebby budget is for you, not your child: use it for your own ticket or a class you take part in, such as parent-and-baby swimming.') + ` (${stebby.name})`
                   : t('Ask at the entrance or check in the Stebby app.')}
               </p>
             </div>
