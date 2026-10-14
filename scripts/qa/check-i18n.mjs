@@ -1,4 +1,4 @@
-// QA: every UI string passed to t()/tr() has Estonian and Russian translations with the
+// QA: every UI string passed to t()/tr() has Estonian, Russian and Finnish translations with the
 // same {placeholders}. Exits 1 when something is missing.
 import fs from 'node:fs'
 import path from 'node:path'
@@ -26,19 +26,24 @@ for (const f of files) {
 // Text produced from data at runtime.
 for (const s of ['Clear', 'Partly cloudy', 'Cloudy', 'Fog', 'Drizzle', 'Rain', 'Snow', 'Showers', 'Snow showers', 'Thunderstorm']) add(s, 'weather.ts')
 
+// Finnish lives in its own file (dict-fi.ts): same keys, plain strings.
+const fiSrc = fs.readFileSync('src/lib/dict-fi.ts', 'utf8')
+const FI = Function(`return (${fiSrc.slice(fiSrc.indexOf('{', fiSrc.indexOf('export const DICT_FI')), fiSrc.lastIndexOf('}') + 1)})`)()
 const ph = (s) => (s.match(/\{\w+\}/g) ?? []).sort().join(',')
 const missing = []
 const bad = []
 for (const [s, f] of used) {
   const e = DICT[s]
   if (!e) { missing.push(`${s}   (${f})`); continue }
+  if (!FI[s]) bad.push(`${s}: empty fi`)
+  else if (ph(FI[s]) !== ph(s)) bad.push(`${s}: fi placeholders ${ph(FI[s])} ≠ ${ph(s)}`)
   for (const lang of ['et', 'ru']) {
     if (!e[lang]) bad.push(`${s}: empty ${lang}`)
     else if (ph(e[lang]) !== ph(s)) bad.push(`${s}: ${lang} placeholders ${ph(e[lang])} ≠ ${ph(s)}`)
   }
 }
 // Brand/proper names that are the same in every language.
-const SAME = new Set(['Stebby', 'Pargi.ee', 'Google Calendar', 'iPhone / Mac', 'Eesti', 'Русский', 'English'])
+const SAME = new Set(['Stebby', 'Pargi.ee', 'Google Calendar', 'iPhone / Mac', 'Eesti', 'Русский', 'English', 'Suomi'])
 const realMissing = missing.filter((m) => !SAME.has(m.split('   ')[0]))
 console.log(`UI strings used: ${used.size} · in dictionary: ${Object.keys(DICT).length}`)
 console.log(`Missing translations (${realMissing.length}):`)

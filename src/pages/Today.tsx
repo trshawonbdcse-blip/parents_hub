@@ -14,6 +14,7 @@ import { useAgo } from '../lib/useAgo'
 import { useMode } from '../lib/mode'
 import { ModeSwitch } from '../components/ModeSwitch'
 import { TodayMe } from './TodayMe'
+import { TodayVisit } from './TodayVisit'
 import type { Place, Visit } from '../types'
 
 const NO_VISITS: Visit[] = []
@@ -43,7 +44,7 @@ function reasonsFor(p: Place, mode: OutdoorMode, napStart: string, favourite: bo
 
 export function Today() {
   const [appMode] = useMode()
-  return appMode === 'me' ? <TodayMe /> : <TodayFamily />
+  return appMode === 'me' ? <TodayMe /> : appMode === 'visit' ? <TodayVisit /> : <TodayFamily />
 }
 
 function TodayFamily() {

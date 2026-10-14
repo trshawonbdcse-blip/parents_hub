@@ -77,6 +77,8 @@ const DESCRIPTION: Record<Category, string> = {
   gym: 'A gym. Check day-pass prices and opening hours before you go.',
   cinema: 'A cinema. See today’s films and times on its website.',
   nature: 'A nature spot or trail, free to visit. Wear good shoes and check the season.',
+  sight: 'A historic sight or landmark. Check opening times and tickets on its website before you go.',
+  viewpoint: 'A viewpoint, usually free and open at all hours. Best on a clear day.',
 }
 
 // The same kinds of place, described for an adult going alone ("Just me" mode).
@@ -90,8 +92,8 @@ const DESCRIPTION_ME: Partial<Record<Category, string>> = {
   'winter-fun': 'An ice rink. Check the season, opening times and skate hire before you go.',
 }
 
-const FREE_KINDS: Category[] = ['playground', 'park', 'beach', 'library', 'nature']
-const DURATION: Partial<Record<Category, number>> = { playground: 60, park: 60, library: 45, museum: 90, swimming: 120, beach: 120, 'winter-fun': 60, 'indoor-play': 120, 'zoo-farm': 120, gym: 75, cinema: 120, nature: 120, theatre: 120 }
+const FREE_KINDS: Category[] = ['playground', 'park', 'beach', 'library', 'nature', 'viewpoint']
+const DURATION: Partial<Record<Category, number>> = { playground: 60, park: 60, library: 45, museum: 90, swimming: 120, beach: 120, 'winter-fun': 60, 'indoor-play': 120, 'zoo-farm': 120, gym: 75, cinema: 120, nature: 120, theatre: 120, sight: 60, viewpoint: 30 }
 const yesNo = (v?: string) => (v === 'yes' ? true : v === 'no' ? false : null)
 
 function toPlace(r: Rec, lang: Lang): Place {

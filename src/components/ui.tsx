@@ -15,8 +15,7 @@ import {
   Sun,
   Trees,
   Waves,
-  type LucideIcon,
-} from 'lucide-react'
+  type LucideIcon, Binoculars, Castle } from 'lucide-react'
 import { useState } from 'react'
 import type { Category, Photo } from '../types'
 
@@ -37,6 +36,8 @@ export const CATEGORY_ICON: Record<Category, LucideIcon> = {
   gym: Dumbbell,
   cinema: Clapperboard,
   nature: Mountain,
+  sight: Castle,
+  viewpoint: Binoculars,
 }
 
 // A place photo, or a calm gradient with the category icon when there is none (or it fails to load).

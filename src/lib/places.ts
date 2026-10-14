@@ -30,6 +30,8 @@ export const CATEGORY_LABEL: Record<Category, { label: string; emoji: string }> 
   gym: { label: 'Gym', emoji: '🏋️' },
   cinema: { label: 'Cinema', emoji: '🎬' },
   nature: { label: 'Nature walk', emoji: '🥾' },
+  sight: { label: 'Sight', emoji: '🏰' },
+  viewpoint: { label: 'Viewpoint', emoji: '🔭' },
 }
 
 export const categoryLabel = (c: Category) => tr(CATEGORY_LABEL[c].label)
@@ -244,6 +246,8 @@ const TYPICAL: Partial<Record<Category, { adult: number; child: number }>> = {
   gym: { adult: 10, child: 0 },
   cinema: { adult: 8, child: 6 },
   nature: { adult: 0, child: 0 },
+  sight: { adult: 0, child: 0 },
+  viewpoint: { adult: 0, child: 0 },
 }
 
 const categoryPrices = (() => {

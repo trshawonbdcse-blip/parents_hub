@@ -74,6 +74,8 @@ jobs:
           VITE_PLAUSIBLE_SCRIPT: ${{ vars.PLAUSIBLE_SCRIPT }}
           # Optional: address for "Report a mistake" and feedback e-mails.
           VITE_CONTACT_EMAIL: ${{ vars.CONTACT_EMAIL }}
+          # Optional: GetYourGuide partner id; turns on labelled tour and Tallinn Card links in Visiting mode.
+          VITE_GYG_PARTNER_ID: ${{ vars.GYG_PARTNER_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

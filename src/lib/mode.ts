@@ -2,8 +2,12 @@ import { translate as tr } from './i18n'
 import { useStored } from './storage'
 import type { Category, Place } from '../types'
 
-// Who the user is planning for: the family (child's age, naps) or "Just me" (an adult going alone).
-export type Mode = 'family' | 'me'
+// Who the user is planning for: the family (child's age, naps), "Just me" (an adult going alone)
+// or "Visiting" (someone on a trip to Estonia).
+export type Mode = 'family' | 'me' | 'visit'
+
+// Adults alone and visitors get the same grown-up wording, prices and descriptions.
+export const isAdult = (m: Mode | null) => m === 'me' || m === 'visit'
 
 export const MODE_KEY = 'ph.mode'
 
@@ -16,17 +20,24 @@ export function useMode(): [Mode | null, (m: Mode) => void] {
 const ADULT_ONLY: Category[] = ['gym', 'cinema', 'nature']
 // Everything an adult can enjoy alone, in the order shown. Only places made for small
 // children (playgrounds, indoor play, kids' classes and shows) stay in Family mode.
-export const ME_CATEGORIES: Category[] = ['nature', 'park', 'swimming', 'museum', 'zoo-farm', 'cinema', 'theatre', 'gym', 'beach', 'winter-fun', 'library']
+export const ME_CATEGORIES: Category[] = ['sight', 'viewpoint', 'nature', 'park', 'swimming', 'museum', 'zoo-farm', 'cinema', 'theatre', 'gym', 'beach', 'winter-fun', 'library']
+
+// What a visitor looks for first: sights, views, museums and nature. Everyday places
+// (gyms, libraries, cinemas) are left out.
+export const VISIT_CATEGORIES: Category[] = ['sight', 'viewpoint', 'museum', 'nature', 'park', 'zoo-farm', 'swimming', 'beach', 'theatre', 'winter-fun']
+export const categoriesFor = (mode: Mode) => (mode === 'visit' ? VISIT_CATEGORIES : ME_CATEGORIES)
 
 // Hand-checked children's shows and classes are not "Just me" ideas.
 export const forMode = (mode: Mode, list: Place[]) =>
-  mode === 'me'
-    ? list.filter((p) => ME_CATEGORIES.includes(p.category) && !(p.category === 'theatre' && !p.osm) && !p.activities?.length)
+  isAdult(mode)
+    ? list.filter((p) => categoriesFor(mode).includes(p.category) && !(p.category === 'theatre' && !p.osm) && !p.activities?.length)
     : list.filter((p) => !ADULT_ONLY.includes(p.category))
 
 // Category names in "Just me" mode (broader than the family wording).
 const ME_LABEL: Partial<Record<Category, string>> = {
   nature: 'Nature walks',
+  sight: 'Sights',
+  viewpoint: 'Viewpoints',
   gym: 'Gyms',
   swimming: 'Swimming & spa',
   cinema: 'Cinema',

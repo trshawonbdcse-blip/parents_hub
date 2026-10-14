@@ -9,7 +9,7 @@ const OUT = 'public/data/osm-places.json'
 const UA = 'KuhuMinnaBot/1.0 (https://trshawonbdcse-blip.github.io/parents_hub/)'
 const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.private.coffee/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter']
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null
-const VERSION = 2
+const VERSION = 3
 
 // Refresh weekly; in between the cached file is reused.
 const fresh = previous?.updatedAt && previous.version === VERSION && Date.now() - new Date(previous.updatedAt).getTime() < 6 * 864e5
@@ -50,7 +50,9 @@ const GROUPS = [
   { cats: ['swimming', 'winter-fun'], q: `nwr["leisure"="water_park"](area.ee);nwr["leisure"="sports_centre"]["sport"~"swimming"](area.ee);nwr["leisure"="swimming_pool"]["name"]${NOT_PRIVATE}["indoor"!="no"](area.ee);nwr["leisure"="ice_rink"](area.ee);` },
   { cats: ['park', 'beach'], q: `nwr["tourism"="theme_park"](area.ee);nwr["leisure"="park"]["name"](area.ee);nwr["natural"="beach"]["name"](area.ee);nwr["leisure"="beach_resort"](area.ee);` },
   { cats: ['gym', 'cinema', 'theatre'], q: `nwr["leisure"="fitness_centre"]["name"](area.ee);nwr["amenity"="cinema"]["name"](area.ee);nwr["amenity"~"^(theatre|concert_hall|music_venue)$"]["name"](area.ee);` },
-  { cats: ['nature'], q: `nwr["tourism"="viewpoint"]["name"](area.ee);nwr["leisure"="nature_reserve"]["name"](area.ee);relation["route"="hiking"]["name"](area.ee);` },
+  { cats: ['nature'], q: `nwr["leisure"="nature_reserve"]["name"](area.ee);relation["route"="hiking"]["name"](area.ee);` },
+  // Sights for visitors: only well-known ones (with a Wikidata entry), plus named viewpoints.
+  { cats: ['sight', 'viewpoint'], q: `nwr["historic"~"^(castle|manor|fort|city_gate|city_walls|monastery|ruins|church|lighthouse|windmill)$"]["name"]["wikidata"](area.ee);nwr["tourism"="attraction"]["name"]["wikidata"](area.ee);nwr["amenity"="place_of_worship"]["building"~"^(church|cathedral|chapel)$"]["name"]["wikidata"](area.ee);nwr["man_made"="lighthouse"]["name"]["wikidata"](area.ee);nwr["tourism"="viewpoint"]["name"](area.ee);nwr["man_made"="tower"]["tower:type"="observation"]["name"](area.ee);` },
 ]
 const groupQuery = (g) => `[out:json][timeout:170];${AREA}(${g.q});out center tags;`
 const PLACES = `[out:json][timeout:120];${AREA}node["place"~"^(city|town|village|suburb|quarter|neighbourhood|borough)$"]["name"](area.ee);out;`
@@ -71,7 +73,10 @@ function category(t) {
   if (t.amenity === 'cinema') return 'cinema'
   if (['theatre', 'concert_hall', 'music_venue'].includes(t.amenity)) return 'theatre'
   if (t.tourism === 'gallery') return 'museum'
-  if (t.tourism === 'viewpoint' || t.leisure === 'nature_reserve' || t.route === 'hiking') return 'nature'
+  if (t.tourism === 'viewpoint' || (t.man_made === 'tower' && t['tower:type'] === 'observation')) return 'viewpoint'
+  if (t.leisure === 'nature_reserve' || t.route === 'hiking') return 'nature'
+  // Sights
+  if (t.historic || t.tourism === 'attraction' || t.amenity === 'place_of_worship' || t.man_made === 'lighthouse') return 'sight'
   return null
 }
 

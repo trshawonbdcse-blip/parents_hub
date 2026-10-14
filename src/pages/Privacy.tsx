@@ -52,7 +52,7 @@ const TEXT = {
 export function Privacy() {
   const { t, lang } = useT()
   const navigate = useNavigate()
-  const c = TEXT[lang]
+  const c = TEXT[lang === 'fi' ? 'en' : lang]
   return (
     <div className="page prose">
       <div className="title-row">

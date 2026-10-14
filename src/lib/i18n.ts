@@ -1,11 +1,13 @@
 import { useSyncExternalStore } from 'react'
 import { DICT } from './dict'
+import { DICT_FI } from './dict-fi'
 
-export type Lang = 'en' | 'et' | 'ru'
+export type Lang = 'en' | 'et' | 'ru' | 'fi'
 export const LANGS: { code: Lang; label: string }[] = [
   { code: 'en', label: 'English' },
   { code: 'et', label: 'Eesti' },
   { code: 'ru', label: 'Русский' },
+  { code: 'fi', label: 'Suomi' },
 ]
 
 const KEY = 'ph.lang'
@@ -13,13 +15,14 @@ const KEY = 'ph.lang'
 function detect(): Lang {
   try {
     const saved = localStorage.getItem(KEY)
-    if (saved === 'en' || saved === 'et' || saved === 'ru') return saved
+    if (saved === 'en' || saved === 'et' || saved === 'ru' || saved === 'fi') return saved
   } catch {
     // Storage blocked: fall back to the phone's language.
   }
   const nav = (navigator.languages?.[0] ?? navigator.language ?? 'en').toLowerCase()
   if (nav.startsWith('et')) return 'et'
   if (nav.startsWith('ru')) return 'ru'
+  if (nav.startsWith('fi')) return 'fi'
   return 'en'
 }
 
@@ -48,7 +51,7 @@ const subscribe = (l: () => void) => {
 // English text is the key; missing translations fall back to English.
 // {name} placeholders are filled from vars.
 export function translate(text: string, vars?: Record<string, string | number>, lang: Lang = current): string {
-  const out = lang === 'en' ? text : (DICT[text]?.[lang] ?? text)
+  const out = lang === 'en' ? text : lang === 'fi' ? (DICT_FI[text] ?? text) : (DICT[text]?.[lang] ?? text)
   return vars ? out.replace(/\{(\w+)\}/g, (_: string, k: string) => String(vars[k] ?? '')) : out
 }
 
@@ -56,7 +59,7 @@ export function translate(text: string, vars?: Record<string, string | number>, 
 export function useT() {
   const lang = useSyncExternalStore(subscribe, getLang)
   const t = (text: string, vars?: Record<string, string | number>) => translate(text, vars, lang)
-  return { t, lang, locale: lang === 'et' ? 'et-EE' : lang === 'ru' ? 'ru-RU' : 'en-GB' }
+  return { t, lang, locale: localeOf(lang) }
 }
 
-export const localeOf = (lang: Lang = current) => (lang === 'et' ? 'et-EE' : lang === 'ru' ? 'ru-RU' : 'en-GB')
+export const localeOf = (lang: Lang = current) => ({ et: 'et-EE', ru: 'ru-RU', fi: 'fi-FI', en: 'en-GB' })[lang]

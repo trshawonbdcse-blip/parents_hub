@@ -14361,5 +14361,381 @@
     "activities": [
       "skiing"
     ]
+  },
+  {
+    "id": "tallinn-old-town",
+    "name": "Tallinn Old Town",
+    "nameLocal": "Tallinna vanalinn",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Vanalinn",
+    "city": "Tallinn",
+    "address": "Vanalinn, Tallinn",
+    "lat": 59.4378,
+    "lng": 24.7436,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "One of the best-kept medieval town centres in Europe and a UNESCO World Heritage Site. Cobbled lanes, town walls and towers make for an easy walk; the streets are uneven, so a sturdy stroller helps.",
+    "descriptionMe": "One of Europe's best-kept medieval towns and a UNESCO site. Walk the lower town lanes and the town wall, then climb to Toompea for views over the red roofs and the sea.",
+    "tips": "Come early in the morning or in the evening: cruise groups fill the main streets from late morning in summer.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (streets)",
+    "durationMinutes": 180,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Viru or Vabaduse väljak stops; 10–15 min walk from the ferry terminals",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://whc.unesco.org/en/list/822/"
+    ]
+  },
+  {
+    "id": "town-hall-square-tallinn",
+    "name": "Town Hall Square",
+    "nameLocal": "Raekoja plats",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Vanalinn",
+    "city": "Tallinn",
+    "address": "Raekoja plats, Tallinn",
+    "lat": 59.4372,
+    "lng": 24.7453,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "The heart of the Old Town, with the Gothic Town Hall, café terraces and plenty of space to run around. In December it hosts the Christmas market.",
+    "descriptionMe": "The heart of the Old Town, with the Gothic Town Hall and café terraces. A good place to start a walk; in December it hosts the Christmas market.",
+    "tips": "The Christmas market runs from late November to early January; the square is busiest at midday.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (square)",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Viru stop, then a 5-min walk",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tallinn_Town_Hall_Square"
+    ]
+  },
+  {
+    "id": "toompea-viewpoints",
+    "name": "Toompea viewpoints (Kohtuotsa and Patkuli)",
+    "nameLocal": "Kohtuotsa ja Patkuli vaateplatvorm",
+    "category": "viewpoint",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Toompea",
+    "city": "Tallinn",
+    "address": "Kohtu 12 and Rahukohtu 3, Tallinn",
+    "lat": 59.438,
+    "lng": 24.7393,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "Two free viewing platforms on Toompea hill, with the classic view over the Old Town roofs and the harbour. Patkuli is reached by a long stairway, so take the street route with a stroller.",
+    "descriptionMe": "Two free viewing platforms on Toompea hill with the classic postcard view over the Old Town roofs, the churches and the sea. Lovely at sunset.",
+    "tips": "Kohtuotsa is often crowded; Patkuli, a few minutes away, is usually quieter.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Uphill walk from Town Hall Square via Pikk jalg (10 min)",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toompea"
+    ]
+  },
+  {
+    "id": "telliskivi-creative-city",
+    "name": "Telliskivi Creative City",
+    "nameLocal": "Telliskivi Loomelinnak",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kalamaja",
+    "city": "Tallinn",
+    "address": "Telliskivi 60a, Tallinn",
+    "lat": 59.44,
+    "lng": 24.729,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "Old factory buildings turned into a creative quarter with street art, shops, cafés and the Fotografiska museum. Weekends bring a flea market and family events.",
+    "descriptionMe": "Old factory halls turned into Tallinn's creative quarter: street art, design shops, cafés, bars and the Fotografiska museum. Easy to spend an afternoon or evening here.",
+    "tips": "Shops and cafés each keep their own hours; many open around noon.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Courtyard open all the time; shops and cafés have their own hours",
+    "durationMinutes": 120,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Balti jaam (Baltic Station), 5-min walk",
+    "language": null,
+    "website": "https://telliskivi.cc/",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://telliskivi.cc/"
+    ]
+  },
+  {
+    "id": "kalamaja-district",
+    "name": "Kalamaja wooden houses",
+    "nameLocal": "Kalamaja",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kalamaja",
+    "city": "Tallinn",
+    "address": "Kalamaja, Tallinn",
+    "lat": 59.446,
+    "lng": 24.735,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "A former fishermen's district of colourful wooden houses, quiet streets and small cafés, a short walk from the Old Town and the sea.",
+    "descriptionMe": "A former fishermen's district of colourful wooden houses, quiet streets and small cafés. Wander from Telliskivi towards the sea and the Seaplane Harbour.",
+    "tips": "Combine with Telliskivi and the Seaplane Harbour, which are both on the edge of the district.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (streets)",
+    "durationMinutes": 90,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Balti jaam or Kalamaja stops",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kalamaja"
+    ]
+  },
+  {
+    "id": "linnahall-rooftop",
+    "name": "Linnahall rooftop",
+    "nameLocal": "Linnahall",
+    "category": "viewpoint",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tallinn",
+    "address": "Mere pst 20, Tallinn",
+    "lat": 59.4447,
+    "lng": 24.7533,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "A huge Soviet-era concrete hall by the sea whose stepped rooftop is a free walkway with views of the Old Town and the bay. The building itself is closed and being renovated.",
+    "descriptionMe": "A huge Soviet-era concrete hall by the sea. Its stepped rooftop is a free walkway with views of the Old Town and the bay, popular at sunset.",
+    "tips": "Parts of the roof may be fenced off during renovation; check what is open when you arrive.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (outdoor rooftop, where not fenced off)",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "10-min walk from the Old Town or the ferry terminals",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Linnahall"
+    ]
+  },
+  {
+    "id": "toome-hill-tartu",
+    "name": "Toome Hill",
+    "nameLocal": "Toomemägi",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Toomemägi",
+    "city": "Tartu",
+    "address": "Toomemägi, Tartu",
+    "lat": 58.38,
+    "lng": 26.717,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "A leafy hill in the middle of Tartu with the ruins of a medieval cathedral, bridges, monuments and paths that are easy to walk with a stroller.",
+    "descriptionMe": "A leafy park hill in the middle of Tartu with the ruins of a medieval cathedral, the Angel's and Devil's bridges and quiet paths. Lovely in autumn.",
+    "tips": "The University of Tartu Museum in the cathedral's restored choir has its own tickets and hours.",
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (park)",
+    "durationMinutes": 60,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "5-min walk from Town Hall Square",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Toome_Hill"
+    ]
+  },
+  {
+    "id": "tartu-town-hall-square",
+    "name": "Tartu Town Hall Square",
+    "nameLocal": "Tartu Raekoja plats",
+    "category": "sight",
+    "setting": "outdoor",
+    "season": "all-year",
+    "area": "Kesklinn",
+    "city": "Tartu",
+    "address": "Raekoja plats, Tartu",
+    "lat": 58.3803,
+    "lng": 26.7225,
+    "ageMinMonths": 0,
+    "ageMaxMonths": 240,
+    "description": "Tartu's main square with the pink Town Hall, the Kissing Students fountain and the leaning house. Café terraces line the square in summer.",
+    "descriptionMe": "Tartu's main square with the pink Town Hall, the Kissing Students fountain and the leaning house. A good start for a walk up to Toome Hill.",
+    "tips": null,
+    "price": {
+      "free": true,
+      "adult": 0,
+      "child": 0,
+      "childFreeUnderMonths": null,
+      "family": null,
+      "note": "Free to walk around; some museums and towers inside charge for entry."
+    },
+    "discounts": [
+      "Free"
+    ],
+    "hours": "Open all the time (square)",
+    "durationMinutes": 30,
+    "facilities": {
+      "stroller": null,
+      "changingTable": null,
+      "feedingRoom": null,
+      "cafe": true,
+      "toilet": null,
+      "parking": null
+    },
+    "transport": "Central Tartu; 10-min walk from the bus station",
+    "language": null,
+    "website": "",
+    "lastVerified": null,
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tartu_Town_Hall_Square"
+    ]
   }
 ]

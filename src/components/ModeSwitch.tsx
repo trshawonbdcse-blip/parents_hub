@@ -1,8 +1,8 @@
-import { User, Users } from 'lucide-react'
+import { Plane, User, Users } from 'lucide-react'
 import { useT } from '../lib/i18n'
 import { useMode } from '../lib/mode'
 
-// "Family / Just me" switch shown at the top of Today and Explore.
+// "Family / Just me / Visiting" switch shown at the top of Today and Explore.
 export function ModeSwitch() {
   const { t } = useT()
   const [mode, setMode] = useMode()
@@ -14,6 +14,9 @@ export function ModeSwitch() {
       </button>
       <button type="button" className={current === 'me' ? 'on' : ''} aria-pressed={current === 'me'} onClick={() => setMode('me')}>
         <User size={16} aria-hidden="true" /> {t('Just me')}
+      </button>
+      <button type="button" className={current === 'visit' ? 'on' : ''} aria-pressed={current === 'visit'} onClick={() => setMode('visit')}>
+        <Plane size={16} aria-hidden="true" /> {t('Visiting')}
       </button>
     </div>
   )

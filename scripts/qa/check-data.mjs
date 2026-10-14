@@ -12,7 +12,7 @@ const tips = read('src/data/i18n/tips.json')
 const money = read('src/data/money-tips.json')
 const parking = read('src/data/parking-rules.json')
 
-const CATS = ['playground', 'park', 'museum', 'indoor-play', 'library', 'swimming', 'zoo-farm', 'beach', 'mall', 'cafe', 'theatre', 'class', 'winter-fun', 'gym', 'cinema', 'nature']
+const CATS = ['playground', 'park', 'museum', 'indoor-play', 'library', 'swimming', 'zoo-farm', 'beach', 'mall', 'cafe', 'theatre', 'class', 'winter-fun', 'gym', 'cinema', 'nature', 'sight', 'viewpoint']
 const HUBS = ['Tallinn', 'Tartu', 'Pärnu', 'Narva', 'Jõhvi', 'Rakvere', 'Viljandi', 'Haapsalu', 'Kuressaare', 'Kärdla', 'Paide', 'Rapla', 'Võru', 'Valga', 'Põlva', 'Jõgeva', 'Otepää']
 const ACT_KEYS = acts.map((a) => a.key)
 const errors = []

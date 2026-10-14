@@ -13,7 +13,7 @@ interface PlaceTranslation {
 }
 
 // Place texts in Estonian/Russian are downloaded only for the language in use
-// (they are about a third of the app's size). English is built in.
+// (they are about a third of the app's size). English is built in; Finnish uses English for now.
 const TABLES: Partial<Record<Lang, Record<string, PlaceTranslation>>> = {}
 const LOADERS = {
   et: () => import('../data/i18n/places.et.json'),
@@ -23,7 +23,7 @@ let version = 0
 const listeners = new Set<() => void>()
 
 function load(lang: Lang) {
-  if (lang === 'en' || TABLES[lang]) return
+  if (lang === 'en' || lang === 'fi' || TABLES[lang]) return
   TABLES[lang] = {}
   LOADERS[lang]()
     .then((m) => {

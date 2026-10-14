@@ -2149,5 +2149,85 @@
       "Alla 7-aastased nõlval tasuta koos piletiga täiskasvanuga"
     ],
     "parkingNote": "Suusakeskuse juures on parkla."
+  },
+  "tallinn-old-town": {
+    "description": "Üks Euroopa paremini säilinud keskaegseid linnasüdameid ja UNESCO maailmapärandi paik. Munakivitänavad, linnamüür ja tornid sobivad mõnusaks jalutuskäiguks; tänavad on konarlikud, nii et tugevam käru on abiks.",
+    "descriptionMe": "Üks Euroopa paremini säilinud keskaegseid linnu ja UNESCO maailmapärand. Jaluta all-linna tänavatel ja linnamüüri ääres, siis roni Toompeale, et näha punaseid katuseid ja merd.",
+    "tips": "Tule varahommikul või õhtul: suvel täidavad kruiisigrupid peatänavad alates hilishommikust.",
+    "hours": "Alati avatud (tänavad)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "town-hall-square-tallinn": {
+    "description": "Vanalinna süda gooti stiilis raekoja, kohvikuterrasside ja ruumika platsiga, kus lapsed saavad joosta. Detsembris toimub siin jõuluturg.",
+    "descriptionMe": "Vanalinna süda gooti raekoja ja kohvikuterrassidega. Hea koht jalutuskäiku alustada; detsembris on siin jõuluturg.",
+    "tips": "Jõuluturg on avatud novembri lõpust jaanuari alguseni; keskpäeval on plats kõige rahvarohkem.",
+    "hours": "Alati avatud (plats)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "toompea-viewpoints": {
+    "description": "Kaks tasuta vaateplatvormi Toompeal klassikalise vaatega vanalinna katustele ja sadamale. Patkulile viib pikk trepp, nii et käruga vali tänavatee.",
+    "descriptionMe": "Kaks tasuta vaateplatvormi Toompeal klassikalise postkaardivaatega vanalinna katustele, kirikutele ja merele. Eriti ilus päikeseloojangul.",
+    "tips": "Kohtuotsal on sageli rahvast palju; paari minuti kaugusel asuv Patkuli on tavaliselt vaiksem.",
+    "hours": "Alati avatud",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "telliskivi-creative-city": {
+    "description": "Vanadest tehasehoonetest on saanud loomelinnak tänavakunsti, poodide, kohvikute ja Fotografiska muuseumiga. Nädalavahetustel on kirbuturg ja pereüritused.",
+    "descriptionMe": "Vanad tehasehallid on nüüd Tallinna loomelinnak: tänavakunst, disainipoed, kohvikud, baarid ja Fotografiska. Siin möödub kergesti terve pärastlõuna või õhtu.",
+    "tips": "Poodidel ja kohvikutel on igaühel oma lahtiolekuajad; paljud avavad keskpäeva paiku.",
+    "hours": "Hoov alati avatud; poodidel ja kohvikutel omad ajad",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "kalamaja-district": {
+    "description": "Endine kalurite linnaosa värviliste puumajade, vaikse tänavate ja väikeste kohvikutega, lühikese jalutuskäigu kaugusel vanalinnast ja merest.",
+    "descriptionMe": "Endine kalurite linnaosa värviliste puumajade, vaikse tänavate ja väikeste kohvikutega. Jaluta Telliskivist mere ja Lennusadama poole.",
+    "tips": "Ühenda Telliskivi ja Lennusadamaga, mis mõlemad on linnaosa servas.",
+    "hours": "Alati avatud (tänavad)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "linnahall-rooftop": {
+    "description": "Hiiglaslik nõukogudeaegne betoonhoone mere ääres, mille astmeline katus on tasuta jalutuskoht vaatega vanalinnale ja lahele. Hoone ise on suletud ja renoveerimisel.",
+    "descriptionMe": "Hiiglaslik nõukogudeaegne betoonhoone mere ääres. Astmeline katus on tasuta jalutuskoht vaatega vanalinnale ja lahele, populaarne päikeseloojangul.",
+    "tips": "Renoveerimise ajal võivad katuse osad olla piiratud; vaata kohapeal, mis on avatud.",
+    "hours": "Alati avatud (välikatus, kus pole piiratud)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "toome-hill-tartu": {
+    "description": "Roheline mägi Tartu keskel keskaegse toomkiriku varemete, sildade, monumentide ja käruga hästi läbitavate radadega.",
+    "descriptionMe": "Roheline pargimägi Tartu keskel keskaegse toomkiriku varemete, Ingli- ja Kuradisilla ning vaikse radadega. Eriti ilus sügisel.",
+    "tips": "Toomkiriku taastatud kooriosas asuval Tartu Ülikooli muuseumil on oma piletid ja lahtiolekuajad.",
+    "hours": "Alati avatud (park)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
+  },
+  "tartu-town-hall-square": {
+    "description": "Tartu peaväljak roosa raekoja, Suudlevate tudengite purskkaevu ja viltuse majaga. Suvel ääristavad platsi kohvikuterrassid.",
+    "descriptionMe": "Tartu peaväljak roosa raekoja, Suudlevate tudengite purskkaevu ja viltuse majaga. Hea algus jalutuskäigule Toomemäele.",
+    "tips": null,
+    "hours": "Alati avatud (plats)",
+    "priceNote": "Ringi jalutada saab tasuta; mõnes muuseumis ja tornis on sissepääs tasuline.",
+    "discounts": [
+      "Tasuta"
+    ]
   }
 }

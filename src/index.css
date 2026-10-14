@@ -183,7 +183,7 @@ section > h2, .block > h2 { margin-bottom: 12px; }
 .segmented.wide { width: 100%; }
 
 .category-row { gap: 4px; }
-.category { flex: 0 0 auto; width: 76px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: none; font-size: var(--fs-caption); font-weight: 700; color: var(--muted); text-align: center; line-height: 1.2; padding: 0; }
+.category { flex: 0 0 auto; width: 76px; display: flex; flex-direction: column; align-items: center; gap: 6px; background: none; border: none; font-size: var(--fs-caption); font-weight: 700; color: var(--muted); text-align: center; line-height: 1.2; padding: 0; overflow-wrap: anywhere; hyphens: auto; }
 .category-icon { width: 52px; height: 52px; border-radius: var(--r-card); display: grid; place-items: center; background: var(--tile); color: var(--primary); }
 .category.on { color: var(--ink); }
 .category.on .category-icon { background: var(--primary); color: var(--surface); }
@@ -494,6 +494,13 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .nudge > span:nth-child(2) { flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .nudge strong { font-family: var(--font-head); font-weight: 800; font-size: 17px; line-height: 1.2; letter-spacing: var(--track-head); }
 .nudge small { color: var(--accent); font-weight: 600; }
+.plan-list > li { display: flex; flex-direction: column; }
+.plan-travel { display: flex; align-items: center; gap: 6px; padding: 8px 16px 0 76px; font-size: var(--fs-caption, 12px); color: var(--muted); }
+.card-saving { display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 18px; background: var(--info-bg); color: var(--info); }
+.card-saving > span { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.card-saving strong { font-family: var(--font-head); font-weight: 800; font-size: 16px; line-height: 1.25; }
+.card-saving small { font-weight: 600; }
+.mode-switch button { min-width: 0; padding: 0 6px; white-space: nowrap; }
 button.nudge { width: 100%; border: 0; font: inherit; text-align: left; cursor: pointer; }
 
 /* Town picker ------------------------------------------------------- */

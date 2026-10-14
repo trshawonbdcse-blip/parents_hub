@@ -12,7 +12,7 @@ import { useAllPlaces, useOsmStatus } from '../lib/osm'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Category } from '../types'
 import { useT } from '../lib/i18n'
-import { ME_CATEGORIES, forMode, meCategoryLabel, useMode } from '../lib/mode'
+import { forMode, meCategoryLabel, useMode, isAdult, categoriesFor, type Mode } from '../lib/mode'
 import { ModeSwitch } from '../components/ModeSwitch'
 
 type Coords = { lat: number; lng: number }
@@ -30,8 +30,9 @@ export function Explore() {
   const [city, setCity] = useCity()
   const all = useAllPlaces()
   const [appMode] = useMode()
-  const me = appMode === 'me'
-  const pool = useMemo(() => forMode(me ? 'me' : 'family', placesIn(city, all)), [city, all, me])
+  const me = isAdult(appMode)
+  const listMode: Mode = appMode ?? 'family'
+  const pool = useMemo(() => forMode(listMode, placesIn(city, all)), [city, all, listMode])
   const [limit, setLimit] = useState(40)
 
   const q = params.get('q') ?? ''
@@ -68,8 +69,8 @@ export function Explore() {
   const areas = useMemo(() => [...new Set(pool.map((p) => p.area))].sort((a, b) => a.localeCompare(b, 'et')), [pool])
   const categories = useMemo(() => {
     const present = new Set(pool.map((p) => p.category))
-    return me ? ME_CATEGORIES.filter((c) => present.has(c)) : [...present]
-  }, [pool, me])
+    return me ? categoriesFor(listMode).filter((c) => present.has(c)) : [...present]
+  }, [pool, me, listMode])
   const catLabel = (c: Category) => (me ? meCategoryLabel(c) : categoryLabel(c))
   const sheetFilters = [area !== 'any', parking !== 'any', !ageOnly, !seasonOnly].filter(Boolean).length
 
@@ -109,9 +110,9 @@ export function Explore() {
   const freeCount = results.filter(({ p }) => p.price.free).length
   // Context for the count: the whole country, and places hidden because they are out of season.
   const countryCount = useMemo(
-    () => (city === ALL ? 0 : forMode(me ? 'me' : 'family', all).filter((p) => matches(p, { anyArea: true })).length),
+    () => (city === ALL ? 0 : forMode(listMode, all).filter((p) => matches(p, { anyArea: true })).length),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [city, all, me, q, setting, free, stebbyOnly, category, ageOnly, seasonOnly, parking, months],
+    [city, all, me, listMode, q, setting, free, stebbyOnly, category, ageOnly, seasonOnly, parking, months],
   )
   const offSeason = seasonOnly ? pool.filter((p) => !fitsSeason(p) && matches(p, { anySeason: true })).length : 0
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
@@ -184,7 +185,7 @@ export function Explore() {
 
       <div className="filters">
         <div className="chip-row" role="group" aria-label={t('Quick filters')}>
-          {(hasStebby || stebbyOnly || me) && (
+          {(hasStebby || stebbyOnly || appMode === 'me') && (
             <button className={`chip ${stebbyOnly ? 'on' : ''}`} onClick={() => toggle('stebby', stebbyOnly)}>
               Stebby
             </button>

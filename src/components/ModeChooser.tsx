@@ -1,4 +1,4 @@
-import { User, Users } from 'lucide-react'
+import { Plane, User, Users } from 'lucide-react'
 import { useEffect } from 'react'
 import { useT } from '../lib/i18n'
 import { useMode } from '../lib/mode'
@@ -35,6 +35,13 @@ export function ModeChooser() {
         <span>
           <strong>{t('Just me')}</strong>
           <small>{t('Sport, swimming, culture and nature, with Stebby where it works')}</small>
+        </span>
+      </button>
+      <button type="button" className="chooser-option" onClick={() => setMode('visit')}>
+        <Plane size={22} aria-hidden="true" />
+        <span>
+          <strong>{t('I’m visiting Estonia')}</strong>
+          <small>{t('Sights, a day plan for the weather, and what’s on tonight')}</small>
         </span>
       </button>
       <p className="muted small">{t('You can switch any time at the top of Today and Explore.')}</p>

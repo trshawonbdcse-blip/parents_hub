@@ -49,7 +49,7 @@ const WEATHER = {
 async function newPage({ lang = 'en', width = 390, height = 844, storage = {}, mode = 'family' } = {}) {
   // Family mode unless a test asks otherwise (null = first open, shows the chooser).
   if (mode) storage = { 'ph.mode': mode, ...storage }
-  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1, serviceWorkers: 'block', locale: lang === 'en' ? 'en-GB' : lang === 'et' ? 'et-EE' : 'ru-RU' })
+  const ctx = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1, serviceWorkers: 'block', locale: { en: 'en-GB', et: 'et-EE', ru: 'ru-RU', fi: 'fi-FI' }[lang] })
   await ctx.route('**/*', (route) => {
     const u = route.request().url()
     if (u.startsWith(URL0)) return route.continue()
@@ -344,9 +344,27 @@ for (const lang of ['en', 'et', 'ru']) {
   await page.context().close()
 }
 
+// "Visiting" mode: a day plan for Tallinn, sights, and the app in Finnish.
+await flow('Visiting: day plan, 2 days, sight page', async (page) => {
+  await page.goto(URL0 + '#/')
+  await page.waitForSelector('h1:has-text("How long are you here?")')
+  await page.waitForSelector('.plan-list li >> nth=2')
+  await page.click('.chip:has-text("2 days")')
+  await page.waitForSelector('.chip:has-text("Day 2")')
+  await page.goto(URL0 + '#/place/tallinn-old-town')
+  await page.waitForSelector('h1:has-text("Tallinn Old Town")')
+}, { storage: {}, mode: 'visit' })
+{
+  const page = await newPage({ lang: 'fi', mode: 'visit' })
+  for (const s of ['#/', '#/explore', '#/explore?cat=sight', '#/place/toompea-viewpoints', '#/events']) await checkScreen(page, s, `fi visiting ${s}`)
+  const text = await checkScreen(page, '#/', 'fi visiting today')
+  if (!text.includes('Kuinka') && !text.includes('kauan')) fail('fi visiting today', 'Finnish UI text not shown')
+  await page.context().close()
+}
+
 // 4. Accessibility (serious and critical issues only).
 const axe = fs.readFileSync('node_modules/axe-core/axe.min.js', 'utf8')
-for (const [s, mode] of [['#/', 'family'], ['#/explore', 'family'], ['#/place/tallinn-zoo', 'family'], ['#/activities', 'family'], ['#/activity/swimming', 'family'], ['#/events', 'family'], ['#/me?tab=family', 'family'], ['#/', 'me'], ['#/explore', 'me'], ['#/place/kalev-spa-water-park', 'me'], ['#/', null]]) {
+for (const [s, mode] of [['#/', 'family'], ['#/explore', 'family'], ['#/place/tallinn-zoo', 'family'], ['#/activities', 'family'], ['#/activity/swimming', 'family'], ['#/events', 'family'], ['#/me?tab=family', 'family'], ['#/', 'me'], ['#/explore', 'me'], ['#/place/kalev-spa-water-park', 'me'], ['#/', 'visit'], ['#/', null]]) {
   checks++
   const page = await newPage({ storage: mode === null ? {} : CHILD, mode })
   await page.goto(URL0 + s)

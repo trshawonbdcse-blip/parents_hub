@@ -6,7 +6,7 @@ import { useNewEvents } from '../components/Engage'
 import { useCity } from '../lib/city'
 import { cleanPrice, dayKey, dayLabel, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
-import { useMode } from '../lib/mode'
+import { isAdult, useMode } from '../lib/mode'
 import { EventsMe } from './EventsMe'
 import { useT } from '../lib/i18n'
 
@@ -59,7 +59,7 @@ function SubscribeCard({ city }: { city: string }) {
 
 export function Events() {
   const [mode] = useMode()
-  return mode === 'me' ? <EventsMe /> : <EventsFamily />
+  return isAdult(mode) ? <EventsMe /> : <EventsFamily />
 }
 
 function EventsFamily() {

@@ -2,7 +2,7 @@ import { BadgeCheck, ChevronRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useT } from '../lib/i18n'
 import { categoryLabel, isChecked, isStale, priceAdultShort, priceShort } from '../lib/places'
-import { meCategoryLabel, useMode } from '../lib/mode'
+import { isAdult, meCategoryLabel, useMode } from '../lib/mode'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import type { Place } from '../types'
 import { CATEGORY_ICON } from './ui'
@@ -14,7 +14,7 @@ export function PlaceRow({ place, months, distance }: { place: Place; months: nu
   const Icon = CATEGORY_ICON[place.category]
   const photo = place.photos?.[0]
   const [mode] = useMode()
-  const me = mode === 'me'
+  const me = isAdult(mode)
   const price = (me ? priceAdultShort(place) : priceShort(place, months)).split(' · ')
   const where = place.area === place.city || place.city === 'Tallinn' ? place.area : `${place.area}, ${place.city}`
   return (

@@ -37,7 +37,8 @@ import { placeText } from '../lib/placeText'
 import { usePlace } from '../lib/osm'
 import { shareContent, shareUrl } from '../lib/native'
 import { track } from '../lib/analytics'
-import { meCategoryLabel, useMode } from '../lib/mode'
+import { isAdult, meCategoryLabel, useMode } from '../lib/mode'
+import { TripHelp } from '../components/TripHelp'
 import { CONTACT_EMAIL, mistakeMail } from '../lib/feedback'
 import { stebbyInfo, useStebby } from '../lib/stebby'
 
@@ -88,7 +89,8 @@ export function PlaceDetail() {
   const [slide, setSlide] = useState(0)
   const [hasStebby] = useStebby()
   const [appMode] = useMode()
-  const me = appMode === 'me'
+  const me = isAdult(appMode)
+  const visiting = appMode === 'visit'
 
   if (!place && loading) return <div className="page"><p className="muted">{t('Loading…')}</p></div>
   if (!place) {
@@ -266,7 +268,9 @@ export function PlaceDetail() {
           </ul>
         )}
 
-        {(stebby || (hasStebby && !place.price.free)) && (
+        {visiting && <TripHelp place={place} />}
+
+        {!visiting && (stebby || (hasStebby && !place.price.free)) && (
           <div className={`stebby-row ${stebby ? '' : 'no'}`}>
             {stebby ? <BadgeCheck size={18} /> : <HelpCircle size={18} />}
             <div>

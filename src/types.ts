@@ -16,6 +16,9 @@ export type Category =
   | 'gym'
   | 'cinema'
   | 'nature'
+  // Visitors (and everyone): old towns, castles, churches, viewpoints
+  | 'sight'
+  | 'viewpoint'
 
 export type Setting = 'indoor' | 'outdoor' | 'both'
 export type Season = 'all-year' | 'summer' | 'winter'
