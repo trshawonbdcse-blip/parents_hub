@@ -53,6 +53,16 @@ const tallinnIso = (local) => {
   return `${local.replace(' ', 'T').slice(0, 19)}${sign}${String(Math.abs(parseInt(off, 10))).padStart(2, '0')}:00`
 }
 
+const CATEGORY_KIND = { Teater: 'theatre', Tants: 'theatre', Muusika: 'concert' }
+// Theatre on a weekday before 14:00 (Tallinn time) is nearly always a school performance.
+const schoolShow = (e) => {
+  if (e.kind !== 'theatre') return false
+  const d = new Date(e.start)
+  const day = new Intl.DateTimeFormat('en', { timeZone: 'Europe/Tallinn', weekday: 'short' }).format(d)
+  const hour = Number(new Intl.DateTimeFormat('en', { timeZone: 'Europe/Tallinn', hour: '2-digit', hourCycle: 'h23' }).format(d))
+  return !['Sat', 'Sun'].includes(day) && hour < 14
+}
+
 async function piletimaailm() {
   const list = await (await get('https://www.piletimaailm.com/performances/feed.json')).json()
   if (Array.isArray(list)) {
@@ -86,15 +96,17 @@ async function piletimaailm() {
         image: e.image_url || null,
         summary: clip(desc),
         description: clip(desc, 1500),
-        kind: kindOf(`${category} ${title} ${desc.slice(0, 300)} ${e.organizer_name ?? ''}`),
+        kind: CATEGORY_KIND[category] ?? kindOf(`${title} ${desc.slice(0, 300)} ${e.organizer_name ?? ''}`),
+        category,
         cityHint: city,
         soldOut: e.free_seat_count === 0 || undefined,
         kidsText: `${category} ${title} ${desc.slice(0, 600)}`,
         cancelled: /cancel|tühist/i.test(String(e.state ?? '')),
       }
     })
-    .filter((e) => e.title && !e.cancelled && !KIDS.test(e.kidsText) && !NOT_EVENT.test(e.title))
-    .map(({ kidsText, cancelled, ...e }) => e)
+    // Films are already covered by the cinemas in Explore; weekday-morning theatre is school shows.
+    .filter((e) => e.title && !e.cancelled && !KIDS.test(e.kidsText) && !NOT_EVENT.test(e.title) && !['Kino', 'Näitus'].includes(e.category) && !schoolShow(e))
+    .map(({ kidsText, cancelled, category, ...e }) => e)
 }
 
 async function fienta() {
@@ -158,7 +170,13 @@ const events = collected
     const t = new Date(e.start).getTime()
     return t >= now - DAY / 2 && t <= HORIZON
   })
-  .map(({ cityHint, ...e }) => ({ ...e, city: townOf(cityHint) ?? townOf(`${e.venue ?? ''} ${e.address ?? ''}`) ?? townOf(`${e.title} ${e.organizer ?? ''}`) }))
+  // The venue name is the safest clue ("Kuressaare Teater"); in addresses, street names like
+  // "Tallinna" mislead, so the town at the end of the address comes next.
+  .map(({ cityHint, ...e }) => {
+    const addr = String(cityHint ?? e.address ?? '')
+    const city = townOf(e.venue) ?? townOf(addr.split(',').slice(1).join(',')) ?? townOf(addr) ?? townOf(`${e.title} ${e.organizer ?? ''}`)
+    return { ...e, city }
+  })
   // One entry per show and time (the same performance can be listed twice).
   .filter((e) => {
     const key = `${e.title.toLowerCase()}|${e.start}`
