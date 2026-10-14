@@ -375,6 +375,7 @@ export const DICT: Record<string, Entry> = {
   'Best for you right now': { et: 'Sulle praegu parim', ru: 'Лучшее для вас сейчас' },
   'Also good now': { et: 'Praegu sobib ka', ru: 'Тоже подойдёт' },
   'Outdoors this week': { et: 'Sel nädalal õues', ru: 'На природе на этой неделе' },
+  'Sold out': { et: 'Välja müüdud', ru: 'Билеты проданы' },
   'Concert': { et: 'Kontsert', ru: 'Концерт' },
   'Theatre': { et: 'Teater', ru: 'Театр' },
   'Event': { et: 'Sündmus', ru: 'Событие' },

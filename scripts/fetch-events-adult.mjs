@@ -15,7 +15,7 @@ const HORIZON = now + 60 * DAY
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : { events: [] }
 
 // Kids' and family events belong to the Family list.
-const KIDS = /(\blastele\b|\blaste(hommik|tuba|etendus|kontsert|kino|pidu|teater|ring)|\bbeebi|väikelap|\bmudila|\bkogupere|\bperepäev|\bnukulavastus|\bnukuteater|\bmuinasjut|для детей|\bдетск|\bмалыш|\bkids?\b|\bchildren|\bfamily (day|show|concert)|\btoddler)/i
+const KIDS = /(\blastele\b|\blaste(hommik|tuba|etendus|kontsert|kino|pidu|teater|ring)|\bbeebi|väikelap|\bmudila|\bkogupere|\bperepäev|\bnukulavastus|\bnukuteater|\blaste(etendus|lavastus|muusikal|ooper)|\bpere(etendus|lavastus|kontsert|lavastus)|noore(le|mate) vaataja|\blastelavastus|\b(alates|vanusele) [2-9] |\b[3-9]\+|\bmuinasjut|для детей|\bдетск|\bмалыш|\bkids?\b|\bchildren|\bfamily (day|show|concert)|\btoddler)/i
 const NOT_EVENT = /(kinkekaart|gift ?card|hooajapilet|season pass|abonement|kinkepilet)/i
 const KIND = [
   ['concert', /(kontsert|concert|концерт|orkester|orchestra|ooper|opera|опера|jazz|džäss|festival|bänd|band|dj\b|klaver|piano|koor|choir|музык)/i],
@@ -55,14 +55,19 @@ const tallinnIso = (local) => {
 
 async function piletimaailm() {
   const list = await (await get('https://www.piletimaailm.com/performances/feed.json')).json()
-  if (Array.isArray(list) && list[0]) console.log('piletimaailm fields:', Object.keys(list[0]).join(', '))
+  if (Array.isArray(list)) {
+    const tally = (k) => Object.entries(list.reduce((m, e) => ({ ...m, [e[k]]: (m[e[k]] ?? 0) + 1 }), {})).map(([v, n]) => `${v}: ${n}`).join(' · ')
+    console.log('piletimaailm categories:', tally('category'))
+    console.log('piletimaailm states:', tally('state'))
+  }
   return (Array.isArray(list) ? list : [])
     .map((e) => {
       const title = stripHtml(pick(e, 'name', 'name_en'))
       const desc = stripHtml(pick(e, 'full_description', 'description', 'short_description'))
-      const venue = stripHtml(pick(e, 'venue_name', 'venue', 'location_name', 'location', 'hall_name', 'place')) || null
-      const address = stripHtml(pick(e, 'venue_address', 'address', 'location_address')) || null
-      const city = stripHtml(pick(e, 'city', 'venue_city', 'town')) || null
+      const venue = [stripHtml(e.location_venue_name), stripHtml(e.location_venue_hall_name)].filter(Boolean).join(', ') || null
+      const address = stripHtml(e.location_address_address) || null
+      const city = address
+      const category = stripHtml(e.category)
       const priceMin = pick(e, 'min_price', 'price_min', 'price_from', 'price')
       return {
         id: `piletimaailm-${e.id}`,
@@ -78,14 +83,18 @@ async function piletimaailm() {
         organizer: stripHtml(e.organizer_name) || null,
         price: priceMin != null && !isNaN(parseFloat(priceMin)) ? `From €${parseFloat(priceMin)}` : null,
         free: null,
-        image: pick(e, 'image_url', 'image', 'picture_url', 'thumbnail_url') ?? null,
+        image: e.image_url || null,
         summary: clip(desc),
         description: clip(desc, 1500),
-        kind: kindOf(`${title} ${desc.slice(0, 300)} ${e.organizer_name ?? ''}`),
+        kind: kindOf(`${category} ${title} ${desc.slice(0, 300)} ${e.organizer_name ?? ''}`),
         cityHint: city,
+        soldOut: e.free_seat_count === 0 || undefined,
+        kidsText: `${category} ${title} ${desc.slice(0, 600)}`,
+        cancelled: /cancel|tühist/i.test(String(e.state ?? '')),
       }
     })
-    .filter((e) => e.title && !KIDS.test(`${e.title} ${e.summary ?? ''}`) && !NOT_EVENT.test(e.title))
+    .filter((e) => e.title && !e.cancelled && !KIDS.test(e.kidsText) && !NOT_EVENT.test(e.title))
+    .map(({ kidsText, cancelled, ...e }) => e)
 }
 
 async function fienta() {
@@ -114,7 +123,14 @@ async function fienta() {
         kind: kindOf(`${title} ${desc.slice(0, 300)}`),
       }
     })
-    .filter((e) => !KIDS.test(`${e.title} ${e.summary ?? ''}`) && !NOT_EVENT.test(e.title) && !/(webinar|вебинар|online|koolitus|training|konverents|conference)/i.test(e.title))
+    // Leave out work events, courses and day tickets to permanent attractions (museums etc.).
+    .filter(
+      (e) =>
+        !KIDS.test(`${e.title} ${e.summary ?? ''}`) &&
+        !NOT_EVENT.test(e.title) &&
+        !/(webinar|вебинар|online|koolitus|training|konverents|conference|seminar|töötuba|workshop|мастер-класс|tehisaru|бизнес|business|ettevõtja|muuseum|museum|музей|inspiratsioonipäev)/i.test(e.title) &&
+        !(e.end && new Date(e.end) - new Date(e.start) > 2 * DAY),
+    )
 }
 
 const sources = { piletimaailm, fienta }

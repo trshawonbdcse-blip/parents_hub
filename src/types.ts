@@ -142,4 +142,5 @@ export interface AdultEvent extends KidEvent {
   kind: 'concert' | 'theatre' | 'other'
   organizer?: string | null
   titleEn?: string
+  soldOut?: boolean
 }

@@ -93,6 +93,7 @@ export function EventsMe() {
                     )}
                     <span className="event-meta">
                       <span className="badge badge-brand">{t(kindLabel(e.kind))}</span>
+                      {e.soldOut && <span className="badge">{t('Sold out')}</span>}
                       {e.free ? <span className="badge badge-free">{t('Free')}</span> : e.price && <span className="badge">{cleanPrice(e.price)}</span>}
                     </span>
                   </span>
