@@ -358,6 +358,9 @@ export const DICT: Record<string, Entry> = {
   'Activities by age': { et: 'Tegevused vanuse järgi', ru: 'Занятия по возрасту' },
   'Parking in Tallinn': { et: 'Parkimine Tallinnas', ru: 'Парковка в Таллинне' },
   // Just me mode
+  'Places in all of Estonia': { et: 'Kohad üle Eesti', ru: 'Места по всей Эстонии' },
+  '{n} in all of Estonia': { et: '{n} üle Eesti', ru: '{n} по всей Эстонии' },
+  '{n} out of season, hidden': { et: '{n} hooajaväliselt peidus', ru: '{n} скрыто вне сезона' },
   'Who are you planning for?': { et: 'Kellele plaani teed?', ru: 'Для кого планируете?' },
   'My family': { et: 'Minu pere', ru: 'Моя семья' },
   'Ideas by your child’s age, naps and the weather': { et: 'Ideed lapse vanuse, uneaegade ja ilma järgi', ru: 'Идеи по возрасту ребёнка, сну и погоде' },

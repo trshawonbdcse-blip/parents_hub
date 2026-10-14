@@ -553,3 +553,5 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .cat-tile small { color: var(--muted); font-size: var(--fs-caption); font-variant-numeric: tabular-nums; }
 .stebby-chip { background: var(--warning-bg); color: var(--warning); }
 .stebby-chip svg { color: var(--warning); }
+.hero-more { display: flex; flex-wrap: wrap; gap: 6px; }
+.hero-more button { display: inline-flex; align-items: center; gap: 4px; min-height: 36px; padding: 0 12px; border: none; border-radius: 999px; background: var(--on-primary-fill); color: var(--surface); font-size: var(--fs-secondary); font-weight: 700; }

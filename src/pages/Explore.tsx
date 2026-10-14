@@ -1,4 +1,4 @@
-import { AlertTriangle, LayoutGrid, List, Map as MapIcon, Search, SearchX, SlidersHorizontal, X } from 'lucide-react'
+import { AlertTriangle, ChevronRight, LayoutGrid, List, Map as MapIcon, Search, SearchX, SlidersHorizontal, X } from 'lucide-react'
 import { lazy, Suspense, useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
@@ -27,7 +27,7 @@ export function Explore() {
   const [coords, setCoords] = useState<Coords | null>(null)
   const [locError, setLocError] = useState(false)
   const [sheetOpen, setSheetOpen] = useState(false)
-  const [city] = useCity()
+  const [city, setCity] = useCity()
   const all = useAllPlaces()
   const [appMode] = useMode()
   const me = appMode === 'me'
@@ -74,23 +74,25 @@ export function Explore() {
   const sheetFilters = [area !== 'any', parking !== 'any', !ageOnly, !seasonOnly].filter(Boolean).length
 
   const osm = useOsmStatus()
+  // Same filters everywhere; the season check is kept apart so hidden places can be counted.
+  const matches = (p: (typeof pool)[number], opts: { anyArea?: boolean; anySeason?: boolean } = {}) => {
+    const text = `${p.name} ${p.nameLocal ?? ''} ${p.area} ${p.city} ${p.description}`.toLowerCase()
+    if (q && !text.includes(q.toLowerCase())) return false
+    if (setting === 'indoor' && p.setting === 'outdoor') return false
+    if (setting === 'outdoor' && p.setting === 'indoor') return false
+    if (free && !p.price.free) return false
+    if (stebbyOnly && !acceptsStebby(p)) return false
+    if (category !== 'any' && p.category !== category) return false
+    if (!opts.anyArea && area !== 'any' && areas.includes(area) && p.area !== area) return false
+    if (ageOnly && !me && !fitsAge(p, months)) return false
+    if (!opts.anySeason && seasonOnly && !fitsSeason(p)) return false
+    if (parking === 'yes' && !hasParking(p)) return false
+    if (parking === 'free' && !hasFreeParking(p)) return false
+    if (parking === 'pargi' && !p.parkingInfo?.pargiSupported) return false
+    return true
+  }
   const results = pool
-    .filter((p) => {
-      const text = `${p.name} ${p.nameLocal ?? ''} ${p.area} ${p.city} ${p.description}`.toLowerCase()
-      if (q && !text.includes(q.toLowerCase())) return false
-      if (setting === 'indoor' && p.setting === 'outdoor') return false
-      if (setting === 'outdoor' && p.setting === 'indoor') return false
-      if (free && !p.price.free) return false
-      if (stebbyOnly && !acceptsStebby(p)) return false
-      if (category !== 'any' && p.category !== category) return false
-      if (area !== 'any' && areas.includes(area) && p.area !== area) return false
-      if (ageOnly && !me && !fitsAge(p, months)) return false
-      if (seasonOnly && !fitsSeason(p)) return false
-      if (parking === 'yes' && !hasParking(p)) return false
-      if (parking === 'free' && !hasFreeParking(p)) return false
-      if (parking === 'pargi' && !p.parkingInfo?.pargiSupported) return false
-      return true
-    })
+    .filter((p) => matches(p))
     .map((p) => ({
       p,
       d: coords ? distanceKm(coords.lat, coords.lng, p.lat, p.lng) : null,
@@ -105,6 +107,13 @@ export function Explore() {
     })
 
   const freeCount = results.filter(({ p }) => p.price.free).length
+  // Context for the count: the whole country, and places hidden because they are out of season.
+  const countryCount = useMemo(
+    () => (city === ALL ? 0 : forMode(me ? 'me' : 'family', all).filter((p) => matches(p, { anyArea: true })).length),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [city, all, me, q, setting, free, stebbyOnly, category, ageOnly, seasonOnly, parking, months],
+  )
+  const offSeason = seasonOnly ? pool.filter((p) => !fitsSeason(p) && matches(p, { anySeason: true })).length : 0
   const toggle = (key: string, on: boolean, value = '1') => update(key, on ? null : value)
   // With no search or filters, lead with photo cards of hand-checked places.
   const browsing = !q && category === 'any' && setting === 'any' && !free && !wantNear && !stebbyOnly && parking === 'any'
@@ -142,7 +151,7 @@ export function Explore() {
         <div className="hero-row">
           <div className="hero-stack">
             <span className="hero-number result-count">{results.length}</span>
-            <span className="hero-label">{city === ALL ? t('Places in Estonia') : t('Places in {city}', { city: cityName(city) })}</span>
+            <span className="hero-label">{city === ALL ? t('Places in all of Estonia') : t('Places in {city}', { city: cityName(city) })}</span>
           </div>
           <div className="hero-toggle" role="tablist" aria-label={t('View')}>
             <button role="tab" aria-selected={!mapView} className={mapView ? '' : 'on'} onClick={() => update('view', null)}>
@@ -154,6 +163,20 @@ export function Explore() {
           </div>
         </div>
         {freeCount > 0 && !free && <span className="hero-badge">{t('{n} free', { n: freeCount })}</span>}
+        {(countryCount > results.length || offSeason > 0) && (
+          <div className="hero-more">
+            {countryCount > results.length && (
+              <button type="button" onClick={() => setCity(ALL)}>
+                {t('{n} in all of Estonia', { n: countryCount })} <ChevronRight size={14} aria-hidden="true" />
+              </button>
+            )}
+            {offSeason > 0 && (
+              <button type="button" onClick={() => update('season', '0')}>
+                {t('{n} out of season, hidden', { n: offSeason })} <ChevronRight size={14} aria-hidden="true" />
+              </button>
+            )}
+          </div>
+        )}
         {(osm === 'loading' || (locError && wantNear && !coords)) && (
           <p className="hero-sub">{osm === 'loading' ? t('Loading more places from the community map…') : t('Location not available — sorted by name.')}</p>
         )}
