@@ -15,6 +15,8 @@ import {
   TZ,
 } from '../lib/events'
 import { useT } from '../lib/i18n'
+import { adultEventById, kindLabel, useAdultEvents } from '../lib/adultEvents'
+import type { AdultEvent } from '../types'
 import { shareContent, shareUrl } from '../lib/native'
 
 
@@ -24,10 +26,15 @@ export function EventDetail() {
   const timeFmt = new Intl.DateTimeFormat(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const { id = '' } = useParams()
   const navigate = useNavigate()
-  const event = eventById(decodeURIComponent(id))
+  const kidEvent = eventById(decodeURIComponent(id))
+  // Adult events ("Just me") are downloaded separately, only when needed.
+  const { status } = useAdultEvents(!kidEvent)
+  const adult = kidEvent ? undefined : adultEventById(decodeURIComponent(id))
+  const event: (typeof kidEvent & Partial<AdultEvent>) | undefined = kidEvent ?? adult
   const [imgFailed, setImgFailed] = useState(false)
   const [expanded, setExpanded] = useState(false)
 
+  if (!event && status === 'loading') return <div className="page" />
   if (!event) {
     return (
       <div className="page">
@@ -46,9 +53,9 @@ export function EventDetail() {
   const past = eventEndsAt(event) < Date.now()
   const where = [event.venue, event.address].filter(Boolean).join(', ')
   const directions = where ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(where)}` : null
-  const hasTickets = event.source === 'Fienta' || event.source === 'Piletilevi'
-  const kind = eventKind(event)
-  const audience = eventAudience(event)
+  const hasTickets = event.source === 'Fienta' || event.source === 'Piletilevi' || event.source === 'Piletimaailm'
+  const kind = adult ? t(kindLabel(adult.kind)) : eventKind(event)
+  const audience = adult ? null : eventAudience(event)
   const duration = eventDuration(event)
   const language = eventLanguage(event)
   const price = event.free ? t('Free') : (cleanPrice(event.price) ?? t('Price not listed'))
@@ -187,7 +194,7 @@ export function EventDetail() {
         </div>
 
         <footer className="verify">
-          {t('From {source}, collected automatically. Confirm with the organiser before you go.', { source: event.source })}
+          {t('From {source}, collected automatically. Confirm with the organiser before you go.', { source: event.source === 'Piletimaailm' ? 'Piletimaailm (CC BY-SA 3.0)' : event.source })}
           {CONTACT_EMAIL && (
             <>
               {' '}

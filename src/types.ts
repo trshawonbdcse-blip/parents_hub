@@ -136,3 +136,10 @@ export interface KidEvent {
   // Date (YYYY-MM-DD) the collector first listed it.
   firstSeen?: string
 }
+
+// An event for adults ("Just me" mode): concerts, theatre and more.
+export interface AdultEvent extends KidEvent {
+  kind: 'concert' | 'theatre' | 'other'
+  organizer?: string | null
+  titleEn?: string
+}

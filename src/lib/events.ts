@@ -2,7 +2,7 @@ import rawEvents from '../data/events.json'
 import towns from '../data/towns.json'
 import type { KidEvent } from '../types'
 import { useEffect, useSyncExternalStore } from 'react'
-import { translate as tr } from './i18n'
+import { localeOf, translate as tr } from './i18n'
 import { DATA_BASE } from './native'
 
 const data = rawEvents as { updatedAt: string | null; events: KidEvent[] }
@@ -151,3 +151,14 @@ export function eventSummaryLine(e: KidEvent): string | null {
 }
 
 export const cleanPrice = (p: string | null) => (p ? p.replace(/^from\s+from\s+/i, 'From ').replace(/^from\s+/i, 'From ') : null)
+
+// Day key and label in Estonian time, for grouping event lists.
+export const dayKey = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
+
+export function dayLabel(key: string) {
+  const today = dayKey(new Date())
+  const tomorrow = dayKey(new Date(Date.now() + 864e5))
+  if (key === today) return tr('Today')
+  if (key === tomorrow) return tr('Tomorrow')
+  return new Date(`${key}T12:00:00`).toLocaleDateString(localeOf(), { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/Tallinn' })
+}

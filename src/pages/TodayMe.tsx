@@ -1,4 +1,4 @@
-import { ChevronRight, CloudRain, CloudSun, Sparkles, Sun, Wallet } from 'lucide-react'
+import { ChevronRight, CloudRain, CloudSun, Music, Sparkles, Sun, Wallet } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { useWeeklyProgress } from '../components/Engage'
@@ -13,6 +13,7 @@ import { acceptsStebby, useStebby } from '../lib/stebby'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useWeather, type OutdoorMode } from '../lib/weather'
 import type { Place, Visit } from '../types'
+import { kindLabel, upcomingAdult, useAdultEvents } from '../lib/adultEvents'
 
 const NO_VISITS: Visit[] = []
 const durationShort = (m: number) => (m >= 60 ? tr('{n} h', { n: Math.round((m / 60) * 2) / 2 }) : tr('{n} min', { n: m }))
@@ -30,13 +31,16 @@ function reasonsFor(p: Place, mode: OutdoorMode, favourite: boolean, stebby: boo
 
 // Today in "Just me" mode: one idea for an adult right now, more ideas, and an outdoor plan.
 export function TodayMe() {
-  const { t } = useT()
+  const { t, locale } = useT()
   const [city] = useCity()
   const here = cityCoords(city)
   const { weather } = useWeather(here.lat, here.lng)
   const favorites = useIdList(KEYS.favorites)
   const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
-  const [hasStebby] = useStebby()
+  const [hasStebby, setStebby] = useStebby()
+  const { list: adultEvents } = useAdultEvents()
+  const tallinnDay = (d: Date | string) => new Date(d).toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
+  const tonight = upcomingAdult(adultEvents, city, 1).filter((e) => !e.allDay && tallinnDay(e.start) === tallinnDay(new Date())).slice(0, 3)
   const { done, goal } = useWeeklyProgress()
   const all = useAllPlaces()
   const pool = forMode('me', placesIn(city, all))
@@ -128,6 +132,29 @@ export function TodayMe() {
         </section>
       )}
 
+      {tonight.length > 0 && (
+        <section>
+          <h2 className="list-head">{t('Tonight')}</h2>
+          <ul className="list-card">
+            {tonight.map((e) => (
+              <li key={e.id}>
+                <Link className="event-row" to={`/event/${encodeURIComponent(e.id)}`}>
+                  <span className="event-time">{new Date(e.start).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Tallinn' })}</span>
+                  <span className="row-text">
+                    <strong>{e.title}</strong>
+                    <small>{[t(kindLabel(e.kind)), e.venue].filter(Boolean).join(' · ')}</small>
+                  </span>
+                  <ChevronRight size={18} className="muted" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <Link to="/events" className="link-more">
+            <Music size={16} aria-hidden="true" /> {t('All concerts and shows')} <ChevronRight size={16} />
+          </Link>
+        </section>
+      )}
+
       {outdoor.length > 0 && (
         <section>
           <h2 className="list-head">{t('Outdoors this week')}</h2>
@@ -139,7 +166,7 @@ export function TodayMe() {
         </section>
       )}
 
-      {hasStebby && (
+      {hasStebby ? (
         <Link to="/explore?stebby=1" className="nudge">
           <span className="activity-icon">
             <Wallet size={20} />
@@ -150,6 +177,17 @@ export function TodayMe() {
           </span>
           <ChevronRight size={18} />
         </Link>
+      ) : (
+        <button type="button" className="nudge" onClick={() => setStebby(true)}>
+          <span className="activity-icon">
+            <Wallet size={20} />
+          </span>
+          <span>
+            <strong>{t('Have Stebby from work?')}</strong>
+            <small>{t('Tap to mark places where you can pay with it')}</small>
+          </span>
+          <ChevronRight size={18} />
+        </button>
       )}
 
       <Link to="/explore" className="link-more">

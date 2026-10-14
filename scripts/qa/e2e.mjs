@@ -307,9 +307,35 @@ await flow('first open asks who you plan for → Just me', async (page) => {
   await page.click('.mode-switch button:has-text("Family")')
   await page.waitForSelector('.cat-tile', { state: 'detached' })
 }, { storage: {}, mode: null })
+// Adult events come from a separate file; serve a fixed sample so the flow does not depend on the day's data.
+{
+  const at = (min) => new Date(Date.now() + min * 6e4).toISOString()
+  const sample = {
+    updatedAt: at(0),
+    events: [
+      { id: 'piletimaailm-1', title: 'Test jazz night', start: at(-1), end: at(120), allDay: false, venue: 'Kultuurikatel', city: 'Tallinn', url: 'https://example.com', source: 'Piletimaailm', kind: 'concert' },
+      { id: 'piletimaailm-2', title: 'Test drama', start: at(60 * 26), allDay: false, venue: 'Draamateater', city: 'Tallinn', url: 'https://example.com', source: 'Piletimaailm', kind: 'theatre' },
+    ],
+  }
+  await flow('Just me: concerts and theatre, tonight, event page', async (page) => {
+    await page.route('**/data/events-adult.json', (r) => r.fulfill({ json: sample }))
+    await page.goto(URL0 + '#/events')
+    await page.waitForSelector('.event-row:has-text("Test drama")')
+    await page.click('.chip:has-text("Concerts")')
+    await page.waitForSelector('.event-row:has-text("Test drama")', { state: 'detached' })
+    await page.click('.event-row:has-text("Test jazz night")')
+    await page.waitForSelector('.event-title:has-text("Test jazz night")')
+    await page.goto(URL0 + '#/event/piletimaailm-2')
+    await page.waitForSelector('.event-title:has-text("Test drama")')
+    await page.goto(URL0 + '#/')
+    await page.waitForSelector('h2:has-text("Tonight")')
+    await page.click('.nudge:has-text("Have Stebby")')
+    await page.waitForSelector('.stebby-chip')
+  }, { storage: {}, mode: 'me' })
+}
 for (const lang of ['en', 'et', 'ru']) {
   const page = await newPage({ lang, mode: 'me', storage: { 'ph.stebby': true } })
-  for (const s of ['#/', '#/explore', '#/explore?cat=swimming', '#/explore?cat=museum', '#/place/kalev-spa-water-park', '#/me?tab=moments']) await checkScreen(page, s, `${lang} just-me ${s}`)
+  for (const s of ['#/', '#/explore', '#/explore?cat=swimming', '#/explore?cat=museum', '#/place/kalev-spa-water-park', '#/me?tab=moments', '#/events']) await checkScreen(page, s, `${lang} just-me ${s}`)
   // Adult description in Just me mode, in the page's language.
   const kalev = places.find((p) => p.id === 'kalev-spa-water-park')
   const want = lang === 'en' ? kalev.descriptionMe : PT[lang]['kalev-spa-water-park'].descriptionMe

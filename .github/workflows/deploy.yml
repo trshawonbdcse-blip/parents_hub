@@ -40,6 +40,14 @@ jobs:
           restore-keys: events-
       - name: Collect kids' events
         run: node scripts/fetch-events.mjs
+      # Concerts, theatre and other events for adults ("Just me"), from open feeds.
+      - uses: actions/cache@v4
+        with:
+          path: public/data/events-adult.json
+          key: events-adult-${{ github.run_id }}
+          restore-keys: events-adult-
+      - name: Collect adult events
+        run: node scripts/fetch-events-adult.mjs
       - name: Calendar feeds
         run: node scripts/build-ics.mjs
       # Published copy for the iOS app, which refreshes events from the website.

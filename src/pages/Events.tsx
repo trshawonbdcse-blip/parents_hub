@@ -4,22 +4,15 @@ import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { useNewEvents } from '../components/Engage'
 import { useCity } from '../lib/city'
-import { cleanPrice, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
+import { cleanPrice, dayKey, dayLabel, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
 import type { KidEvent } from '../types'
-import { localeOf, translate as tr, useT } from '../lib/i18n'
+import { useMode } from '../lib/mode'
+import { EventsMe } from './EventsMe'
+import { useT } from '../lib/i18n'
 
 type Range = 'week' | 'month' | 'all'
 
 const TZ = 'Europe/Tallinn'
-const dayKey = (d: Date) => d.toLocaleDateString('en-CA', { timeZone: TZ })
-
-function dayLabel(key: string) {
-  const today = dayKey(new Date())
-  const tomorrow = dayKey(new Date(Date.now() + 864e5))
-  if (key === today) return tr('Today')
-  if (key === tomorrow) return tr('Tomorrow')
-  return new Date(`${key}T12:00:00`).toLocaleDateString(localeOf(), { weekday: 'long', day: 'numeric', month: 'long', timeZone: TZ })
-}
 
 function upcoming(range: Range, city: string, now = new Date()) {
   const limit = range === 'week' ? 7 : range === 'month' ? 31 : 3650
@@ -65,6 +58,11 @@ function SubscribeCard({ city }: { city: string }) {
 }
 
 export function Events() {
+  const [mode] = useMode()
+  return mode === 'me' ? <EventsMe /> : <EventsFamily />
+}
+
+function EventsFamily() {
   const { t, locale } = useT()
   const timeOf = (iso: string) => new Date(iso).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: TZ })
   const [range, setRange] = useState<Range>('month')

@@ -184,7 +184,7 @@ export function Explore() {
 
       <div className="filters">
         <div className="chip-row" role="group" aria-label={t('Quick filters')}>
-          {(hasStebby || stebbyOnly) && (
+          {(hasStebby || stebbyOnly || me) && (
             <button className={`chip ${stebbyOnly ? 'on' : ''}`} onClick={() => toggle('stebby', stebbyOnly)}>
               Stebby
             </button>
