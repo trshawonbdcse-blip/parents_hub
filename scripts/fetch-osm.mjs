@@ -18,16 +18,22 @@ if (fresh && !process.env.OSM_FORCE) {
   process.exit(0)
 }
 
+// The whole import gets at most 15 minutes, so a slow map server never holds up a deploy.
+// Whatever didn't arrive in time keeps its previous places and is tried again next deploy.
+const DEADLINE = Date.now() + 15 * 60000
+const timeLeft = () => DEADLINE - Date.now()
+
 async function overpass(query) {
   // The public Overpass servers are often busy: try each one, a few rounds, before giving up.
   for (let round = 0; round < 3; round++) {
     for (const url of ENDPOINTS) {
+      if (timeLeft() < 20000) throw new Error('out of time')
       try {
         const r = await fetch(url, {
           method: 'POST',
           headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' },
           body: 'data=' + encodeURIComponent(query),
-          signal: AbortSignal.timeout(240000),
+          signal: AbortSignal.timeout(Math.min(240000, timeLeft())),
         })
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
         return (await r.json()).elements ?? []
@@ -35,7 +41,7 @@ async function overpass(query) {
         console.warn(`${url}: ${e.message}`)
       }
     }
-    await new Promise((res) => setTimeout(res, 30000 * (round + 1)))
+    await new Promise((res) => setTimeout(res, Math.min(30000 * (round + 1), Math.max(0, timeLeft() - 20000))))
   }
   throw new Error('all Overpass endpoints failed')
 }
@@ -45,14 +51,14 @@ const NOT_PRIVATE = '["access"!~"^(private|customers|no|permissive_school)$"]'
 // Split into small queries so one busy server or slow query doesn't lose everything.
 // If a group fails, its places from the previous run are kept.
 const GROUPS = [
+  // Sights for visitors: only well-known ones (with a Wikidata entry), plus named viewpoints.
+  { cats: ['sight', 'viewpoint'], q: `nwr["historic"~"^(castle|manor|fort|city_gate|city_walls|monastery|ruins|church|lighthouse|windmill)$"]["name"]["wikidata"](area.ee);nwr["tourism"="attraction"]["name"]["wikidata"](area.ee);nwr["amenity"="place_of_worship"]["building"~"^(church|cathedral|chapel)$"]["name"]["wikidata"](area.ee);nwr["man_made"="lighthouse"]["name"]["wikidata"](area.ee);nwr["tourism"="viewpoint"]["name"](area.ee);nwr["man_made"="tower"]["tower:type"="observation"]["name"](area.ee);` },
   { cats: ['playground', 'indoor-play'], q: `nwr["leisure"="playground"]${NOT_PRIVATE}(area.ee);nwr["leisure"="indoor_play"](area.ee);` },
   { cats: ['library', 'museum', 'zoo-farm'], q: `nwr["amenity"="library"](area.ee);nwr["tourism"="museum"]["name"](area.ee);nwr["tourism"="gallery"]["name"](area.ee);nwr["tourism"="zoo"](area.ee);` },
   { cats: ['swimming', 'winter-fun'], q: `nwr["leisure"="water_park"](area.ee);nwr["leisure"="sports_centre"]["sport"~"swimming"](area.ee);nwr["leisure"="swimming_pool"]["name"]${NOT_PRIVATE}["indoor"!="no"](area.ee);nwr["leisure"="ice_rink"](area.ee);` },
   { cats: ['park', 'beach'], q: `nwr["tourism"="theme_park"](area.ee);nwr["leisure"="park"]["name"](area.ee);nwr["natural"="beach"]["name"](area.ee);nwr["leisure"="beach_resort"](area.ee);` },
   { cats: ['gym', 'cinema', 'theatre'], q: `nwr["leisure"="fitness_centre"]["name"](area.ee);nwr["amenity"="cinema"]["name"](area.ee);nwr["amenity"~"^(theatre|concert_hall|music_venue)$"]["name"](area.ee);` },
   { cats: ['nature'], q: `nwr["leisure"="nature_reserve"]["name"](area.ee);relation["route"="hiking"]["name"](area.ee);` },
-  // Sights for visitors: only well-known ones (with a Wikidata entry), plus named viewpoints.
-  { cats: ['sight', 'viewpoint'], q: `nwr["historic"~"^(castle|manor|fort|city_gate|city_walls|monastery|ruins|church|lighthouse|windmill)$"]["name"]["wikidata"](area.ee);nwr["tourism"="attraction"]["name"]["wikidata"](area.ee);nwr["amenity"="place_of_worship"]["building"~"^(church|cathedral|chapel)$"]["name"]["wikidata"](area.ee);nwr["man_made"="lighthouse"]["name"]["wikidata"](area.ee);nwr["tourism"="viewpoint"]["name"](area.ee);nwr["man_made"="tower"]["tower:type"="observation"]["name"](area.ee);` },
 ]
 const groupQuery = (g) => `[out:json][timeout:170];${AREA}(${g.q});out center tags;`
 const PLACES = `[out:json][timeout:120];${AREA}node["place"~"^(city|town|village|suburb|quarter|neighbourhood|borough)$"]["name"](area.ee);out;`
@@ -95,6 +101,15 @@ const km = (a1, o1, a2, o2) => {
 const nearestHub = (la, lo) => Object.entries(HUBS).reduce((b, [n, [a, o]]) => (km(la, lo, a, o) < b.d ? { n, d: km(la, lo, a, o) } : b), { n: 'Tallinn', d: Infinity }).n
 
 let placeNodes
+// Place names first: without them nothing can be labelled, so they get the time first.
+try {
+  placeNodes = await overpass(PLACES)
+} catch (e) {
+  // Never block a deploy on a busy map server: keep the previous list and try again next run.
+  console.warn(`OSM: ${e.message}; keeping the previous file`)
+  if (!previous) fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: null, places: [] }) + '\n')
+  process.exit(0)
+}
 const elements = []
 const failedCats = []
 for (const g of GROUPS) {
@@ -104,14 +119,6 @@ for (const g of GROUPS) {
     console.warn(`OSM: group ${g.cats.join('/')} failed (${e.message}); keeping its previous places`)
     failedCats.push(...g.cats)
   }
-}
-try {
-  placeNodes = await overpass(PLACES)
-} catch (e) {
-  // Never block a deploy on a busy map server: keep the previous list and try again next run.
-  console.warn(`OSM: ${e.message}; keeping the previous file`)
-  if (!previous) fs.writeFileSync(OUT, JSON.stringify({ version: VERSION, updatedAt: null, places: [] }) + '\n')
-  process.exit(0)
 }
 console.log(`OSM: ${elements.length} features, ${placeNodes.length} place names`)
 if (elements.length < 300 && failedCats.length === GROUPS.flatMap((g) => g.cats).length) {
