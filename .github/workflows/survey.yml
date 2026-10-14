@@ -3,6 +3,11 @@ name: Data survey
 # One-off research runs (started by hand): OSM counts per category and city, dataset licences.
 on:
   workflow_dispatch:
+    inputs:
+      only:
+        description: 'Run only one part: licences, osm or dataset'
+        required: false
+        default: 'all'
 
 permissions:
   contents: read
@@ -16,10 +21,15 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Dataset details (Piletimaailm feed)
+        if: inputs.only == 'dataset'
+        run: node scripts/survey/dataset.mjs
       - name: Dataset licences
+        if: inputs.only == 'all' || inputs.only == 'licences'
         run: node scripts/survey/licences.mjs
         continue-on-error: true
       - name: OSM counts
+        if: inputs.only == 'all' || inputs.only == 'osm'
         run: node scripts/survey/osm-counts.mjs
         continue-on-error: true
       - uses: actions/upload-artifact@v4
