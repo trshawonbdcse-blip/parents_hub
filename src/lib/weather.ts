@@ -14,6 +14,10 @@ export interface Weather {
   rainFrom: string | null
   mode: OutdoorMode
   advice: string
+  // The next hours ("14:00", chance of rain 0–100), for the rain timeline.
+  hours: { time: string; rain: number }[]
+  // Today's sunset, local time ("17:12").
+  sunset: string | null
   updatedAt: Date
 }
 
@@ -59,7 +63,7 @@ export function useWeather(lat = 59.437, lng = 24.7536) {
       const url =
         `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
         '&current=temperature_2m,apparent_temperature,weather_code,wind_speed_10m' +
-        '&hourly=precipitation_probability&forecast_hours=4&timezone=Europe%2FTallinn'
+        '&hourly=precipitation_probability&forecast_hours=9&daily=sunset&forecast_days=1&timezone=Europe%2FTallinn'
       fetch(url, { signal: controller.signal, cache: 'no-store' })
         .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
         .then((data) => {
@@ -81,6 +85,8 @@ export function useWeather(lat = 59.437, lng = 24.7536) {
             rainChanceSoon,
             rainFrom: rainIdx >= 0 ? (times[rainIdx]?.slice(11, 16) ?? null) : null,
             ...advise(feelsLike, code, wind, rainChanceSoon),
+            hours: times.map((time, i) => ({ time: time.slice(11, 16), rain: probs[i] ?? 0 })),
+            sunset: (data.daily?.sunset?.[0] as string | undefined)?.slice(11, 16) ?? null,
             updatedAt: new Date(),
           })
           setError(false)

@@ -304,7 +304,8 @@ await flow('first open asks who you plan for → Just me', async (page) => {
   await page.waitForSelector('h1:has-text("What shall I do today?")')
   await page.goto(URL0 + '#/explore')
   await page.waitForSelector('.cat-tile')
-  await page.click('.mode-switch button:has-text("Family")')
+  await page.click('.mode-chip')
+  await page.click('.mode-option:has-text("My family")')
   await page.waitForSelector('.cat-tile', { state: 'detached' })
 }, { storage: {}, mode: null })
 // Adult events come from a separate file; serve a fixed sample so the flow does not depend on the day's data.
@@ -343,6 +344,26 @@ for (const lang of ['en', 'et', 'ru']) {
   if (!text.replace(/\s+/g, ' ').includes(want.slice(0, 40))) fail(`${lang} just-me place`, 'adult description not shown')
   await page.context().close()
 }
+
+// Today follows the weather: rain later today → outside now, indoor ideas for afterwards
+// (or evening ideas when the test runs after 18:00 Tallinn time). The mode chip switches modes.
+await flow('Just me: rain later, other ideas, mode chip', async (page) => {
+  const hour = Number(new Intl.DateTimeFormat('en', { timeZone: 'Europe/Tallinn', hour: '2-digit', hourCycle: 'h23' }).format(new Date()))
+  const times = [...Array(9)].map((_, i) => `2026-01-01T${String((hour + i) % 24).padStart(2, '0')}:00`)
+  await page.route('**/api.open-meteo.com/**', (r) =>
+    r.request().url().includes('daily=sunset') || !r.request().url().includes('daily=')
+      ? r.fulfill({ json: { ...WEATHER, current: { temperature_2m: 11, apparent_temperature: 10, weather_code: 2, wind_speed_10m: 10 }, hourly: { time: times, precipitation_probability: [0, 10, 20, 70, 80, 80, 60, 30, 10] }, daily: { ...WEATHER.daily, sunset: ['2026-01-01T23:59'] } } })
+      : r.fulfill({ json: WEATHER }),
+  )
+  await page.goto(URL0 + '#/')
+  await page.waitForSelector('.weather-why')
+  if (hour >= 6 && hour < 18) await page.waitForSelector('h2:has-text("Then, when the rain starts")')
+  else await page.waitForSelector('.weather-why:has-text("Evening")')
+  await page.click('.shuffle-button')
+  await page.click('.mode-chip')
+  await page.click('.mode-option:has-text("visiting")')
+  await page.waitForSelector('h1:has-text("How long are you here?")')
+}, { storage: {}, mode: 'me' })
 
 // "Visiting" mode: a day plan for Tallinn, sights, and the app in Finnish.
 await flow('Visiting: day plan, 2 days, sight page', async (page) => {

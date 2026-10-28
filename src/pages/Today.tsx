@@ -1,4 +1,5 @@
-import { Baby, CalendarDays, ChevronRight, CloudRain, CloudSun, Sparkles, Sun } from 'lucide-react'
+import { Baby, CalendarDays, ChevronRight, RefreshCw, Sparkles } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { MilestoneNudge, WeekendPlan, useWeeklyProgress } from '../components/Engage'
@@ -6,11 +7,12 @@ import { PlaceRow } from '../components/PlaceRow'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { eventInCity, events } from '../lib/events'
 import { translate as tr, useT } from '../lib/i18n'
-import { categoryLabel, formatAge, isSummer, priceShort, todaysPicks } from '../lib/places'
+import { categoryLabel, formatAge, priceShort } from '../lib/places'
+import { sceneOf, sceneReason, scenePicks, type Scene } from '../lib/scene'
+import { WeatherWhy } from '../components/WeatherWhy'
 import { KEYS, useIdList, useStored } from '../lib/storage'
 import { useChild } from '../lib/useChild'
-import { useWeather, type OutdoorMode } from '../lib/weather'
-import { useAgo } from '../lib/useAgo'
+import { useWeather } from '../lib/weather'
 import { useMode } from '../lib/mode'
 import { ModeSwitch } from '../components/ModeSwitch'
 import { TodayMe } from './TodayMe'
@@ -27,11 +29,10 @@ const minutesOf = (hhmm: string) => {
 }
 
 // Why this place is a good idea right now, in a few short phrases.
-function reasonsFor(p: Place, mode: OutdoorMode, napStart: string, favourite: boolean): string[] {
+function reasonsFor(p: Place, scene: Scene, napStart: string, favourite: boolean): string[] {
   const out: string[] = []
-  if (mode === 'indoor' && p.setting !== 'outdoor') out.push(tr('Indoors — right for today’s weather'))
-  else if (mode === 'outdoor' && p.setting !== 'indoor') out.push(tr('Good weather to be outside'))
-  else if (mode === 'mixed' && p.setting !== 'outdoor') out.push(tr('Warm inside on a chilly day'))
+  const why = sceneReason(scene, p)
+  if (why) out.push(why)
   if (napStart) {
     const now = new Date()
     const left = minutesOf(napStart) - (now.getHours() * 60 + now.getMinutes())
@@ -56,16 +57,17 @@ function TodayFamily() {
   const favorites = useIdList(KEYS.favorites)
   const [visits] = useStored<Visit[]>(KEYS.visits, NO_VISITS)
   const { done, goal } = useWeeklyProgress()
-  const ago = useAgo()
   const firstName = name.trim().split(/\s+/)[0] ?? ''
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
-  const picks = todaysPicks({ months, weather, visitedRecently, favorites: new Set(favorites.ids), count: 3, pool: placesIn(city) })
-  const mode: OutdoorMode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
+  const [shuffle, setShuffle] = useState(0)
+  // A small child's limits: indoors sooner when it's cold, wet or windy.
+  const scene = sceneOf(weather, false)
+  const picks = scenePicks({ pool: placesIn(city), scene, months, visitedRecently, favorites: new Set(favorites.ids), count: 3, shuffle })
   const [best, ...more] = picks
   const price = best ? priceShort(best, months).split(' · ') : []
-  const reasons = best ? reasonsFor(best, mode, napStart, favorites.has(best.id)) : []
+  const reasons = best ? reasonsFor(best, scene, napStart, favorites.has(best.id)) : []
   const dow = new Date().getDay()
   const weekend = [4, 5, 6].includes(dow)
   const now = Date.now()
@@ -73,7 +75,6 @@ function TodayFamily() {
     .filter((e) => new Date(e.end ?? e.start).getTime() + (e.allDay ? 864e5 : 0) >= now)
     .filter((e) => eventInCity(e, city))
     .slice(0, 3)
-  const WeatherIcon = mode === 'indoor' ? CloudRain : mode === 'mixed' ? CloudSun : Sun
 
   return (
     <div className="page today">
@@ -82,16 +83,13 @@ function TodayFamily() {
           <span className="brand" aria-label="Kuhu Minna">
             kuhu minna
           </span>
-          <CityPicker />
+          <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
         </div>
-        <ModeSwitch />
         <h1>{firstName ? t('What shall we do today with {name}?', { name: firstName }) : t('What shall we do today?')}</h1>
         <div className="chip-line">
-          {weather && (
-            <span className="chip-static" title={`${t(weather.label)} · ${ago(weather.updatedAt)}`}>
-              <WeatherIcon size={16} aria-hidden="true" /> {weather.temperature}°{weather.rainFrom ? ` · ${t('Rain soon')}` : ''}
-            </span>
-          )}
           {months !== null ? (
             <span className="chip-static">
               <Baby size={16} aria-hidden="true" /> {formatAge(months)}
@@ -110,6 +108,8 @@ function TodayFamily() {
           </Link>
         </div>
       </header>
+
+      <WeatherWhy weather={weather} scene={scene} adult={false} />
 
       {best ? (
         <section className="best-pick">
@@ -148,6 +148,9 @@ function TodayFamily() {
               </div>
             </>
           )}
+          <button type="button" className="shuffle-button" onClick={() => setShuffle((n) => n + 1)}>
+            <RefreshCw size={16} aria-hidden="true" /> {t('Show other ideas')}
+          </button>
           <Link to="/explore" className="link-more">
             {t('See all places')} <ChevronRight size={16} />
           </Link>

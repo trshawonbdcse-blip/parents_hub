@@ -2,6 +2,7 @@ import { CalendarPlus, CalendarX, ChevronRight, MapPin } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
+import { ModeSwitch } from '../components/ModeSwitch'
 import { useNewEvents } from '../components/Engage'
 import { useCity } from '../lib/city'
 import { cleanPrice, dayKey, dayLabel, eventAudience, eventCity, eventInCity, eventKind, events as allEvents, eventsUpdatedAt } from '../lib/events'
@@ -85,7 +86,10 @@ function EventsFamily() {
     <div className="page">
       <div className="title-row">
         <h1 className="page-title">{t('Events')}</h1>
-        <CityPicker />
+        <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
       </div>
       <section className="hero">
         {newIds.size > 0 && <span className="hero-badge">{t('{n} new since your last visit', { n: newIds.size })}</span>}

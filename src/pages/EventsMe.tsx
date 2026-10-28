@@ -34,9 +34,11 @@ export function EventsMe() {
     <div className="page">
       <div className="title-row">
         <h1 className="page-title">{t('Events')}</h1>
-        <CityPicker />
+        <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
       </div>
-      <ModeSwitch />
       <section className="hero">
         <div className="hero-stack">
           <span className="hero-number">{week.length}</span>

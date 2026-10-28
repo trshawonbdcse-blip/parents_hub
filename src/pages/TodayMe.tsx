@@ -1,4 +1,5 @@
-import { ChevronRight, CloudRain, CloudSun, Music, Sparkles, Sun, Wallet } from 'lucide-react'
+import { ChevronRight, Music, RefreshCw, Sparkles, Wallet } from 'lucide-react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CityPicker } from '../components/CityPicker'
 import { useWeeklyProgress } from '../components/Engage'
@@ -7,22 +8,23 @@ import { PlaceRow } from '../components/PlaceRow'
 import { cityCoords, placesIn, useCity } from '../lib/city'
 import { translate as tr, useT } from '../lib/i18n'
 import { forMode, meCategoryLabel } from '../lib/mode'
-import { isSummer, priceAdultShort, todaysPicks } from '../lib/places'
+import { priceAdultShort } from '../lib/places'
+import { sceneOf, sceneReason, scenePicks, useSeaTemperature, type Scene } from '../lib/scene'
+import { WeatherWhy } from '../components/WeatherWhy'
 import { useAllPlaces } from '../lib/osm'
 import { acceptsStebby, useStebby } from '../lib/stebby'
 import { KEYS, useIdList, useStored } from '../lib/storage'
-import { useWeather, type OutdoorMode } from '../lib/weather'
+import { useWeather } from '../lib/weather'
 import type { Place, Visit } from '../types'
 import { kindLabel, upcomingAdult, useAdultEvents } from '../lib/adultEvents'
 
 const NO_VISITS: Visit[] = []
 const durationShort = (m: number) => (m >= 60 ? tr('{n} h', { n: Math.round((m / 60) * 2) / 2 }) : tr('{n} min', { n: m }))
 
-function reasonsFor(p: Place, mode: OutdoorMode, favourite: boolean, stebby: boolean): string[] {
+function reasonsFor(p: Place, scene: Scene, sea: number | null, favourite: boolean, stebby: boolean): string[] {
   const out: string[] = []
-  if (mode === 'indoor' && p.setting !== 'outdoor') out.push(tr('Indoors — right for today’s weather'))
-  else if (mode === 'outdoor' && p.setting !== 'indoor') out.push(tr('Good weather to be outside'))
-  else if (mode === 'mixed' && p.setting !== 'outdoor') out.push(tr('Warm inside on a chilly day'))
+  const why = sceneReason(scene, p, sea)
+  if (why) out.push(why)
   if (stebby) out.push(tr('Pay with Stebby'))
   if (favourite) out.push(tr('One of your favourites'))
   if (p.price.free) out.push(tr('Free'))
@@ -40,21 +42,50 @@ export function TodayMe() {
   const [hasStebby, setStebby] = useStebby()
   const { list: adultEvents } = useAdultEvents()
   const tallinnDay = (d: Date | string) => new Date(d).toLocaleDateString('en-CA', { timeZone: 'Europe/Tallinn' })
-  const tonight = upcomingAdult(adultEvents, city, 1).filter((e) => !e.allDay && tallinnDay(e.start) === tallinnDay(new Date())).slice(0, 3)
+  const tonight = upcomingAdult(adultEvents, city, 1)
+    .filter((e) => !e.allDay && tallinnDay(e.start) === tallinnDay(new Date()))
+    .slice(0, 3)
   const { done, goal } = useWeeklyProgress()
   const all = useAllPlaces()
   const pool = forMode('me', placesIn(city, all))
 
   const twoWeeksAgo = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10)
   const visitedRecently = new Set(visits.filter((v) => v.date >= twoWeeksAgo).map((v) => v.placeId))
-  const opts = { months: null, weather, visitedRecently, favorites: new Set(favorites.ids) }
-  const picks = todaysPicks({ ...opts, count: 4, pool })
-  const mode: OutdoorMode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
+  const [shuffle, setShuffle] = useState(0)
+  const scene = sceneOf(weather, true)
+  const opts = { pool, scene, months: null, visitedRecently, favorites: new Set(favorites.ids), shuffle }
+  // With rain coming later: something outside now, and indoor ideas for afterwards.
+  const rainLater = scene.key === 'rain-later'
+  const picks = scenePicks({ ...opts, count: rainLater ? 1 : 4, indoor: rainLater ? false : undefined })
+  const after = rainLater ? scenePicks({ ...opts, count: 2, indoor: true }) : []
   const [best, ...more] = picks
+  const sea = useSeaTemperature(here.lat, here.lng, scene.key === 'hot')
   const stebby = (p: Place) => hasStebby && acceptsStebby(p)
-  const outdoor = mode === 'indoor' ? [] : todaysPicks({ ...opts, weather: null, count: 2, pool: pool.filter((p) => p.category === 'nature' && !picks.includes(p)) })
-  const WeatherIcon = mode === 'indoor' ? CloudRain : mode === 'mixed' ? CloudSun : Sun
+  const outdoor =
+    scene.outdoorNow && !rainLater ? scenePicks({ ...opts, scene: { ...scene, key: 'mild' }, count: 2, indoor: false, pool: pool.filter((p) => p.category === 'nature' && !picks.includes(p)) }) : []
   const price = best ? priceAdultShort(best) : ''
+  const tonightList = tonight.length > 0 && (
+    <section>
+      <h2 className="list-head">{t('Tonight')}</h2>
+      <ul className="list-card">
+        {tonight.map((e) => (
+          <li key={e.id}>
+            <Link className="event-row" to={`/event/${encodeURIComponent(e.id)}`}>
+              <span className="event-time">{new Date(e.start).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Tallinn' })}</span>
+              <span className="row-text">
+                <strong>{e.title}</strong>
+                <small>{[t(kindLabel(e.kind)), e.venue].filter(Boolean).join(' · ')}</small>
+              </span>
+              <ChevronRight size={18} className="muted" />
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <Link to="/events" className="link-more">
+        <Music size={16} aria-hidden="true" /> {t('All concerts and shows')} <ChevronRight size={16} />
+      </Link>
+    </section>
+  )
 
   return (
     <div className="page today">
@@ -63,16 +94,13 @@ export function TodayMe() {
           <span className="brand" aria-label="Kuhu Minna">
             kuhu minna
           </span>
-          <CityPicker />
+          <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
         </div>
-        <ModeSwitch />
         <h1>{t('What shall I do today?')}</h1>
         <div className="chip-line">
-          {weather && (
-            <span className="chip-static">
-              <WeatherIcon size={16} aria-hidden="true" /> {weather.temperature}°{weather.rainFrom ? ` · ${t('Rain soon')}` : ''}
-            </span>
-          )}
           {hasStebby && (
             <Link to="/explore?stebby=1" className="chip-static stebby-chip">
               <Wallet size={16} aria-hidden="true" /> Stebby
@@ -87,6 +115,10 @@ export function TodayMe() {
           </Link>
         </div>
       </header>
+
+      <WeatherWhy weather={weather} scene={scene} adult sea={sea} />
+
+      {scene.key === 'evening' && tonightList}
 
       {best ? (
         <section className="best-pick">
@@ -105,21 +137,24 @@ export function TodayMe() {
               <span className="hero-value">{price}</span>
             </div>
             <ul className="hero-chips">
-              {reasonsFor(best, mode, favorites.has(best.id), stebby(best)).map((r) => (
+              {reasonsFor(best, scene, sea, favorites.has(best.id), stebby(best)).map((r) => (
                 <li key={r}>{r}</li>
               ))}
             </ul>
           </Link>
-          {more.length > 0 && (
+          {(rainLater ? after : more).length > 0 && (
             <>
-              <h2 className="list-head">{t('Also good now')}</h2>
+              <h2 className="list-head">{rainLater ? t('Then, when the rain starts') : t('Also good now')}</h2>
               <div className="row-list">
-                {more.map((p) => (
+                {(rainLater ? after : more).map((p) => (
                   <PlaceRow key={p.id} place={p} months={null} />
                 ))}
               </div>
             </>
           )}
+          <button type="button" className="shuffle-button" onClick={() => setShuffle((n) => n + 1)}>
+            <RefreshCw size={16} aria-hidden="true" /> {t('Show other ideas')}
+          </button>
         </section>
       ) : (
         <section className="hero">
@@ -132,28 +167,7 @@ export function TodayMe() {
         </section>
       )}
 
-      {tonight.length > 0 && (
-        <section>
-          <h2 className="list-head">{t('Tonight')}</h2>
-          <ul className="list-card">
-            {tonight.map((e) => (
-              <li key={e.id}>
-                <Link className="event-row" to={`/event/${encodeURIComponent(e.id)}`}>
-                  <span className="event-time">{new Date(e.start).toLocaleTimeString(locale, { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Tallinn' })}</span>
-                  <span className="row-text">
-                    <strong>{e.title}</strong>
-                    <small>{[t(kindLabel(e.kind)), e.venue].filter(Boolean).join(' · ')}</small>
-                  </span>
-                  <ChevronRight size={18} className="muted" />
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <Link to="/events" className="link-more">
-            <Music size={16} aria-hidden="true" /> {t('All concerts and shows')} <ChevronRight size={16} />
-          </Link>
-        </section>
-      )}
+      {scene.key !== 'evening' && tonightList}
 
       {outdoor.length > 0 && (
         <section>

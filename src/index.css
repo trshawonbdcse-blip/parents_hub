@@ -500,7 +500,6 @@ input[type='checkbox'][role='switch']:checked::after { transform: translateX(20p
 .card-saving > span { flex: 1; display: flex; flex-direction: column; gap: 2px; }
 .card-saving strong { font-family: var(--font-head); font-weight: 800; font-size: 16px; line-height: 1.25; }
 .card-saving small { font-weight: 600; }
-.mode-switch button { min-width: 0; padding: 0 6px; white-space: nowrap; }
 button.nudge { width: 100%; border: 0; font: inherit; text-align: left; cursor: pointer; }
 
 /* Town picker ------------------------------------------------------- */
@@ -542,9 +541,37 @@ button.nudge { width: 100%; border: 0; font: inherit; text-align: left; cursor: 
 .report-link { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; margin-top: 4px; font-weight: 700; color: var(--primary); }
 
 /* Family / Just me ------------------------------------------------ */
-.mode-switch { display: flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--tile); }
-.mode-switch button { flex: 1; display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 40px; border: none; border-radius: 999px; background: transparent; font-weight: 700; font-size: var(--fs-secondary); color: var(--ink); }
-.mode-switch button.on { background: var(--primary); color: var(--surface); }
+.weather-why { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border-radius: var(--r-card); background: var(--tile); }
+.weather-why > svg { flex: none; color: var(--primary); margin-top: 1px; }
+.weather-why > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.weather-why strong { font-size: var(--fs-body); }
+.weather-why span { font-size: var(--fs-secondary); color: var(--muted); }
+.rain-line { list-style: none; margin: 6px 0 0; padding: 0; display: flex; gap: 4px; }
+.rain-line li { min-width: 30px; padding: 3px 0; border-radius: 6px; background: var(--surface); text-align: center; font-size: var(--fs-caption); font-weight: 700; color: var(--muted); }
+.rain-line li.rain { background: #dbe7f6; color: #234a75; }
+.rain-line li.now { box-shadow: inset 0 0 0 2px var(--primary); }
+.shuffle-button { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; border-radius: var(--r-input); border: 1px solid var(--line); background: var(--surface); color: var(--primary); font: inherit; font-weight: 700; cursor: pointer; }
+.top-chips { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.top-chips .city-button { max-width: 130px; min-width: 0; }
+.top-chips .city-button span, .mode-chip span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.title-row .page-title, .hero-top .brand { flex: none; }
+/* Next to a page title the mode chip shows just its icon; on Today it shows the name. */
+.title-row .mode-chip span { display: none; }
+.hero-top .brand { font-size: 20px; }
+.hero-top .top-chips { gap: 4px; }
+.hero-top .mode-chip, .hero-top .city-button { padding: 0 8px; }
+/* The town never gets cut short; the mode chip gives way first (down to just its icon). */
+.top-chips .city-button { flex: none; }
+@media (max-width: 380px) { .hero-top .mode-chip span { display: none; } }
+.title-row .top-chips, .hero-top .top-chips { flex: 0 1 auto; justify-content: flex-end; }
+.mode-chip { flex: 0 1 auto; min-width: 0; max-width: 130px; display: inline-flex; align-items: center; gap: 4px; min-height: 40px; padding: 0 10px 0 9px; border-radius: 999px; border: none; background: var(--active); color: var(--primary); font: inherit; font-size: var(--fs-secondary); font-weight: 700; cursor: pointer; white-space: nowrap; }
+.mode-options { display: flex; flex-direction: column; gap: 10px; }
+.mode-option { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: var(--r-card); border: 1px solid var(--line); background: var(--surface); color: var(--ink); font: inherit; text-align: left; cursor: pointer; }
+.mode-option > span { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.mode-option strong { font-family: var(--font-head); font-size: var(--fs-body); }
+.mode-option small { color: var(--muted); font-size: var(--fs-secondary); }
+.mode-option svg { color: var(--primary); flex: none; }
+.mode-option.on { border: 2px solid var(--primary); background: var(--active); }
 .chooser { position: fixed; inset: 0; z-index: 50; background: var(--surface); display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: calc(env(safe-area-inset-top) + 24px) 20px calc(env(safe-area-inset-bottom) + 24px); max-width: 560px; margin: 0 auto; }
 .chooser .brand { text-align: center; font-size: 28px; }
 .chooser h1 { text-align: center; }

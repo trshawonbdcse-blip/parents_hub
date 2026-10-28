@@ -8,7 +8,9 @@ import { cityCoords, placesIn, useCity } from '../lib/city'
 import { useT } from '../lib/i18n'
 import { forMode, meCategoryLabel } from '../lib/mode'
 import { useAllPlaces } from '../lib/osm'
-import { isSummer, priceAdultShort } from '../lib/places'
+import { priceAdultShort } from '../lib/places'
+import { sceneOf } from '../lib/scene'
+import { WeatherWhy } from '../components/WeatherWhy'
 import { cardSaving, clock, planDays, TALLINN_CARD_URL, toursUrl } from '../lib/visit'
 import { useWeather, type OutdoorMode } from '../lib/weather'
 
@@ -30,7 +32,9 @@ export function TodayVisit() {
   const [day, setDay] = useState(0)
   const all = useAllPlaces()
   const pool = forMode('visit', placesIn(city, all))
-  const mode: OutdoorMode = weather?.mode ?? (isSummer() ? 'outdoor' : 'indoor')
+  // Judged for adults: a chilly dry day is still a day for the Old Town.
+  const scene = sceneOf(weather, true)
+  const mode: OutdoorMode = !scene.outdoorNow ? 'indoor' : scene.key === 'cold' || scene.key === 'rain-later' ? 'mixed' : 'outdoor'
   const days = length === '2' ? 2 : length === '3' ? 3 : 1
   const plan = planDays(pool, mode, days, length === 'half' ? 3 : 5, 10 * 60, length === 'half' ? 14 * 60 + 30 : 19 * 60)
   const stops = plan[Math.min(day, plan.length - 1)] ?? []
@@ -51,9 +55,11 @@ export function TodayVisit() {
           <span className="brand" aria-label="Kuhu Minna">
             kuhu minna
           </span>
-          <CityPicker />
+          <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
         </div>
-        <ModeSwitch />
         <h1>{t('How long are you here?')}</h1>
         <div className="chip-row" role="group" aria-label={t('How long are you here?')}>
           {LENGTHS.map(([key, label]) => (
@@ -71,6 +77,8 @@ export function TodayVisit() {
           ))}
         </div>
       </header>
+
+      <WeatherWhy weather={weather} scene={scene} adult />
 
       {stops.length ? (
         <section className="hero visit-plan">

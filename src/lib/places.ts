@@ -100,7 +100,7 @@ export function distanceKm(lat1: number, lng1: number, lat2: number, lng2: numbe
 }
 
 // Small deterministic hash so "today's picks" rotate daily but stay stable within a day.
-function dailyNoise(id: string, day: string) {
+export function dailyNoise(id: string, day: string) {
   let h = 0
   for (const c of id + day) h = (h * 31 + c.charCodeAt(0)) | 0
   return (Math.abs(h) % 1000) / 1000

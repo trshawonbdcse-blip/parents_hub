@@ -127,7 +127,10 @@ export function Explore() {
       <div className="sticky-top">
         <div className="title-row">
           <h1 className="page-title">{t('Explore')}</h1>
-          <CityPicker />
+          <div className="top-chips">
+            <ModeSwitch />
+            <CityPicker />
+          </div>
         </div>
         <div className="search-row">
           <label className="search-field">
@@ -145,8 +148,6 @@ export function Explore() {
           </button>
         </div>
       </div>
-
-      <ModeSwitch />
 
       <section className="hero explore-hero">
         <div className="hero-row">
