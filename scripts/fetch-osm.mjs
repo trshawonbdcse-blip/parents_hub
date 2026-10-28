@@ -36,7 +36,10 @@ async function overpass(query) {
           signal: AbortSignal.timeout(Math.min(240000, timeLeft())),
         })
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
-        return (await r.json()).elements ?? []
+        const j = await r.json()
+        // A query that runs out of time or memory still answers 200, with the error in "remark".
+        if (/error|timed out|out of memory/i.test(j.remark ?? '')) throw new Error(j.remark.slice(0, 120))
+        return j.elements ?? []
       } catch (e) {
         console.warn(`${url}: ${e.message}`)
       }
@@ -52,7 +55,10 @@ const NOT_PRIVATE = '["access"!~"^(private|customers|no|permissive_school)$"]'
 // If a group fails, its places from the previous run are kept.
 const GROUPS = [
   // Sights for visitors: only well-known ones (with a Wikidata entry), plus named viewpoints.
-  { cats: ['sight', 'viewpoint'], q: `nwr["historic"~"^(castle|manor|fort|city_gate|city_walls|monastery|ruins|church|lighthouse|windmill)$"]["name"]["wikidata"](area.ee);nwr["tourism"="attraction"]["name"]["wikidata"](area.ee);nwr["amenity"="place_of_worship"]["building"~"^(church|cathedral|chapel)$"]["name"]["wikidata"](area.ee);nwr["man_made"="lighthouse"]["name"]["wikidata"](area.ee);nwr["tourism"="viewpoint"]["name"](area.ee);nwr["man_made"="tower"]["tower:type"="observation"]["name"](area.ee);` },
+  // Split in three small queries; a heavy one makes the map server give up.
+  { cats: ['viewpoint'], q: `nwr["tourism"="viewpoint"]["name"](area.ee);nwr["man_made"="tower"]["tower:type"="observation"]["name"](area.ee);` },
+  { cats: ['sight'], q: `nwr["historic"~"^(castle|manor|fort|city_gate|city_walls|monastery|ruins|church|lighthouse|windmill)$"]["name"]["wikidata"](area.ee);nwr["man_made"="lighthouse"]["name"]["wikidata"](area.ee);` },
+  { cats: ['sight'], q: `nwr["tourism"="attraction"]["name"]["wikidata"](area.ee);nwr["amenity"="place_of_worship"]["name"]["wikidata"]["heritage"](area.ee);` },
   { cats: ['playground', 'indoor-play'], q: `nwr["leisure"="playground"]${NOT_PRIVATE}(area.ee);nwr["leisure"="indoor_play"](area.ee);` },
   { cats: ['library', 'museum', 'zoo-farm'], q: `nwr["amenity"="library"](area.ee);nwr["tourism"="museum"]["name"](area.ee);nwr["tourism"="gallery"]["name"](area.ee);nwr["tourism"="zoo"](area.ee);` },
   { cats: ['swimming', 'winter-fun'], q: `nwr["leisure"="water_park"](area.ee);nwr["leisure"="sports_centre"]["sport"~"swimming"](area.ee);nwr["leisure"="swimming_pool"]["name"]${NOT_PRIVATE}["indoor"!="no"](area.ee);nwr["leisure"="ice_rink"](area.ee);` },
@@ -114,7 +120,9 @@ const elements = []
 const failedCats = []
 for (const g of GROUPS) {
   try {
-    elements.push(...(await overpass(groupQuery(g))))
+    const found = await overpass(groupQuery(g))
+    console.log(`OSM: group ${g.cats.join('/')}: ${found.length} features`)
+    elements.push(...found)
   } catch (e) {
     console.warn(`OSM: group ${g.cats.join('/')} failed (${e.message}); keeping its previous places`)
     failedCats.push(...g.cats)
@@ -183,7 +191,10 @@ for (const e of elements) {
 }
 
 // Groups that failed this time keep their places from the last good run.
-if (failedCats.length && previous?.places) out.push(...previous.places.filter((r) => failedCats.includes(r.c)))
+if (failedCats.length && previous?.places) {
+  const have = new Set(out.map((r) => r.i))
+  out.push(...previous.places.filter((r) => failedCats.includes(r.c) && !have.has(r.i)))
+}
 
 const byCat = out.reduce((m, r) => ({ ...m, [r.c]: (m[r.c] ?? 0) + 1 }), {})
 console.log(`OSM: ${out.length} places after de-duplication`, byCat)
